@@ -20,7 +20,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
 * The UI is simple and pure Material Design.
 * A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
 * **Currencies** is written for Android in Kotlin, targeting Android 11 and supporting light and dark themes.
-* The app is add-free and doesn't spy on the user.
+* The app is ad-free and doesn't spy on the user.
 
 
 ## Screenshots
