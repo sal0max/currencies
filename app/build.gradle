@@ -12,8 +12,8 @@ android {
         targetSdkVersion 30
         // SemVer
         def major = 0
-        def minor = 0
-        def patch = 1
+        def minor = 1
+        def patch = 0
         versionCode = (major * 10000) + (minor * 100) + patch
         versionName = "$major ($major.$minor.$patch)"
     }
