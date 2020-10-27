@@ -25,6 +25,9 @@
     <!-- -->
     <string name="prefTitle_dataUpdate">Refresh Period</string>
     <string name="prefSummary_dataUpdate">The reference rates are usually updated by the European Central Bank around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. </string>
+    <!-- -->
+    <string name="prefTitle_disclaimer">Disclaimer</string>
+    <string name="prefSummary_disclaimer">Although the app is very thoroughly written and tested, <b>there is no guarantee that the data it shows is correct</b>. The exchange rates are provided by a third party and this app can\'t make no promise whatsoever that the data is true and up-to-date.\nAdditionally, the rates provided – still if correct – may vary from the ones used by your bank.\nLastly: Mistakes happen. Never blindly trust anyone! That being said, rest assured I wouldn\'t have released this app if I\'ve had any doubt that it works as intended.</string>
 
     <!-- prefs -->
     <string name="prefTitle_categoryAbout">About this app</string>

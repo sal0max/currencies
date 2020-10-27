@@ -13,12 +13,17 @@
 
     <PreferenceCategory android:title="@string/prefTitle_categoryData">
 
-        <Preference
+        <de.salomax.currencies.widget.LongSummaryPreference
+            android:selectable="false"
+            android:summary="@string/prefSummary_disclaimer"
+            android:title="@string/prefTitle_disclaimer" />
+
+        <de.salomax.currencies.widget.LongSummaryPreference
             android:selectable="false"
             android:summary="@string/prefSummary_dataSource"
             android:title="@string/prefTitle_dataSource" />
 
-        <Preference
+        <de.salomax.currencies.widget.LongSummaryPreference
             android:selectable="false"
             android:summary="@string/prefSummary_dataUpdate"
             android:title="@string/prefTitle_dataUpdate" />
