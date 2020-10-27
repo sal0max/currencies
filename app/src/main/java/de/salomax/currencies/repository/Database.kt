@@ -31,11 +31,17 @@ class Database(context: Context) {
 
     fun insertExchangeRates(items: ExchangeRates) {
         prefsRates.apply {
-            edit().putString("_date", items.date.toString()).apply()
-            edit().putString("_base", items.base).apply()
+            val editor = edit()
+            // clear old values
+            editor.clear()
+            // apply new ones
+            editor.putString("_date", items.date.toString())
+            editor.putString("_base", items.base)
             for (rate in items.rates) {
-                edit().putFloat(rate.name, rate.value).apply()
+                editor.putFloat(rate.name, rate.value)
             }
+            // persist
+            editor.apply()
         }
     }
 
