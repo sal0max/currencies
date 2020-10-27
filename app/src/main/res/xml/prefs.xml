@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="@string/prefTitle_categorySettings">
+        <ListPreference
+            android:defaultValue="2"
+            android:entries="@array/prefEntries_theme"
+            android:entryValues="@array/prefEntryValues_theme"
+            android:key="@string/prefKey_theme"
+            android:summary="%s"
+            android:title="@string/prefTitle_theme" />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/prefTitle_categoryData">
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/prefSummary_dataSource"
+            android:title="@string/prefTitle_dataSource" />
+
+        <Preference
+            android:selectable="false"
+            android:summary="@string/prefSummary_dataUpdate"
+            android:title="@string/prefTitle_dataUpdate" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/prefTitle_categoryAbout">
+
+        <Preference
+            android:key="@string/prefKey_about"
+            android:summary="@string/prefSummary_about"
+            android:title="@string/prefTitle_about" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/displayOverlay">
+
+    <!-- guideline -->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent=".5" />
+
+    <!-- toggle button & separator -->
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_toggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/desc_toggle_currencies"
+        android:onClick="toggleEvent"
+        android:src="@drawable/ic_swap_vert"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height=".5dp"
+        android:layout_marginStart="@dimen/margin2x"
+        android:layout_marginEnd="@dimen/margin2x"
+        android:background="@color/displayOverlay"
+        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/btn_toggle"
+        app:layout_constraintTop_toTopOf="@id/guideline" />
+
+    <!-- top main_display -->
+
+    <Spinner
+        android:id="@+id/spinnerFrom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextFrom"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollViewTextFrom"
+        tools:listitem="@layout/row_currency" />
+
+    <TextView
+        android:id="@+id/textCalculations"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin2x"
+        android:ellipsize="start"
+        android:gravity="end"
+        android:singleLine="true"
+        app:layout_constraintBottom_toTopOf="@id/scrollViewTextFrom"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
+        tools:text="13 + 0.99" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewTextFrom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/margin2x">
+
+            <TextView
+                android:id="@+id/currencyFrom"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin1x"
+                tools:text="€" />
+
+            <TextView
+                android:id="@+id/textFrom"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textStyle="bold"
+                tools:text="13.99" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <!-- bottom main_display -->
+
+    <Spinner
+        android:id="@+id/spinnerTo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextTo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollViewTextTo"
+        tools:listitem="@layout/row_currency" />
+
+    <HorizontalScrollView
+        android:id="@+id/scrollViewTextTo"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:scrollbars="none"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
+        app:layout_constraintTop_toTopOf="@+id/guideline">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:padding="@dimen/margin2x">
+
+            <TextView
+                android:id="@+id/currencyTo"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/margin1x"
+                tools:text="€" />
+
+            <TextView
+                android:id="@+id/textTo"
+                style="@style/TextAppearance.AppCompat.Large"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:lines="1"
+                android:textStyle="bold"
+                tools:text="383.99" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

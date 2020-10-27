@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Currencies</string>
+    <string name="app_name_alt">Sorten</string>
+
+    <string name="desc_toggle_currencies">toggle currencies</string>
+    <string name="last_updated">Exchange rate age: %s</string>
+
+    <string name="menu_settings">Settings</string>
+    <string name="title_preferences">@string/menu_settings</string>
+</resources>

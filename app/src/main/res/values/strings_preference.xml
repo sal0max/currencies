@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- settings -->
+    <string name="prefTitle_categorySettings">Settings</string>
+    <!-- -->
+    <string name="prefKey_theme" translatable="false">KEY_THEME</string>
+    <string name="prefTitle_theme">Design</string>
+    <string-array name="prefEntries_theme">
+        <item>Light</item>
+        <item>Dark</item>
+        <item>System default</item>
+    </string-array>
+    <string-array name="prefEntryValues_theme" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- data source -->
+    <string name="prefTitle_categoryData">About the exchange rate data</string>
+    <!-- -->
+    <string name="prefTitle_dataSource">Data source</string>
+    <string name="prefSummary_dataSource">This app uses the Euro foreign exchange reference rates (forex) published by the European Central Bank.</string>
+    <!-- -->
+    <string name="prefTitle_dataUpdate">Refresh Period</string>
+    <string name="prefSummary_dataUpdate">The reference rates are usually updated by the European Central Bank around 16:00 CET on every working day, except on TARGET closing days. They are based on a regular daily concertation procedure between central banks across Europe, which normally takes place at 14:15 CET. </string>
+
+    <!-- prefs -->
+    <string name="prefTitle_categoryAbout">About this app</string>
+    <!-- -->
+    <string name="prefKey_about" translatable="false">KEY_ABOUT</string>
+    <string name="prefTitle_about">Version %1$s</string>
+    <string name="prefSummary_about" translatable="false" tools:ignore="PluralsCandidate">© %1$d Maximilian Salomon</string>
+
+</resources>

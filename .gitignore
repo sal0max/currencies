@@ -1,0 +1,27 @@
+# Android Studio captures folder
+captures/
+
+# External native build folder generated in Android Studio 2.2 and later
+.externalNativeBuild
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Gradle files
+.gradle/
+build/
+
+# IntelliJ
+*.iml
+.idea/
+
+# keystore/api keys/local configuration
+.jks
+keystore.properties
+secrets.properties
+local.properties
+
+#OS
+._*
+.DS_Store
+Thumbs.db

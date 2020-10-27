@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin1x">8dp</dimen>
+    <dimen name="margin2x">16dp</dimen>
+    <dimen name="margin3x">24dp</dimen>
+    <dimen name="margin4x">32dp</dimen>
+
+    <dimen name="elevation1x">2dp</dimen>
+    <dimen name="elevation2x">4dp</dimen>
+    <dimen name="elevation4x">8dp</dimen>
+
+    <dimen name="textKeypad">26sp</dimen>
+
+</resources>
