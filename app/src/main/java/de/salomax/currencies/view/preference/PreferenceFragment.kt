@@ -31,6 +31,10 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         val aboutPreference = findPreference<Preference>(getString(R.string.prefKey_about))!!
         aboutPreference.title = getString(R.string.prefTitle_about, BuildConfig.VERSION_NAME)
         aboutPreference.summary = getString(R.string.prefSummary_about, Calendar.getInstance().get(Calendar.YEAR))
+        aboutPreference.setOnPreferenceClickListener {
+            ChangelogDialog().show(childFragmentManager, null)
+            true
+        }
     }
 
 }

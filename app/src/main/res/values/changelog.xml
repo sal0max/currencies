@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_changelog">Changelog</string>
+
+    <string name="changelog">
+        <b><big>0.1.0</big></b>
+        \n
+        \n• More fail-proof updating of the currency rates
+        \n• Added a disclaimer
+        \n• Added this changelog
+        \n
+        \n<b><big>0.0.1</big></b>
+        \n
+        \n• Initial pre-release
+    </string>
+
+</resources>
