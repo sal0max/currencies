@@ -16,5 +16,5 @@
         android:layout_height="wrap_content"
         android:alpha=".33"
         android:textSize="12sp"
-        tools:text="Exchange rate age: Th, 04.09.2020" />
+        tools:text="Exchange rate age: 2020-10-28" />
 </LinearLayout>
