@@ -75,9 +75,11 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
+            android:id="@+id/clickFrom"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:longClickable="true"
             android:padding="@dimen/margin2x">
 
             <TextView
@@ -121,9 +123,11 @@
         app:layout_constraintTop_toTopOf="@+id/guideline">
 
         <LinearLayout
+            android:id="@+id/clickTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:longClickable="true"
             android:padding="@dimen/margin2x">
 
             <TextView

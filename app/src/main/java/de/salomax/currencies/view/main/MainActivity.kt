@@ -1,5 +1,8 @@
 package de.salomax.currencies.view.main
 
+import android.content.ClipData
+import android.content.ClipboardManager
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.Menu
@@ -8,11 +11,14 @@ import android.view.MenuItem
 import android.view.View
 import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
+
 
 class MainActivity : AppCompatActivity() {
 
@@ -80,8 +86,21 @@ class MainActivity : AppCompatActivity() {
             true
         }
 
+        // long click on input "from"
+        findViewById<LinearLayout>(R.id.clickFrom).setOnLongClickListener {
+            val copyText = "${it.findViewById<TextView>(R.id.currencyFrom).text} ${it.findViewById<TextView>(R.id.textFrom).text}"
+            copyToClipboard(copyText)
+            true
+        }
+        // long click on input "to"
+        findViewById<LinearLayout>(R.id.clickTo).setOnLongClickListener {
+            val copyText = "${it.findViewById<TextView>(R.id.currencyTo).text} ${it.findViewById<TextView>(R.id.textTo).text}"
+            copyToClipboard(copyText)
+            true
+        }
+
         // spinners: listen for changes
-        spinnerFrom.onItemSelectedListener  = object : AdapterView.OnItemSelectedListener{
+        spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 inputModel.setCurrencyFrom(
@@ -89,7 +108,7 @@ class MainActivity : AppCompatActivity() {
                 )
             }
         }
-        spinnerTo.onItemSelectedListener  = object : AdapterView.OnItemSelectedListener{
+        spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 inputModel.setCurrencyTo(
@@ -97,6 +116,23 @@ class MainActivity : AppCompatActivity() {
                 )
             }
         }
+    }
+
+    private fun copyToClipboard(copyText: String) {
+        // copy
+        val clipboard: ClipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+        clipboard.setPrimaryClip(ClipData.newPlainText(null, copyText))
+        // notify
+        Snackbar.make(
+            tvCalculations,
+            HtmlCompat.fromHtml(
+                getString(R.string.copied_to_clipboard, copyText),
+                HtmlCompat.FROM_HTML_MODE_LEGACY
+            ),
+            Snackbar.LENGTH_SHORT
+        )
+            .setBackgroundTint(getColor(R.color.colorAccent))
+            .show()
     }
 
     private fun observe() {

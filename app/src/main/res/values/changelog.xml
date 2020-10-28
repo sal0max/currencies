@@ -3,7 +3,11 @@
     <string name="title_changelog">Changelog</string>
 
     <string name="changelog">
-        <b><big>0.1.0</big></b>
+        <b><big>0.2.0</big></b>
+        \n
+        \n• Added a copy function: Long click on the value you want to copy
+        \n
+        \n<b><big>0.1.0</big></b>
         \n
         \n• More fail-proof updating of the currency rates
         \n• Added a disclaimer
