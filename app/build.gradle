@@ -13,7 +13,7 @@ android {
         // SemVer
         def major = 0
         def minor = 2
-        def patch = 0
+        def patch = 1
         versionCode = (major * 10000) + (minor * 100) + patch
         versionName = "$major ($major.$minor.$patch)"
     }
