@@ -7,7 +7,7 @@ android {
     buildToolsVersion "30.0.2"
 
     defaultConfig {
-        applicationId "de.salomax.currencies"
+        applicationId 'de.salomax.currencies'
         minSdkVersion 26
         targetSdkVersion 30
         // SemVer
@@ -16,14 +16,15 @@ android {
         def patch = 1
         versionCode = (major * 10000) + (minor * 100) + patch
         versionName = "$major ($major.$minor.$patch)"
+        archivesBaseName = "$applicationId-v$versionCode"
     }
 
     signingConfigs {
         release {
-            storeFile     = file(getSecret("KEYSTORE_FILE"))
-            storePassword = getSecret("KEYSTORE_PASSWORD")
-            keyAlias      = getSecret("KEYSTORE_KEY_ALIAS")
-            keyPassword   = getSecret("KEYSTORE_KEY_PASSWORD")
+            storeFile     = file(getSecret('KEYSTORE_FILE'))
+            storePassword = getSecret('KEYSTORE_PASSWORD')
+            keyAlias      = getSecret('KEYSTORE_KEY_ALIAS')
+            keyPassword   = getSecret('KEYSTORE_KEY_PASSWORD')
         }
     }
 
