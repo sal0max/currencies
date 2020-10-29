@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog">Changelog</string>
 
-    <string name="changelog"><b><big>0.2.1</big></b>
+    <string name="changelog"><b><big>0.2.2</big></b>
+        \n
+        \n• Minor improvements
+        \n
+        \n<b><big>0.2.1</big></b>
         \n
         \n• Better error handling
         \n• Minor improvements
