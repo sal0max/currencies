@@ -21,10 +21,12 @@ android {
 
     signingConfigs {
         release {
-            storeFile     = file(getSecret('KEYSTORE_FILE'))
-            storePassword = getSecret('KEYSTORE_PASSWORD')
-            keyAlias      = getSecret('KEYSTORE_KEY_ALIAS')
-            keyPassword   = getSecret('KEYSTORE_KEY_PASSWORD')
+            if (getSecret('KEYSTORE_FILE') != null) {
+                storeFile     = file(getSecret('KEYSTORE_FILE'))
+                storePassword = getSecret('KEYSTORE_PASSWORD')
+                keyAlias      = getSecret('KEYSTORE_KEY_ALIAS')
+                keyPassword   = getSecret('KEYSTORE_KEY_PASSWORD')
+            }
         }
     }
 
