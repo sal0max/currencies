@@ -10,7 +10,7 @@ import java.time.*
 
 class ExchangeRatesViewModel(application: Application) : AndroidViewModel(application) {
 
-    private var repository: ExchangeRatesRepository = ExchangeRatesRepository.getInstance(application)
+    private var repository: ExchangeRatesRepository = ExchangeRatesRepository(application)
 
     private var dbLiveItems: LiveData<ExchangeRates?>
     private val liveError = repository.getError()

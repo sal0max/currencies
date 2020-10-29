@@ -139,7 +139,7 @@ class MainActivity : AppCompatActivity() {
         //exchange rates changed
         ratesModel.getExchangeRate().observe(this, {
             // date
-            tvDate.text = getString(R.string.last_updated, it?.date?.toString())
+            it?.let { tvDate.text = getString(R.string.last_updated, it.date.toString()) }
             // rates
             spinnerFrom.adapter = it?.rates?.let { rates ->
                 SpinnerAdapter(this, android.R.layout.simple_spinner_item, rates)
@@ -161,7 +161,11 @@ class MainActivity : AppCompatActivity() {
         })
         ratesModel.getError().observe(this, {
             // error
-            tvDate.text = it
+            it?.let {
+                Snackbar.make(tvCalculations, it, Snackbar.LENGTH_LONG)
+                    .setBackgroundTint(getColor(android.R.color.holo_red_light))
+                    .show()
+            }
         })
 
         // input changed

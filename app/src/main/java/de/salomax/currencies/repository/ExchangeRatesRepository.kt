@@ -1,26 +1,13 @@
 package de.salomax.currencies.repository
 
-import android.app.Application
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.github.kittinunf.fuel.core.isSuccessful
+import de.salomax.currencies.R
 import de.salomax.currencies.model.ExchangeRates
 
 class ExchangeRatesRepository(private val context: Context) {
-
-    companion object {
-        private var instance: ExchangeRatesRepository? = null
-
-        fun getInstance(application: Application): ExchangeRatesRepository {
-            if (instance == null) {
-                synchronized(ExchangeRatesRepository::class) {
-                    instance = ExchangeRatesRepository(application)
-                }
-            }
-            return instance!!
-        }
-    }
 
     private val liveExchangeRates = Database.getInstance(context).getExchangeRates()
     private var liveError = MutableLiveData<String?>()
@@ -36,7 +23,14 @@ class ExchangeRatesRepository(private val context: Context) {
             // error
             else {
                 r.component2()?.let {
-                    liveError.postValue(it.message)
+                    liveError.postValue(
+                        when (it.response.statusCode) {
+                            // no connection
+                            -1 -> context.getString(R.string.error_no_data)
+                            // everything else
+                            else -> context.getString(R.string.error, it.message)
+                        }
+                    )
                 }
             }
         }
