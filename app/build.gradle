@@ -4,18 +4,15 @@ apply plugin: 'kotlin-android-extensions'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion "30.0.2"
+    buildToolsVersion '30.0.2'
 
     defaultConfig {
         applicationId 'de.salomax.currencies'
         minSdkVersion 26
         targetSdkVersion 30
         // SemVer
-        def major = 0
-        def minor = 2
-        def patch = 2
-        versionCode = (major * 10000) + (minor * 100) + patch
-        versionName = "$major ($major.$minor.$patch)"
+        versionName = '0.2.2'
+        versionCode = generateVersionCode(versionName)
         archivesBaseName = "$applicationId-v$versionCode"
     }
 
@@ -76,6 +73,19 @@ dependencies {
     implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.2'
     // test
     testImplementation 'junit:junit:4.13.1'
+}
+
+/**
+ * Generates a versionCode based on the given semVer String.
+ * See e.g. https://proandroiddev.com/keep-salinity-with-your-versioncode-db2089b640b9
+ *
+ * @param semVer e.g. 1.3.1
+ * @return e.g. 10301 (-> 1 03 01)
+ */
+private static int generateVersionCode(String semVer) {
+    return semVer.split('\\.')
+            .collect { Integer.parseInt(it) }
+            .inject { sum, value -> sum * 100 + value }
 }
 
 private String getSecret(String key) {
