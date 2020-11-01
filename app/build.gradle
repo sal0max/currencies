@@ -12,7 +12,7 @@ android {
         targetSdkVersion 30
         // SemVer
         versionName = '0.2.2'
-        versionCode = generateVersionCode(versionName)
+        versionCode = 202
         archivesBaseName = "$applicationId-v$versionCode"
     }
 
@@ -75,6 +75,35 @@ dependencies {
     testImplementation 'junit:junit:4.13.1'
 }
 
+private String getSecret(String key) {
+    File secretsFile = rootProject.file("secrets.properties")
+    if (secretsFile.exists()) {
+        Properties props = new Properties()
+        props.load(new FileInputStream(secretsFile))
+        return props.getProperty(key)
+    } else {
+        return null
+    }
+}
+
+// versionCode <-> versionName /////////////////////////////////////////////////////////////////////
+
+/**
+ * Checks if versionCode and versionName match.
+ * Needed because of F-Droid: both have to be hard-coded and can't be assigned dynamically.
+ * So at least check during build for them to match.
+ */
+task checkVersion {
+    int versionCode = android.defaultConfig.versionCode
+    int correctVersionCode = generateVersionCode(android.defaultConfig.versionName)
+    if (versionCode != correctVersionCode)
+        throw new GradleException(
+                "versionCode and versionName don't match: " +
+                        "versionCode should be $correctVersionCode. Is $versionCode."
+        )
+}
+assemble.dependsOn checkVersion
+
 /**
  * Generates a versionCode based on the given semVer String.
  * See e.g. https://proandroiddev.com/keep-salinity-with-your-versioncode-db2089b640b9
@@ -86,15 +115,4 @@ private static int generateVersionCode(String semVer) {
     return semVer.split('\\.')
             .collect { Integer.parseInt(it) }
             .inject { sum, value -> sum * 100 + value }
-}
-
-private String getSecret(String key) {
-    File secretsFile = rootProject.file("secrets.properties")
-    if (secretsFile.exists()) {
-        Properties props = new Properties()
-        props.load(new FileInputStream(secretsFile))
-        return props.getProperty(key)
-    } else {
-        return null
-    }
 }
