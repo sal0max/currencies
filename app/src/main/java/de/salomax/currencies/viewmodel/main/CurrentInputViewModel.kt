@@ -5,13 +5,14 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Transformations
+import de.salomax.currencies.R
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.model.Rate
 import org.mariuszgromada.math.mxparser.Expression
 import java.lang.StringBuilder
 import java.math.RoundingMode
 
-class CurrentInputViewModel(application: Application) : AndroidViewModel(application) {
+class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx) {
 
     /*
      * calculations ================================================================================
@@ -35,18 +36,20 @@ class CurrentInputViewModel(application: Application) : AndroidViewModel(applica
 
     fun getCurrentInput(): LiveData<String> {
         return Transformations.map(currentValue) {
-            it.humanReadable()
+            it.humanReadable(ctx.getString(R.string.thousands_separator)[0], ctx.getString(R.string.decimal_separator)[0])
         }
     }
 
     fun getCurrentInputConverted(): LiveData<String> {
         return Transformations.map(currentValueConverted) {
-            it.humanReadable()
+            it.humanReadable(ctx.getString(R.string.thousands_separator)[0], ctx.getString(R.string.decimal_separator)[0])
         }
     }
 
     fun getCalculationInput(): LiveData<String?> {
-        return currentCalculation
+        return Transformations.map(currentCalculation) {
+            it?.replace('.', ctx.getString(R.string.decimal_separator)[0])
+        }
     }
 
     fun getCurrencyFrom(): LiveData<String?> {
@@ -281,21 +284,21 @@ fun String.scientificToNatural(): String {
 /**
  * Changes "12345678.12" to "12 345 678.12"
  */
-fun String.humanReadable(): String {
+fun String.humanReadable(thousandsSeparator: Char, decimalSeparator: Char): String {
 
     fun String.groupNumbers(): String {
         val sb = StringBuilder(this.length * 2)
         for ((i, c) in this.reversed().withIndex()) {
-            if (i % 3 == 0)
-                sb.append(' ')
+            if (i % 3 == 0 && i != 0)
+                sb.append(thousandsSeparator)
             sb.append(c)
         }
-        return sb.toString().reversed().trim().replace("- ", "-")
+        return sb.toString().reversed().replace("- ", "-")
     }
 
     return if (this.contains('.')) {
         val split = this.split('.')
-        split[0].groupNumbers() + '.' + split[1]
+        split[0].groupNumbers() + decimalSeparator + split[1]
     } else
         this.groupNumbers()
 }

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator">.</string>
+
+    <string name="desc_toggle_currencies">tausche Währungen</string>
+    <string name="last_updated">Wechselkurs vom %s</string>
+    <string name="copied_to_clipboard">&lt;b>%s&lt;/b> in die Zwischenablage kopiert</string>
+
+    <string name="error">Fehler: %s</string>
+    <string name="error_no_data">Wechselkurse konnten nicht aktualisiert werden. Verbindungsfehler.</string>
+
+    <string name="menu_settings">Einstellungen</string>
+    <string name="title_preferences">@string/menu_settings</string>
+</resources>

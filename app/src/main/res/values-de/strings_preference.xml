@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- settings -->
+    <string name="prefTitle_theme">Design</string>
+    <string-array name="prefEntries_theme">
+        <item>Hell</item>
+        <item>Dunkel</item>
+        <item>Systemstandard</item>
+    </string-array>
+
+    <!-- data source -->
+    <string name="prefTitle_categoryData">Über die Wechselkurse</string>
+    <!-- -->
+    <string name="prefTitle_dataSource">Datenquelle</string>
+    <string name="prefSummary_dataSource">Diese App nutzt die Devisenmarkt-Referenzwerte welche durch die Europäischen Zentralbank veröffentlicht werden.</string>
+    <!-- -->
+    <string name="prefTitle_dataUpdate">Aktualisierungsintervall</string>
+    <string name="prefSummary_dataUpdate">Die Referenzwerte werden üblicherweise um 16:00 MEZ durch die Europäische Zentralbank aktualisiert, außer an Tagen an denen das TARGET-System geschlossen ist. Sie basieren auf dem regelmäßigen täglichen Konzertierungsverfahren zwischen den einzelnen europäischen Zentralbanken, welches üblicherweise um 14:15 MEZ stattfindet.</string>
+    <!-- -->
+    <string name="prefTitle_disclaimer">Haftungsausschluss</string>
+    <string name="prefSummary_disclaimer">Auch wenn diese App sehr sorgfältig geschrieben und getestet ist, <b>besteht keinerlei Garantie, dass die angezeigen Daten korrekt sind</b>. Die Währungskurse werden durch Drittparteien bereitgestellt und diese App hat keinerlei Möglichkeit zu überprüfen, ob diese Daten richtig und aktuell sind.\nAußerdem können die Daten – selbst wenn sie stimmen – von denen abweichen, die deine Bank nutzt.\nZu guter Letzt: Fehler passieren. Vertraue niemals jemandem blind! Sei dennoch versichert, dass ich diese App nicht veröffentlicht hätte, wenn ich an ihr zweifeln würde.</string>
+
+    <!-- prefs -->
+    <string name="prefTitle_categoryAbout">Über diese App</string>
+    <string name="prefTitle_about">Version %1$s</string>
+
+</resources>

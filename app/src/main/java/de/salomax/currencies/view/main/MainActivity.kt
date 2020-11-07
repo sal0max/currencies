@@ -18,6 +18,8 @@ import de.salomax.currencies.R
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
+import java.time.format.DateTimeFormatter
+import java.time.format.FormatStyle
 
 
 class MainActivity : AppCompatActivity() {
@@ -139,8 +141,10 @@ class MainActivity : AppCompatActivity() {
         //exchange rates changed
         ratesModel.getExchangeRate().observe(this, {
             // date
-            it?.let { tvDate.text = getString(R.string.last_updated, it.date.toString()) }
-            // rates
+            it?.let {
+                val date = it.date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
+                tvDate.text = getString(R.string.last_updated, date)
+            }            // rates
             spinnerFrom.adapter = it?.rates?.let { rates ->
                 SpinnerAdapter(this, android.R.layout.simple_spinner_item, rates)
             }

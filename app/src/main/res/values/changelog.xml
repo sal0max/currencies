@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_changelog">Changelog</string>
+    <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog"><b><big>0.2.2</big></b>
+    <string name="changelog" translatable="false"><b><big>1.0.0</big></b>
+        \n
+        \n• Added German translation 🇩🇪
+        \n• Minor improvement: App size decreased by 50%!
+        \n• App seems pretty stable: Public 1.0 release! 🥳🥳🥳
+        \n
+        \n<b><big>0.2.2</big></b>
         \n
         \n• Minor improvements
         \n
