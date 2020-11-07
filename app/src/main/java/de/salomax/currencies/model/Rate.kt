@@ -1,6 +1,10 @@
 package de.salomax.currencies.model
 
+import com.squareup.moshi.Json
+import com.squareup.moshi.JsonClass
+
+@JsonClass(generateAdapter = true)
 data class Rate(
-    val name: String,
-    val value: Float
+    @field:Json(name = "name") val name: String,
+    @field:Json(name = "value") val value: Float
 )

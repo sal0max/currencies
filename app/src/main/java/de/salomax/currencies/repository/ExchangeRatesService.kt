@@ -17,7 +17,7 @@ object ExchangeRatesService {
     fun getRates(result: (Response, Result<ExchangeRates, FuelError>) -> Unit) {
         val base = "EUR"
         val moshi = Moshi.Builder()
-            .add(KotlinJsonAdapterFactory())
+            .addLast(KotlinJsonAdapterFactory())
             .add(RatesAdapter(base))
             .add(LocalDateAdapter())
             .build()
