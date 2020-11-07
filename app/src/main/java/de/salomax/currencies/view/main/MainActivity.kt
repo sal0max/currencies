@@ -144,7 +144,8 @@ class MainActivity : AppCompatActivity() {
             it?.let {
                 val date = it.date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
                 tvDate.text = getString(R.string.last_updated, date)
-            }            // rates
+            }
+            // rates
             spinnerFrom.adapter = it?.rates?.let { rates ->
                 SpinnerAdapter(this, android.R.layout.simple_spinner_item, rates)
             }
