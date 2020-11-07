@@ -13,7 +13,7 @@
     <string name="prefTitle_categoryData">Über die Wechselkurse</string>
     <!-- -->
     <string name="prefTitle_dataSource">Datenquelle</string>
-    <string name="prefSummary_dataSource">Diese App nutzt die Devisenmarkt-Referenzwerte welche durch die Europäischen Zentralbank veröffentlicht werden.</string>
+    <string name="prefSummary_dataSource">Diese App nutzt die Devisenmarkt-Referenzwerte welche durch die Europäische Zentralbank veröffentlicht werden.</string>
     <!-- -->
     <string name="prefTitle_dataUpdate">Aktualisierungsintervall</string>
     <string name="prefSummary_dataUpdate">Die Referenzwerte werden üblicherweise um 16:00 MEZ durch die Europäische Zentralbank aktualisiert, außer an Tagen an denen das TARGET-System geschlossen ist. Sie basieren auf dem regelmäßigen täglichen Konzertierungsverfahren zwischen den einzelnen europäischen Zentralbanken, welches üblicherweise um 14:15 MEZ stattfindet.</string>
