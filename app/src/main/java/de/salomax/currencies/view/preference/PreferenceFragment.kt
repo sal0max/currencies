@@ -7,7 +7,9 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import de.salomax.currencies.BuildConfig
 import de.salomax.currencies.R
+import de.salomax.currencies.util.humanReadableFee
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
+import de.salomax.currencies.widget.EditTextSwitchPreference
 import java.util.*
 
 @Suppress("unused")
@@ -21,11 +23,24 @@ class PreferenceFragment: PreferenceFragmentCompat() {
 
         // theme
         val themePreference = findPreference<ListPreference>(getString(R.string.prefKey_theme))!!
-        themePreference.onPreferenceChangeListener =
-            Preference.OnPreferenceChangeListener { _, newValue ->
-                viewModel.setTheme(newValue.toString().toInt())
-                true
-            }
+        themePreference.setOnPreferenceChangeListener { _, newValue ->
+            viewModel.setTheme(newValue.toString().toInt())
+            true
+        }
+
+        // fee
+        val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.prefKey_fee))!!
+        feePreference.setOnPreferenceChangeListener { _, newValue ->
+            if (newValue is String)
+                viewModel.setFee(newValue.toString().toFloat())
+            else if (newValue is Boolean)
+                viewModel.setFeeEnabled(newValue.toString().toBoolean())
+            true
+        }
+        viewModel.getFee().observe(this, {
+            feePreference.summary = it.humanReadableFee(requireContext())
+            feePreference.text = it.toString()
+        })
 
         // about
         val aboutPreference = findPreference<Preference>(getString(R.string.prefKey_about))!!

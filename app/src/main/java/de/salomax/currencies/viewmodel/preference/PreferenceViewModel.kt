@@ -3,6 +3,7 @@ package de.salomax.currencies.viewmodel.preference
 import android.app.Application
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
 import de.salomax.currencies.repository.Database
 
 class PreferenceViewModel(application: Application) : AndroidViewModel(application) {
@@ -17,6 +18,18 @@ class PreferenceViewModel(application: Application) : AndroidViewModel(applicati
                 else -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
             }
         )
+    }
+
+    fun setFee(fee: Float) {
+        Database.getInstance(getApplication()).setFee(fee)
+    }
+
+    fun getFee(): LiveData<Float> {
+        return Database.getInstance(getApplication()).getFee()
+    }
+
+    fun setFeeEnabled(enabled: Boolean) {
+        Database.getInstance(getApplication()).setFeeEnabled(enabled)
     }
 
 }

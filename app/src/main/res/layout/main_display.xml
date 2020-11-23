@@ -29,6 +29,19 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline" />
 
+    <TextView
+        android:id="@+id/textFee"
+        style="@style/TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin2x"
+        android:gravity="center_vertical|end"
+        android:textColor="@android:color/holo_red_light"
+        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/guideline"
+        tools:text="+ 2.2 %" />
+
     <View
         android:layout_width="0dp"
         android:layout_height=".5dp"
@@ -36,7 +49,7 @@
         android:layout_marginEnd="@dimen/margin2x"
         android:background="@color/displayOverlay"
         app:layout_constraintBottom_toBottomOf="@id/guideline"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textFee"
         app:layout_constraintStart_toEndOf="@id/btn_toggle"
         app:layout_constraintTop_toTopOf="@id/guideline" />
 

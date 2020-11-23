@@ -1,10 +1,7 @@
 package de.salomax.currencies.viewmodel.main
 
 import android.app.Application
-import androidx.lifecycle.AndroidViewModel
-import androidx.lifecycle.LiveData
-import androidx.lifecycle.MutableLiveData
-import androidx.lifecycle.Transformations
+import androidx.lifecycle.*
 import de.salomax.currencies.R
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.model.Rate
@@ -26,8 +23,8 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
         MutableLiveData<String>("0")
     }
 
-    private val currentValueConverted: MutableLiveData<String> by lazy {
-        MutableLiveData<String>("0")
+    private val currentValueConverted: MutableLiveData<Double> by lazy {
+        MutableLiveData<Double>(0.0)
     }
 
     private val currentCalculation: MutableLiveData<String?> by lazy {
@@ -41,8 +38,40 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
     }
 
     fun getCurrentInputConverted(): LiveData<String> {
-        return Transformations.map(currentValueConverted) {
-            it.humanReadable(ctx.getString(R.string.thousands_separator)[0], ctx.getString(R.string.decimal_separator)[0])
+        return MediatorLiveData<String>().apply {
+            var fee: Float? = null
+            var feeEnabled: Boolean? = null
+            var currentValue: Double? = null
+
+            fun update() {
+                if (fee != null && feeEnabled != null && currentValue != null)
+                    this.value =
+                        if (!feeEnabled!!) {
+                            currentValue
+                        } else {
+                            currentValue!! + (currentValue!! * (fee!! / 100))
+                        }.toString()
+                            .scientificToNatural()
+                            .humanReadable(
+                                ctx.getString(R.string.thousands_separator)[0],
+                                ctx.getString(R.string.decimal_separator)[0]
+                            )
+            }
+
+            addSource(currentValueConverted) {
+                currentValue = it
+                update()
+            }
+
+            addSource(getFee()) {
+                fee = it
+                update()
+            }
+
+            addSource(getFeeEnabled()) {
+                feeEnabled = it
+                update()
+            }
         }
     }
 
@@ -62,6 +91,14 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
         return Transformations.map(currentCurrencyTo) {
             getCurrencySymbol(it)
         }
+    }
+
+    fun getFeeEnabled(): LiveData<Boolean> {
+        return Database.getInstance(getApplication()).isFeeEnabled()
+    }
+
+    fun getFee(): LiveData<Float> {
+        return Database.getInstance(getApplication()).getFee()
     }
 
     fun addNumber(value: String) {
@@ -238,8 +275,6 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
                 ?.toDouble()
                 ?.div(rateFrom)
                 ?.times(rateTo)
-                ?.toString()
-                ?.scientificToNatural()
     }
 
 }

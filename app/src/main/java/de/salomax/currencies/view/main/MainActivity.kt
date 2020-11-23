@@ -15,12 +15,12 @@ import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
+import de.salomax.currencies.util.humanReadableFee
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var spinnerFrom: Spinner
     private lateinit var spinnerTo: Spinner
     private lateinit var tvDate: TextView
+    private lateinit var tvFee: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -56,6 +57,7 @@ class MainActivity : AppCompatActivity() {
         this.spinnerFrom = findViewById(R.id.spinnerFrom)
         this.spinnerTo = findViewById(R.id.spinnerTo)
         this.tvDate = findViewById(R.id.textRefreshed)
+        this.tvFee = findViewById(R.id.textFee)
 
         // listeners & stuff
         setListeners()
@@ -188,6 +190,18 @@ class MainActivity : AppCompatActivity() {
         })
         inputModel.getCurrencyTo().observe(this, {
             tvCurrencyTo.text = it
+        })
+
+        // fee changed
+        inputModel.getFeeEnabled().observe(this, {
+            tvFee.visibility = if (it) View.VISIBLE else View.GONE
+        })
+        inputModel.getFee().observe(this, {
+            tvFee.text = it.humanReadableFee(this)
+            tvFee.setTextColor(
+                if (it >= 0) getColor(android.R.color.holo_red_light)
+                else getColor(R.color.dollarBill)
+            )
         })
     }
 

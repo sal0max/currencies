@@ -3,7 +3,7 @@
 
     <!-- settings -->
     <string name="prefTitle_categorySettings" translatable="false">@string/title_preferences</string>
-    <!-- -->
+    <!-- settings/theme -->
     <string name="prefKey_theme" translatable="false">KEY_THEME</string>
     <string name="prefTitle_theme">Design</string>
     <string-array name="prefEntries_theme">
@@ -16,6 +16,10 @@
         <item>1</item>
         <item>2</item>
     </string-array>
+    <!-- settings/fee -->
+    <string name="prefTitle_fee">Foreign transaction fee</string>
+    <string name="prefKey_fee" translatable="false">KEY_FEE</string>
+    <string name="fee_summary">Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. Here you can enter that fee. It will be added on top of the calculation, so you know how much you <i>really</i> pay.</string>
 
     <!-- data source -->
     <string name="prefTitle_categoryData">About the exchange rate data</string>

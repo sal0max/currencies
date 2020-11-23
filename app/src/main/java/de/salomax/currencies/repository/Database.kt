@@ -5,7 +5,9 @@ import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
 import de.salomax.currencies.model.ExchangeRates
+import de.salomax.currencies.util.SharedPreferenceBooleanLiveData
 import de.salomax.currencies.util.SharedPreferenceExchangeRatesLiveData
+import de.salomax.currencies.util.SharedPreferenceFloatLiveData
 
 import java.time.LocalDate
 
@@ -78,6 +80,8 @@ class Database(context: Context) {
      */
     private val prefs: SharedPreferences = context.getSharedPreferences("prefs", MODE_PRIVATE)
 
+    /* theme */
+
     fun setTheme(theme: Int) {
         prefs.apply {
             edit().putInt("_theme", theme).apply()
@@ -86,6 +90,28 @@ class Database(context: Context) {
 
     fun getTheme(): Int {
         return prefs.getInt("_theme", 2)
+    }
+
+    /* fee */
+
+    fun setFeeEnabled(enabled: Boolean) {
+        prefs.apply {
+            edit().putBoolean("_feeEnabled", enabled).apply()
+        }
+    }
+
+    fun isFeeEnabled(): LiveData<Boolean> {
+        return SharedPreferenceBooleanLiveData(prefs, "_feeEnabled", false)
+    }
+
+    fun setFee(fee: Float) {
+        prefs.apply {
+            edit().putFloat("_fee", fee).apply()
+        }
+    }
+
+    fun getFee(): LiveData<Float> {
+        return SharedPreferenceFloatLiveData(prefs, "_fee", 2.2f)
     }
 
 }

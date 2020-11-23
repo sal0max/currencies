@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <PreferenceCategory android:title="@string/prefTitle_categorySettings">
         <ListPreference
@@ -9,6 +11,13 @@
             android:key="@string/prefKey_theme"
             android:summary="%s"
             android:title="@string/prefTitle_theme" />
+
+        <de.salomax.currencies.widget.EditTextSwitchPreference
+            android:dialogLayout="@layout/preference_dialog_fee"
+            android:dialogMessage="@string/fee_summary"
+            android:key="@string/prefKey_fee"
+            android:title="@string/prefTitle_fee"
+            tools:summary="2.0 %" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/prefTitle_categoryData">
