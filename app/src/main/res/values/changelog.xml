@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b><big>1.1.0</big></b>
+    <string name="changelog" translatable="false"><b><big>1.1.1</big></b>
+        \n
+        \n• Fixed a typo
+        \n
+        \n<b><big>1.1.0</big></b>
         \n
         \nDepending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions.
         \nYou can now include that fee in the calculations, so you know how much you really pay. 🙂
