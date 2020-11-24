@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources xmlns:tools="http://schemas.android.com/tools">
+<resources>
 
     <!-- settings/theme -->
     <string name="prefTitle_theme">Design</string>
@@ -10,7 +10,7 @@
     </string-array>
     <!-- settings/fee -->
     <string name="prefTitle_fee">Fremdwährungsgebühr</string>
-    <string name="fee_summary">In den Konditionen mancher Kreditkarten sind Gebühren für den Einsatz im Ausland bzw. mit Fremdwährungen enthalten. Hier kannst du die Gebühr deiner Karte eintragen. Sie wird dann auf alle Umrechnungen aufgeschlagen, damit du weiß, wie viel du <i>wirklich</i> zahlst.</string>
+    <string name="fee_summary">In den Konditionen mancher Kreditkarten sind Gebühren für den Einsatz im Ausland bzw. mit Fremdwährungen enthalten. Hier kannst du die Gebühr deiner Karte eintragen. Sie wird dann auf alle Umrechnungen aufgeschlagen, damit du weißt, wie viel du <i>wirklich</i> zahlst.</string>
 
     <!-- data source -->
     <string name="prefTitle_categoryData">Über die Wechselkurse</string>
