@@ -12,8 +12,8 @@ android {
         minSdkVersion 26
         targetSdkVersion 30
         // SemVer
-        versionName = '1.1.0'
-        versionCode = 10100
+        versionName = '1.1.1'
+        versionCode = 10101
         archivesBaseName = "$applicationId-v$versionCode"
     }
 
@@ -100,7 +100,7 @@ private String getSecret(String key) {
  * Needed because of F-Droid: both have to be hard-coded and can't be assigned dynamically.
  * So at least check during build for them to match.
  */
-task checkVersion {
+task checkVersion doLast {
     int versionCode = android.defaultConfig.versionCode
     int correctVersionCode = generateVersionCode(android.defaultConfig.versionName)
     if (versionCode != correctVersionCode)
@@ -110,6 +110,19 @@ task checkVersion {
         )
 }
 assemble.dependsOn checkVersion
+
+/**
+ * Checks if a fastlane changelog for the current version is present.
+ */
+task checkFastlaneChangelog doLast {
+    int versionCode = android.defaultConfig.versionCode
+    File changelogFile = file("$rootDir/fastlane/metadata/android/en-US/changelogs/${versionCode}.txt")
+    if (!changelogFile.exists())
+        throw new GradleException(
+                "Fastlane changelog missing: expecting file '$changelogFile'"
+        )
+}
+build.dependsOn checkFastlaneChangelog
 
 /**
  * Generates a versionCode based on the given semVer String.
