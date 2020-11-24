@@ -1,1 +1,1 @@
-* fixed a typo
+* Minor improvements (typo \'n stuff)

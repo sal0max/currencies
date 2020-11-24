@@ -328,7 +328,8 @@ fun String.humanReadable(thousandsSeparator: Char, decimalSeparator: Char): Stri
                 sb.append(thousandsSeparator)
             sb.append(c)
         }
-        return sb.toString().reversed().replace("- ", "-")
+        return sb.toString().reversed()
+            .replace("-$thousandsSeparator", "-") // (- 278,57 -> -258,57) or (-.278,57 -> -258,57)
     }
 
     return if (this.contains('.')) {
