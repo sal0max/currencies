@@ -11,6 +11,24 @@ buildscript {
    }
 }
 
+// dependency-update-checker: gradle dependencyUpdates
+plugins {
+   id "com.github.ben-manes.versions" version "0.36.0"
+}
+// only check for stable versions
+dependencyUpdates.resolutionStrategy {
+   componentSelection { rules ->
+      rules.all { ComponentSelection selection ->
+         boolean rejected = ['alpha', 'beta', 'rc', 'cr', 'm', 'preview'].any { qualifier ->
+            selection.candidate.version ==~ /(?i).*[.-]${qualifier}[.\d-]*/
+         }
+         if (rejected) {
+            selection.reject('Release candidate')
+         }
+      }
+   }
+}
+
 allprojects {
    repositories {
       google()
