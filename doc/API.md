@@ -1,14 +1,73 @@
 # APIs
 
-There are a number of (free) currency rate APIs available. They all are designed basically the same,
+There are a number of (free) currency rate APIs available. Most are designed basically the same,
 so it should be possible to switch APIs without having to change the data model too much.
 
-This app currently uses *exchangeratesapi.io*. It's free and reliable.
+This app currently uses **exchangeratesapi.io**. It's free and reliable.
 
-service                                  | free api requests/month | currencies | updates                                        | data source
----------------------------------------- | ----------------------- | ---------- | ---------------------------------------------- | --------------------------------
-exchangeratesapi.io                      | unlimited               |  32        | once/day                                       | European Central Bank
-frankfurter.app                          | unlimited               |  32        | once/day                                       | European Central Bank
-fixer.io                                 | 1000                    | 168        | hourly (free) or faster, depending on the plan | *"Exchange rate data delivered by the Fixer API is collected from over 15 reliable data sources, every minute. Sources include banks and financial data providers."*
-openexchangerates.org                    | 1000                    | 171        | hourly (free) or faster, depending on the plan | *"collected from multiple reliable providers"*
-coincalc.samruston.co.uk/currencies.json | secret API of CoinCalc  | 776        | ?                                              | ?
+| service                                                       | free api requests/month  | format | currencies | updates                                        | data source                                                                                                                                                          |
+|---------------------------------------------------------------|--------------------------|--------|------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| https://exchangeratesapi.io                                   | unlimited                | json   | 33         | once/day                                       | European Central Bank                                                                                                                                                |
+| https://www.frankfurter.app                                   | unlimited                | json   | 33         | once/day                                       | European Central Bank                                                                                                                                                |
+| https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml | unlimited                | xml    | 33         |                                                |                                                                                                                                                                      |
+| https://www.imf.org/external/np/fin/data/rms_five.aspx        | unlimited                | xls    | 39         |                                                |                                                                                                                                                                      |
+| https://fixer.io                                              | 1000                     | json   | 168        | hourly (free) or faster, depending on the plan | *"Exchange rate data delivered by the Fixer API is collected from over 15 reliable data sources, every minute. Sources include banks and financial data providers."* |
+| https://openexchangerates.org                                 | 1000                     | json   | 171        | hourly (free) or faster, depending on the plan | *"collected from multiple reliable providers"*                                                                                                                       |
+| https://coincalc.samruston.co.uk/currencies.json              | "secret" API of CoinCalc | json   | 776        | ?                                              | ?                                                                                                                                                                    |
+
+
+
+
+## Comparison of ECB and IMF data
+
+ECB and IMF are both free and *offical* data providers. However, they also both offer only limited currencies.
+
+| Currency            | ISO 4217 | [ECB]    | [IMF]    |
+| ------------------- | -------- | -------- | -------- |
+| U.A.E. dirham       | AED      | -        | ✓        |
+| Australian dollar   | AUD      | ✓        | ✓        |
+| Bulgarian lev       | BGN      | ✓        | -        |
+| Brunei dollar       | BND      | -        | ✓        |
+| Brazilian real      | BRL      | ✓        | ✓        |
+| Botswana pula       | BWP      | -        | ✓        |
+| Canadian dollar     | CAD      | ✓        | ✓        |
+| Swiss franc         | CHF      | ✓        | ✓        |
+| Chilean peso        | CLP      | -        | ✓        |
+| Chinese yuan        | CNY      | ✓        | ✓        |
+| Colombian peso      | COP      | -        | ✓        |
+| Czech koruna        | CZK      | ✓        | ✓        |
+| Danish krone        | DKK      | ✓        | ✓        |
+| Algerian dinar      | DZD      | -        | ✓        |
+| Euro                | EUR      | ✓        | ✓        |
+| U.K. pound          | GBP      | ✓        | ✓        |
+| Hong Kong dollar    | HKD      | ✓        | -        |
+| Croatian kuna       | HRK      | ✓        | -        |
+| Hungarian forint    | HUF      | ✓        | -        |
+| Indonesian rupiah   | IDR      | ✓        | -        |
+| Israeli New Shekel  | ILS      | ✓        | ✓        |
+| Indian rupee        | INR      | ✓        | ✓        |
+| Icelandic króna     | ISK      | ✓        | -        |
+| Japanese yen        | JPY      | ✓        | ✓        |
+| Korean won          | KRW      | ✓        | ✓        |
+| Kuwaiti dinar       | KWD      | -        | ✓        |
+| Mauritian rupee     | MUR      | -        | ✓        |
+| Mexican peso        | MXN      | ✓        | ✓        |
+| Malaysian ringgit   | MYR      | ✓        | ✓        |
+| Norwegian krone     | NOK      | ✓        | ✓        |
+| New Zealand dollar  | NZD      | ✓        | ✓        |
+| Omani rial          | OMR      | -        | ✓        |
+| Peruvian sol        | PEN      | -        | ✓        |
+| Philippine peso     | PHP      | ✓        | ✓        |
+| Polish zloty        | PLN      | ✓        | ✓        |
+| Qatari riyal        | QAR      | -        | ✓        |
+| Romanian leu        | RON      | ✓        | -        |
+| Russian ruble       | RUB      | ✓        | ✓        |
+| Saudi Arabian riyal | SAR      | -        | ✓        |
+| Swedish krona       | SEK      | ✓        | ✓        |
+| Singapore dollar    | SGD      | ✓        | ✓        |
+| Thai baht           | THB      | ✓        | ✓        |
+| Turkish lira        | TRY      | ✓        | -        |
+| Trinidadian dollar  | TTD      | -        | ✓        |
+| U.S. dollar         | USD      | ✓        | ✓        |
+| Uruguayan peso      | UYU      | -        | ✓        |
+| South African rand  | ZAR      | ✓        | ✓        |
