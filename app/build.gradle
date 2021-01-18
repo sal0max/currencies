@@ -5,7 +5,7 @@ apply plugin: 'kotlin-kapt'
 
 android {
     compileSdkVersion 30
-    buildToolsVersion '30.0.2'
+    buildToolsVersion '30.0.3'
 
     defaultConfig {
         applicationId 'de.salomax.currencies'
@@ -69,7 +69,7 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.1.1'
     implementation 'com.google.android.material:material:1.2.1'
     // downloader
-    def fuelVersion = '2.3.0'
+    def fuelVersion = '2.3.1'
     implementation "com.github.kittinunf.fuel:fuel:$fuelVersion"
     implementation "com.github.kittinunf.fuel:fuel-android:$fuelVersion"
     implementation "com.github.kittinunf.fuel:fuel-moshi:$fuelVersion"
