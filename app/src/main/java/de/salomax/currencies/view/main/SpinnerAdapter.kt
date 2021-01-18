@@ -31,9 +31,9 @@ class SpinnerAdapter(context: Context, resource: Int, private val objects: List<
      * @param name e.g. "AUD", "EUR" or "USD"
      * @returns the position of the Rate for the given string.
      */
-    fun getPosition(name: String): Int? {
+    fun getPosition(name: String): Int {
         return objects.indexOf(
-            objects.find { it ->
+            objects.find {
                 it.name == name
             }
         )

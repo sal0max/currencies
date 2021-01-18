@@ -42,7 +42,7 @@ object ExchangeRatesService {
         @Synchronized
         @FromJson
         @Throws(IOException::class)
-        override fun fromJson(reader: JsonReader): List<Rate>? {
+        override fun fromJson(reader: JsonReader): List<Rate> {
             val list = mutableListOf<Rate>()
             reader.beginObject()
             // convert
