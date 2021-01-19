@@ -3,7 +3,9 @@ package de.salomax.currencies.viewmodel.main
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
 import de.salomax.currencies.model.ExchangeRates
+import de.salomax.currencies.model.Rate
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
 import java.time.*
@@ -41,7 +43,54 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
     }
 
     fun getExchangeRate(): LiveData<ExchangeRates?> {
-        return dbLiveItems
+        val liveItems = MediatorLiveData<ExchangeRates?>()
+        liveItems.addSource(dbLiveItems) { exchangeRates ->
+            exchangeRates?.let {
+                liveItems.value = ExchangeRates(
+                    exchangeRates.base,
+                    exchangeRates.date,
+                    exchangeRates.rates.toMutableList().apply {
+                        // pegged to USD
+                        it.rates.find { it.name == "USD" }?.value?.let { usd ->
+                            // middle east
+                            add(Rate("AED", usd * 3.6725f))    // United Arab Emirates dirham
+                            add(Rate("BHD", usd * 0.376f))     // Bahraini dinar
+                            add(Rate("JOD", usd * 0.709f))     // Jordanian dinar
+                            add(Rate("LBP", usd * 1507.5f))    // Lebanese pound
+                            add(Rate("OMR", usd * 2.6008f))    // Omani rial
+                            add(Rate("QAR", usd * 3.64f))      // Qatari riyal
+                            add(Rate("SAR", usd * 3.75f))      // Saudi riyal
+                            // caribbean
+                            add(Rate("AWG", usd * 1.79f))      // Aruban florin
+                            add(Rate("BBD", usd * 2f))         // Barbadian dollar
+                            add(Rate("BSD", usd))              // Bahamian dollar
+                            add(Rate("BZD", usd * 1.97f))      // Belize dollar
+                            add(Rate("CUC", usd * 1f))         // Cuban convertible peso
+                            add(Rate("XCD", usd * 2.7f))       // Eastern Caribbean dollar (Antigua and Barbuda/Dominica/Grenada/Saint Kitts and Nevis/Saint Lucia/and Saint Vincent and the Grenadines/Anguilla/Montserrat)
+                        }
+                        // pegged to EUR
+                        it.rates.find { it.name == "EUR" }?.value?.let { eur ->
+                            add(Rate("BAM", eur * 1.95583f))   // Bosnia and Herzegovina convertible mark
+                            //add(Rate("XAF", eur * 655.957f)) // Central African CFA franc (Cameroon/Central African Republic/Chad/Republic of the Congo/Equatorial Guinea/Gabon)
+                            //add(Rate("XOF", eur * 655.957f)) // West African CFA franc (Benin/Burkina Faso/Côte d'Ivoire/Guinea-Bissau/Mali/Niger/Senegal/Togo)
+                        }
+                        // pegged to DKK
+                        it.rates.find { it.name == "DKK" }?.value?.let { dkk ->
+                            add(Rate("FOK", dkk))              // Faroese króna (same as Danish krone)
+                        }
+                        // pegged to INR
+                        it.rates.find { it.name == "INR" }?.value?.let { inr ->
+                            add(Rate("NPR", inr * 1.6f))       // Nepalese rupee
+                        }
+                        // pegged to ZAR
+                        it.rates.find { it.name == "ZAR" }?.value?.let { zar ->
+                            add(Rate("NAD", zar))              // Namibian dollar
+                        }
+                    }.sortedBy { rate -> rate.name }.toList()
+                )
+            }
+        }
+        return liveItems
     }
 
     /*
