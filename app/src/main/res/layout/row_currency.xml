@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:padding="@dimen/margin2x">
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:padding="@dimen/margin2x"
+    tools:ignore="UseCompoundDrawables">
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:layout_marginTop="4dp"
         android:layout_marginBottom="4dp"
-        app:layout_constraintBottom_toBottomOf="@id/text"
-        app:layout_constraintDimensionRatio="21:15"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/text"
         tools:ignore="ContentDescription"
         tools:src="@drawable/flag_eu" />
 
@@ -26,10 +24,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin2x"
-        android:layout_marginEnd="@dimen/margin2x"
+        android:ellipsize="end"
         android:gravity="center_vertical"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/image"
-        app:layout_constraintTop_toTopOf="parent"
+        android:lines="1"
         tools:text="EUR" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
