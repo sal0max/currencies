@@ -51,7 +51,7 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
                     exchangeRates.date,
                     exchangeRates.rates.toMutableList().apply {
                         // pegged to USD
-                        it.rates.find { it.name == "USD" }?.value?.let { usd ->
+                        it.rates.find { it.code == "USD" }?.value?.let { usd ->
                             // middle east
                             add(Rate("AED", usd * 3.6725f))    // United Arab Emirates dirham
                             add(Rate("BHD", usd * 0.376f))     // Bahraini dinar
@@ -69,24 +69,24 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
                             add(Rate("XCD", usd * 2.7f))       // Eastern Caribbean dollar (Antigua and Barbuda/Dominica/Grenada/Saint Kitts and Nevis/Saint Lucia/and Saint Vincent and the Grenadines/Anguilla/Montserrat)
                         }
                         // pegged to EUR
-                        it.rates.find { it.name == "EUR" }?.value?.let { eur ->
+                        it.rates.find { it.code == "EUR" }?.value?.let { eur ->
                             add(Rate("BAM", eur * 1.95583f))   // Bosnia and Herzegovina convertible mark
                             //add(Rate("XAF", eur * 655.957f)) // Central African CFA franc (Cameroon/Central African Republic/Chad/Republic of the Congo/Equatorial Guinea/Gabon)
                             //add(Rate("XOF", eur * 655.957f)) // West African CFA franc (Benin/Burkina Faso/Côte d'Ivoire/Guinea-Bissau/Mali/Niger/Senegal/Togo)
                         }
                         // pegged to DKK
-                        it.rates.find { it.name == "DKK" }?.value?.let { dkk ->
+                        it.rates.find { it.code == "DKK" }?.value?.let { dkk ->
                             add(Rate("FOK", dkk))              // Faroese króna (same as Danish krone)
                         }
                         // pegged to INR
-                        it.rates.find { it.name == "INR" }?.value?.let { inr ->
+                        it.rates.find { it.code == "INR" }?.value?.let { inr ->
                             add(Rate("NPR", inr * 1.6f))       // Nepalese rupee
                         }
                         // pegged to ZAR
-                        it.rates.find { it.name == "ZAR" }?.value?.let { zar ->
+                        it.rates.find { it.code == "ZAR" }?.value?.let { zar ->
                             add(Rate("NAD", zar))              // Namibian dollar
                         }
-                    }.sortedBy { rate -> rate.name }.toList()
+                    }.sortedBy { rate -> rate.code }.toList()
                 )
             }
         }

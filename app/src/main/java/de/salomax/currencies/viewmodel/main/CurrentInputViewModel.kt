@@ -254,8 +254,8 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
      */
     private fun saveSelectedCurrencies() {
         Database.getInstance(getApplication()).saveLastUsedRates(
-            currentCurrencyFrom.value?.name,
-            currentCurrencyTo.value?.name
+            currentCurrencyFrom.value?.code,
+            currentCurrencyTo.value?.code
         )
     }
 
@@ -343,7 +343,7 @@ fun String.humanReadable(thousandsSeparator: Char, decimalSeparator: Char): Stri
  * Adds the proper currency symbol as prefix to the given String
  */
 private fun getCurrencySymbol(rate: Rate?): String? {
-    return when (rate?.name) {
+    return when (rate?.code) {
         "AED" -> "د.إ"
         "AUD" -> "$"
         "AWG" -> "Afl."

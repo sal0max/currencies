@@ -40,7 +40,7 @@ class Database(context: Context) {
             editor.putString("_date", items.date.toString())
             editor.putString("_base", items.base)
             for (rate in items.rates) {
-                editor.putFloat(rate.name, rate.value)
+                editor.putFloat(rate.code, rate.value)
             }
             // persist
             editor.apply()
