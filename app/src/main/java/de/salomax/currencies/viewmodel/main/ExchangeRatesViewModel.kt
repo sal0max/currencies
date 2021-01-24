@@ -65,8 +65,8 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
                             add(Rate("BBD", usd * 2f))         // Barbadian dollar
                             add(Rate("BSD", usd))              // Bahamian dollar
                             add(Rate("BZD", usd * 1.97f))      // Belize dollar
-                            add(Rate("CUC", usd * 1f))         // Cuban convertible peso
-                            add(Rate("XCD", usd * 2.7f))       // Eastern Caribbean dollar (Antigua and Barbuda/Dominica/Grenada/Saint Kitts and Nevis/Saint Lucia/and Saint Vincent and the Grenadines/Anguilla/Montserrat)
+                            add(Rate("CUC", usd))              // Cuban convertible peso
+                            add(Rate("XCD", usd * 2.7f))       // Eastern Caribbean dollar (Antigua and Barbuda/Dominica/Grenada/Saint Kitts and Nevis/Saint Lucia/Saint Vincent and the Grenadines/Anguilla/Montserrat)
                         }
                         // pegged to EUR
                         it.rates.find { it.code == "EUR" }?.value?.let { eur ->
