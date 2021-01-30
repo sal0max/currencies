@@ -1,0 +1,3 @@
+* 17 new currencies! That's now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …
+* To stay on top of all those new choices, a search is now available in the currency picker.
+* The picker now also shows a currency's full name, not only its code. An awesome addition, in combination with the search. Try it out!

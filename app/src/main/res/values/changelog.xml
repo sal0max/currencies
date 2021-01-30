@@ -2,46 +2,42 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b><big>1.1.1</big></b>
+    <string name="changelog" translatable="false"><b><big>1.2.0</big></b>
+        \n• <b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …
+        \n• To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.
+        \n• The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!
         \n
+        \n<b><big>1.1.1</big></b>
         \n• Minor improvements (typo \'n stuff)
         \n
         \n<b><big>1.1.0</big></b>
-        \n
         \nDepending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions.
         \nYou can now include that fee in the calculations, so you know how much you really pay. 🙂
         \n
         \n<b><big>1.0.1</big></b>
-        \n
         \n• Fix possible crash on Android 11
         \n
         \n<b><big>1.0.0</big></b>
-        \n
         \n• Added German translation 🇩🇪
         \n• Minor improvement: App size decreased by 50%!
         \n• App seems pretty stable: Public 1.0 release! 🥳🥳🥳
         \n
         \n<b><big>0.2.2</big></b>
-        \n
         \n• Minor improvements
         \n
         \n<b><big>0.2.1</big></b>
-        \n
         \n• Better error handling
         \n• Minor improvements
         \n
         \n<b><big>0.2.0</big></b>
-        \n
         \n• Added a copy function: Long click on the value you want to copy
         \n
         \n<b><big>0.1.0</big></b>
-        \n
         \n• More fail-proof updating of the currency rates
         \n• Added a disclaimer
         \n• Added this changelog
         \n
         \n<b><big>0.0.1</big></b>
-        \n
         \n• Initial pre-release
     </string>
 
