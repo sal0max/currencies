@@ -19,6 +19,7 @@ import de.salomax.currencies.util.humanReadableFee
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
+import de.salomax.currencies.view.main.searchablespinner.SearchableSpinner
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
@@ -32,7 +33,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvTo: TextView
     private lateinit var tvCurrencyFrom: TextView
     private lateinit var tvCurrencyTo: TextView
-    private lateinit var spinnerFrom: Spinner
+    private lateinit var spinnerFrom: SearchableSpinner
     private lateinit var spinnerTo: Spinner
     private lateinit var tvDate: TextView
     private lateinit var tvFee: TextView

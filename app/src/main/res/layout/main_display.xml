@@ -55,7 +55,7 @@
 
     <!-- top main_display -->
 
-    <Spinner
+    <de.salomax.currencies.view.main.searchablespinner.SearchableSpinner
         android:id="@+id/spinnerFrom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -116,7 +116,7 @@
 
     <!-- bottom main_display -->
 
-    <Spinner
+    <de.salomax.currencies.view.main.searchablespinner.SearchableSpinner
         android:id="@+id/spinnerTo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
