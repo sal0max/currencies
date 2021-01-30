@@ -19,6 +19,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
 * Currency data is provided on a daily basis by the European Central Bank.
 * The UI is simple and pure Material Design.
 * A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
+* Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
 * **Currencies** is written for Android in Kotlin, targeting Android 11 and supporting light and dark themes.
 * The app is ad-free and doesn't spy on the user.
 
@@ -32,7 +33,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
 
 
 ## License
-Copyright 2020 Maximilian Salomon
+Copyright 2021 Maximilian Salomon
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
