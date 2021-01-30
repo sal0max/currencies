@@ -15,7 +15,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
 
 ## Features
 
-* It supports the most relevant currencies.
+* It supports the most relevant currencies. Currently counting 50!
 * Currency data is provided on a daily basis by the European Central Bank.
 * The UI is simple and pure Material Design.
 * A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
