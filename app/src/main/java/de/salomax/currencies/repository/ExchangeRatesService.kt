@@ -3,6 +3,7 @@ package de.salomax.currencies.repository
 import com.github.kittinunf.fuel.Fuel
 import com.github.kittinunf.fuel.core.FuelError
 import com.github.kittinunf.fuel.core.Response
+import com.github.kittinunf.fuel.core.ResponseResultOf
 import com.github.kittinunf.fuel.moshi.moshiDeserializerOf
 import com.github.kittinunf.result.Result
 import com.squareup.moshi.*
@@ -32,6 +33,11 @@ object ExchangeRatesService {
             }
     }
 
+    fun getRatesBlocking(): ResponseResultOf<ExchangeRates> {
+        return Fuel
+            .get(endpoint)
+            .responseObject(moshiDeserializerOf(moshi))
+    }
 
     /*
      * Converts currency object to array of currencies.
