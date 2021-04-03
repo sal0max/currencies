@@ -15,5 +15,6 @@
     <string name="error_api_error">There was an API error. Please try again later.</string>
 
     <string name="menu_settings">Settings</string>
+    <string name="menu_refresh">Refresh rates</string>
     <string name="title_preferences">@string/menu_settings</string>
 </resources>

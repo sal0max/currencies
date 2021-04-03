@@ -17,6 +17,8 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
     private var dbLiveItems: LiveData<ExchangeRates?>
     private val liveError = repository.getError()
 
+    private var isUpdating: LiveData<Boolean> = repository.isUpdating()
+
     /*
      * items =======================================================================================
      */
@@ -81,12 +83,17 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
         return liveItems
     }
 
+    fun forceUpdateExchangeRate() {
+        if (isUpdating.value != true)
+            dbLiveItems = repository.getExchangeRates()
+    }
+
     /*
      * error =======================================================================================
      */
 
-    fun getError(): LiveData<String?> {
-        return liveError
-    }
+    fun getError(): LiveData<String?> = liveError
+
+    fun isUpdating(): LiveData<Boolean> = isUpdating
 
 }

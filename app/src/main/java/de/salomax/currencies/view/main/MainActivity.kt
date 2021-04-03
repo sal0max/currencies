@@ -13,6 +13,7 @@ import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
 import de.salomax.currencies.util.humanReadableFee
@@ -28,6 +29,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var ratesModel: ExchangeRatesViewModel
     private lateinit var inputModel: CurrentInputViewModel
 
+    private lateinit var refreshIndicator: LinearProgressIndicator
     private lateinit var tvCalculations: TextView
     private lateinit var tvFrom: TextView
     private lateinit var tvTo: TextView
@@ -50,6 +52,7 @@ class MainActivity : AppCompatActivity() {
         this.inputModel = ViewModelProvider(this).get(CurrentInputViewModel::class.java)
 
         // views
+        this.refreshIndicator = findViewById(R.id.refreshIndicator)
         this.tvCalculations = findViewById(R.id.textCalculations)
         this.tvFrom = findViewById(R.id.textFrom)
         this.tvTo = findViewById(R.id.textTo)
@@ -77,6 +80,10 @@ class MainActivity : AppCompatActivity() {
         return when (item.itemId) {
             R.id.settings -> {
                 startActivity(Intent(this, PreferenceActivity().javaClass))
+                true
+            }
+            R.id.refresh -> {
+                ratesModel.forceUpdateExchangeRate()
                 true
             }
             else -> super.onOptionsItemSelected(item)
@@ -174,6 +181,9 @@ class MainActivity : AppCompatActivity() {
                     .setBackgroundTint(getColor(android.R.color.holo_red_light))
                     .show()
             }
+        })
+        ratesModel.isUpdating().observe(this, { isRefreshing ->
+            refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
         })
 
         // input changed

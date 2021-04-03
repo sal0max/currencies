@@ -11,12 +11,17 @@ class ExchangeRatesRepository(private val context: Context) {
 
     private val liveExchangeRates = Database.getInstance(context).getExchangeRates()
     private var liveError = MutableLiveData<String?>()
+    private var isUpdating = MutableLiveData(false)
 
     // call api
     fun getExchangeRates(): LiveData<ExchangeRates?> {
+        isUpdating.postValue(true)
+
         ExchangeRatesService.getRates { response, r ->
             // received some json
             if (response.isSuccessful && r.component1() != null ) {
+                isUpdating.postValue(false)
+
                 // SUCCESS! update /store rates to preferences
                 if (r.component1()!!.success == null || r.component1()!!.success == true) {
                     Database.getInstance(context).insertExchangeRates(r.component1()!!)
@@ -34,6 +39,8 @@ class ExchangeRatesRepository(private val context: Context) {
             }
             // generic network error
             else {
+                isUpdating.postValue(false)
+
                 r.component2()?.let {
                     liveError.postValue(
                         when (it.response.statusCode) {
@@ -52,6 +59,10 @@ class ExchangeRatesRepository(private val context: Context) {
 
     fun getError(): LiveData<String?> {
         return liveError
+    }
+
+    fun isUpdating(): LiveData<Boolean> {
+        return isUpdating
     }
 
 }
