@@ -9,7 +9,7 @@
     <!-- guideline -->
 
     <androidx.constraintlayout.widget.Guideline
-        android:id="@+id/guideline"
+        android:id="@+id/guideline_display"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:orientation="horizontal"
@@ -25,9 +25,9 @@
         android:contentDescription="@string/desc_toggle_currencies"
         android:onClick="toggleEvent"
         android:src="@drawable/ic_swap_vert"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_display"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline" />
+        app:layout_constraintTop_toTopOf="@+id/guideline_display" />
 
     <TextView
         android:id="@+id/textFee"
@@ -37,9 +37,9 @@
         android:layout_margin="@dimen/margin2x"
         android:gravity="center_vertical|end"
         android:textColor="@android:color/holo_red_light"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_display"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline"
+        app:layout_constraintTop_toTopOf="@+id/guideline_display"
         tools:text="+ 2.2 %" />
 
     <View
@@ -48,10 +48,10 @@
         android:layout_marginStart="@dimen/margin2x"
         android:layout_marginEnd="@dimen/margin2x"
         android:background="@color/displayOverlay"
-        app:layout_constraintBottom_toBottomOf="@id/guideline"
+        app:layout_constraintBottom_toBottomOf="@id/guideline_display"
         app:layout_constraintEnd_toStartOf="@id/textFee"
         app:layout_constraintStart_toEndOf="@id/btn_toggle"
-        app:layout_constraintTop_toTopOf="@id/guideline" />
+        app:layout_constraintTop_toTopOf="@id/guideline_display" />
 
     <TextView
         android:id="@+id/textRefreshed"
@@ -93,7 +93,7 @@
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:scrollbars="none"
-        app:layout_constraintBottom_toTopOf="@+id/guideline"
+        app:layout_constraintBottom_toTopOf="@+id/guideline_display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
         app:layout_constraintTop_toTopOf="parent">
@@ -144,7 +144,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
-        app:layout_constraintTop_toTopOf="@+id/guideline">
+        app:layout_constraintTop_toTopOf="@+id/guideline_display">
 
         <LinearLayout
             android:id="@+id/clickTo"
