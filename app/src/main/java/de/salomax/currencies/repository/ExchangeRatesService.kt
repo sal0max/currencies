@@ -41,7 +41,7 @@ object ExchangeRatesService {
 
     /*
      * Converts currency object to array of currencies.
-     * Also adds the base currency with value "1".
+     * Also removes some unwanted values and adds some wanted ones.
      */
     internal class RatesAdapter(private val base: String) : JsonAdapter<List<Rate>>() {
 
@@ -55,11 +55,32 @@ object ExchangeRatesService {
             while (reader.hasNext()) {
                 val name: String = reader.nextName()
                 val value: Double = reader.nextDouble()
-                list.add(Rate(name, value.toFloat()))
+                // filter these:
+                if (name != "BTC" // Bitcoin
+                    && name != "CLF" // Unidad de Fomento
+                    && name != "XDR" // special drawing rights
+                    && name != "XAG" // silver
+                    && name != "XAU" // gold
+                    && name != "XPD" // palladium
+                    && name != "XPT" // platinum
+                    && name != "MRO" // Mauritanian ouguiya (pre-2018)
+                    && name != "STD" // São Tomé and Príncipe dobra (pre-2018)
+                    && name != "VEF" // Venezuelan bolívar fuerte (old)
+                    && name != "CNH" // Chinese renminbi (Offshore)
+                    && name != "CUP" // Cuban peso (moneda nacional)
+                ) {
+                    list.add(Rate(name, value.toFloat()))
+                }
             }
-            // add base
-            list.add(Rate(base, 1f))
             reader.endObject()
+            // add base - but only if it's missing in the api response!
+            if (list.find { rate -> rate.code == base } == null)
+                list.add(Rate(base, 1f))
+            // also add Faroese króna (same as Danish krone) if it isn't already there - I simply like it!
+            if (list.find { it.code == "FOK" } == null)
+                list.find { it.code == "DKK" }?.value?.let { dkk ->
+                    list.add(Rate("FOK", dkk))
+                }
             return list
         }
 

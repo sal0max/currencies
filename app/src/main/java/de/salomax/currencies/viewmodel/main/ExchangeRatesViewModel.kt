@@ -5,7 +5,6 @@ import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
 import de.salomax.currencies.model.ExchangeRates
-import de.salomax.currencies.model.Rate
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
 import java.time.*
@@ -47,37 +46,7 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
         val liveItems = MediatorLiveData<ExchangeRates?>()
         liveItems.addSource(dbLiveItems) { exchangeRates ->
             exchangeRates?.let {
-                liveItems.value = ExchangeRates(
-                    exchangeRates.success,
-                    exchangeRates.error,
-                    exchangeRates.base,
-                    exchangeRates.date,
-                    exchangeRates.rates?.toMutableList()
-                        // add Faroese króna (same as Danish krone) if it isn't already there - I simply like it!
-                        .apply {
-                            if (it.rates?.find { it.code == "FOK" } == null)
-                                it.rates?.find { it.code == "DKK" }?.value?.let { dkk ->
-                                    this?.add(Rate("FOK", dkk))
-                                }
-                        }
-                        ?.asSequence()
-                        // clean up the list
-                        ?.filterNot {
-                            it.code == "XDR" // special drawing rights
-                                    || it.code == "XAG" // silver
-                                    || it.code == "XAU" // gold
-                                    || it.code == "XPD" // palladium
-                                    || it.code == "XPT" // platinum
-                                    || it.code == "MRO" // Mauritanian ouguiya (pre-2018)
-                                    || it.code == "STD" // São Tomé and Príncipe dobra (pre-2018)
-                                    || it.code == "VEF" // Venezuelan bolívar fuerte (old)
-                                    || it.code == "CNH" // Chinese renminbi (Offshore)
-                                    || it.code == "CUP" // Cuban peso (moneda nacional)
-                        }
-                        // sort by code
-                        ?.sortedBy { rate -> rate.code }
-                        ?.toList()
-                )
+                liveItems.value = exchangeRates
             }
         }
         return liveItems
