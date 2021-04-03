@@ -53,6 +53,17 @@
         app:layout_constraintStart_toEndOf="@id/btn_toggle"
         app:layout_constraintTop_toTopOf="@id/guideline" />
 
+    <TextView
+        android:id="@+id/textRefreshed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin1x"
+        android:alpha=".33"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Exchange rate age: 2020-10-28" />
+
     <!-- top main_display -->
 
     <de.salomax.currencies.view.main.searchablespinner.SearchableSpinner

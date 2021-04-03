@@ -6,6 +6,7 @@
         \n• <b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.
         \n• That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.
         \n• Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.
+        \n• Small UI improvements
         \n
         \n<b>1.2.0</b>
         \n• <b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …
