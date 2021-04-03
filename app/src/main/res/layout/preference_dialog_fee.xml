@@ -25,11 +25,13 @@
         android:layout_marginTop="@dimen/margin2x"
         android:layout_marginEnd="@dimen/margin1x"
         android:gravity="end"
+        android:importantForAutofill="no"
         android:inputType="numberSigned|numberDecimal"
         app:layout_constraintEnd_toStartOf="@id/text_percent"
         app:layout_constraintStart_toStartOf="@id/text_summary"
         app:layout_constraintTop_toBottomOf="@id/text_summary"
-        tools:hint="0.00" />
+        tools:hint="0.00"
+        tools:ignore="LabelFor" />
 
     <TextView
         android:id="@+id/text_percent"
