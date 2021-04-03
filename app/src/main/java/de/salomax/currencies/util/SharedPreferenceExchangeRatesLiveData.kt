@@ -27,12 +27,12 @@ class SharedPreferenceExchangeRatesLiveData(private val sharedPrefs: SharedPrefe
     }
 
     private val preferenceChangeListener = OnSharedPreferenceChangeListener { _: SharedPreferences?, _: String? ->
-            value = getValueFromPreferences()
+            postValue(getValueFromPreferences())
     }
 
     override fun onActive() {
         super.onActive()
-        value = getValueFromPreferences()
+        postValue(getValueFromPreferences())
         sharedPrefs.registerOnSharedPreferenceChangeListener(preferenceChangeListener)
     }
 
