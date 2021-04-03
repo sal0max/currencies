@@ -1,6 +1,7 @@
 package de.salomax.currencies.widget;
 
 import android.content.Context;
+import android.text.method.LinkMovementMethod;
 import android.util.AttributeSet;
 import android.widget.TextView;
 
@@ -30,6 +31,9 @@ public class LongSummaryPreference extends Preference {
     public void onBindViewHolder(PreferenceViewHolder holder) {
         super.onBindViewHolder(holder);
         TextView summaryView = (TextView) holder.findViewById(android.R.id.summary);
+        // allow more text
         summaryView.setMaxLines(50);
+        // make links clickable
+        summaryView.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }

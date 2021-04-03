@@ -9,6 +9,7 @@
 
     <string name="error">Fehler: %s</string>
     <string name="error_no_data">Wechselkurse konnten nicht aktualisiert werden. Verbindungsfehler.</string>
+    <string name="error_api_error">Ein API-Fehler ist aufgetreten. Bitte später erneut versuchen.</string>
 
     <string name="menu_settings">Einstellungen</string>
     <string name="title_preferences">@string/menu_settings</string>

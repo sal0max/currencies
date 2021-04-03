@@ -3,7 +3,7 @@
 There are a number of (free) currency rate APIs available. Most are designed basically the same,
 so it should be possible to switch APIs without having to change the data model too much.
 
-This app currently uses **exchangeratesapi.io**. It's free and reliable.
+This app currently uses **exchangerate.host**.
 
 | service                                                       | free api requests/month  | format | currencies         | updates                                        | data source                                                                                                                                                          |
 |---------------------------------------------------------------|--------------------------|--------|--------------------|------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -12,7 +12,7 @@ This app currently uses **exchangeratesapi.io**. It's free and reliable.
 | https://ratesapi.io                                           | unlimited                | json   | 33                 | once/day                                       | European Central Bank                                                                                                                                                |
 | https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml | unlimited                | xml    | 33                 |                                                |                                                                                                                                                                      |
 | https://www.imf.org/external/np/fin/data/rms_five.aspx        | unlimited                | xls    | 39                 |                                                |                                                                                                                                                                      |
-| https://exchangerate.host                                     | API requests made by a throttled user or app will fail. All API requests are subject to rate limits. Real time rate limit usage statistics are described in headers that are included with most API responses once enough calls have been made to an endpoint.                | json   | ~170 + 6000 crypto | ? | Currency data delivered are sourced from financial data providers and banks, including the European Central Bank.
+| **https://exchangerate.host**                                 | API requests made by a throttled user or app will fail. All API requests are subject to rate limits. Real time rate limit usage statistics are described in headers that are included with most API responses once enough calls have been made to an endpoint.                | json   | ~170 + 6000 crypto | ? | Currency data delivered are sourced from financial data providers and banks, including the European Central Bank.
 | https://fixer.io                                              | 1000                     | json   | 168                | hourly (free) or faster, depending on the plan | *"Exchange rate data delivered by the Fixer API is collected from over 15 reliable data sources, every minute. Sources include banks and financial data providers."* |
 | https://openexchangerates.org                                 | 1000                     | json   | 171                | hourly (free) or faster, depending on the plan | *"collected from multiple reliable providers"*                                                                                                                       |
 | https://coincalc.samruston.co.uk/currencies.json              | "secret" API of CoinCalc | json   | 776                | ?                                              | ?                                                                                                                                                                    |
@@ -72,3 +72,4 @@ ECB and IMF are both free and *offical* data providers. However, they also both 
 | U.S. dollar         | USD      | ✓        | ✓        |
 | Uruguayan peso      | UYU      | -        | ✓        |
 | South African rand  | ZAR      | ✓        | ✓        |
+

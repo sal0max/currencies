@@ -32,19 +32,21 @@ class Database(context: Context) {
     private val prefsRates: SharedPreferences = context.getSharedPreferences("rates", MODE_PRIVATE)
 
     fun insertExchangeRates(items: ExchangeRates) {
-        prefsRates.apply {
-            val editor = edit()
-            // clear old values
-            editor.clear()
-            // apply new ones
-            editor.putString("_date", items.date.toString())
-            editor.putString("_base", items.base)
-            for (rate in items.rates) {
-                editor.putFloat(rate.code, rate.value)
+        // don't insert null-values. this would clear the cache
+        if (items.date != null)
+            prefsRates.apply {
+                val editor = edit()
+                // clear old values
+                editor.clear()
+                // apply new ones
+                editor.putString("_date", items.date.toString())
+                editor.putString("_base", items.base)
+                items.rates?.forEach { rate ->
+                    editor.putFloat(rate.code, rate.value)
+                }
+                // persist
+                editor.apply()
             }
-            // persist
-            editor.apply()
-        }
     }
 
     fun getExchangeRates(): LiveData<ExchangeRates?> {

@@ -15,12 +15,24 @@ class ExchangeRatesRepository(private val context: Context) {
     // call api
     fun getExchangeRates(): LiveData<ExchangeRates?> {
         ExchangeRatesService.getRates { response, r ->
-            // success: update /store rates to preferences
-            if (response.isSuccessful)
-                r.component1()?.let {
-                    Database.getInstance(context).insertExchangeRates(it)
+            // received some json
+            if (response.isSuccessful && r.component1() != null ) {
+                // SUCCESS! update /store rates to preferences
+                if (r.component1()!!.success == null || r.component1()!!.success == true) {
+                    Database.getInstance(context).insertExchangeRates(r.component1()!!)
                 }
-            // error
+                // ERROR! got response from API, but just an error message
+                else {
+                    val message = r.component1()!!.error
+                    liveError.postValue(
+                        if (message != null)
+                            context.getString(R.string.error, message)
+                        else
+                            context.getString(R.string.error_api_error)
+                    )
+                }
+            }
+            // generic network error
             else {
                 r.component2()?.let {
                     liveError.postValue(

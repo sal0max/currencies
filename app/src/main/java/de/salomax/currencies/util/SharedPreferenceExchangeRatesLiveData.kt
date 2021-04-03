@@ -14,6 +14,8 @@ class SharedPreferenceExchangeRatesLiveData(private val sharedPrefs: SharedPrefe
             null
         else
             ExchangeRates(
+                true, // success always true, when serving cached data
+                null, // error message always null, when serving cached data
                 sharedPrefs.getString("_base", null)!!,
                 LocalDate.parse(sharedPrefs.getString("_date", null))!!,
                 sharedPrefs.all.entries

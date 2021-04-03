@@ -12,6 +12,7 @@
 
     <string name="error">Error: %s</string>
     <string name="error_no_data">Couldn\'t update the exchange rates. No connection.</string>
+    <string name="error_api_error">There was an API error. Please try again later.</string>
 
     <string name="menu_settings">Settings</string>
     <string name="title_preferences">@string/menu_settings</string>

@@ -9,19 +9,17 @@ import android.widget.ImageView
 import android.widget.TextView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Rate
+import java.text.Collator
+import java.util.*
 
 class SpinnerAdapter(context: Context, resource: Int, private var objects: List<Rate>) :
     ArrayAdapter<Rate>(context, resource, objects) {
 
     init {
-        // sort by name, not by code
-        super.sort { c1, c2 ->
-            val name1 = c1.getName(context)
-            val name2 = c2.getName(context)
-            if (name1 != null && name2 != null)
-                name1.compareTo(name2)
-            else
-                0
+        // sort by name (also takes care of special characters like umlauts)
+        super.sort { o1: Rate, o2: Rate ->
+            Collator.getInstance(Locale.getDefault())
+                .compare(o1.getName(context), o2.getName(context))
         }
     }
 

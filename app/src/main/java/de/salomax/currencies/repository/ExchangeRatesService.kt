@@ -14,19 +14,19 @@ import java.time.LocalDate
 
 object ExchangeRatesService {
 
+    private const val base = "EUR"
+    private const val endpoint = "https://api.exchangerate.host/latest?base=$base"
+
+    private val moshi = Moshi.Builder()
+        .addLast(KotlinJsonAdapterFactory())
+        .add(RatesAdapter(base))
+        .add(LocalDateAdapter())
+        .build()
+        .adapter(ExchangeRates::class.java)
+
     fun getRates(result: (Response, Result<ExchangeRates, FuelError>) -> Unit) {
-        val base = "EUR"
-        val moshi = Moshi.Builder()
-            .addLast(KotlinJsonAdapterFactory())
-            .add(RatesAdapter(base))
-            .add(LocalDateAdapter())
-            .build()
-            .adapter(ExchangeRates::class.java)
         Fuel
-//            .get("https://data.fixer.io/api/latest?access_key=027bdb6a24ffc566e6dae37f4a5acb29&base=EUR")
-//            .get("https://openexchangerates.org/api/latest.json?app_id=3ffce3987c764a84bdb8fad0aa0bd7c2&base=EUR")
-//            .get("https://api.frankfurter.app/latest/latest?base=$base")
-            .get("https://api.exchangeratesapi.io/latest?base=$base")
+            .get(endpoint)
             .responseObject(moshiDeserializerOf(moshi)) { _, r1, r2 ->
                 result(r1, r2)
             }

@@ -145,7 +145,7 @@ class MainActivity : AppCompatActivity() {
         ratesModel.getExchangeRate().observe(this, {
             // date
             it?.let {
-                val date = it.date.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
+                val date = it.date?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
                 tvDate.text = getString(R.string.last_updated, date)
             }
             // rates
