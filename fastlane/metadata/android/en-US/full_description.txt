@@ -1,7 +1,7 @@
 Currencies is a simple and straightforward currency converter.It is not intended to be used for realtime financial business, rather to be a handy companion e.g. on vacations.
 
 * It supports the most relevant currencies. Currently counting over 160!
-* Currency data is provided on a daily basis by various sources and banks, like the European Central Bank.
+* Currency data is provided on a daily basis by exchangerate.host
 * The UI is simple and pure Material Design.
 * A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
 * Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
