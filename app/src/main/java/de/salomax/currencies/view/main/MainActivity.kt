@@ -20,7 +20,7 @@ import de.salomax.currencies.util.humanReadableFee
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
-import de.salomax.currencies.view.main.searchablespinner.SearchableSpinner
+import de.salomax.currencies.widget.searchablespinner.SearchableSpinner
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 

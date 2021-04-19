@@ -1,4 +1,4 @@
-package de.salomax.currencies.view.main.searchablespinner
+package de.salomax.currencies.widget.searchablespinner
 
 import android.content.Context
 import android.content.ContextWrapper
