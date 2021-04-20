@@ -1,6 +1,8 @@
 package de.salomax.currencies.repository
 
 import android.content.Context
+import android.os.Handler
+import android.os.Looper
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.github.kittinunf.fuel.core.isSuccessful
@@ -15,19 +17,28 @@ class ExchangeRatesRepository(private val context: Context) {
 
     // call api
     fun getExchangeRates(): LiveData<ExchangeRates?> {
+        val start = System.currentTimeMillis()
         isUpdating.postValue(true)
 
         ExchangeRatesService.getRates { response, r ->
             // received some json
-            if (response.isSuccessful && r.component1() != null ) {
-                isUpdating.postValue(false)
-
+            if (response.isSuccessful && r.component1() != null) {
                 // SUCCESS! update /store rates to preferences
                 if (r.component1()!!.success == null || r.component1()!!.success == true) {
+                    // "update" for at least 2s
+                    val now = System.currentTimeMillis()
+                    if (now - start < 2000)
+                        Handler(Looper.getMainLooper()).postDelayed({
+                            isUpdating.postValue(false)
+                        }, 2000 - (now - start))
+                    else
+                        isUpdating.postValue(false)
+                    // update db
                     Database.getInstance(context).insertExchangeRates(r.component1()!!)
                 }
                 // ERROR! got response from API, but just an error message
                 else {
+                    isUpdating.postValue(false)
                     val message = r.component1()!!.error
                     liveError.postValue(
                         if (message != null)
