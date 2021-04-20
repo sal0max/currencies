@@ -4,19 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:gravity="center"
     android:orientation="horizontal"
     android:padding="@dimen/margin2x"
     tools:ignore="UseCompoundDrawables">
 
     <ImageView
         android:id="@+id/image"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
-        android:layout_marginBottom="4dp"
+        android:layout_width="24dp"
+        android:layout_height="17dp"
+        android:layout_gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
         tools:ignore="ContentDescription"
-        tools:src="@drawable/flag_eu" />
+        tools:src="@drawable/flag_sb" />
 
     <TextView
         android:id="@+id/text"
@@ -25,7 +24,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin2x"
         android:ellipsize="end"
-        android:gravity="center_vertical"
         android:lines="1"
-        tools:text="EUR" />
+        android:textColor="?android:textColorPrimary"
+        tools:text="Solomon Islands dollar" />
+
 </LinearLayout>

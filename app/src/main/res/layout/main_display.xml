@@ -73,7 +73,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextFrom"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scrollViewTextFrom"
-        tools:listitem="@layout/row_currency" />
+        tools:listitem="@layout/row_currency_dropdown" />
 
     <TextView
         android:id="@+id/textCalculations"
@@ -134,7 +134,7 @@
         app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextTo"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/scrollViewTextTo"
-        tools:listitem="@layout/row_currency" />
+        tools:listitem="@layout/row_currency_dropdown" />
 
     <HorizontalScrollView
         android:id="@+id/scrollViewTextTo"

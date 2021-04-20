@@ -23,12 +23,58 @@ class SpinnerAdapter(context: Context, resource: Int, private var objects: List<
         }
     }
 
+    // selected item
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
-        return getCustomView(position, convertView, parent, 0)
+        var v = convertView
+        val holder: ViewHolder
+
+        // view holder
+        if (v == null) {
+            v = LayoutInflater.from(context).inflate(R.layout.row_currency, parent, false)
+
+            holder = ViewHolder()
+            holder.code = v.findViewById(R.id.text)
+            holder.image = v.findViewById(R.id.image)
+
+            v?.tag = holder
+        } else {
+            holder = v.tag as ViewHolder
+        }
+
+        // populate
+        val item = getItem(position)
+        holder.code?.text = item.code
+        holder.image?.setImageDrawable(item.getFlag(context))
+
+        return v!!
     }
 
+    // list
     override fun getDropDownView(position: Int, convertView: View?, parent: ViewGroup): View {
-        return getCustomView(position, convertView, parent, 1)
+        var v = convertView
+        val holder: DropdownViewHolder
+
+        // view holder
+        if (v == null) {
+            v = LayoutInflater.from(context).inflate(R.layout.row_currency_dropdown, parent, false)
+
+            holder = DropdownViewHolder()
+            holder.name = v.findViewById(R.id.text)
+            holder.code = v.findViewById(R.id.text2)
+            holder.image = v.findViewById(R.id.image)
+
+            v?.tag = holder
+        } else {
+            holder = v.tag as DropdownViewHolder
+        }
+
+        // populate
+        val item = getItem(position)
+        holder.code?.text = item.code
+        holder.name?.text = item.getName(context)
+        holder.image?.setImageDrawable(item.getFlag(context))
+
+        return v!!
     }
 
     override fun getItem(position: Int): Rate {
@@ -47,36 +93,15 @@ class SpinnerAdapter(context: Context, resource: Int, private var objects: List<
         )
     }
 
-    private fun getCustomView(position: Int, convertView: View?, parent: ViewGroup, viewType: Int): View {
-        var v = convertView
-        val holder: ViewHolder
-
-        if (v == null) {
-            v = LayoutInflater.from(context).inflate(R.layout.row_currency, parent, false)
-
-            holder = ViewHolder()
-            holder.name = v.findViewById(R.id.text)
-            holder.image = v.findViewById(R.id.image)
-
-            v?.tag = holder
-        } else {
-            holder = v.tag as ViewHolder
-        }
-
-        val item = getItem(position)
-
-        holder.name?.text = when(viewType) {
-            0 -> item.code
-            1 -> "${item.getName(context)} (${item.code})"
-            else -> null
-        }
-        holder.image?.setImageDrawable(item.getFlag(context))
-
-        return v!!
-    }
 
     internal class ViewHolder {
+        var code: TextView? = null
+        var image: ImageView? = null
+    }
+
+    internal class DropdownViewHolder {
         var name: TextView? = null
+        var code: TextView? = null
         var image: ImageView? = null
     }
 
