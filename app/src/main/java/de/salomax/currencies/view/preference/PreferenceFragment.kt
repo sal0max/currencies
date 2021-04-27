@@ -21,6 +21,13 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         setPreferencesFromResource(R.xml.prefs, rootKey)
         viewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
+        // api provider
+        val apiPreference = findPreference<ListPreference>(getString(R.string.prefKey_api))!!
+        apiPreference.setOnPreferenceChangeListener { _, newValue ->
+            viewModel.setApiProvider(newValue.toString().toInt())
+            true
+        }
+
         // theme
         val themePreference = findPreference<ListPreference>(getString(R.string.prefKey_theme))!!
         themePreference.setOnPreferenceChangeListener { _, newValue ->

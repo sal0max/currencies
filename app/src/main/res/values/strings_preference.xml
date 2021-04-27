@@ -1,9 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <!-- settings -->
+    <!-- category: main settings -->
     <string name="prefTitle_categorySettings" translatable="false">@string/title_preferences</string>
-    <!-- settings/theme -->
+    <!-- api -->
+    <string name="prefKey_api" translatable="false">KEY_API</string>
+    <string name="prefTitle_api">Exchange rate provider</string>
+    <string-array name="prefEntries_api" translatable="false">
+        <item>Exchangerate.host</item>
+        <item>Frankfurter.app</item>
+    </string-array>
+    <string-array name="prefEntryValues_api" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <!-- theme -->
     <string name="prefKey_theme" translatable="false">KEY_THEME</string>
     <string name="prefTitle_theme">Design</string>
     <string-array name="prefEntries_theme">
@@ -16,26 +27,26 @@
         <item>1</item>
         <item>2</item>
     </string-array>
-    <!-- settings/fee -->
+    <!-- fee -->
     <string name="prefTitle_fee">Foreign transaction fee</string>
     <string name="prefKey_fee" translatable="false">KEY_FEE</string>
     <string name="fee_summary">Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. Here you can enter that fee. It will be added on top of the calculation, so you know how much you <i>really</i> pay.</string>
 
-    <!-- data source -->
-    <string name="prefTitle_categoryData">About the exchange rate data</string>
-    <!-- -->
-    <string name="prefTitle_dataSource">Data source</string>
+    <!-- category: data source -->
+    <string name="prefTitle_categoryData">Exchange rate data</string>
+    <!-- about api -->
+    <string name="prefTitle_dataSource">About data provider</string>
     <string name="prefSummary_dataSource">This app uses the exchange rates provided by <a href="https://exchangerate.host/"><b>exchangerate.host</b></a>. The provider sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.</string>
-    <!-- -->
+    <!-- refresh period -->
     <string name="prefTitle_dataUpdate">Refresh Period</string>
     <string name="prefSummary_dataUpdate">Exchange rates are updated around midnight UTC every working day.</string>
-    <!-- -->
+
+    <!-- category: prefs -->
+    <string name="prefTitle_categoryAbout">About this app</string>
+    <!-- disclaimer -->
     <string name="prefTitle_disclaimer">Disclaimer</string>
     <string name="prefSummary_disclaimer">Although the app is very thoroughly written and tested, <b>there is no guarantee that the data it shows is correct</b>. The exchange rates are provided by a third party and this app can\'t make no promise whatsoever that the data is true and up-to-date.\nAdditionally, the rates provided – still if correct – may vary from the ones used by your bank.\nLastly: Mistakes happen. Never blindly trust anyone! That being said, rest assured I wouldn\'t have released this app if I\'ve had any doubt that it works as intended.</string>
-
-    <!-- prefs -->
-    <string name="prefTitle_categoryAbout">About this app</string>
-    <!-- -->
+    <!-- about -->
     <string name="prefKey_about" translatable="false">KEY_ABOUT</string>
     <string name="prefTitle_about">Version %1$s</string>
     <string name="prefSummary_about" translatable="false" tools:ignore="PluralsCandidate">© %1$d Maximilian Salomon</string>

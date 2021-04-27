@@ -82,6 +82,18 @@ class Database(context: Context) {
      */
     private val prefs: SharedPreferences = context.getSharedPreferences("prefs", MODE_PRIVATE)
 
+    /* api */
+
+    fun setApiProvider(api: Int) {
+        prefs.apply {
+            edit().putInt("_api", api).apply()
+        }
+    }
+
+    fun getApiProvider(): Int {
+        return prefs.getInt("_api", 0)
+    }
+
     /* theme */
 
     fun setTheme(theme: Int) {

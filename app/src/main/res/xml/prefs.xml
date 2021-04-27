@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <PreferenceCategory android:title="@string/prefTitle_categorySettings">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/prefEntries_api"
+            android:entryValues="@array/prefEntryValues_api"
+            android:key="@string/prefKey_api"
+            android:summary="%s"
+            android:title="@string/prefTitle_api" />
         <ListPreference
             android:defaultValue="2"
             android:entries="@array/prefEntries_theme"
@@ -11,7 +17,6 @@
             android:key="@string/prefKey_theme"
             android:summary="%s"
             android:title="@string/prefTitle_theme" />
-
         <de.salomax.currencies.widget.EditTextSwitchPreference
             android:dialogLayout="@layout/preference_dialog_fee"
             android:dialogMessage="@string/fee_summary"
@@ -21,31 +26,25 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/prefTitle_categoryData">
-
-        <de.salomax.currencies.widget.LongSummaryPreference
-            android:selectable="false"
-            android:summary="@string/prefSummary_disclaimer"
-            android:title="@string/prefTitle_disclaimer" />
-
         <de.salomax.currencies.widget.LongSummaryPreference
             android:selectable="false"
             android:summary="@string/prefSummary_dataSource"
             android:title="@string/prefTitle_dataSource" />
-
         <de.salomax.currencies.widget.LongSummaryPreference
             android:selectable="false"
             android:summary="@string/prefSummary_dataUpdate"
             android:title="@string/prefTitle_dataUpdate" />
-
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/prefTitle_categoryAbout">
-
+        <de.salomax.currencies.widget.LongSummaryPreference
+            android:selectable="false"
+            android:summary="@string/prefSummary_disclaimer"
+            android:title="@string/prefTitle_disclaimer" />
         <Preference
             android:key="@string/prefKey_about"
             android:summary="@string/prefSummary_about"
             android:title="@string/prefTitle_about" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>
