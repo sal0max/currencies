@@ -16,7 +16,11 @@ import java.time.LocalDate
 object ExchangeRatesService {
 
     private const val base = "EUR"
-    private const val endpoint = "https://api.exchangerate.host/latest?base=$base"
+
+    enum class Endpoint(val url: String) {
+        EXCHANGERATE_HOST("https://api.exchangerate.host/latest?base=$base"),
+        FRANKFURTER_APP("https://api.frankfurter.app/latest?base=$base")
+    }
 
     private val moshi = Moshi.Builder()
         .addLast(KotlinJsonAdapterFactory())
@@ -25,17 +29,17 @@ object ExchangeRatesService {
         .build()
         .adapter(ExchangeRates::class.java)
 
-    fun getRates(result: (Response, Result<ExchangeRates, FuelError>) -> Unit) {
+    fun getRates(endpoint: Endpoint, result: (Response, Result<ExchangeRates, FuelError>) -> Unit) {
         Fuel
-            .get(endpoint)
+            .get(endpoint.url)
             .responseObject(moshiDeserializerOf(moshi)) { _, r1, r2 ->
                 result(r1, r2)
             }
     }
 
-    fun getRatesBlocking(): ResponseResultOf<ExchangeRates> {
+    fun getRatesBlocking(endpoint: Endpoint): ResponseResultOf<ExchangeRates> {
         return Fuel
-            .get(endpoint)
+            .get(endpoint.url)
             .responseObject(moshiDeserializerOf(moshi))
     }
 

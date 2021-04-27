@@ -12,10 +12,6 @@ class PreferenceViewModel(application: Application) : AndroidViewModel(applicati
         Database.getInstance(getApplication()).setApiProvider(api)
     }
 
-    fun getApiProvider(): Int {
-        return Database.getInstance(getApplication()).getApiProvider()
-    }
-
     fun setTheme(theme: Int) {
         Database.getInstance(getApplication()).setTheme(theme)
         // switch theme

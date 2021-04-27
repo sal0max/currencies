@@ -20,7 +20,14 @@ class ExchangeRatesRepository(private val context: Context) {
         val start = System.currentTimeMillis()
         isUpdating.postValue(true)
 
-        ExchangeRatesService.getRates { response, r ->
+        ExchangeRatesService.getRates(
+            when (Database.getInstance(context).getApiProvider()) {
+                // frankfurter.app
+                1 -> ExchangeRatesService.Endpoint.FRANKFURTER_APP
+                // exchangerate.host
+                else -> ExchangeRatesService.Endpoint.EXCHANGERATE_HOST
+            }
+        ) { response, r ->
             // received some json
             if (response.isSuccessful && r.component1() != null) {
                 // SUCCESS! update /store rates to preferences

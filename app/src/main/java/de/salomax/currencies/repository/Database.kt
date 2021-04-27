@@ -8,6 +8,7 @@ import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.util.SharedPreferenceBooleanLiveData
 import de.salomax.currencies.util.SharedPreferenceExchangeRatesLiveData
 import de.salomax.currencies.util.SharedPreferenceFloatLiveData
+import de.salomax.currencies.util.SharedPreferenceIntLiveData
 
 import java.time.LocalDate
 
@@ -92,6 +93,10 @@ class Database(context: Context) {
 
     fun getApiProvider(): Int {
         return prefs.getInt("_api", 0)
+    }
+
+    fun getApiProviderAsync(): LiveData<Int> {
+        return SharedPreferenceIntLiveData(prefs, "_api", 0)
     }
 
     /* theme */

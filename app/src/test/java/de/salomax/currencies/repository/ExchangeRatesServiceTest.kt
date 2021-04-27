@@ -1,15 +1,27 @@
 package de.salomax.currencies.repository
 
+import com.github.kittinunf.fuel.core.ResponseResultOf
+import de.salomax.currencies.model.ExchangeRates
 import org.junit.Test
 import org.junit.Assert.*
 
 class ExchangeRatesServiceTest {
 
     @Test
-    fun testWebservice() {
-        // full response
-        val data = ExchangeRatesService.getRatesBlocking()
+    fun testExchangerateHost() {
+        testWebservice(
+            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.EXCHANGERATE_HOST)
+        )
+    }
 
+    @Test
+    fun testFrankfurterApp() {
+        testWebservice(
+            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.FRANKFURTER_APP)
+        )
+    }
+
+    fun testWebservice(data: ResponseResultOf<ExchangeRates>) {
         // rates
         val rates = data.third.component1()
 

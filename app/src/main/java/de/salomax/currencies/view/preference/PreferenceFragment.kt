@@ -7,6 +7,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import de.salomax.currencies.BuildConfig
 import de.salomax.currencies.R
+import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.util.humanReadableFee
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
@@ -25,6 +26,8 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         val apiPreference = findPreference<ListPreference>(getString(R.string.prefKey_api))!!
         apiPreference.setOnPreferenceChangeListener { _, newValue ->
             viewModel.setApiProvider(newValue.toString().toInt())
+            // fetch the new data
+            ExchangeRatesRepository(requireContext()).getExchangeRates()
             true
         }
 
