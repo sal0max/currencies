@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatDelegate
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import de.salomax.currencies.repository.Database
+import de.salomax.currencies.repository.ExchangeRatesRepository
 
 class PreferenceViewModel(application: Application) : AndroidViewModel(application) {
 
     fun setApiProvider(api: Int) {
+        // first put provider to db...
         Database.getInstance(getApplication()).setApiProvider(api)
+        // ...after that, fetch the new exchange rates
+        ExchangeRatesRepository(getApplication()).getExchangeRates()
     }
 
     fun getApiProvider(): LiveData<Int> {

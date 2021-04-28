@@ -21,10 +21,11 @@ class ExchangeRatesRepository(private val context: Context) {
         isUpdating.postValue(true)
 
         ExchangeRatesService.getRates(
+            // use the right api
             when (Database.getInstance(context).getApiProvider()) {
                 // frankfurter.app
                 1 -> ExchangeRatesService.Endpoint.FRANKFURTER_APP
-                // exchangerate.host
+                // exchangerate.host (== 0)
                 else -> ExchangeRatesService.Endpoint.EXCHANGERATE_HOST
             }
         ) { response, r ->
