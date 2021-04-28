@@ -2,18 +2,7 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- category: main settings -->
-    <string name="prefTitle_categorySettings" translatable="false">@string/title_preferences</string>
-    <!-- api -->
-    <string name="prefKey_api" translatable="false">KEY_API</string>
-    <string name="prefTitle_api">Exchange rate provider</string>
-    <string-array name="prefEntries_api" translatable="false">
-        <item>Exchangerate.host</item>
-        <item>Frankfurter.app</item>
-    </string-array>
-    <string-array name="prefEntryValues_api" translatable="false">
-        <item>0</item>
-        <item>1</item>
-    </string-array>
+    <string name="prefTitle_categorySettings">General Settings</string>
     <!-- theme -->
     <string name="prefKey_theme" translatable="false">KEY_THEME</string>
     <string name="prefTitle_theme">Design</string>
@@ -33,7 +22,18 @@
     <string name="fee_summary">Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. Here you can enter that fee. It will be added on top of the calculation, so you know how much you <i>really</i> pay.</string>
 
     <!-- category: data source -->
-    <string name="prefTitle_categoryData">Exchange rate data</string>
+    <string name="prefTitle_categoryData">Exchange rates</string>
+    <!-- api -->
+    <string name="prefKey_api" translatable="false">KEY_API</string>
+    <string name="prefTitle_api">Data provider</string>
+    <string-array name="prefEntries_api" translatable="false">
+        <item>Exchangerate.host</item>
+        <item>Frankfurter.app</item>
+    </string-array>
+    <string-array name="prefEntryValues_api" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
     <!-- about api -->
     <string name="prefKey_dataSource" translatable="false">KEY_DATA_SOURCE</string>
     <string name="prefTitle_dataSource">About data provider</string>

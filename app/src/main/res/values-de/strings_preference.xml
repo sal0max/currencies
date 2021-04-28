@@ -2,10 +2,9 @@
 <resources>
 
     <!-- category: main settings -->
-    <string name="prefTitle_theme">Design</string>
-    <!-- api -->
-    <string name="prefTitle_api">Datenquelle</string>
+    <string name="prefTitle_categorySettings">Haupteinstellungen</string>
     <!-- theme -->
+    <string name="prefTitle_theme">Design</string>
     <string-array name="prefEntries_theme">
         <item>Hell</item>
         <item>Dunkel</item>
@@ -16,7 +15,9 @@
     <string name="fee_summary">In den Konditionen mancher Kreditkarten sind Gebühren für den Einsatz im Ausland bzw. mit Fremdwährungen enthalten. Hier kannst du die Gebühr deiner Karte eintragen. Sie wird dann auf alle Umrechnungen aufgeschlagen, damit du weißt, wie viel du <i>wirklich</i> zahlst.</string>
 
     <!-- category: data source -->
-    <string name="prefTitle_categoryData">Über die Wechselkurse</string>
+    <string name="prefTitle_categoryData">Wechselkurse</string>
+    <!-- api -->
+    <string name="prefTitle_api">Datenquelle</string>
     <!-- about api -->
     <string name="prefTitle_dataSource">Über die Datenquelle</string>
     <string-array name="prefSummary_dataSource">

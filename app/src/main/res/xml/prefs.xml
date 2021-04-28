@@ -5,13 +5,6 @@
 
     <PreferenceCategory android:title="@string/prefTitle_categorySettings">
         <ListPreference
-            android:defaultValue="0"
-            android:entries="@array/prefEntries_api"
-            android:entryValues="@array/prefEntryValues_api"
-            android:key="@string/prefKey_api"
-            android:summary="%s"
-            android:title="@string/prefTitle_api" />
-        <ListPreference
             android:defaultValue="2"
             android:entries="@array/prefEntries_theme"
             android:entryValues="@array/prefEntryValues_theme"
@@ -27,6 +20,13 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/prefTitle_categoryData">
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/prefEntries_api"
+            android:entryValues="@array/prefEntryValues_api"
+            android:key="@string/prefKey_api"
+            android:summary="%s"
+            android:title="@string/prefTitle_api" />
         <de.salomax.currencies.widget.LongSummaryPreference
             android:key="@string/prefKey_dataSource"
             android:selectable="false"
