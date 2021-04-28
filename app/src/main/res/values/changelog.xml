@@ -2,7 +2,10 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.4.1</b>
+    <string name="changelog" translatable="false"><b>1.5.0</b>
+        \n• Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b>
+        \n
+        \n<b>1.4.1</b>
         \n• UI improvements
         \n
         \n<b>1.4.0</b>

@@ -1,0 +1,1 @@
+- Select between two API providers: exchangerate.host and frankfurter.app
