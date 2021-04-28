@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory android:title="@string/prefTitle_categorySettings">
         <ListPreference
@@ -27,12 +28,12 @@
 
     <PreferenceCategory android:title="@string/prefTitle_categoryData">
         <de.salomax.currencies.widget.LongSummaryPreference
+            android:key="@string/prefKey_dataSource"
             android:selectable="false"
-            android:summary="@string/prefSummary_dataSource"
             android:title="@string/prefTitle_dataSource" />
         <de.salomax.currencies.widget.LongSummaryPreference
+            android:key="@string/prefKey_dataUpdate"
             android:selectable="false"
-            android:summary="@string/prefSummary_dataUpdate"
             android:title="@string/prefTitle_dataUpdate" />
     </PreferenceCategory>
 

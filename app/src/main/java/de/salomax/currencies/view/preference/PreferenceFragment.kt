@@ -11,6 +11,7 @@ import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.util.humanReadableFee
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
+import de.salomax.currencies.widget.LongSummaryPreference
 import java.util.*
 
 @Suppress("unused")
@@ -30,6 +31,12 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             ExchangeRatesRepository(requireContext()).getExchangeRates()
             true
         }
+        viewModel.getApiProvider().observe(this, {
+            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataSource))!!.summary =
+                resources.getTextArray(R.array.prefSummary_dataSource)[it]
+            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataUpdate))!!.summary =
+                resources.getTextArray(R.array.prefSummary_dataUpdate)[it]
+        })
 
         // theme
         val themePreference = findPreference<ListPreference>(getString(R.string.prefKey_theme))!!

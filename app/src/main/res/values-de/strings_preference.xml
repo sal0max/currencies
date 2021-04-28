@@ -19,11 +19,16 @@
     <string name="prefTitle_categoryData">Über die Wechselkurse</string>
     <!-- about api -->
     <string name="prefTitle_dataSource">Über die Datenquelle</string>
-    <string name="prefSummary_dataSource">Diese App nutzt die Devisenmarkt-Referenzwerte welche durch <a href="https://exchangerate.host/"><b>exchangerate.host</b></a> bereitgestellt werden. Der Anbieter sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.</string>
+    <string-array name="prefSummary_dataSource">
+        <item><a href="https://exchangerate.host/"><b>exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\nEtwa 160 Währungen werden angeboten.</item>
+        <item><a href="https://www.frankfurter.app/"><b>frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\nEtwa 30 der wichtigsten Währungen sind enthalten.</item>
+    </string-array>
     <!-- refresh period -->
     <string name="prefTitle_dataUpdate">Aktualisierungsintervall</string>
-    <string name="prefSummary_dataUpdate">Die Referenzwerte werden um Mitternacht UTC an Werktagen aktualisiert.</string>
-
+    <string-array name="prefSummary_dataUpdate">
+        <item>Die Referenzwerte werden um Mitternacht UTC an Werktagen aktualisiert.</item>
+        <item>Die Referenzwerte werden um ca. 16 Uhr mitteleuropäische Zeit an Werktagen aktualisiert.</item>
+    </string-array>
     <!-- category: prefs -->
     <!-- disclaimer -->
     <string name="prefTitle_disclaimer">Haftungsausschluss</string>

@@ -35,11 +35,19 @@
     <!-- category: data source -->
     <string name="prefTitle_categoryData">Exchange rate data</string>
     <!-- about api -->
+    <string name="prefKey_dataSource" translatable="false">KEY_DATA_SOURCE</string>
     <string name="prefTitle_dataSource">About data provider</string>
-    <string name="prefSummary_dataSource">This app uses the exchange rates provided by <a href="https://exchangerate.host/"><b>exchangerate.host</b></a>. The provider sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.</string>
+    <string-array name="prefSummary_dataSource">
+        <item><a href="https://exchangerate.host/"><b>exchangerate.host</b></a> sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.</item>
+        <item><a href="https://www.frankfurter.app/"><b>frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank. </item>
+    </string-array>
     <!-- refresh period -->
+    <string name="prefKey_dataUpdate" translatable="false">KEY_DATA_UPDATE</string>
     <string name="prefTitle_dataUpdate">Refresh Period</string>
-    <string name="prefSummary_dataUpdate">Exchange rates are updated around midnight UTC every working day.</string>
+    <string-array name="prefSummary_dataUpdate">
+        <item>Exchange rates are updated around midnight UTC every working day.</item>
+        <item>The data is getting updated around 16:00 CET every working day.</item>
+    </string-array>
 
     <!-- category: prefs -->
     <string name="prefTitle_categoryAbout">About this app</string>
