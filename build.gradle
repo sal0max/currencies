@@ -32,7 +32,7 @@ dependencyUpdates.resolutionStrategy {
 allprojects {
    repositories {
       google()
-      jcenter()
+      mavenCentral()
    }
 }
 
