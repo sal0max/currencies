@@ -34,6 +34,9 @@
     <!-- disclaimer -->
     <string name="prefTitle_disclaimer">Haftungsausschluss</string>
     <string name="prefSummary_disclaimer">Auch wenn diese App sehr sorgfältig geschrieben und getestet ist, <b>besteht keinerlei Garantie, dass die angezeigen Daten korrekt sind</b>. Die Währungskurse werden durch Drittparteien bereitgestellt und diese App hat keinerlei Möglichkeit zu überprüfen, ob diese Daten richtig und aktuell sind.\nAußerdem können die Daten – selbst wenn sie stimmen – von denen abweichen, die deine Bank nutzt.\nZu guter Letzt: Fehler passieren. Vertraue niemals jemandem blind! Sei dennoch versichert, dass ich diese App nicht veröffentlicht hätte, wenn ich an ihr zweifeln würde.</string>
+    <!-- donate -->
+    <string name="prefTitle_donate">Unterstütze den Entwickler</string>
+    <string name="prefSummary_donate">Spende über PayPal</string>
     <!-- about -->
     <string name="prefTitle_categoryAbout">Über diese App</string>
     <string name="prefTitle_about">Version %1$s</string>

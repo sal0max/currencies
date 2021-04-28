@@ -1,5 +1,7 @@
 package de.salomax.currencies.view.preference
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
 import androidx.preference.ListPreference
@@ -56,6 +58,26 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             feePreference.summary = it.humanReadableFee(requireContext())
             feePreference.text = it.toString()
         })
+
+        // donate
+        findPreference<Preference>(getString(R.string.prefKey_donate))?.apply {
+            // hide for Play Store - Google is a cunt
+            isVisible = when (BuildConfig.FLAVOR) {
+                "play" -> false
+                "fdroid" -> true
+                else -> true
+            }
+            // go to PayPal, when clicked
+            setOnPreferenceClickListener {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://www.paypal.com/donate?hosted_button_id=2JCY7E99V9DGC")
+                    )
+                )
+                true
+            }
+        }
 
         // about
         val aboutPreference = findPreference<Preference>(getString(R.string.prefKey_about))!!

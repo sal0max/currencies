@@ -54,6 +54,10 @@
     <!-- disclaimer -->
     <string name="prefTitle_disclaimer">Disclaimer</string>
     <string name="prefSummary_disclaimer">Although the app is very thoroughly written and tested, <b>there is no guarantee that the data it shows is correct</b>. The exchange rates are provided by a third party and this app can\'t make no promise whatsoever that the data is true and up-to-date.\nAdditionally, the rates provided – still if correct – may vary from the ones used by your bank.\nLastly: Mistakes happen. Never blindly trust anyone! That being said, rest assured I wouldn\'t have released this app if I\'ve had any doubt that it works as intended.</string>
+    <!-- donate -->
+    <string name="prefKey_donate" translatable="false">KEY_DONATE</string>
+    <string name="prefTitle_donate">Support the developer</string>
+    <string name="prefSummary_donate">Donate via PayPal</string>
     <!-- about -->
     <string name="prefKey_about" translatable="false">KEY_ABOUT</string>
     <string name="prefTitle_about">Version %1$s</string>

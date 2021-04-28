@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <PreferenceCategory android:title="@string/prefTitle_categorySettings">
         <ListPreference
@@ -41,6 +42,10 @@
             android:selectable="false"
             android:summary="@string/prefSummary_disclaimer"
             android:title="@string/prefTitle_disclaimer" />
+        <Preference
+            android:key="@string/prefKey_donate"
+            android:summary="@string/prefSummary_donate"
+            android:title="@string/prefTitle_donate" />
         <Preference
             android:key="@string/prefKey_about"
             android:summary="@string/prefSummary_about"
