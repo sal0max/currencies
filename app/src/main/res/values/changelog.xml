@@ -3,58 +3,72 @@
     <string name="title_changelog" translatable="false">Changelog</string>
 
     <string name="changelog" translatable="false"><b>1.5.0</b>
-        \n• Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b>
+        \n⸻
+        \n<li>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></li>
+        \n<li>More UI improvements</li>
         \n
         \n<b>1.4.1</b>
-        \n• UI improvements
+        \n⸻
+        \n<li>UI improvements</li>
         \n
         \n<b>1.4.0</b>
-        \n• It is now possible to manually refresh the rates. Check it out in the overflow menu.
-        \n• Performance improvements
+        \n⸻
+        \n<li>It is now possible to manually refresh the rates. Check it out in the overflow menu.</li>
+        \n<li>Performance improvements</li>
         \n
         \n<b>1.3.0</b>
-        \n• <b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.
-        \n• That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.
-        \n• Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.
-        \n• Small UI improvements
+        \n⸻
+        \n<li><b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.</li>
+        \n<li>That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.</li>
+        \n<li>Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.</li>
+        \n<li>Small UI improvements</li>
         \n
         \n<b>1.2.0</b>
-        \n• <b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …
-        \n• To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.
-        \n• The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!
+        \n⸻
+        \n<li><b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …</li>
+        \n<li>To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.</li>
+        \n<li>The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!</li>
         \n
         \n<b>1.1.1</b>
-        \n• Minor improvements (typo \'n stuff)
+        \n⸻
+        \n<li>Minor improvements (typo \'n stuff)</li>
         \n
         \n<b>1.1.0</b>
-        \n• Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions.
-        \nYou can now include that fee in the calculations, so you know how much you really pay. 🙂
+        \n⸻
+        \n<li>Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions.\nYou can now include that fee in the calculations, so you know how much you really pay. 🙂</li>
         \n
         \n<b>1.0.1</b>
-        \n• Fix possible crash on Android 11
+        \n⸻
+        \n<li>Fix possible crash on Android 11</li>
         \n
         \n<b>1.0.0</b>
-        \n• Added German translation 🇩🇪
-        \n• Minor improvement: App size decreased by 50%!
-        \n• App seems pretty stable: Public 1.0 release! 🥳🥳🥳
+        \n⸻
+        \n<li>Added German translation 🇩🇪</li>
+        \n<li>Minor improvement: App size decreased by 50%!</li>
+        \n<li>App seems pretty stable: Public 1.0 release! 🥳🥳🥳</li>
         \n
         \n<b>0.2.2</b>
-        \n• Minor improvements
+        \n⸻
+        \n<li>Minor improvements</li>
         \n
         \n<b>0.2.1</b>
-        \n• Better error handling
-        \n• Minor improvements
+        \n⸻
+        \n<li>Better error handling</li>
+        \n<li>Minor improvements</li>
         \n
         \n<b>0.2.0</b>
-        \n• Added a copy function: Long click on the value you want to copy
+        \n⸻
+        \n<li>Added a copy function: Long click on the value you want to copy</li>
         \n
         \n<b>0.1.0</b>
-        \n• More fail-proof updating of the currency rates
-        \n• Added a disclaimer
-        \n• Added this changelog
+        \n⸻
+        \n<li>More fail-proof updating of the currency rates</li>
+        \n<li>Added a disclaimer</li>
+        \n<li>Added this changelog</li>
         \n
         \n<b>0.0.1</b>
-        \n• Initial pre-release
+        \n⸻
+        \n<li>Initial pre-release</li>
     </string>
 
 </resources>
