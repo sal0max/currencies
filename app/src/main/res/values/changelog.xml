@@ -5,6 +5,7 @@
     <string name="changelog" translatable="false"><b>1.5.0</b>
         \n⸻
         \n<li>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></li>
+        \n<li>You can now support the developer by donating with PayPal. Find the link in the settings.</li>
         \n<li>More UI improvements</li>
         \n
         \n<b>1.4.1</b>

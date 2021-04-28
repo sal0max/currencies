@@ -1,1 +1,3 @@
 - Select between two API providers: exchangerate.host and frankfurter.app
+- You can now support the developer by donating with PayPal. Find the link in the settings.
+- More UI improvements
