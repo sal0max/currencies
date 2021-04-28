@@ -20,8 +20,8 @@
     <!-- about api -->
     <string name="prefTitle_dataSource">Über die Datenquelle</string>
     <string-array name="prefSummary_dataSource">
-        <item><a href="https://exchangerate.host/"><b>exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\nEtwa 160 Währungen werden angeboten.</item>
-        <item><a href="https://www.frankfurter.app/"><b>frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\nEtwa 30 der wichtigsten Währungen sind enthalten.</item>
+        <item><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\n<b>Etwa 160 Währungen sind enthalten.</b></item>
+        <item><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\n<b>Etwa 30 Währungen sind enthalten.</b></item>
     </string-array>
     <!-- refresh period -->
     <string name="prefTitle_dataUpdate">Aktualisierungsintervall</string>

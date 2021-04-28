@@ -38,8 +38,8 @@
     <string name="prefKey_dataSource" translatable="false">KEY_DATA_SOURCE</string>
     <string name="prefTitle_dataSource">About data provider</string>
     <string-array name="prefSummary_dataSource">
-        <item><a href="https://exchangerate.host/"><b>exchangerate.host</b></a> sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.</item>
-        <item><a href="https://www.frankfurter.app/"><b>frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank. </item>
+        <item><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.\n<b>About 160 currencies are included.</b></item>
+        <item><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank.\n<b>About 30 currencies are included.</b></item>
     </string-array>
     <!-- refresh period -->
     <string name="prefKey_dataUpdate" translatable="false">KEY_DATA_UPDATE</string>
