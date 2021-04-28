@@ -15,8 +15,9 @@ It is **not** intended to be used for realtime financial business, rather to be 
 
 ## Features
 
-* It supports the most relevant currencies. Currently counting over 160!
-* Currency data is provided on a daily basis by [exchangerate.host](https://exchangerate.host/)
+* The app supports all relevant currencies. You can choose between two exchange rate providers:
+   * [exchangerate.host](https://exchangerate.host/) with **over 160 currencies**
+   * [frankfurter.api](https://frankfurter.api/) with **over 30 currencies**, provided by the European Central Bank
 * The UI is simple and pure Material Design.
 * A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
 * Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
