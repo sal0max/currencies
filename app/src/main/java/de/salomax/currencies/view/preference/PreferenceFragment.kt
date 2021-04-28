@@ -24,30 +24,17 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         setPreferencesFromResource(R.xml.prefs, rootKey)
         viewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
-        // api provider
-        val apiPreference = findPreference<ListPreference>(getString(R.string.prefKey_api))!!
-        apiPreference.setOnPreferenceChangeListener { _, newValue ->
-            viewModel.setApiProvider(newValue.toString().toInt())
-            true
-        }
-        // change text according to selected api
-        viewModel.getApiProvider().observe(this, {
-            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataSource))!!.summary =
-                resources.getTextArray(R.array.prefSummary_dataSource)[it]
-            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataUpdate))!!.summary =
-                resources.getTextArray(R.array.prefSummary_dataUpdate)[it]
-        })
-
         // theme
-        val themePreference = findPreference<ListPreference>(getString(R.string.prefKey_theme))!!
-        themePreference.setOnPreferenceChangeListener { _, newValue ->
-            viewModel.setTheme(newValue.toString().toInt())
-            true
+        findPreference<ListPreference>(getString(R.string.prefKey_theme))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setTheme(newValue.toString().toInt())
+                true
+            }
         }
 
-        // fee
-        val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.prefKey_fee))!!
-        feePreference.setOnPreferenceChangeListener { _, newValue ->
+        // transaction fee
+        val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.prefKey_fee))
+        feePreference?.setOnPreferenceChangeListener { _, newValue ->
             if (newValue is String)
                 viewModel.setFee(newValue.toString().toFloat())
             else if (newValue is Boolean)
@@ -55,8 +42,23 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             true
         }
         viewModel.getFee().observe(this, {
-            feePreference.summary = it.humanReadableFee(requireContext())
-            feePreference.text = it.toString()
+            feePreference?.summary = it.humanReadableFee(requireContext())
+            feePreference?.text = it.toString()
+        })
+
+        // api provider
+        findPreference<ListPreference>(getString(R.string.prefKey_api))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setApiProvider(newValue.toString().toInt())
+                true
+            }
+        }
+        // change text according to selected api
+        viewModel.getApiProvider().observe(this, {
+            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataSource))?.summary =
+                resources.getTextArray(R.array.prefSummary_dataSource)[it]
+            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataUpdate))?.summary =
+                resources.getTextArray(R.array.prefSummary_dataUpdate)[it]
         })
 
         // donate
@@ -80,12 +82,13 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
 
         // about
-        val aboutPreference = findPreference<Preference>(getString(R.string.prefKey_about))!!
-        aboutPreference.title = getString(R.string.prefTitle_about, BuildConfig.VERSION_NAME)
-        aboutPreference.summary = getString(R.string.prefSummary_about, Calendar.getInstance().get(Calendar.YEAR))
-        aboutPreference.setOnPreferenceClickListener {
-            ChangelogDialog().show(childFragmentManager, null)
-            true
+        findPreference<Preference>(getString(R.string.prefKey_about))?.apply {
+            title = getString(R.string.prefTitle_about, BuildConfig.VERSION_NAME)
+            summary = getString(R.string.prefSummary_about, Calendar.getInstance().get(Calendar.YEAR))
+            setOnPreferenceClickListener {
+                ChangelogDialog().show(childFragmentManager, null)
+                true
+            }
         }
     }
 
