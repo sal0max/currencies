@@ -4,7 +4,6 @@ import android.content.Context
 import de.salomax.currencies.R
 import java.lang.StringBuilder
 
-
 fun Float.humanReadableFee(context: Context): String {
     val sb = StringBuilder()
     if (this >= 0)
