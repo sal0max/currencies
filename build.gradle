@@ -1,6 +1,6 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
-   ext.kotlin_version = "1.5.0"
+   ext.kotlin_version = "1.5.10"
    repositories {
       google()
       mavenCentral()
@@ -13,7 +13,7 @@ buildscript {
 
 // dependency-update-checker: gradle dependencyUpdates
 plugins {
-   id "com.github.ben-manes.versions" version "0.38.0"
+   id "com.github.ben-manes.versions" version "0.39.0"
 }
 // only check for stable versions
 dependencyUpdates.resolutionStrategy {
