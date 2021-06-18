@@ -2,26 +2,28 @@ package de.salomax.currencies.repository
 
 import com.github.kittinunf.fuel.core.ResponseResultOf
 import de.salomax.currencies.model.ExchangeRates
-import org.junit.Test
 import org.junit.Assert.*
+import org.junit.Test
+import java.time.LocalDate
+import java.time.ZoneId
 
 class ExchangeRatesServiceTest {
 
     @Test
     fun testExchangerateHost() {
         testWebservice(
-            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.EXCHANGERATE_HOST)
+            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.EXCHANGERATE_HOST), 1
         )
     }
 
     @Test
     fun testFrankfurterApp() {
         testWebservice(
-            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.FRANKFURTER_APP)
+            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.FRANKFURTER_APP), 4
         )
     }
 
-    fun testWebservice(data: ResponseResultOf<ExchangeRates>) {
+    private fun testWebservice(data: ResponseResultOf<ExchangeRates>, maxAge: Long) {
         // rates
         val rates = data.third.component1()
 
@@ -52,6 +54,12 @@ class ExchangeRatesServiceTest {
         val chf = rates.rates!!.find { rate -> rate.code == "CHF" }
         assertTrue(chf != null)
         println(chf)
+
+        // check if the date is current
+        rates.date?.let {
+            assertTrue(it >= LocalDate.now(ZoneId.of("UTC")).minusDays(maxAge))
+            println(rates.date)
+        }
     }
 
 }

@@ -12,13 +12,14 @@ import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Rate
 import java.io.IOException
 import java.time.LocalDate
+import java.util.*
 
 object ExchangeRatesService {
 
     private const val base = "EUR"
 
     enum class Endpoint(val url: String) {
-        EXCHANGERATE_HOST("https://api.exchangerate.host/latest?base=$base"),
+        EXCHANGERATE_HOST("https://api.exchangerate.host/latest?base=$base&v=${UUID.randomUUID()}"),
         FRANKFURTER_APP("https://api.frankfurter.app/latest?base=$base")
     }
 
