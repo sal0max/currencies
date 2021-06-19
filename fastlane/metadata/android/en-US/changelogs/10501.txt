@@ -1,0 +1,2 @@
+- Fixes a bug where the rates wouldn't update, when exchangerate.host is used.
+- Library updates to improve stability and performance.
