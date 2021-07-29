@@ -23,6 +23,13 @@ class ExchangeRatesServiceTest {
         )
     }
 
+    @Test
+    fun testFerEe() {
+        testWebservice(
+            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.FER_EE), 4
+        )
+    }
+
     private fun testWebservice(data: ResponseResultOf<ExchangeRates>, maxAge: Long) {
         // rates
         val rates = data.third.component1()

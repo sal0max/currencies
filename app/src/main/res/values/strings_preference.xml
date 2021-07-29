@@ -29,10 +29,12 @@
     <string-array name="prefEntries_api" translatable="false">
         <item>Exchangerate.host</item>
         <item>Frankfurter.app</item>
+        <item>Fer.ee</item>
     </string-array>
     <string-array name="prefEntryValues_api" translatable="false">
         <item>0</item>
         <item>1</item>
+        <item>2</item>
     </string-array>
     <!-- about api -->
     <string name="prefKey_dataSource" translatable="false">KEY_DATA_SOURCE</string>
@@ -40,6 +42,7 @@
     <string-array name="prefSummary_dataSource">
         <item><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.\n<b>About 160 currencies are included.</b></item>
         <item><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank.\n<b>About 30 currencies are included.</b></item>
+        <item><a href="https://fer.ee/"><b>Fer.ee</b></a> is a relatively new service, that (just like Frankfurter.app) does track reference exchange (forex) rates that are published by the European Central Bank.\n<b>About 30 currencies are included.</b></item>
     </string-array>
     <!-- refresh period -->
     <string name="prefKey_dataUpdate" translatable="false">KEY_DATA_UPDATE</string>
@@ -47,6 +50,7 @@
     <string-array name="prefSummary_dataUpdate">
         <item>Exchange rates are updated around midnight UTC every working day.</item>
         <item>The data is getting updated around 16:00 CET every working day.</item>
+        <item>Rates are updated every working day.</item>
     </string-array>
 
     <!-- category: prefs -->

@@ -20,7 +20,8 @@ object ExchangeRatesService {
 
     enum class Endpoint(val url: String) {
         EXCHANGERATE_HOST("https://api.exchangerate.host/latest?base=$base&v=${UUID.randomUUID()}"),
-        FRANKFURTER_APP("https://api.frankfurter.app/latest?base=$base")
+        FRANKFURTER_APP("https://api.frankfurter.app/latest?base=$base"),
+        FER_EE("https://api.fer.ee/latest?base=$base"),
     }
 
     private val moshi = Moshi.Builder()

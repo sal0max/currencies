@@ -23,12 +23,14 @@
     <string-array name="prefSummary_dataSource">
         <item><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\n<b>Etwa 160 Währungen sind enthalten.</b></item>
         <item><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\n<b>Etwa 30 Währungen sind enthalten.</b></item>
+        <item><a href="https://fer.ee/"><b>Fer.ee</b></a> ist ein recht neuer Dienst, der (genau wie Frankfurter.app) die Kurse der Europäische Zentralbank bereitstellt.\n<b>Etwa 30 Währungen sind enthalten.</b></item>
     </string-array>
     <!-- refresh period -->
     <string name="prefTitle_dataUpdate">Aktualisierungsintervall</string>
     <string-array name="prefSummary_dataUpdate">
         <item>Die Referenzwerte werden um Mitternacht UTC an Werktagen aktualisiert.</item>
         <item>Die Referenzwerte werden um ca. 16 Uhr mitteleuropäische Zeit an Werktagen aktualisiert.</item>
+        <item>Die Referenzwerte werden an allen Werktagen aktualisiert.</item>
     </string-array>
     <!-- category: prefs -->
     <!-- disclaimer -->

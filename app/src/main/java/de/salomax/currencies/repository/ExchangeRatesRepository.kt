@@ -23,6 +23,8 @@ class ExchangeRatesRepository(private val context: Context) {
         ExchangeRatesService.getRates(
             // use the right api
             when (Database.getInstance(context).getApiProvider()) {
+                // fer.ee
+                2 -> ExchangeRatesService.Endpoint.FER_EE
                 // frankfurter.app
                 1 -> ExchangeRatesService.Endpoint.FRANKFURTER_APP
                 // exchangerate.host (== 0)
