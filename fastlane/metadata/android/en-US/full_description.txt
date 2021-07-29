@@ -1,8 +1,10 @@
 Currencies is a simple and straightforward currency converter.It is not intended to be used for realtime financial business, rather to be a handy companion e.g. on vacations.
 
-• The app supports all relevant currencies. You can choose between two exchange rate providers:
+• The app supports all relevant currencies. You can choose between several exchange rate providers:
    • exchangerate.host with over 160 currencies
-   • frankfurter.api with over 30 currencies, provided by the European Central Bank
+   • frankfurter.app with over 30 currencies, provided by the European Central Bank
+   • fer.ee with over 30 currencies, provided by the European Central Bank (just like frankfurter.app)
+
 • The UI is simple and pure Material Design.
 • A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
 • Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
