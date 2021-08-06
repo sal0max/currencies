@@ -1,0 +1,10 @@
+Currencies ist ein schlichter Währungsrechner für Android. ist ein praktischer Begleiter auf Urlaubsreisen.
+
+• Die App unterstützt alle nötigen Währungen. Man kann zwischen zwei Kursanbietern wählen:
+   • exchangerate.host mit über 160 Währungen
+   • frankfurter.app mit über 30 Währungen, bereitgestellt direkt von der Europäischen Zentralbank
+• Das User Interface is schlicht und echtes Material Design.
+• Eine tolle Funktion ist der eingebaute Taschenrechner. Praktisch z. B. wenn man schlenn eine Restaurantrechnung aufteilen möchte.
+• Gebührenrechner: füge wahlweise eine Fremdwährungsgebühr allen Berechnungen hinzu
+• Currencies ist in Kotlin für Android geschrieben, ist für Android 11 optimiert und unterstützt dunkle und helle Themes.
+• Die Anwendung ist werbefrei und spioniert den Nutzer nicht aus.
