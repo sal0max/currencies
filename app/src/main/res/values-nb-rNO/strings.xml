@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="copied_to_clipboard">Kopierte <b>%s</b> til utklippstavlen</string>
+    <string name="error">Feil: %s</string>
+    <string name="menu_settings">Innstillinger</string>
+    <string name="decimal_separator">,</string>
+</resources>
