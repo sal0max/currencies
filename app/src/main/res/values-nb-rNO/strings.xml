@@ -4,4 +4,9 @@
     <string name="error">Feil: %s</string>
     <string name="menu_settings">Innstillinger</string>
     <string name="decimal_separator">,</string>
+    <string name="desc_toggle_currencies">veksle valuta</string>
+    <string name="last_updated">Valutakursen alder: %s</string>
+    <string name="error_no_data">Kunne ikke oppdatere den valutakurser. Ingen tilkobling.</string>
+    <string name="error_api_error">Det var en API feil. Vennligst prøv igjen senere.</string>
+    <string name="menu_refresh">Oppdateringsfrekvens</string>
 </resources>
