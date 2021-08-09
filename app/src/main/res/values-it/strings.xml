@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> </string>
+    <string name="desc_toggle_currencies">togliere le valute</string>
+    <string name="last_updated">Età del tasso di cambio: %s</string>
+    <string name="copied_to_clipboard">Copiato negli appunti</string>
+    <string name="error">Errore: %s</string>
+    <string name="error_no_data">Non è stato possibile aggiornare i tassi di cambio. Nessuna connessione.</string>
+    <string name="error_api_error">Si è verificato un errore API. Si prega di riprovare più tardi.</string>
+    <string name="menu_settings">Impostazioni</string>
+    <string name="menu_refresh">Tassi di aggiornamento</string>
+    <string name="title_preferences">\@string/menu_settings</string>
+</resources>
