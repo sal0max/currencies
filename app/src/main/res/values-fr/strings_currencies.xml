@@ -1,20 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name_vuv">Vanuatu vatu</string>
-    <string name="name_wst">Samoan tala</string>
-    <string name="name_xaf">CFA franc BEAC</string>
-    <string name="name_xag">Action d\'argent</string>
-    <string name="name_xau">Action d\'or</string>
-    <string name="name_xcd">Dollar des Caraïbes orientales</string>
-    <string name="name_xdr">Droits de tirage spéciaux</string>
-    <string name="name_xof">Franc CFA BCEAO</string>
-    <string name="name_xpd">Action de palladium</string>
-    <string name="name_xpf">Franc CFP</string>
-    <string name="name_xpt">Onde de platine</string>
-    <string name="name_yer">Rial yéménite</string>
-    <string name="name_zar">Rand sud-africain</string>
-    <string name="name_zmw">Kwacha zambien</string>
-    <string name="name_zwl">Dollar zimbabwéen</string>
     <string name="name_aed">Dirham des EAU</string>
     <string name="name_afn">Afghan afghani</string>
     <string name="name_all">Lek albanais</string>
@@ -172,4 +157,19 @@
     <string name="name_vef">Bolívar fuerte vénézuélien (ancien)</string>
     <string name="name_ves">Bolívar soberano vénézuélien</string>
     <string name="name_vnd">Dong vietnamien</string>
+    <string name="name_vuv">Vanuatu vatu</string>
+    <string name="name_wst">Samoan tala</string>
+    <string name="name_xaf">CFA franc BEAC</string>
+    <string name="name_xag">Action d\'argent</string>
+    <string name="name_xau">Action d\'or</string>
+    <string name="name_xcd">Dollar des Caraïbes orientales</string>
+    <string name="name_xdr">Droits de tirage spéciaux</string>
+    <string name="name_xof">Franc CFA BCEAO</string>
+    <string name="name_xpd">Action de palladium</string>
+    <string name="name_xpf">Franc CFP</string>
+    <string name="name_xpt">Onde de platine</string>
+    <string name="name_yer">Rial yéménite</string>
+    <string name="name_zar">Rand sud-africain</string>
+    <string name="name_zmw">Kwacha zambien</string>
+    <string name="name_zwl">Dollar zimbabwéen</string>
 </resources>

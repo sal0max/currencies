@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name_pln">Zloty polacco</string>
     <string name="name_aed">UAE dirham</string>
     <string name="name_afn">Afghan afghani</string>
     <string name="name_all">lek albanese</string>
@@ -118,6 +117,7 @@
     <string name="name_pgk">Papua Nuova Guinea kina</string>
     <string name="name_php">Peso filippino</string>
     <string name="name_pkr">Rupia pakistana</string>
+    <string name="name_pln">Zloty polacco</string>
     <string name="name_pyg">guarani paraguaiano</string>
     <string name="name_qar">Riyal del Qatar</string>
     <string name="name_ron">leu rumeno</string>

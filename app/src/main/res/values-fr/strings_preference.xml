@@ -7,11 +7,11 @@
     <string name="prefTitle_categoryData">Taux de change</string>
     <string name="prefTitle_api">Fournisseur de données</string>
     <string name="prefTitle_dataSource">A propos du fournisseur de données</string>
-    <string name="prefTitle_about">Version %1$s</string>
     <string name="prefTitle_dataUpdate">Période de rafraîchissement</string>
-    <string name="prefTitle_categoryAbout">A propos de cette application</string>
     <string name="prefTitle_disclaimer">Disclaimer</string>
     <string name="prefSummary_disclaimer">Bien que l\'appli soit très minutieusement écrite et testée, <b>il n\'y a aucune garantie que les données qu\'elle affiche soient correctes</b>. Les taux de change sont fournis par une tierce partie et cette application ne peut pas promettre que les données sont vraies et à jour. En outre, les taux fournis - même s\'ils sont corrects - peuvent varier de ceux utilisés par votre banque. Ne faites jamais aveuglément confiance à qui que ce soit ! Ceci étant dit, soyez assuré que je n\'aurais pas sorti cette application si j\'avais eu le moindre doute sur son fonctionnement.</string>
     <string name="prefTitle_donate">Soutenir le développeur</string>
     <string name="prefSummary_donate">Donner via PayPal</string>
+    <string name="prefTitle_categoryAbout">A propos de cette application</string>
+    <string name="prefTitle_about">Version %1$s</string>
 </resources>

@@ -1,18 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name_mzn">Métical mozambiqueño</string>
-    <string name="name_vuv">Vanuatu vatu</string>
-    <string name="name_wst">Tala samoana</string>
-    <string name="name_xaf">Franco CFA BEAC</string>
-    <string name="name_xag">Onza de plata</string>
-    <string name="name_xau">Onza de oro</string>
-    <string name="name_xcd">Dólar del Caribe Oriental</string>
-    <string name="name_xdr">Derechos especiales de giro</string>
-    <string name="name_xof">Franco CFA BCEAO</string>
-    <string name="name_xpd">Ona de paladio</string>
-    <string name="name_xpf">Franco CFA</string>
-    <string name="name_xpt">Ona de platino</string>
-    <string name="name_yer">Rial yemení</string>
     <string name="name_aed">Dirham estadounidense</string>
     <string name="name_afn">Afgano afgano</string>
     <string name="name_all">Lek albanés</string>
@@ -117,6 +104,7 @@
     <string name="name_mwk">Kwacha malawiano</string>
     <string name="name_mxn">Peso mexicano</string>
     <string name="name_myr">Ringgit malayo</string>
+    <string name="name_mzn">Métical mozambiqueño</string>
     <string name="name_nad">Dólar namibio</string>
     <string name="name_ngn">Naira nigeriano</string>
     <string name="name_nio">Córdoba nicaragüense</string>
@@ -169,6 +157,18 @@
     <string name="name_vef">Bolívar fuerte venezolano (antiguo)</string>
     <string name="name_ves">Bolívar venezolano soberano</string>
     <string name="name_vnd">Dongo vietnamita</string>
+    <string name="name_vuv">Vanuatu vatu</string>
+    <string name="name_wst">Tala samoana</string>
+    <string name="name_xaf">Franco CFA BEAC</string>
+    <string name="name_xag">Onza de plata</string>
+    <string name="name_xau">Onza de oro</string>
+    <string name="name_xcd">Dólar del Caribe Oriental</string>
+    <string name="name_xdr">Derechos especiales de giro</string>
+    <string name="name_xof">Franco CFA BCEAO</string>
+    <string name="name_xpd">Ona de paladio</string>
+    <string name="name_xpf">Franco CFA</string>
+    <string name="name_xpt">Ona de platino</string>
+    <string name="name_yer">Rial yemení</string>
     <string name="name_zar">Rand sudafricano</string>
     <string name="name_zmw">Kwacha zambiano</string>
     <string name="name_zwl">Dólar de Zimbabue</string>
