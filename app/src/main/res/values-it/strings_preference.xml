@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="prefTitle_categorySettings">Impostazioni generali</string>
+    <string name="prefTitle_theme">Design</string>
+    <string name="prefTitle_fee">Tassa per transazioni estere</string>
+    <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
+    <string name="prefTitle_categoryData">Tassi di cambio</string>
+    <string name="prefTitle_api">Data provider</string>
+    <string name="prefTitle_dataSource">Informazioni sul fornitore di dati</string>
+    <string name="prefTitle_dataUpdate">Periodo di aggiornamento</string>
+    <string name="prefTitle_categoryAbout">Di questa app</string>
+    <string name="prefTitle_disclaimer">Descargo de responsabilidad</string>
+    <string name="prefSummary_disclaimer">Anche se l\'app è scritta e testata molto accuratamente, <b>non c\'è garanzia che i dati che mostra siano corretti</b>. I tassi di cambio sono forniti da una terza parte e questa applicazione non può fare alcuna promessa che i dati siano veri e aggiornati.
+\nInoltre, i tassi forniti - anche se corretti - possono variare da quelli utilizzati dalla tua banca.
+\nInfine: gli errori capitano. Non fidatevi mai ciecamente di nessuno! Detto questo, stai sicuro che non avrei rilasciato questa applicazione se avessi avuto qualche dubbio sul fatto che funziona come previsto.</string>
+    <string name="prefTitle_donate">Supporta lo sviluppatore</string>
+    <string name="prefSummary_donate">Donar a través de PayPal</string>
+    <string name="prefTitle_about">Versione %1$s</string>
+</resources>

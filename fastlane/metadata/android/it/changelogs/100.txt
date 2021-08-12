@@ -1,0 +1,3 @@
+* Aggiornamento più a prova di errore dei tassi di cambio
+* Aggiunto un disclaimer
+* Aggiunto questo changelog

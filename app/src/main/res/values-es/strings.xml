@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> </string>
+    <string name="desc_toggle_currencies">alternar monedas</string>
+    <string name="last_updated">Edad del tipo de cambio: %s</string>
+    <string name="copied_to_clipboard">Copiado <b>%s</b> al portapapeles</string>
+    <string name="error">Error: %s</string>
+    <string name="error_no_data">No se han podido actualizar los tipos de cambio. No hay conexión.</string>
+    <string name="error_api_error">Ha habido un error en la API. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="menu_settings">Configuración</string>
+    <string name="menu_refresh">Tarifas de actualización</string>
+    <string name="title_preferences">\@string/menu_settings</string>
+</resources>

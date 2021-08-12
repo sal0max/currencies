@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_afn">Afghansk afghani</string>
+    <string name="name_all">Albansk lek</string>
+    <string name="name_amd">Armensk dram</string>
+    <string name="name_ars">Argentinsk peso</string>
+    <string name="name_aud">Australsk dollar</string>
+    <string name="name_nok">Norsk krone</string>
+    <string name="name_aed">Emiratarabisk dirham</string>
+    <string name="name_aoa">Angolansk kwanza</string>
+</resources>
