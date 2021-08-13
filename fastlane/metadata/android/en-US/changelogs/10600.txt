@@ -1,0 +1,2 @@
+-Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish, French, Italian and Norwegian (Bokmål). Thanks so much for your help! 🙏🙏🙏
+-Small under-the-hood updates to make the app even more reliable.

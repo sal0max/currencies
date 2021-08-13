@@ -2,7 +2,12 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.5.1</b>
+    <string name="changelog" translatable="false"><b>1.6.0</b>
+        \n⸻
+        \n<li>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish, French, Italian and Norwegian (Bokmål). Thanks so much for your help! 🙏🙏🙏</li>
+        \n<li>Small under-the-hood updates to make the app even more reliable.</li>
+        \n
+        \n<b>1.5.1</b>
         \n⸻
         \n<li>Fixes a bug where the rates wouldn\'t update, when exchangerate.host is used.</li>
         \n<li>Library updates to improve stability and performance.</li>
@@ -10,7 +15,7 @@
         \n<b>1.5.0</b>
         \n⸻
         \n<li>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></li>
-        \n<li>You can now support the developer by donating with PayPal. Find the link in the settings.</li>
+        \n<li>You can now support the developer by donating with PayPal. Find the link in the settings. (F-Droid version only.)</li>
         \n<li>More UI improvements</li>
         \n
         \n<b>1.4.1</b>
