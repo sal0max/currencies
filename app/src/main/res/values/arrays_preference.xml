@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- main settings -->
+    <string-array name="theme_names" translatable="false">
+        <item>@string/theme_option_light</item>
+        <item>@string/theme_option_dark</item>
+        <item>@string/theme_option_default</item>
+    </string-array>
+
+    <string-array name="theme_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
+    <!-- api -->
+    <string-array name="api_names" translatable="false">
+        <item>Exchangerate.host</item>
+        <item>Frankfurter.app</item>
+    </string-array>
+
+    <string-array name="api_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="api_about_summary">
+        <item>@string/api_about_exchangerateHost</item>
+        <item>@string/api_about_frankfurterApi</item>
+    </string-array>
+
+    <string-array name="api_refreshPeriod_summary">
+        <item>@string/api_refreshPeriod_exchangerateHost</item>
+        <item>@string/api_refreshPeriod_frankfurterApi</item>
+    </string-array>
+</resources>

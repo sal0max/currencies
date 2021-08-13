@@ -25,7 +25,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         viewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
         // theme
-        findPreference<ListPreference>(getString(R.string.prefKey_theme))?.apply {
+        findPreference<ListPreference>(getString(R.string.theme_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
                 viewModel.setTheme(newValue.toString().toInt())
                 true
@@ -33,7 +33,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
 
         // transaction fee
-        val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.prefKey_fee))
+        val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.fee_key))
         feePreference?.setOnPreferenceChangeListener { _, newValue ->
             if (newValue is String)
                 viewModel.setFee(newValue.toString().toFloat())
@@ -47,7 +47,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         })
 
         // api provider
-        findPreference<ListPreference>(getString(R.string.prefKey_api))?.apply {
+        findPreference<ListPreference>(getString(R.string.api_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
                 viewModel.setApiProvider(newValue.toString().toInt())
                 true
@@ -55,14 +55,14 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
         // change text according to selected api
         viewModel.getApiProvider().observe(this, {
-            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataSource))?.summary =
-                resources.getTextArray(R.array.prefSummary_dataSource)[it]
-            findPreference<LongSummaryPreference>(getString(R.string.prefKey_dataUpdate))?.summary =
-                resources.getTextArray(R.array.prefSummary_dataUpdate)[it]
+            findPreference<LongSummaryPreference>(getString(R.string.key_apiProvider))?.summary =
+                resources.getTextArray(R.array.api_about_summary)[it]
+            findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
+                resources.getTextArray(R.array.api_refreshPeriod_summary)[it]
         })
 
         // donate
-        findPreference<Preference>(getString(R.string.prefKey_donate))?.apply {
+        findPreference<Preference>(getString(R.string.donate_key))?.apply {
             // hide for Play Store - Google is a cunt
             isVisible = when (BuildConfig.FLAVOR) {
                 "play" -> false
@@ -82,9 +82,9 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
 
         // about
-        findPreference<Preference>(getString(R.string.prefKey_about))?.apply {
-            title = getString(R.string.prefTitle_about, BuildConfig.VERSION_NAME)
-            summary = getString(R.string.prefSummary_about, Calendar.getInstance().get(Calendar.YEAR))
+        findPreference<Preference>(getString(R.string.about_key))?.apply {
+            title = getString(R.string.aboutVersion, BuildConfig.VERSION_NAME)
+            summary = getString(R.string.about_summary, Calendar.getInstance().get(Calendar.YEAR))
             setOnPreferenceClickListener {
                 ChangelogDialog().show(childFragmentManager, null)
                 true

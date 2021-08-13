@@ -1,44 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <!-- category: main settings -->
-    <string name="prefTitle_categorySettings">Haupteinstellungen</string>
-    <!-- theme -->
-    <string name="prefTitle_theme">Design</string>
-    <string-array name="prefEntries_theme">
-        <item>Hell</item>
-        <item>Dunkel</item>
-        <item>Systemstandard</item>
-    </string-array>
-    <!-- fee -->
-    <string name="prefTitle_fee">Fremdwährungsgebühr</string>
+    <!-- main settings -->
+    <string name="category_settings">Haupteinstellungen</string>
+    <string name="theme_title">Design</string>
+    <string name="theme_option_light">Hell</string>
+    <string name="theme_option_dark">Dunkel</string>
+    <string name="theme_option_default">Systemstandard</string>
+    <string name="fee_title">Fremdwährungsgebühr</string>
     <string name="fee_summary">In den Konditionen mancher Kreditkarten sind Gebühren für den Einsatz im Ausland bzw. mit Fremdwährungen enthalten. Hier kannst du die Gebühr deiner Karte eintragen. Sie wird dann auf alle Umrechnungen aufgeschlagen, damit du weißt, wie viel du <i>wirklich</i> zahlst.</string>
-
-    <!-- category: data source -->
-    <string name="prefTitle_categoryData">Wechselkurse</string>
     <!-- api -->
-    <string name="prefTitle_api">Datenquelle</string>
-    <!-- about api -->
-    <string name="prefTitle_dataSource">Über die Datenquelle</string>
-    <string-array name="prefSummary_dataSource">
-        <item><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\n<b>Etwa 160 Währungen sind enthalten.</b></item>
-        <item><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\n<b>Etwa 30 Währungen sind enthalten.</b></item>
-    </string-array>
-    <!-- refresh period -->
-    <string name="prefTitle_dataUpdate">Aktualisierungsintervall</string>
-    <string-array name="prefSummary_dataUpdate">
-        <item>Die Referenzwerte werden um Mitternacht UTC an Werktagen aktualisiert.</item>
-        <item>Die Referenzwerte werden um ca. 16 Uhr mitteleuropäische Zeit an Werktagen aktualisiert.</item>
-    </string-array>
-    <!-- category: prefs -->
-    <!-- disclaimer -->
-    <string name="prefTitle_disclaimer">Haftungsausschluss</string>
-    <string name="prefSummary_disclaimer">Auch wenn diese App sehr sorgfältig geschrieben und getestet ist, <b>besteht keinerlei Garantie, dass die angezeigen Daten korrekt sind</b>. Die Währungskurse werden durch Drittparteien bereitgestellt und diese App hat keinerlei Möglichkeit zu überprüfen, ob diese Daten richtig und aktuell sind.\nAußerdem können die Daten – selbst wenn sie stimmen – von denen abweichen, die deine Bank nutzt.\nZu guter Letzt: Fehler passieren. Vertraue niemals jemandem blind! Sei dennoch versichert, dass ich diese App nicht veröffentlicht hätte, wenn ich an ihr zweifeln würde.</string>
-    <!-- donate -->
-    <string name="prefTitle_donate">Unterstütze den Entwickler</string>
-    <string name="prefSummary_donate">Spende über PayPal</string>
+    <string name="category_api">Wechselkurse</string>
+    <string name="api_title">Datenquelle</string>
+    <string name="api_about_title">Über die Datenquelle</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\n<b>Etwa 160 Währungen sind enthalten.</b></string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\n<b>Etwa 30 Währungen sind enthalten.</b></string>
+    <string name="api_refreshPeriod_title">Aktualisierungsintervall</string>
+    <string name="api_refreshPeriod_exchangerateHost">Die Referenzwerte werden um Mitternacht UTC an Werktagen aktualisiert.</string>
+    <string name="api_refreshPeriod_frankfurterApi">Die Referenzwerte werden um ca. 16 Uhr mitteleuropäische Zeit an Werktagen aktualisiert.</string>
     <!-- about -->
-    <string name="prefTitle_categoryAbout">Über diese App</string>
-    <string name="prefTitle_about">Version %1$s</string>
-
+    <string name="category_about">Über diese App</string>
+    <string name="disclaimer_title">Haftungsausschluss</string>
+    <string name="disclaimer_summary">Auch wenn diese App sehr sorgfältig geschrieben und getestet ist, <b>besteht keinerlei Garantie, dass die angezeigen Daten korrekt sind</b>. Die Währungskurse werden durch Drittparteien bereitgestellt und diese App hat keinerlei Möglichkeit zu überprüfen, ob diese Daten richtig und aktuell sind.\nAußerdem können die Daten – selbst wenn sie stimmen – von denen abweichen, die deine Bank nutzt.\nZu guter Letzt: Fehler passieren. Vertraue niemals jemandem blind! Sei dennoch versichert, dass ich diese App nicht veröffentlicht hätte, wenn ich an ihr zweifeln würde.</string>
+    <string name="donate_title">Unterstütze den Entwickler</string>
+    <string name="donate_summary">Spende über PayPal</string>
+    <string name="aboutVersion">Version %1$s</string>
 </resources>

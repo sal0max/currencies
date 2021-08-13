@@ -3,53 +3,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <PreferenceCategory android:title="@string/prefTitle_categorySettings">
+    <PreferenceCategory android:title="@string/category_settings">
         <ListPreference
             android:defaultValue="2"
-            android:entries="@array/prefEntries_theme"
-            android:entryValues="@array/prefEntryValues_theme"
-            android:key="@string/prefKey_theme"
+            android:entries="@array/theme_names"
+            android:entryValues="@array/theme_values"
+            android:key="@string/theme_key"
             android:summary="%s"
-            android:title="@string/prefTitle_theme" />
+            android:title="@string/theme_title" />
         <de.salomax.currencies.widget.EditTextSwitchPreference
             android:dialogLayout="@layout/preference_dialog_fee"
             android:dialogMessage="@string/fee_summary"
-            android:key="@string/prefKey_fee"
-            android:title="@string/prefTitle_fee"
+            android:key="@string/fee_key"
+            android:title="@string/fee_title"
             tools:summary="2.0 %" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/prefTitle_categoryData">
+    <PreferenceCategory android:title="@string/category_api">
         <ListPreference
             android:defaultValue="0"
-            android:entries="@array/prefEntries_api"
-            android:entryValues="@array/prefEntryValues_api"
-            android:key="@string/prefKey_api"
+            android:entries="@array/api_names"
+            android:entryValues="@array/api_values"
+            android:key="@string/api_key"
             android:summary="%s"
-            android:title="@string/prefTitle_api" />
+            android:title="@string/api_title" />
         <de.salomax.currencies.widget.LongSummaryPreference
-            android:key="@string/prefKey_dataSource"
+            android:key="@string/key_apiProvider"
             android:selectable="false"
-            android:title="@string/prefTitle_dataSource" />
+            android:title="@string/api_about_title" />
         <de.salomax.currencies.widget.LongSummaryPreference
-            android:key="@string/prefKey_dataUpdate"
+            android:key="@string/key_refreshPeriod"
             android:selectable="false"
-            android:title="@string/prefTitle_dataUpdate" />
+            android:title="@string/api_refreshPeriod_title" />
     </PreferenceCategory>
 
-    <PreferenceCategory android:title="@string/prefTitle_categoryAbout">
+    <PreferenceCategory android:title="@string/category_about">
         <de.salomax.currencies.widget.LongSummaryPreference
             android:selectable="false"
-            android:summary="@string/prefSummary_disclaimer"
-            android:title="@string/prefTitle_disclaimer" />
+            android:summary="@string/disclaimer_summary"
+            android:title="@string/disclaimer_title" />
         <Preference
-            android:key="@string/prefKey_donate"
-            android:summary="@string/prefSummary_donate"
-            android:title="@string/prefTitle_donate" />
+            android:key="@string/donate_key"
+            android:summary="@string/donate_summary"
+            android:title="@string/donate_title" />
         <Preference
-            android:key="@string/prefKey_about"
-            android:summary="@string/prefSummary_about"
-            android:title="@string/prefTitle_about" />
+            android:key="@string/about_key"
+            android:summary="@string/about_summary"
+            android:title="@string/aboutVersion" />
     </PreferenceCategory>
 
 </PreferenceScreen>

@@ -1,17 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="prefTitle_categorySettings">Paramètres généraux</string>
-    <string name="prefTitle_theme">Design</string>
-    <string name="prefTitle_fee">Frais de transaction à l\'étranger</string>
+    <!-- main settings -->
+    <string name="category_settings">Paramètres généraux</string>
+    <string name="theme_title">Design</string>
+    <string name="fee_title">Frais de transaction à l\'étranger</string>
     <string name="fee_summary">Selon votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les transactions de change. Vous pouvez saisir ici ces frais. Elle sera ajoutée en plus du calcul, afin que vous sachiez combien vous <i>réellement</i> payez.</string>
-    <string name="prefTitle_categoryData">Taux de change</string>
-    <string name="prefTitle_api">Fournisseur de données</string>
-    <string name="prefTitle_dataSource">A propos du fournisseur de données</string>
-    <string name="prefTitle_dataUpdate">Période de rafraîchissement</string>
-    <string name="prefTitle_disclaimer">Disclaimer</string>
-    <string name="prefSummary_disclaimer">Bien que l\'appli soit très minutieusement écrite et testée, <b>il n\'y a aucune garantie que les données qu\'elle affiche soient correctes</b>. Les taux de change sont fournis par une tierce partie et cette application ne peut pas promettre que les données sont vraies et à jour. En outre, les taux fournis - même s\'ils sont corrects - peuvent varier de ceux utilisés par votre banque. Ne faites jamais aveuglément confiance à qui que ce soit ! Ceci étant dit, soyez assuré que je n\'aurais pas sorti cette application si j\'avais eu le moindre doute sur son fonctionnement.</string>
-    <string name="prefTitle_donate">Soutenir le développeur</string>
-    <string name="prefSummary_donate">Donner via PayPal</string>
-    <string name="prefTitle_categoryAbout">A propos de cette application</string>
-    <string name="prefTitle_about">Version %1$s</string>
+    <!-- api -->
+    <string name="category_api">Taux de change</string>
+    <string name="api_title">Fournisseur de données</string>
+    <string name="api_about_title">A propos du fournisseur de données</string>
+    <string name="api_refreshPeriod_title">Période de rafraîchissement</string>
+    <!-- about -->
+    <string name="category_about">A propos de cette application</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_summary">Bien que l\'appli soit très minutieusement écrite et testée, <b>il n\'y a aucune garantie que les données qu\'elle affiche soient correctes</b>. Les taux de change sont fournis par une tierce partie et cette application ne peut pas promettre que les données sont vraies et à jour. En outre, les taux fournis - même s\'ils sont corrects - peuvent varier de ceux utilisés par votre banque. Ne faites jamais aveuglément confiance à qui que ce soit ! Ceci étant dit, soyez assuré que je n\'aurais pas sorti cette application si j\'avais eu le moindre doute sur son fonctionnement.</string>
+    <string name="donate_title">Soutenir le développeur</string>
+    <string name="donate_summary">Donner via PayPal</string>
+    <string name="aboutVersion">Version %1$s</string>
 </resources>
