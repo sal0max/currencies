@@ -1,47 +1,85 @@
 package de.salomax.currencies.repository
 
 import com.github.kittinunf.fuel.Fuel
-import com.github.kittinunf.fuel.core.FuelError
-import com.github.kittinunf.fuel.core.Response
-import com.github.kittinunf.fuel.core.ResponseResultOf
+import com.github.kittinunf.fuel.core.*
 import com.github.kittinunf.fuel.moshi.moshiDeserializerOf
 import com.github.kittinunf.result.Result
 import com.squareup.moshi.*
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import de.salomax.currencies.model.ExchangeRates
+import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.model.Rate
 import java.io.IOException
 import java.time.LocalDate
+import java.time.format.DateTimeFormatter
 import java.util.*
 
 object ExchangeRatesService {
 
-    private const val base = "EUR"
-
-    enum class Endpoint(val url: String) {
-        EXCHANGERATE_HOST("https://api.exchangerate.host/latest?base=$base&v=${UUID.randomUUID()}"),
-        FRANKFURTER_APP("https://api.frankfurter.app/latest?base=$base")
+    enum class Endpoint(val baseUrl: String) {
+        EXCHANGERATE_HOST("https://api.exchangerate.host"),
+        FRANKFURTER_APP("https://api.frankfurter.app")
     }
 
-    private val moshi = Moshi.Builder()
-        .addLast(KotlinJsonAdapterFactory())
-        .add(RatesAdapter(base))
-        .add(LocalDateAdapter())
-        .build()
-        .adapter(ExchangeRates::class.java)
+    /**
+     *
+     */
+    suspend fun getRates(endpoint: Endpoint): Result<ExchangeRates, FuelError> {
+        // Currency conversions are done relatively to each other - so it basically doesn't matter
+        // which base is used here. However, Euro is a strong currency, preventing rounding errors.
+        val base = "EUR"
 
-    fun getRates(endpoint: Endpoint, result: (Response, Result<ExchangeRates, FuelError>) -> Unit) {
-        Fuel
-            .get(endpoint.url)
-            .responseObject(moshiDeserializerOf(moshi)) { _, r1, r2 ->
-                result(r1, r2)
+        return Fuel.get(
+            when (endpoint) {
+                Endpoint.EXCHANGERATE_HOST -> "${endpoint.baseUrl}/latest" +
+                        "?base=$base" +
+                        "&v=${UUID.randomUUID()}"
+                Endpoint.FRANKFURTER_APP -> "${endpoint.baseUrl}/latest" +
+                        "?base=$base"
             }
+        ).awaitResult(
+            moshiDeserializerOf(
+                Moshi.Builder()
+                    .addLast(KotlinJsonAdapterFactory())
+                    .add(RatesAdapter(base))
+                    .add(LocalDateAdapter())
+                    .build()
+                    .adapter(ExchangeRates::class.java)
+            )
+        )
     }
 
-    fun getRatesBlocking(endpoint: Endpoint): ResponseResultOf<ExchangeRates> {
-        return Fuel
-            .get(endpoint.url)
-            .responseObject(moshiDeserializerOf(moshi))
+    /**
+     *
+     */
+    suspend fun getTimeline(endpoint: Endpoint, startDate: LocalDate, endDate: LocalDate,
+                            base: String, symbol: String): Result<Timeline, FuelError> {
+        val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+        return Fuel.get(
+            when (endpoint) {
+                Endpoint.EXCHANGERATE_HOST -> "${endpoint.baseUrl}/timeseries" +
+                        "?base=$base" +
+                        "&v=${UUID.randomUUID()}" +
+                        "&start_date=${startDate.format(dateFormatter)}" +
+                        "&end_date=${endDate.format(dateFormatter)}" +
+                        "&symbols=$symbol"
+                Endpoint.FRANKFURTER_APP -> "${endpoint.baseUrl}/" +
+                        startDate.format(dateFormatter) +
+                        ".." +
+                        endDate.format(dateFormatter) +
+                        "?base=$base" +
+                        "&symbols=$symbol"
+            }
+        ).awaitResult(
+            moshiDeserializerOf(
+                Moshi.Builder()
+                    .addLast(KotlinJsonAdapterFactory())
+                    .add(RatesAdapter(base))
+                    .add(LocalDateAdapter())
+                    .build()
+                    .adapter(Timeline::class.java)
+            )
+        )
     }
 
     /*
@@ -52,6 +90,7 @@ object ExchangeRatesService {
 
         @Synchronized
         @FromJson
+        @Suppress("SpellCheckingInspection")
         @Throws(IOException::class)
         override fun fromJson(reader: JsonReader): List<Rate> {
             val list = mutableListOf<Rate>()
