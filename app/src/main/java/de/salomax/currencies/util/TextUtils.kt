@@ -3,53 +3,57 @@ package de.salomax.currencies.util
 import android.content.Context
 import de.salomax.currencies.R
 import java.lang.StringBuilder
-import kotlin.math.round
-
-// TODO nice new names for all those functions
 
 /**
- * returns e.g. + 0.1231 %
+ * returns e.g. "+ 0.1231 %" or "- 0.41512 %"
  */
-fun Float.humanReadablePercentage(context: Context): String {
+fun Float.prettyPrintPercent(context: Context): String {
     val sb = StringBuilder()
-    if (this >= 0)
-        sb.append("+ ")
-    sb.append(this.toString()
-        .replace(".", context.getString(R.string.decimal_separator))
-        .replace("-", "- ")
+    // sign
+    if (this >= 0) sb.append("+ ")
+    sb.append(
+        this.toString()
+            // decimal separator
+            .replace(".", context.getString(R.string.decimal_separator))
+            // sign
+            .replace("-", "- ")
     )
+    // percent
     sb.append(" %")
     return sb.toString()
 }
 
 /**
- * returns e.g. + 0.12 %
+ * returns e.g. "+ 0.12 %" or "- 41.32 %"
  */
-fun Float.humanReadablePercentage(context: Context, decimalPlaces: Int): String {
-    return this.round(decimalPlaces).humanReadablePercentage(context)
+fun Float.prettyPrintPercent(context: Context, decimalPlaces: Int): String {
+    return String
+        // round (with right padding)
+        .format("%.${decimalPlaces}f", this)
+        .toFloat()
+        .prettyPrintPercent(context)
 }
 
 /**
- * returns e.g. - 0.1231
+ * returns e.g. "- 0.1231" or "0.21311"
  */
-fun Float.humanReadable(context: Context): String {
-    val sb = StringBuilder()
-    sb.append(this.toString()
+fun Float.prettyPrint(context: Context): String {
+    return this.toString()
+        // decimal separator
         .replace(".", context.getString(R.string.decimal_separator))
+        // sign
         .replace("-", "- ")
-    )
-    return sb.toString()
 }
 
 /**
- * returns e.g. - 0.12
+ * returns e.g. "- 0.12" or "0.54"
  */
-fun Float.humanReadable(context: Context, decimalPlaces: Int): String {
-    return this.round(decimalPlaces).humanReadable(context)
-}
-
-private fun Float.round(decimals: Int): Float {
-    var multiplier = 1.0
-    repeat(decimals) { multiplier *= 10 }
-    return (round(this * multiplier) / multiplier).toFloat()
+fun Float.prettyPrint(context: Context, decimalPlaces: Int): String {
+    return String
+        // round (with right padding)
+        .format("%.${decimalPlaces}f", this)
+        // decimal separator
+        .replace(".", context.getString(R.string.decimal_separator))
+        // sign
+        .replace("-", "- ")
 }

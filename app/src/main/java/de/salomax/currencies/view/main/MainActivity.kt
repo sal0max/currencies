@@ -16,7 +16,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
-import de.salomax.currencies.util.humanReadablePercentage
+import de.salomax.currencies.util.prettyPrintPercent
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.view.timeline.TimelineActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
@@ -223,7 +223,7 @@ class MainActivity : AppCompatActivity() {
             tvFee.visibility = if (it) View.VISIBLE else View.GONE
         })
         inputModel.getFee().observe(this, {
-            tvFee.text = it.humanReadablePercentage(this)
+            tvFee.text = it.prettyPrintPercent(this)
             tvFee.setTextColor(
                 if (it >= 0) getColor(android.R.color.holo_red_light)
                 else getColor(R.color.dollarBill)
