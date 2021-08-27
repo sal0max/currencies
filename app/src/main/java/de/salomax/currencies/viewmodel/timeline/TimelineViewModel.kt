@@ -1,6 +1,7 @@
-package de.salomax.currencies.viewmodel.main
+package de.salomax.currencies.viewmodel.timeline
 
 import android.app.Application
+import android.util.Log
 import androidx.lifecycle.*
 import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.repository.ExchangeRatesRepository
@@ -150,65 +151,112 @@ class TimelineViewModel(
     }
 
     fun getRatesAverage(): LiveData<Rate?> {
-        // TODO ?
-        return Transformations.map(dbLiveItems) {
-            it
-                ?.rates
-                ?.entries
-                ?.map { entry -> entry.value
-                    .find { x -> x.code == symbol }
-                }
-                ?.map { rate -> rate?.value ?: 0f }
-                ?.average()
-                ?.let { average -> Rate(symbol, average.toFloat()) }
+        return MediatorLiveData<Rate?>().apply {
+            var scrubDate: LocalDate? = null
+            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+
+            fun update() {
+                this.value = rates
+                    ?.filter { map ->
+                        scrubDate?.let { !map.key.isBefore(it) } ?: true
+                    }
+                    ?.map { entry ->
+                        entry.value.find { rate -> rate.code == symbol }
+                    }
+                    ?.map { rate -> rate?.value ?: 0f }
+                    ?.average()
+                    ?.let { average -> Rate(symbol, average.toFloat()) }
+            }
+
+            addSource(dbLiveItems) {
+                rates = it?.rates?.entries
+                update()
+            }
+
+            addSource(scrubDateLiveData) {
+                scrubDate = it
+                update()
+            }
         }
     }
 
     fun getRatesMin(): LiveData<Pair<Rate?, LocalDate?>> {
-        // TODO ?
-        return Transformations.map(dbLiveItems) {
-            val min = it
-                ?.rates
-                ?.entries
-                ?.map { entry -> entry.value
-                    .find { x -> x.code == symbol }
-                }
-                ?.map { rate -> rate?.value ?: 0f }
-                ?.minOrNull()
-                ?.let { min -> Rate(symbol, min) }
-            val date = it
-                ?.rates
-                ?.entries
-                ?.findLast { entry -> entry.value
-                    .find { x -> x.code == symbol }
-                    ?.value == min?.value
-                }
-                ?.key
-            Pair(min, date)
+        return MediatorLiveData<Pair<Rate?, LocalDate?>>().apply {
+            var scrubDate: LocalDate? = null
+            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+
+            fun update() {
+                val min = rates
+                    ?.filter { map ->
+                        scrubDate?.let { !map.key.isBefore(it) } ?: true
+                    }
+                    ?.map { entry ->
+                        entry.value.find { rate -> rate.code == symbol }
+                    }
+                    ?.map { rate -> rate?.value ?: 0f }
+                    ?.minOrNull()
+                    ?.let { min -> Rate(symbol, min) }
+                val date = rates
+                    ?.filter { map ->
+                        scrubDate?.let { !map.key.isBefore(it) } ?: true
+                    }
+                    ?.findLast { entry -> entry.value
+                        .find { x -> x.code == symbol }
+                        ?.value == min?.value
+                    }
+                    ?.key
+                this.value = Pair(min, date)
+            }
+
+            addSource(dbLiveItems) {
+                rates = it?.rates?.entries
+                update()
+            }
+
+            addSource(scrubDateLiveData) {
+                scrubDate = it
+                update()
+            }
         }
     }
 
     fun getRatesMax(): LiveData<Pair<Rate?, LocalDate?>> {
-        // TODO ?
-        return Transformations.map(dbLiveItems) {
-            val max = it
-                ?.rates
-                ?.entries
-                ?.map { entry -> entry.value
-                    .find { x -> x.code == symbol }
-                }
-                ?.map { rate -> rate?.value ?: 0f }
-                ?.maxOrNull()
-                ?.let { max -> Rate(symbol, max) }
-            val date =  it
-                ?.rates
-                ?.entries
-                ?.findLast { entry -> entry.value
-                    .find { x -> x.code == symbol }
-                    ?.value == max?.value
-                }
-                ?.key
-            Pair(max, date)
+        return MediatorLiveData<Pair<Rate?, LocalDate?>>().apply {
+            var scrubDate: LocalDate? = null
+            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+
+            fun update() {
+                val max = rates
+                    ?.filter { map ->
+                        scrubDate?.let { !map.key.isBefore(it) } ?: true
+                    }
+                    ?.map { entry ->
+                        entry.value.find { rate -> rate.code == symbol }
+                    }
+                    ?.map { rate -> rate?.value ?: 0f }
+                    ?.maxOrNull()
+                    ?.let { max -> Rate(symbol, max) }
+                val date = rates
+                    ?.filter { map ->
+                        scrubDate?.let { !map.key.isBefore(it) } ?: true
+                    }
+                    ?.findLast { entry -> entry.value
+                        .find { x -> x.code == symbol }
+                        ?.value == max?.value
+                    }
+                    ?.key
+                this.value = Pair(max, date)
+            }
+
+            addSource(dbLiveItems) {
+                rates = it?.rates?.entries
+                update()
+            }
+
+            addSource(scrubDateLiveData) {
+                scrubDate = it
+                update()
+            }
         }
     }
 

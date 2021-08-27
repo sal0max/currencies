@@ -16,7 +16,7 @@ import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
 import de.salomax.currencies.util.prettyPrint
 import de.salomax.currencies.util.prettyPrintPercent
-import de.salomax.currencies.viewmodel.main.TimelineViewModel
+import de.salomax.currencies.viewmodel.timeline.TimelineViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -163,7 +163,7 @@ class TimelineActivity: AppCompatActivity() {
         timelineModel.getRatePast().observe(this, {
             val rate = it?.value?.first()
             if (rate != null) {
-                textRatePast.text = "${rate.getCurrencySymbol()} ${rate.value.prettyPrint(this, 2)}"
+                textRatePast.text = "${rate.getCurrencySymbol()} ${rate.value.prettyPrint(this, 3)}"
                 textDatePast.text = it.key.format(formatter)
             }
         })
@@ -172,7 +172,7 @@ class TimelineActivity: AppCompatActivity() {
         timelineModel.getRateCurrent().observe(this, {
             val rate = it?.value?.first()
             if (rate != null) {
-                textRateCurrent.text = "${rate.getCurrencySymbol()} ${rate.value.prettyPrint(this, 2)}"
+                textRateCurrent.text = "${rate.getCurrencySymbol()} ${rate.value.prettyPrint(this, 3)}"
                 textDateCurrent.text = it.key.format(formatter)
             }
         })
@@ -187,7 +187,7 @@ class TimelineActivity: AppCompatActivity() {
                     getString(
                         R.string.rate_average_value,
                         it.getCurrencySymbol(),
-                        it.value.prettyPrint(this, 2)
+                        it.value.prettyPrint(this, 3)
                     ), HtmlCompat.FROM_HTML_MODE_LEGACY
                 )
             }
@@ -202,7 +202,7 @@ class TimelineActivity: AppCompatActivity() {
                     getString(
                         R.string.rate_min_value,
                         it.first?.getCurrencySymbol(),
-                        it.first?.value?.prettyPrint(this, 2),
+                        it.first?.value?.prettyPrint(this, 3),
                         it.second?.format(formatter)
                     ), HtmlCompat.FROM_HTML_MODE_LEGACY
                 )
@@ -218,7 +218,7 @@ class TimelineActivity: AppCompatActivity() {
                     getString(
                         R.string.rate_max_value,
                         it.first?.getCurrencySymbol(),
-                        it.first?.value?.prettyPrint(this, 2),
+                        it.first?.value?.prettyPrint(this, 3),
                         it.second?.format(formatter)
                     ), HtmlCompat.FROM_HTML_MODE_LEGACY
                 )
