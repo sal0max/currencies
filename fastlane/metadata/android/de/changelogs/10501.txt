@@ -1,0 +1,2 @@
+- Behebt einen Fehler, bei dem die Kurse nicht aktualisiert werden, wenn exchangerate.host genutzt wird.
+- Bibliotheksupdates, um die Stabilität und Leistung zu verbessern.
