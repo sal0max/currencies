@@ -13,7 +13,6 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
-import de.salomax.currencies.model.Rate
 import de.salomax.currencies.util.humanReadable
 import de.salomax.currencies.util.humanReadablePercentage
 import de.salomax.currencies.viewmodel.main.TimelineViewModel
@@ -54,7 +53,10 @@ class TimelineActivity: AppCompatActivity() {
         // what currencies to convert
         this.argFrom = intent.getStringExtra("ARG_FROM")!!
         this.argTo = intent.getStringExtra("ARG_TO")!!
-        title = "$argFrom ➜ $argTo"
+        title = HtmlCompat.fromHtml(
+            getString(R.string.activity_timeline_title, argFrom, argTo),
+            HtmlCompat.FROM_HTML_MODE_LEGACY
+        )
 
         // model
         this.timelineModel = ViewModelProvider(

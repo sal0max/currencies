@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> til &lt;b>%2$s&lt;/b></string>
+</resources>
