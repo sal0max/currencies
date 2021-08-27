@@ -18,8 +18,6 @@ class ExchangeRatesRepository(private val context: Context) {
     private var liveError = MutableLiveData<String?>()
     private var isUpdating = MutableLiveData(false)
 
-    // TODO: lots of duplicated code in the following 2 functions - REFACTOR!
-
     /**
      * Gets and returns all latest exchange rates from the API.
      */
@@ -29,6 +27,7 @@ class ExchangeRatesRepository(private val context: Context) {
 
         // run in background
         CoroutineScope(Dispatchers.IO).launch {
+            // call api
             ExchangeRatesService.getRates(
                 // use the right api
                 when (Database.getInstance(context).getApiProvider()) {
@@ -54,17 +53,9 @@ class ExchangeRatesRepository(private val context: Context) {
                 }
                 // generic network error
                 else {
-                    isUpdating.postValue(false)
-
-                    fuelError?.let {
-                        liveError.postValue(
-                            when (it.response.statusCode) {
-                                // no connection
-                                -1 -> context.getString(R.string.error_no_data)
-                                // everything else
-                                else -> context.getString(R.string.error, it.message)
-                            }
-                        )
+                    when (fuelError?.response?.statusCode) {
+                        -1 -> postError(context.getString(R.string.error_no_data))
+                        else -> postError(context.getString(R.string.error, fuelError?.message))
                     }
                 }
             }
@@ -82,6 +73,7 @@ class ExchangeRatesRepository(private val context: Context) {
 
         // run in background
         CoroutineScope(Dispatchers.IO).launch {
+            // call api
             ExchangeRatesService.getTimeline(
                 // use the right api
                 endpoint = when (Database.getInstance(context).getApiProvider()) {
@@ -115,17 +107,9 @@ class ExchangeRatesRepository(private val context: Context) {
                 }
                 // generic network error
                 else {
-                    isUpdating.postValue(false)
-
-                    fuelError?.let {
-                        liveError.postValue(
-                            when (it.response.statusCode) {
-                                // no connection
-                                -1 -> context.getString(R.string.error_no_data)
-                                // everything else
-                                else -> context.getString(R.string.error, it.message)
-                            }
-                        )
+                    when (fuelError?.response?.statusCode) {
+                        -1 -> postError(context.getString(R.string.error_no_data))
+                        else -> postError(context.getString(R.string.error, fuelError?.message))
                     }
                 }
             }
