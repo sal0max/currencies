@@ -1,0 +1,2 @@
+* Es ist jetzt möglich, die Kurse manuell zu aktualisieren. Probier es im Überlauf-Menü aus.
+* Leistungsverbesserungen
