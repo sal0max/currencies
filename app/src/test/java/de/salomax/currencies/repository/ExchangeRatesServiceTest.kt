@@ -1,7 +1,8 @@
 package de.salomax.currencies.repository
 
-import com.github.kittinunf.fuel.core.ResponseResultOf
 import de.salomax.currencies.model.ExchangeRates
+import de.salomax.currencies.model.Timeline
+import kotlinx.coroutines.runBlocking
 import org.junit.Assert.*
 import org.junit.Test
 import java.time.LocalDate
@@ -10,23 +11,40 @@ import java.time.ZoneId
 class ExchangeRatesServiceTest {
 
     @Test
-    fun testExchangerateHost() {
+    fun testExchangerateHost() = runBlocking {
+        // latest
         testWebservice(
-            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.EXCHANGERATE_HOST), 1
+            ExchangeRatesService.getRates(ExchangeRatesService.Endpoint.EXCHANGERATE_HOST).get(), 1
+        )
+        // timeline
+        testTimeline(
+            ExchangeRatesService.getTimeline(
+                ExchangeRatesService.Endpoint.EXCHANGERATE_HOST,
+                LocalDate.now().minusYears(1),
+                LocalDate.now(),
+                "EUR", "ISK"
+            ).get()
         )
     }
 
     @Test
-    fun testFrankfurterApp() {
+    fun testFrankfurterApp() = runBlocking {
+        // latest
         testWebservice(
-            ExchangeRatesService.getRatesBlocking(ExchangeRatesService.Endpoint.FRANKFURTER_APP), 4
+            ExchangeRatesService.getRates(ExchangeRatesService.Endpoint.FRANKFURTER_APP).get(), 4
+        )
+        // timeline
+        testTimeline(
+            ExchangeRatesService.getTimeline(
+                ExchangeRatesService.Endpoint.FRANKFURTER_APP,
+                LocalDate.now().minusYears(1),
+                LocalDate.now(),
+                "EUR", "ISK"
+            ).get()
         )
     }
 
-    private fun testWebservice(data: ResponseResultOf<ExchangeRates>, maxAge: Long) {
-        // rates
-        val rates = data.third.component1()
-
+    private fun testWebservice(rates: ExchangeRates?, maxAge: Long) {
         // see there is some valid data
         assertNotNull(rates)
 
@@ -60,6 +78,11 @@ class ExchangeRatesServiceTest {
             assertTrue(it >= LocalDate.now(ZoneId.of("UTC")).minusDays(maxAge))
             println(rates.date)
         }
+    }
+
+    private fun testTimeline(data: Timeline) {
+        assertTrue(data.rates != null)
+        assertTrue(data.rates!!.isNotEmpty())
     }
 
 }

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> in &lt;b>%2$s&lt;/b></string>
+
+    <string name="rate_average">media</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+</resources>

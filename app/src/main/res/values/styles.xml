@@ -1,17 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="AppTheme" parent="Theme.AppCompat.DayNight">
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <!-- "transparent" actionBar -->
-        <item name="colorPrimary">?android:attr/colorBackground</item>
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
         <!-- "transparent" statusBar -->
         <item name="colorPrimaryDark">?android:attr/colorBackground</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
         <!-- colors -->
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">@color/colorBackground</item>
+
+        <!-- new MaterialComponents attributes. see https://material.io/blog/android-material-theme-color -->
+        <item name="colorSecondary">?android:attr/colorAccent</item>
+        <item name="colorPrimaryVariant">?android:attr/colorPrimary</item>
+        <item name="colorSurface">@color/colorBackground</item>
+        <!-- The various “On” colors are used to tint foreground content (such as text and icons) -->
+        <item name="colorPrimary">?android:attr/colorAccent</item>
+        <item name="colorOnPrimary">?android:attr/textColorPrimary</item>
+        <item name="colorOnSecondary">?android:attr/textColorSecondary</item>
+        <item name="colorOnBackground">?android:attr/textColorPrimary</item>
+        <item name="colorOnError">?android:attr/textColorPrimary</item>
+        <item name="shapeAppearanceSmallComponent">@color/colorAccent</item>
     </style>
 
-    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.AppCompat.Large">
+    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.MaterialComponents.Body1">
         <item name="android:textSize">@dimen/textKeypad</item>
+    </style>
+
+    <!-- make actionbar colored "primary" instead of "accent" -->
+    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="android:background">@color/colorBackground</item>
+        <item name="background">@color/colorBackground</item>
+    </style>
+
+    <!-- use for the buttons inside MaterialButtonToggleGroup -->
+    <style name="AppTheme.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:stateListAnimator">@animator/btn_elevation</item>
+        <item name="android:textColor">@color/btn_text_color</item>
+        <item name="backgroundTint">@color/btn_background_tint</item>
+        <item name="rippleColor">@color/btn_ripple_color</item>
+        <item name="strokeColor">@color/btn_stroke_color</item>
     </style>
 </resources>

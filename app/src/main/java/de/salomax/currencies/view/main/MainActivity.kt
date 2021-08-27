@@ -16,8 +16,9 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
-import de.salomax.currencies.util.humanReadableFee
+import de.salomax.currencies.util.prettyPrintPercent
 import de.salomax.currencies.view.preference.PreferenceActivity
+import de.salomax.currencies.view.timeline.TimelineActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
 import de.salomax.currencies.widget.searchablespinner.SearchableSpinner
@@ -86,10 +87,24 @@ class MainActivity : AppCompatActivity() {
                 ratesModel.forceUpdateExchangeRate()
                 true
             }
+            R.id.timeline -> {
+                val from = inputModel.getLastRateFrom()
+                val to = inputModel.getLastRateTo()
+                if (from != null && to != null) {
+                    startActivity(
+                        Intent(Intent(this, TimelineActivity().javaClass)).apply {
+                            putExtra("ARG_FROM", from)
+                            putExtra("ARG_TO", to)
+                        }
+                    )
+                    true
+                } else {
+                    false
+                }
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
-
 
     private fun setListeners() {
         // long click on delete
@@ -208,7 +223,7 @@ class MainActivity : AppCompatActivity() {
             tvFee.visibility = if (it) View.VISIBLE else View.GONE
         })
         inputModel.getFee().observe(this, {
-            tvFee.text = it.humanReadableFee(this)
+            tvFee.text = it.prettyPrintPercent(this)
             tvFee.setTextColor(
                 if (it >= 0) getColor(android.R.color.holo_red_light)
                 else getColor(R.color.dollarBill)

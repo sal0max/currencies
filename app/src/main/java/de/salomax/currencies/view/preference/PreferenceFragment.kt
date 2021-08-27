@@ -9,7 +9,7 @@ import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
 import de.salomax.currencies.BuildConfig
 import de.salomax.currencies.R
-import de.salomax.currencies.util.humanReadableFee
+import de.salomax.currencies.util.prettyPrintPercent
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
@@ -42,7 +42,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             true
         }
         viewModel.getFee().observe(this, {
-            feePreference?.summary = it.humanReadableFee(requireContext())
+            feePreference?.summary = it.prettyPrintPercent(requireContext())
             feePreference?.text = it.toString()
         })
 
