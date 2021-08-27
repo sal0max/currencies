@@ -2,7 +2,10 @@
 <resources>
     <!-- main settings -->
     <string name="category_settings">Paramètres généraux</string>
-    <string name="theme_title">Design</string>
+    <string name="theme_title">Thème</string>
+    <string name="theme_option_light">Clair</string>
+    <string name="theme_option_dark">Sombre</string>
+    <string name="theme_option_default">Thème par défaut du système</string>
     <string name="fee_title">Frais de transaction à l\'étranger</string>
     <string name="fee_summary">Selon votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les transactions de change. Vous pouvez saisir ici ces frais. Elle sera ajoutée en plus du calcul, afin que vous sachiez combien vous <i>réellement</i> payez.</string>
     <!-- api -->

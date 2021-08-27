@@ -2,7 +2,10 @@
 <resources>
     <!-- main settings -->
     <string name="category_settings">Impostazioni generali</string>
-    <string name="theme_title">Design</string>
+    <string name="theme_title">Tema</string>
+    <string name="theme_option_light">Chiaro</string>
+    <string name="theme_option_dark">Scuro</string>
+    <string name="theme_option_default">Predefinite di sistema</string>
     <string name="fee_title">Tassa per transazioni estere</string>
     <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
     <!-- api -->
