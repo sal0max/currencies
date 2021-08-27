@@ -55,20 +55,24 @@ object ExchangeRatesService {
     suspend fun getTimeline(endpoint: Endpoint, startDate: LocalDate, endDate: LocalDate,
                             base: String, symbol: String): Result<Timeline, FuelError> {
         val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
+        // can't search for FOK - have to use DKK instead
+        val parameterBase = if (base == "FOK") "DKK" else base
+        val parameterSymbol = if (symbol == "FOK") "DKK" else symbol
+        // call api
         return Fuel.get(
             when (endpoint) {
                 Endpoint.EXCHANGERATE_HOST -> "${endpoint.baseUrl}/timeseries" +
-                        "?base=$base" +
+                        "?base=$parameterBase" +
                         "&v=${UUID.randomUUID()}" +
                         "&start_date=${startDate.format(dateFormatter)}" +
                         "&end_date=${endDate.format(dateFormatter)}" +
-                        "&symbols=$symbol"
+                        "&symbols=$parameterSymbol"
                 Endpoint.FRANKFURTER_APP -> "${endpoint.baseUrl}/" +
                         startDate.format(dateFormatter) +
                         ".." +
                         endDate.format(dateFormatter) +
-                        "?base=$base" +
-                        "&symbols=$symbol"
+                        "?base=$parameterBase" +
+                        "&symbols=$parameterSymbol"
             }
         ).awaitResult(
             moshiDeserializerOf(

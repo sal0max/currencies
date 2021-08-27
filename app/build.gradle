@@ -99,6 +99,8 @@ dependencies {
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     // math
     implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.2'
+    // charts
+    implementation 'com.robinhood.spark:spark:1.2.0'
     // test
     testImplementation 'junit:junit:4.13.2'
 }

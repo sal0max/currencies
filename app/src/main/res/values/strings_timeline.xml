@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_average">avg</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+
+    <string name="rate_average_value" translatable="false">\u00a0– &lt;b>%1$s %2$s&lt;/b></string>
+    <string name="rate_min_value" translatable="false">\u00a0– &lt;b>%1$s %2$s&lt;/b>\u2004&lt;i>&lt;sup>&lt;small>(%3$s)&lt;/small>&lt;/sup>&lt;/i></string>
+    <string name="rate_max_value" translatable="false">@string/rate_min_value</string>
+</resources>

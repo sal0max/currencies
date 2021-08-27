@@ -10,4 +10,10 @@
         android:id="@+id/settings"
         android:title="@string/menu_settings"
         app:showAsAction="never" />
+
+    <item
+        android:id="@+id/timeline"
+        android:title="timeline"
+        android:icon="@drawable/ic_timeline"
+        app:showAsAction="ifRoom" />
 </menu>

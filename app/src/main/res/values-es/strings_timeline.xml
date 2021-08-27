@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_average">prm</string>
+    <string name="rate_min">mín</string>
+    <string name="rate_max">máx</string>
+</resources>

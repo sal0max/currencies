@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="rate_average">media</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+</resources>
