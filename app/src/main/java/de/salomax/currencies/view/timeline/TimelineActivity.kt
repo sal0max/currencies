@@ -11,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
+import com.google.android.material.snackbar.Snackbar
 import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
 import de.salomax.currencies.util.prettyPrint
@@ -127,7 +128,11 @@ class TimelineActivity: AppCompatActivity() {
     private fun observe() {
         // error
         timelineModel.getError().observe(this, {
-            // TODO
+            it?.let {
+                Snackbar.make(textRateAverage, it, Snackbar.LENGTH_LONG)
+                    .setBackgroundTint(getColor(android.R.color.holo_red_light))
+                    .show()
+            }
         })
 
         // progress bar
