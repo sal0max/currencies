@@ -16,7 +16,7 @@
     <!-- about -->
     <string name="category_about">Di questa app</string>
     <string name="disclaimer_title">Descargo de responsabilidad</string>
-    <string name="disclaimer_summary">Anche se l\'app è scritta e testata molto accuratamente, <b>non c\'è garanzia che i dati che mostra siano corretti</b>. I tassi di cambio sono forniti da una terza parte e questa applicazione non può fare alcuna promessa che i dati siano veri e aggiornati.\nInoltre, i tassi forniti - anche se corretti - possono variare da quelli utilizzati dalla tua banca.\nInfine: gli errori capitano. Non fidatevi mai ciecamente di nessuno! Detto questo, stai sicuro che non avrei rilasciato questa applicazione se avessi avuto qualche dubbio sul fatto che funziona come previsto.</string>
+    <string name="disclaimer_summary">Anche se l\'app è scritta e testata molto accuratamente, <b>non c\'è garanzia che i dati che mostra siano corretti</b>. I tassi di cambio sono forniti da una terza parte e questa applicazione non può fare alcuna promessa che i dati siano veri e aggiornati.\nInoltre, i tassi forniti – anche se corretti – possono variare da quelli utilizzati dalla tua banca.\nInfine: gli errori capitano. Non fidatevi mai ciecamente di nessuno! Detto questo, stai sicuro che non avrei rilasciato questa applicazione se avessi avuto qualche dubbio sul fatto che funziona come previsto.</string>
     <string name="donate_title">Supporta lo sviluppatore</string>
     <string name="donate_summary">Donar a través de PayPal</string>
     <string name="aboutVersion">Versione %1$s</string>
