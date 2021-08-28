@@ -13,4 +13,5 @@
 
     <string name="menu_settings">Innstillinger</string>
     <string name="menu_refresh">Oppdateringsfrekvens</string>
+    <string name="menu_timeline">Valutakurshistorikk</string>
 </resources>

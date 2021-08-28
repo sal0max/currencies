@@ -16,5 +16,6 @@
 
     <string name="menu_settings">Settings</string>
     <string name="menu_refresh">Refresh rates</string>
+    <string name="menu_timeline">Exchange rate chart</string>
     <string name="title_preferences" translatable="false">@string/menu_settings</string>
 </resources>

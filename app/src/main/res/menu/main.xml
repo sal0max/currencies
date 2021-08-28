@@ -13,7 +13,7 @@
 
     <item
         android:id="@+id/timeline"
-        android:title="timeline"
         android:icon="@drawable/ic_timeline"
+        android:title="@string/menu_timeline"
         app:showAsAction="ifRoom" />
 </menu>

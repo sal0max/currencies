@@ -13,4 +13,5 @@
 
     <string name="menu_settings">Impostazioni</string>
     <string name="menu_refresh">Tassi di aggiornamento</string>
+    <string name="menu_timeline">Cronologia del tasso di cambio</string>
 </resources>
