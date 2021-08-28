@@ -15,7 +15,7 @@
     <string name="api_refreshPeriod_title">Periodo de actualización</string>
     <!-- about -->
     <string name="category_about">Acerca de esta aplicación</string>
-    <string name="disclaimer_title">Descargo de responsabilidad</string>
+    <string name="disclaimer_title">Exención de responsabilidad</string>
     <string name="disclaimer_summary">Aunque la aplicación está muy bien escrita y probada, <b>no se garantiza que los datos que muestra sean correctos</b>. Los tipos de cambio son proporcionados por un tercero y esta aplicación no puede prometer en absoluto que los datos sean verdaderos y estén actualizados.\nAdemás, los tipos proporcionados — aún siendo correctos — pueden variar de los utilizados por tu banco.\nPor último: los errores ocurren. Nunca confíes ciegamente en nadie. Dicho esto, ten por seguro que no habría lanzado esta aplicación si hubiera tenido alguna duda de que funciona como se pretende.</string>
     <string name="donate_title">Apoyar al desarrollador</string>
     <string name="donate_summary">Donar a través de PayPal</string>
