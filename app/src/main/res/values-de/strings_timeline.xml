@@ -5,4 +5,8 @@
     <string name="rate_average">mw</string>
     <string name="rate_min">min</string>
     <string name="rate_max">max</string>
+
+    <string name="year">Jahr</string>
+    <string name="month">Monat</string>
+    <string name="week">Woche</string>
 </resources>

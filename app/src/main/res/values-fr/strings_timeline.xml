@@ -5,4 +5,8 @@
     <string name="rate_average">moy</string>
     <string name="rate_min">min</string>
     <string name="rate_max">max</string>
+
+    <string name="year">année</string>
+    <string name="month">mois</string>
+    <string name="week">semaine</string>
 </resources>

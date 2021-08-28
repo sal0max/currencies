@@ -181,7 +181,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="week"
+            android:text="@string/week"
             app:cornerRadius="@dimen/margin2x" />
 
         <com.google.android.material.button.MaterialButton
@@ -190,7 +190,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="month"
+            android:text="@string/month"
             app:cornerRadius="@dimen/margin2x" />
 
         <com.google.android.material.button.MaterialButton
@@ -199,7 +199,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="year"
+            android:text="@string/year"
             app:cornerRadius="@dimen/margin2x" />
     </com.google.android.material.button.MaterialButtonToggleGroup>
 

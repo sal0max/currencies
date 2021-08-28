@@ -5,4 +5,8 @@
     <string name="rate_average">prm</string>
     <string name="rate_min">mín</string>
     <string name="rate_max">máx</string>
+
+    <string name="year">año</string>
+    <string name="month">mes</string>
+    <string name="week">semana</string>
 </resources>
