@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:paddingVertical="2dp">
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="40sp"
+        android:textAllCaps="true"
+        tools:text="@string/rate_min" />
+
+    <TextView
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
+        android:text="–"
+        android:textColor="?android:attr/textColorSecondary"
+        tools:ignore="HardcodedText" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:textSize="18sp"
+        tools:text="$" />
+
+    <TextView
+        android:id="@+id/text3"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin1x"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif-black"
+        tools:text="112.172" />
+
+    <TextView
+        android:id="@+id/text4"
+        style="@style/TextAppearance.MaterialComponents.Body2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="fill"
+        android:fontFamily="sans-serif-light"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"
+        android:textStyle="italic"
+        app:fontFamily="sans-serif-light"
+        tools:text="Apr 12, 2001" />
+
+</LinearLayout>

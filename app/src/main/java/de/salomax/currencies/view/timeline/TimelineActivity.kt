@@ -23,23 +23,26 @@ import java.time.format.FormatStyle
 
 class TimelineActivity: AppCompatActivity() {
 
-    private lateinit var timelineModel: TimelineViewModel
-
+    // extras
     private lateinit var argFrom: String
     private lateinit var argTo: String
 
+    //
+    private val formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)
+    private lateinit var timelineModel: TimelineViewModel
+
+    // views
     private lateinit var refreshIndicator: LinearProgressIndicator
     private lateinit var timelineChart: SparkView
-    private lateinit var textDatePast: TextView
-    private lateinit var textRatePast: TextView
-    private lateinit var textDateCurrent: TextView
-    private lateinit var textRateCurrent: TextView
     private lateinit var textRateDifference: TextView
-    private lateinit var textRateAverage: TextView
-    private lateinit var textRateMin: TextView
-    private lateinit var textRateMax: TextView
 
-    private val formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)
+    private lateinit var textPastRateDate: TextView
+    private lateinit var textPastRateSymbol: TextView
+    private lateinit var textPastRateValue: TextView
+
+    private lateinit var textCurrentRateDate: TextView
+    private lateinit var textCurrentRateSymbol: TextView
+    private lateinit var textCurrentRateValue: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -52,8 +55,8 @@ class TimelineActivity: AppCompatActivity() {
         }
 
         // what currencies to convert
-        this.argFrom = intent.getStringExtra("ARG_FROM")!!
-        this.argTo = intent.getStringExtra("ARG_TO")!!
+        this.argFrom = intent.getStringExtra("ARG_FROM") ?: "EUR"
+        this.argTo = intent.getStringExtra("ARG_TO") ?: "USD"
         title = HtmlCompat.fromHtml(
             getString(R.string.activity_timeline_title, argFrom, argTo),
             HtmlCompat.FROM_HTML_MODE_LEGACY
@@ -66,16 +69,7 @@ class TimelineActivity: AppCompatActivity() {
         ).get(TimelineViewModel::class.java)
 
         // views
-        this.refreshIndicator = findViewById(R.id.refreshIndicator)
-        this.timelineChart = findViewById(R.id.timeline_chart)
-        this.textDatePast = findViewById(R.id.text_date_past)
-        this.textRatePast = findViewById(R.id.text_rate_past)
-        this.textDateCurrent = findViewById(R.id.text_date_current)
-        this.textRateCurrent = findViewById(R.id.text_rate_current)
-        this.textRateDifference = findViewById(R.id.text_rate_difference_percent)
-        this.textRateAverage = findViewById(R.id.text_rate_average)
-        this.textRateMin = findViewById(R.id.text_rate_min)
-        this.textRateMax = findViewById(R.id.text_rate_max)
+        findViews()
 
         // configure timeline view
         initChartView()
@@ -87,10 +81,23 @@ class TimelineActivity: AppCompatActivity() {
         observe()
     }
 
-
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    private fun findViews() {
+        this.refreshIndicator = findViewById(R.id.refreshIndicator)
+        this.timelineChart = findViewById(R.id.timeline_chart)
+        this.textRateDifference = findViewById(R.id.text_rate_difference_percent)
+
+        this.textPastRateDate = findViewById(R.id.text_date_past)
+        this.textPastRateSymbol = findViewById(R.id.text_symbol_past)
+        this.textPastRateValue = findViewById(R.id.text_rate_past)
+
+        this.textCurrentRateDate = findViewById(R.id.text_date_current)
+        this.textCurrentRateSymbol = findViewById(R.id.text_symbol_current)
+        this.textCurrentRateValue = findViewById(R.id.text_rate_current)
     }
 
     private fun initChartView() {
@@ -129,7 +136,7 @@ class TimelineActivity: AppCompatActivity() {
         // error
         timelineModel.getError().observe(this, {
             it?.let {
-                Snackbar.make(textRateAverage, it, Snackbar.LENGTH_LONG)
+                Snackbar.make(textRateDifference, it, Snackbar.LENGTH_LONG)
                     .setBackgroundTint(getColor(android.R.color.holo_red_light))
                     .show()
             }
@@ -163,8 +170,9 @@ class TimelineActivity: AppCompatActivity() {
         timelineModel.getRatePast().observe(this, {
             val rate = it?.value?.first()
             if (rate != null) {
-                textRatePast.text = "${rate.getCurrencySymbol()} ${rate.value.prettyPrint(this, 3)}"
-                textDatePast.text = it.key.format(formatter)
+                textPastRateDate.text = it.key.format(formatter)
+                textPastRateSymbol.text = rate.getCurrencySymbol()
+                textPastRateValue.text = rate.value.prettyPrint(this, 3)
             }
         })
 
@@ -172,59 +180,56 @@ class TimelineActivity: AppCompatActivity() {
         timelineModel.getRateCurrent().observe(this, {
             val rate = it?.value?.first()
             if (rate != null) {
-                textRateCurrent.text = "${rate.getCurrencySymbol()} ${rate.value.prettyPrint(this, 3)}"
-                textDateCurrent.text = it.key.format(formatter)
+                textCurrentRateDate.text = it.key.format(formatter)
+                textCurrentRateSymbol.text = rate.getCurrencySymbol()
+                textCurrentRateValue.text = rate.value.prettyPrint(this, 3)
             }
         })
 
         // average rate
         timelineModel.getRatesAverage().observe(this, {
-            if (it == null) {
-                textRateAverage.text = " ..."
-            }
-            else {
-                textRateAverage.text = HtmlCompat.fromHtml(
-                    getString(
-                        R.string.rate_average_value,
-                        it.getCurrencySymbol(),
-                        it.value.prettyPrint(this, 3)
-                    ), HtmlCompat.FROM_HTML_MODE_LEGACY
-                )
-            }
+            populateStat(
+                findViewById(R.id.stats_row_1),
+                getString(R.string.rate_average),
+                it?.getCurrencySymbol(),
+                it?.value,
+                null
+            )
         })
 
         // min rate
         timelineModel.getRatesMin().observe(this, {
-            if (it?.first == null) {
-                textRateMin.text = " ..."
-            } else {
-                textRateMin.text = HtmlCompat.fromHtml(
-                    getString(
-                        R.string.rate_min_value,
-                        it.first?.getCurrencySymbol(),
-                        it.first?.value?.prettyPrint(this, 3),
-                        it.second?.format(formatter)
-                    ), HtmlCompat.FROM_HTML_MODE_LEGACY
-                )
-            }
+            val rate = it.first
+            populateStat(
+                findViewById(R.id.stats_row_2),
+                getString(R.string.rate_min),
+                rate?.getCurrencySymbol(),
+                rate?.value,
+                it.second
+            )
         })
 
         // max rate
         timelineModel.getRatesMax().observe(this, {
-            if (it?.first == null) {
-                textRateMax.text = " ..."
-            } else {
-                textRateMax.text = HtmlCompat.fromHtml(
-                    getString(
-                        R.string.rate_max_value,
-                        it.first?.getCurrencySymbol(),
-                        it.first?.value?.prettyPrint(this, 3),
-                        it.second?.format(formatter)
-                    ), HtmlCompat.FROM_HTML_MODE_LEGACY
-                )
-            }
+            val rate = it.first
+            populateStat(
+                findViewById(R.id.stats_row_3),
+                getString(R.string.rate_max),
+                rate?.getCurrencySymbol(),
+                rate?.value,
+                it.second
+            )
         })
 
+    }
+
+    private fun populateStat(parent: View, title: String?, symbol: String?, value: Float?, date: LocalDate?) {
+        parent.visibility = if (symbol == null) View.GONE else View.VISIBLE
+
+        parent.findViewById<TextView>(R.id.text).text = title
+        parent.findViewById<TextView>(R.id.text2).text = symbol
+        parent.findViewById<TextView>(R.id.text3).text = value?.prettyPrint(this, 3)
+        parent.findViewById<TextView>(R.id.text4).text = date?.format(formatter)
     }
 
 }

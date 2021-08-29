@@ -8,77 +8,96 @@
     android:elevation="@dimen/elevation1x"
     android:padding="@dimen/margin2x">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/container_rate_past"
+    <!-- past rate +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <TextView
+        android:id="@+id/text_date_past"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="start"
-        android:orientation="vertical"
+        android:fontFamily="sans-serif-light"
+        app:fontFamily="sans-serif-light"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/toggleButton"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dec 13, 2000" />
 
-        <TextView
-            android:id="@+id/text_date_past"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="Dec 13, 2000" />
+    <TextView
+        android:id="@+id/text_symbol_past"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_date_past"
+        tools:text="kr" />
 
-        <TextView
-            android:id="@+id/text_rate_past"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="monospace"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/container_rate_past"
-            tools:text="€ 1 = kr 122" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/text_rate_past"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintStart_toEndOf="@id/text_symbol_past"
+        app:layout_constraintTop_toBottomOf="@id/text_date_past"
+        tools:text="122,174" />
+
+    <!-- difference in percent +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
     <TextView
         android:id="@+id/text_rate_difference_percent"
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-light"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="@+id/container_rate_past"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintBottom_toBottomOf="@id/text_rate_past"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/container_rate_past"
+        app:layout_constraintTop_toTopOf="parent"
         tools:text="+ 12 %" />
 
-    <androidx.appcompat.widget.LinearLayoutCompat
-        android:id="@+id/container_rate_current"
+    <!-- current rate ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+    <TextView
+        android:id="@+id/text_date_current"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="end"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="@id/container_rate_past"
-        app:layout_constraintEnd_toEndOf="parent">
+        android:fontFamily="sans-serif-light"
+        app:fontFamily="sans-serif-light"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Dec 13, 2001" />
 
-        <TextView
-            android:id="@+id/text_date_current"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/container_rate_past"
-            tools:text="Dec 13, 2001" />
+    <TextView
+        android:id="@+id/text_symbol_current"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="4dp"
+        android:fontFamily="monospace"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@id/text_rate_current"
+        app:layout_constraintTop_toBottomOf="@id/text_date_past"
+        tools:text="kr" />
 
-        <TextView
-            android:id="@+id/text_rate_current"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/container_rate_current"
-            tools:text="€ 1 = kr 156" />
-    </androidx.appcompat.widget.LinearLayoutCompat>
+    <TextView
+        android:id="@+id/text_rate_current"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:textSize="18sp"
+        app:fontFamily="sans-serif-black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_date_current"
+        tools:text="156,173" />
+
+    <!-- divider +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
     <View
         android:id="@+id/divider"
@@ -88,80 +107,36 @@
         android:background="@color/displayOverlay"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/container_rate_past" />
+        app:layout_constraintTop_toBottomOf="@id/text_rate_past" />
 
-    <View
-        android:id="@+id/divider2"
-        android:layout_width="0dp"
-        android:layout_height="1dp"
-        android:layout_marginVertical="@dimen/margin2x"
-        android:background="@color/displayOverlay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/grid" />
+    <!-- statistics ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-    <GridLayout
-        android:id="@+id/grid"
+    <include
+        android:id="@+id/stats_row_1"
+        layout="@layout/timeline_stats_row"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginVertical="@dimen/margin2x"
-        android:columnCount="2"
-        android:gravity="start"
-        android:rowCount="2"
+        android:layout_marginTop="@dimen/margin2x"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/divider">
+        app:layout_constraintTop_toBottomOf="@id/divider" />
 
-        <TextView
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="2"
-            android:layout_gravity="end"
-            android:text="@string/rate_average"
-            android:textAllCaps="false" />
+    <include
+        android:id="@+id/stats_row_2"
+        layout="@layout/timeline_stats_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stats_row_1" />
 
-        <TextView
-            android:id="@+id/text_rate_average"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            tools:text=" – kr 142" />
+    <include
+        android:id="@+id/stats_row_3"
+        layout="@layout/timeline_stats_row"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/stats_row_2" />
 
-        <TextView
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="2"
-            android:layout_gravity="end"
-            android:text="@string/rate_min"
-            android:textAllCaps="false" />
-
-        <TextView
-            android:id="@+id/text_rate_min"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            tools:text=" – kr 112 (Apr 12, 2001)" />
-
-        <TextView
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="2"
-            android:layout_gravity="end"
-            android:text="@string/rate_max"
-            android:textAllCaps="false" />
-
-        <TextView
-            android:id="@+id/text_rate_max"
-            style="@style/TextAppearance.MaterialComponents.Body1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_columnWeight="1"
-            tools:text=" – kr 188 (Jul 22, 2001)" />
-    </GridLayout>
+    <!-- button row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
     <com.google.android.material.button.MaterialButtonToggleGroup
         android:id="@+id/toggleButton"
