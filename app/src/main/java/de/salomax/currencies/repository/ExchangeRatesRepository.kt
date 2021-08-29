@@ -55,7 +55,7 @@ class ExchangeRatesRepository(private val context: Context) {
                 else {
                     when (fuelError?.response?.statusCode) {
                         -1 -> postError(context.getString(R.string.error_no_data))
-                        else -> postError(context.getString(R.string.error, fuelError?.message))
+                        else -> postError(fuelError?.message)
                     }
                 }
             }
@@ -109,7 +109,7 @@ class ExchangeRatesRepository(private val context: Context) {
                 else {
                     when (fuelError?.response?.statusCode) {
                         -1 -> postError(context.getString(R.string.error_no_data))
-                        else -> postError(context.getString(R.string.error, fuelError?.message))
+                        else -> postError(fuelError?.message)
                     }
                 }
             }

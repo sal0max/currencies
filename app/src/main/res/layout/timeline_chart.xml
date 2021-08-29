@@ -7,6 +7,22 @@
     android:background="@color/displayOverlay"
     android:padding="@dimen/margin2x">
 
+    <TextView
+        android:id="@+id/error"
+        style="@style/TextAppearance.MaterialComponents.Body1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="monospace"
+        android:gravity="center"
+        android:textColor="@android:color/holo_red_light"
+        android:visibility="gone"
+        app:fontFamily="monospace"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Error: HTTP Exception 521" />
+
     <com.robinhood.spark.SparkView
         android:id="@+id/timeline_chart"
         android:layout_width="0dp"
