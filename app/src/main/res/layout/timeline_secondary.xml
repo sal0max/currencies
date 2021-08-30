@@ -5,8 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="?android:attr/colorBackground"
-    android:elevation="@dimen/elevation1x"
-    android:padding="@dimen/margin2x">
+    android:elevation="@dimen/elevation1x">
 
     <!-- past rate +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
@@ -14,6 +13,8 @@
         android:id="@+id/text_date_past"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
+        android:layout_marginVertical="@dimen/margin2x"
         android:fontFamily="sans-serif-light"
         app:fontFamily="sans-serif-light"
         app:layout_constraintStart_toStartOf="parent"
@@ -25,6 +26,7 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
         android:fontFamily="monospace"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -36,7 +38,7 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginHorizontal="4dp"
         android:fontFamily="sans-serif-black"
         android:textSize="18sp"
         app:fontFamily="sans-serif-black"
@@ -51,14 +53,12 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-light"
         android:textColor="@color/colorAccent"
         android:textSize="20sp"
-        app:fontFamily="sans-serif-light"
         app:layout_constraintBottom_toBottomOf="@id/text_rate_past"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text_date_past"
         tools:text="+ 12 %" />
 
     <!-- current rate ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -67,6 +67,8 @@
         android:id="@+id/text_date_current"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
+        android:layout_marginVertical="@dimen/margin2x"
         android:fontFamily="sans-serif-light"
         app:fontFamily="sans-serif-light"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,7 +80,7 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="4dp"
+        android:layout_marginHorizontal="4dp"
         android:fontFamily="monospace"
         android:textSize="18sp"
         app:layout_constraintEnd_toStartOf="@id/text_rate_current"
@@ -90,6 +92,7 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
         android:fontFamily="sans-serif-black"
         android:textSize="18sp"
         app:fontFamily="sans-serif-black"
@@ -104,7 +107,8 @@
         android:layout_width="0dp"
         android:layout_height="1dp"
         android:layout_marginVertical="@dimen/margin2x"
-        android:background="@color/displayOverlay"
+        android:alpha=".25"
+        android:background="?android:attr/textColorSecondary"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_rate_past" />
@@ -114,25 +118,33 @@
     <include
         android:id="@+id/stats_row_1"
         layout="@layout/timeline_stats_row"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
         android:layout_marginTop="@dimen/margin2x"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/divider" />
 
     <include
         android:id="@+id/stats_row_2"
         layout="@layout/timeline_stats_row"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
+        android:layout_marginTop="@dimen/margin1x"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stats_row_1" />
 
     <include
         android:id="@+id/stats_row_3"
         layout="@layout/timeline_stats_row"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
+        android:layout_marginTop="@dimen/margin1x"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/stats_row_2" />
 
@@ -142,6 +154,8 @@
         android:id="@+id/toggleButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin2x"
+        android:layout_marginBottom="@dimen/margin2x"
         android:gravity="center"
         app:checkedButton="@id/button_year"
         app:layout_constraintBottom_toBottomOf="parent"

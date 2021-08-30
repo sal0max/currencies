@@ -222,7 +222,10 @@ class TimelineActivity: AppCompatActivity() {
     }
 
     private fun populateStat(parent: View, title: String?, symbol: String?, value: Float?, date: LocalDate?) {
+        // hide entire row when there's no data
         parent.visibility = if (symbol == null) View.GONE else View.VISIBLE
+        // hide dotted line when there's no date
+        parent.findViewById<View>(R.id.dotted_line).visibility = if (date == null) View.GONE else View.VISIBLE
 
         parent.findViewById<TextView>(R.id.text).text = title
         parent.findViewById<TextView>(R.id.text2).text = symbol
