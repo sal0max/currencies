@@ -11,11 +11,15 @@
 
     <TextView
         android:id="@+id/text_date_past"
+        style="@style/TextAppearance.MaterialComponents.Overline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin2x"
         android:layout_marginVertical="@dimen/margin2x"
         android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.075"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"
         app:fontFamily="sans-serif-light"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -65,11 +69,15 @@
 
     <TextView
         android:id="@+id/text_date_current"
+        style="@style/TextAppearance.MaterialComponents.Overline"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin2x"
         android:layout_marginVertical="@dimen/margin2x"
         android:fontFamily="sans-serif-light"
+        android:letterSpacing="0.075"
+        android:textColor="?android:attr/textColorSecondary"
+        android:textSize="12sp"
         app:fontFamily="sans-serif-light"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
