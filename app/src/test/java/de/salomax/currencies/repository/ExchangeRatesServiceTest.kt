@@ -14,12 +14,12 @@ class ExchangeRatesServiceTest {
     fun testExchangerateHost() = runBlocking {
         // latest
         testWebservice(
-            ExchangeRatesService.getRates(ExchangeRatesService.Endpoint.EXCHANGERATE_HOST).get(), 1
+            ExchangeRatesService.getRates(ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST).get(), 1
         )
         // timeline
         testTimeline(
             ExchangeRatesService.getTimeline(
-                ExchangeRatesService.Endpoint.EXCHANGERATE_HOST,
+                ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST,
                 LocalDate.now().minusYears(1),
                 LocalDate.now(),
                 "EUR", "ISK"
@@ -31,12 +31,12 @@ class ExchangeRatesServiceTest {
     fun testFrankfurterApp() = runBlocking {
         // latest
         testWebservice(
-            ExchangeRatesService.getRates(ExchangeRatesService.Endpoint.FRANKFURTER_APP).get(), 4
+            ExchangeRatesService.getRates(ExchangeRatesService.ApiProvider.FRANKFURTER_APP).get(), 4
         )
         // timeline
         testTimeline(
             ExchangeRatesService.getTimeline(
-                ExchangeRatesService.Endpoint.FRANKFURTER_APP,
+                ExchangeRatesService.ApiProvider.FRANKFURTER_APP,
                 LocalDate.now().minusYears(1),
                 LocalDate.now(),
                 "EUR", "ISK"

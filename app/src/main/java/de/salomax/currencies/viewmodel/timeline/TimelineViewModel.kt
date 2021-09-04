@@ -1,7 +1,6 @@
 package de.salomax.currencies.viewmodel.timeline
 
 import android.app.Application
-import android.util.Log
 import androidx.lifecycle.*
 import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.repository.ExchangeRatesRepository
@@ -9,7 +8,9 @@ import androidx.lifecycle.ViewModel
 
 import androidx.lifecycle.ViewModelProvider
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.repository.Database
 import java.time.LocalDate
+import java.time.ZoneId
 
 class TimelineViewModel(
     ctx: Application,
@@ -43,9 +44,16 @@ class TimelineViewModel(
     }
 
     private val dbLiveItems: LiveData<Timeline?> by lazy {
+        val cachedDate = Database.getInstance(ctx).getTimelineAge(base, symbol)
+        val currentDate = LocalDate.now(ZoneId.of("UTC"))
+
         MediatorLiveData<Timeline?>().apply {
             var timeline: Timeline? = null
             var startDate: LocalDate? = null
+
+            // cache, if data is missing or outdated
+            if (cachedDate == null || cachedDate.isBefore(currentDate))
+                repository.getTimeline(base, symbol)
 
             fun update() {
                 this.value = timeline?.copy(
@@ -56,8 +64,8 @@ class TimelineViewModel(
                 )
             }
 
-            // 1y timeline data
-            addSource(repository.getTimeline(base, symbol)) {
+            // 1y timeline data (from cache)
+            addSource(Database.getInstance(ctx).getTimeline(base, symbol)) {
                 timeline = it
                 update()
             }
@@ -78,25 +86,25 @@ class TimelineViewModel(
     private var isUpdating: LiveData<Boolean> = repository.isUpdating()
 
     /*
-     * items =======================================================================================
+     * getters for the various values ==============================================================
      */
 
-    fun getRates(): LiveData<Map<LocalDate, List<Rate>>?> {
+    fun getRates(): LiveData<Map<LocalDate, Rate?>?> {
         return Transformations.map(dbLiveItems) {
             it?.rates
         }
     }
 
-    fun getRateCurrent(): LiveData<Map.Entry<LocalDate, List<Rate>>?> {
+    fun getRateCurrent(): LiveData<Map.Entry<LocalDate, Rate?>?> {
         return Transformations.map(dbLiveItems) {
             it?.rates?.entries?.last()
         }
     }
 
-    fun getRatePast(): LiveData<Map.Entry<LocalDate, List<Rate>>?> {
-        return MediatorLiveData<Map.Entry<LocalDate, List<Rate>>?>().apply {
+    fun getRatePast(): LiveData<Map.Entry<LocalDate, Rate?>?> {
+        return MediatorLiveData<Map.Entry<LocalDate, Rate?>?>().apply {
             var date: LocalDate? = null
-            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+            var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
                 this.value = if (date != null)
@@ -120,14 +128,14 @@ class TimelineViewModel(
     fun getRatesDifferencePercent(): LiveData<Float?> {
         return MediatorLiveData<Float?>().apply {
             var scrubDate: LocalDate? = null
-            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+            var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
                 val past =  if (scrubDate != null)
-                    rates?.find { it.key == scrubDate }?.value?.find { x -> x.code == symbol }
+                    rates?.find { it.key == scrubDate }?.value
                 else
-                    rates?.first()?.value?.find { x -> x.code == symbol }
-                val current = rates?.last()?.value?.find { x -> x.code == symbol }
+                    rates?.first()?.value
+                val current = rates?.last()?.value
 
                 val ratePast = past?.value
                 val rateCurrent = current?.value
@@ -153,7 +161,7 @@ class TimelineViewModel(
     fun getRatesAverage(): LiveData<Rate?> {
         return MediatorLiveData<Rate?>().apply {
             var scrubDate: LocalDate? = null
-            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+            var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
                 this.value = rates
@@ -161,7 +169,7 @@ class TimelineViewModel(
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
                     ?.map { entry ->
-                        entry.value.find { rate -> rate.code == symbol }
+                        entry.value
                     }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.average()
@@ -183,7 +191,7 @@ class TimelineViewModel(
     fun getRatesMin(): LiveData<Pair<Rate?, LocalDate?>> {
         return MediatorLiveData<Pair<Rate?, LocalDate?>>().apply {
             var scrubDate: LocalDate? = null
-            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+            var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
                 val min = rates
@@ -191,7 +199,7 @@ class TimelineViewModel(
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
                     ?.map { entry ->
-                        entry.value.find { rate -> rate.code == symbol }
+                        entry.value
                     }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.minOrNull()
@@ -201,7 +209,6 @@ class TimelineViewModel(
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
                     ?.findLast { entry -> entry.value
-                        .find { x -> x.code == symbol }
                         ?.value == min?.value
                     }
                     ?.key
@@ -223,7 +230,7 @@ class TimelineViewModel(
     fun getRatesMax(): LiveData<Pair<Rate?, LocalDate?>> {
         return MediatorLiveData<Pair<Rate?, LocalDate?>>().apply {
             var scrubDate: LocalDate? = null
-            var rates: Set<Map.Entry<LocalDate, List<Rate>>>? = null
+            var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
                 val max = rates
@@ -231,7 +238,7 @@ class TimelineViewModel(
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
                     ?.map { entry ->
-                        entry.value.find { rate -> rate.code == symbol }
+                        entry.value
                     }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.maxOrNull()
@@ -241,7 +248,6 @@ class TimelineViewModel(
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
                     ?.findLast { entry -> entry.value
-                        .find { x -> x.code == symbol }
                         ?.value == max?.value
                     }
                     ?.key

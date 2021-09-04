@@ -4,6 +4,7 @@ import com.github.kittinunf.fuel.Fuel
 import com.github.kittinunf.fuel.core.*
 import com.github.kittinunf.fuel.moshi.moshiDeserializerOf
 import com.github.kittinunf.result.Result
+import com.github.kittinunf.result.map
 import com.squareup.moshi.*
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import de.salomax.currencies.model.ExchangeRates
@@ -16,25 +17,25 @@ import java.util.*
 
 object ExchangeRatesService {
 
-    enum class Endpoint(val baseUrl: String) {
+    enum class ApiProvider(val baseUrl: String) {
         EXCHANGERATE_HOST("https://api.exchangerate.host"),
         FRANKFURTER_APP("https://api.frankfurter.app")
     }
 
     /**
-     *
+     * Get all the current exchange rates from the given api provider. Base will be Euro.
      */
-    suspend fun getRates(endpoint: Endpoint): Result<ExchangeRates, FuelError> {
+    suspend fun getRates(apiProvider: ApiProvider): Result<ExchangeRates, FuelError> {
         // Currency conversions are done relatively to each other - so it basically doesn't matter
         // which base is used here. However, Euro is a strong currency, preventing rounding errors.
         val base = "EUR"
 
         return Fuel.get(
-            when (endpoint) {
-                Endpoint.EXCHANGERATE_HOST -> "${endpoint.baseUrl}/latest" +
+            when (apiProvider) {
+                ApiProvider.EXCHANGERATE_HOST -> "${apiProvider.baseUrl}/latest" +
                         "?base=$base" +
                         "&v=${UUID.randomUUID()}"
-                Endpoint.FRANKFURTER_APP -> "${endpoint.baseUrl}/latest" +
+                ApiProvider.FRANKFURTER_APP -> "${apiProvider.baseUrl}/latest" +
                         "?base=$base"
             }
         ).awaitResult(
@@ -50,24 +51,28 @@ object ExchangeRatesService {
     }
 
     /**
-     *
+     * Get the historic rates of the past year between the given base and symbol.
+     * Won't get all the symbols, as it makes a big difference in transferred data size:
+     * ~12KB for one symbol to ~840KB for all symbols
      */
-    suspend fun getTimeline(endpoint: Endpoint, startDate: LocalDate, endDate: LocalDate,
-                            base: String, symbol: String): Result<Timeline, FuelError> {
+    suspend fun getTimeline(apiProvider: ApiProvider, base: String, symbol: String): Result<Timeline, FuelError> {
+        val endDate = LocalDate.now()
+        val startDate = endDate.minusYears(1)
+
         val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
         // can't search for FOK - have to use DKK instead
         val parameterBase = if (base == "FOK") "DKK" else base
         val parameterSymbol = if (symbol == "FOK") "DKK" else symbol
         // call api
         return Fuel.get(
-            when (endpoint) {
-                Endpoint.EXCHANGERATE_HOST -> "${endpoint.baseUrl}/timeseries" +
+            when (apiProvider) {
+                ApiProvider.EXCHANGERATE_HOST -> "${apiProvider.baseUrl}/timeseries" +
                         "?base=$parameterBase" +
                         "&v=${UUID.randomUUID()}" +
                         "&start_date=${startDate.format(dateFormatter)}" +
                         "&end_date=${endDate.format(dateFormatter)}" +
                         "&symbols=$parameterSymbol"
-                Endpoint.FRANKFURTER_APP -> "${endpoint.baseUrl}/" +
+                ApiProvider.FRANKFURTER_APP -> "${apiProvider.baseUrl}/" +
                         startDate.format(dateFormatter) +
                         ".." +
                         endDate.format(dateFormatter) +
@@ -80,10 +85,61 @@ object ExchangeRatesService {
                     .addLast(KotlinJsonAdapterFactory())
                     .add(RatesAdapter(base))
                     .add(LocalDateAdapter())
+                    .add(TimelineRatesToRateAdapter(symbol))
                     .build()
                     .adapter(Timeline::class.java)
             )
-        )
+        ).map { timeline ->
+            // change back base to original one
+            when (base) {
+                "FOK" -> timeline.copy(base = base)
+                else -> timeline
+            }
+        }
+    }
+
+    /*
+     * Converts a timeline rates object to a Map<LocalDate, Rate?>>
+     * The API actually returns Map<LocalDate, List<Rate>>>, however, we only want one Rate per day.
+     * This converter reduces the list.
+     */
+    internal class TimelineRatesToRateAdapter(private val symbol: String): JsonAdapter<Map<LocalDate, Rate>>() {
+
+        @Synchronized
+        @FromJson
+        override fun fromJson(reader: JsonReader): Map<LocalDate, Rate> {
+            val map = mutableMapOf<LocalDate, Rate>()
+            reader.beginObject()
+            // convert
+            while (reader.hasNext()) {
+                val date: LocalDate = LocalDate.parse(reader.nextName())
+                var rate: Rate? = null
+                reader.beginObject()
+                // sometimes there's no rate yet, so check first
+                if (reader.peek() == JsonReader.Token.NAME) {
+                    val name = reader.nextName()
+                    val value = reader.nextDouble().toFloat()
+                    rate = Rate(
+                        // change dkk to fok, when needed
+                        if (symbol == "FOK" && name == "DKK") "FOK" else name,
+                        value
+                    )
+                }
+                if (rate != null)
+                    map[date] = rate
+                reader.endObject()
+            }
+            reader.endObject()
+            return map
+        }
+
+        @Synchronized
+        @ToJson
+        @Throws(IOException::class)
+        override fun toJson(writer: JsonWriter, value: Map<LocalDate, Rate>?) {
+            writer.nullValue()
+        }
+
     }
 
     /*

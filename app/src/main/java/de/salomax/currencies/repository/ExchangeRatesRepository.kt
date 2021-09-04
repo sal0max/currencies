@@ -9,12 +9,10 @@ import de.salomax.currencies.R
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
 import kotlinx.coroutines.*
-import java.time.LocalDate
 
 class ExchangeRatesRepository(private val context: Context) {
 
     private val liveExchangeRates = Database.getInstance(context).getExchangeRates()
-    private val liveTimeline = MutableLiveData<Timeline?>()
     private var liveError = MutableLiveData<String?>()
     private var isUpdating = MutableLiveData(false)
 
@@ -31,8 +29,8 @@ class ExchangeRatesRepository(private val context: Context) {
             ExchangeRatesService.getRates(
                 // use the right api
                 when (Database.getInstance(context).getApiProvider()) {
-                    1 -> ExchangeRatesService.Endpoint.FRANKFURTER_APP
-                    else -> ExchangeRatesService.Endpoint.EXCHANGERATE_HOST
+                    1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
+                    else -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
                 }
             ).run  {
                 val rates = component1()
@@ -65,7 +63,7 @@ class ExchangeRatesRepository(private val context: Context) {
     }
 
     /**
-     * Gets and returns the timeline of the last year of the two given currencies
+     * Gets and returns the timeline of the last year of the given base and target currency
      */
     fun getTimeline(base: String, symbol: String): LiveData<Timeline?> {
         val start = System.currentTimeMillis()
@@ -76,12 +74,10 @@ class ExchangeRatesRepository(private val context: Context) {
             // call api
             ExchangeRatesService.getTimeline(
                 // use the right api
-                endpoint = when (Database.getInstance(context).getApiProvider()) {
-                    1 -> ExchangeRatesService.Endpoint.FRANKFURTER_APP
-                    else -> ExchangeRatesService.Endpoint.EXCHANGERATE_HOST
+                apiProvider = when (Database.getInstance(context).getApiProvider()) {
+                    1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
+                    else -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
                 },
-                startDate = LocalDate.now().minusYears(1),
-                endDate = LocalDate.now(),
                 base = base,
                 symbol = symbol
             ).run {
@@ -93,12 +89,8 @@ class ExchangeRatesRepository(private val context: Context) {
                     if (timeline.success == null || timeline.success == true) {
                         // "update" for at least 2s
                         postIsUpdating(start)
-                        // remove dates, where no rates (= only base rates) are provided
-                        val copy = timeline.copy(rates = timeline.rates
-                            ?.filter { entry -> entry.value.size >= 2 }
-                        )
-                        // TODO cache in db
-                        liveTimeline.postValue(copy)
+                        // update db
+                        Database.getInstance(context).insertTimeline(timeline)
                     }
                     // ERROR! got response from API, but just an error message
                     else {
@@ -115,7 +107,7 @@ class ExchangeRatesRepository(private val context: Context) {
             }
         }
 
-        return liveTimeline
+        return Database.getInstance(context).getTimeline(base, symbol)
     }
 
     fun getError(): LiveData<String?> {

@@ -12,5 +12,5 @@ data class Timeline(
     @field:Json(name = "base") val base: String?,
     @field:Json(name = "start_date") val startDate: LocalDate?,
     @field:Json(name = "end_date") val endDate: LocalDate?,
-    @field:Json(name = "rates") val rates: Map<LocalDate, List<Rate>>?
+    @field:Json(name = "rates") val rates: Map<LocalDate, Rate>?
 )

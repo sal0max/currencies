@@ -166,7 +166,7 @@ class TimelineActivity: AppCompatActivity() {
 
         // past rate
         timelineModel.getRatePast().observe(this, {
-            val rate = it?.value?.first()
+            val rate = it?.value
             if (rate != null) {
                 textPastRateDate.text = it.key.format(formatter)
                 textPastRateSymbol.text = rate.getCurrencySymbol()
@@ -176,7 +176,7 @@ class TimelineActivity: AppCompatActivity() {
 
         // current rate
         timelineModel.getRateCurrent().observe(this, {
-            val rate = it?.value?.first()
+            val rate = it?.value
             if (rate != null) {
                 textCurrentRateDate.text = it.key.format(formatter)
                 textCurrentRateSymbol.text = rate.getCurrencySymbol()

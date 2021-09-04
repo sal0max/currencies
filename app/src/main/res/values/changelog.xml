@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.6.0</b>
+    <string name="changelog" translatable="false"><b>1.7.0</b>
+        \n⸻
+        \n<li>Enjoy a big new feature: This app </li>
+        \n
+        \n<b>1.6.0</b>
         \n⸻
         \n<li>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish, French, Italian and Norwegian (Bokmål). Thanks so much for your help! 🙏🙏🙏</li>
         \n<li>Small under-the-hood updates to make the app even more reliable.</li>
