@@ -44,7 +44,7 @@ class TimelineViewModel(
     }
 
     private val dbLiveItems: LiveData<Timeline?> by lazy {
-        val cachedDate = Database.getInstance(ctx).getTimelineAge(base, symbol)
+        val cachedDate = Database(ctx).getTimelineAge(base, symbol)
         val currentDate = LocalDate.now(ZoneId.of("UTC"))
 
         MediatorLiveData<Timeline?>().apply {
@@ -65,7 +65,7 @@ class TimelineViewModel(
             }
 
             // 1y timeline data (from cache)
-            addSource(Database.getInstance(ctx).getTimeline(base, symbol)) {
+            addSource(Database(ctx).getTimeline(base, symbol)) {
                 timeline = it
                 update()
             }

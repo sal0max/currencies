@@ -94,11 +94,11 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
     }
 
     fun getFeeEnabled(): LiveData<Boolean> {
-        return Database.getInstance(getApplication()).isFeeEnabled()
+        return Database(getApplication()).isFeeEnabled()
     }
 
     fun getFee(): LiveData<Float> {
-        return Database.getInstance(getApplication()).getFee()
+        return Database(getApplication()).getFee()
     }
 
     fun addNumber(value: String) {
@@ -235,14 +235,14 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
      * @return the name of the rate; e.g. "AUD", "EUR" or "USD"
      */
     fun getLastRateFrom(): String? {
-        return Database.getInstance(getApplication()).getLastRateFrom()
+        return Database(getApplication()).getLastRateFrom()
     }
 
     /**
      * @return the name of the rate; e.g. "AUD", "EUR" or "USD"
      */
     fun getLastRateTo(): String? {
-        return Database.getInstance(getApplication()).getLastRateTo()
+        return Database(getApplication()).getLastRateTo()
     }
 
     /*
@@ -253,7 +253,7 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
      * Saves currencyFrom and currencyTo to the database in order to restore them after restart
      */
     private fun saveSelectedCurrencies() {
-        Database.getInstance(getApplication()).saveLastUsedRates(
+        Database(getApplication()).saveLastUsedRates(
             currentCurrencyFrom.value?.code,
             currentCurrencyTo.value?.code
         )

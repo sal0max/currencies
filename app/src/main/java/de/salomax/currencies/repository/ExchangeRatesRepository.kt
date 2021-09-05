@@ -12,7 +12,7 @@ import kotlinx.coroutines.*
 
 class ExchangeRatesRepository(private val context: Context) {
 
-    private val liveExchangeRates = Database.getInstance(context).getExchangeRates()
+    private val liveExchangeRates = Database(context).getExchangeRates()
     private var liveError = MutableLiveData<String?>()
     private var isUpdating = MutableLiveData(false)
 
@@ -28,7 +28,7 @@ class ExchangeRatesRepository(private val context: Context) {
             // call api
             ExchangeRatesService.getRates(
                 // use the right api
-                when (Database.getInstance(context).getApiProvider()) {
+                when (Database(context).getApiProvider()) {
                     1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
                     else -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
                 }
@@ -42,7 +42,7 @@ class ExchangeRatesRepository(private val context: Context) {
                         // "update" for at least 2s
                         postIsUpdating(start)
                         // update db
-                        Database.getInstance(context).insertExchangeRates(rates)
+                        Database(context).insertExchangeRates(rates)
                     }
                     // ERROR! got response from API, but just an error message
                     else {
@@ -74,7 +74,7 @@ class ExchangeRatesRepository(private val context: Context) {
             // call api
             ExchangeRatesService.getTimeline(
                 // use the right api
-                apiProvider = when (Database.getInstance(context).getApiProvider()) {
+                apiProvider = when (Database(context).getApiProvider()) {
                     1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
                     else -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
                 },
@@ -90,7 +90,7 @@ class ExchangeRatesRepository(private val context: Context) {
                         // "update" for at least 2s
                         postIsUpdating(start)
                         // update db
-                        Database.getInstance(context).insertTimeline(timeline)
+                        Database(context).insertTimeline(timeline)
                     }
                     // ERROR! got response from API, but just an error message
                     else {
@@ -107,7 +107,7 @@ class ExchangeRatesRepository(private val context: Context) {
             }
         }
 
-        return Database.getInstance(context).getTimeline(base, symbol)
+        return Database(context).getTimeline(base, symbol)
     }
 
     fun getError(): LiveData<String?> {

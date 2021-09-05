@@ -12,19 +12,6 @@ import java.time.LocalDate
 
 class Database(private val context: Context) {
 
-    companion object {
-        private var instance: Database? = null
-
-        fun getInstance(context: Context): Database {
-            if (instance == null) {
-                synchronized(Database::class) {
-                    instance = Database(context)
-                }
-            }
-            return instance!!
-        }
-    }
-
     /*
      * current exchange rates from api =============================================================
      */

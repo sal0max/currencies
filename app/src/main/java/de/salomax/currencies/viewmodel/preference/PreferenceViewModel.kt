@@ -11,17 +11,17 @@ class PreferenceViewModel(application: Application) : AndroidViewModel(applicati
 
     fun setApiProvider(api: Int) {
         // first put provider to db...
-        Database.getInstance(getApplication()).setApiProvider(api)
+        Database(getApplication()).setApiProvider(api)
         // ...after that, fetch the new exchange rates
         ExchangeRatesRepository(getApplication()).getExchangeRates()
     }
 
     fun getApiProvider(): LiveData<Int> {
-        return Database.getInstance(getApplication()).getApiProviderAsync()
+        return Database(getApplication()).getApiProviderAsync()
     }
 
     fun setTheme(theme: Int) {
-        Database.getInstance(getApplication()).setTheme(theme)
+        Database(getApplication()).setTheme(theme)
         // switch theme
         AppCompatDelegate.setDefaultNightMode(
             when (theme) {
@@ -33,15 +33,15 @@ class PreferenceViewModel(application: Application) : AndroidViewModel(applicati
     }
 
     fun setFee(fee: Float) {
-        Database.getInstance(getApplication()).setFee(fee)
+        Database(getApplication()).setFee(fee)
     }
 
     fun getFee(): LiveData<Float> {
-        return Database.getInstance(getApplication()).getFee()
+        return Database(getApplication()).getFee()
     }
 
     fun setFeeEnabled(enabled: Boolean) {
-        Database.getInstance(getApplication()).setFeeEnabled(enabled)
+        Database(getApplication()).setFeeEnabled(enabled)
     }
 
 }
