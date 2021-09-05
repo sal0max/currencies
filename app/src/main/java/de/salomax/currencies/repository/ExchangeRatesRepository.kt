@@ -28,6 +28,7 @@ class ExchangeRatesRepository(private val context: Context) {
                 // use the right api
                 when (Database(context).getApiProvider()) {
                     1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
+                    2 -> ExchangeRatesService.ApiProvider.FER_EE
                     else -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
                 }
             ).run  {

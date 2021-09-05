@@ -19,7 +19,8 @@ object ExchangeRatesService {
 
     enum class ApiProvider(val baseUrl: String) {
         EXCHANGERATE_HOST("https://api.exchangerate.host"),
-        FRANKFURTER_APP("https://api.frankfurter.app")
+        FRANKFURTER_APP("https://api.frankfurter.app"),
+        FER_EE("https://api.fer.ee")
     }
 
     /**
@@ -36,6 +37,8 @@ object ExchangeRatesService {
                         "?base=$base" +
                         "&v=${UUID.randomUUID()}"
                 ApiProvider.FRANKFURTER_APP -> "${apiProvider.baseUrl}/latest" +
+                        "?base=$base"
+                ApiProvider.FER_EE -> "${apiProvider.baseUrl}/latest" +
                         "?base=$base"
             }
         ).awaitResult(
@@ -73,6 +76,12 @@ object ExchangeRatesService {
                         "&end_date=${endDate.format(dateFormatter)}" +
                         "&symbols=$parameterSymbol"
                 ApiProvider.FRANKFURTER_APP -> "${apiProvider.baseUrl}/" +
+                        startDate.format(dateFormatter) +
+                        ".." +
+                        endDate.format(dateFormatter) +
+                        "?base=$parameterBase" +
+                        "&symbols=$parameterSymbol"
+                ApiProvider.FER_EE -> "${apiProvider.baseUrl}/" +
                         startDate.format(dateFormatter) +
                         ".." +
                         endDate.format(dateFormatter) +

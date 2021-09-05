@@ -40,6 +40,21 @@ class ExchangeRatesServiceTest {
         )
     }
 
+    @Test
+    fun testFerEe()  = runBlocking {
+        // latest
+        testWebservice(
+            ExchangeRatesService.getRates(ExchangeRatesService.ApiProvider.FER_EE).get(), 4
+        )
+        // timeline
+        testTimeline(
+            ExchangeRatesService.getTimeline(
+                ExchangeRatesService.ApiProvider.FER_EE,
+                "EUR", "ISK"
+            ).get()
+        )
+    }
+
     private fun testWebservice(rates: ExchangeRates?, maxAge: Long) {
         // see there is some valid data
         assertNotNull(rates)
