@@ -89,7 +89,7 @@ class TimelineViewModel(
      * getters for the various values ==============================================================
      */
 
-    fun getRates(): LiveData<Map<LocalDate, Rate?>?> {
+    fun getRates(): LiveData<Map<LocalDate, Rate>?> {
         return Transformations.map(dbLiveItems) {
             it?.rates
         }

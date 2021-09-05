@@ -6,7 +6,7 @@ import java.time.LocalDate
 
 class ChartAdapter : SparkAdapter() {
 
-    var entries: List<Map.Entry<LocalDate, Rate?>>? = null
+    var entries: List<Map.Entry<LocalDate, Rate>>? = null
         set(value) {
             field = value
             notifyDataSetChanged()
