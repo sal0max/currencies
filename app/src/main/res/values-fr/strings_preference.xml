@@ -14,7 +14,7 @@
     <string name="api_about_title">À propos du fournisseur de données</string>
     <string name="api_refreshPeriod_title">Période de rafraîchissement</string>
     <!-- about -->
-    <string name="category_about">A propos de cette application</string>
+    <string name="category_about">À propos de cette application</string>
     <string name="disclaimer_title">Exclusion de responsabilité</string>
     <string name="disclaimer_summary">Bien que l\'appli soit très minutieusement écrite et testée, <b>il n\'y a aucune garantie que les données qu\'elle affiche soient correctes</b>. Les taux de change sont fournis par une tierce partie et cette application ne peut pas promettre que les données sont vraies et à jour.\nEn outre, les taux fournis – même s\'ils sont corrects – peuvent varier de ceux utilisés par votre banque.\nNe faites jamais aveuglément confiance à qui que ce soit ! Ceci étant dit, soyez assuré que je n\'aurais pas sorti cette application si j\'avais eu le moindre doute sur son fonctionnement.</string>
     <string name="donate_title">Soutenir le développeur</string>
