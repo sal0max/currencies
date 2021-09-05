@@ -140,7 +140,8 @@ class TimelineViewModel(
                 val ratePast = past?.value
                 val rateCurrent = current?.value
                 this.value = if (ratePast != null && rateCurrent != null) {
-                    (rateCurrent - ratePast) / rateCurrent * 100
+                    val percentage = (rateCurrent - ratePast) / rateCurrent * 100
+                    if (percentage.isFinite()) percentage else null
                 } else {
                     null
                 }
