@@ -1,8 +1,6 @@
 package de.salomax.currencies.repository
 
 import android.content.Context
-import android.os.Handler
-import android.os.Looper
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import de.salomax.currencies.R
@@ -39,9 +37,7 @@ class ExchangeRatesRepository(private val context: Context) {
                 if (rates != null && fuelError == null) {
                     // SUCCESS! update /store rates to preferences
                     if (rates.success == null || rates.success == true) {
-                        // "update" for at least 2s
                         postIsUpdating(start)
-                        // update db
                         Database(context).insertExchangeRates(rates)
                     }
                     // ERROR! got response from API, but just an error message
@@ -87,9 +83,7 @@ class ExchangeRatesRepository(private val context: Context) {
                 if (timeline != null && fuelError == null) {
                     // SUCCESS! update /store rates to preferences
                     if (timeline.success == null || timeline.success == true) {
-                        // "update" for at least 2s
                         postIsUpdating(start)
-                        // update db
                         Database(context).insertTimeline(timeline)
                     }
                     // ERROR! got response from API, but just an error message
@@ -118,14 +112,21 @@ class ExchangeRatesRepository(private val context: Context) {
         return isUpdating
     }
 
-    private fun postIsUpdating(start: Long) {
-        // "update" for at least 2s
+    /*
+     * "update" for at least 500ms
+     */
+    private suspend fun postIsUpdating(start: Long) {
         val now = System.currentTimeMillis()
-        if (now - start < 2000)
-            Handler(Looper.getMainLooper()).postDelayed({
-                isUpdating.postValue(false)
-            }, 2000 - (now - start))
-        else
+        if (now - start < 500) {
+            isUpdating.postValue(true)
+
+            withContext(Dispatchers.Main) {
+                launch {
+                    delay(500 - (now - start))
+                    isUpdating.postValue(false)
+                }
+            }
+        } else
             isUpdating.postValue(false)
     }
 
