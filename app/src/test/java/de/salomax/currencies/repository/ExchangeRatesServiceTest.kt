@@ -20,8 +20,6 @@ class ExchangeRatesServiceTest {
         testTimeline(
             ExchangeRatesService.getTimeline(
                 ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST,
-                LocalDate.now().minusYears(1),
-                LocalDate.now(),
                 "EUR", "ISK"
             ).get()
         )
@@ -37,8 +35,6 @@ class ExchangeRatesServiceTest {
         testTimeline(
             ExchangeRatesService.getTimeline(
                 ExchangeRatesService.ApiProvider.FRANKFURTER_APP,
-                LocalDate.now().minusYears(1),
-                LocalDate.now(),
                 "EUR", "ISK"
             ).get()
         )
