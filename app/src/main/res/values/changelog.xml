@@ -4,7 +4,10 @@
 
     <string name="changelog" translatable="false"><b>1.7.0</b>
         \n⸻
-        \n<li>Enjoy a big new feature: This app </li>
+        \n<li><b>Enjoy some big new feature in this release!</b>
+        \nMost notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.</li>
+        \n<li>There\'s also an additional exchange rate provider: You can now choose <b>fer.ee</b> in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.</li>
+        \n<li>As always, this release includes updated libraries, small improvements and all the stuff that makes it even better.</li>
         \n
         \n<b>1.6.0</b>
         \n⸻

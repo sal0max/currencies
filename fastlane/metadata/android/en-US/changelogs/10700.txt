@@ -1,0 +1,3 @@
+- Enjoy some big new feature in this release! Most notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.
+- There's also an additional exchange rate provider: You can now choose fer.ee in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.
+- As always, this release includes updated libraries, small improvements and all the stuff that makes it even better.
