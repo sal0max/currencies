@@ -7,6 +7,7 @@ import java.lang.StringBuilder
 /**
  * returns e.g. "+ 0.1231 %" or "- 0.41512 %"
  */
+@Suppress("unused")
 fun Float.prettyPrintPercent(context: Context): String {
     return this
         .toString()
@@ -16,6 +17,7 @@ fun Float.prettyPrintPercent(context: Context): String {
 /**
  * returns e.g. "+ 0.12 %" or "- 41.32 %"
  */
+@Suppress("unused")
 fun Float.prettyPrintPercent(context: Context, decimalPlaces: Int): String {
     return String
         // round (with right padding)
@@ -44,6 +46,7 @@ private fun String.prettyPrintPercent(context: Context): String {
 /**
  * returns e.g. "- 0.1231" or "0.21311"
  */
+@Suppress("unused")
 fun Float.prettyPrint(context: Context): String {
     return this
         .toString()
@@ -53,6 +56,7 @@ fun Float.prettyPrint(context: Context): String {
 /**
  * returns e.g. "- 0.12" or "0.54"
  */
+@Suppress("unused")
 fun Float.prettyPrint(context: Context, decimalPlaces: Int): String {
     return String
         // round (with right padding)

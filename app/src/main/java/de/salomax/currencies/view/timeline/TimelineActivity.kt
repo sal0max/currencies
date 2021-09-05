@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
+import de.salomax.currencies.util.dpToPx
 import de.salomax.currencies.util.prettyPrint
 import de.salomax.currencies.util.prettyPrintPercent
 import de.salomax.currencies.viewmodel.timeline.TimelineViewModel
@@ -20,7 +21,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
-class TimelineActivity: AppCompatActivity() {
+class TimelineActivity : AppCompatActivity() {
 
     // extras
     private lateinit var argFrom: String
@@ -102,11 +103,10 @@ class TimelineActivity: AppCompatActivity() {
     private fun initChartView() {
         timelineChart.apply {
             // dashed base line
-            baseLinePaint = Paint().apply {
-                setARGB(255, 127, 127, 127)
-                strokeWidth = 3f
+            baseLinePaint = baseLinePaint.apply {
+                strokeWidth = 1f.dpToPx()
                 style = Paint.Style.STROKE
-                pathEffect = DashPathEffect(floatArrayOf(8f, 24f), 0f)
+                pathEffect = DashPathEffect(floatArrayOf(1f.dpToPx(), 4f.dpToPx()), 0f)
             }
             // scrub (tooltip)
             scrubListener = SparkView.OnScrubListener { data ->
