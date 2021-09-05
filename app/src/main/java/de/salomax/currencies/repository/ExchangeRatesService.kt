@@ -115,15 +115,19 @@ object ExchangeRatesService {
                 val date: LocalDate = LocalDate.parse(reader.nextName())
                 var rate: Rate? = null
                 reader.beginObject()
-                // sometimes there's no rate yet, so check first
-                if (reader.peek() == JsonReader.Token.NAME) {
+                // sometimes there's no rate yet, but an empty body or more than one rate, so check first
+                while (reader.hasNext() && reader.peek() == JsonReader.Token.NAME) {
                     val name = reader.nextName()
                     val value = reader.nextDouble().toFloat()
-                    rate = Rate(
+                    rate =
                         // change dkk to fok, when needed
-                        if (symbol == "FOK" && name == "DKK") "FOK" else name,
-                        value
-                    )
+                        if (name == "DKK" && symbol == "FOK")
+                            Rate("FOK", value)
+                        // make sure that the symbol matches the one we requested
+                        else if (name == symbol)
+                            Rate(name, value)
+                        else
+                            null
                 }
                 if (rate != null)
                     map[date] = rate
