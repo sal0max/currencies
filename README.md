@@ -31,7 +31,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
 
 <div>
    <img src="art/screenshots/screen01.png" width="400" alt="screenshot 1">
-   <img src="art/screenshots/screen02.png" width="400" alt="screenshot 2">
+   <img src="art/screenshots/screen03.png" width="400" alt="screenshot 2">
 </div>
 
 
