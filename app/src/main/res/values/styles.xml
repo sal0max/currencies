@@ -11,16 +11,19 @@
         <item name="android:colorBackground">@color/colorBackground</item>
 
         <!-- new MaterialComponents attributes. see https://material.io/blog/android-material-theme-color -->
-        <item name="colorSecondary">?android:attr/colorAccent</item>
-        <item name="colorPrimaryVariant">?android:attr/colorPrimary</item>
-        <item name="colorSurface">@color/colorBackground</item>
-        <!-- The various “On” colors are used to tint foreground content (such as text and icons) -->
         <item name="colorPrimary">?android:attr/colorAccent</item>
+        <item name="colorPrimaryVariant">?attr/colorPrimary</item>
+        <item name="colorSecondary">?android:attr/colorAccent</item>
+        <item name="colorSecondaryVariant">?attr/colorSecondary</item>
+        <item name="colorSurface">?android:attr/colorBackground</item>
+        <item name="shapeAppearanceSmallComponent">?android:attr/colorAccent</item>
+        <item name="shapeAppearanceMediumComponent">?android:attr/colorAccent</item>
+        <item name="shapeAppearanceLargeComponent">?android:attr/colorAccent</item>
+        <!-- The various “On” colors are used to tint foreground content (such as text and icons) -->
         <item name="colorOnPrimary">?android:attr/textColorPrimary</item>
         <item name="colorOnSecondary">?android:attr/textColorSecondary</item>
         <item name="colorOnBackground">?android:attr/textColorPrimary</item>
         <item name="colorOnError">?android:attr/textColorPrimary</item>
-        <item name="shapeAppearanceSmallComponent">@color/colorAccent</item>
     </style>
 
     <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.MaterialComponents.Body1">
