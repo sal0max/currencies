@@ -1,0 +1,1 @@
+* Se ha añadido una función de copia: Haga un clic largo en el valor que desea copiar

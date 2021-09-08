@@ -1,0 +1,3 @@
+- Disfrute de algunas novedades importantes en esta versión. La más notable es que esta aplicación incluye ahora los tipos de cambio históricos. Consulta el gráfico del año pasado para ver cómo han evolucionado las divisas.
+- También hay un proveedor de tipos de cambio adicional
+- Como siempre, esta versión incluye librerías actualizadas, pequeñas mejoras y todo aquello que lo hace aún mejor.
