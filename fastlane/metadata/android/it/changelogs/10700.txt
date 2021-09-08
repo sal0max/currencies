@@ -1,0 +1,3 @@
+- Godetevi alcune grandi novità in questa versione! In particolare, questa applicazione ora include i tassi storici. Dai un'occhiata al grafico dell'anno scorso, per vedere come si sono sviluppate le valute.
+- C'è anche un ulteriore fornitore di tassi di cambio
+- Come sempre, questa release include librerie aggiornate, piccoli miglioramenti e tutte le cose che la rendono ancora migliore.

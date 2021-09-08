@@ -1,0 +1,2 @@
+- Corregge un bug per cui i tassi non si aggiornavano quando veniva usato exchangerate.host.
+- Aggiornamenti della libreria per migliorare la stabilità e le prestazioni.
