@@ -1,0 +1,3 @@
+- Profitez de quelques nouvelles fonctionnalités importantes dans cette version ! La plus remarquable est que cette application inclut maintenant les taux historiques. Consultez le graphique de l'année dernière, pour voir comment les devises ont évolué.
+- Il y a également un fournisseur de taux de change supplémentaire : fer.ee.
+- Comme toujours, cette version inclut des bibliothèques mises à jour, de petites améliorations et toutes les choses qui rendent l'application encore meilleure.
