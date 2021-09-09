@@ -1,0 +1,3 @@
+* Deutsche Übersetzung hinzugefügt 🇩🇪
+* Kleine Verbesserung: App-Größe um 50% verringert!
+* Die App scheint ziemlich stabil zu sein: Öffentliche Version 1.0! 🥳🥳🥳
