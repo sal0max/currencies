@@ -1,0 +1,1 @@
+* Correction d'un éventuel crash sur Android 11

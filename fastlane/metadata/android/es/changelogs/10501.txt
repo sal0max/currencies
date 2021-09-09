@@ -1,0 +1,2 @@
+- Se corrige un error por el que las tarifas no se actualizaban cuando se utilizaba exchangerate.host.
+- Actualizaciones de la biblioteca para mejorar la estabilidad y el rendimiento.
