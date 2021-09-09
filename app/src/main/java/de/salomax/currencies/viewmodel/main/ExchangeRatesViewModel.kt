@@ -25,14 +25,14 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
     init {
         // only update if data is old: https://github.com/Formicka/exchangerate.host
         // "Rates are updated around midnight UTC every working day."
-        val currentTime = LocalDate.now(ZoneId.of("UTC"))
+        val currentDate = LocalDate.now(ZoneId.of("UTC"))
         val cachedDate = Database(application).getDate()
         dbLiveItems =
             when {
                 // first run: fetch data
                 cachedDate == null -> repository.getExchangeRates()
                 // also fetch if stored date is before the current date
-                cachedDate.isBefore(currentTime) -> repository.getExchangeRates()
+                cachedDate.isBefore(currentDate) -> repository.getExchangeRates()
                 // else just use the cached value
                 else -> Database(application).getExchangeRates()
             }
