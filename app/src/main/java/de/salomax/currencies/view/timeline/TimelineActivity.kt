@@ -35,6 +35,7 @@ class TimelineActivity : AppCompatActivity() {
     private lateinit var refreshIndicator: LinearProgressIndicator
     private lateinit var timelineChart: SparkView
     private lateinit var textRateDifference: TextView
+    private lateinit var divider: View
 
     private lateinit var textPastRateDate: TextView
     private lateinit var textPastRateSymbol: TextView
@@ -90,6 +91,7 @@ class TimelineActivity : AppCompatActivity() {
         this.refreshIndicator = findViewById(R.id.refreshIndicator)
         this.timelineChart = findViewById(R.id.timeline_chart)
         this.textRateDifference = findViewById(R.id.text_rate_difference_percent)
+        this.divider = findViewById(R.id.divider)
 
         this.textPastRateDate = findViewById(R.id.text_date_past)
         this.textPastRateSymbol = findViewById(R.id.text_symbol_past)
@@ -171,6 +173,11 @@ class TimelineActivity : AppCompatActivity() {
                 textPastRateDate.text = it.key.format(formatter)
                 textPastRateSymbol.text = rate.getCurrencySymbol()
                 textPastRateValue.text = rate.value.prettyPrint(this, 3)
+                // only show the divider if this row is populated
+                // highest chance of it populated is with this "past rate" data
+                divider.visibility = View.VISIBLE
+            } else {
+                divider.visibility = View.GONE
             }
         })
 
