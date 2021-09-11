@@ -1,0 +1,2 @@
+- Correction d'un bogue pour lequel les taux ne se mettaient pas à jour, lorsque exchangerate.host est utilisé.
+- Mises à jour de la bibliothèque pour améliorer la stabilité et les performances.
