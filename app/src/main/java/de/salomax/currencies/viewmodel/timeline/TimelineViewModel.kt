@@ -8,9 +8,7 @@ import androidx.lifecycle.ViewModel
 
 import androidx.lifecycle.ViewModelProvider
 import de.salomax.currencies.model.Rate
-import de.salomax.currencies.repository.Database
 import java.time.LocalDate
-import java.time.ZoneId
 
 class TimelineViewModel(
     ctx: Application,
@@ -44,16 +42,9 @@ class TimelineViewModel(
     }
 
     private val dbLiveItems: LiveData<Timeline?> by lazy {
-        val cachedDate = Database(ctx).getTimelineAge(base, symbol)
-        val currentDate = LocalDate.now(ZoneId.of("UTC"))
-
         MediatorLiveData<Timeline?>().apply {
             var timeline: Timeline? = null
             var startDate: LocalDate? = null
-
-            // cache, if data is missing or outdated
-            if (cachedDate == null || cachedDate.isBefore(currentDate))
-                repository.getTimeline(base, symbol)
 
             fun update() {
                 this.value = timeline?.copy(
@@ -64,8 +55,8 @@ class TimelineViewModel(
                 )
             }
 
-            // 1y timeline data (from cache)
-            addSource(Database(ctx).getTimeline(base, symbol)) {
+            // 1y timeline data - always call api - really hard to find a decent caching strategy
+            addSource(repository.getTimeline(base, symbol)) {
                 timeline = it
                 update()
             }

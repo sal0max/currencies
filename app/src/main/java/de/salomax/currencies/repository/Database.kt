@@ -5,7 +5,6 @@ import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
 import de.salomax.currencies.model.ExchangeRates
-import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.util.*
 
 import java.time.LocalDate
@@ -41,42 +40,6 @@ class Database(private val context: Context) {
 
     fun getDate(): LocalDate? {
         return prefsRates.getString("_date", null)?.let { LocalDate.parse(it) }
-    }
-
-    /*
-     * timeline data from api ======================================================================
-     */
-    fun insertTimeline(timeline: Timeline) {
-        val from = timeline.base
-        val to = timeline.rates?.entries?.first()?.value?.code
-        context.getSharedPreferences(getTimelinePrefFile(from, to), MODE_PRIVATE)
-            .apply {
-                val editor = edit()
-                // clear old values
-                editor.clear()
-                // apply new ones
-                editor.putString("_base", from)
-                editor.putString("_target", to)
-                editor.putString("_startDate", timeline.startDate.toString())
-                editor.putString("_endDate", timeline.endDate.toString())
-                timeline.rates?.forEach { (localDate, rates) ->
-                    editor.putFloat(localDate.toString(), rates.value)
-                }
-                // persist
-                editor.apply()
-            }
-    }
-
-    fun getTimeline(from: String, to: String): LiveData<Timeline?> {
-        return SharedPreferenceTimelineLiveData(
-            context.getSharedPreferences(getTimelinePrefFile(from, to), MODE_PRIVATE)
-        )
-    }
-
-    fun getTimelineAge(from: String, to: String): LocalDate? {
-        return context.getSharedPreferences(getTimelinePrefFile(from, to), MODE_PRIVATE)
-            .getString("_endDate", null)
-            ?.let { LocalDate.parse(it) }
     }
 
     private fun getTimelinePrefFile(from: String?, to: String?): String {

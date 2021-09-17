@@ -11,6 +11,7 @@ import kotlinx.coroutines.*
 class ExchangeRatesRepository(private val context: Context) {
 
     private val liveExchangeRates = Database(context).getExchangeRates()
+    private val liveTimeline = MutableLiveData<Timeline?>()
     private var liveError = MutableLiveData<String?>()
     private var isUpdating = MutableLiveData(false)
 
@@ -85,7 +86,9 @@ class ExchangeRatesRepository(private val context: Context) {
                     // SUCCESS! update /store rates to preferences
                     if (timeline.success == null || timeline.success == true) {
                         postIsUpdating(start)
-                        Database(context).insertTimeline(timeline)
+                        CoroutineScope(Dispatchers.Main).launch {
+                            liveTimeline.setValue(timeline)
+                        }
                     }
                     // ERROR! got response from API, but just an error message
                     else {
@@ -102,7 +105,7 @@ class ExchangeRatesRepository(private val context: Context) {
             }
         }
 
-        return Database(context).getTimeline(base, symbol)
+        return liveTimeline
     }
 
     fun getError(): LiveData<String?> {
