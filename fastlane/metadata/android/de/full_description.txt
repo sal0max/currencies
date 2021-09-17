@@ -6,7 +6,7 @@ Currencies ist ein schlichter Währungsrechner für Android. ist ein praktischer
    • fer.ee als eine Alternative zu frankfurter.app, mit den selben Währungen
 • Das User Interface is schlicht und echtes Material Design.
 • Kursverlauf: Schaue das Diagramm des letzten Jahres an, um zu sehen, wie sich eine Währung entwickelt hat.
-• Eine tolle Funktion ist der eingebaute Taschenrechner. Praktisch z. B. wenn man schlenn eine Restaurantrechnung aufteilen möchte.
+• Eine tolle Funktion ist der eingebaute Taschenrechner. Praktisch z. B. wenn man schnell eine Restaurantrechnung aufteilen möchte.
 • Gebührenrechner: Füge wahlweise eine Fremdwährungsgebühr allen Berechnungen hinzu
 • Currencies ist in Kotlin für Android geschrieben, ist für Android 11 optimiert und unterstützt dunkle und helle Themes.
 • Die Anwendung ist werbefrei und spioniert den Nutzer nicht aus.
