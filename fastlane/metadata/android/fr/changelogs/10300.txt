@@ -1,0 +1,4 @@
+* Tellement plus de devises ! Plus de 160 au total, maintenant ! C'est parce que Currencies est passé à une API différente. L'ancienne est passée à un modèle d'abonnement sans aucun avertissement préalable.
+* Cela signifie également que ces derniers jours, les taux de change ne pouvaient pas être actualisés. C'est corrigé maintenant, bien sûr.
+* De plus, le processus de rafraîchissement lui-même a été amélioré.
+* Petites améliorations de l'interface utilisateur
