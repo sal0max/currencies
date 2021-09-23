@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="name_aud">Đô la Úc</string>
+    <string name="name_ars">Peso Argentina</string>
+    <string name="name_bnd">Đô la Brunei</string>
+    <string name="name_cad">Đô la Canada</string>
+    <string name="name_cup">Peso Cuba</string>
+    <string name="name_aed">Dirham UAE</string>
+</resources>
