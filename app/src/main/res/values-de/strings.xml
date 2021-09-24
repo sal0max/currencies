@@ -2,17 +2,14 @@
 <resources>
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">.</string>
-
     <string name="desc_toggle_currencies">tausche Währungen</string>
     <string name="last_updated">Wechselkurs vom %s</string>
     <string name="today">heute</string>
     <string name="yesterday">gestern</string>
-    <string name="copied_to_clipboard">&lt;b>%s&lt;/b> in die Zwischenablage kopiert</string>
-
+    <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; in die Zwischenablage kopiert</string>
     <string name="error">Fehler: %s</string>
     <string name="error_no_data">Wechselkurse konnten nicht aktualisiert werden. Verbindungsfehler.</string>
     <string name="error_api_error">Ein API-Fehler ist aufgetreten. Bitte später erneut versuchen.</string>
-
     <string name="menu_settings">Einstellungen</string>
     <string name="menu_refresh">Kurse aktualisieren</string>
     <string name="menu_timeline">Wechselkursverlauf</string>
