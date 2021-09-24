@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator">\u2009</string>
+
+    <string name="desc_toggle_currencies">chuyển tiền tệ</string>
+    <string name="last_updated">Tuổi thọ tỉ lệ chuyển đổi: %s</string>
+    <string name="copied_to_clipboard">Đã sao chép <b>%s</b> vào bộ nhớ tạm</string>
+
+    <string name="error">Lỗi: %s</string>
+    <string name="error_no_data">Không thể cập nhật tỉ lệ chuyển đổi. Không có kết nối.</string>
+    <string name="error_api_error">Đã xảy ra lỗi API. Vui lòng thử lại sau.</string>
+
+    <string name="menu_settings">Cài đặt</string>
+    <string name="menu_refresh">Làm mới tỉ lệ</string>
+    <string name="menu_timeline">Biểu đồ tỉ lệ chuyển đổi</string>
+</resources>
