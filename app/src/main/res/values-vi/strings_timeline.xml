@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title"><b>%1$s</b> ra <b>%2$s</b></string>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> ra &lt;b>%2$s&lt;/b></string>
+
     <string name="rate_average">t. bình</string>
     <string name="rate_min">t. thiểu</string>
     <string name="rate_max">t. đa</string>
+
     <string name="year">năm</string>
     <string name="month">tháng</string>
     <string name="week">tuần</string>
