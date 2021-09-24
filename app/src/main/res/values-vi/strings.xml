@@ -5,6 +5,8 @@
 
     <string name="desc_toggle_currencies">chuyển tiền tệ</string>
     <string name="last_updated">Tuổi thọ tỉ lệ chuyển đổi: %s</string>
+    <string name="today">hôm nay</string>
+    <string name="yesterday">hôm qua</string>
     <string name="copied_to_clipboard">Đã sao chép <b>%s</b> vào bộ nhớ tạm</string>
 
     <string name="error">Lỗi: %s</string>

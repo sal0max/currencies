@@ -22,6 +22,7 @@ import de.salomax.currencies.view.timeline.TimelineActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
 import de.salomax.currencies.widget.searchablespinner.SearchableSpinner
+import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
@@ -167,8 +168,22 @@ class MainActivity : AppCompatActivity() {
         ratesModel.getExchangeRate().observe(this, {
             // date
             it?.let {
-                val date = it.date?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM))
-                tvDate.text = getString(R.string.last_updated, date)
+                val date = it.date
+                val dateString = date?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+
+                tvDate.text = getString(R.string.last_updated, dateString)
+                // today
+                if (date?.isEqual(LocalDate.now()) == true)
+                    tvDate.append(" (${getString(R.string.today)})")
+                // yesterday
+                else if (date?.isEqual(LocalDate.now().minusDays(1)) == true)
+                    tvDate.append(" (${getString(R.string.yesterday)})")
+
+                // paint text in red in case the data is old
+                tvDate.setTextColor(
+                    if (date?.isBefore(LocalDate.now().minusDays(3)) == true) getColor(android.R.color.holo_red_light)
+                    else tvDate.textColors.defaultColor
+                )
             }
             // rates
             spinnerFrom.adapter = it?.rates?.let { rates ->

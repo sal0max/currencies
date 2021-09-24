@@ -5,6 +5,8 @@
 
     <string name="desc_toggle_currencies">tausche Währungen</string>
     <string name="last_updated">Wechselkurs vom %s</string>
+    <string name="today">heute</string>
+    <string name="yesterday">gestern</string>
     <string name="copied_to_clipboard">&lt;b>%s&lt;/b> in die Zwischenablage kopiert</string>
 
     <string name="error">Fehler: %s</string>

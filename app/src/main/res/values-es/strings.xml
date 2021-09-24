@@ -5,6 +5,8 @@
 
     <string name="desc_toggle_currencies">alternar monedas</string>
     <string name="last_updated">Edad del tipo de cambio: %s</string>
+    <string name="today">hoy</string>
+    <string name="yesterday">ayer</string>
     <string name="copied_to_clipboard">Copiado &lt;b>%s&lt;/b> al portapapeles</string>
 
     <string name="error">Error: %s</string>

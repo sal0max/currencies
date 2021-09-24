@@ -7,7 +7,9 @@
     <string name="thousands_separator">\u2009</string>
 
     <string name="desc_toggle_currencies">toggle currencies</string>
-    <string name="last_updated">Exchange rate age: %s</string>
+    <string name="last_updated">Exchange rate from %s</string>
+    <string name="today">today</string>
+    <string name="yesterday">yesterday</string>
     <string name="copied_to_clipboard">Copied &lt;b>%s&lt;/b> to clipboard</string>
 
     <string name="error">Error: %s</string>

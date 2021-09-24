@@ -5,6 +5,8 @@
 
     <string name="desc_toggle_currencies">toggle les devises</string>
     <string name="last_updated">Mise à jour du taux de change : %s</string>
+    <string name="today">aujourd\'hui</string>
+    <string name="yesterday">hier</string>
     <string name="copied_to_clipboard">Copie de &lt;b>%s&lt;/b> au presse-papiers</string>
 
     <string name="error">Erreur : %s</string>

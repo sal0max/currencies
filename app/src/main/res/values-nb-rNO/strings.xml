@@ -5,6 +5,8 @@
 
     <string name="desc_toggle_currencies">veksle valuta</string>
     <string name="last_updated">Valutakursen alder: %s</string>
+    <string name="today">i dag</string>
+    <string name="yesterday">i går</string>
     <string name="copied_to_clipboard">Kopierte &lt;b>%s&lt;/b> til utklippstavlen</string>
 
     <string name="error">Feil: %s</string>
