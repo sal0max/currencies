@@ -5,4 +5,6 @@
     <string name="theme_option_default">Standard</string>
     <string name="theme_option_light">Lys</string>
     <string name="theme_option_dark">Mørk</string>
+    <!-- about -->
+    <string name="aboutVersion">Versjon %1$s</string>
 </resources>

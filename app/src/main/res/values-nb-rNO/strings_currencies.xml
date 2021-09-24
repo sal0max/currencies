@@ -154,7 +154,8 @@
     <string name="name_usd">Amerikansk dollar</string>
     <string name="name_uyu">Uruguayansk peso</string>
     <string name="name_uzs">Usbekisk som</string>
-    <string name="name_ves">Venezuelansk bolívar</string>
+    <string name="name_vef">Venezuelansk bolívar fuerte (gammel)</string>
+    <string name="name_ves">Venezuelansk bolívar soberano</string>
     <string name="name_vnd">Vietnamesisk dong</string>
     <string name="name_vuv">Vanuatisk vatu</string>
     <string name="name_wst">Samoansk tala</string>
