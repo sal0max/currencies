@@ -33,6 +33,9 @@
     <string name="donate_key" translatable="false">KEY_DONATE</string>
     <string name="donate_title">Support the developer</string>
     <string name="donate_summary">Donate via PayPal</string>
+    <string name="rate_key" translatable="false">KEY_RATE</string>
+    <string name="rate_title">Rate this app</string>
+    <string name="rate_summary">If you\'d like, you can help others to discover Currencies. Click here to rate the app on Google Play.</string>
     <string name="about_key" translatable="false">KEY_ABOUT</string>
     <string name="aboutVersion">Version %1$s</string>
     <string name="about_summary" translatable="false" tools:ignore="PluralsCandidate">© %1$d Maximilian Salomon</string>

@@ -14,6 +14,7 @@ import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
 import java.util.*
+import android.content.ActivityNotFoundException
 
 @Suppress("unused")
 class PreferenceFragment: PreferenceFragmentCompat() {
@@ -71,12 +72,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
             // go to PayPal, when clicked
             setOnPreferenceClickListener {
-                startActivity(
-                    Intent(
-                        Intent.ACTION_VIEW,
-                        Uri.parse("https://www.paypal.com/donate?hosted_button_id=2JCY7E99V9DGC")
-                    )
-                )
+                startActivity(createIntent("https://www.paypal.com/donate?hosted_button_id=2JCY7E99V9DGC"))
                 true
             }
         }
@@ -90,6 +86,37 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 true
             }
         }
+
+        // rate
+        findPreference<Preference>(getString(R.string.rate_key))?.apply {
+            // hide for F-Droid - no rating mechanism there
+            isVisible = when (BuildConfig.FLAVOR) {
+                "play" -> true
+                else -> false
+            }
+            // open play store
+            setOnPreferenceClickListener {
+                // play store
+                try {
+                    startActivity(createIntent("market://details?id=de.salomax.currencies"))
+                }
+                // browser
+                catch (e: ActivityNotFoundException) {
+                    startActivity(createIntent("https://play.google.com/store/apps/details?id=de.salomax.currencies"))
+                }
+                true
+            }
+        }
+    }
+
+    private fun createIntent(url: String): Intent {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        intent.addFlags(
+            Intent.FLAG_ACTIVITY_NO_HISTORY
+                    or Intent.FLAG_ACTIVITY_MULTIPLE_TASK
+                    or Intent.FLAG_ACTIVITY_NEW_DOCUMENT
+        )
+        return intent
     }
 
 }

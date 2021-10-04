@@ -25,5 +25,7 @@
     <string name="disclaimer_summary">Auch wenn diese App sehr sorgfältig geschrieben und getestet ist, <b>besteht keinerlei Garantie, dass die angezeigen Daten korrekt sind</b>. Die Währungskurse werden durch Drittparteien bereitgestellt und diese App hat keinerlei Möglichkeit zu überprüfen, ob diese Daten richtig und aktuell sind.\nAußerdem können die Daten – selbst wenn sie stimmen – von denen abweichen, die deine Bank nutzt.\nZu guter Letzt: Fehler passieren. Vertraue niemals jemandem blind! Sei dennoch versichert, dass ich diese App nicht veröffentlicht hätte, wenn ich an ihr zweifeln würde.</string>
     <string name="donate_title">Unterstütze den Entwickler</string>
     <string name="donate_summary">Spende über PayPal</string>
+    <string name="rate_title">Diese App bewerten</string>
+    <string name="rate_summary">Wenn du möchtest, kannst du helfen dass noch mehr Leute Currencies entdecken. Klicke hier um die App auf Google Play zu bewerten.</string>
     <string name="aboutVersion">Version %1$s</string>
 </resources>
