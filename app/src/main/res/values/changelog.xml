@@ -2,7 +2,14 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.7.0</b>
+    <string name="changelog" translatable="false"><b>1.8.0</b>
+        \n⸻
+        \n<li>Improved the display of exchange rate age.</li>
+        \n<li>Added a preference entry to rate the app on Google Play (not in the F-Droid version, of course).</li>
+        \n<li>Yet another localization: the app is now translated to Vietnamese.</li>
+        \n<li>Small minor improvements.</li>
+        \n
+        \n<b>1.7.0</b>
         \n⸻
         \n<li><b>Enjoy some big new feature in this release!</b>
         \nMost notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.</li>

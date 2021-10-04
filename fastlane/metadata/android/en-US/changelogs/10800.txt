@@ -1,0 +1,4 @@
+- Improved the display of exchange rate age.
+- Added a preference entry to rate the app on Google Play (not in the F-Droid version, of course).
+- Yet another localization: the app is now translated to Vietnamese.
+- Small minor improvements.
