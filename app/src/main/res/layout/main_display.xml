@@ -72,8 +72,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextFrom"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollViewTextFrom"
-        tools:listitem="@layout/row_currency_dropdown" />
+        app:layout_constraintTop_toTopOf="@+id/scrollViewTextFrom" />
 
     <TextView
         android:id="@+id/textCalculations"
@@ -133,8 +132,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextTo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/scrollViewTextTo"
-        tools:listitem="@layout/row_currency_dropdown" />
+        app:layout_constraintTop_toTopOf="@+id/scrollViewTextTo" />
 
     <HorizontalScrollView
         android:id="@+id/scrollViewTextTo"

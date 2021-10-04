@@ -182,7 +182,7 @@ class MainActivity : AppCompatActivity() {
                 // paint text in red in case the data is old
                 tvDate.setTextColor(
                     if (date?.isBefore(LocalDate.now().minusDays(3)) == true) getColor(android.R.color.holo_red_light)
-                    else tvDate.textColors.defaultColor
+                    else getTextColorSecondary()
                 )
             }
             // rates
@@ -244,6 +244,14 @@ class MainActivity : AppCompatActivity() {
                 else getColor(R.color.dollarBill)
             )
         })
+    }
+
+    private fun getTextColorSecondary(): Int {
+        val attrs = intArrayOf(android.R.attr.textColorSecondary)
+        val a = theme.obtainStyledAttributes(R.style.AppTheme, attrs)
+        val color = a.getColor(0, getColor(R.color.colorAccent))
+        a.recycle()
+        return color
     }
 
     /*
