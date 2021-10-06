@@ -26,4 +26,6 @@
     <string name="donate_title">Soutenir le développeur</string>
     <string name="donate_summary">Donner via PayPal</string>
     <string name="aboutVersion">Version %1$s</string>
+    <string name="rate_summary">Si vous le souhaitez, vous pouvez aider d\'autres personnes à découvrir les devises. Cliquez ici pour évaluer l\'application sur Google Play.</string>
+    <string name="rate_title">Notez cette application</string>
 </resources>
