@@ -160,6 +160,7 @@ class MainActivity : AppCompatActivity() {
             Snackbar.LENGTH_SHORT
         )
             .setBackgroundTint(getColor(R.color.colorAccent))
+            .setTextColor(getColor(android.R.color.white))
             .show()
     }
 
@@ -209,6 +210,7 @@ class MainActivity : AppCompatActivity() {
             it?.let {
                 Snackbar.make(tvCalculations, it, Snackbar.LENGTH_LONG)
                     .setBackgroundTint(getColor(android.R.color.holo_red_light))
+                    .setTextColor(getColor(android.R.color.white))
                     .show()
             }
         })

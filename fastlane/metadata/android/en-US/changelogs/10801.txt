@@ -1,0 +1,1 @@
+- Fixed an error where the app would crash in some cases, when the dark theme is used.

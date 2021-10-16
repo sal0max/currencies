@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.8.0</b>
+    <string name="changelog" translatable="false"><b>1.8.1</b>
+        \n⸻
+        \n<li>Fixed an error where the app would crash in some cases, when the dark theme is used.</li>
+        \n
+        \n<b>1.8.0</b>
         \n⸻
         \n<li>Improved the display of exchange rate age.</li>
         \n<li>Added a preference entry to rate the app on Google Play (not in the F-Droid version, of course).</li>

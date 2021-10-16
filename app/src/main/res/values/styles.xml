@@ -15,7 +15,8 @@
         <item name="colorPrimaryVariant">?attr/colorPrimary</item>
         <item name="colorSecondary">?android:attr/colorAccent</item>
         <item name="colorSecondaryVariant">?attr/colorSecondary</item>
-        <item name="colorSurface">?android:attr/colorBackground</item>
+        <!-- colorSurface crashes Snackbar in night mode. DON'T USE! (not needed, anyway) -->
+        <!-- <item name="colorSurface">?android:attr/colorBackground</item> -->
         <item name="shapeAppearanceSmallComponent">?android:attr/colorAccent</item>
         <item name="shapeAppearanceMediumComponent">?android:attr/colorAccent</item>
         <item name="shapeAppearanceLargeComponent">?android:attr/colorAccent</item>
