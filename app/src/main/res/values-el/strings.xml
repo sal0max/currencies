@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> . </string>
+    <string name="desc_toggle_currencies">εναλλαγή νομισμάτων</string>
+    <string name="today">σήμερον</string>
+    <string name="yesterday">χθες</string>
+    <string name="copied_to_clipboard">Το <b>%s</b> αντιγράφηκε στο πρόχειρο</string>
+    <string name="error">Σφάλμα: %s</string>
+    <string name="error_api_error">Σφάλμα API. Προσπαθήστε αργότερα.</string>
+    <string name="menu_settings">Ρυθμίσεις</string>
+    <string name="error_no_data">Αδυναμία επικαιροποίησης της ισοτιμίας. Δεν υπάρχει σύνδεση.</string>
+    <string name="last_updated">Ισοτιμία της %s</string>
+    <string name="menu_refresh">Επικαιροποίηση ισοτιμίας</string>
+    <string name="menu_timeline">Διάγραμμα ισοτιμίας</string>
+</resources>
