@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="rate_average">Μ.Ο.</string>
+    <string name="rate_min">Ελάχ.</string>
+    <string name="rate_max">Μέγ.</string>
+    <string name="year">έτος</string>
+    <string name="month">μήνας</string>
+    <string name="week">εβδομάδα</string>
+    <string name="activity_timeline_title"><b>%1$s</b> σε <b>%2$s</b></string>
+</resources>
