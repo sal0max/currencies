@@ -8,5 +8,5 @@ Currencies is a simple and straightforward currency converter.It is not intended
 • Historic rates: Check out the chart for the past year, to see how the currencies have developed.
 • A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
 • Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
-• Currencies is written for Android in Kotlin, targeting Android 11 and supporting light and dark themes.
+• Currencies is written for Android in Kotlin, targeting Android 12 and supporting light and dark themes.
 • The app is ad-free and doesn't spy on the user.

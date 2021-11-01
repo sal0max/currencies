@@ -8,5 +8,5 @@ Currencies è un convertitore di valuta semplice e diretto e non è destinato ad
 - Tassi storici: Guarda il grafico dell'anno scorso, per vedere come si sono sviluppate le valute.
 - Una caratteristica importante è la calcolatrice inclusa. Utile ad esempio se vuoi dividere il conto di un ristorante.
 - Calcolatrice di tasse: aggiungi opzionalmente una tassa di cambio personalizzabile a tutti i calcoli.
-- Currencies è scritta per Android in Kotlin, punta ad Android 11 e supporta temi chiari e scuri.
+- Currencies è scritta per Android in Kotlin, punta ad Android 12 e supporta temi chiari e scuri.
 - L'app è priva di pubblicità e non spia l'utente.
