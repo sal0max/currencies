@@ -17,6 +17,10 @@ good as possible.
 
 ## Translations
 
+<a href="https://weblate.bubu1.eu/engage/currencies/">
+<img src="https://weblate.bubu1.eu/widgets/currencies/-/multi-auto.svg" alt="translation status" style="float: right; width: 50%;" />
+</a>
+
 You are invited to provide translations for the app. But there are some rules.
 
 1.  Please only translate if you are **fluid with the language** you provide the translation and
@@ -26,4 +30,4 @@ You are invited to provide translations for the app. But there are some rules.
 2. Only contribute, if you are committed to translate the **majority** of strings. No one wants an
    app, which is a mix of English and the native language.
 
-Translations can be provided via Weblate: https://weblate.bubu1.eu/projects/currencies/
+Translations can be provided via <a href="https://weblate.bubu1.eu/engage/currencies/">Weblate</a>.
