@@ -9,7 +9,7 @@ import de.salomax.currencies.util.*
 
 import java.time.LocalDate
 
-class Database(private val context: Context) {
+class Database(context: Context) {
 
     /*
      * current exchange rates from api =============================================================
@@ -40,11 +40,6 @@ class Database(private val context: Context) {
 
     fun getDate(): LocalDate? {
         return prefsRates.getString("_date", null)?.let { LocalDate.parse(it) }
-    }
-
-    private fun getTimelinePrefFile(from: String?, to: String?): String {
-        // e.g. timeline_eur_usd
-        return "timeline_${from?.lowercase()}_${to?.lowercase()}"
     }
 
     /*
