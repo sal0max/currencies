@@ -1,7 +1,29 @@
 # How To Contribute
 
-**For now, I don't want to accept any pull requests.** The project is still a work in progress and I
-have still some ideas on improving it. With my limited time, this may take a while, but I'll get
-there.
+## New Features
+
+**For now, I don't want to accept any pull requests, which contain new features or widely changed
+behavior.**
 
 You are welcome to open issues to report bugs or suggest features, though. 🙂
+
+
+## Bug fixes
+
+You are welcome to provide pull requests with fixes for a bug you discovered.
+Regarding code style: I don't dictate strict rules, but please try to stick to the original style as
+good as possible.
+
+
+## Translations
+
+You are invited to provide translations for the app. But there are some rules.
+
+1.  Please only translate if you are **fluid with the language** you provide the translation and
+    also if you are **familiar with the nomenclature of the Android system**. If in doubt about a
+    specific string, check out other Apps of big companies, like WhatsApp, Facebook, Google, etc.,
+    and see how they did it.
+2. Only contribute, if you are committed to translate the **majority** of strings. No one wants an
+   app, which is a mix of English and the native language.
+
+Translations can be provided via Weblate: https://weblate.bubu1.eu/projects/currencies/

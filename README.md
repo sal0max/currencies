@@ -24,7 +24,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
 * Historic rates: Check out the chart for the past year, to see how the currencies have developed.
 * A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
 * Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
-* **Currencies** is written for Android in Kotlin, targeting Android 11 and supporting light and dark themes.
+* **Currencies** is written for Android in Kotlin, targeting Android 12 and supporting light and dark themes.
 * The app is ad-free and doesn't spy on the user.
 
 
@@ -34,6 +34,11 @@ It is **not** intended to be used for realtime financial business, rather to be 
    <img src="art/screenshots/screen01.png" width="400" alt="screenshot 1">
    <img src="art/screenshots/screen03.png" width="400" alt="screenshot 2">
 </div>
+
+
+## Development
+
+Check out [CONTRIBUTING.md](CONTRIBUTING.md), if you are interested in participating.
 
 
 ## License
