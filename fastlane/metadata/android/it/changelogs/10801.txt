@@ -1,0 +1,1 @@
+- Corretto un errore per cui l'app si bloccava in alcuni casi, quando veniva usato il tema scuro.

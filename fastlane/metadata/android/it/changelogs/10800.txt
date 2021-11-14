@@ -1,0 +1,4 @@
+- Migliorata la visualizzazione dell'età del tasso di cambio.
+- Aggiunta una voce di preferenza per valutare l'app su Google Play (non nella versione F-Droid, ovviamente).
+- Ancora una localizzazione: l'app è ora tradotta in vietnamita.
+- Piccoli miglioramenti minori.
