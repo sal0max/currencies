@@ -13,7 +13,7 @@
     <string name="name_bam">Μετατρέψιμο Μάρκο Βοσνίας και Ερζεγοβίνης</string>
     <string name="name_bbd">Δολάριο Μπαρμπάντος</string>
     <string name="name_bdt">Τάκα Μπανγκλαντές</string>
-    <string name="name_bgn">Λέβα Βουλγαρίας</string>
+    <string name="name_bgn">Λεβ Βουλγαρίας</string>
     <string name="name_bhd">Δηνάριο Μπαχρέιν</string>
     <string name="name_bif">Φράγκο Μπουρούντι</string>
     <string name="name_bmd">Δολάριο Βερμούδων</string>
@@ -74,7 +74,7 @@
     <string name="name_jep">Λίρα Τζέρσι</string>
     <string name="name_jmd">Δολάριο Τζαμάικα</string>
     <string name="name_jod">Δηνάριο Ιορδανίας</string>
-    <string name="name_jpy">Γιεν Ιαπωνίας</string>
+    <string name="name_jpy">Γιέν Ιαπωνίας</string>
     <string name="name_kes">Σελίνι Κένυας</string>
     <string name="name_kgs">Σομ Κιργιζίας</string>
     <string name="name_khr">Ριέλ Καμπότζης</string>
@@ -91,7 +91,7 @@
     <string name="name_lsl">Λότι Λεσότο</string>
     <string name="name_lyd">Δηνάριο Λιβύης</string>
     <string name="name_mad">Ντιρχάμ Μαρόκου</string>
-    <string name="name_mdl">Λέβα Μολδαβίας</string>
+    <string name="name_mdl">Λέου Μολδαβίας</string>
     <string name="name_mga">Αριάρι Μαδαγασκάρης</string>
     <string name="name_mkd">Δηνάριο Βόρειας Μακεδονίας</string>
     <string name="name_mmk">Κυάτ Μιανμάρ</string>
@@ -120,7 +120,7 @@
     <string name="name_pln">Ζλότι Πολωνίας</string>
     <string name="name_pyg">Γκουαρανί Παραγουάης</string>
     <string name="name_qar">Ριγιάλ Κατάρ</string>
-    <string name="name_ron">Λέβα Ρουμανίας</string>
+    <string name="name_ron">Λέου Ρουμανίας</string>
     <string name="name_rsd">Δηνάριο Σερβίας</string>
     <string name="name_rub">Ρούβλι Ρωσίας</string>
     <string name="name_rwf">Φράγκο Ρουάντας</string>

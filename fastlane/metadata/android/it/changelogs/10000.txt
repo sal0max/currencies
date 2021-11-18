@@ -1,0 +1,3 @@
+* Aggiunta la traduzione in tedesco 🇩🇪
+* Miglioramento minore: Dimensione dell'app diminuita del 50%!
+* App sembra abbastanza stabile: Rilascio pubblico 1.0! 🥳🥳🥳

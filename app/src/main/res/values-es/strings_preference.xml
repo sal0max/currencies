@@ -26,4 +26,6 @@
     <string name="donate_title">Apoyar al desarrollador</string>
     <string name="donate_summary">Donar a través de PayPal</string>
     <string name="aboutVersion">Versión %1$s</string>
+    <string name="rate_title">Califica esta aplicación</string>
+    <string name="rate_summary">Si quieres, puedes ayudar a otros a descubrir Currencies. Haz clic aquí para valorar la aplicación en Google Play.</string>
 </resources>
