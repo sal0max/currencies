@@ -17,11 +17,12 @@ import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
 import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.view.main.spinner.SearchableSpinner
+import de.salomax.currencies.view.main.spinner.SearchableSpinnerAdapter
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.view.timeline.TimelineActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
-import de.salomax.currencies.widget.searchablespinner.SearchableSpinner
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -38,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var tvCurrencyFrom: TextView
     private lateinit var tvCurrencyTo: TextView
     private lateinit var spinnerFrom: SearchableSpinner
-    private lateinit var spinnerTo: Spinner
+    private lateinit var spinnerTo: SearchableSpinner
     private lateinit var tvDate: TextView
     private lateinit var tvFee: TextView
 
@@ -132,7 +133,7 @@ class MainActivity : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 inputModel.setCurrencyFrom(
-                    (parent?.adapter as SpinnerAdapter).getItem(position)
+                    (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
         }
@@ -140,7 +141,7 @@ class MainActivity : AppCompatActivity() {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
                 inputModel.setCurrencyTo(
-                    (parent?.adapter as SpinnerAdapter).getItem(position)
+                    (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
         }
@@ -166,7 +167,7 @@ class MainActivity : AppCompatActivity() {
 
     private fun observe() {
         //exchange rates changed
-        ratesModel.getExchangeRate().observe(this, {
+        ratesModel.exchangeRates.observe(this, {
             // date
             it?.let {
                 val date = it.date
@@ -187,23 +188,28 @@ class MainActivity : AppCompatActivity() {
                 )
             }
             // rates
-            spinnerFrom.adapter = it?.rates?.let { rates ->
-                SpinnerAdapter(this, android.R.layout.simple_spinner_item, rates)
-            }
-            spinnerTo.adapter = it?.rates?.let { rates ->
-                SpinnerAdapter(this, android.R.layout.simple_spinner_item, rates)
-            }
+            spinnerFrom.setRates(it?.rates)
+            spinnerTo.setRates(it?.rates)
+
             // restore state
             inputModel.getLastRateFrom()?.let { last ->
-                (spinnerFrom.adapter as? SpinnerAdapter)?.getPosition(last)?.let { position ->
+                (spinnerFrom.adapter as? SearchableSpinnerAdapter)?.getPosition(last)?.let { position ->
                     spinnerFrom.setSelection(position)
                 }
             }
             inputModel.getLastRateTo()?.let { last ->
-                (spinnerTo.adapter as? SpinnerAdapter)?.getPosition(last)?.let { position ->
+                (spinnerTo.adapter as? SearchableSpinnerAdapter)?.getPosition(last)?.let { position ->
                     spinnerTo.setSelection(position)
                 }
             }
+        })
+        ratesModel.getStarredCurrencies().observe(this, { stars ->
+            // starred rates
+            stars.let {
+                spinnerFrom.setStars(it)
+                spinnerTo.setStars(it)
+            }
+
         })
         ratesModel.getError().observe(this, {
             // error

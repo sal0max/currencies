@@ -63,6 +63,54 @@ class Database(context: Context) {
     }
 
     /*
+     * starred currencies ==========================================================================
+     */
+    private val prefsStarredCurrencies: SharedPreferences = context.getSharedPreferences("starred_currencies", MODE_PRIVATE)
+
+    fun toggleCurrencyStar(currencyCode: String) {
+        prefsStarredCurrencies.apply {
+            if (prefsStarredCurrencies.getStringSet("_stars", HashSet<String>())!!.contains(currencyCode))
+                removeCurrencyStar(currencyCode)
+            else
+                starCurrency(currencyCode)
+        }
+    }
+
+    fun getStarredCurrencies(): SharedPreferenceLiveData<Set<String>> {
+        return SharedPreferenceStringSetLiveData(prefsStarredCurrencies, "_stars", HashSet())
+    }
+
+    private fun starCurrency(currencyCode: String) {
+        prefsStarredCurrencies.apply {
+            edit().putStringSet("_stars",
+                prefsStarredCurrencies.getStringSet("_stars", HashSet<String>())!!
+                    .plus(currencyCode)
+            ).apply()
+        }
+    }
+
+    private fun removeCurrencyStar(currencyCode: String) {
+        prefsStarredCurrencies.apply {
+            edit().putStringSet("_stars",
+                prefsStarredCurrencies.getStringSet("_stars", HashSet<String>())!!
+                    .minus(currencyCode)
+            ).apply()
+        }
+    }
+
+    fun isFilterStarredEnabled(): SharedPreferenceBooleanLiveData {
+        return SharedPreferenceBooleanLiveData(prefsStarredCurrencies, "_starredActive", false)
+    }
+
+    fun toggleStarredActive() {
+        prefsStarredCurrencies.apply {
+            edit().putBoolean("_starredActive",
+                prefsStarredCurrencies.getBoolean("_starredActive", false).not()
+            ).apply()
+        }
+    }
+
+    /*
      * preferences =================================================================================
      */
     private val prefs: SharedPreferences = context.getSharedPreferences("prefs", MODE_PRIVATE)

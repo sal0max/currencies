@@ -5,11 +5,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
     android:orientation="horizontal"
+    android:paddingVertical="@dimen/margin2x"
     android:paddingStart="@dimen/margin2x"
-    android:paddingEnd="@dimen/margin2x"
-    android:paddingTop="@dimen/margin2x"
-    android:paddingBottom="@dimen/margin1x"
+    android:paddingEnd="@dimen/margin1x"
     tools:ignore="UseCompoundDrawables">
 
     <ImageView
@@ -42,9 +45,22 @@
         android:lines="1"
         android:textColor="?android:textColorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/btn_fav"
         app:layout_constraintStart_toStartOf="@id/text2"
         app:layout_constraintTop_toBottomOf="@id/text2"
         tools:text="Solomon Islands dollar" />
+
+    <ImageButton
+        android:id="@+id/btn_fav"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackgroundBorderless"
+        android:padding="@dimen/margin1x"
+        android:src="@drawable/ic_favorite_empty"
+        app:layout_constraintBottom_toBottomOf="@id/text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text2"
+        tools:ignore="ContentDescription"
+        tools:src="@drawable/ic_favorite" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

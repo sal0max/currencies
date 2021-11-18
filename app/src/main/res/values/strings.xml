@@ -20,4 +20,6 @@
     <string name="menu_refresh">Refresh rates</string>
     <string name="menu_timeline">Exchange rate chart</string>
     <string name="title_preferences" translatable="false">@string/menu_settings</string>
+
+    <string name="tooltip_filter_starred">Show only starred currencies.</string>
 </resources>

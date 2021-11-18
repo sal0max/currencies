@@ -1,21 +1,19 @@
-package de.salomax.currencies.widget.searchablespinner
+package de.salomax.currencies.view.main.spinner
 
 import android.content.Context
 import android.content.ContextWrapper
-import android.os.Bundle
 import android.util.AttributeSet
 import android.widget.SpinnerAdapter
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.fragment.app.FragmentActivity
 import de.salomax.currencies.model.Rate
 
-class SearchableSpinner : AppCompatSpinner, OnSearchableItemClick<Rate> {
+class SearchableSpinner : AppCompatSpinner {
 
     private val mContext: Context
     private lateinit var spinnerDialog: SearchableSpinnerDialog
 
-    private var dialogTitle: String? = null
-    private var dialogCloseText: String? = null
+    val adapter = SearchableSpinnerAdapter(context, android.R.layout.simple_spinner_item)
 
     constructor(context: Context) : super(context) {
         this.mContext = context
@@ -33,24 +31,28 @@ class SearchableSpinner : AppCompatSpinner, OnSearchableItemClick<Rate> {
     }
 
     private fun init() {
-        spinnerDialog = SearchableSpinnerDialog()
-        spinnerDialog.setTitle(dialogTitle)
-        spinnerDialog.setDismissText(dialogCloseText)
-        spinnerDialog.mClickListener = this
+        super.setAdapter(adapter)
+
+        spinnerDialog = SearchableSpinnerDialog(context)
+        // click listeners
+        spinnerDialog.onRateClicked = { rate: Rate, _: Int ->
+            setSelection(adapter.getPosition(rate.code))
+        }
     }
 
+    override fun setAdapter(adapter: SpinnerAdapter?) {
+        throw NoSuchMethodException("This Spinner sets its own adapter.")
+    }
+
+    // click on spinner -> open the dialog
     override fun performClick(): Boolean {
         return when {
             // dialog is already active
             spinnerDialog.isAdded -> true
             // else show dialog, if this spinner is backed by an adapter
-            !spinnerDialog.isVisible && adapter != null -> {
+            !spinnerDialog.isVisible -> {
                 val fm = findActivity(mContext)?.supportFragmentManager
-                if (fm != null) {
-                    // give currently selected position to dialog
-                    spinnerDialog.arguments = Bundle().apply { putInt("position", selectedItemPosition) }
-                    spinnerDialog.show(fm, null)
-                }
+                if (fm != null) { spinnerDialog.show(fm, null) }
                 true
             }
             // else do nothing
@@ -58,13 +60,18 @@ class SearchableSpinner : AppCompatSpinner, OnSearchableItemClick<Rate> {
         }
     }
 
-    override fun onSearchableItemClicked(item: Rate?, position: Int) {
-        setSelection(position)
+    fun setRates(rates: List<Rate>?) {
+        // set in own adapter...
+        adapter.setRates(rates)
+        // ...and in dialog
+        spinnerDialog.setRates(rates)
     }
 
-    override fun setAdapter(adapter: SpinnerAdapter?) {
-        super.setAdapter(adapter)
-        spinnerDialog.listAdapter = SearchableSpinnerDialog.Adapter(context, adapter)
+    fun setStars(stars: Set<String>?) {
+        // set in own adapter...
+        adapter.setStars(stars)
+        // ...and in dialog
+        spinnerDialog.setStars(stars)
     }
 
     private fun findActivity(context: Context?): FragmentActivity? {

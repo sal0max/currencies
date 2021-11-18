@@ -26,6 +26,6 @@
         android:ellipsize="end"
         android:lines="1"
         android:textColor="?android:textColorPrimary"
-        tools:text="Solomon Islands dollar" />
+        tools:text="SBD" />
 
 </LinearLayout>

@@ -14,6 +14,8 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
     private var repository: ExchangeRatesRepository = ExchangeRatesRepository(application)
 
     private var dbLiveItems: LiveData<ExchangeRates?>
+    private var starredLiveItems: LiveData<Set<String>>
+    private var onlyShowStarred: LiveData<Boolean>
     private val liveError = repository.getError()
 
     private var isUpdating: LiveData<Boolean> = repository.isUpdating()
@@ -36,21 +38,57 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
                 // else just use the cached value
                 else -> Database(application).getExchangeRates()
             }
+        starredLiveItems = Database(getApplication()).getStarredCurrencies()
+        onlyShowStarred = Database(getApplication()).isFilterStarredEnabled()
     }
 
-    fun getExchangeRate(): LiveData<ExchangeRates?> {
-        val liveItems = MediatorLiveData<ExchangeRates?>()
-        liveItems.addSource(dbLiveItems) { exchangeRates ->
-            exchangeRates?.let {
-                liveItems.value = exchangeRates
+    internal val exchangeRates: LiveData<ExchangeRates?> = ExchangeRatesLiveDate()
+
+    internal inner class ExchangeRatesLiveDate: MediatorLiveData<ExchangeRates?>() {
+        init {
+            addSource(dbLiveItems) { calc() }
+            addSource(starredLiveItems) { calc() }
+            addSource(onlyShowStarred) { calc() }
+        }
+
+        private fun calc() {
+            dbLiveItems.value?.let { rates ->
+                this.value = rates
+                    // usa a copy with ...
+                    .copy(
+                        rates = rates.rates
+                            // ... the correct sort order of the rates
+                            ?.sortedWith(
+                                @Suppress("MoveLambdaOutsideParentheses")
+                                compareBy(
+                                    // { rate -> starredLiveItems.value?.contains(rate.code) == false}, // starred
+                                    { rate -> rate.getName(getApplication()) } // name
+                                )
+                            )
+                    )
             }
         }
-        return liveItems
     }
 
     fun forceUpdateExchangeRate() {
         if (isUpdating.value != true)
             dbLiveItems = repository.getExchangeRates()
+    }
+
+    fun getStarredCurrencies(): LiveData<Set<String>> {
+        return starredLiveItems
+    }
+
+    fun isFilterStarredEnabled(): LiveData<Boolean> {
+        return onlyShowStarred
+    }
+
+    fun toggleStarredActive() {
+        Database(getApplication()).toggleStarredActive()
+    }
+
+    fun toggleCurrencyStar(currencyCode: String) {
+        Database(getApplication()).toggleCurrencyStar(currencyCode)
     }
 
     /*
