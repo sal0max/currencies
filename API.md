@@ -21,7 +21,7 @@ This app currently uses **exchangerate.host**.
 
 ## Comparison of ECB and IMF data
 
-ECB and IMF are both free and *offical* data providers. However, they also both offer only limited currencies.
+ECB and IMF are both free and *official* data providers. However, they also both offer only limited currencies.
 
 | Currency            | ISO 4217 | [ECB]    | [IMF]    |
 | ------------------- | -------- | -------- | -------- |
