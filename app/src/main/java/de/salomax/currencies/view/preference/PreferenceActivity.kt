@@ -2,10 +2,10 @@ package de.salomax.currencies.view.preference
 
 import android.os.Bundle
 import android.view.MenuItem
-import androidx.appcompat.app.AppCompatActivity
 import de.salomax.currencies.R
+import de.salomax.currencies.view.BaseActivity
 
-class PreferenceActivity: AppCompatActivity() {
+class PreferenceActivity: BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)

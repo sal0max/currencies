@@ -1,8 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <PreferenceCategory android:title="@string/category_settings">
+        <de.salomax.currencies.widget.EditTextSwitchPreference
+            android:dialogLayout="@layout/preference_dialog_fee"
+            android:dialogMessage="@string/fee_summary"
+            android:key="@string/fee_key"
+            android:title="@string/fee_title"
+            tools:summary="2.0 %" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_appearance"
+        app:allowDividerAbove="false">
         <ListPreference
             android:defaultValue="2"
             android:entries="@array/theme_names"
@@ -10,12 +22,11 @@
             android:key="@string/theme_key"
             android:summary="%s"
             android:title="@string/theme_title" />
-        <de.salomax.currencies.widget.EditTextSwitchPreference
-            android:dialogLayout="@layout/preference_dialog_fee"
-            android:dialogMessage="@string/fee_summary"
-            android:key="@string/fee_key"
-            android:title="@string/fee_title"
-            tools:summary="2.0 %" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="@string/pure_black_key"
+            android:summary="@string/pure_black_enabled_summary"
+            android:title="@string/pure_black_enabled_title" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_api">

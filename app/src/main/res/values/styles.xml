@@ -1,14 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <attr name="colorDisplayOverlay" format="reference|color" />
+    <attr name="colorBackground" format="reference|color" />
+
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
         <!-- "transparent" actionBar -->
         <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
         <!-- "transparent" statusBar -->
-        <item name="colorPrimaryDark">?android:attr/colorBackground</item>
+        <item name="colorPrimaryDark">?attr/colorBackground</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
         <!-- colors -->
+        <item name="colorBackground">@color/colorBackground</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorBackground">@color/colorBackground</item>
+        <item name="android:colorBackground">?attr/colorBackground</item>
+        <item name="colorDisplayOverlay">@color/displayOverlay</item>
 
         <!-- new MaterialComponents attributes. see https://material.io/blog/android-material-theme-color -->
         <item name="colorPrimary">?android:attr/colorAccent</item>
@@ -27,14 +32,20 @@
         <item name="colorOnError">?android:attr/textColorPrimary</item>
     </style>
 
-    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:textSize">@dimen/textKeypad</item>
+    <style name="AppTheme.PureBlack" parent="AppTheme">
+        <!-- colors -->
+        <item name="colorBackground">@color/colorBackgroundPureBlack</item>
+        <item name="colorDisplayOverlay">@color/displayOverlayPureBlack</item>
     </style>
 
-    <!-- make actionbar colored "primary" instead of "accent" -->
+    <!-- make actionbar the same color as the background -->
     <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
-        <item name="android:background">@color/colorBackground</item>
-        <item name="background">@color/colorBackground</item>
+        <item name="android:background">?attr/colorBackground</item>
+        <item name="background">?attr/colorBackground</item>
+    </style>
+
+    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.MaterialComponents.Body1">
+        <item name="android:textSize">@dimen/textKeypad</item>
     </style>
 
     <!-- use for the buttons inside MaterialButtonToggleGroup -->

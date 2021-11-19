@@ -4,7 +4,8 @@
 
     <string name="changelog" translatable="false"><b>1.10.0</b>
         \n⸻
-        \n<li>New feature: You\'re now able to favorite currencies for a quicker access. Have fun! ❤</li>
+        \n<li>You\'re now able to favorite currencies for a quicker access. Have fun! ❤</li>
+        \n<li>Added option for a pure black theme experience, when using dark mode.</li>
         \n<li>Updated translations. Thanks a lot to the volunteers!</li>
         \n
         \n<b>1.9.0</b>

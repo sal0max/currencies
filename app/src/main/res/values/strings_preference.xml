@@ -2,15 +2,18 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- main settings -->
     <string name="category_settings">General Settings</string>
+    <string name="fee_key" translatable="false">KEY_FEE</string>
+    <string name="fee_title">Foreign transaction fee</string>
+    <string name="fee_summary">Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. Here you can enter that fee. It will be added on top of the calculation, so you know how much you <i>really</i> pay.</string>
+    <string name="category_appearance">Appearance</string>
     <string name="theme_key" translatable="false">KEY_THEME</string>
     <string name="theme_title">Design</string>
     <string name="theme_option_light">Light</string>
     <string name="theme_option_dark">Dark</string>
     <string name="theme_option_default">System default</string>
-    <string name="fee_key" translatable="false">KEY_FEE</string>
-    <string name="fee_title">Foreign transaction fee</string>
-    <string name="fee_summary">Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. Here you can enter that fee. It will be added on top of the calculation, so you know how much you <i>really</i> pay.</string>
-
+    <string name="pure_black_key" translatable="false">KEY_PURE_BLACK_ENABLED</string>
+    <string name="pure_black_enabled_title">OLED black</string>
+    <string name="pure_black_enabled_summary">Use pure black in dark mode</string>
     <!-- api -->
     <string name="category_api">Exchange rates</string>
     <string name="api_key" translatable="false">KEY_API</string>
@@ -25,7 +28,6 @@
     <string name="api_refreshPeriod_exchangerateHost">Exchange rates are updated around midnight UTC every working day.</string>
     <string name="api_refreshPeriod_frankfurterApi">The data is getting updated around 16:00 CET every working day.</string>
     <string name="api_refreshPeriod_ferEe">Rates are updated every working day.</string>
-
     <!-- about -->
     <string name="category_about">About this app</string>
     <string name="disclaimer_title">Disclaimer</string>

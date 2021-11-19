@@ -1,2 +1,3 @@
-- New feature: You're now able to favorite currencies for a quicker access. Have fun! ❤
+- You're now able to favorite currencies for a quicker access. Have fun! ❤
+- Added option for a pure black theme experience, when using dark mode.
 - Updated translations. Thanks a lot to the volunteers!

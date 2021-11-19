@@ -15,6 +15,7 @@ import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
 import java.util.*
 import android.content.ActivityNotFoundException
+import androidx.preference.SwitchPreference
 
 @Suppress("unused")
 class PreferenceFragment: PreferenceFragmentCompat() {
@@ -29,6 +30,14 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         findPreference<ListPreference>(getString(R.string.theme_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
                 viewModel.setTheme(newValue.toString().toInt())
+                true
+            }
+        }
+
+        // pure black
+        findPreference<SwitchPreference>(getString(R.string.pure_black_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setPureBlackEnabled(newValue.toString().toBoolean())
                 true
             }
         }

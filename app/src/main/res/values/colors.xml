@@ -6,6 +6,8 @@
 
    <color name="displayOverlay">#26808080</color>
    <color name="colorBackground">@color/dirtyWhite</color>
+   <color name="displayOverlayPureBlack">@color/displayOverlay</color>
+   <color name="colorBackgroundPureBlack">@color/colorBackground</color>
 
    <!-- https://www.schemecolor.com/dollar-bill-color-scheme.php -->
    <color name="dirtyWhite">#FAF7F2</color>

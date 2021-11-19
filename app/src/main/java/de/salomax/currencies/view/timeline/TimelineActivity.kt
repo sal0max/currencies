@@ -6,7 +6,6 @@ import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
@@ -16,12 +15,13 @@ import de.salomax.currencies.R
 import de.salomax.currencies.util.dpToPx
 import de.salomax.currencies.util.prettyPrint
 import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.viewmodel.timeline.TimelineViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
-class TimelineActivity : AppCompatActivity() {
+class TimelineActivity : BaseActivity() {
 
     // extras
     private lateinit var argFrom: String

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/displayOverlay"
+    android:background="?attr/colorDisplayOverlay"
     android:padding="@dimen/margin2x">
 
     <TextView

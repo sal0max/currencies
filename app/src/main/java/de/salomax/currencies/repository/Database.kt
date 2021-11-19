@@ -16,6 +16,9 @@ class Database(context: Context) {
      */
     private val prefsRates: SharedPreferences = context.getSharedPreferences("rates", MODE_PRIVATE)
 
+    private val keyDate = "_date"
+    private val keyBaseRate = "_base"
+
     fun insertExchangeRates(items: ExchangeRates) {
         // don't insert null-values. this would clear the cache
         if (items.date != null)
@@ -24,8 +27,8 @@ class Database(context: Context) {
                 // clear old values
                 editor.clear()
                 // apply new ones
-                editor.putString("_date", items.date.toString())
-                editor.putString("_base", items.base)
+                editor.putString(keyDate, items.date.toString())
+                editor.putString(keyBaseRate, items.base)
                 items.rates?.forEach { rate ->
                     editor.putFloat(rate.code, rate.value)
                 }
@@ -39,7 +42,7 @@ class Database(context: Context) {
     }
 
     fun getDate(): LocalDate? {
-        return prefsRates.getString("_date", null)?.let { LocalDate.parse(it) }
+        return prefsRates.getString(keyDate, null)?.let { LocalDate.parse(it) }
     }
 
     /*
@@ -47,19 +50,22 @@ class Database(context: Context) {
      */
     private val prefsLastState: SharedPreferences = context.getSharedPreferences("last_state", MODE_PRIVATE)
 
+    private val keyLastStateFrom = "_last_from"
+    private val keyLastStateTo = "_last_to"
+
     fun saveLastUsedRates(from: String?, to: String?) {
         prefsLastState.apply {
-            edit().putString("_last_from", from).apply()
-            edit().putString("_last_to", to).apply()
+            edit().putString(keyLastStateFrom, from).apply()
+            edit().putString(keyLastStateTo, to).apply()
         }
     }
 
     fun getLastRateFrom(): String? {
-        return prefsLastState.getString("_last_from", "USD")
+        return prefsLastState.getString(keyLastStateFrom, "USD")
     }
 
     fun getLastRateTo(): String? {
-        return prefsLastState.getString("_last_to", "EUR")
+        return prefsLastState.getString(keyLastStateTo, "EUR")
     }
 
     /*
@@ -67,9 +73,12 @@ class Database(context: Context) {
      */
     private val prefsStarredCurrencies: SharedPreferences = context.getSharedPreferences("starred_currencies", MODE_PRIVATE)
 
+    private val keyStars = "_stars"
+    private val keyStarredEnabled = "_starredActive"
+
     fun toggleCurrencyStar(currencyCode: String) {
         prefsStarredCurrencies.apply {
-            if (prefsStarredCurrencies.getStringSet("_stars", HashSet<String>())!!.contains(currencyCode))
+            if (prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!.contains(currencyCode))
                 removeCurrencyStar(currencyCode)
             else
                 starCurrency(currencyCode)
@@ -77,13 +86,13 @@ class Database(context: Context) {
     }
 
     fun getStarredCurrencies(): SharedPreferenceLiveData<Set<String>> {
-        return SharedPreferenceStringSetLiveData(prefsStarredCurrencies, "_stars", HashSet())
+        return SharedPreferenceStringSetLiveData(prefsStarredCurrencies, keyStars, HashSet())
     }
 
     private fun starCurrency(currencyCode: String) {
         prefsStarredCurrencies.apply {
-            edit().putStringSet("_stars",
-                prefsStarredCurrencies.getStringSet("_stars", HashSet<String>())!!
+            edit().putStringSet(keyStars,
+                prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!
                     .plus(currencyCode)
             ).apply()
         }
@@ -91,21 +100,21 @@ class Database(context: Context) {
 
     private fun removeCurrencyStar(currencyCode: String) {
         prefsStarredCurrencies.apply {
-            edit().putStringSet("_stars",
-                prefsStarredCurrencies.getStringSet("_stars", HashSet<String>())!!
+            edit().putStringSet(keyStars,
+                prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!
                     .minus(currencyCode)
             ).apply()
         }
     }
 
     fun isFilterStarredEnabled(): SharedPreferenceBooleanLiveData {
-        return SharedPreferenceBooleanLiveData(prefsStarredCurrencies, "_starredActive", false)
+        return SharedPreferenceBooleanLiveData(prefsStarredCurrencies, keyStarredEnabled, false)
     }
 
     fun toggleStarredActive() {
         prefsStarredCurrencies.apply {
-            edit().putBoolean("_starredActive",
-                prefsStarredCurrencies.getBoolean("_starredActive", false).not()
+            edit().putBoolean(keyStarredEnabled,
+                prefsStarredCurrencies.getBoolean(keyStarredEnabled, false).not()
             ).apply()
         }
     }
@@ -115,54 +124,75 @@ class Database(context: Context) {
      */
     private val prefs: SharedPreferences = context.getSharedPreferences("prefs", MODE_PRIVATE)
 
+    private val keyApi = "_api"
+    private val keyTheme = "_theme"
+    private val keyPureBlackEnabled = "_pureBlackEnabled"
+    private val keyFeeEnabled = "_feeEnabled"
+    private val keyFeeValue = "_fee"
+
     /* api */
 
     fun setApiProvider(api: Int) {
         prefs.apply {
-            edit().putInt("_api", api).apply()
+            edit().putInt(keyApi, api).apply()
         }
     }
 
     fun getApiProvider(): Int {
-        return prefs.getInt("_api", 0)
+        return prefs.getInt(keyApi, 0)
     }
 
     fun getApiProviderAsync(): LiveData<Int> {
-        return SharedPreferenceIntLiveData(prefs, "_api", 0)
+        return SharedPreferenceIntLiveData(prefs, keyApi, 0)
     }
 
     /* theme */
 
     fun setTheme(theme: Int) {
         prefs.apply {
-            edit().putInt("_theme", theme).apply()
+            edit().putInt(keyTheme, theme).apply()
         }
     }
 
+    /**
+     * 0 = MODE_NIGHT_NO
+     * 1 = MODE_NIGHT_YES
+     * 2 = MODE_NIGHT_FOLLOW_SYSTEM
+     */
     fun getTheme(): Int {
         return prefs.getInt("_theme", 2)
+    }
+
+    fun setPureBlackEnabled(enabled: Boolean) {
+        prefs.apply {
+            edit().putBoolean(keyPureBlackEnabled, enabled).apply()
+        }
+    }
+
+    fun isPureBlackEnabled(): Boolean {
+        return prefs.getBoolean(keyPureBlackEnabled, false)
     }
 
     /* fee */
 
     fun setFeeEnabled(enabled: Boolean) {
         prefs.apply {
-            edit().putBoolean("_feeEnabled", enabled).apply()
+            edit().putBoolean(keyFeeEnabled, enabled).apply()
         }
     }
 
     fun isFeeEnabled(): LiveData<Boolean> {
-        return SharedPreferenceBooleanLiveData(prefs, "_feeEnabled", false)
+        return SharedPreferenceBooleanLiveData(prefs, keyFeeEnabled, false)
     }
 
     fun setFee(fee: Float) {
         prefs.apply {
-            edit().putFloat("_fee", fee).apply()
+            edit().putFloat(keyFeeValue, fee).apply()
         }
     }
 
     fun getFee(): LiveData<Float> {
-        return SharedPreferenceFloatLiveData(prefs, "_fee", 2.2f)
+        return SharedPreferenceFloatLiveData(prefs, keyFeeValue, 2.2f)
     }
 
 }

@@ -10,13 +10,13 @@ import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.*
-import androidx.appcompat.app.AppCompatActivity
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
 import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.view.main.spinner.SearchableSpinner
 import de.salomax.currencies.view.main.spinner.SearchableSpinnerAdapter
 import de.salomax.currencies.view.preference.PreferenceActivity
@@ -27,7 +27,7 @@ import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     private lateinit var ratesModel: ExchangeRatesViewModel
     private lateinit var inputModel: CurrentInputViewModel
