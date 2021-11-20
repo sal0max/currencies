@@ -49,11 +49,7 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
         )
 
         // re-create all open activities, when we're in night mode
-        if (// device is in night mode
-            app.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES
-            // app is in night mode
-            && Database(app).getTheme() != 0
-        ) {
+        if (isDarkThemeActive()) {
             TaskStackBuilder.create(app)
                 // PreferencesActivity is always called from MainActivity
                 .addNextIntent(Intent(app, MainActivity::class.java).apply {
@@ -62,6 +58,15 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
                 .addNextIntent(Intent(app, PreferenceActivity::class.java))
                 .startActivities()
         }
+    }
+
+    private fun isDarkThemeActive(): Boolean {
+        // app theme is dark
+        val x = Database(app).getTheme() == 1
+        // app theme is system default && current state is dark
+        val y = Database(app).getTheme() == 2 && (app.resources.configuration.uiMode and Configuration.UI_MODE_NIGHT_MASK == Configuration.UI_MODE_NIGHT_YES)
+
+        return x || y
     }
 
     fun setFee(fee: Float) {
