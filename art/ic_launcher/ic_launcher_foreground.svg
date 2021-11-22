@@ -1,25 +1,19 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
-    <defs>
-        <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1">
-            <stop offset="0" stop-opacity="0.251" />
-            <stop offset="1" stop-opacity="0" />
-        </linearGradient>
-    </defs>
-    <g transform="translate(-72 -44)">
-        <rect width="108" height="108" transform="translate(72 44)" fill="none" />
-        <path id="Android_Head_-_Long_Shadow"
-            d="M6.828,7.394,30.055,8.53l.124,8.781,17.385-.676.047,48.79L6.779,67.356Z"
-            transform="translate(96.777 107.878) rotate(-45)" opacity="0.6"
-            fill="url(#linear-gradient)" />
-        <g>
-            <path d="M0,18.725H18.725V0" transform="translate(136.864 105.378) rotate(135)"
-                fill="none" stroke="rgba(0,0,0,0.1)" stroke-linejoin="round" stroke-width="9" />
-            <path d="M0,18.725H18.725V0" transform="translate(116.383 92.901) rotate(-45)"
-                fill="none" stroke="rgba(0,0,0,0.1)" stroke-linejoin="round" stroke-width="9" />
+    <g id="winner" transform="translate(-72 -44)">
+        <rect id="size" width="108" height="108" transform="translate(72 44)" fill="none" />
+        <g id="shadow" transform="translate(-1)" opacity="0.1">
+            <path id="Pfad_11" d="M0,18.725H18.725V0"
+                transform="translate(136.864 105.378) rotate(135)" fill="none" stroke="#000"
+                stroke-linejoin="round" stroke-width="9" />
+            <path id="Pfad_12" d="M0,18.725H18.725V0"
+                transform="translate(116.383 92.901) rotate(-45)" fill="none" stroke="#000"
+                stroke-linejoin="round" stroke-width="9" />
         </g>
-        <path d="M0,18.725H18.725V0" transform="translate(135.864 104.378) rotate(135)" fill="none"
-            stroke="#333331" stroke-linejoin="round" stroke-width="9" />
-        <path d="M0,18.725H18.725V0" transform="translate(115.383 91.901) rotate(-45)" fill="none"
-            stroke="#faf7f2" stroke-linejoin="round" stroke-width="9" />
+        <path id="arrow_left" d="M0,18.725H18.725V0"
+            transform="translate(135.864 104.378) rotate(135)" fill="none" stroke="#333331"
+            stroke-linejoin="round" stroke-width="9" />
+        <path id="arrow_right" d="M0,18.725H18.725V0"
+            transform="translate(115.383 91.901) rotate(-45)" fill="none" stroke="#faf7f2"
+            stroke-linejoin="round" stroke-width="9" />
     </g>
 </svg>
