@@ -13,4 +13,5 @@
     <string name="menu_settings">Réglages</string>
     <string name="menu_refresh">Rafraîchissement des taux</string>
     <string name="menu_timeline">Historique des taux de change</string>
+    <string name="tooltip_filter_starred">Afficher uniquement les devises étoilées.</string>
 </resources>
