@@ -13,4 +13,5 @@
     <string name="menu_settings">Ρυθμίσεις</string>
     <string name="menu_refresh">Επικαιροποίηση ισοτιμίας</string>
     <string name="menu_timeline">Διάγραμμα ισοτιμίας</string>
+    <string name="tooltip_filter_starred">Εμφάνιση μόνο αγαπημένων νομισμάτων.</string>
 </resources>
