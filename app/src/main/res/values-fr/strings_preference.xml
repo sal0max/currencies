@@ -28,4 +28,7 @@
     <string name="aboutVersion">Version %1$s</string>
     <string name="rate_summary">Si vous le souhaitez, vous pouvez aider d\'autres personnes à découvrir Currencies. Cliquez ici pour évaluer l\'application sur Google Play.</string>
     <string name="rate_title">Notez cette application</string>
+    <string name="pure_black_enabled_title">OLED noir</string>
+    <string name="pure_black_enabled_summary">Utiliser le noir pur en mode sombre</string>
+    <string name="category_appearance">Apparition</string>
 </resources>
