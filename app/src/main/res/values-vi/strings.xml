@@ -13,4 +13,5 @@
     <string name="menu_settings">Cài đặt</string>
     <string name="menu_refresh">Làm mới tỉ lệ</string>
     <string name="menu_timeline">Biểu đồ tỉ lệ chuyển đổi</string>
+    <string name="tooltip_filter_starred">Chỉ hiện tiền tệ được gắn sao.</string>
 </resources>
