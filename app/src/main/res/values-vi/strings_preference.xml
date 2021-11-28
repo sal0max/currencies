@@ -28,4 +28,7 @@
     <string name="aboutVersion">Phiên bản %1$s</string>
     <string name="rate_title">Đánh giá ứng dụng này</string>
     <string name="rate_summary">Nếu bạn muốn, bạn có thể giúp những người khác khám phá ra Currencies. Hãy nhấn vào đây để đánh giá ứng dụng trên Google Play.</string>
+    <string name="category_appearance">Ngoại hình</string>
+    <string name="pure_black_enabled_title">Đen OLED</string>
+    <string name="pure_black_enabled_summary">Sử dụng màu đen kịt ở chế độ tối</string>
 </resources>
