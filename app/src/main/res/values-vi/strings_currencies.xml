@@ -163,4 +163,13 @@
     <string name="name_xpt">Platinum (một Troy ounce)</string>
     <string name="name_yer">Rial Yemen</string>
     <string name="name_zar">Rand Nam Phi</string>
+    <string name="name_ggp">Ireland pound</string>
+    <string name="name_imp">Tiếng việt pound</string>
+    <string name="name_jep">Đồng bảng Jersey</string>
+    <string name="name_mru">Mauritania ouguiya</string>
+    <string name="name_svc">Salvador Columbus</string>
+    <string name="name_zmw">Zambia kwacha</string>
+    <string name="name_cnh">Nhân dân tệ (ra nước ngoài)</string>
+    <string name="name_zwl">Zimbabwe dollar</string>
+    <string name="name_stn">Mauritania dobra</string>
 </resources>
