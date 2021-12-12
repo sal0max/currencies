@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-   <color name="colorAccent">@color/dollarBill</color>
-
-   <color name="displayOverlay">#26808080</color>
-   <color name="colorBackground">@color/dirtyWhite</color>
-   <color name="displayOverlayPureBlack">@color/displayOverlay</color>
-   <color name="colorBackgroundPureBlack">@color/colorBackground</color>
-
    <!-- https://www.schemecolor.com/dollar-bill-color-scheme.php -->
    <color name="dirtyWhite">#FAF7F2</color>
    <color name="blackOlive">#333331</color>
    <color name="dollarBill">#85BB65</color>
 
+   <color name="colorAccent">@color/dollarBill</color>
+
+   <!-- light/dark -->
+   <color name="displayOverlay">#26808080</color>
+   <color name="colorBackground">@color/dirtyWhite</color>
+   <!-- pure black -->
+   <color name="displayOverlayPureBlack">@color/displayOverlay</color>
+   <color name="colorBackgroundPureBlack">@color/colorBackground</color>
 </resources>

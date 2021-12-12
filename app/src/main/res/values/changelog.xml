@@ -4,7 +4,9 @@
 
     <string name="changelog" translatable="false"><b>1.10.1</b>
         \n⸻
+        \n<li>Fixed a crash on Android 8.0.</li>
         \n<li>Updated translations.</li>
+        \n<li>Small UI improvements.</li>
         \n
         \n<b>1.10.0</b>
         \n⸻

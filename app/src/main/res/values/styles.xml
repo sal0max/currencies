@@ -15,9 +15,8 @@
         <!-- "transparent" status bar -->
         <item name="colorPrimaryDark">?attr/colorBackground</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
-        <!-- "transparent" navigation bar -->
-        <item name="android:navigationBarColor">?attr/colorBackground</item>
-        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
+        <!-- "transparent" navigation bar... -->
+        <!-- ...is set in de.salomax.currencies.view.BaseActivity -->
 
         <!-- new MaterialComponents attributes. see https://material.io/blog/android-material-theme-color -->
         <item name="colorPrimary">?android:attr/colorAccent</item>

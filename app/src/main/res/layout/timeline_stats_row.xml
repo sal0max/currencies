@@ -51,6 +51,7 @@
         android:layout_marginHorizontal="@dimen/margin1x"
         android:layout_marginBottom="4dp"
         android:background="@drawable/dotted_line"
+        android:layerType="software"
         app:layout_constraintBottom_toBottomOf="@id/text4"
         app:layout_constraintEnd_toStartOf="@id/text4"
         app:layout_constraintStart_toEndOf="@id/text3" />

@@ -113,10 +113,9 @@
     <View
         android:id="@+id/divider"
         android:layout_width="0dp"
-        android:layout_height="1dp"
+        android:layout_height=".5dp"
         android:layout_marginVertical="@dimen/margin2x"
-        android:alpha=".25"
-        android:background="?android:attr/textColorSecondary"
+        android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@id/text_rate_past" />

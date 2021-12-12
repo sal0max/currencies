@@ -47,7 +47,7 @@
         android:layout_height=".5dp"
         android:layout_marginStart="@dimen/margin2x"
         android:layout_marginEnd="@dimen/margin2x"
-        android:background="@color/displayOverlay"
+        android:background="?android:attr/listDivider"
         app:layout_constraintBottom_toBottomOf="@id/guideline_display"
         app:layout_constraintEnd_toStartOf="@id/textFee"
         app:layout_constraintStart_toEndOf="@id/btn_toggle"
