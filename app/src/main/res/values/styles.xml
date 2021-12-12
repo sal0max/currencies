@@ -4,16 +4,20 @@
     <attr name="colorBackground" format="reference|color" />
 
     <style name="AppTheme" parent="Theme.MaterialComponents.DayNight">
-        <!-- "transparent" actionBar -->
-        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
-        <!-- "transparent" statusBar -->
-        <item name="colorPrimaryDark">?attr/colorBackground</item>
-        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
         <!-- colors -->
         <item name="colorBackground">@color/colorBackground</item>
         <item name="colorAccent">@color/colorAccent</item>
         <item name="android:colorBackground">?attr/colorBackground</item>
         <item name="colorDisplayOverlay">@color/displayOverlay</item>
+
+        <!-- "transparent" action bar -->
+        <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+        <!-- "transparent" status bar -->
+        <item name="colorPrimaryDark">?attr/colorBackground</item>
+        <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
+        <!-- "transparent" navigation bar -->
+        <item name="android:navigationBarColor">?attr/colorBackground</item>
+        <item name="android:windowLightNavigationBar">?attr/isLightTheme</item>
 
         <!-- new MaterialComponents attributes. see https://material.io/blog/android-material-theme-color -->
         <item name="colorPrimary">?android:attr/colorAccent</item>
@@ -25,7 +29,7 @@
         <item name="shapeAppearanceSmallComponent">?android:attr/colorAccent</item>
         <item name="shapeAppearanceMediumComponent">?android:attr/colorAccent</item>
         <item name="shapeAppearanceLargeComponent">?android:attr/colorAccent</item>
-        <!-- The various “On” colors are used to tint foreground content (such as text and icons) -->
+        <!-- The various "On" colors are used to tint foreground content (such as text and icons) -->
         <item name="colorOnPrimary">?android:attr/textColorPrimary</item>
         <item name="colorOnSecondary">?android:attr/textColorSecondary</item>
         <item name="colorOnBackground">?android:attr/textColorPrimary</item>
