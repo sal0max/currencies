@@ -1,1 +1,3 @@
+- Fixed a crash on Android 8.0
 - Updated translations
+- Small UI improvements
