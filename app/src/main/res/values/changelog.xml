@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.10.0</b>
+    <string name="changelog" translatable="false"><b>1.10.1</b>
+        \n⸻
+        \n<li>Updated translations.</li>
+        \n
+        \n<b>1.10.0</b>
         \n⸻
         \n<li>You\'re now able to favorite currencies for a quicker access. Have fun! ❤</li>
         \n<li>Added option for a pure black theme experience, when using dark mode.</li>
