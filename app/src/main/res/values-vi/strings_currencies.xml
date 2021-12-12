@@ -31,6 +31,7 @@
     <string name="name_chf">Franc Thụy Sĩ</string>
     <string name="name_clf">Unidades de formento</string>
     <string name="name_clp">Peso Chile</string>
+    <string name="name_cnh">Nhân dân tệ (ra nước ngoài)</string>
     <string name="name_cny">Nhân dân tệ</string>
     <string name="name_cop">Peso Colombia</string>
     <string name="name_crc">Colon Costa Rica</string>
@@ -51,6 +52,7 @@
     <string name="name_fok">Krona Faroese</string>
     <string name="name_gbp">Bảng Anh</string>
     <string name="name_gel">Lari Gruzia</string>
+    <string name="name_ggp">Ireland pound</string>
     <string name="name_ghs">Cedi</string>
     <string name="name_gip">Pound Gibraltar</string>
     <string name="name_gmd">Dalasi</string>
@@ -64,10 +66,12 @@
     <string name="name_huf">Forint</string>
     <string name="name_idr">Rupiah</string>
     <string name="name_ils">Shekel Israel mới</string>
+    <string name="name_imp">Tiếng việt pound</string>
     <string name="name_inr">Rupee Ấn Độ</string>
     <string name="name_iqd">Dinar Iraq</string>
     <string name="name_irr">Rial Iran</string>
     <string name="name_isk">Krona Iceland</string>
+    <string name="name_jep">Đồng bảng Jersey</string>
     <string name="name_jmd">Dollar Jamaica</string>
     <string name="name_jod">Dinar Jordan</string>
     <string name="name_jpy">Yên Nhật</string>
@@ -94,6 +98,7 @@
     <string name="name_mnt">Tögrög</string>
     <string name="name_mop">Pataca Macau</string>
     <string name="name_mro">Ouguiya</string>
+    <string name="name_mru">Mauritania ouguiya</string>
     <string name="name_mur">Rupee Mauritius</string>
     <string name="name_mvr">Rufiyaa</string>
     <string name="name_mwk">Kwacha Malawi</string>
@@ -131,6 +136,8 @@
     <string name="name_srd">Dollar Suriname</string>
     <string name="name_ssp">Bảng Nam Sudan</string>
     <string name="name_std">Dobra São Tomé và Príncipe</string>
+    <string name="name_stn">Mauritania dobra</string>
+    <string name="name_svc">Salvador Columbus</string>
     <string name="name_syp">Pound Syria</string>
     <string name="name_szl">Lilangeni</string>
     <string name="name_thb">Baht</string>
@@ -163,13 +170,6 @@
     <string name="name_xpt">Platinum (một Troy ounce)</string>
     <string name="name_yer">Rial Yemen</string>
     <string name="name_zar">Rand Nam Phi</string>
-    <string name="name_ggp">Ireland pound</string>
-    <string name="name_imp">Tiếng việt pound</string>
-    <string name="name_jep">Đồng bảng Jersey</string>
-    <string name="name_mru">Mauritania ouguiya</string>
-    <string name="name_svc">Salvador Columbus</string>
     <string name="name_zmw">Zambia kwacha</string>
-    <string name="name_cnh">Nhân dân tệ (ra nước ngoài)</string>
     <string name="name_zwl">Zimbabwe dollar</string>
-    <string name="name_stn">Mauritania dobra</string>
 </resources>

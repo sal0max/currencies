@@ -2,12 +2,15 @@
 <resources>
     <!-- main settings -->
     <string name="category_settings">Cài đặt chung</string>
+    <string name="fee_title">Phí giao dịch nước ngoài</string>
+    <string name="fee_summary">Tùy vào thỏa thuận thẻ tín dụng của bạn, ngân hàng của bạn có thể thu phí giao dịch trao đổi nước ngoài. Ở đây bạn có thể nhập phí đó. Nó sẽ được thêm vào phép tính, để bạn biết bạn <i>thực sự</i> trả bao nhiêu tiền.</string>
+    <string name="category_appearance">Ngoại hình</string>
     <string name="theme_title">Thiết kế</string>
     <string name="theme_option_light">Sáng</string>
     <string name="theme_option_dark">Tối</string>
     <string name="theme_option_default">Mặc định hệ thống</string>
-    <string name="fee_title">Phí giao dịch nước ngoài</string>
-    <string name="fee_summary">Tùy vào thỏa thuận thẻ tín dụng của bạn, ngân hàng của bạn có thể thu phí giao dịch trao đổi nước ngoài. Ở đây bạn có thể nhập phí đó. Nó sẽ được thêm vào phép tính, để bạn biết bạn <i>thực sự</i> trả bao nhiêu tiền.</string>
+    <string name="pure_black_enabled_title">Đen OLED</string>
+    <string name="pure_black_enabled_summary">Sử dụng màu đen kịt ở chế độ tối</string>
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
@@ -25,10 +28,7 @@
     <string name="disclaimer_summary">Mặc dù ứng dụng này được viết ra và thử nghiệm rất kỹ, <b>nhưng không có đảm bảo là dữ liệu nó hiển thị là đúng</b>. Tỉ lệ chuyển đổi được bên thứ ba cung cấp và ứng dụng này không thể hứa rằng dữ liệu là đúng và được cập nhật.\nThêm nữa, tỉ lệ được cung cấp - nếu vẫn đúng - có thể khác so với tỉ lệ của ngân hàng của bạn.\nCuối cùng: Lỗi lầm thường xảy ra. Đừng bao giờ tin tưởng mù quáng bất kỳ ai! Nhưng bạn vẫn cứ yên tâm là tôi đã không phát hành ứng dụng này nếu tôi nghi ngờ là nó không hoạt động như mong muốn.</string>
     <string name="donate_title">Hỗ trợ nhà phát triển</string>
     <string name="donate_summary">Ủng hộ qua PayPal</string>
-    <string name="aboutVersion">Phiên bản %1$s</string>
     <string name="rate_title">Đánh giá ứng dụng này</string>
     <string name="rate_summary">Nếu bạn muốn, bạn có thể giúp những người khác khám phá ra Currencies. Hãy nhấn vào đây để đánh giá ứng dụng trên Google Play.</string>
-    <string name="category_appearance">Ngoại hình</string>
-    <string name="pure_black_enabled_title">Đen OLED</string>
-    <string name="pure_black_enabled_summary">Sử dụng màu đen kịt ở chế độ tối</string>
+    <string name="aboutVersion">Phiên bản %1$s</string>
 </resources>

@@ -2,18 +2,16 @@
 <resources>
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
-
     <string name="desc_toggle_currencies">alternar monedas</string>
     <string name="last_updated">Edad del tipo de cambio: %s</string>
     <string name="today">hoy</string>
     <string name="yesterday">ayer</string>
     <string name="copied_to_clipboard">Copiado &lt;b>%s&lt;/b> al portapapeles</string>
-
     <string name="error">Error: %s</string>
     <string name="error_no_data">No se han podido actualizar los tipos de cambio. No hay conexión.</string>
     <string name="error_api_error">Ha habido un error en la API. Por favor, inténtelo de nuevo más tarde.</string>
-
     <string name="menu_settings">Configuración</string>
     <string name="menu_refresh">Tarifas de actualización</string>
     <string name="menu_timeline">Historial de tipos de cambio</string>
+
 </resources>

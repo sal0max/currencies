@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> a &lt;b>%2$s&lt;/b></string>
-
     <string name="rate_average">prm</string>
     <string name="rate_min">mín</string>
     <string name="rate_max">máx</string>
-
     <string name="year">año</string>
     <string name="month">mes</string>
     <string name="week">semana</string>

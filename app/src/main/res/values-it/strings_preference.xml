@@ -2,12 +2,15 @@
 <resources>
     <!-- main settings -->
     <string name="category_settings">Impostazioni generali</string>
+    <string name="fee_title">Tassa per transazioni estere</string>
+    <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
+
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Chiaro</string>
     <string name="theme_option_dark">Scuro</string>
     <string name="theme_option_default">Predefinite di sistema</string>
-    <string name="fee_title">Tassa per transazioni estere</string>
-    <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
+
+
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>
@@ -25,7 +28,7 @@
     <string name="disclaimer_summary">Anche se l\'app è scritta e testata molto accuratamente, <b>non c\'è garanzia che i dati che mostra siano corretti</b>. I tassi di cambio sono forniti da una terza parte e questa applicazione non può fare alcuna promessa che i dati siano veri e aggiornati.\nInoltre, i tassi forniti – anche se corretti – possono variare da quelli utilizzati dalla tua banca.\nInfine: gli errori capitano. Non fidatevi mai ciecamente di nessuno! Detto questo, stai sicuro che non avrei rilasciato questa applicazione se avessi avuto qualche dubbio sul fatto che funziona come previsto.</string>
     <string name="donate_title">Supporta lo sviluppatore</string>
     <string name="donate_summary">Donar a través de PayPal</string>
-    <string name="aboutVersion">Versione %1$s</string>
     <string name="rate_title">Valuta questa applicazione</string>
     <string name="rate_summary">Se vuoi, puoi aiutare gli altri a scoprire Currencies. Clicca qui per votare l\'app su Google Play.</string>
+    <string name="aboutVersion">Versione %1$s</string>
 </resources>

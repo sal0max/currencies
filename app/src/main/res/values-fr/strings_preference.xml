@@ -2,12 +2,15 @@
 <resources>
     <!-- main settings -->
     <string name="category_settings">Paramètres généraux</string>
+    <string name="fee_title">Frais de transaction à l\'étranger</string>
+    <string name="fee_summary">Selon votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les transactions de change. Vous pouvez saisir ici ces frais. Elle sera ajoutée en plus du calcul, afin que vous sachiez combien vous <i>réellement</i> payez.</string>
+    <string name="category_appearance">Apparition</string>
     <string name="theme_title">Thème</string>
     <string name="theme_option_light">Clair</string>
     <string name="theme_option_dark">Sombre</string>
     <string name="theme_option_default">Thème par défaut du système</string>
-    <string name="fee_title">Frais de transaction à l\'étranger</string>
-    <string name="fee_summary">Selon votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les transactions de change. Vous pouvez saisir ici ces frais. Elle sera ajoutée en plus du calcul, afin que vous sachiez combien vous <i>réellement</i> payez.</string>
+    <string name="pure_black_enabled_title">OLED noir</string>
+    <string name="pure_black_enabled_summary">Utiliser le noir pur en mode sombre</string>
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>
@@ -25,10 +28,7 @@
     <string name="disclaimer_summary">Bien que l\'appli soit très minutieusement écrite et testée, <b>il n\'y a aucune garantie que les données qu\'elle affiche soient correctes</b>. Les taux de change sont fournis par une tierce partie et cette application ne peut pas promettre que les données sont vraies et à jour.\nEn outre, les taux fournis – même s\'ils sont corrects – peuvent varier de ceux utilisés par votre banque.\nNe faites jamais aveuglément confiance à qui que ce soit ! Ceci étant dit, soyez assuré que je n\'aurais pas sorti cette application si j\'avais eu le moindre doute sur son fonctionnement.</string>
     <string name="donate_title">Soutenir le développeur</string>
     <string name="donate_summary">Donner via PayPal</string>
-    <string name="aboutVersion">Version %1$s</string>
-    <string name="rate_summary">Si vous le souhaitez, vous pouvez aider d\'autres personnes à découvrir Currencies. Cliquez ici pour évaluer l\'application sur Google Play.</string>
     <string name="rate_title">Notez cette application</string>
-    <string name="pure_black_enabled_title">OLED noir</string>
-    <string name="pure_black_enabled_summary">Utiliser le noir pur en mode sombre</string>
-    <string name="category_appearance">Apparition</string>
+    <string name="rate_summary">Si vous le souhaitez, vous pouvez aider d\'autres personnes à découvrir Currencies. Cliquez ici pour évaluer l\'application sur Google Play.</string>
+    <string name="aboutVersion">Version %1$s</string>
 </resources>

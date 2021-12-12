@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <!-- main settings -->
+
+
+
+
     <string name="theme_title">Tema</string>
-    <string name="theme_option_default">Standard</string>
     <string name="theme_option_light">Lys</string>
     <string name="theme_option_dark">Mørk</string>
+    <string name="theme_option_default">Standard</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- about -->
     <string name="aboutVersion">Versjon %1$s</string>
 </resources>
