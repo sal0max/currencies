@@ -44,7 +44,7 @@
 
     <View
         android:layout_width="0dp"
-        android:layout_height=".5dp"
+        android:layout_height=".75dp"
         android:layout_marginStart="@dimen/margin2x"
         android:layout_marginEnd="@dimen/margin2x"
         android:background="?android:attr/listDivider"
@@ -55,6 +55,7 @@
 
     <TextView
         android:id="@+id/textRefreshed"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="@dimen/margin1x"

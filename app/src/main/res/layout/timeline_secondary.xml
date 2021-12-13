@@ -31,6 +31,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="@dimen/margin2x"
+        android:layout_marginTop="4dp"
         android:fontFamily="monospace"
         android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,8 +47,8 @@
         android:fontFamily="sans-serif-black"
         android:textSize="18sp"
         app:fontFamily="sans-serif-black"
+        app:layout_constraintBaseline_toBaselineOf="@id/text_symbol_past"
         app:layout_constraintStart_toEndOf="@id/text_symbol_past"
-        app:layout_constraintTop_toBottomOf="@id/text_date_past"
         tools:text="122,174" />
 
     <!-- difference in percent +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -91,8 +92,8 @@
         android:layout_marginHorizontal="4dp"
         android:fontFamily="monospace"
         android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@id/text_symbol_past"
         app:layout_constraintEnd_toStartOf="@id/text_rate_current"
-        app:layout_constraintTop_toBottomOf="@id/text_date_past"
         tools:text="kr" />
 
     <TextView
@@ -104,8 +105,8 @@
         android:fontFamily="sans-serif-black"
         android:textSize="18sp"
         app:fontFamily="sans-serif-black"
+        app:layout_constraintBaseline_toBaselineOf="@id/text_symbol_past"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/text_date_current"
         tools:text="156,173" />
 
     <!-- divider +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
@@ -113,7 +114,7 @@
     <View
         android:id="@+id/divider"
         android:layout_width="0dp"
-        android:layout_height=".5dp"
+        android:layout_height=".75dp"
         android:layout_marginVertical="@dimen/margin2x"
         android:background="?android:attr/listDivider"
         app:layout_constraintEnd_toEndOf="parent"
