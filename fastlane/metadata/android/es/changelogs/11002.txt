@@ -1,0 +1,1 @@
+- Se corrigió un bloqueo al abrir las preferencias.
