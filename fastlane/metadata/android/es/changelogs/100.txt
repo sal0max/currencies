@@ -1,0 +1,3 @@
+* Actualización de los tipos de cambio a prueba de fallos
+* Se ha añadido una cláusula de exención de responsabilidad
+* Añadido este registro de cambios
