@@ -4,13 +4,10 @@
     <string name="category_settings">Impostazioni generali</string>
     <string name="fee_title">Tassa per transazioni estere</string>
     <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
-
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Chiaro</string>
     <string name="theme_option_dark">Scuro</string>
     <string name="theme_option_default">Predefinite di sistema</string>
-
-
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>
@@ -31,4 +28,7 @@
     <string name="rate_title">Valuta questa applicazione</string>
     <string name="rate_summary">Se vuoi, puoi aiutare gli altri a scoprire Currencies. Clicca qui per votare l\'app su Google Play.</string>
     <string name="aboutVersion">Versione %1$s</string>
+    <string name="category_appearance">Aspetto</string>
+    <string name="pure_black_enabled_title">OLED nero</string>
+    <string name="pure_black_enabled_summary">Usare il nero puro in modalità scura</string>
 </resources>
