@@ -1,0 +1,4 @@
+- Amélioration de l'affichage de l'âge du taux de change.
+- Ajout d'une entrée de préférence pour évaluer l'application sur Google Play (pas dans la version F-Droid, bien sûr).
+- Encore une autre localisation : l'application est maintenant traduite en vietnamien.
+- Petites améliorations mineures.

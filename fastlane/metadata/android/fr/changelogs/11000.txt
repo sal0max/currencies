@@ -1,0 +1,3 @@
+- Vous êtes désormais en mesure d'enregistrer vos devises favorites pour un accès plus rapide. Amusez-vous bien ! ❤
+- Ajout d'une option pour une expérience de thème noir pur, lors de l'utilisation du mode sombre.
+- Mise à jour des traductions. Merci beaucoup aux volontaires !
