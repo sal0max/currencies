@@ -360,7 +360,7 @@ data class Rate(
     }
 
     /**
-     * returns the proper currency symbol of a given rate
+     * https://en.wikipedia.org/wiki/Currency_symbol
      */
     fun getCurrencySymbol(): String? {
         return when (code) {
