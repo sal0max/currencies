@@ -8,7 +8,6 @@
     <string name="yesterday">ayer</string>
     <string name="copied_to_clipboard">Copiado &lt;b&gt;%s&lt;/b&gt; al portapapeles</string>
     <string name="error">Error: %s</string>
-    <string name="error_no_data">No se han podido actualizar los tipos de cambio. No hay conexión.</string>
     <string name="error_api_error">Ha habido un error en la API. Por favor, inténtelo de nuevo más tarde.</string>
     <string name="menu_settings">Configuración</string>
     <string name="menu_refresh">Tarifas de actualización</string>

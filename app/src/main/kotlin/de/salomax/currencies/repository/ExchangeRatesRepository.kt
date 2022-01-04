@@ -3,10 +3,13 @@ package de.salomax.currencies.repository
 import android.content.Context
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
+import com.github.kittinunf.fuel.core.FuelError
 import de.salomax.currencies.R
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
 import kotlinx.coroutines.*
+import java.net.SocketTimeoutException
+import java.net.UnknownHostException
 
 class ExchangeRatesRepository(private val context: Context) {
 
@@ -43,18 +46,13 @@ class ExchangeRatesRepository(private val context: Context) {
                         postIsUpdating(start)
                         Database(context).insertExchangeRates(rates)
                     }
-                    // ERROR! got response from API, but just an error message
+                    // ERROR: got response from API, but just an error message
                     else {
                         postError(rates.error)
                     }
                 }
-                // generic network error
-                else {
-                    when (fuelError?.response?.statusCode) {
-                        -1 -> postError(context.getString(R.string.error_no_data))
-                        else -> postError(fuelError?.message)
-                    }
-                }
+                // generic error
+                else handleGenericError(fuelError)
             }
         }
 
@@ -98,17 +96,38 @@ class ExchangeRatesRepository(private val context: Context) {
                         postError(timeline.error)
                     }
                 }
-                // generic network error
-                else {
-                    when (fuelError?.response?.statusCode) {
-                        -1 -> postError(context.getString(R.string.error_no_data))
-                        else -> postError(fuelError?.message)
-                    }
-                }
+                // generic error
+                else handleGenericError(fuelError)
             }
         }
 
         return liveTimeline
+    }
+
+    private fun handleGenericError(fuelError: FuelError?) {
+        when {
+            // shouldn't happen...
+            fuelError == null ->
+                postError(context.getString(R.string.error_generic))
+            // print http response code, if available
+            fuelError.response.statusCode != -1 -> {
+                postError(context.getString(R.string.error_http, fuelError.response.statusCode))
+            }
+            // generic network error
+            else -> {
+                when (fuelError.exception) {
+                    // timeout after 15s. likely server not reachable
+                    is SocketTimeoutException ->
+                        postError(context.getString(R.string.error_timeout))
+                    // happens e.g. when device is offline or there's a DNS error
+                    is UnknownHostException ->
+                        postError(context.getString(R.string.error_no_data))
+                    // everything else
+                    else ->
+                        postError(fuelError.localizedMessage ?: context.getString(R.string.error_generic))
+                }
+            }
+        }
     }
 
     fun getError(): LiveData<String?> {

@@ -8,7 +8,6 @@
     <string name="yesterday">hier</string>
     <string name="copied_to_clipboard">Copie de &lt;b&gt;%s&lt;/b&gt; au presse-papiers</string>
     <string name="error">Erreur : %s</string>
-    <string name="error_no_data">N\'a pas pu mettre à jour les taux de change. Pas de connexion.</string>
     <string name="error_api_error">Il y a eu une erreur d\'API. Veuillez réessayer plus tard.</string>
     <string name="menu_settings">Réglages</string>
     <string name="menu_refresh">Rafraîchissement des taux</string>

@@ -8,7 +8,6 @@
     <string name="yesterday">ieri</string>
     <string name="copied_to_clipboard">Copiato &lt;b&gt;%s&lt;/b&gt; negli appunti</string>
     <string name="error">Errore: %s</string>
-    <string name="error_no_data">Non è stato possibile aggiornare i tassi di cambio. Nessuna connessione.</string>
     <string name="error_api_error">Si è verificato un errore API. Si prega di riprovare più tardi.</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="menu_refresh">Tassi di aggiornamento</string>

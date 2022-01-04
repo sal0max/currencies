@@ -214,7 +214,7 @@ class MainActivity : BaseActivity() {
         ratesModel.getError().observe(this, {
             // error
             it?.let {
-                Snackbar.make(tvCalculations, it, Snackbar.LENGTH_LONG)
+                Snackbar.make(tvCalculations, it, 5000) // show for 5s
                     .setBackgroundTint(getColor(android.R.color.holo_red_light))
                     .setTextColor(getColor(android.R.color.white))
                     .show()

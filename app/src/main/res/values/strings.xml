@@ -13,7 +13,10 @@
     <string name="copied_to_clipboard">Copied &lt;b>%s&lt;/b> to clipboard</string>
 
     <string name="error">Error: %s</string>
-    <string name="error_no_data">Couldn\'t update the exchange rates. No connection.</string>
+    <string name="error_generic">Unknown problem.</string>
+    <string name="error_http">Server responded with HTTP %d</string>
+    <string name="error_timeout">Server didn\'t respond in time or isn\'t reachable.</string>
+    <string name="error_no_data">Couldn\'t connect to the server.</string>
     <string name="error_api_error">There was an API error. Please try again later.</string>
 
     <string name="menu_settings">Settings</string>
