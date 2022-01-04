@@ -13,14 +13,14 @@ class ExchangeRatesRepository(private val context: Context) {
     private val liveExchangeRates = Database(context).getExchangeRates()
     private val liveTimeline = MutableLiveData<Timeline?>()
     private var liveError = MutableLiveData<String?>()
-    private var isUpdating = MutableLiveData(false)
+    private var isUpdating = Database(context).isUpdating()
 
     /**
      * Gets and returns all latest exchange rates from the API.
      */
     fun getExchangeRates(): LiveData<ExchangeRates?> {
         val start = System.currentTimeMillis()
-        isUpdating.postValue(true)
+        Database(context).setUpdating(true)
 
         // run in background
         CoroutineScope(Dispatchers.IO).launch {
@@ -66,7 +66,7 @@ class ExchangeRatesRepository(private val context: Context) {
      */
     fun getTimeline(base: String, symbol: String): LiveData<Timeline?> {
         val start = System.currentTimeMillis()
-        isUpdating.postValue(true)
+        Database(context).setUpdating(true)
 
         // run in background
         CoroutineScope(Dispatchers.IO).launch {
@@ -125,20 +125,20 @@ class ExchangeRatesRepository(private val context: Context) {
     private suspend fun postIsUpdating(start: Long) {
         val now = System.currentTimeMillis()
         if (now - start < 500) {
-            isUpdating.postValue(true)
+            Database(context).setUpdating(true)
 
             withContext(Dispatchers.Main) {
                 launch {
                     delay(500 - (now - start))
-                    isUpdating.postValue(false)
+                    Database(context).setUpdating(false)
                 }
             }
         } else
-            isUpdating.postValue(false)
+            Database(context).setUpdating(false)
     }
 
     private fun postError(message: String?) {
-        isUpdating.postValue(false)
+        Database(context).setUpdating(false)
         liveError.postValue(
             if (message != null)
                 context.getString(R.string.error, message)

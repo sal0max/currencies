@@ -52,6 +52,7 @@ class Database(context: Context) {
 
     private val keyLastStateFrom = "_last_from"
     private val keyLastStateTo = "_last_to"
+    private val keyIsUpdating = "_isUpdating"
 
     fun saveLastUsedRates(from: String?, to: String?) {
         prefsLastState.apply {
@@ -66,6 +67,14 @@ class Database(context: Context) {
 
     fun getLastRateTo(): String? {
         return prefsLastState.getString(keyLastStateTo, "EUR")
+    }
+
+    fun setUpdating(updating: Boolean) {
+        prefsLastState.edit().putBoolean(keyIsUpdating, updating).apply()
+    }
+
+    fun isUpdating(): SharedPreferenceBooleanLiveData {
+        return SharedPreferenceBooleanLiveData(prefsLastState, keyIsUpdating, false)
     }
 
     /*
