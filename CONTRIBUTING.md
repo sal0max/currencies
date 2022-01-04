@@ -28,6 +28,7 @@ You are invited to provide translations for the app. But there are some rules.
     specific string, check out other Apps of big companies, like WhatsApp, Facebook, Google, etc.,
     and see how they did it.
 2. Only contribute, if you are committed to translate the **majority** of strings. No one wants an
-   app, which is a mix of English and the native language.
+   app, which is a mix of English and the native language. I might remove translations again, if
+   they won't receive updates on new string resources.
 
 Translations can be provided via <a href="https://weblate.bubu1.eu/engage/currencies/">Weblate</a>.
