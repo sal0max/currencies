@@ -1,0 +1,1 @@
+- Se ha corregido un error por el que la aplicación se bloqueaba en algunos casos, cuando se utilizaba el tema oscuro.

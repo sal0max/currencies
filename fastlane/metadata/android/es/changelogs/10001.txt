@@ -1,0 +1,1 @@
+* Corregir un posible fallo en Android 11

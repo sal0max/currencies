@@ -1,0 +1,2 @@
+* Ahora es posible actualizar manualmente las tarifas. Compruébalo en el menú de desbordamiento.
+* Mejoras en el rendimiento
