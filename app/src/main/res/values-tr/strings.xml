@@ -12,7 +12,7 @@
     <string name="error_http">Sunucu HTTP %d ile yanıt verdi</string>
     <string name="error_timeout">Server zaman aşımına uğradı veya ulaşılamaz durumda.</string>
     <string name="error_no_data">Sunucuya bağlanılamadı.</string>
-    <string name="error_api_error">API hatası. Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="error_api_error">API hatası. Lütfen daha sonra tekrar deneyin.</string>
     <string name="menu_settings">Ayarlar</string>
     <string name="menu_refresh">Kurları güncelle</string>
     <string name="menu_timeline">Döviz kur grafiği</string>
