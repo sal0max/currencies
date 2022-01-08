@@ -27,7 +27,8 @@
         android:src="@drawable/ic_swap_vert"
         app:layout_constraintBottom_toTopOf="@+id/guideline_display"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/guideline_display" />
+        app:layout_constraintTop_toTopOf="@+id/guideline_display"
+        app:tint="@color/blackOlive" />
 
     <TextView
         android:id="@+id/textFee"

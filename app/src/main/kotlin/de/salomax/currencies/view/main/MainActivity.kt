@@ -161,7 +161,7 @@ class MainActivity : BaseActivity() {
             Snackbar.LENGTH_SHORT
         )
             .setBackgroundTint(getColor(R.color.colorAccent))
-            .setTextColor(getColor(android.R.color.white))
+            .setTextColor(getColor(R.color.colorTextOnAccent))
             .show()
     }
 
