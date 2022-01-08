@@ -1,0 +1,2 @@
+* Artık kurları manuel güncellemek mümkün. Denemek için dahası kısmını kontrol edebbilirsiniz.
+* Performans geliştirmeleri

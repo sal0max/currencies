@@ -1,0 +1,1 @@
+- Tercihleri açarken meydana gelen çökme düzeltildi.

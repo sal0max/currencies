@@ -1,0 +1,2 @@
+- Şahane topluluk üyeleri sayesinde bu uygulama sadece Almanca ve İngilizcenin yanısıra İspanyolca, Fransızca, İtalyanca, ve Norveççeye de yerelleştirildi. Desteğiniz için teşekkürler! 🙏🙏🙏
+-Uygulamayı daha güvenilir yapmak için ufak tefek arka plan güncellemeleri.

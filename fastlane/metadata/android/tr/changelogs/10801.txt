@@ -1,0 +1,1 @@
+-Koyu temanın kullanıldığı bazı durumlarda uygulamanın çökmesine vermesine sebep olan hata düzeltildi.
