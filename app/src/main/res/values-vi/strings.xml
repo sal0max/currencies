@@ -13,4 +13,8 @@
     <string name="menu_refresh">Làm mới tỉ lệ</string>
     <string name="menu_timeline">Biểu đồ tỉ lệ chuyển đổi</string>
     <string name="tooltip_filter_starred">Chỉ hiện tiền tệ được gắn sao.</string>
+    <string name="error_generic">Vấn đề không xác định.</string>
+    <string name="error_http">Máy chủ trả về HTTP %d</string>
+    <string name="error_timeout">Máy chủ không phản hồi kịp hoặc không kết nối đến được.</string>
+    <string name="error_no_data">Không thể kết nối đến máy chủ.</string>
 </resources>
