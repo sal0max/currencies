@@ -12,6 +12,7 @@ import android.view.View
 import android.widget.*
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
@@ -33,6 +34,9 @@ class MainActivity : BaseActivity() {
     private lateinit var inputModel: CurrentInputViewModel
 
     private lateinit var refreshIndicator: LinearProgressIndicator
+    private lateinit var swipeRefresh: SwipeRefreshLayout
+    private var menuItemRefresh: MenuItem? = null
+
     private lateinit var tvCalculations: TextView
     private lateinit var tvFrom: TextView
     private lateinit var tvTo: TextView
@@ -56,6 +60,7 @@ class MainActivity : BaseActivity() {
 
         // views
         this.refreshIndicator = findViewById(R.id.refreshIndicator)
+        this.swipeRefresh = findViewById(R.id.swipeRefresh)
         this.tvCalculations = findViewById(R.id.textCalculations)
         this.tvFrom = findViewById(R.id.textFrom)
         this.tvTo = findViewById(R.id.textTo)
@@ -65,6 +70,10 @@ class MainActivity : BaseActivity() {
         this.spinnerTo = findViewById(R.id.spinnerTo)
         this.tvDate = findViewById(R.id.textRefreshed)
         this.tvFee = findViewById(R.id.textFee)
+
+        // swipe-to-refresh: color scheme (not accessible in xml)
+        swipeRefresh.setColorSchemeResources(R.color.blackOlive)
+        swipeRefresh.setProgressBackgroundColorSchemeResource(R.color.dollarBill)
 
         // listeners & stuff
         setListeners()
@@ -76,6 +85,7 @@ class MainActivity : BaseActivity() {
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         val inflater: MenuInflater = menuInflater
         inflater.inflate(R.menu.main, menu)
+        this.menuItemRefresh = menu.findItem(R.id.refresh)
         return true
     }
 
@@ -144,6 +154,13 @@ class MainActivity : BaseActivity() {
                     (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
+        }
+
+        // swipe to refresh
+        swipeRefresh.setOnRefreshListener {
+            // update
+            ratesModel.forceUpdateExchangeRate()
+            swipeRefresh.isRefreshing = false
         }
     }
 
@@ -222,6 +239,9 @@ class MainActivity : BaseActivity() {
         })
         ratesModel.isUpdating().observe(this, { isRefreshing ->
             refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
+            // disable manual refresh, while refreshing
+            swipeRefresh.isEnabled = isRefreshing.not()
+            menuItemRefresh?.isEnabled = isRefreshing.not()
         })
 
         // input changed
