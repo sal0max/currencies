@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="name_aed">BAE dirhem</string>
+    <string name="name_aed">BAE dirhemi</string>
     <string name="name_all">Arnavutluk leki</string>
     <string name="name_afn">Afgan afganisi</string>
     <string name="name_amd">Ermenistan dramı</string>
@@ -24,7 +24,7 @@
     <string name="name_btc">Bitcoin</string>
     <string name="name_btn">Bhutan ngultrumu</string>
     <string name="name_bwp">Botsvana pulası</string>
-    <string name="name_byn">Beyaz Rusya rublesi</string>
+    <string name="name_byn">Belarus rublesi</string>
     <string name="name_bzd">Belize doları</string>
     <string name="name_cad">Kanada doları</string>
     <string name="name_cdf">Kongo frangı</string>
@@ -46,7 +46,7 @@
     <string name="name_ern">Eritre nakfası</string>
     <string name="name_etb">Etiyopya birri</string>
     <string name="name_eur">Euro</string>
-    <string name="name_fkp">Falkland Adaları poundu</string>
+    <string name="name_fkp">Falkland Adaları sterlini</string>
     <string name="name_fok">Faroe kronu</string>
     <string name="name_gbp">İngiliz sterlini</string>
     <string name="name_gel">Gürcistan larisi</string>
@@ -60,7 +60,7 @@
     <string name="name_hrk">Hırvatistan kunası</string>
     <string name="name_htg">Haiti gourdesi</string>
     <string name="name_ils">Yeni İsrail şekeli</string>
-    <string name="name_imp">Man Adası poundu</string>
+    <string name="name_imp">Man Adası sterlini</string>
     <string name="name_inr">Hindistan rupisi</string>
     <string name="name_iqd">Irak dinarı</string>
     <string name="name_irr">İran riyali</string>
@@ -93,7 +93,7 @@
     <string name="name_mwk">Malavi kvaçası</string>
     <string name="name_mxn">Meksika pesosu</string>
     <string name="name_myr">Malezya ringgiti</string>
-    <string name="name_mzn">Mozambik meticalı</string>
+    <string name="name_mzn">Mozambik metikali</string>
     <string name="name_nad">Namibya doları</string>
     <string name="name_ngn">Nijerya nairası</string>
     <string name="name_nio">Nikaragua kordobası</string>
@@ -106,7 +106,7 @@
     <string name="name_pgk">Papua Yeni Gine kinası</string>
     <string name="name_php">Filipin pesosu</string>
     <string name="name_pln">Polonya zlotisi</string>
-    <string name="name_pyg">Paraguay guaranísi</string>
+    <string name="name_pyg">Paraguay guaranisi</string>
     <string name="name_qar">Katar riyali</string>
     <string name="name_ron">Rumen leyi</string>
     <string name="name_rsd">Sırp dinarı</string>
@@ -156,15 +156,15 @@
     <string name="name_zar">Güney Afrika randı</string>
     <string name="name_zmw">Zambiya kvaçası</string>
     <string name="name_zwl">Zimbabve doları</string>
-    <string name="name_cuc">Çevrilebilir Küba pesosu</string>
+    <string name="name_cuc">Küba pesosu (Çevrilebilir)</string>
     <string name="name_tjs">Tacikistan somonisi</string>
     <string name="name_fjd">Fiji doları</string>
     <string name="name_xcd">Doğu Karayip doları</string>
-    <string name="name_gip">Cebelitarık poundu</string>
+    <string name="name_gip">Cebelitarık lirası</string>
     <string name="name_gtq">Guatemala quetzalı</string>
     <string name="name_huf">Macar forinti</string>
     <string name="name_idr">Endonezya rupisi</string>
-    <string name="name_jep">Jersey poundu</string>
+    <string name="name_jep">Jersey sterlini</string>
     <string name="name_kmf">Komor frangı</string>
     <string name="name_kwd">Kuveyt dinarı</string>
     <string name="name_mmk">Myanmar kyatı</string>
