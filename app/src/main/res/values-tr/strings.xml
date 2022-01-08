@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> . </string>
+    <string name="desc_toggle_currencies">para birimlerini değiştir</string>
+    <string name="last_updated">%s tarihli döviz kuru</string>
+    <string name="today">bugün</string>
+    <string name="yesterday">dün</string>
+    <string name="copied_to_clipboard"><b>%s</b> panoya kopyalandı</string>
+    <string name="error">Hata: %s</string>
+    <string name="error_generic">Bilinmeyen bir sorunla karşılaşıldı.</string>
+    <string name="error_http">Sunucu HTTP %d ile yanıt verdi</string>
+    <string name="error_timeout">Server zaman aşımına uğradı veya ulaşılamaz durumda.</string>
+    <string name="error_no_data">Sunucuya bağlanılamadı.</string>
+    <string name="error_api_error">API hatası. Lütfen daha sonra tekrar deneyiniz.</string>
+    <string name="menu_settings">Ayarlar</string>
+    <string name="menu_refresh">Kurları güncelle</string>
+    <string name="menu_timeline">Döviz kur grafiği</string>
+    <string name="tooltip_filter_starred">Sadece favori para birimlerini göster.</string>
+</resources>

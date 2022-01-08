@@ -1,0 +1,2 @@
+- exchangerate.host kullanıldığında kurların güncellenmemesine sebep olan hata düzeltildi.
+- Stabiliteyi ve performansı geliştirmek için kütüphane güncellemeleri.

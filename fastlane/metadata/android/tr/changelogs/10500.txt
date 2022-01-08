@@ -1,0 +1,3 @@
+- İki API sağlayıcısı arasında seçim yapabilirsiniz: exchangerate.host ve frankfurter.app
+- Artık geliştiriciyi PayPal üzerinden bağış yaparak destekleyebilirsiniz. Linki ayarlarda bulabilirsiniz.
+- Birkaç arayüz geliştirmesi daha
