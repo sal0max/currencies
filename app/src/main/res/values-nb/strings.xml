@@ -3,14 +3,18 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">veksle valuta</string>
-    <string name="last_updated">Valutakursen alder: %s</string>
+    <string name="last_updated">Valutakurs fra %s</string>
     <string name="today">i dag</string>
     <string name="yesterday">i går</string>
-    <string name="copied_to_clipboard">Kopierte &lt;b>%s&lt;/b> til utklippstavlen</string>
+    <string name="copied_to_clipboard">Kopierte &lt;b&gt;%s&lt;/b&gt; til utklippstavlen</string>
     <string name="error">Feil: %s</string>
     <string name="error_api_error">Det var en API feil. Vennligst prøv igjen senere.</string>
     <string name="menu_settings">Innstillinger</string>
     <string name="menu_refresh">Oppdateringsfrekvens</string>
     <string name="menu_timeline">Valutakurshistorikk</string>
-
+    <string name="error_generic">Ukjent problem.</string>
+    <string name="error_http">Server svarte MED HTTP %d</string>
+    <string name="tooltip_filter_starred">Vis bare stjernemerkede valutaer.</string>
+    <string name="error_no_data">Kunne ikke koble til serveren.</string>
+    <string name="error_timeout">Serveren reagerte ikke i tide eller er ikke tilgjengelig.</string>
 </resources>
