@@ -13,4 +13,8 @@
     <string name="menu_refresh">Rafraîchissement des taux</string>
     <string name="menu_timeline">Historique des taux de change</string>
     <string name="tooltip_filter_starred">Afficher uniquement les devises étoilées.</string>
+    <string name="error_generic">Problème inconnu.</string>
+    <string name="error_http">Le serveur a répondu avec HTTP %d</string>
+    <string name="error_timeout">Le serveur n\'a pas répondu à temps ou n\'est pas joignable.</string>
+    <string name="error_no_data">Impossible de se connecter au serveur.</string>
 </resources>
