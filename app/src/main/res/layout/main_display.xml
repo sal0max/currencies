@@ -28,7 +28,7 @@
         app:layout_constraintBottom_toTopOf="@+id/guideline_display"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline_display"
-        app:tint="@color/blackOlive" />
+        app:tint="@color/colorTextOnAccent" />
 
     <TextView
         android:id="@+id/textFee"
