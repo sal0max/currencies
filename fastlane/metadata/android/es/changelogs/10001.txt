@@ -1,1 +1,1 @@
-* Corregir un posible fallo en Android 11
+- Corregir un posible fallo en Android 11

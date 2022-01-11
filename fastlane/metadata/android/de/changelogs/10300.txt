@@ -1,4 +1,4 @@
-* So viele neue Währungen! Insgesamt jetzt über 160! Das liegt an Currencies' Wechsel zu einer anderen API. Die alte (exchangeratesapi.io) hat ohne Vorwarnung zu einem Abo-Modell gewechselt. NICHT GUT! Unser neuer Anbieter ist exchangerate.host.
-* Das bedeutet auch, dass die Währungskurse kürzlich nicht erneuert werden konnten. Das ist jetzt natürlich behoben.
-* Außerdem wurde das Aktualisieren selbst verbessert, sodass du beim nächsten Mal einen Hinweis bekommst.
-* Kleine UI-Verbesserungen
+- So viele neue Währungen! Insgesamt jetzt über 160! Das liegt an Currencies' Wechsel zu einer anderen API. Die alte (exchangeratesapi.io) hat ohne Vorwarnung zu einem Abo-Modell gewechselt. NICHT GUT! Unser neuer Anbieter ist exchangerate.host.
+- Das bedeutet auch, dass die Währungskurse kürzlich nicht erneuert werden konnten. Das ist jetzt natürlich behoben.
+- Außerdem wurde das Aktualisieren selbst verbessert, sodass du beim nächsten Mal einen Hinweis bekommst.
+- Kleine UI-Verbesserungen

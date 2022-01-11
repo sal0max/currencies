@@ -1,4 +1,4 @@
-* So many more currencies! Over 160 in total, now!! That's because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.
-* That also means, that the last couple of days, the exchange rates couldn't be refreshed. That's fixed now, of course.
-* Also, the refresh process itself got improved, so at least next time something like that happens, you'll get a notice.
-* Small UI improvements
+- So many more currencies! Over 160 in total, now!! That's because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.
+- That also means, that the last couple of days, the exchange rates couldn't be refreshed. That's fixed now, of course.
+- Also, the refresh process itself got improved, so at least next time something like that happens, you'll get a notice.
+- Small UI improvements

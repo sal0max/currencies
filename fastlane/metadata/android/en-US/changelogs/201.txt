@@ -1,2 +1,2 @@
-* Better error handling
-* Minor improvements
+- Better error handling
+- Minor improvements

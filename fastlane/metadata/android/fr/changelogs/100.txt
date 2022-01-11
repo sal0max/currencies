@@ -1,3 +1,3 @@
-* Mise à jour plus sûre des taux de change.
-* Ajout d'une clause de non-responsabilité
-* Ajout de ce journal des modifications
+- Mise à jour plus sûre des taux de change.
+- Ajout d'une clause de non-responsabilité
+- Ajout de ce journal des modifications

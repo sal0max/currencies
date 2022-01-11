@@ -1,4 +1,4 @@
-* ¡Cuántas más monedas! Más de 160 en total, ¡ahora! Eso es porque Currencies cambió a una API diferente. La antigua (exchangeratesapi.io) cambió a un modelo de suscripción sin previo aviso. ¡NO ES BUENO! Nuestro nuevo proveedor será exchangerate.host.
-* Eso también significa, que el último par de días, los tipos de cambio no podían ser refrescados. Eso está arreglado ahora, por supuesto.
-* También se ha mejorado el proceso de actualización
-* Pequeñas mejoras en la interfaz de usuario
+- ¡Cuántas más monedas! Más de 160 en total, ¡ahora! Eso es porque Currencies cambió a una API diferente. La antigua (exchangeratesapi.io) cambió a un modelo de suscripción sin previo aviso. ¡NO ES BUENO! Nuestro nuevo proveedor será exchangerate.host.
+- Eso también significa, que el último par de días, los tipos de cambio no podían ser refrescados. Eso está arreglado ahora, por supuesto.
+- También se ha mejorado el proceso de actualización
+- Pequeñas mejoras en la interfaz de usuario

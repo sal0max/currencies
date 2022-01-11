@@ -1,2 +1,2 @@
-* Migliore gestione degli errori
-* Miglioramenti minori
+- Migliore gestione degli errori
+- Miglioramenti minori

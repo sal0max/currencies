@@ -1,1 +1,1 @@
-* Android 11'de oluşabilecek çökmelerin düzeltilmesi
+- Android 11'de oluşabilecek çökmelerin düzeltilmesi

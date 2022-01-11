@@ -1,3 +1,3 @@
-* Toplamda 50 olmak üzere 17 yeni para birimi! 🥳 Tek tek sayamayacak kadar çok. BAE, Katar, Barbados, Bahamalar, Küba vb. gibi orta doğu ve Karayipler'deki pek çok popüler tatil yeri eklendi.
-* Tüm bu yeni seçimleri zapt edebilmek adına para birimi seçicisine arama fonksiyonu eklendi.
-* Artık seçici para biriminin sadece kodunun yanısıra tam adını da gösteriyor. Arama ile beraber muhteşem bir yenilik. Denemeye ne dersin!
+- Toplamda 50 olmak üzere 17 yeni para birimi! 🥳 Tek tek sayamayacak kadar çok. BAE, Katar, Barbados, Bahamalar, Küba vb. gibi orta doğu ve Karayipler'deki pek çok popüler tatil yeri eklendi.
+- Tüm bu yeni seçimleri zapt edebilmek adına para birimi seçicisine arama fonksiyonu eklendi.
+- Artık seçici para biriminin sadece kodunun yanısıra tam adını da gösteriyor. Arama ile beraber muhteşem bir yenilik. Denemeye ne dersin!

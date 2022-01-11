@@ -1,1 +1,1 @@
-* Pre-rilascio iniziale
+- Pre-rilascio iniziale

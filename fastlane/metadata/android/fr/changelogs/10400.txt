@@ -1,2 +1,2 @@
-* Il est maintenant possible de rafraîchir manuellement les taux. Vérifiez-le dans le menu de débordement.
-* Amélioration des performances
+- Il est maintenant possible de rafraîchir manuellement les taux. Vérifiez-le dans le menu de débordement.
+- Amélioration des performances

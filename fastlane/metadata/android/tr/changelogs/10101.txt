@@ -1,1 +1,1 @@
-* Küçük geliştirmeler (yazım vesaire)
+- Küçük geliştirmeler (yazım vesaire)

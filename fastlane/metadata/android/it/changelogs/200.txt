@@ -1,1 +1,1 @@
-* Aggiunta una funzione di copia: Cliccare a lungo sul valore che si vuole copiare
+- Aggiunta una funzione di copia: Cliccare a lungo sul valore che si vuole copiare

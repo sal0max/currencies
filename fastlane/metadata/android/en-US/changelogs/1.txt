@@ -1,1 +1,1 @@
-* Initial pre-release
+- Initial pre-release

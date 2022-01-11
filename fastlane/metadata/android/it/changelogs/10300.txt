@@ -1,4 +1,4 @@
-* Tante altre valute! Più di 160 in totale, ora! Questo perché Currencies è passato a un'altra API. Il nostro nuovo provider sarà exchangerate.host.
-* Questo significa anche che negli ultimi giorni i tassi di cambio non potevano essere aggiornati. Questo è risolto ora, naturalmente.
-* Inoltre, il processo di aggiornamento stesso è stato migliorato, così almeno la prossima volta che succede qualcosa del genere, riceverete un avviso.
-* Piccoli miglioramenti all'interfaccia utente
+- Tante altre valute! Più di 160 in totale, ora! Questo perché Currencies è passato a un'altra API. Il nostro nuovo provider sarà exchangerate.host.
+- Questo significa anche che negli ultimi giorni i tassi di cambio non potevano essere aggiornati. Questo è risolto ora, naturalmente.
+- Inoltre, il processo di aggiornamento stesso è stato migliorato, così almeno la prossima volta che succede qualcosa del genere, riceverete un avviso.
+- Piccoli miglioramenti all'interfaccia utente

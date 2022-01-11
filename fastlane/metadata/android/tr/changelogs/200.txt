@@ -1,1 +1,1 @@
-* Kopyalama fonksiyonu eklendi: Kopyalamak istediğiniz değerin üzerine basılı tutun
+- Kopyalama fonksiyonu eklendi: Kopyalamak istediğiniz değerin üzerine basılı tutun

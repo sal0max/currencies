@@ -1,2 +1,2 @@
-* È ora possibile aggiornare manualmente i tassi. Controllate nel menu di overflow.
-* Miglioramenti delle prestazioni
+- È ora possibile aggiornare manualmente i tassi. Controllate nel menu di overflow.
+- Miglioramenti delle prestazioni

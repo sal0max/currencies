@@ -1,2 +1,2 @@
-* Besserer Fehlerumgang
-* Kleinere Verbesserungen
+- Besserer Fehlerumgang
+- Kleinere Verbesserungen

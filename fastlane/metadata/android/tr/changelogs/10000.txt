@@ -1,3 +1,3 @@
-* Almanca çeviri eklendi
-* Küçük bir geliştirme: Uygulama boyutu %50 azaltıldı!
-* Uygulama gayet stabil görünüyor: 1.0 sürümü yayında! 🥳🥳🥳
+- Almanca çeviri eklendi
+- Küçük bir geliştirme: Uygulama boyutu %50 azaltıldı!
+- Uygulama gayet stabil görünüyor: 1.0 sürümü yayında! 🥳🥳🥳

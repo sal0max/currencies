@@ -1,2 +1,2 @@
-* Daha iyi hata işleme
-* Küçük geliştirmeler
+- Daha iyi hata işleme
+- Küçük geliştirmeler

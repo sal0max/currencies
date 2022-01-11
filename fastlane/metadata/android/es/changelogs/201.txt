@@ -1,2 +1,2 @@
-* Mejora de la gestión de errores
-* Mejoras menores
+- Mejora de la gestión de errores
+- Mejoras menores

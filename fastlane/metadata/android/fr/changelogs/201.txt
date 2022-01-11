@@ -1,2 +1,2 @@
-* Meilleur traitement des erreurs
-* Améliorations mineures
+- Meilleur traitement des erreurs
+- Améliorations mineures

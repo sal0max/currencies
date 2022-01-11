@@ -1,4 +1,4 @@
-* Çok daha fazla para birimi! Toplamda 160'dan fazla!! Çünkü Currencies farklı bir API kullanmaya başladı. Eskisi (exchangeratesapi.io) herhangi bir ön bilgilendirme olmadan abonelik sistemine geçiş yaptı. Yeni sağlayıcımız exchangerate.host olacak.
-* Ayrıca bu sebeple gündür döviz kurları son birkaç güncellenememişti. Tabi ki düzeltildi.
-* Ayrıca güncelleme işleminin kendisi geliştirildi, en azından bir daha böyle bir şey olduğunda bildirim alacaksınız.
-* Küçük arayüz geliştirmeleri
+- Çok daha fazla para birimi! Toplamda 160'dan fazla!! Çünkü Currencies farklı bir API kullanmaya başladı. Eskisi (exchangeratesapi.io) herhangi bir ön bilgilendirme olmadan abonelik sistemine geçiş yaptı. Yeni sağlayıcımız exchangerate.host olacak.
+- Ayrıca bu sebeple gündür döviz kurları son birkaç güncellenememişti. Tabi ki düzeltildi.
+- Ayrıca güncelleme işleminin kendisi geliştirildi, en azından bir daha böyle bir şey olduğunda bildirim alacaksınız.
+- Küçük arayüz geliştirmeleri
