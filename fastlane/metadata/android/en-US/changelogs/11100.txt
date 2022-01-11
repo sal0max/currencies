@@ -1,0 +1,4 @@
+- You're now able to pull-to-refresh to update the rates.
+- Much improved feedback when refreshing rates and in case of errors.
+- New language: A kind community member provided translations for Turkish. Thank you! 🇹🇷
+- In some situations, the wrong API was used for the timeline. That is fixed, now.

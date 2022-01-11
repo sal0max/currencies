@@ -2,7 +2,14 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.10.3</b>
+    <string name="changelog" translatable="false"><b>1.11.0</b>
+        \n⸻
+        \n<li>You\'re now able to pull-to-refresh to update the rates.</li>
+        \n<li>Much improved feedback when refreshing rates and in case of errors.</li>
+        \n<li>New language: A kind community member provided translations for Turkish. Thank you! 🇹🇷</li>
+        \n<li>In some situations, the wrong API was used for the timeline. That is fixed, now.</li>
+        \n
+        \n<b>1.10.3</b>
         \n⸻
         \n<li>Minor improvements.</li>
         \n
@@ -34,7 +41,7 @@
         \n⸻
         \n<li>Improved the display of exchange rate age.</li>
         \n<li>Added a preference entry to rate the app on Google Play (not in the F-Droid version, of course).</li>
-        \n<li>Yet another localization: the app is now translated to Vietnamese.</li>
+        \n<li>Yet another localization: the app is now translated to Vietnamese. 🇻🇳</li>
         \n<li>Small minor improvements.</li>
         \n
         \n<b>1.7.0</b>
@@ -46,7 +53,7 @@
         \n
         \n<b>1.6.0</b>
         \n⸻
-        \n<li>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish, French, Italian and Norwegian (Bokmål). Thanks so much for your help! 🙏🙏🙏</li>
+        \n<li>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish 🇪🇸, French 🇫🇷, Italian 🇮🇹 and Norwegian (Bokmål) 🇳🇴. Thanks so much for your help! 🙏🙏🙏</li>
         \n<li>Small under-the-hood updates to make the app even more reliable.</li>
         \n
         \n<b>1.5.1</b>

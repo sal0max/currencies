@@ -1,0 +1,4 @@
+- Man kann nun die Kurse auch mittels Pull-to-refresh aktualisieren.
+- Deutlich verbesserte Rückmeldungen beim Aktualisieren und wenn Fehler auftreten.
+- Neue Sprache: Ein nettes Communitymitglied hat Übersetzungen für Türkisch bereitgestellt. Vielen Dank! 🇹🇷
+- In manchen Situationen wurde die falsche API für die Kursverlaufsdaten verwendet. Das ist nun korrigiert.
