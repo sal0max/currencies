@@ -3,32 +3,32 @@
     <!-- main settings -->
     <string name="category_settings">Genel Ayarlar</string>
     <string name="fee_title">Döviz işlem ücreti</string>
-    <string name="fee_summary">Bankanız, kredi kartı sözleşmenize bağlı olarak, tüm döviz işlemlerinden bir işlem ücreti alabilir. Bu ücreti buraya girebilirsiniz. Bu miktar hesaplamaya eklenecek ve bu sayede <i>tam olarak</i> ne kadar ödeme yapacağınızı öğrenebilirsiniz.</string>
+    <string name="fee_summary">Bankan, kredi kartı sözleşmene bağlı olarak tüm döviz işlemlerinden bir işlem ücreti alabilir. Bu ücreti buraya girebilirsin. Bu miktar hesaplamaya eklenecek, böylece <i>tam olarak</i> ne kadar ödeme yapacağını öğrenebilirsin.</string>
     <string name="category_appearance">Görünüm</string>
     <string name="theme_title">Tasarım</string>
     <string name="theme_option_light">Açık</string>
     <string name="theme_option_dark">Koyu</string>
     <string name="theme_option_default">Sistem varsayılanı</string>
     <string name="pure_black_enabled_title">OLED siyahı</string>
-    <string name="pure_black_enabled_summary">Koyu modda saf karanlığı kullan</string>
+    <string name="pure_black_enabled_summary">Koyu modda saf siyah kullan</string>
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcı</string>
     <string name="api_about_title">Veri sağlayıcı hakkında</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> döviz kurlarını, Avrupa Merkez Bankası\'nın da dahil olduğu güvenilir banka ve sağlayıcılardan alır. Tüm döviz kurları orta nokta verisi olarak alınır. Orta nokta oranları Bid ve Ask\'ın ortalama medyanı hesaplanarak belirlenir. <b>Yaklaşık olarak 160 para birimi bulunmaktadır.</b></string>
-    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> Avrupa Merkez Bankası tarafından yayınlanan gösterge niteliğindeki döviz (forex) kurlarını esas alır.\n<b>Yaklaşık olarak 30 para birimi bulunmaktadır.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> (tıpkı Frankfurter.app gibi) Avrupa Merkez Bankası tarafından yayınlanan gösterge döviz (forex) kurlarını esas alan, kısmen yeni bir sağlayıcıdır.\n<b>Yaklaşık olarak 30 para birimi bulunmaktadır.</b></string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> döviz kurlarını Avrupa Merkez Bankası\'nın da dahil olduğu güvenilir banka ve sağlayıcılardan alır. Tüm döviz kurları orta nokta verisi olarak alınır. Orta nokta oranları Bid ve Ask\'ın ortalama medyanı hesaplanarak belirlenir.\n <b>Yaklaşık 160 para birimi bulunmaktadır.</b></string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a>, Avrupa Merkez Bankası tarafından yayınlanan gösterge niteliğindeki döviz (forex) kurlarını esas alır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> (tıpkı Frankfurter.app gibi) Avrupa Merkez Bankası tarafından yayınlanan gösterge döviz (forex) kurlarını esas alan, kısmen yeni bir veri sağlayıcıdır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
     <string name="api_refreshPeriod_title">Güncelleme Sıklığı</string>
-    <string name="api_refreshPeriod_exchangerateHost">Döviz kurları her iş gününde gece yarısı (UTC) sularında güncellenir.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Veri güncellemesi her iş günü 16:00 (CET) sularında gerçekleşir.</string>
+    <string name="api_refreshPeriod_exchangerateHost">Döviz kurları her iş gününde gece yarısı (UTC) civarında güncellenir.</string>
+    <string name="api_refreshPeriod_frankfurterApi">Veri güncellemesi her iş günü 16:00 (CET) civarında gerçekleşir.</string>
     <string name="api_refreshPeriod_ferEe">Kurlar her iş günü güncellenir.</string>
     <!-- about -->
     <string name="category_about">Uygulama hakkında</string>
     <string name="disclaimer_title">Sorumluluk Reddi</string>
-    <string name="disclaimer_summary">Uygulama derinlemesine yazılıp test edilmiş olsa dahi <b>gösterilen verilerin doğru olduğu garanti edilmez</b>. Döviz kurları üçüncü taraflarca sağlanır ve bu uygulama hiçbir şekilde doğru veya güncel olduğunu vadetmez.\nBuna ek olarak sağlanan kurlar, doğru olsa dahi, bankanızda kullanılana göre farklılık gösterebilir.\nSon olarak, hatalar her daim gerçekleşebilir. Kimseye körü körüne güvenme! Bunun haricinde emin olunun ki amacının dışında çalışacak olsaydı bu uygulamayı yayınlamazdım.</string>
+    <string name="disclaimer_summary">Uygulama derin bir yazılım sürecinden geçip test edilmiş olsa dahi <b>gösterilen verilerin doğru olduğu garanti edilmez</b>. Döviz kurları üçüncü taraflarca sağlanır ve bu uygulama hiçbir şekilde bu kurların doğru veya güncel olduğunu vadetmez.\nBuna ek olarak sağlanan kurlar doğru olsa dahi bankanızda kullanılan kurlara göre farklılık gösterebilir.\nSon olarak, hatalar her daim gerçekleşebilir. Kimseye körü körüne güvenme! Yine de belirtmek isterim ki, eğer düzgün çalışmayacağını düşünseydim bu uygulamayı asla yayınlamazdım.</string>
     <string name="donate_title">Geliştiriciyi destekle</string>
     <string name="donate_summary">PayPal üzerinden bağış yap</string>
     <string name="rate_title">Uygulamayı puanla</string>
-    <string name="rate_summary">Eğer hoşunuza gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsiniz. Uygulamayı Google Play üzerinden puanlamak için buraya tıklayınız.</string>
-    <string name="aboutVersion">Sürüm %1$s</string>
+    <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
+    <string name="aboutVersion">Sürüm: %1$s</string>
 </resources>

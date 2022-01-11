@@ -1,12 +1,12 @@
-Currencies, iş dünyasından ziyade tatil vb. durumlarda kullanışlı bir yoldaş olmak üzere tasarlanmış basit ve etkili bir döviz çeviricidir.
+Currencies, finansal işlerinde kullanacağın bir araçtan ziyade daha gündelik senaryolarda (örneğin tatildeyken) kullanabileceğin, sade ve kullanması kolay bir döviz çeviricidir.
 
-• Uygulama mevcut tüm para birimlerini kapsamaktadır. Farklı döviz kuru sağlayıcıları arasında seçim yapabilirsiniz:
+• Uygulama mevcut tüm para birimlerini kapsamaktadır. Farklı döviz kuru sağlayıcıları arasında seçim yapabilirsin:
    • 160'dan fazla para birimiyle exchangerate.host
    • Avrupa Merkez Bankas tarafından sağlanan 30'dan fazla para birimiyle frankfurter.app
-   • aynı para birimleriyle frankfurter.app alternatifi olan fer.ee frankfurter.app
-• Basit ve saf Malzeme Tasarımı arayüz.
-• Geçmiş kurlar: Para birimlerinin gelişimlerini görmek için geçmiş yıllara ait grafikleri inceleyebilirsin.
-• Ana özelliklerden birisi de hesap makinesi. Restoranda hesabı bölüşürken kullanışlı olabilir.
-• İşlem ücreti hesaplayıcı: isterseniz hesaplamalarınıza döviz işlem ücretini katabileceğiniz ayarlanabilir bir hesaplama aracı.
-• Currencies Android 12 için Kotlin ile yazılmıştır. Koyu ve Açık temaları destekler.
-• Currencies ücretsiz ve güvenilir bir uygulamadır.
+   • frankfurter.app alternatifi ve aynı para birimlerine sahip fer.ee
+• Basit ve sade tasarıma sahip bir arayüz.
+• Kur geçmişi: Para birimlerinin gelişimlerini görmek için geçmiş yıllara ait grafikleri inceleyebilirsin.
+• Ana özelliklerden birisi olan hesap makinesi: Restoranda hesabı bölüşürken kullanışlı olabilir.
+• İşlem ücreti hesaplayıcı: İstersen hesaplamalarına döviz işlem ücretini katabileceğin, ayarlanabilir bir hesaplama aracı.
+• Currencies, Android 12 için Kotlin ile yazılmıştır. Koyu ve Açık tema desteğine sahiptir.
+• Currencies tamamen ücretsizdir ve asla kullanıcıların kişisel verilerini toplamaz.

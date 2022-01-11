@@ -8,6 +8,10 @@
     <string name="yesterday">ieri</string>
     <string name="copied_to_clipboard">Copiato &lt;b&gt;%s&lt;/b&gt; negli appunti</string>
     <string name="error">Errore: %s</string>
+    <string name="error_generic">Problema sconosciuto.</string>
+    <string name="error_http">Il server ha risposto con HTTP %d</string>
+    <string name="error_timeout">Il server non ha risposto in tempo o non è raggiungibile.</string>
+    <string name="error_no_data">Impossibile connettersi al server.</string>
     <string name="error_api_error">Si è verificato un errore API. Si prega di riprovare più tardi.</string>
     <string name="menu_settings">Impostazioni</string>
     <string name="menu_refresh">Tassi di aggiornamento</string>

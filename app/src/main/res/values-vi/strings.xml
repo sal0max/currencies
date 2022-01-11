@@ -8,6 +8,10 @@
     <string name="yesterday">hôm qua</string>
     <string name="copied_to_clipboard">Đã sao chép <b>%s</b> vào bộ nhớ tạm</string>
     <string name="error">Lỗi: %s</string>
+    <string name="error_generic">Vấn đề không xác định.</string>
+    <string name="error_http">Máy chủ trả về HTTP %d</string>
+    <string name="error_timeout">Máy chủ không phản hồi kịp hoặc không kết nối đến được.</string>
+    <string name="error_no_data">Không thể kết nối đến máy chủ.</string>
     <string name="error_api_error">Đã xảy ra lỗi API. Vui lòng thử lại sau.</string>
     <string name="menu_settings">Cài đặt</string>
     <string name="menu_refresh">Làm mới tỉ lệ</string>
