@@ -68,9 +68,7 @@ class SearchableSpinner : AppCompatSpinner {
     }
 
     fun setStars(stars: Set<String>?) {
-        // set in own adapter...
-        adapter.setStars(stars)
-        // ...and in dialog
+        // set in dialog
         spinnerDialog.setStars(stars)
     }
 

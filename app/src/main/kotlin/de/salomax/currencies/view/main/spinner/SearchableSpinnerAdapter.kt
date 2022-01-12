@@ -16,7 +16,6 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
     ArrayAdapter<Rate>(context, resource) {
 
     private var rates: List<Rate> = ArrayList()
-    private var stars: Set<String> = HashSet()
 
     override fun getView(position: Int, convertView: View?, parent: ViewGroup): View {
         var v = convertView
@@ -76,14 +75,6 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
             this.rates = ArrayList()
         else
             this.rates = rates
-        notifyDataSetChanged()
-    }
-
-    fun setStars(stars: Set<String>?) {
-        if (stars == null)
-            this.stars = HashSet()
-        else
-            this.stars = stars
         notifyDataSetChanged()
     }
 
