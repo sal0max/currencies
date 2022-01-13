@@ -1,3 +1,0 @@
-- 17 nouvelles devises ! Cela fait maintenant 50 au total. Trop nombreux pour les nommer tous. Cependant, beaucoup de destinations de vacances populaires au Moyen-Orient et dans les Caraïbes sont maintenant incluses
-- Pour rester au courant de tous ces nouveaux choix, une recherche est maintenant disponible dans le sélecteur de devises.
-- Le sélecteur affiche désormais le nom complet d'une devise, et non plus seulement son code. Un ajout impressionnant
