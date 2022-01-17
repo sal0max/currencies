@@ -38,6 +38,7 @@
         android:layout_margin="@dimen/margin2x"
         android:gravity="center_vertical|end"
         android:textColor="@android:color/holo_red_light"
+        android:textDirection="ltr"
         app:layout_constraintBottom_toTopOf="@+id/guideline_display"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline_display"
@@ -78,15 +79,14 @@
 
     <TextView
         android:id="@+id/textCalculations"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="@dimen/margin2x"
         android:ellipsize="start"
-        android:gravity="end"
+        android:paddingHorizontal="@dimen/margin2x"
         android:singleLine="true"
+        android:textDirection="ltr"
         app:layout_constraintBottom_toTopOf="@id/scrollViewTextFrom"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
         tools:text="13 + 0.99" />
 
     <HorizontalScrollView
@@ -104,6 +104,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:layoutDirection="ltr"
             android:longClickable="true"
             android:padding="@dimen/margin2x">
 
@@ -121,6 +122,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="1"
+                android:textDirection="ltr"
                 android:textStyle="bold"
                 tools:text="13.99" />
         </LinearLayout>
@@ -151,6 +153,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="end"
+            android:layoutDirection="ltr"
             android:longClickable="true"
             android:padding="@dimen/margin2x">
 
@@ -168,6 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:lines="1"
+                android:textDirection="ltr"
                 android:textStyle="bold"
                 tools:text="383.99" />
         </LinearLayout>

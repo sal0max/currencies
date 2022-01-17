@@ -1,5 +1,4 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,6 +6,7 @@
     android:background="?android:attr/colorBackground"
     android:columnCount="4"
     android:elevation="@dimen/elevation1x"
+    android:layoutDirection="ltr"
     android:rowCount="4"
     tools:ignore="HardcodedText">
 

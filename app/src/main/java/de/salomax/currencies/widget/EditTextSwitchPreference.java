@@ -2,6 +2,7 @@ package de.salomax.currencies.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
+import android.view.View;
 
 import androidx.appcompat.widget.SwitchCompat;
 import androidx.preference.EditTextPreference;
@@ -68,6 +69,7 @@ public class EditTextSwitchPreference extends EditTextPreference {
             holder.itemView.setEnabled(enabled);
             holder.findViewById(android.R.id.title).setEnabled(enabled);
             holder.findViewById(android.R.id.summary).setEnabled(enabled);
+            holder.findViewById(android.R.id.summary).setTextDirection(View.TEXT_DIRECTION_LTR);
         }
     }
 
