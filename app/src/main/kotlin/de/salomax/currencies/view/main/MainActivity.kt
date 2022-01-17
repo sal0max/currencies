@@ -40,8 +40,8 @@ class MainActivity : BaseActivity() {
     private lateinit var tvCalculations: TextView
     private lateinit var tvFrom: TextView
     private lateinit var tvTo: TextView
-    private lateinit var tvCurrencyFrom: TextView
-    private lateinit var tvCurrencyTo: TextView
+    private lateinit var tvCurrencySymbolFrom: TextView
+    private lateinit var tvCurrencySymbolTo: TextView
     private lateinit var spinnerFrom: SearchableSpinner
     private lateinit var spinnerTo: SearchableSpinner
     private lateinit var tvDate: TextView
@@ -64,8 +64,8 @@ class MainActivity : BaseActivity() {
         this.tvCalculations = findViewById(R.id.textCalculations)
         this.tvFrom = findViewById(R.id.textFrom)
         this.tvTo = findViewById(R.id.textTo)
-        this.tvCurrencyFrom = findViewById(R.id.currencyFrom)
-        this.tvCurrencyTo = findViewById(R.id.currencyTo)
+        this.tvCurrencySymbolFrom = findViewById(R.id.currencyFrom)
+        this.tvCurrencySymbolTo = findViewById(R.id.currencyTo)
         this.spinnerFrom = findViewById(R.id.spinnerFrom)
         this.spinnerTo = findViewById(R.id.spinnerTo)
         this.tvDate = findViewById(R.id.textRefreshed)
@@ -100,8 +100,8 @@ class MainActivity : BaseActivity() {
                 true
             }
             R.id.timeline -> {
-                val from = inputModel.getLastRateFrom()
-                val to = inputModel.getLastRateTo()
+                val from = inputModel.getLastCurrencyFrom()
+                val to = inputModel.getLastCurrencyTo()
                 if (from != null && to != null) {
                     startActivity(
                         Intent(Intent(this, TimelineActivity().javaClass)).apply {
@@ -142,7 +142,7 @@ class MainActivity : BaseActivity() {
         spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                inputModel.setCurrencyFrom(
+                inputModel.setRateFrom(
                     (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
@@ -150,7 +150,7 @@ class MainActivity : BaseActivity() {
         spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                inputModel.setCurrencyTo(
+                inputModel.setRateTo(
                     (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
@@ -209,17 +209,19 @@ class MainActivity : BaseActivity() {
             spinnerTo.setRates(it?.rates)
 
             // restore state
-            inputModel.getLastRateFrom()?.let { last ->
+            inputModel.getLastCurrencyFrom()?.let { last ->
                 (spinnerFrom.adapter as? SearchableSpinnerAdapter)?.getPosition(last)?.let { position ->
                     spinnerFrom.setSelection(position)
                 }
             }
-            inputModel.getLastRateTo()?.let { last ->
+            inputModel.getLastCurrencyTo()?.let { last ->
                 (spinnerTo.adapter as? SearchableSpinnerAdapter)?.getPosition(last)?.let { position ->
                     spinnerTo.setSelection(position)
                 }
             }
         })
+
+        // stars changed
         ratesModel.getStarredCurrencies().observe(this, { stars ->
             // starred rates
             stars.let {
@@ -228,6 +230,8 @@ class MainActivity : BaseActivity() {
             }
 
         })
+
+        // something bad happened
         ratesModel.getError().observe(this, {
             // error
             it?.let {
@@ -237,6 +241,8 @@ class MainActivity : BaseActivity() {
                     .show()
             }
         })
+
+        // rates are updating
         ratesModel.isUpdating().observe(this, { isRefreshing ->
             refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
             // disable manual refresh, while refreshing
@@ -255,10 +261,10 @@ class MainActivity : BaseActivity() {
             tvCalculations.text = it
         })
         inputModel.getCurrencyFrom().observe(this, {
-            tvCurrencyFrom.text = it
+            tvCurrencySymbolFrom.text = it
         })
         inputModel.getCurrencyTo().observe(this, {
-            tvCurrencyTo.text = it
+            tvCurrencySymbolTo.text = it
         })
 
         // fee changed

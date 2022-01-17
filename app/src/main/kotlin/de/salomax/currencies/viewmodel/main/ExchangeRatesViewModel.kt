@@ -4,6 +4,7 @@ import android.app.Application
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MediatorLiveData
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
@@ -14,7 +15,7 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
     private var repository: ExchangeRatesRepository = ExchangeRatesRepository(application)
 
     private var dbLiveItems: LiveData<ExchangeRates?>
-    private var starredLiveItems: LiveData<Set<String>>
+    private var starredLiveItems: LiveData<Set<Currency>>
     private var onlyShowStarred: LiveData<Boolean>
     private val liveError = repository.getError()
 
@@ -62,7 +63,7 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
                                 @Suppress("MoveLambdaOutsideParentheses")
                                 compareBy(
                                     // { rate -> starredLiveItems.value?.contains(rate.code) == false}, // starred
-                                    { rate -> rate.getName(getApplication()) } // name
+                                    { rate -> rate.currency.fullName(getApplication()) } // name
                                 )
                             )
                     )
@@ -75,7 +76,7 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
             dbLiveItems = repository.getExchangeRates()
     }
 
-    fun getStarredCurrencies(): LiveData<Set<String>> {
+    fun getStarredCurrencies(): LiveData<Set<Currency>> {
         return starredLiveItems
     }
 
@@ -87,7 +88,7 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
         Database(getApplication()).toggleStarredActive()
     }
 
-    fun toggleCurrencyStar(currencyCode: String) {
+    fun toggleCurrencyStar(currencyCode: Currency) {
         Database(getApplication()).toggleCurrencyStar(currencyCode)
     }
 

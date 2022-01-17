@@ -3,6 +3,7 @@ package de.salomax.currencies.viewmodel.main
 import android.app.Application
 import androidx.lifecycle.*
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.model.Rate
 import org.mariuszgromada.math.mxparser.Expression
@@ -83,13 +84,13 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
 
     fun getCurrencyFrom(): LiveData<String?> {
         return Transformations.map(currentCurrencyFrom) {
-            it.getCurrencySymbol()
+            it.currency.symbol()
         }
     }
 
     fun getCurrencyTo(): LiveData<String?> {
         return Transformations.map(currentCurrencyTo) {
-            it.getCurrencySymbol()
+            it.currency.symbol()
         }
     }
 
@@ -217,7 +218,7 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
         MutableLiveData<Rate>()
     }
 
-    fun setCurrencyFrom(rate: Rate) {
+    fun setRateFrom(rate: Rate) {
         currentCurrencyFrom.value = rate
         recalculate()
         saveSelectedCurrencies()
@@ -225,23 +226,23 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
         currentValue.value = currentValue.value
     }
 
-    fun setCurrencyTo(rate: Rate) {
+    fun setRateTo(rate: Rate) {
         currentCurrencyTo.value = rate
         recalculate()
         saveSelectedCurrencies()
     }
 
     /**
-     * @return the name of the rate; e.g. "AUD", "EUR" or "USD"
+     * @return the last currency that was used as base
      */
-    fun getLastRateFrom(): String? {
+    fun getLastCurrencyFrom(): Currency? {
         return Database(getApplication()).getLastRateFrom()
     }
 
     /**
-     * @return the name of the rate; e.g. "AUD", "EUR" or "USD"
+     * @return the last currency that was used as target
      */
-    fun getLastRateTo(): String? {
+    fun getLastCurrencyTo(): Currency? {
         return Database(getApplication()).getLastRateTo()
     }
 
@@ -254,8 +255,8 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
      */
     private fun saveSelectedCurrencies() {
         Database(getApplication()).saveLastUsedRates(
-            currentCurrencyFrom.value?.code,
-            currentCurrencyTo.value?.code
+            currentCurrencyFrom.value?.currency,
+            currentCurrencyTo.value?.currency
         )
     }
 

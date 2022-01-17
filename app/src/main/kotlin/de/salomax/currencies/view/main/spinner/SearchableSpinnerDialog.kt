@@ -13,6 +13,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
 
@@ -32,7 +33,7 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         adapter.setRates(rates)
     }
 
-    fun setStars(stars: Set<String>?) {
+    fun setStars(stars: Set<Currency>?) {
         adapter.setStars(stars)
     }
 
@@ -51,7 +52,7 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
             dismiss()
         }
         adapter.onStarClicked = {
-            ratesModel.toggleCurrencyStar(it.code)
+            ratesModel.toggleCurrencyStar(it.currency)
         }
 
         // searchView

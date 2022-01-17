@@ -11,6 +11,7 @@ import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 
 @SuppressLint("NotifyDataSetChanged")
@@ -23,7 +24,7 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
 
     private var rates: List<Rate> = listOf()
     private var ratesFiltered: MutableList<Rate> = mutableListOf()
-    private var stars: Set<String> = setOf()
+    private var stars: Set<Currency> = setOf()
 
     private var filterStarred = false
     private var filterText: String? = null
@@ -38,11 +39,11 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
 
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = ratesFiltered[position]
-        holder.ivFlag.setImageDrawable(item.getFlag(context))
-        holder.tvCode.text = item.code
-        holder.tvName.text = item.getName(context)
+        holder.ivFlag.setImageDrawable(item.currency.flag(context))
+        holder.tvCode.text = item.currency.iso4217Alpha()
+        holder.tvName.text = item.currency.fullName(context)
         holder.btnStar.setImageDrawable(
-            if (stars.contains(item.code)) drawableFav
+            if (stars.contains(item.currency)) drawableFav
             else drawableFavEmpty
         )
     }
@@ -59,7 +60,7 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
         update()
     }
 
-    fun setStars(stars: Set<String>?) {
+    fun setStars(stars: Set<Currency>?) {
         if (stars == null)
             this.stars = HashSet()
         else
@@ -83,16 +84,16 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
             .filter { rate ->
                 if (filterText != null)
                     // full name
-                    rate.getName(context)?.contains(filterText!!, ignoreCase = true) == true
+                    rate.currency.fullName(context).contains(filterText!!, ignoreCase = true)
                     // code name
-                    || rate.code.contains(filterText!!, ignoreCase = true)
+                    || rate.currency.iso4217Alpha().contains(filterText!!, ignoreCase = true)
                 else
                     true
             }
             // starred
             .filter { rate ->
                 if (filterStarred)
-                    stars.contains(rate.code)
+                    stars.contains(rate.currency)
                 else
                     true
             }.toMutableList()

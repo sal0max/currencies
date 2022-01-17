@@ -4,6 +4,8 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.map
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.util.*
 
@@ -28,9 +30,9 @@ class Database(context: Context) {
                 editor.clear()
                 // apply new ones
                 editor.putString(keyDate, items.date.toString())
-                editor.putString(keyBaseRate, items.base)
+                editor.putString(keyBaseRate, items.base?.iso4217Alpha())
                 items.rates?.forEach { rate ->
-                    editor.putFloat(rate.code, rate.value)
+                    editor.putFloat(rate.currency.iso4217Alpha(), rate.value)
                 }
                 // persist
                 editor.apply()
@@ -54,19 +56,19 @@ class Database(context: Context) {
     private val keyLastStateTo = "_last_to"
     private val keyIsUpdating = "_isUpdating"
 
-    fun saveLastUsedRates(from: String?, to: String?) {
+    fun saveLastUsedRates(from: Currency?, to: Currency?) {
         prefsLastState.apply {
-            edit().putString(keyLastStateFrom, from).apply()
-            edit().putString(keyLastStateTo, to).apply()
+            edit().putString(keyLastStateFrom, from?.iso4217Alpha()).apply()
+            edit().putString(keyLastStateTo, to?.iso4217Alpha()).apply()
         }
     }
 
-    fun getLastRateFrom(): String? {
-        return prefsLastState.getString(keyLastStateFrom, "USD")
+    fun getLastRateFrom(): Currency? {
+        return Currency.fromString(prefsLastState.getString(keyLastStateFrom, "USD")!!)
     }
 
-    fun getLastRateTo(): String? {
-        return prefsLastState.getString(keyLastStateTo, "EUR")
+    fun getLastRateTo(): Currency? {
+        return Currency.fromString(prefsLastState.getString(keyLastStateTo, "EUR")!!)
     }
 
     fun setUpdating(updating: Boolean) {
@@ -85,33 +87,38 @@ class Database(context: Context) {
     private val keyStars = "_stars"
     private val keyStarredEnabled = "_starredActive"
 
-    fun toggleCurrencyStar(currencyCode: String) {
+    fun toggleCurrencyStar(currency: Currency) {
         prefsStarredCurrencies.apply {
-            if (prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!.contains(currencyCode))
-                removeCurrencyStar(currencyCode)
+            if (prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!.contains(currency.iso4217Alpha()))
+                removeCurrencyStar(currency)
             else
-                starCurrency(currencyCode)
+                starCurrency(currency)
         }
     }
 
-    fun getStarredCurrencies(): SharedPreferenceLiveData<Set<String>> {
+    fun getStarredCurrencies(): LiveData<Set<Currency>> {
         return SharedPreferenceStringSetLiveData(prefsStarredCurrencies, keyStars, HashSet())
+            .map { set ->
+                set.mapNotNull { code ->
+                    Currency.fromString(code)
+                }.toSet()
+            }
     }
 
-    private fun starCurrency(currencyCode: String) {
+    private fun starCurrency(currency: Currency) {
         prefsStarredCurrencies.apply {
             edit().putStringSet(keyStars,
                 prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!
-                    .plus(currencyCode)
+                    .plus(currency.iso4217Alpha())
             ).apply()
         }
     }
 
-    private fun removeCurrencyStar(currencyCode: String) {
+    private fun removeCurrencyStar(currency: Currency) {
         prefsStarredCurrencies.apply {
             edit().putStringSet(keyStars,
                 prefsStarredCurrencies.getStringSet(keyStars, HashSet<String>())!!
-                    .minus(currencyCode)
+                    .minus(currency.iso4217Alpha())
             ).apply()
         }
     }

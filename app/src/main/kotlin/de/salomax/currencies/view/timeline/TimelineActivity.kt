@@ -12,6 +12,7 @@ import androidx.lifecycle.ViewModelProvider
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.util.dpToPx
 import de.salomax.currencies.util.prettyPrint
 import de.salomax.currencies.util.prettyPrintPercent
@@ -24,8 +25,8 @@ import java.time.format.FormatStyle
 class TimelineActivity : BaseActivity() {
 
     // extras
-    private lateinit var argFrom: String
-    private lateinit var argTo: String
+    private lateinit var currencyFrom: Currency
+    private lateinit var currencyTo: Currency
 
     //
     private val formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)
@@ -56,17 +57,17 @@ class TimelineActivity : BaseActivity() {
         }
 
         // what currencies to convert
-        this.argFrom = intent.getStringExtra("ARG_FROM") ?: "EUR"
-        this.argTo = intent.getStringExtra("ARG_TO") ?: "USD"
+        this.currencyFrom = intent.getSerializableExtra("ARG_FROM")?.let { it as Currency } ?: Currency.EUR
+        this.currencyTo = intent.getSerializableExtra("ARG_TO")?.let { it as Currency } ?: Currency.USD
         title = HtmlCompat.fromHtml(
-            getString(R.string.activity_timeline_title, argFrom, argTo),
+            getString(R.string.activity_timeline_title, currencyFrom, currencyTo),
             HtmlCompat.FROM_HTML_MODE_LEGACY
         )
 
         // model
         this.timelineModel = ViewModelProvider(
             this,
-            TimelineViewModel.Factory(this.application, argFrom, argTo)
+            TimelineViewModel.Factory(this.application, currencyFrom, currencyTo)
         ).get(TimelineViewModel::class.java)
 
         // views
@@ -171,7 +172,7 @@ class TimelineActivity : BaseActivity() {
             val rate = it?.value
             if (rate != null) {
                 textPastRateDate.text = it.key.format(formatter)
-                textPastRateSymbol.text = rate.getCurrencySymbol()
+                textPastRateSymbol.text = rate.currency.symbol()
                 textPastRateValue.text = rate.value.prettyPrint(this, 3)
                 // only show the divider if this row is populated
                 // highest chance of it populated is with this "past rate" data
@@ -186,7 +187,7 @@ class TimelineActivity : BaseActivity() {
             val rate = it?.value
             if (rate != null) {
                 textCurrentRateDate.text = it.key.format(formatter)
-                textCurrentRateSymbol.text = rate.getCurrencySymbol()
+                textCurrentRateSymbol.text = rate.currency.symbol()
                 textCurrentRateValue.text = rate.value.prettyPrint(this, 3)
             }
         })
@@ -196,7 +197,7 @@ class TimelineActivity : BaseActivity() {
             populateStat(
                 findViewById(R.id.stats_row_1),
                 getString(R.string.rate_average),
-                it?.getCurrencySymbol(),
+                it?.currency?.symbol(),
                 it?.value,
                 null
             )
@@ -208,7 +209,7 @@ class TimelineActivity : BaseActivity() {
             populateStat(
                 findViewById(R.id.stats_row_2),
                 getString(R.string.rate_min),
-                rate?.getCurrencySymbol(),
+                rate?.currency?.symbol(),
                 rate?.value,
                 it.second
             )
@@ -220,7 +221,7 @@ class TimelineActivity : BaseActivity() {
             populateStat(
                 findViewById(R.id.stats_row_3),
                 getString(R.string.rate_max),
-                rate?.getCurrencySymbol(),
+                rate?.currency?.symbol(),
                 rate?.value,
                 it.second
             )

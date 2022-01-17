@@ -7,6 +7,7 @@ import com.github.kittinunf.result.Result
 import com.github.kittinunf.result.map
 import com.squareup.moshi.*
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.model.Rate
@@ -29,7 +30,7 @@ object ExchangeRatesService {
     suspend fun getRates(apiProvider: ApiProvider): Result<ExchangeRates, FuelError> {
         // Currency conversions are done relatively to each other - so it basically doesn't matter
         // which base is used here. However, Euro is a strong currency, preventing rounding errors.
-        val base = "EUR"
+        val base = Currency.EUR
 
         return Fuel.get(
             when (apiProvider) {
@@ -58,14 +59,14 @@ object ExchangeRatesService {
      * Won't get all the symbols, as it makes a big difference in transferred data size:
      * ~12KB for one symbol to ~840KB for all symbols
      */
-    suspend fun getTimeline(apiProvider: ApiProvider, base: String, symbol: String): Result<Timeline, FuelError> {
+    suspend fun getTimeline(apiProvider: ApiProvider, base: Currency, symbol: Currency): Result<Timeline, FuelError> {
         val endDate = LocalDate.now()
         val startDate = endDate.minusYears(1)
 
         val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
         // can't search for FOK - have to use DKK instead
-        val parameterBase = if (base == "FOK") "DKK" else base
-        val parameterSymbol = if (symbol == "FOK") "DKK" else symbol
+        val parameterBase = if (base == Currency.FOK) "DKK" else base
+        val parameterSymbol = if (symbol == Currency.FOK) "DKK" else symbol
         // call api
         return Fuel.get(
             when (apiProvider) {
@@ -99,9 +100,9 @@ object ExchangeRatesService {
                     .adapter(Timeline::class.java)
             )
         ).map { timeline ->
-            // change back base to original one
             when (base) {
-                "FOK" -> timeline.copy(base = base)
+                // change dkk base back to fok, if needed
+                Currency.FOK -> timeline.copy(base = base.iso4217Alpha())
                 else -> timeline
             }
         }
@@ -112,7 +113,7 @@ object ExchangeRatesService {
      * The API actually returns Map<LocalDate, List<Rate>>>, however, we only want one Rate per day.
      * This converter reduces the list.
      */
-    internal class TimelineRatesToRateAdapter(private val symbol: String): JsonAdapter<Map<LocalDate, Rate>>() {
+    internal class TimelineRatesToRateAdapter(private val symbol: Currency): JsonAdapter<Map<LocalDate, Rate>>() {
 
         @Synchronized
         @FromJson
@@ -126,12 +127,12 @@ object ExchangeRatesService {
                 reader.beginObject()
                 // sometimes there's no rate yet, but an empty body or more than one rate, so check first
                 while (reader.hasNext() && reader.peek() == JsonReader.Token.NAME) {
-                    val name = reader.nextName()
+                    val name = Currency.fromString(reader.nextName())
                     val value = reader.nextDouble().toFloat()
                     rate =
                         // change dkk to fok, when needed
-                        if (name == "DKK" && symbol == "FOK")
-                            Rate("FOK", value)
+                        if (name == Currency.DKK && symbol == Currency.FOK)
+                            Rate(Currency.FOK, value)
                         // make sure that the symbol matches the one we requested
                         else if (name == symbol)
                             Rate(name, value)
@@ -159,7 +160,7 @@ object ExchangeRatesService {
      * Converts currency object to array of currencies.
      * Also removes some unwanted values and adds some wanted ones.
      */
-    internal class RatesAdapter(private val base: String) : JsonAdapter<List<Rate>>() {
+    internal class RatesAdapter(private val base: Currency) : JsonAdapter<List<Rate>>() {
 
         @Synchronized
         @FromJson
@@ -186,17 +187,17 @@ object ExchangeRatesService {
                     && name != "CNH" // Chinese renminbi (Offshore)
                     && name != "CUP" // Cuban peso (moneda nacional)
                 ) {
-                    list.add(Rate(name, value.toFloat()))
+                    Currency.fromString(name)?.let { list.add(Rate(it, value.toFloat())) }
                 }
             }
             reader.endObject()
             // add base - but only if it's missing in the api response!
-            if (list.find { rate -> rate.code == base } == null)
+            if (list.find { rate -> rate.currency == base } == null)
                 list.add(Rate(base, 1f))
             // also add Faroese króna (same as Danish krone) if it isn't already there - I simply like it!
-            if (list.find { it.code == "FOK" } == null)
-                list.find { it.code == "DKK" }?.value?.let { dkk ->
-                    list.add(Rate("FOK", dkk))
+            if (list.find { it.currency == Currency.FOK } == null)
+                list.find { it.currency == Currency.DKK }?.value?.let { dkk ->
+                    list.add(Rate(Currency.FOK, dkk))
                 }
             return list
         }

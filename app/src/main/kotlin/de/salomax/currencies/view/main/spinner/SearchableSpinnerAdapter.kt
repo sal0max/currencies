@@ -8,9 +8,9 @@ import android.widget.ArrayAdapter
 import android.widget.ImageView
 import android.widget.TextView
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 import kotlin.collections.ArrayList
-import kotlin.collections.HashSet
 
 class SearchableSpinnerAdapter(context: Context, resource: Int) :
     ArrayAdapter<Rate>(context, resource) {
@@ -36,8 +36,8 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
 
         // populate
         val item = getItem(position)
-        holder.flag?.setImageDrawable(item.getFlag(context))
-        holder.code?.text = item.code
+        holder.flag?.setImageDrawable(item.currency.flag(context))
+        holder.code?.text = item.currency.iso4217Alpha()
 
         return v!!
     }
@@ -59,13 +59,13 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
     }
 
     /**
-     * @param name e.g. "AUD", "EUR" or "USD"
+     * @param currency e.g. "AUD", "EUR" or "USD"
      * @returns the position of the Rate for the given string.
      */
-    fun getPosition(name: String): Int {
+    fun getPosition(currency: Currency): Int {
         return rates.indexOf(
             rates.find {
-                it.code == name
+                it.currency == currency
             }
         )
     }

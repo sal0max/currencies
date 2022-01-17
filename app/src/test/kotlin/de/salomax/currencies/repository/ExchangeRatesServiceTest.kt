@@ -1,5 +1,6 @@
 package de.salomax.currencies.repository
 
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
 import kotlinx.coroutines.runBlocking
@@ -20,7 +21,7 @@ class ExchangeRatesServiceTest {
         testTimeline(
             ExchangeRatesService.getTimeline(
                 ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST,
-                "EUR", "ISK"
+                Currency.EUR, Currency.ISK
             ).get()
         )
     }
@@ -35,7 +36,7 @@ class ExchangeRatesServiceTest {
         testTimeline(
             ExchangeRatesService.getTimeline(
                 ExchangeRatesService.ApiProvider.FRANKFURTER_APP,
-                "EUR", "ISK"
+                Currency.EUR, Currency.ISK
             ).get()
         )
     }
@@ -50,7 +51,7 @@ class ExchangeRatesServiceTest {
         testTimeline(
             ExchangeRatesService.getTimeline(
                 ExchangeRatesService.ApiProvider.FER_EE,
-                "EUR", "ISK"
+                Currency.EUR, Currency.ISK
             ).get()
         )
     }
@@ -63,24 +64,24 @@ class ExchangeRatesServiceTest {
         assertNotNull(rates!!.rates)
 
         // check for some currencies
-        val eur = rates.rates!!.find { rate -> rate.code == "EUR" }
+        val eur = rates.rates!!.find { rate -> rate.currency == Currency.EUR }
         assertTrue(eur != null)
         assertEquals(1.0f, eur!!.value)
         println(eur)
 
-        val usd = rates.rates!!.find { rate -> rate.code == "USD" }
+        val usd = rates.rates!!.find { rate -> rate.currency == Currency.USD }
         assertTrue(usd != null)
         println(usd)
 
-        val jpy = rates.rates!!.find { rate -> rate.code == "JPY" }
+        val jpy = rates.rates!!.find { rate -> rate.currency == Currency.JPY }
         assertTrue(jpy != null)
         println(jpy)
 
-        val krw = rates.rates!!.find { rate -> rate.code == "KRW" }
+        val krw = rates.rates!!.find { rate -> rate.currency == Currency.KRW }
         assertTrue(krw != null)
         println(krw)
 
-        val chf = rates.rates!!.find { rate -> rate.code == "CHF" }
+        val chf = rates.rates!!.find { rate -> rate.currency == Currency.CHF }
         assertTrue(chf != null)
         println(chf)
 

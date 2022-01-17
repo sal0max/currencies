@@ -6,6 +6,7 @@ import android.util.AttributeSet
 import android.widget.SpinnerAdapter
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.fragment.app.FragmentActivity
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 
 class SearchableSpinner : AppCompatSpinner {
@@ -36,7 +37,7 @@ class SearchableSpinner : AppCompatSpinner {
         spinnerDialog = SearchableSpinnerDialog(context)
         // click listeners
         spinnerDialog.onRateClicked = { rate: Rate, _: Int ->
-            setSelection(adapter.getPosition(rate.code))
+            setSelection(adapter.getPosition(rate.currency))
         }
     }
 
@@ -67,7 +68,7 @@ class SearchableSpinner : AppCompatSpinner {
         spinnerDialog.setRates(rates)
     }
 
-    fun setStars(stars: Set<String>?) {
+    fun setStars(stars: Set<Currency>?) {
         // set in dialog
         spinnerDialog.setStars(stars)
     }

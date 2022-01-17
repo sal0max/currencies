@@ -5,6 +5,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import com.github.kittinunf.fuel.core.FuelError
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
 import kotlinx.coroutines.*
@@ -62,7 +63,7 @@ class ExchangeRatesRepository(private val context: Context) {
     /**
      * Gets and returns the timeline of the last year of the given base and target currency
      */
-    fun getTimeline(base: String, symbol: String): LiveData<Timeline?> {
+    fun getTimeline(base: Currency, symbol: Currency): LiveData<Timeline?> {
         val start = System.currentTimeMillis()
         Database(context).setUpdating(true)
 

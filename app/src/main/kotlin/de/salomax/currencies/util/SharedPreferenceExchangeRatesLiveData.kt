@@ -3,6 +3,7 @@ package de.salomax.currencies.util
 import android.content.SharedPreferences
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import androidx.lifecycle.LiveData
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Rate
 import java.time.LocalDate
@@ -16,12 +17,12 @@ class SharedPreferenceExchangeRatesLiveData(private val sharedPrefs: SharedPrefe
             ExchangeRates(
                 true, // success always true, when serving cached data
                 null, // error message always null, when serving cached data
-                sharedPrefs.getString("_base", null)!!,
+                Currency.fromString(sharedPrefs.getString("_base", null)!!),
                 LocalDate.parse(sharedPrefs.getString("_date", null))!!,
                 sharedPrefs.all.entries
                     .filter { !it.key.startsWith("_") }
                     .sortedBy { it.key }
-                    .map { Rate(it.key!!, (it.value as Float)) }
+                    .mapNotNull { Currency.fromString(it.key!!)?.let { currency -> Rate(currency, (it.value as Float)) } }
                     .toList()
             )
     }

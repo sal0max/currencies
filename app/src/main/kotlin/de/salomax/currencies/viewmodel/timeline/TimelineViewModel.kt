@@ -7,24 +7,25 @@ import de.salomax.currencies.repository.ExchangeRatesRepository
 import androidx.lifecycle.ViewModel
 
 import androidx.lifecycle.ViewModelProvider
+import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 import java.time.LocalDate
 
 class TimelineViewModel(
     ctx: Application,
-    private val base: String,
-    private val symbol: String
+    private val base: Currency,
+    private val target: Currency
 ) : AndroidViewModel(ctx) {
 
     class Factory(
         private val mApplication: Application,
-        private val base: String,
-        private val symbol: String
+        private val base: Currency,
+        private val target: Currency
     ) :
         ViewModelProvider.Factory {
         @Suppress("UNCHECKED_CAST")
         override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-            return TimelineViewModel(mApplication, base, symbol) as T
+            return TimelineViewModel(mApplication, base, target) as T
         }
     }
 
@@ -57,7 +58,7 @@ class TimelineViewModel(
             }
 
             // 1y timeline data - always call api - really hard to find a decent caching strategy
-            addSource(repository.getTimeline(base, symbol)) {
+            addSource(repository.getTimeline(base, target)) {
                 timeline = it
                 update()
             }
@@ -166,7 +167,7 @@ class TimelineViewModel(
                     }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.average()
-                    ?.let { average -> Rate(symbol, average.toFloat()) }
+                    ?.let { average -> Rate(target, average.toFloat()) }
             }
 
             addSource(dbLiveItems) {
@@ -196,7 +197,7 @@ class TimelineViewModel(
                     }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.minOrNull()
-                    ?.let { min -> Rate(symbol, min) }
+                    ?.let { min -> Rate(target, min) }
                 val date = rates
                     ?.filter { map ->
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
@@ -235,7 +236,7 @@ class TimelineViewModel(
                     }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.maxOrNull()
-                    ?.let { max -> Rate(symbol, max) }
+                    ?.let { max -> Rate(target, max) }
                 val date = rates
                     ?.filter { map ->
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
