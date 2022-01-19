@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="decimal_separator">.</string>
-    <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">chuyển tiền tệ</string>
     <string name="last_updated">Tỉ lệ chuyển đổi từ %s</string>
     <string name="today">hôm nay</string>

@@ -14,12 +14,12 @@ import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.util.dpToPx
-import de.salomax.currencies.util.prettyPrint
-import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.viewmodel.timeline.TimelineViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.time.format.DecimalStyle
 import java.time.format.FormatStyle
 
 class TimelineActivity : BaseActivity() {
@@ -29,7 +29,10 @@ class TimelineActivity : BaseActivity() {
     private lateinit var currencyTo: Currency
 
     //
-    private val formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)
+    private val formatter = DateTimeFormatter
+        .ofLocalizedDate(FormatStyle.MEDIUM)
+        .withDecimalStyle(DecimalStyle.ofDefaultLocale())
+
     private lateinit var timelineModel: TimelineViewModel
 
     // views
@@ -155,7 +158,7 @@ class TimelineActivity : BaseActivity() {
 
         // difference in percent
         timelineModel.getRatesDifferencePercent().observe(this, {
-            textRateDifference.text = it?.prettyPrintPercent(this, 2)
+            textRateDifference.text = it?.toHumanReadableNumber(2, true, "%")
             if (it != null) {
                 textRateDifference.setTextColor(
                     ContextCompat.getColor(
@@ -173,7 +176,7 @@ class TimelineActivity : BaseActivity() {
             if (rate != null) {
                 textPastRateDate.text = it.key.format(formatter)
                 textPastRateSymbol.text = rate.currency.symbol()
-                textPastRateValue.text = rate.value.prettyPrint(this, 3)
+                textPastRateValue.text = rate.value.toHumanReadableNumber(3)
                 // only show the divider if this row is populated
                 // highest chance of it populated is with this "past rate" data
                 divider.visibility = View.VISIBLE
@@ -188,7 +191,7 @@ class TimelineActivity : BaseActivity() {
             if (rate != null) {
                 textCurrentRateDate.text = it.key.format(formatter)
                 textCurrentRateSymbol.text = rate.currency.symbol()
-                textCurrentRateValue.text = rate.value.prettyPrint(this, 3)
+                textCurrentRateValue.text = rate.value.toHumanReadableNumber(3)
             }
         })
 
@@ -237,7 +240,7 @@ class TimelineActivity : BaseActivity() {
 
         parent.findViewById<TextView>(R.id.text).text = title
         parent.findViewById<TextView>(R.id.text2).text = symbol
-        parent.findViewById<TextView>(R.id.text3).text = value?.prettyPrint(this, 3)
+        parent.findViewById<TextView>(R.id.text3).text = value?.toHumanReadableNumber(3)
         parent.findViewById<TextView>(R.id.text4).text = date?.format(formatter)
     }
 

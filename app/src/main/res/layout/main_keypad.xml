@@ -164,7 +164,7 @@
         android:layout_columnWeight="1"
         android:background="?selectableItemBackgroundBorderless"
         android:onClick="decimalEvent"
-        android:text="@string/decimal_separator"
+        android:text="."
         android:textAppearance="@style/AppTheme.TextAppearance.Keypad" />
 
     <ImageButton

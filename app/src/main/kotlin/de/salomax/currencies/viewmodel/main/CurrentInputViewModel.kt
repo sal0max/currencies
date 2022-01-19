@@ -1,100 +1,183 @@
 package de.salomax.currencies.viewmodel.main
 
 import android.app.Application
+import android.text.BidiFormatter
 import androidx.lifecycle.*
-import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.util.getDecimalSeparator
+import de.salomax.currencies.util.toHumanReadableNumber
+import de.salomax.currencies.util.toLocalizedNumeral
+import de.salomax.currencies.util.toWesternNumeral
 import org.mariuszgromada.math.mxparser.Expression
-import java.lang.StringBuilder
-import java.math.RoundingMode
 
-class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx) {
+class CurrentInputViewModel(app: Application) : AndroidViewModel(app) {
 
-    /*
-     * calculations ================================================================================
+    @Suppress("RemoveExplicitTypeArguments")
+    private val currentInput = MutableLiveData<String>("0")
+    private val currentCalculationInput = MutableLiveData<String?>(null)
+    private val currentBaseRate = MutableLiveData<Rate>()
+    private val currentDestinationRate = MutableLiveData<Rate>()
+
+    /**
+     * the total base value
      */
+    private fun getCurrentBaseValue(): LiveData<String?> {
+        return MediatorLiveData<String?>().apply {
+            var input: String? = null
+            var calculatorInput: String? = null
 
-    private fun isCalculating(): Boolean {
-        return !currentCalculation.value.isNullOrBlank()
-    }
+            // Turns e.g. "1 + 2 × 4" to "9"
+            fun String.evaluateMathExpression(): String? {
+                // change nice operators to proper computer operators
+                var s = this
+                    .replace(" ", "")
+                    .replace("\u2212", "-")
+                    .replace("\u00D7", "*")
+                    .replace("\u00F7", "/")
+                // fill, if last character is an operator
+                when (s.trim().last()) {
+                    '/' -> s += "1"
+                    '*' -> s += "1"
+                    '+' -> s += "0"
+                    '-' -> s += "0"
+                    '.' -> s += "0"
+                }
+                // calculate
+                val result = Expression(s.toWesternNumeral()).calculate()
+                return if (result.isNaN())
+                    '0'.toLocalizedNumeral()
+                else
+                    result.toBigDecimal().toPlainString()
+            }
 
-    private val currentValue: MutableLiveData<String> by lazy {
-        MutableLiveData<String>("0")
-    }
+            fun update() {
+                if (isInCalculationMode())
+                    this.value = calculatorInput
+                else
+                    this.value = input
+            }
 
-    private val currentValueConverted: MutableLiveData<Double> by lazy {
-        MutableLiveData<Double>(0.0)
-    }
+            addSource(currentInput) {
+                input = it
+                update()
+            }
 
-    private val currentCalculation: MutableLiveData<String?> by lazy {
-        MutableLiveData<String?>(null)
-    }
-
-    fun getCurrentInput(): LiveData<String> {
-        return Transformations.map(currentValue) {
-            it.humanReadable(ctx.getString(R.string.thousands_separator)[0], ctx.getString(R.string.decimal_separator)[0])
+            addSource(currentCalculationInput) {
+                calculatorInput = it?.evaluateMathExpression()
+                update()
+            }
         }
     }
 
-    fun getCurrentInputConverted(): LiveData<String> {
+    /**
+     * the total base value, converted to double (internal is string)
+     */
+    fun getCurrentBaseValueAsNumber(): LiveData<Double> {
+        return Transformations.map(getCurrentBaseValue()) {
+            it?.toBigDecimal()?.toDouble() ?: 0.0
+        }
+    }
+
+    /**
+     * the nicely formatted, total base value
+     */
+    fun getCurrentBaseValueFormatted(): LiveData<String> {
+        return Transformations.map(getCurrentBaseValue()) {
+            it?.toHumanReadableNumber(trim = isInCalculationMode()) ?: '0'.toLocalizedNumeral()
+        }
+    }
+
+    /**
+     * the nicely formatted, calculation string: e.g. 4 + 2.2 - 4 / 2
+     */
+    fun getCalculationInputFormatted(): LiveData<String?> {
+        return Transformations.map(currentCalculationInput) {
+            BidiFormatter.getInstance().unicodeWrap(it?.toLocalizedNumeral()?.replace('.', getDecimalSeparator()))
+        }
+    }
+
+    /**
+     * the nicely formatted, total destination value
+     */
+    fun getResultFormatted(): LiveData<String> {
         return MediatorLiveData<String>().apply {
+            var baseValue: Double? = null
+            var baseRate: Rate? = null
+            var destinationRate: Rate? = null
             var fee: Float? = null
             var feeEnabled: Boolean? = null
-            var currentValue: Double? = null
 
-            fun update() {
-                if (fee != null && feeEnabled != null && currentValue != null)
-                    this.value =
-                        if (!feeEnabled!!) {
-                            currentValue
-                        } else {
-                            currentValue!! + (currentValue!! * (fee!! / 100))
-                        }.toString()
-                            .scientificToNatural()
-                            .humanReadable(
-                                ctx.getString(R.string.thousands_separator)[0],
-                                ctx.getString(R.string.decimal_separator)[0]
-                            )
+            fun calculateResult() {
+                if (fee != null && feeEnabled != null && baseValue != null && baseRate != null && destinationRate != null) {
+                    // calculate destination value
+                    this.value = baseValue!!.div(baseRate!!.value).times(destinationRate!!.value)
+                        .let {
+                            // add fee, if enabled
+                            if (feeEnabled!!) {
+                                it + (it * (fee!! / 100))
+                            } else {
+                                it
+                            }
+                        }
+                        // format nicely to two decimal places
+                        .toString()
+                        .toHumanReadableNumber(decimalPlaces = 2, trim = true)
+                }
             }
 
-            addSource(currentValueConverted) {
-                currentValue = it
-                update()
+            addSource(getCurrentBaseValue()) {
+                baseValue = it?.toBigDecimal()?.toDouble() ?: 0.0
+                calculateResult()
+            }
+
+            addSource(currentBaseRate) {
+                baseRate = it
+                calculateResult()
+            }
+
+            addSource(currentDestinationRate) {
+                destinationRate = it
+                calculateResult()
             }
 
             addSource(getFee()) {
                 fee = it
-                update()
+                calculateResult()
             }
 
-            addSource(getFeeEnabled()) {
+            addSource(isFeeEnabled()) {
                 feeEnabled = it
-                update()
+                calculateResult()
             }
         }
     }
 
-    fun getCalculationInput(): LiveData<String?> {
-        return Transformations.map(currentCalculation) {
-            it?.replace('.', ctx.getString(R.string.decimal_separator)[0])
+    /**
+     * the currency that's selected as base
+     */
+    fun getBaseCurrency(): LiveData<Currency> {
+        return Transformations.map(currentBaseRate) {
+            it.currency
         }
     }
 
-    fun getCurrencyFrom(): LiveData<String?> {
-        return Transformations.map(currentCurrencyFrom) {
-            it.currency.symbol()
+    /**
+     * the currency that's selected as destination
+     */
+    fun getDestinationCurrency(): LiveData<Currency> {
+        return Transformations.map(currentDestinationRate) {
+            it.currency
         }
     }
 
-    fun getCurrencyTo(): LiveData<String?> {
-        return Transformations.map(currentCurrencyTo) {
-            it.currency.symbol()
-        }
-    }
 
-    fun getFeeEnabled(): LiveData<Boolean> {
+    /*
+     * fee *****************************************************************************************
+     */
+
+    fun isFeeEnabled(): LiveData<Boolean> {
         return Database(getApplication()).isFeeEnabled()
     }
 
@@ -102,67 +185,69 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
         return Database(getApplication()).getFee()
     }
 
+
+    /*
+     * user input **********************************************************************************
+     */
+
     fun addNumber(value: String) {
         // in calculation mode: add to upper row
-        if (isCalculating()) {
+        if (isInCalculationMode()) {
             // last number is "0"
-            if (currentCalculation.value!!.split(" ").last().trim() == "0") {
+            if (currentCalculationInput.value!!.split(" ").last().trim() == "0") {
                 // replace "0" with any other number
                 if (value != "0")
-                    currentCalculation.value = currentCalculation.value?.trim()?.dropLast(1)?.plus(value)
+                    currentCalculationInput.value = currentCalculationInput.value?.trim()?.dropLast(1)?.plus(value)
             } else
-                currentCalculation.value += value
+                currentCalculationInput.value += value
         }
-        // add to lower row
+        // else: add to lower row
         else {
-            currentValue.value =
-                if (currentValue.value == "0") value
-                else currentValue.value.plus(value)
+            currentInput.value =
+                if (currentInput.value == "0") value
+                else currentInput.value.plus(value)
         }
-        recalculate()
     }
 
     fun addDecimal() {
         // in calculation mode: add to upper row
-        if (isCalculating()) {
-            if (!currentCalculation.value!!.substringAfterLast(" ").contains(".")) {
+        if (isInCalculationMode()) {
+            if (!currentCalculationInput.value!!.substringAfterLast(" ").contains(".")) {
                 // if last char is not a number: add 0
-                if (currentCalculation.value!!.trim().last().isDigit().not())
-                    currentCalculation.value += "0"
-                currentCalculation.value += "."
+                if (currentCalculationInput.value!!.trim().last().isDigit().not())
+                    currentCalculationInput.value += "0"
+                currentCalculationInput.value += "."
             }
         }
         // add to lower row
         else
-            if (!currentValue.value!!.contains("."))
-                currentValue.value += "."
+            if (!currentInput.value!!.contains("."))
+                currentInput.value += "."
     }
 
     fun delete() {
         // in calculation mode: delete from upper row
-        if (isCalculating()) {
-            currentCalculation.value = currentCalculation.value!!.trim().dropLast(1)
+        if (isInCalculationMode()) {
+            currentCalculationInput.value = currentCalculationInput.value!!.trim().dropLast(1)
             // if last char is a number: trim!
-            if (currentCalculation.value!!.trim().last().isDigit())
-                currentCalculation.value = currentCalculation.value!!.trim()
+            if (currentCalculationInput.value!!.trim().last().isDigit())
+                currentCalculationInput.value = currentCalculationInput.value!!.trim()
             // if only a number is left without an operator, delete it completely
-            if (!currentCalculation.value!!.contains("[\\u002B\\u2212\\u00D7\\u00F7]".toRegex()))
-                currentCalculation.value = null
+            if (!currentCalculationInput.value!!.contains("[\\u002B\\u2212\\u00D7\\u00F7]".toRegex()))
+                currentCalculationInput.value = null
         }
         // delete from lower row
         else {
-            if (currentValue.value!!.length > 1)
-                currentValue.value = currentValue.value?.dropLast(1)
+            if (currentInput.value!!.length > 1)
+                currentInput.value = currentInput.value?.dropLast(1)
             else
                 clear()
         }
-        recalculate()
     }
 
     fun clear() {
-        currentValue.value = "0"
-        currentCalculation.value = null
-        recalculate()
+        currentInput.value = "0"
+        currentCalculationInput.value = null
     }
 
     fun addition() {
@@ -182,53 +267,45 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
     }
 
     private fun addOperator(operator: String) {
+
+        fun Char.isOperator(): Boolean {
+            return when (this) {
+                '\u002B' -> true // +
+                '\u2212' -> true // -
+                '\u00D7' -> true // *
+                '\u00F7' -> true // /
+                else -> false
+            }
+        }
+
         // in calculation mode & already has operator at end position: exchange it!
-        if (isCalculating() && currentCalculation.value!!.trim().last().isOperator())
-            currentCalculation.value = currentCalculation.value?.trim()?.dropLast(1) + "$operator "
+        if (isInCalculationMode() && currentCalculationInput.value!!.trim().last().isOperator())
+            currentCalculationInput.value = currentCalculationInput.value?.trim()?.dropLast(1) + "$operator "
         // in calculation mode & last position is '.' -> remove it and add operator
-        else if (isCalculating() && currentCalculation.value!!.trim().last() == '.')
-            currentCalculation.value = currentCalculation.value?.trim()?.dropLast(1) + " $operator "
+        else if (isInCalculationMode() && currentCalculationInput.value!!.trim().last() == '.')
+            currentCalculationInput.value = currentCalculationInput.value?.trim()?.dropLast(1) + " $operator "
         else {
             // switch to calculation mode if necessary
-            if (!isCalculating())
-                currentCalculation.value = currentValue.value
+            if (!isInCalculationMode())
+                currentCalculationInput.value = currentInput.value
             // add operator
-            currentCalculation.value = currentCalculation.value?.trim().plus(" $operator ")
+            currentCalculationInput.value = currentCalculationInput.value?.trim().plus(" $operator ")
         }
     }
 
     /*
-     * selected currencies =========================================================================
+     * selected currencies *************************************************************************
      */
 
-    private fun Char.isOperator(): Boolean {
-        return when (this) {
-            '\u002B' -> true // +
-            '\u2212' -> true // -
-            '\u00D7' -> true // *
-            '\u00F7' -> true // /
-            else -> false
-        }
-    }
-
-    private val currentCurrencyFrom: MutableLiveData<Rate> by lazy {
-        MutableLiveData<Rate>()
-    }
-    private val currentCurrencyTo: MutableLiveData<Rate> by lazy {
-        MutableLiveData<Rate>()
-    }
-
-    fun setRateFrom(rate: Rate) {
-        currentCurrencyFrom.value = rate
-        recalculate()
+    fun setBaseRate(rate: Rate) {
+        currentBaseRate.value = rate
         saveSelectedCurrencies()
         // hack: refresh currency symbol
-        currentValue.value = currentValue.value
+        currentInput.value = currentInput.value
     }
 
-    fun setRateTo(rate: Rate) {
-        currentCurrencyTo.value = rate
-        recalculate()
+    fun setDestinationRate(rate: Rate) {
+        currentDestinationRate.value = rate
         saveSelectedCurrencies()
     }
 
@@ -250,92 +327,18 @@ class CurrentInputViewModel(private val ctx: Application) : AndroidViewModel(ctx
      * helpers =====================================================================================
      */
 
+    private fun isInCalculationMode(): Boolean {
+        return currentCalculationInput.value.isNullOrBlank().not()
+    }
+
     /**
      * Saves currencyFrom and currencyTo to the database in order to restore them after restart
      */
     private fun saveSelectedCurrencies() {
         Database(getApplication()).saveLastUsedRates(
-            currentCurrencyFrom.value?.currency,
-            currentCurrencyTo.value?.currency
+            currentBaseRate.value?.currency,
+            currentDestinationRate.value?.currency
         )
     }
 
-    /**
-     * Updates all numbers: currencyTo (if in calculation mode) and currencyFrom
-     */
-    private fun recalculate() {
-        if (isCalculating()) {
-            currentValue.value = currentCalculation.value!!
-                .evaluateMathExpression()
-                .scientificToNatural()
-        }
-        val rateFrom = currentCurrencyFrom.value?.value
-        val rateTo = currentCurrencyTo.value?.value
-        if (rateFrom != null && rateTo != null)
-            currentValueConverted.value = currentValue.value
-                ?.toDouble()
-                ?.div(rateFrom)
-                ?.times(rateTo)
-    }
-
-}
-
-/**
- * Turns e.g. "1 + 2 × 4" to "9"
- */
-fun String.evaluateMathExpression(): String {
-    // change nice operators to proper computer operators
-    var s = this
-        .replace(" ", "")
-        .replace("\u2212", "-")
-        .replace("\u00D7", "*")
-        .replace("\u00F7", "/")
-    // fill, if last character is an operator
-    when {
-        s.trim().last() == '/' -> s += '1'
-        s.trim().last() == '*' -> s += '1'
-        s.trim().last() == '+' -> s += '0'
-        s.trim().last() == '-' -> s += '0'
-        s.trim().last() == '.' -> s += '0'
-    }
-    // calculate
-    return Expression(s).calculate().toString()
-}
-
-/**
- * Prevents scientific notation (123456789.123456789 instead of 1.23456789123456789E8).
- * Also rounds to maximal two decimal places
- */
-fun String.scientificToNatural(): String {
-    return if (this == "NaN")
-        "0"
-    else this
-        .toBigDecimal() // prevents scientific
-        .setScale(2, RoundingMode.HALF_EVEN) // round with bankers' rounding
-        .toPlainString()
-        .replace("0$".toRegex(), "")
-        .replace("\\.0$".toRegex(), "")
-}
-
-/**
- * Changes "12345678.12" to "12 345 678.12"
- */
-fun String.humanReadable(thousandsSeparator: Char, decimalSeparator: Char): String {
-
-    fun String.groupNumbers(): String {
-        val sb = StringBuilder(this.length * 2)
-        for ((i, c) in this.reversed().withIndex()) {
-            if (i % 3 == 0 && i != 0)
-                sb.append(thousandsSeparator)
-            sb.append(c)
-        }
-        return sb.toString().reversed()
-            .replace("-$thousandsSeparator", "-") // (- 278,57 -> -258,57) or (-.278,57 -> -258,57)
-    }
-
-    return if (this.contains('.')) {
-        val split = this.split('.')
-        split[0].groupNumbers() + decimalSeparator + split[1]
-    } else
-        this.groupNumbers()
 }

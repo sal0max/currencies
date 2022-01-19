@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="decimal_separator">,</string>
-    <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">toggle les devises</string>
     <string name="last_updated">Taux de change de %s</string>
     <string name="today">aujourd\'hui</string>

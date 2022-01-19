@@ -16,7 +16,8 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
-import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.util.getDecimalSeparator
+import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.view.main.spinner.SearchableSpinner
 import de.salomax.currencies.view.main.spinner.SearchableSpinnerAdapter
@@ -26,6 +27,7 @@ import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
+import java.time.format.DecimalStyle
 import java.time.format.FormatStyle
 
 class MainActivity : BaseActivity() {
@@ -53,6 +55,16 @@ class MainActivity : BaseActivity() {
         // general layout
         setContentView(R.layout.activity_main)
         title = null
+
+        // apply localized numbers to the buttons
+        findViewById<Button>(R.id.btn_decimal).text = getDecimalSeparator().toString()
+        listOf(
+            R.id.btn_0, R.id.btn_1, R.id.btn_2, R.id.btn_3, R.id.btn_4,
+            R.id.btn_5, R.id.btn_6, R.id.btn_7, R.id.btn_8, R.id.btn_9
+        ).forEach {
+            val button = findViewById<Button>(it)
+            button.text = String.format("%d", button.text.toString().toInt())
+        }
 
         // model
         this.ratesModel = ViewModelProvider(this).get(ExchangeRatesViewModel::class.java)
@@ -188,7 +200,11 @@ class MainActivity : BaseActivity() {
             // date
             it?.let {
                 val date = it.date
-                val dateString = date?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+                val dateString = date?.format(
+                    DateTimeFormatter
+                        .ofLocalizedDate(FormatStyle.SHORT)
+                        .withDecimalStyle(DecimalStyle.ofDefaultLocale())
+                )
 
                 tvDate.text = getString(R.string.last_updated, dateString)
                 // today
@@ -251,28 +267,28 @@ class MainActivity : BaseActivity() {
         })
 
         // input changed
-        inputModel.getCurrentInput().observe(this, {
+        inputModel.getCurrentBaseValueFormatted().observe(this, {
             tvFrom.text = it
         })
-        inputModel.getCurrentInputConverted().observe(this, {
+        inputModel.getResultFormatted().observe(this, {
             tvTo.text = it
         })
-        inputModel.getCalculationInput().observe(this, {
+        inputModel.getCalculationInputFormatted().observe(this, {
             tvCalculations.text = it
         })
-        inputModel.getCurrencyFrom().observe(this, {
-            tvCurrencySymbolFrom.text = it
+        inputModel.getBaseCurrency().observe(this, {
+            tvCurrencySymbolFrom.text = it.symbol()
         })
-        inputModel.getCurrencyTo().observe(this, {
-            tvCurrencySymbolTo.text = it
+        inputModel.getDestinationCurrency().observe(this, {
+            tvCurrencySymbolTo.text = it.symbol()
         })
 
         // fee changed
-        inputModel.getFeeEnabled().observe(this, {
+        inputModel.isFeeEnabled().observe(this, {
             tvFee.visibility = if (it) View.VISIBLE else View.GONE
         })
         inputModel.getFee().observe(this, {
-            tvFee.text = it.prettyPrintPercent(this)
+            tvFee.text = it.toHumanReadableNumber(showPositiveSign = true, suffix = "%")
             tvFee.setTextColor(
                 if (it >= 0) getColor(android.R.color.holo_red_light)
                 else getColor(R.color.dollarBill)

@@ -3,9 +3,6 @@
     <string name="app_name" translatable="false">Currencies</string>
     <string name="app_name_alt" translatable="false">Sorten</string>
 
-    <string name="decimal_separator">.</string>
-    <string name="thousands_separator">\u2009</string>
-
     <string name="desc_toggle_currencies">toggle currencies</string>
     <string name="last_updated">Exchange rate from %s</string>
     <string name="today">today</string>
