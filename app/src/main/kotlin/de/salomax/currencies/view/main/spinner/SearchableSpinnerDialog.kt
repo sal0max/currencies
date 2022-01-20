@@ -37,6 +37,17 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         adapter.setStars(stars)
     }
 
+    //  conversion preview
+    fun setPreviewConversionEnabled(enabled: Boolean) {
+        adapter.setPreviewConversionEnabled(enabled)
+    }
+    fun setCurrentRate(currentRate: Rate) {
+        adapter.setCurrentRate(currentRate)
+    }
+    fun setCurrentSum(currentSum: Double) {
+        adapter.setCurrentSum(currentSum)
+    }
+
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val layoutInflater = LayoutInflater.from(activity)
         val rootView = layoutInflater.inflate(R.layout.searchable_spinner_dialog, null)

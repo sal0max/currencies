@@ -10,6 +10,12 @@
             android:key="@string/fee_key"
             android:title="@string/fee_title"
             tools:summary="2.0 %" />
+
+        <SwitchPreference
+            app:defaultValue="false"
+            android:key="@string/previewConversion_key"
+            android:title="@string/previewConversion_title"
+            android:summary="@string/previewConversion_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

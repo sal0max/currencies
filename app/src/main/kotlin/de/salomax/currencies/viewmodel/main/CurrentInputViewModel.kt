@@ -99,10 +99,12 @@ class CurrentInputViewModel(val app: Application) : AndroidViewModel(app) {
         }
     }
 
+
+
     /**
-     * the nicely formatted, total destination value
+     * the total destination value
      */
-    fun getResultFormatted(): LiveData<String> {
+    private fun getResult(): LiveData<String> {
         return MediatorLiveData<String>().apply {
             var baseValue: Double? = null
             var baseRate: Rate? = null
@@ -123,9 +125,7 @@ class CurrentInputViewModel(val app: Application) : AndroidViewModel(app) {
                                 it
                             }
                         }
-                        // format nicely to two decimal places
                         .toString()
-                        .toHumanReadableNumber(app, decimalPlaces = 2, trim = true)
                 }
             }
 
@@ -153,6 +153,28 @@ class CurrentInputViewModel(val app: Application) : AndroidViewModel(app) {
                 feeEnabled = it
                 calculateResult()
             }
+        }
+    }
+
+    /**
+     * the total destination value, converted to double (internal is string)
+     */
+    fun getResultAsNumber(): LiveData<Double> {
+        return Transformations.map(getResult()) {
+            it?.toBigDecimal()?.toDouble() ?: 0.0
+        }
+    }
+
+    /**
+     * the nicely formatted, total destination value
+     */
+    fun getResultFormatted(): LiveData<String> {
+        return Transformations.map(getResult()) {
+            it?.toHumanReadableNumber(
+                app,
+                trim = true,
+                decimalPlaces = 2
+            )
         }
     }
 

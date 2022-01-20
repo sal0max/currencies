@@ -4,6 +4,8 @@
     <string name="category_settings">Haupteinstellungen</string>
     <string name="fee_title">Fremdwährungsgebühr</string>
     <string name="fee_summary">In den Konditionen mancher Kreditkarten sind Gebühren für den Einsatz im Ausland bzw. mit Fremdwährungen enthalten. Hier kannst du die Gebühr deiner Karte eintragen. Sie wird dann auf alle Umrechnungen aufgeschlagen, damit du weißt, wie viel du <i>wirklich</i> zahlst.</string>
+    <string name="previewConversion_title">Umrechnungsvorschau</string>
+    <string name="previewConversion_summary">Im Währungsauswahldialog die aktuelle Umrechnung für jeden Kurs anzeigen.</string>
     <string name="category_appearance">Aussehen</string>
     <string name="theme_title">Design</string>
     <string name="theme_option_light">Hell</string>

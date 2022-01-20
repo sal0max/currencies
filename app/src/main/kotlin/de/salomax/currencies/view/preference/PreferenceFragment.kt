@@ -34,6 +34,14 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
         }
 
+        // conversion preview
+        findPreference<SwitchPreference>(getString(R.string.previewConversion_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setPreviewConversionEnabled(newValue.toString().toBoolean())
+                true
+            }
+        }
+
         // pure black
         findPreference<SwitchPreference>(getString(R.string.pure_black_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->

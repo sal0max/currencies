@@ -81,4 +81,12 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
         Database(app).setFeeEnabled(enabled)
     }
 
+    fun isPreviewConversionEnabled(): LiveData<Boolean> {
+        return Database(app).isPreviewConversionEnabled()
+    }
+
+    fun setPreviewConversionEnabled(enabled: Boolean) {
+        Database(app).setPreviewConversionEnabled(enabled)
+    }
+
 }

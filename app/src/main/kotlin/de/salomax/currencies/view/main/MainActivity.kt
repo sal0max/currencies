@@ -24,6 +24,7 @@ import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.view.timeline.TimelineActivity
 import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
 import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
+import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -32,6 +33,7 @@ class MainActivity : BaseActivity() {
 
     private lateinit var ratesModel: ExchangeRatesViewModel
     private lateinit var inputModel: CurrentInputViewModel
+    private lateinit var preferenceModel: PreferenceViewModel
 
     private lateinit var refreshIndicator: LinearProgressIndicator
     private lateinit var swipeRefresh: SwipeRefreshLayout
@@ -57,6 +59,7 @@ class MainActivity : BaseActivity() {
         // model
         this.ratesModel = ViewModelProvider(this).get(ExchangeRatesViewModel::class.java)
         this.inputModel = ViewModelProvider(this).get(CurrentInputViewModel::class.java)
+        this.preferenceModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
         // views
         this.refreshIndicator = findViewById(R.id.refreshIndicator)
@@ -142,17 +145,17 @@ class MainActivity : BaseActivity() {
         spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                inputModel.setBaseRate(
-                    (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
-                )
+                val rate = (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
+                inputModel.setBaseRate(rate)
+                spinnerTo.setCurrentRate(rate)
             }
         }
         spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                inputModel.setDestinationRate(
-                    (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
-                )
+                val rate = (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
+                inputModel.setDestinationRate(rate)
+                spinnerFrom.setCurrentRate(rate)
             }
         }
 
@@ -279,6 +282,18 @@ class MainActivity : BaseActivity() {
                 if (it >= 0) getColor(android.R.color.holo_red_light)
                 else getColor(R.color.dollarBill)
             )
+        })
+
+        // conversion preview
+        preferenceModel.isPreviewConversionEnabled().observe(this, {
+            spinnerFrom.setPreviewConversionEnabled(it)
+            spinnerTo.setPreviewConversionEnabled(it)
+        })
+        inputModel.getCurrentBaseValueAsNumber().observe(this, {
+            spinnerTo.setCurrentSum(it)
+        })
+        inputModel.getResultAsNumber().observe(this, {
+            spinnerFrom.setCurrentSum(it)
         })
     }
 

@@ -145,6 +145,7 @@ class Database(context: Context) {
     private val keyPureBlackEnabled = "_pureBlackEnabled"
     private val keyFeeEnabled = "_feeEnabled"
     private val keyFeeValue = "_fee"
+    private val keyPreviewConversionEnabled = "_previewConversionEnabled"
 
     /* api */
 
@@ -209,6 +210,18 @@ class Database(context: Context) {
 
     fun getFee(): LiveData<Float> {
         return SharedPreferenceFloatLiveData(prefs, keyFeeValue, 2.2f)
+    }
+
+    /* preview conversion */
+
+    fun setPreviewConversionEnabled(enabled: Boolean) {
+        prefs.apply {
+            edit().putBoolean(keyPreviewConversionEnabled, enabled).apply()
+        }
+    }
+
+    fun isPreviewConversionEnabled(): LiveData<Boolean> {
+        return SharedPreferenceBooleanLiveData(prefs, keyPreviewConversionEnabled, false)
     }
 
 }

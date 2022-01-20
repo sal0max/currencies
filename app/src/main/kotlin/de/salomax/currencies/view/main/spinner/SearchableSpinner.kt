@@ -73,6 +73,19 @@ class SearchableSpinner : AppCompatSpinner {
         spinnerDialog.setStars(stars)
     }
 
+    //  conversion preview
+    fun setPreviewConversionEnabled(enabled: Boolean) {
+        spinnerDialog.setPreviewConversionEnabled(enabled)
+    }
+    fun setCurrentRate(currentRate: Rate) {
+        // set in dialog
+        spinnerDialog.setCurrentRate(currentRate)
+    }
+    fun setCurrentSum(currentSum: Double) {
+        // set in dialog
+        spinnerDialog.setCurrentSum(currentSum)
+    }
+
     private fun findActivity(context: Context?): FragmentActivity? {
         return when (context) {
             is FragmentActivity -> context

@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.util.toHumanReadableNumber
 
 @SuppressLint("NotifyDataSetChanged")
 class SearchableSpinnerDialogAdapter(private val context: Context) :
@@ -26,6 +27,10 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
     private var ratesFiltered: MutableList<Rate> = mutableListOf()
     private var stars: Set<Currency> = setOf()
 
+    private var isPreviewConversionEnabled: Boolean = false
+    private var currentBaseRate: Rate? = null
+    private var currentBaseSum: Double = 1.0
+
     private var filterStarred = false
     private var filterText: String? = null
 
@@ -37,11 +42,37 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
         return ViewHolder(view)
     }
 
+    @SuppressLint("SetTextI18n")
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val item = ratesFiltered[position]
+        // flag
         holder.ivFlag.setImageDrawable(item.currency.flag(context))
+        // ISO 4217 currency code ("USD")
         holder.tvCode.text = item.currency.iso4217Alpha()
+        // full name ("US Dollar")
         holder.tvName.text = item.currency.fullName(context)
+        // conversion preview
+        if (isPreviewConversionEnabled && currentBaseRate != null) {
+            if (holder.tvRate.visibility == View.GONE)
+                holder.tvRate.visibility = View.VISIBLE
+            // source
+            val sourceSymbol = currentBaseRate!!.currency.symbol() ?: ""
+            val source = (if (currentBaseSum == 0.0) 1.0 else currentBaseSum)
+                .toString()
+                .toHumanReadableNumber(context, decimalPlaces = 2, trim = true)
+            // destination
+            val destinationSymbol = item.currency.symbol() ?: ""
+            val destination = (if (currentBaseSum == 0.0) 1.0 else currentBaseSum)
+                .div(currentBaseRate!!.value)
+                .times(item.value)
+                .toString()
+                .toHumanReadableNumber(context, decimalPlaces = 2, trim = true)
+            // set text
+            holder.tvRate.text = "$sourceSymbol $source = $destinationSymbol $destination".replace("\u200F", "").trim()
+        } else {
+            if (holder.tvRate.visibility != View.GONE)
+                holder.tvRate.visibility = View.GONE
+        }
         holder.btnStar.setImageDrawable(
             if (stars.contains(item.currency)) drawableFav
             else drawableFavEmpty
@@ -78,6 +109,20 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
         update()
     }
 
+    //  conversion preview
+    fun setPreviewConversionEnabled(enabled: Boolean) {
+        isPreviewConversionEnabled = enabled
+        update()
+    }
+    fun setCurrentRate(currentRate: Rate) {
+        currentBaseRate = currentRate
+        update()
+    }
+    fun setCurrentSum(currentSum: Double) {
+        currentBaseSum = currentSum
+        update()
+    }
+
     private fun update() {
         ratesFiltered = rates
             // find all rates based on both their code name or their full name
@@ -111,6 +156,7 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
         val ivFlag: ImageView = itemView.findViewById(R.id.image)
         val tvCode: TextView = itemView.findViewById(R.id.text2)
         val tvName: TextView = itemView.findViewById(R.id.text)
+        val tvRate: TextView = itemView.findViewById(R.id.text3)
         val btnStar: ImageButton = itemView.findViewById(R.id.btn_fav)
 
         init {
