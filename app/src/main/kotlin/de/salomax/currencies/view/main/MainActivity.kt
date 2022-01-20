@@ -16,7 +16,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
-import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.view.main.spinner.SearchableSpinner
 import de.salomax.currencies.view.main.spinner.SearchableSpinnerAdapter
@@ -142,7 +142,7 @@ class MainActivity : BaseActivity() {
         spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                inputModel.setRateFrom(
+                inputModel.setBaseRate(
                     (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
@@ -150,7 +150,7 @@ class MainActivity : BaseActivity() {
         spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
             override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                inputModel.setRateTo(
+                inputModel.setDestinationRate(
                     (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
                 )
             }
@@ -188,7 +188,9 @@ class MainActivity : BaseActivity() {
             // date
             it?.let {
                 val date = it.date
-                val dateString = date?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+                val dateString = date
+                    ?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+                    ?.replace("\u200F", "") // remove rtl-mark (fixes broken arab date)
 
                 tvDate.text = getString(R.string.last_updated, dateString)
                 // today
@@ -251,28 +253,28 @@ class MainActivity : BaseActivity() {
         })
 
         // input changed
-        inputModel.getCurrentInput().observe(this, {
+        inputModel.getCurrentBaseValueFormatted().observe(this, {
             tvFrom.text = it
         })
-        inputModel.getCurrentInputConverted().observe(this, {
+        inputModel.getResultFormatted().observe(this, {
             tvTo.text = it
         })
-        inputModel.getCalculationInput().observe(this, {
+        inputModel.getCalculationInputFormatted().observe(this, {
             tvCalculations.text = it
         })
-        inputModel.getCurrencyFrom().observe(this, {
-            tvCurrencySymbolFrom.text = it
+        inputModel.getBaseCurrency().observe(this, {
+            tvCurrencySymbolFrom.text = it.symbol()
         })
-        inputModel.getCurrencyTo().observe(this, {
-            tvCurrencySymbolTo.text = it
+        inputModel.getDestinationCurrency().observe(this, {
+            tvCurrencySymbolTo.text = it.symbol()
         })
 
         // fee changed
-        inputModel.getFeeEnabled().observe(this, {
+        inputModel.isFeeEnabled().observe(this, {
             tvFee.visibility = if (it) View.VISIBLE else View.GONE
         })
         inputModel.getFee().observe(this, {
-            tvFee.text = it.prettyPrintPercent(this)
+            tvFee.text = it.toHumanReadableNumber(this, showPositiveSign = true, suffix = "%")
             tvFee.setTextColor(
                 if (it >= 0) getColor(android.R.color.holo_red_light)
                 else getColor(R.color.dollarBill)

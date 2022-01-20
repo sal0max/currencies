@@ -8,7 +8,8 @@ import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
-import java.time.*
+import java.time.LocalDate
+import java.time.ZoneId
 
 class ExchangeRatesViewModel(application: Application) : AndroidViewModel(application) {
 

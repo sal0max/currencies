@@ -1,5 +1,6 @@
 package de.salomax.currencies.view.preference
 
+import android.content.ActivityNotFoundException
 import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
@@ -7,15 +8,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
+import androidx.preference.SwitchPreference
 import de.salomax.currencies.BuildConfig
 import de.salomax.currencies.R
-import de.salomax.currencies.util.prettyPrintPercent
+import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
 import java.util.*
-import android.content.ActivityNotFoundException
-import androidx.preference.SwitchPreference
 
 @Suppress("unused")
 class PreferenceFragment: PreferenceFragmentCompat() {
@@ -52,7 +52,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             true
         }
         viewModel.getFee().observe(this, {
-            feePreference?.summary = it.prettyPrintPercent(requireContext())
+            feePreference?.summary = it.toHumanReadableNumber(requireContext(), showPositiveSign = true, suffix = "%")
             feePreference?.text = it.toString()
         })
 
@@ -89,7 +89,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         // about
         findPreference<Preference>(getString(R.string.about_key))?.apply {
             title = getString(R.string.aboutVersion, BuildConfig.VERSION_NAME)
-            summary = getString(R.string.about_summary, Calendar.getInstance().get(Calendar.YEAR))
+            summary = getString(R.string.about_summary, Calendar.getInstance().get(Calendar.YEAR).toString())
             setOnPreferenceClickListener {
                 ChangelogDialog().show(childFragmentManager, null)
                 true
