@@ -46,9 +46,9 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.fee_key))
         feePreference?.setOnPreferenceChangeListener { _, newValue ->
             if (newValue is String)
-                viewModel.setFee(newValue.toString().toFloat())
+                viewModel.setFee(newValue.toFloat())
             else if (newValue is Boolean)
-                viewModel.setFeeEnabled(newValue.toString().toBoolean())
+                viewModel.setFeeEnabled(newValue)
             true
         }
         viewModel.getFee().observe(this, {

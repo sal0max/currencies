@@ -29,14 +29,14 @@ fun getThousandsSeparator(context: Context): String {
  * - uses the correct numbers (e.g. east arabian) of the locale
  * - adds plus sign and/or a suffix, if wanted
  */
-fun Number.toHumanReadableNumber(
+fun Float.toHumanReadableNumber(
     context: Context,
     decimalPlaces: Int? = null,
     showPositiveSign: Boolean = false,
     suffix: String? = null,
     trim: Boolean = false
 ): String {
-    return this.toDouble()
+    return this
         .toBigDecimal()
         .toPlainString()
         .toHumanReadableNumber(context, decimalPlaces, showPositiveSign, suffix, trim)
