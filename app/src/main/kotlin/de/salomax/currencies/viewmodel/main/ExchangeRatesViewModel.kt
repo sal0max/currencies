@@ -44,6 +44,9 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
         onlyShowStarred = Database(getApplication()).isFilterStarredEnabled()
     }
 
+    /**
+     * all the current rates and/or an error message, if present
+     */
     internal val exchangeRates: LiveData<ExchangeRates?> = ExchangeRatesLiveDate()
 
     internal inner class ExchangeRatesLiveDate: MediatorLiveData<ExchangeRates?>() {
@@ -72,33 +75,50 @@ class ExchangeRatesViewModel(application: Application) : AndroidViewModel(applic
         }
     }
 
+    /**
+     * update the data, without checking the cache
+     */
     fun forceUpdateExchangeRate() {
         if (isUpdating.value != true)
             dbLiveItems = repository.getExchangeRates()
     }
 
+    /**
+     * all the currencies that the user has starred
+     */
     fun getStarredCurrencies(): LiveData<Set<Currency>> {
         return starredLiveItems
     }
 
+    /**
+     * whether the currencies should be filtered
+     */
     fun isFilterStarredEnabled(): LiveData<Boolean> {
         return onlyShowStarred
     }
 
+    /**
+     * switch the starred-filter on/off
+     */
     fun toggleStarredActive() {
         Database(getApplication()).toggleStarredActive()
     }
 
+    /**
+     * de-/star a currency
+     */
     fun toggleCurrencyStar(currencyCode: Currency) {
         Database(getApplication()).toggleCurrencyStar(currencyCode)
     }
 
-    /*
-     * error =======================================================================================
+    /**
+     * the error message, if present
      */
-
     fun getError(): LiveData<String?> = liveError
 
+    /**
+     * if the app is updating the rates
+     */
     fun isUpdating(): LiveData<Boolean> = isUpdating
 
 }
