@@ -63,12 +63,14 @@ class Database(context: Context) {
         }
     }
 
-    fun getLastRateFrom(): Currency? {
-        return Currency.fromString(prefsLastState.getString(keyLastStateFrom, "USD")!!)
+    fun getLastBaseCurrency(): LiveData<Currency?> {
+        return SharedPreferenceStringLiveData(prefsLastState, keyLastStateFrom, "USD")
+            .map { Currency.fromString(it!!) }
     }
 
-    fun getLastRateTo(): Currency? {
-        return Currency.fromString(prefsLastState.getString(keyLastStateTo, "EUR")!!)
+    fun getLastDestinationCurrency(): LiveData<Currency?> {
+        return SharedPreferenceStringLiveData(prefsLastState, keyLastStateTo, "EUR")
+            .map { Currency.fromString(it!!) }
     }
 
     fun setUpdating(updating: Boolean) {

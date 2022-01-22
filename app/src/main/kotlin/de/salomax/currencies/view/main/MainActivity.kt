@@ -16,14 +16,13 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
+import de.salomax.currencies.model.Rate
 import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.view.main.spinner.SearchableSpinner
-import de.salomax.currencies.view.main.spinner.SearchableSpinnerAdapter
 import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.view.timeline.TimelineActivity
-import de.salomax.currencies.viewmodel.main.CurrentInputViewModel
-import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
+import de.salomax.currencies.viewmodel.main.MainViewModel
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
@@ -31,8 +30,7 @@ import java.time.format.FormatStyle
 
 class MainActivity : BaseActivity() {
 
-    private lateinit var ratesModel: ExchangeRatesViewModel
-    private lateinit var inputModel: CurrentInputViewModel
+    private lateinit var viewModel: MainViewModel
     private lateinit var preferenceModel: PreferenceViewModel
 
     private lateinit var refreshIndicator: LinearProgressIndicator
@@ -57,8 +55,7 @@ class MainActivity : BaseActivity() {
         title = null
 
         // model
-        this.ratesModel = ViewModelProvider(this).get(ExchangeRatesViewModel::class.java)
-        this.inputModel = ViewModelProvider(this).get(CurrentInputViewModel::class.java)
+        this.viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
         this.preferenceModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
         // views
@@ -99,12 +96,12 @@ class MainActivity : BaseActivity() {
                 true
             }
             R.id.refresh -> {
-                ratesModel.forceUpdateExchangeRate()
+                viewModel.forceUpdateExchangeRate()
                 true
             }
             R.id.timeline -> {
-                val from = inputModel.getLastCurrencyFrom()
-                val to = inputModel.getLastCurrencyTo()
+                val from = viewModel.getBaseCurrency().value
+                val to = viewModel.getDestinationCurrency().value
                 if (from != null && to != null) {
                     startActivity(
                         Intent(Intent(this, TimelineActivity().javaClass)).apply {
@@ -124,7 +121,7 @@ class MainActivity : BaseActivity() {
     private fun setListeners() {
         // long click on delete
         findViewById<ImageButton>(R.id.btn_delete).setOnLongClickListener {
-            inputModel.clear()
+            viewModel.clear()
             true
         }
 
@@ -144,25 +141,37 @@ class MainActivity : BaseActivity() {
         // spinners: listen for changes
         spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                val rate = (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
-                inputModel.setBaseRate(rate)
-                spinnerTo.setCurrentRate(rate)
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if (position != -1 && parent?.adapter?.isEmpty != true) {
+                    val rate = parent?.adapter?.getItem(position) as Rate?
+                    rate?.let { viewModel.setBaseCurrency(it.currency) }
+                }
             }
         }
         spinnerTo.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onNothingSelected(parent: AdapterView<*>?) {}
-            override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-                val rate = (parent?.adapter as SearchableSpinnerAdapter).getItem(position)
-                inputModel.setDestinationRate(rate)
-                spinnerFrom.setCurrentRate(rate)
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                if (position != -1 && parent?.adapter?.isEmpty != true) {
+                    val rate = parent?.adapter?.getItem(position) as Rate?
+                    rate?.let { viewModel.setDestinationCurrency(it.currency) }
+                }
             }
         }
 
         // swipe to refresh
         swipeRefresh.setOnRefreshListener {
             // update
-            ratesModel.forceUpdateExchangeRate()
+            viewModel.forceUpdateExchangeRate()
             swipeRefresh.isRefreshing = false
         }
     }
@@ -187,7 +196,7 @@ class MainActivity : BaseActivity() {
 
     private fun observe() {
         //exchange rates changed
-        ratesModel.exchangeRates.observe(this, {
+        viewModel.getExchangeRates().observe(this, {
             // date
             it?.let {
                 val date = it.date
@@ -205,29 +214,19 @@ class MainActivity : BaseActivity() {
 
                 // paint text in red in case the data is old
                 tvDate.setTextColor(
-                    if (date?.isBefore(LocalDate.now().minusDays(3)) == true) getColor(android.R.color.holo_red_light)
-                    else getTextColorSecondary()
+                    if (date?.isBefore(LocalDate.now().minusDays(3)) == true)
+                        getColor(android.R.color.holo_red_light)
+                    else
+                        getTextColorSecondary()
                 )
             }
             // rates
             spinnerFrom.setRates(it?.rates)
             spinnerTo.setRates(it?.rates)
-
-            // restore state
-            inputModel.getLastCurrencyFrom()?.let { last ->
-                (spinnerFrom.adapter as? SearchableSpinnerAdapter)?.getPosition(last)?.let { position ->
-                    spinnerFrom.setSelection(position)
-                }
-            }
-            inputModel.getLastCurrencyTo()?.let { last ->
-                (spinnerTo.adapter as? SearchableSpinnerAdapter)?.getPosition(last)?.let { position ->
-                    spinnerTo.setSelection(position)
-                }
-            }
         })
 
         // stars changed
-        ratesModel.getStarredCurrencies().observe(this, { stars ->
+        viewModel.getStarredCurrencies().observe(this, { stars ->
             // starred rates
             stars.let {
                 spinnerFrom.setStars(it)
@@ -237,7 +236,7 @@ class MainActivity : BaseActivity() {
         })
 
         // something bad happened
-        ratesModel.getError().observe(this, {
+        viewModel.getError().observe(this, {
             // error
             it?.let {
                 Snackbar.make(tvCalculations, it, 5000) // show for 5s
@@ -248,7 +247,7 @@ class MainActivity : BaseActivity() {
         })
 
         // rates are updating
-        ratesModel.isUpdating().observe(this, { isRefreshing ->
+        viewModel.isUpdating().observe(this, { isRefreshing ->
             refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
             // disable manual refresh, while refreshing
             swipeRefresh.isEnabled = isRefreshing.not()
@@ -256,27 +255,31 @@ class MainActivity : BaseActivity() {
         })
 
         // input changed
-        inputModel.getCurrentBaseValueFormatted().observe(this, {
+        viewModel.getCurrentBaseValueFormatted().observe(this, {
             tvFrom.text = it
         })
-        inputModel.getResultFormatted().observe(this, {
+        viewModel.getResultFormatted().observe(this, {
             tvTo.text = it
         })
-        inputModel.getCalculationInputFormatted().observe(this, {
+        viewModel.getCalculationInputFormatted().observe(this, {
             tvCalculations.text = it
         })
-        inputModel.getBaseCurrency().observe(this, {
-            tvCurrencySymbolFrom.text = it.symbol()
+
+        // selected rates changed
+        viewModel.getBaseCurrency().observe(this, { currency ->
+            tvCurrencySymbolFrom.text = currency?.symbol()
+            spinnerFrom.setSelection(currency)
         })
-        inputModel.getDestinationCurrency().observe(this, {
-            tvCurrencySymbolTo.text = it.symbol()
+        viewModel.getDestinationCurrency().observe(this, { currency ->
+            tvCurrencySymbolTo.text = currency?.symbol()
+            spinnerTo.setSelection(currency)
         })
 
         // fee changed
-        inputModel.isFeeEnabled().observe(this, {
+        viewModel.isFeeEnabled().observe(this, {
             tvFee.visibility = if (it) View.VISIBLE else View.GONE
         })
-        inputModel.getFee().observe(this, {
+        viewModel.getFee().observe(this, {
             tvFee.text = it.toHumanReadableNumber(this, showPositiveSign = true, suffix = "%")
             tvFee.setTextColor(
                 if (it >= 0) getColor(android.R.color.holo_red_light)
@@ -289,10 +292,10 @@ class MainActivity : BaseActivity() {
             spinnerFrom.setPreviewConversionEnabled(it)
             spinnerTo.setPreviewConversionEnabled(it)
         })
-        inputModel.getCurrentBaseValueAsNumber().observe(this, {
+        viewModel.getCurrentBaseValueAsNumber().observe(this, {
             spinnerTo.setCurrentSum(it)
         })
-        inputModel.getResultAsNumber().observe(this, {
+        viewModel.getResultAsNumber().observe(this, {
             spinnerFrom.setCurrentSum(it)
         })
     }
@@ -309,21 +312,21 @@ class MainActivity : BaseActivity() {
      * keyboard: number input
      */
     fun numberEvent(view: View) {
-        inputModel.addNumber((view as Button).text.toString())
+        viewModel.addNumber((view as Button).text.toString())
     }
 
     /*
      * keyboard: add decimal point
      */
     fun decimalEvent(@Suppress("UNUSED_PARAMETER") view: View) {
-        inputModel.addDecimal()
+        viewModel.addDecimal()
     }
 
     /*
      * keyboard: delete
      */
     fun deleteEvent(@Suppress("UNUSED_PARAMETER") view: View) {
-        inputModel.delete()
+        viewModel.delete()
     }
 
     /*
@@ -331,10 +334,10 @@ class MainActivity : BaseActivity() {
      */
     fun calculationEvent(view: View) {
         when((view as Button).text.toString()) {
-            "+" -> inputModel.addition()
-            "−" -> inputModel.subtraction()
-            "×" -> inputModel.multiplication()
-            "÷" -> inputModel.division()
+            "+" -> viewModel.addition()
+            "−" -> viewModel.subtraction()
+            "×" -> viewModel.multiplication()
+            "÷" -> viewModel.division()
         }
     }
 

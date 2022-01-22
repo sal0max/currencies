@@ -14,7 +14,7 @@ class SearchableSpinner : AppCompatSpinner {
     private val mContext: Context
     private lateinit var spinnerDialog: SearchableSpinnerDialog
 
-    val adapter = SearchableSpinnerAdapter(context, android.R.layout.simple_spinner_item)
+    private val adapter = SearchableSpinnerAdapter(context, android.R.layout.simple_spinner_item)
 
     constructor(context: Context) : super(context) {
         this.mContext = context
@@ -39,6 +39,10 @@ class SearchableSpinner : AppCompatSpinner {
         spinnerDialog.onRateClicked = { rate: Rate, _: Int ->
             setSelection(adapter.getPosition(rate.currency))
         }
+    }
+
+    fun setSelection(currency: Currency?) {
+        setSelection(currency?.let { adapter.getPosition(it) } ?: -1)
     }
 
     override fun setAdapter(adapter: SpinnerAdapter?) {

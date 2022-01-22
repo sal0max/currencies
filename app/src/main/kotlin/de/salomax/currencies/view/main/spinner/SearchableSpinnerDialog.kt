@@ -15,11 +15,11 @@ import androidx.recyclerview.widget.RecyclerView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
-import de.salomax.currencies.viewmodel.main.ExchangeRatesViewModel
+import de.salomax.currencies.viewmodel.main.MainViewModel
 
 class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.OnQueryTextListener {
 
-    private lateinit var ratesModel: ExchangeRatesViewModel
+    private lateinit var ratesModel: MainViewModel
 
     private var filterStarredButton: ImageButton? = null
     private var searchView: SearchView? = null
@@ -52,7 +52,7 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         val layoutInflater = LayoutInflater.from(activity)
         val rootView = layoutInflater.inflate(R.layout.searchable_spinner_dialog, null)
 
-        this.ratesModel = ViewModelProvider(this).get(ExchangeRatesViewModel::class.java)
+        this.ratesModel = ViewModelProvider(this).get(MainViewModel::class.java)
 
         // listView
         listView = rootView.findViewById(R.id.listView)
@@ -112,7 +112,5 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         adapter.reset()
         dismiss()
     }
-
-
 
 }

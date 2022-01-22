@@ -36,8 +36,8 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
 
         // populate
         val item = getItem(position)
-        holder.flag?.setImageDrawable(item.currency.flag(context))
-        holder.code?.text = item.currency.iso4217Alpha()
+        holder.flag?.setImageDrawable(item?.currency?.flag(context))
+        holder.code?.text = item?.currency?.iso4217Alpha()
 
         return v!!
     }
@@ -50,8 +50,12 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
         return rates.size
     }
 
-    override fun getItem(position: Int): Rate {
-        return rates[position]
+    override fun getItem(position: Int): Rate? {
+        return try {
+            rates[position]
+        } catch (e: ArrayIndexOutOfBoundsException) {
+            null
+        }
     }
 
     override fun getPosition(item: Rate?): Int {
@@ -60,7 +64,7 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
 
     /**
      * @param currency e.g. "AUD", "EUR" or "USD"
-     * @returns the position of the Rate for the given string.
+     * @returns the position of the Rate for the given string, or -1 if rate isn't found.
      */
     fun getPosition(currency: Currency): Int {
         return rates.indexOf(
