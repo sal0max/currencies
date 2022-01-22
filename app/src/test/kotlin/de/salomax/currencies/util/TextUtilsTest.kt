@@ -1,4 +1,4 @@
-package de.salomax.currencies.viewmodel.main
+package de.salomax.currencies.util
 
 import android.content.Context
 import de.salomax.currencies.R
@@ -12,7 +12,7 @@ import org.mockito.Mockito.`when`
 import org.mockito.junit.MockitoJUnitRunner
 
 @RunWith(MockitoJUnitRunner::class)
-class CalculationsTest {
+class TextUtilsTest {
 
     @Mock
     private lateinit var mockContext: Context
