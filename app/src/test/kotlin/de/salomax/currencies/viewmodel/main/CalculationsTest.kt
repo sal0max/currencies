@@ -1,59 +1,58 @@
 package de.salomax.currencies.viewmodel.main
 
+import android.content.Context
+import de.salomax.currencies.R
+import de.salomax.currencies.util.toHumanReadableNumber
+import org.junit.Assert.assertEquals
+import org.junit.Before
 import org.junit.Test
+import org.junit.runner.RunWith
+import org.mockito.Mock
+import org.mockito.Mockito.`when`
+import org.mockito.junit.MockitoJUnitRunner
 
-import org.junit.Assert.*
-
+@RunWith(MockitoJUnitRunner::class)
 class CalculationsTest {
+
+    @Mock
+    private lateinit var mockContext: Context
+
+    @Before
+    fun init() {
+        `when`(mockContext.getString(R.string.decimal_separator)).thenReturn(".")
+        `when`(mockContext.getString(R.string.thousands_separator)).thenReturn(" ")
+    }
 
     @Test
     fun humanReadable() {
         // regular
-        assertEquals("123", "123".humanReadable(' ', '.'))
-        assertEquals("12 345 678", "12345678".humanReadable(' ', '.'))
-        // decimal
-        assertEquals("1 234.12312", "1234.12312".humanReadable(' ', '.'))
-        // minus
-        assertEquals("-111 222", "-111222".humanReadable(' ', '.'))
-        assertEquals("-11 222", "-11222".humanReadable(' ', '.'))
-    }
-
-    @Test
-    fun scientificToNatural() {
-        // test very long input
-        assertEquals("0", "NaN".scientificToNatural())
-        assertEquals("123456789.12", "1.23456789123456789E8".scientificToNatural())
-        // test rounding
-        assertEquals("1.11", "1.111".scientificToNatural())
-        assertEquals("2.22", "2.215".scientificToNatural())
-        // take care of pending zeros
-        assertEquals("6", "6.0".scientificToNatural())
-        assertEquals("6.1", "6.10".scientificToNatural())
-    }
-
-    @Test
-    fun evaluateMathExpression() {
-        assertEquals("1.0", "1".evaluateMathExpression())
-        // multiplication
-        assertEquals("1.6801", "1*1.6801".evaluateMathExpression())
-        // division
-        assertEquals("0.595202666507946", "1/1.6801".evaluateMathExpression())
-        assertEquals("0.5", "1/2".evaluateMathExpression())
-        // subtraction
-        assertEquals("50.0", "100.00001 - 50.00001".evaluateMathExpression())
-        // addition
-        assertEquals("100.00001", "50 + 50.00001".evaluateMathExpression())
-    }
-
-    @Test
-    fun testAll() {
         assertEquals(
-            "110.53",
-            "51 + 100.01111 / 1.6801".evaluateMathExpression().scientificToNatural().humanReadable(' ', '.')
+            "123.0",
+            123f.toHumanReadableNumber(mockContext, trim = false)
         )
         assertEquals(
-            "0",
-            "0 / 0".evaluateMathExpression().scientificToNatural().humanReadable(' ', '.')
+            "123",
+            123f.toHumanReadableNumber(mockContext, trim = true)
+        )
+        assertEquals(
+            "123.45",
+            123.446123f.toHumanReadableNumber(mockContext,  decimalPlaces = 2)
+        )
+        assertEquals(
+            "+ 30.0 cm",
+            30f.toHumanReadableNumber(mockContext,  showPositiveSign = true, suffix = "cm")
+        )
+        assertEquals(
+            "12 345 678",
+            "12345678".toHumanReadableNumber(mockContext)
+        )
+        assertEquals(
+            "1 234.12312",
+            "1234.12312".toHumanReadableNumber(mockContext)
+        )
+        assertEquals(
+            "- 111 222",
+            "-111222".toHumanReadableNumber(mockContext)
         )
     }
 
