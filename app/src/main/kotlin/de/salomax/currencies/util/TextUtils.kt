@@ -1,23 +1,16 @@
 package de.salomax.currencies.util
 
 import android.content.Context
-import android.icu.text.DecimalFormat
 import de.salomax.currencies.R
-import java.lang.StringBuilder
 import java.math.RoundingMode
+import java.text.DecimalFormat
 
 fun getDecimalSeparator(context: Context): String {
     return context.getString(R.string.decimal_separator)
-//    return DecimalFormat.getInstance()?.let { it as DecimalFormat }
-//        // fallback to english
-//        ?.decimalFormatSymbols?.monetaryDecimalSeparator ?: '.'
 }
 
 fun getThousandsSeparator(context: Context): String {
     return context.getString(R.string.thousands_separator)
-//    return DecimalFormat.getInstance()?.let { it as DecimalFormat }
-//        // fallback to english
-//        ?.decimalFormatSymbols?.monetaryGroupingSeparator ?: ','
 }
 
 // *************************************************************************************************
@@ -72,7 +65,10 @@ fun String.toHumanReadableNumber(
     val sb = StringBuilder()
 
     // + sign
-    if (showPositiveSign && DecimalFormat.getInstance().parse(this).toFloat() >= 0)
+    if (showPositiveSign
+        && DecimalFormat.getInstance().parse(this) != null
+        && DecimalFormat.getInstance().parse(this)!!.toFloat() >= 0
+    )
         sb.append("+ ")
 
     // format number
