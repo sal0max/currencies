@@ -15,6 +15,9 @@ import de.salomax.currencies.view.preference.PreferenceActivity
 
 class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) {
 
+    private var apiProvider: LiveData<Int> = Database(app).getApiProviderAsync()
+    private var isPreviewConversionEnabled: LiveData<Boolean> = Database(app).isPreviewConversionEnabled()
+
     fun setApiProvider(api: Int) {
         // first put provider to db...
         Database(app).setApiProvider(api)
@@ -23,7 +26,7 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
     }
 
     fun getApiProvider(): LiveData<Int> {
-        return Database(app).getApiProviderAsync()
+        return apiProvider
     }
 
     fun setTheme(theme: Int) {
@@ -81,8 +84,9 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
         Database(app).setFeeEnabled(enabled)
     }
 
+
     fun isPreviewConversionEnabled(): LiveData<Boolean> {
-        return Database(app).isPreviewConversionEnabled()
+        return isPreviewConversionEnabled
     }
 
     fun setPreviewConversionEnabled(enabled: Boolean) {

@@ -269,10 +269,22 @@ class MainActivity : BaseActivity() {
         viewModel.getBaseCurrency().observe(this, { currency ->
             tvCurrencySymbolFrom.text = currency?.symbol()
             spinnerFrom.setSelection(currency)
+            // conversion preview
+            if (currency != null)
+                // get rate from currency
+                viewModel.getExchangeRates().value?.rates?.find { it.currency == currency }?.value
+                    // give it to the adapter
+                    ?.let { spinnerTo.setCurrentRate(Rate(currency, it)) }
         })
         viewModel.getDestinationCurrency().observe(this, { currency ->
             tvCurrencySymbolTo.text = currency?.symbol()
             spinnerTo.setSelection(currency)
+            // conversion preview
+            if (currency != null)
+                // get rate from currency
+                viewModel.getExchangeRates().value?.rates?.find { it.currency == currency }?.value
+                    // give it to the adapter
+                    ?.let { spinnerFrom.setCurrentRate(Rate(currency, it)) }
         })
 
         // fee changed
