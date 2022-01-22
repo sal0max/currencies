@@ -113,11 +113,12 @@ object ExchangeRatesService {
      * The API actually returns Map<LocalDate, List<Rate>>>, however, we only want one Rate per day.
      * This converter reduces the list.
      */
-    internal class TimelineRatesToRateAdapter(private val symbol: Currency): JsonAdapter<Map<LocalDate, Rate>>() {
+    @Suppress("unused", "UNUSED_PARAMETER")
+    internal class TimelineRatesToRateAdapter(private val symbol: Currency) {
 
         @Synchronized
         @FromJson
-        override fun fromJson(reader: JsonReader): Map<LocalDate, Rate> {
+        fun fromJson(reader: JsonReader): Map<LocalDate, Rate> {
             val map = mutableMapOf<LocalDate, Rate>()
             reader.beginObject()
             // convert
@@ -150,7 +151,7 @@ object ExchangeRatesService {
         @Synchronized
         @ToJson
         @Throws(IOException::class)
-        override fun toJson(writer: JsonWriter, value: Map<LocalDate, Rate>?) {
+        fun toJson(writer: JsonWriter, value: Map<LocalDate, Rate>?) {
             writer.nullValue()
         }
 
@@ -160,13 +161,14 @@ object ExchangeRatesService {
      * Converts currency object to array of currencies.
      * Also removes some unwanted values and adds some wanted ones.
      */
-    internal class RatesAdapter(private val base: Currency) : JsonAdapter<List<Rate>>() {
+    @Suppress("unused", "UNUSED_PARAMETER")
+    internal class RatesAdapter(private val base: Currency) {
 
         @Synchronized
         @FromJson
         @Suppress("SpellCheckingInspection")
         @Throws(IOException::class)
-        override fun fromJson(reader: JsonReader): List<Rate> {
+        fun fromJson(reader: JsonReader): List<Rate> {
             val list = mutableListOf<Rate>()
             reader.beginObject()
             // convert
@@ -205,25 +207,26 @@ object ExchangeRatesService {
         @Synchronized
         @ToJson
         @Throws(IOException::class)
-        override fun toJson(writer: JsonWriter, value: List<Rate>?) {
+        fun toJson(writer: JsonWriter, value: List<Rate>?) {
             writer.nullValue()
         }
 
     }
 
-    internal class LocalDateAdapter : JsonAdapter<LocalDate>() {
+    @Suppress("unused", "UNUSED_PARAMETER")
+    internal class LocalDateAdapter {
 
         @Synchronized
         @FromJson
         @Throws(IOException::class)
-        override fun fromJson(reader: JsonReader): LocalDate? {
+        fun fromJson(reader: JsonReader): LocalDate? {
             return LocalDate.parse(reader.nextString())
         }
 
         @Synchronized
         @ToJson
         @Throws(IOException::class)
-        override fun toJson(writer: JsonWriter, value: LocalDate?) {
+        fun toJson(writer: JsonWriter, value: LocalDate?) {
             writer.value(value?.toString())
         }
 
