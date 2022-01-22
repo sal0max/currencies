@@ -73,8 +73,12 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
         // change text according to selected api
         viewModel.getApiProvider().observe(this, {
-            findPreference<LongSummaryPreference>(getString(R.string.key_apiProvider))?.summary =
-                resources.getTextArray(R.array.api_about_summary)[it]
+            findPreference<LongSummaryPreference>(getString(R.string.key_apiProvider))?.apply {
+                title =
+                    resources.getString(R.string.api_about_title, resources.getTextArray(R.array.api_names)[it])
+                summary =
+                    resources.getTextArray(R.array.api_about_summary)[it]
+            }
             findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
                 resources.getTextArray(R.array.api_refreshPeriod_summary)[it]
         })

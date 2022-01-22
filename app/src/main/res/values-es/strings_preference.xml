@@ -14,7 +14,7 @@
     <!-- api -->
     <string name="category_api">Tipos de cambio</string>
     <string name="api_title">Proveedor de datos</string>
-    <string name="api_about_title">Sobre el proveedor de datos</string>
+    <string name="api_about_title">Sobre %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> obtiene los tipos de cambio de varios proveedores de datos financieros y bancos, incluido el Banco Central Europeo. Todos los datos de los tipos de cambio se entregan en datos de punto medio. Los tipos de cambio de punto medio se determinan calculando la media de los tipos de cambio comprador y vendedor.\n<b>Se incluyen unas 160 divisas.</b></string>
     <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sigue los tipos de cambio de referencia (forex) publicados por el Banco Central Europeo.\n<b>Se incluyen unas 30 divisas.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> es un servicio relativamente nuevo, que (al igual que Frankfurter.app) hace un seguimiento de los tipos de cambio de referencia (forex) que publica el Banco Central Europeo.\n<b>Se incluyen unas 30 divisas.</b></string>

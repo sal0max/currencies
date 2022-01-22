@@ -14,7 +14,7 @@
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
-    <string name="api_about_title">Thông tin về nhà cung cấp dữ liệu</string>
+    <string name="api_about_title">Về %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> lấy tỉ lệ tiền tệ từ nhiều nhà cung cấp dữ liệu và ngân hàng khác nhau, bao gồm cả Ngân hàng trung ương châu Âu. Tất cả dữ liệu tỉ lệ chuyển đổi được đưa đến dưới dạng dữ liệu điểm giữa. Tỉ lệ điểm giữa được xác định bằng cách tính trung bình của Bid và Ask.\n<b>Có khoảng 160 tiền tệ.</b></string>
     <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> là một dịch vụ tương đối mới, nó (giống Frankfurter.app) theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>

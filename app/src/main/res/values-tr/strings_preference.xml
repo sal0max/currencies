@@ -14,7 +14,7 @@
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcı</string>
-    <string name="api_about_title">Veri sağlayıcı hakkında</string>
+    <string name="api_about_title">%s hakkında</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> döviz kurlarını Avrupa Merkez Bankası\'nın da dahil olduğu güvenilir banka ve sağlayıcılardan alır. Tüm döviz kurları orta nokta verisi olarak alınır. Orta nokta oranları Bid ve Ask\'ın ortalama medyanı hesaplanarak belirlenir.\n <b>Yaklaşık 160 para birimi bulunmaktadır.</b></string>
     <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a>, Avrupa Merkez Bankası tarafından yayınlanan gösterge niteliğindeki döviz (forex) kurlarını esas alır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> (tıpkı Frankfurter.app gibi) Avrupa Merkez Bankası tarafından yayınlanan gösterge döviz (forex) kurlarını esas alan, kısmen yeni bir veri sağlayıcıdır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>

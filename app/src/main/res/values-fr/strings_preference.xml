@@ -14,7 +14,7 @@
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>
-    <string name="api_about_title">À propos du fournisseur de données</string>
+    <string name="api_about_title">À propos de %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> s\'approvisionne en taux de change auprès de divers fournisseurs de données financières et de banques, dont la Banque centrale européenne. Toutes les données sur les taux de change sont livrées en données midpoint. Les taux midpoint sont déterminés en calculant le taux médian moyen de Bid et Ask.\n<b>Environ 160 devises sont incluses.</b></string>
     <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> suit les taux de change (forex) de référence publiés par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> est un service relativement nouveau, qui (tout comme Frankfurter.app) suit les taux de change de référence (forex) qui sont publiés par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>

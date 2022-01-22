@@ -14,7 +14,7 @@
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>
-    <string name="api_about_title">Informazioni sul fornitore di dati</string>
+    <string name="api_about_title">A proposito di %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> ricava i tassi di cambio da vari fornitori di dati finanziari e banche, compresa la Banca Centrale Europea. Tutti i dati sui tassi di cambio sono forniti in dati midpoint. I tassi midpoint sono determinati calcolando il tasso medio mediano di Bid e Ask.\n <b>Sono incluse circa 160 valute.</b></string>
     <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tiene traccia dei tassi di cambio di riferimento (forex) pubblicati dalla Banca Centrale Europea.\n<b>Circa 30 valute sono incluse.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> è un servizio relativamente nuovo, che (proprio come Frankfurter.app) tiene traccia dei tassi di cambio di riferimento (forex) che sono pubblicati dalla Banca Centrale Europea.\n<b>Circa 30 valute sono incluse.</b></string>
