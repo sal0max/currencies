@@ -58,8 +58,8 @@ class Database(context: Context) {
 
     fun saveLastUsedRates(from: Currency?, to: Currency?) {
         prefsLastState.apply {
-            edit().putString(keyLastStateFrom, from?.iso4217Alpha()).apply()
-            edit().putString(keyLastStateTo, to?.iso4217Alpha()).apply()
+            from?.let { edit().putString(keyLastStateFrom, it.iso4217Alpha()).apply() }
+            to?.let { edit().putString(keyLastStateTo, it.iso4217Alpha()).apply() }
         }
     }
 
