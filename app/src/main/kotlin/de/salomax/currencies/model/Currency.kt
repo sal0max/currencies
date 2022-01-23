@@ -226,10 +226,24 @@ enum class Currency(
     /**
      * https://en.wikipedia.org/wiki/Currency_symbol
      * e.g. $ for USD
-     * also removes the rtl-mark of some currencies
      */
     fun symbol(): String? {
-        return this.symbol?.replace("\u200F", "")
+        return this.symbol
+            ?.let { if (it.hasRtlChar()) it.wrapLtr() else it }
+    }
+
+    /**
+     * https://en.wikipedia.org/wiki/Bidirectional_text#Table_of_possible_BiDi_character_types
+     */
+    private fun String.wrapLtr(): String {
+        // isolate (recommended, but too new - FSI + PDI)
+        // return "\u2067" + this + "\u2069"
+        // embedding (discouraged - LRE + PDF)
+        return "\u202A" + this + "\u202C"
+    }
+
+    private fun String.hasRtlChar(): Boolean {
+        return this.any { it.directionality == CharDirectionality.RIGHT_TO_LEFT_ARABIC }
     }
 
 }
