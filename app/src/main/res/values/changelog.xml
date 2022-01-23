@@ -2,7 +2,14 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.11.0</b>
+    <string name="changelog" translatable="false"><b>1.12.0</b>
+        \n⸻
+        \n<li>This release fixes several layout problems with right-to-left (RTL) languages. Now, everything should look as expected.</li>
+        \n<li>New feature: Preview all conversions in the currency picker. You have to enable it in the settings.</li>
+        \n<li>Sometimes, currencies would show old or wrong data after a rate refresh. This is fixed.</li>
+        \n<li>Really a lot of code improvements, to make this app even better.</li>
+        \n
+        \n<b>1.11.0</b>
         \n⸻
         \n<li>You\'re now able to pull-to-refresh to update the rates.</li>
         \n<li>Much improved feedback when refreshing rates and in case of errors.</li>

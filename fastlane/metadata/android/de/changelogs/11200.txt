@@ -1,0 +1,4 @@
+- Dieses Release behebt einige Layoutprobleme bei Right-to-Left (RTL) Sprachen. Jetzt sollte alles so aussehen wie es sein soll.
+- Neues Feature: Im Währungsauswahldialog die aktuelle Umrechnung für jeden Kurs anzeigen. Aktiviere es in den Einstellungen.
+- Manchmal wurden nach dem Aktualisieren falsche oder veraltete Daten angezeigt. Das ist behoben.
+- Wirklich viele Code-Verbesserungen, um die App noch zuverlässiger zu machen.

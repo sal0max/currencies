@@ -1,0 +1,4 @@
+- This release fixes several layout problems with right-to-left (RTL) languages. Now, everything should look as expected.
+- New feature: Preview all conversions in the currency picker. You have to enable it in the settings.
+- Sometimes, currencies would show old or wrong data after a rate refresh. This is fixed.
+- Really a lot of code improvements, to make this app even better.
