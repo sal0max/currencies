@@ -13,7 +13,18 @@ import java.time.LocalDate
 import java.time.ZoneId
 
 @Suppress("unused", "MemberVisibilityCanBePrivate")
-class MainViewModel(val app: Application) : AndroidViewModel(app) {
+class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidViewModel(app) {
+
+    constructor(app: Application) : this(app, false)
+
+    class Factory(val app: Application, val onlyCache: Boolean = false) :
+        ViewModelProvider.Factory {
+
+        @Suppress("UNCHECKED_CAST")
+        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+            return MainViewModel(app, onlyCache) as T
+        }
+    }
 
     private var repository: ExchangeRatesRepository = ExchangeRatesRepository(app)
 
@@ -50,6 +61,8 @@ class MainViewModel(val app: Application) : AndroidViewModel(app) {
         val cachedDate = Database(app).getDate()
         dbLiveItems =
             when {
+                // force-use cache
+                onlyCache -> Database(app).getExchangeRates()
                 // first run: fetch data
                 cachedDate == null -> repository.getExchangeRates()
                 // also fetch if stored date is before the current date
@@ -63,26 +76,26 @@ class MainViewModel(val app: Application) : AndroidViewModel(app) {
         isFeeEnabled = Database(getApplication()).isFeeEnabled()
         fee = Database(getApplication()).getFee()
 
+        //
         exchangeRates = object : MediatorLiveData<ExchangeRates?>() {
+            var liveItems: ExchangeRates? = null
+
             init {
-                addSource(dbLiveItems) { calc() }
+                addSource(dbLiveItems) { liveItems = it; calc() }
                 addSource(starredLiveItems) { calc() }
                 addSource(onlyShowStarred) { calc() }
             }
 
             private fun calc() {
-                dbLiveItems.value?.let { rates ->
+                liveItems?.let { rates ->
                     this.value = rates
                         // usa a copy with ...
                         .copy(
                             rates = rates.rates
                                 // ... the correct sort order of the rates
                                 ?.sortedWith(
-                                    @Suppress("MoveLambdaOutsideParentheses")
-                                    compareBy(
-                                        // { rate -> starredLiveItems.value?.contains(rate.code) == false}, // starred
-                                        { rate -> rate.currency.fullName(getApplication()) } // name
-                                    )
+                                    // (sort by full name)
+                                    compareBy { rate -> rate.currency.fullName(getApplication()) }
                                 )
                         )
                 }
@@ -94,33 +107,37 @@ class MainViewModel(val app: Application) : AndroidViewModel(app) {
         val baseCurrency = Database(app).getLastBaseCurrency()
         val destinationCurrency = Database(app).getLastDestinationCurrency()
         currentBaseCurrency = object : MediatorLiveData<Currency?>() {
+            var base: Currency? = null
+            var rates: ExchangeRates? = null
+
             init {
-                addSource(baseCurrency) { update() }
-                addSource(dbLiveItems) { update() }
+                addSource(baseCurrency) { base = it; update() }
+                addSource(exchangeRates) { rates = it; update() }
             }
 
             private fun update() {
-                val dbItem = baseCurrency.value
                 this.value =
                     // last used is present in the current currency set
-                    dbLiveItems.value?.rates?.findLast { it.currency == dbItem }?.currency
+                    rates?.rates?.find { it.currency == base }?.currency
                         // not present, so just return the first of the set
-                        ?: dbLiveItems.value?.rates?.firstOrNull()?.currency
+                        ?: rates?.rates?.firstOrNull()?.currency
             }
         }
         currentDestinationCurrency = object : MediatorLiveData<Currency?>() {
+            var destination: Currency? = null
+            var rates: ExchangeRates? = null
+
             init {
-                addSource(destinationCurrency) { update() }
-                addSource(dbLiveItems) { update() }
+                addSource(destinationCurrency) { destination = it; update() }
+                addSource(exchangeRates) { rates = it; update() }
             }
 
             private fun update() {
-                val dbItem = destinationCurrency.value
                 this.value =
-                        // last used is present in the current currency set
-                    dbLiveItems.value?.rates?.findLast { it.currency == dbItem }?.currency
+                    // last used is present in the current currency set
+                    rates?.rates?.find { it.currency == destination }?.currency
                             // not present, so just return the first of the set
-                        ?: dbLiveItems.value?.rates?.firstOrNull()?.currency
+                        ?: rates?.rates?.firstOrNull()?.currency
             }
         }
 
@@ -201,16 +218,19 @@ class MainViewModel(val app: Application) : AndroidViewModel(app) {
      * the total base value
      */
     private val currentBaseValue = object : MediatorLiveData<String?>() {
+        var baseValueText: String? = null
+        var calculationValueText: String? = null
+
         init {
-            addSource(currentBaseValueText) { update() }
-            addSource(currentCalculationValueText) { update() }
+            addSource(currentBaseValueText) { baseValueText = it; update() }
+            addSource(currentCalculationValueText) { calculationValueText= it; update() }
         }
 
         fun update() {
             if (isInCalculationMode())
-                this.value = currentCalculationValueText.value?.evaluateMathExpression()
+                this.value = calculationValueText?.evaluateMathExpression()
             else
-                this.value = currentBaseValueText.value
+                this.value = baseValueText
         }
 
         // Turns e.g. "1 + 2 × 4" to "9"
@@ -277,42 +297,45 @@ class MainViewModel(val app: Application) : AndroidViewModel(app) {
      * the total destination value
      */
     private val result = object : MediatorLiveData<String>() {
+        var rates : ExchangeRates? = null
+        var baseValue: String? = null
+        var baseCurrency: Currency? = null
+        var destinationCurrency: Currency? = null
+        var feeValue: Float? = null
+        var feeEnabled: Boolean? = null
+
         init {
             // rates changed
-            addSource(exchangeRates) { calculateResult() }
+            addSource(exchangeRates) { rates = it; calculateResult() }
             // base input changed
-            addSource(currentBaseValue) { calculateResult() }
+            addSource(currentBaseValue) { baseValue = it; calculateResult() }
             // base currency changed
-            addSource(currentBaseCurrency) { calculateResult() }
+            addSource(currentBaseCurrency) { baseCurrency = it; calculateResult() }
             // destination currency changed
-            addSource(currentDestinationCurrency) { calculateResult() }
+            addSource(currentDestinationCurrency) { destinationCurrency = it; calculateResult() }
             // fee changed
-            addSource(fee) { calculateResult() }
+            addSource(fee) { feeValue = it; calculateResult() }
             // fee got enabled/disabled
-            addSource(isFeeEnabled) { calculateResult() }
+            addSource(isFeeEnabled) { feeEnabled = it; calculateResult() }
         }
 
         private fun calculateResult() {
-            val baseValue: Double = currentBaseValue.value?.toBigDecimal()?.toDouble() ?: 0.0
-            val baseRate = exchangeRates.value?.rates?.find { it.currency == currentBaseCurrency.value }
-            val destinationRate = exchangeRates.value?.rates?.find { it.currency == currentDestinationCurrency.value }
-            val feeEnabled: Boolean? = isFeeEnabled.value
-            val fee: Float? = fee.value
+            val baseValue: Double = baseValue?.toBigDecimal()?.toDouble() ?: 0.0
+            val baseRate = rates?.rates?.find { it.currency == baseCurrency }
+            val destinationRate = rates?.rates?.find { it.currency == destinationCurrency }
 
             if (baseRate != null && destinationRate != null) {
-                // calculate destination value
-                val x =
+                this.value =
                     baseValue.div(baseRate.value).times(destinationRate.value)
                         .let {
                             // add fee, if enabled
-                            if (feeEnabled != null && feeEnabled && fee != null) {
-                                it + (it * (fee / 100))
+                            if (feeEnabled != null && feeEnabled == true && feeValue != null) {
+                                it + (it * (feeValue!! / 100))
                             } else {
                                 it
                             }
                         }
                         .toString()
-                this.value = x
             }
         }
     }

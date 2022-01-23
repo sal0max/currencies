@@ -13,13 +13,14 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import de.salomax.currencies.R
-import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 import de.salomax.currencies.viewmodel.main.MainViewModel
+import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 
 class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.OnQueryTextListener {
 
-    private lateinit var ratesModel: MainViewModel
+    private lateinit var mainViewModel: MainViewModel
+    private lateinit var prefViewModel: PreferenceViewModel
 
     private var filterStarredButton: ImageButton? = null
     private var searchView: SearchView? = null
@@ -29,18 +30,6 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
 
     private var adapter: SearchableSpinnerDialogAdapter = SearchableSpinnerDialogAdapter(context)
 
-    fun setRates(rates: List<Rate>?) {
-        adapter.setRates(rates)
-    }
-
-    fun setStars(stars: Set<Currency>?) {
-        adapter.setStars(stars)
-    }
-
-    //  conversion preview
-    fun setPreviewConversionEnabled(enabled: Boolean) {
-        adapter.setPreviewConversionEnabled(enabled)
-    }
     fun setCurrentRate(currentRate: Rate) {
         adapter.setCurrentRate(currentRate)
     }
@@ -52,7 +41,8 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         val layoutInflater = LayoutInflater.from(activity)
         val rootView = layoutInflater.inflate(R.layout.searchable_spinner_dialog, null)
 
-        this.ratesModel = ViewModelProvider(this).get(MainViewModel::class.java)
+        this.mainViewModel = ViewModelProvider(this, MainViewModel.Factory(requireActivity().application, true)).get(MainViewModel::class.java)
+        this.prefViewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
         // listView
         listView = rootView.findViewById(R.id.listView)
@@ -63,7 +53,7 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
             dismiss()
         }
         adapter.onStarClicked = {
-            ratesModel.toggleCurrencyStar(it.currency)
+            mainViewModel.toggleCurrencyStar(it.currency)
         }
 
         // searchView
@@ -74,17 +64,30 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         // filter starred
         filterStarredButton = rootView.findViewById(R.id.btn_toggle_fav)
         filterStarredButton?.setOnClickListener {
-            ratesModel.toggleStarredActive()
+            mainViewModel.toggleStarredActive()
         }
-        ratesModel.isFilterStarredEnabled().observe(this, { enabled ->
+        mainViewModel.isFilterStarredEnabled().observe(this, { enabled ->
             filterStarredButton?.setImageDrawable(
                 if (enabled) ContextCompat.getDrawable(requireContext(), R.drawable.ic_favorite_on)
                 else ContextCompat.getDrawable(requireContext(), R.drawable.ic_favorite_off)
             )
         })
-        ratesModel.isFilterStarredEnabled().observe(this, {
+        mainViewModel.isFilterStarredEnabled().observe(this, {
             adapter.filterStarred(it)
         })
+
+        // rates
+        mainViewModel.getExchangeRates().observe(this, {
+            adapter.setRates(it?.rates)
+        })
+        // stars
+        mainViewModel.getStarredCurrencies().observe(this) {
+            adapter.setStars(it)
+        }
+        //  conversion preview
+        prefViewModel.isPreviewConversionEnabled().observe(this) {
+            adapter.setPreviewConversionEnabled(it)
+        }
 
         // build dialog
         val alertBuilder = AlertDialog.Builder(activity)

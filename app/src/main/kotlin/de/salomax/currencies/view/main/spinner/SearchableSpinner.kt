@@ -68,19 +68,9 @@ class SearchableSpinner : AppCompatSpinner {
     fun setRates(rates: List<Rate>?) {
         // set in own adapter...
         adapter.setRates(rates)
-        // ...and in dialog
-        spinnerDialog.setRates(rates)
-    }
-
-    fun setStars(stars: Set<Currency>?) {
-        // set in dialog
-        spinnerDialog.setStars(stars)
     }
 
     //  conversion preview
-    fun setPreviewConversionEnabled(enabled: Boolean) {
-        spinnerDialog.setPreviewConversionEnabled(enabled)
-    }
     fun setCurrentRate(currentRate: Rate) {
         // set in dialog
         spinnerDialog.setCurrentRate(currentRate)

@@ -225,16 +225,6 @@ class MainActivity : BaseActivity() {
             spinnerTo.setRates(it?.rates)
         })
 
-        // stars changed
-        viewModel.getStarredCurrencies().observe(this, { stars ->
-            // starred rates
-            stars.let {
-                spinnerFrom.setStars(it)
-                spinnerTo.setStars(it)
-            }
-
-        })
-
         // something bad happened
         viewModel.getError().observe(this, {
             // error
@@ -299,11 +289,6 @@ class MainActivity : BaseActivity() {
             )
         })
 
-        // conversion preview
-        preferenceModel.isPreviewConversionEnabled().observe(this, {
-            spinnerFrom.setPreviewConversionEnabled(it)
-            spinnerTo.setPreviewConversionEnabled(it)
-        })
         viewModel.getCurrentBaseValueAsNumber().observe(this, {
             spinnerTo.setCurrentSum(it)
         })
