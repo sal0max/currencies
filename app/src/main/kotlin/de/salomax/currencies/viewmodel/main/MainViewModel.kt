@@ -9,6 +9,7 @@ import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.util.getDecimalSeparator
 import de.salomax.currencies.util.toHumanReadableNumber
 import org.mariuszgromada.math.mxparser.Expression
+import java.text.Collator
 import java.time.LocalDate
 import java.time.ZoneId
 
@@ -94,8 +95,10 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
                             rates = rates.rates
                                 // ... the correct sort order of the rates
                                 ?.sortedWith(
-                                    // (sort by full name)
-                                    compareBy { rate -> rate.currency.fullName(getApplication()) }
+                                    // sort by full name (locale-aware)
+                                    compareBy(Collator.getInstance()) { rate ->
+                                        rate.currency.fullName(app)
+                                    }
                                 )
                         )
                 }
