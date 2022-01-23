@@ -11,6 +11,7 @@ import androidx.preference.PreferenceFragmentCompat
 import androidx.preference.SwitchPreference
 import de.salomax.currencies.BuildConfig
 import de.salomax.currencies.R
+import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
@@ -67,7 +68,8 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         // api provider
         findPreference<ListPreference>(getString(R.string.api_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setApiProvider(newValue.toString().toInt())
+                ApiProvider.fromNumber(newValue.toString().toInt())
+                    ?.let { viewModel.setApiProvider(it) }
                 true
             }
         }
@@ -75,12 +77,12 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         viewModel.getApiProvider().observe(this, {
             findPreference<LongSummaryPreference>(getString(R.string.key_apiProvider))?.apply {
                 title =
-                    resources.getString(R.string.api_about_title, resources.getTextArray(R.array.api_names)[it])
+                    resources.getString(R.string.api_about_title, it.getName(context))
                 summary =
-                    resources.getTextArray(R.array.api_about_summary)[it]
+                    it.getDescription(context)
             }
             findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
-                resources.getTextArray(R.array.api_refreshPeriod_summary)[it]
+                it.getUpdateIntervalDescription(requireContext())
         })
 
         // donate

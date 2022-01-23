@@ -3,6 +3,7 @@ package de.salomax.currencies.util
 import android.content.SharedPreferences
 import android.content.SharedPreferences.OnSharedPreferenceChangeListener
 import androidx.lifecycle.LiveData
+import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Rate
@@ -23,7 +24,8 @@ class SharedPreferenceExchangeRatesLiveData(private val sharedPrefs: SharedPrefe
                     .filter { !it.key.startsWith("_") }
                     .sortedBy { it.key }
                     .mapNotNull { Currency.fromString(it.key!!)?.let { currency -> Rate(currency, (it.value as Float)) } }
-                    .toList()
+                    .toList(),
+                sharedPrefs.getInt("_provider", -1).let { ApiProvider.fromNumber(it) }
             )
     }
 

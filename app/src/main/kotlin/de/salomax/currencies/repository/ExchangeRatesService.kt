@@ -1,28 +1,21 @@
 package de.salomax.currencies.repository
 
 import com.github.kittinunf.fuel.Fuel
-import com.github.kittinunf.fuel.core.*
+import com.github.kittinunf.fuel.core.FuelError
+import com.github.kittinunf.fuel.core.awaitResult
 import com.github.kittinunf.fuel.moshi.moshiDeserializerOf
 import com.github.kittinunf.result.Result
 import com.github.kittinunf.result.map
 import com.squareup.moshi.*
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import de.salomax.currencies.model.*
 import de.salomax.currencies.model.Currency
-import de.salomax.currencies.model.ExchangeRates
-import de.salomax.currencies.model.Timeline
-import de.salomax.currencies.model.Rate
 import java.io.IOException
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.util.*
 
 object ExchangeRatesService {
-
-    enum class ApiProvider(val baseUrl: String) {
-        EXCHANGERATE_HOST("https://api.exchangerate.host"),
-        FRANKFURTER_APP("https://api.frankfurter.app"),
-        FER_EE("https://api.fer.ee")
-    }
 
     /**
      * Get all the current exchange rates from the given api provider. Base will be Euro.
@@ -51,7 +44,9 @@ object ExchangeRatesService {
                     .build()
                     .adapter(ExchangeRates::class.java)
             )
-        )
+        ).map { timeline ->
+            timeline.copy(provider = apiProvider)
+        }
     }
 
     /**
@@ -105,6 +100,8 @@ object ExchangeRatesService {
                 Currency.FOK -> timeline.copy(base = base.iso4217Alpha())
                 else -> timeline
             }
+        }.map { timeline ->
+            timeline.copy(provider = apiProvider)
         }
     }
 

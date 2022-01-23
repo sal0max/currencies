@@ -15,6 +15,22 @@
         android:orientation="horizontal"
         app:layout_constraintGuide_percent=".5" />
 
+    <!-- exchange rate info text -->
+
+    <TextView
+        android:id="@+id/textRefreshed"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin1x"
+        android:alpha=".5"
+        android:gravity="end"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Rates as of 1/21/22 by Exchangerate.host" />
+
     <!-- toggle button & separator -->
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -54,18 +70,6 @@
         app:layout_constraintEnd_toStartOf="@id/textFee"
         app:layout_constraintStart_toEndOf="@id/btn_toggle"
         app:layout_constraintTop_toTopOf="@id/guideline_display" />
-
-    <TextView
-        android:id="@+id/textRefreshed"
-        style="@style/TextAppearance.MaterialComponents.Subtitle1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/margin1x"
-        android:alpha=".33"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:text="Exchange rate age: 2020-10-28" />
 
     <!-- top main_display -->
 

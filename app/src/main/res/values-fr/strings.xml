@@ -3,9 +3,7 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">toggle les devises</string>
-    <string name="last_updated">Taux de change de %s</string>
-    <string name="today">aujourd\'hui</string>
-    <string name="yesterday">hier</string>
+
     <string name="copied_to_clipboard">Copie de &lt;b&gt;%s&lt;/b&gt; au presse-papiers</string>
     <string name="error">Erreur : %s</string>
     <string name="error_generic">Problème inconnu.</string>

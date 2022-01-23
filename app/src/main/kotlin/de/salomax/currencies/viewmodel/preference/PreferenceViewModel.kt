@@ -8,6 +8,7 @@ import androidx.core.app.TaskStackBuilder
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import de.salomax.currencies.R
+import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.view.main.MainActivity
@@ -15,17 +16,17 @@ import de.salomax.currencies.view.preference.PreferenceActivity
 
 class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) {
 
-    private var apiProvider: LiveData<Int> = Database(app).getApiProviderAsync()
+    private var apiProvider: LiveData<ApiProvider> = Database(app).getApiProviderAsync()
     private var isPreviewConversionEnabled: LiveData<Boolean> = Database(app).isPreviewConversionEnabled()
 
-    fun setApiProvider(api: Int) {
+    fun setApiProvider(api: ApiProvider) {
         // first put provider to db...
         Database(app).setApiProvider(api)
         // ...after that, fetch the new exchange rates
         ExchangeRatesRepository(app).getExchangeRates()
     }
 
-    fun getApiProvider(): LiveData<Int> {
+    fun getApiProvider(): LiveData<ApiProvider> {
         return apiProvider
     }
 

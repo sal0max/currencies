@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
+import androidx.lifecycle.Transformations
 import androidx.lifecycle.map
+import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.util.*
@@ -20,6 +22,7 @@ class Database(context: Context) {
 
     private val keyDate = "_date"
     private val keyBaseRate = "_base"
+    private val keyProvider = "_provider"
 
     fun insertExchangeRates(items: ExchangeRates) {
         // don't insert null-values. this would clear the cache
@@ -31,6 +34,7 @@ class Database(context: Context) {
                 // apply new ones
                 editor.putString(keyDate, items.date.toString())
                 editor.putString(keyBaseRate, items.base?.iso4217Alpha())
+                editor.putInt(keyProvider, items.provider?.number ?: -1)
                 items.rates?.forEach { rate ->
                     editor.putFloat(rate.currency.iso4217Alpha(), rate.value)
                 }
@@ -151,18 +155,20 @@ class Database(context: Context) {
 
     /* api */
 
-    fun setApiProvider(api: Int) {
+    fun setApiProvider(api: ApiProvider) {
         prefs.apply {
-            edit().putInt(keyApi, api).apply()
+            edit().putInt(keyApi, api.number).apply()
         }
     }
 
-    fun getApiProvider(): Int {
-        return prefs.getInt(keyApi, 0)
+    fun getApiProvider(): ApiProvider {
+        return ApiProvider.fromNumber(prefs.getInt(keyApi, 0))!!
     }
 
-    fun getApiProviderAsync(): LiveData<Int> {
-        return SharedPreferenceIntLiveData(prefs, keyApi, 0)
+    fun getApiProviderAsync(): LiveData<ApiProvider> {
+        return Transformations.map(SharedPreferenceIntLiveData(prefs, keyApi, 0)) {
+            ApiProvider.fromNumber(it)
+        }
     }
 
     /* theme */

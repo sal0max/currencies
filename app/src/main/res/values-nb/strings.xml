@@ -3,9 +3,7 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">veksle valuta</string>
-    <string name="last_updated">Valutakurs fra %s</string>
-    <string name="today">i dag</string>
-    <string name="yesterday">i går</string>
+    <string name="last_updated">Kurser fra &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">Kopierte &lt;b&gt;%s&lt;/b&gt; til utklippstavlen</string>
     <string name="error">Feil: %s</string>
     <string name="error_generic">Ukjent problem.</string>

@@ -203,16 +203,22 @@ class MainActivity : BaseActivity() {
                 val dateString = date
                     ?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
                     ?.replace("\u200F", "") // remove rtl-mark (fixes broken arab date)
+                val providerString = it.provider?.getName(this)
 
-                tvDate.text = getString(R.string.last_updated, dateString)
-                // today
-                if (date?.isEqual(LocalDate.now()) == true)
-                    tvDate.append(" (${getString(R.string.today)})")
-                // yesterday
-                else if (date?.isEqual(LocalDate.now().minusDays(1)) == true)
-                    tvDate.append(" (${getString(R.string.yesterday)})")
+                // show rate age and rate source
+                tvDate.text = if (dateString != null && providerString != null)
+                    HtmlCompat.fromHtml(
+                        getString(
+                            R.string.last_updated,
+                            dateString,
+                            providerString
+                        ),
+                        HtmlCompat.FROM_HTML_MODE_LEGACY
+                    )
+                else
+                    null
 
-                // paint text in red in case the data is old
+                // paint text in red in case the data is old (at least 3 days)
                 tvDate.setTextColor(
                     if (date?.isBefore(LocalDate.now().minusDays(3)) == true)
                         getColor(android.R.color.holo_red_light)

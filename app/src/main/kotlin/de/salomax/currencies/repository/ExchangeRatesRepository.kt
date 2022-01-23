@@ -31,12 +31,7 @@ class ExchangeRatesRepository(private val context: Context) {
             // call api
             ExchangeRatesService.getRates(
                 // use the right api
-                when (Database(context).getApiProvider()) {
-                    0 -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
-                    1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
-                    2 -> ExchangeRatesService.ApiProvider.FER_EE
-                    else -> throw UnsupportedOperationException()
-                }
+                Database(context).getApiProvider()
             ).run  {
                 val rates = component1()
                 val fuelError = component2()
@@ -72,12 +67,7 @@ class ExchangeRatesRepository(private val context: Context) {
             // call api
             ExchangeRatesService.getTimeline(
                 // use the right api
-                apiProvider = when (Database(context).getApiProvider()) {
-                    0 -> ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST
-                    1 -> ExchangeRatesService.ApiProvider.FRANKFURTER_APP
-                    2 -> ExchangeRatesService.ApiProvider.FER_EE
-                    else -> throw UnsupportedOperationException()
-                },
+                apiProvider = Database(context).getApiProvider(),
                 base = base,
                 symbol = symbol
             ).run {

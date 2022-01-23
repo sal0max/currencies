@@ -11,5 +11,7 @@ data class ExchangeRates(
 
     @field:Json(name = "base") val base: Currency?,
     @field:Json(name = "date") val date: LocalDate?,
-    @field:Json(name = "rates") val rates: List<Rate>?
+    @field:Json(name = "rates") val rates: List<Rate>?,
+
+    val provider: ApiProvider?
 )
