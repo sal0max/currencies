@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="fee_summary">اعتمادًا على اتفاقية بطاقة الائتمان الخاصة بك ، قد يفرض البنك الذي تتعامل معه رسومًا على جميع معاملات الصرف الأجنبي. هنا يمكنك إدخال تلك الرسوم. ستتم إضافته أعلى الحساب ، حتى تعرف مقدار ما تدفعه <i> حقًا </i>.</string>
+    <string name="category_appearance">المظهر</string>
+    <string name="theme_option_light">فاتح</string>
+    <string name="theme_option_dark">غامق</string>
+    <string name="theme_option_default">النظام الافتراضي</string>
+    <string name="pure_black_enabled_summary">استخدم الأسود النقي في الوضع المظلم</string>
+    <string name="category_api">معدل التحويل</string>
+    <string name="api_title">مزود البيانات</string>
+    <string name="api_about_title">حول %s</string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"> <b> Frankfurter.app </b> </a> تتعقب أسعار الصرف المرجعية (الفوركس) التي ينشرها البنك المركزي الأوروبي.
+\n<b> تم تضمين حوالي 30 عملة. </b></string>
+    <string name="api_refreshPeriod_title">فترة التحديث</string>
+    <string name="api_refreshPeriod_exchangerateHost">يتم تحديث أسعار الصرف في منتصف الليل بالتوقيت العالمي المنسق كل يوم عمل.</string>
+    <string name="api_refreshPeriod_ferEe">يتم تحديث الأسعار كل يوم عمل.</string>
+    <string name="category_about">عن هذا التطبيق</string>
+    <string name="disclaimer_title">تنصل</string>
+    <string name="donate_title">دعم المطور</string>
+    <string name="donate_summary">تبرع عبر PayPal</string>
+    <string name="rate_title">قيم هذا التطبيق</string>
+    <string name="rate_summary">إذا كنت ترغب في ذلك ، يمكنك مساعدة الآخرين في اكتشاف العملات. انقر هنا لتقييم التطبيق على Google Play.</string>
+    <string name="aboutVersion">الإصدار %1$s</string>
+    <string name="category_settings">الاعدادات العامة</string>
+    <string name="fee_title">رسوم المعاملات الخارجية</string>
+    <string name="previewConversion_title">معاينة التحويل</string>
+    <string name="previewConversion_summary">اعرض التحويل الحالي لكل سعر في منتقي العملات.</string>
+    <string name="theme_title">تصميم</string>
+    <string name="pure_black_enabled_title">أسود OLED</string>
+    <string name="api_about_exchangerateHost">توفر <a href="https://exchangerate.host/"> <b> Exchangerate.host </b> </a> أسعار العملات من مختلف موفري البيانات المالية والمصارف ، بما في ذلك البنك المركزي الأوروبي. يتم تسليم جميع بيانات سعر الصرف في بيانات نقطة الوسط. يتم تحديد معدلات نقطة الوسط عن طريق حساب متوسط سعر العرض والطلب.
+\n<b> تم تضمين حوالي 160 عملة. </b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"> <b> Fer.ee </b> </a> هي خدمة جديدة نسبيًا ، (تمامًا مثل Frankfurter.app) تتعقب تبادل المراجع (فوركس) المعدلات التي ينشرها البنك المركزي الأوروبي.
+\n<b> تم تضمين حوالي 30 عملة. </b></string>
+    <string name="api_refreshPeriod_frankfurterApi">يتم تحديث البيانات في حوالي الساعة 16:00 بتوقيت وسط أوروبا كل يوم عمل.</string>
+    <string name="disclaimer_summary">على الرغم من أنه تمت كتابة التطبيق واختباره بدقة شديدة ، <b> لا يوجد ضمان بأن البيانات التي يعرضها صحيحة </b>. يتم توفير أسعار الصرف من قبل طرف ثالث ولا يمكن لهذا التطبيق أن يقدم أي وعد على الإطلاق بأن البيانات صحيحة وحديثة.
+\nبالإضافة إلى ذلك ، قد تختلف الأسعار المقدمة - إذا كانت صحيحة - عن تلك المستخدمة من قبل البنك الذي تتعامل معه.
+\nأخيرًا: الأخطاء تحدث. لا تثق بأي شخص بشكل أعمى! ومع ذلك ، كن مطمئنًا أنني لم أكن لأطلق هذا التطبيق إذا كان لدي أي شك في أنه يعمل على النحو المنشود.</string>
+</resources>
