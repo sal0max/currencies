@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="thousands_separator"> . </string>
+    <string name="error_http">استجاب الخادم ب HTTP %d</string>
+    <string name="error_no_data">تعذر الاتصال بالخادم.</string>
+    <string name="error">خطأ: %s</string>
+    <string name="error_api_error">كان هناك خطأ API. الرجاء معاودة المحاولة في وقت لاحق.</string>
+    <string name="menu_settings">إعدادات</string>
+    <string name="menu_refresh">معدلات التحديث</string>
+    <string name="menu_timeline">مخطط سعر الصرف</string>
+    <string name="tooltip_filter_starred">إظهار العملات المميزة بنجمة فقط.</string>
+    <string name="decimal_separator">.</string>
+    <string name="desc_toggle_currencies">تبديل العملات</string>
+    <string name="last_updated">الأسعار اعتبارًا من <b>%1$s</b> بواسطة <b>%2$s</b></string>
+    <string name="copied_to_clipboard">تم نسخ <b>%s</b> إلى الحافظة</string>
+    <string name="error_generic">مشكلة غير معروفة.</string>
+    <string name="error_timeout">لم يستجب الخادم في الوقت المناسب أو لا يمكن الوصول إليه.</string>
+</resources>
