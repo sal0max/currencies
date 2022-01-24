@@ -1,5 +1,6 @@
 package de.salomax.currencies.repository
 
+import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
@@ -15,12 +16,12 @@ class ExchangeRatesServiceTest {
     fun testExchangerateHost() = runBlocking {
         // latest
         testWebservice(
-            ExchangeRatesService.getRates(ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST).get(), 1
+            ExchangeRatesService.getRates(ApiProvider.EXCHANGERATE_HOST).get(), 1
         )
         // timeline
         testTimeline(
             ExchangeRatesService.getTimeline(
-                ExchangeRatesService.ApiProvider.EXCHANGERATE_HOST,
+                ApiProvider.EXCHANGERATE_HOST,
                 Currency.EUR, Currency.ISK
             ).get()
         )
@@ -30,27 +31,27 @@ class ExchangeRatesServiceTest {
     fun testFrankfurterApp() = runBlocking {
         // latest
         testWebservice(
-            ExchangeRatesService.getRates(ExchangeRatesService.ApiProvider.FRANKFURTER_APP).get(), 4
+            ExchangeRatesService.getRates(ApiProvider.FRANKFURTER_APP).get(), 4
         )
         // timeline
         testTimeline(
             ExchangeRatesService.getTimeline(
-                ExchangeRatesService.ApiProvider.FRANKFURTER_APP,
+                ApiProvider.FRANKFURTER_APP,
                 Currency.EUR, Currency.ISK
             ).get()
         )
     }
 
     @Test
-    fun testFerEe()  = runBlocking {
+    fun testFerEe() = runBlocking {
         // latest
         testWebservice(
-            ExchangeRatesService.getRates(ExchangeRatesService.ApiProvider.FER_EE).get(), 4
+            ExchangeRatesService.getRates(ApiProvider.FER_EE).get(), 4
         )
         // timeline
         testTimeline(
             ExchangeRatesService.getTimeline(
-                ExchangeRatesService.ApiProvider.FER_EE,
+                ApiProvider.FER_EE,
                 Currency.EUR, Currency.ISK
             ).get()
         )
