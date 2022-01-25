@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="decimal_separator">,</string>
-    <string name="thousands_separator">.</string>
+    <string name="thousands_separator"> . </string>
     <string name="desc_toggle_currencies">tausche Währungen</string>
     <string name="last_updated">Kurse vom &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; in die Zwischenablage kopiert</string>
