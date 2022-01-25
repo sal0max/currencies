@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.12.0</b>
+    <string name="changelog" translatable="false"><b>1.12.1</b>
+        \n⸻
+        \n<li>Fix crash on refreshing rates. Sorry! 🤕</li>
+        \n
+        \n<b>1.12.0</b>
         \n⸻
         \n<li>This release fixes several layout problems with right-to-left (RTL) languages. Now, everything should look as expected.</li>
         \n<li>New feature: Preview all conversions in the currency picker. You have to enable it in the settings.</li>

@@ -1,8 +1,10 @@
 package de.salomax.currencies.model
 
 import android.content.Context
+import com.squareup.moshi.JsonClass
 import de.salomax.currencies.R
 
+@JsonClass(generateAdapter = false) // see https://stackoverflow.com/a/64085370/421140
 enum class ApiProvider(
     val number: Int, // safer ordinal; DON'T CHANGE!
     val baseUrl: String,

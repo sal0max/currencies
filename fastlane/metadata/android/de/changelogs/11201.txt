@@ -1,0 +1,1 @@
+- Absturz beim Updaten der Kurse behoben. Sorry! 🤕
