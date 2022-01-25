@@ -3,7 +3,6 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator"> . </string>
     <string name="desc_toggle_currencies">εναλλαγή νομισμάτων</string>
-
     <string name="copied_to_clipboard">Το <b>%s</b> αντιγράφηκε στο πρόχειρο</string>
     <string name="error">Σφάλμα: %s</string>
     <string name="error_generic">Άγνωστο πρόβλημα.</string>
@@ -15,4 +14,5 @@
     <string name="menu_refresh">Επικαιροποίηση ισοτιμίας</string>
     <string name="menu_timeline">Διάγραμμα ισοτιμίας</string>
     <string name="tooltip_filter_starred">Εμφάνιση μόνο αγαπημένων νομισμάτων.</string>
+    <string name="last_updated">Τιμές της <b>%1$s</b> από <b>%2$s</b></string>
 </resources>
