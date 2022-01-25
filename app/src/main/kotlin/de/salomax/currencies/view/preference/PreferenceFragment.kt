@@ -16,6 +16,7 @@ import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
+import java.lang.NumberFormatException
 import java.util.*
 
 @Suppress("unused")
@@ -54,8 +55,17 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         // transaction fee
         val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.fee_key))
         feePreference?.setOnPreferenceChangeListener { _, newValue ->
+            // fee amount changed
             if (newValue is String)
-                viewModel.setFee(newValue.toFloat())
+                try {
+                    viewModel.setFee(
+                        if (newValue.isEmpty()) 0f
+                        else newValue.toFloat()
+                    )
+                } catch (e: NumberFormatException) {
+                    viewModel.setFee(0f)
+                }
+            // fee enabled/disabled
             else if (newValue is Boolean)
                 viewModel.setFeeEnabled(newValue)
             true
