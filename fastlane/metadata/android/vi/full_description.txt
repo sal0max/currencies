@@ -1,0 +1,12 @@
+Currencies là ứng dụng chuyển đổi tiền tệ đơn giản. Nó không dành cho việc kinh doanh tài chính theo thời gian thực, mà là để làm người bạn đồng hành vd: trong kỳ nghỉ.
+
+• Ứng dụng hỗ trợ tất cả các tiền tệ phổ biến hiện đang được dùng. Bạn có thể chọn giữa nhiều nhà cung cấp tỉ lệ chuyển đổi:
+   • exchangerate.host với hơn 160 tiền tệ
+   • frankfurter.app với hơn 30 tiền tệ, được Ngân hàng trung ương châu Âu cung cấp
+   • fer.ee để thay thế cho frankfurter.app với cùng số tiền tệ đó
+• Giao diện đơn giản, thuần thiết kế Material.
+• Lịch sử tỉ lệ: Xem biểu đồ ở năm trước, để xem các tiền tệ đã phát triển thế nào.
+• Một tính năng lớn là máy tính được tích hợp. Hữu ích vd: nếu bạn muốn chia tiền ăn nhà hàng.
+• Tính phí: thêm phí chuyển đổi tiền nước ngoài có thể tùy chỉnh vào tất cả phép tính (không bắt buộc).
+• Currencies được viết cho Android bằng Kotlin, đặt mục tiêu Android 12 và hỗ trợ chủ đề sáng và tối.
+• Ứng dụng không có quảng cáo và không theo dõi người dùng.
