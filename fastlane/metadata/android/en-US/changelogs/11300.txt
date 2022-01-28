@@ -1,0 +1,4 @@
+- Another new language: You can now enjoy the app in Arabic. Thanks a lot, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪
+- Some more RTL fixes for the landscape layout.
+- Fixed a crash when entering an empty value for the fee amount.
+- The data provider is being displayed in the timeline view.
