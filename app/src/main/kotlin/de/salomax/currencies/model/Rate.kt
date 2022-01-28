@@ -7,6 +7,4 @@ import com.squareup.moshi.JsonClass
 data class Rate(
     @field:Json(name = "name") val currency: Currency,
     @field:Json(name = "value") val value: Float
-) {
-
-}
+)

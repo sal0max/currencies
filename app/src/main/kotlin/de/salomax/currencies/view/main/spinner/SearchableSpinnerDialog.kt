@@ -66,20 +66,20 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         filterStarredButton?.setOnClickListener {
             mainViewModel.toggleStarredActive()
         }
-        mainViewModel.isFilterStarredEnabled().observe(this, { enabled ->
+        mainViewModel.isFilterStarredEnabled().observe(this) { enabled ->
             filterStarredButton?.setImageDrawable(
                 if (enabled) ContextCompat.getDrawable(requireContext(), R.drawable.ic_favorite_on)
                 else ContextCompat.getDrawable(requireContext(), R.drawable.ic_favorite_off)
             )
-        })
-        mainViewModel.isFilterStarredEnabled().observe(this, {
+        }
+        mainViewModel.isFilterStarredEnabled().observe(this) {
             adapter.filterStarred(it)
-        })
+        }
 
         // rates
-        mainViewModel.getExchangeRates().observe(this, {
+        mainViewModel.getExchangeRates().observe(this) {
             adapter.setRates(it?.rates)
-        })
+        }
         // stars
         mainViewModel.getStarredCurrencies().observe(this) {
             adapter.setStars(it)

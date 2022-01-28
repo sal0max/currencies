@@ -196,7 +196,7 @@ class MainActivity : BaseActivity() {
 
     private fun observe() {
         //exchange rates changed
-        viewModel.getExchangeRates().observe(this, {
+        viewModel.getExchangeRates().observe(this) {
             // date
             it?.let {
                 val date = it.date
@@ -229,10 +229,10 @@ class MainActivity : BaseActivity() {
             // rates
             spinnerFrom.setRates(it?.rates)
             spinnerTo.setRates(it?.rates)
-        })
+        }
 
         // something bad happened
-        viewModel.getError().observe(this, {
+        viewModel.getError().observe(this) {
             // error
             it?.let {
                 Snackbar.make(tvCalculations, it, 5000) // show for 5s
@@ -240,29 +240,29 @@ class MainActivity : BaseActivity() {
                     .setTextColor(getColor(android.R.color.white))
                     .show()
             }
-        })
+        }
 
         // rates are updating
-        viewModel.isUpdating().observe(this, { isRefreshing ->
+        viewModel.isUpdating().observe(this) { isRefreshing ->
             refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
             // disable manual refresh, while refreshing
             swipeRefresh.isEnabled = isRefreshing.not()
             menuItemRefresh?.isEnabled = isRefreshing.not()
-        })
+        }
 
         // input changed
-        viewModel.getCurrentBaseValueFormatted().observe(this, {
+        viewModel.getCurrentBaseValueFormatted().observe(this) {
             tvFrom.text = it
-        })
-        viewModel.getResultFormatted().observe(this, {
+        }
+        viewModel.getResultFormatted().observe(this) {
             tvTo.text = it
-        })
-        viewModel.getCalculationInputFormatted().observe(this, {
+        }
+        viewModel.getCalculationInputFormatted().observe(this) {
             tvCalculations.text = it
-        })
+        }
 
         // selected rates changed
-        viewModel.getBaseCurrency().observe(this, { currency ->
+        viewModel.getBaseCurrency().observe(this) { currency ->
             tvCurrencySymbolFrom.text = currency?.symbol()
             spinnerFrom.setSelection(currency)
             // conversion preview
@@ -271,8 +271,8 @@ class MainActivity : BaseActivity() {
                 viewModel.getExchangeRates().value?.rates?.find { it.currency == currency }?.value
                     // give it to the adapter
                     ?.let { spinnerTo.setCurrentRate(Rate(currency, it)) }
-        })
-        viewModel.getDestinationCurrency().observe(this, { currency ->
+        }
+        viewModel.getDestinationCurrency().observe(this) { currency ->
             tvCurrencySymbolTo.text = currency?.symbol()
             spinnerTo.setSelection(currency)
             // conversion preview
@@ -281,26 +281,26 @@ class MainActivity : BaseActivity() {
                 viewModel.getExchangeRates().value?.rates?.find { it.currency == currency }?.value
                     // give it to the adapter
                     ?.let { spinnerFrom.setCurrentRate(Rate(currency, it)) }
-        })
+        }
 
         // fee changed
-        viewModel.isFeeEnabled().observe(this, {
+        viewModel.isFeeEnabled().observe(this) {
             tvFee.visibility = if (it) View.VISIBLE else View.GONE
-        })
-        viewModel.getFee().observe(this, {
+        }
+        viewModel.getFee().observe(this) {
             tvFee.text = it.toHumanReadableNumber(this, showPositiveSign = true, suffix = "%")
             tvFee.setTextColor(
                 if (it >= 0) getColor(android.R.color.holo_red_light)
                 else getColor(R.color.dollarBill)
             )
-        })
+        }
 
-        viewModel.getCurrentBaseValueAsNumber().observe(this, {
+        viewModel.getCurrentBaseValueAsNumber().observe(this) {
             spinnerTo.setCurrentSum(it)
-        })
-        viewModel.getResultAsNumber().observe(this, {
+        }
+        viewModel.getResultAsNumber().observe(this) {
             spinnerFrom.setCurrentSum(it)
-        })
+        }
     }
 
     private fun getTextColorSecondary(): Int {

@@ -137,25 +137,25 @@ class TimelineActivity : BaseActivity() {
     @SuppressLint("SetTextI18n")
     private fun observe() {
         // error
-        timelineModel.getError().observe(this, {
+        timelineModel.getError().observe(this) {
             findViewById<TextView>(R.id.error).apply {
                 visibility = View.VISIBLE
                 text = it
             }
-        })
+        }
 
         // progress bar
-        timelineModel.isUpdating().observe(this, { isRefreshing ->
+        timelineModel.isUpdating().observe(this) { isRefreshing ->
             refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
-        })
+        }
 
         // populate the chart
-        timelineModel.getRates().observe(this, {
+        timelineModel.getRates().observe(this) {
             (timelineChart.adapter as ChartAdapter).entries = it?.entries?.toList()
-        })
+        }
 
         // provider info
-        timelineModel.getProvider().observe(this, {
+        timelineModel.getProvider().observe(this) {
             textProvider.text = if (it != null)
                 HtmlCompat.fromHtml(
                     getString(R.string.data_provider, it),
@@ -163,10 +163,10 @@ class TimelineActivity : BaseActivity() {
                 )
             else
                 null
-        })
+        }
 
         // difference in percent
-        timelineModel.getRatesDifferencePercent().observe(this, {
+        timelineModel.getRatesDifferencePercent().observe(this) {
             textRateDifference.text = it?.toHumanReadableNumber(this, 2, true, "%")
             if (it != null) {
                 textRateDifference.setTextColor(
@@ -177,10 +177,10 @@ class TimelineActivity : BaseActivity() {
                     )
                 )
             }
-        })
+        }
 
         // past rate
-        timelineModel.getRatePast().observe(this, {
+        timelineModel.getRatePast().observe(this) {
             val rate = it?.value
             if (rate != null) {
                 textPastRateDate.text = it.key.format(formatter)
@@ -192,20 +192,20 @@ class TimelineActivity : BaseActivity() {
             } else {
                 divider.visibility = View.GONE
             }
-        })
+        }
 
         // current rate
-        timelineModel.getRateCurrent().observe(this, {
+        timelineModel.getRateCurrent().observe(this) {
             val rate = it?.value
             if (rate != null) {
                 textCurrentRateDate.text = it.key.format(formatter)
                 textCurrentRateSymbol.text = rate.currency.symbol()
                 textCurrentRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = 3)
             }
-        })
+        }
 
         // average rate
-        timelineModel.getRatesAverage().observe(this, {
+        timelineModel.getRatesAverage().observe(this) {
             populateStat(
                 findViewById(R.id.stats_row_1),
                 getString(R.string.rate_average),
@@ -213,10 +213,10 @@ class TimelineActivity : BaseActivity() {
                 it?.value,
                 null
             )
-        })
+        }
 
         // min rate
-        timelineModel.getRatesMin().observe(this, {
+        timelineModel.getRatesMin().observe(this) {
             val rate = it.first
             populateStat(
                 findViewById(R.id.stats_row_2),
@@ -225,10 +225,10 @@ class TimelineActivity : BaseActivity() {
                 rate?.value,
                 it.second
             )
-        })
+        }
 
         // max rate
-        timelineModel.getRatesMax().observe(this, {
+        timelineModel.getRatesMax().observe(this) {
             val rate = it.first
             populateStat(
                 findViewById(R.id.stats_row_3),
@@ -237,7 +237,7 @@ class TimelineActivity : BaseActivity() {
                 rate?.value,
                 it.second
             )
-        })
+        }
 
     }
 

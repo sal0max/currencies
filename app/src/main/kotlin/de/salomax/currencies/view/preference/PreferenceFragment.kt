@@ -70,10 +70,10 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 viewModel.setFeeEnabled(newValue)
             true
         }
-        viewModel.getFee().observe(this, {
+        viewModel.getFee().observe(this) {
             feePreference?.summary = it.toHumanReadableNumber(requireContext(), showPositiveSign = true, suffix = "%")
             feePreference?.text = it.toString()
-        })
+        }
 
         // api provider
         findPreference<ListPreference>(getString(R.string.api_key))?.apply {
@@ -84,7 +84,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
         }
         // change text according to selected api
-        viewModel.getApiProvider().observe(this, {
+        viewModel.getApiProvider().observe(this) {
             findPreference<LongSummaryPreference>(getString(R.string.key_apiProvider))?.apply {
                 title =
                     resources.getString(R.string.api_about_title, it.getName(context))
@@ -93,7 +93,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
             findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
                 it.getUpdateIntervalDescription(requireContext())
-        })
+        }
 
         // donate
         findPreference<Preference>(getString(R.string.donate_key))?.apply {
