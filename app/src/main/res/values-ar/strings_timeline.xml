@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> إلى &lt;b>%2$s&lt;/b></string>
+    <string name="activity_timeline_title">\u202B&lt;b>%1$s&lt;/b> إلى &lt;b>%2$s&lt;/b></string>
     <string name="rate_average">متوسط</string>
     <string name="rate_min">أقل</string>
     <string name="rate_max">أعلى</string>
