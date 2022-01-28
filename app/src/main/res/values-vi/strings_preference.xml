@@ -31,4 +31,6 @@
     <string name="rate_title">Đánh giá ứng dụng này</string>
     <string name="rate_summary">Nếu bạn muốn, bạn có thể giúp những người khác khám phá ra Currencies. Hãy nhấn vào đây để đánh giá ứng dụng trên Google Play.</string>
     <string name="aboutVersion">Phiên bản %1$s</string>
+    <string name="previewConversion_title">Xem trước chuyển đổi</string>
+    <string name="previewConversion_summary">Hiện việc chuyển đổi hiện tại cho mỗi tỉ lệ ở trình chọn tiền tệ.</string>
 </resources>
