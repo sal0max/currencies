@@ -1,8 +1,10 @@
 package de.salomax.currencies.view.main.spinner
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.content.ContextWrapper
 import android.util.AttributeSet
+import android.view.MotionEvent
 import android.widget.SpinnerAdapter
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.fragment.app.FragmentActivity
@@ -31,6 +33,7 @@ class SearchableSpinner : AppCompatSpinner {
         init()
     }
 
+    @SuppressLint("ClickableViewAccessibility")
     private fun init() {
         super.setAdapter(adapter)
 
@@ -38,6 +41,13 @@ class SearchableSpinner : AppCompatSpinner {
         // click listeners
         spinnerDialog.onRateClicked = { rate: Rate, _: Int ->
             setSelection(adapter.getPosition(rate.currency))
+        }
+        // prevent "drag-to-open" (interferes with pull-to-refresh): https://stackoverflow.com/questions/27923266/
+        setOnTouchListener { v, event ->
+            if (event.action != MotionEvent.ACTION_MOVE)
+                v.onTouchEvent(event)
+            else
+                true
         }
     }
 
