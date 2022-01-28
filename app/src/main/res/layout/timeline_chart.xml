@@ -4,14 +4,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="?attr/colorDisplayOverlay"
-    android:padding="@dimen/margin2x">
+    android:background="?attr/colorDisplayOverlay">
 
+    <!-- error -->
     <TextView
         android:id="@+id/error"
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin2x"
         android:fontFamily="monospace"
         android:gravity="center"
         android:textColor="@android:color/holo_red_light"
@@ -23,10 +24,12 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:text="Error: HTTP Exception 521" />
 
+    <!-- chart -->
     <com.robinhood.spark.SparkView
         android:id="@+id/timeline_chart"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:layout_margin="@dimen/margin2x"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -39,5 +42,20 @@
         app:spark_scrubEnabled="true"
         app:spark_scrubLineColor="?android:attr/textColorSecondary"
         app:spark_scrubLineWidth="2dp" />
+
+    <!-- provider info -->
+    <TextView
+        android:id="@+id/textProvider"
+        style="@style/TextAppearance.MaterialComponents.Subtitle1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin1x"
+        android:alpha=".5"
+        android:gravity="end"
+        android:textColor="?android:attr/textColorTertiary"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="Data by Exchangerate.host" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

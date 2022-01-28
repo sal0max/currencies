@@ -82,6 +82,12 @@ class TimelineViewModel(
      * getters for the various values ==============================================================
      */
 
+    fun getProvider(): LiveData<CharSequence?> {
+        return Transformations.map(dbLiveItems) {
+            it?.provider?.getName(getApplication())
+        }
+    }
+
     fun getRates(): LiveData<Map<LocalDate, Rate>?> {
         return Transformations.map(dbLiveItems) {
             it?.rates

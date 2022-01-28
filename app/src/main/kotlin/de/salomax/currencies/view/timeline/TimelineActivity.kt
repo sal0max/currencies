@@ -34,6 +34,7 @@ class TimelineActivity : BaseActivity() {
     // views
     private lateinit var refreshIndicator: LinearProgressIndicator
     private lateinit var timelineChart: SparkView
+    private lateinit var textProvider: TextView
     private lateinit var textRateDifference: TextView
     private lateinit var divider: View
 
@@ -90,6 +91,7 @@ class TimelineActivity : BaseActivity() {
     private fun findViews() {
         this.refreshIndicator = findViewById(R.id.refreshIndicator)
         this.timelineChart = findViewById(R.id.timeline_chart)
+        this.textProvider = findViewById(R.id.textProvider)
         this.textRateDifference = findViewById(R.id.text_rate_difference_percent)
         this.divider = findViewById(R.id.divider)
 
@@ -150,6 +152,17 @@ class TimelineActivity : BaseActivity() {
         // populate the chart
         timelineModel.getRates().observe(this, {
             (timelineChart.adapter as ChartAdapter).entries = it?.entries?.toList()
+        })
+
+        // provider info
+        timelineModel.getProvider().observe(this, {
+            textProvider.text = if (it != null)
+                HtmlCompat.fromHtml(
+                    getString(R.string.data_provider, it),
+                    HtmlCompat.FROM_HTML_MODE_LEGACY
+                )
+            else
+                null
         })
 
         // difference in percent
