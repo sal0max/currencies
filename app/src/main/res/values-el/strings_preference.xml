@@ -4,8 +4,8 @@
     <string name="category_settings">Γενικές Ρυθμίσεις</string>
     <string name="fee_title">Προμήθεια συναλλαγής εξωτερικού</string>
     <string name="fee_summary">Ανάλογα με το συμβόλαιο της πιστωτικής σας κάρτας, η τράπεζα σας μπορεί να χρεώνει προμήθεια για όλες τις συναλλαγές συναλλάγματος. Εδώ μπορείτε να εισαγάγετε αυτό το τέλος. Θα προστεθεί στον υπολογισμό, ώστε να γνωρίζετε πόσα <i>πραγματικά</i> πληρώνετε.</string>
-    <string name="previewConversion_title">Προεπισκόπηση μετατροπής</string>
-    <string name="previewConversion_summary">Εμφάνιση της μετατροπής κάθε νομίσματος στον επιλογέα νομισμάτων.</string>
+    <string name="previewConversion_title">Προεπισκόπηση ισοτιμίας</string>
+    <string name="previewConversion_summary">Εμφάνιση της ισοτιμίας κάθε νομίσματος στον επιλογέα νομισμάτων.</string>
     <string name="category_appearance">Εμφάνιση</string>
     <string name="theme_title">Θέμα</string>
     <string name="theme_option_light">Ανοικτό</string>
