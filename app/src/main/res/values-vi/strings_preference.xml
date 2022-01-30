@@ -4,6 +4,8 @@
     <string name="category_settings">Cài đặt chung</string>
     <string name="fee_title">Phí giao dịch nước ngoài</string>
     <string name="fee_summary">Tùy vào thỏa thuận thẻ tín dụng của bạn, ngân hàng của bạn có thể thu phí giao dịch trao đổi nước ngoài. Ở đây bạn có thể nhập phí đó. Nó sẽ được thêm vào phép tính, để bạn biết bạn <i>thực sự</i> trả bao nhiêu tiền.</string>
+    <string name="previewConversion_title">Xem trước chuyển đổi</string>
+    <string name="previewConversion_summary">Hiện việc chuyển đổi hiện tại cho mỗi tỉ lệ ở trình chọn tiền tệ.</string>
     <string name="category_appearance">Ngoại hình</string>
     <string name="theme_title">Thiết kế</string>
     <string name="theme_option_light">Sáng</string>

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> ra &lt;b>%2$s&lt;/b></string>
+    <string name="activity_timeline_title">&lt;b&gt;%1$s&lt;/b&gt; ra &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="data_provider">Dữ liệu bởi <b>%s</b></string>
     <string name="rate_average">t. bình</string>
     <string name="rate_min">t. thiểu</string>
     <string name="rate_max">t. đa</string>
