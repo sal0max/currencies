@@ -1,0 +1,4 @@
+- Yeni dil: Currencies artık Arapça dil desteğine sahip. Eyvallah Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪
+- Sağdan sola okumalı dillerde yatay mod etkinken oluşan bazı arayüz hataları düzeltildi.
+- İşlem ücretine boş bir değer girilince oluşan kilitlenme hatası düzeltildi.
+- Hesapalama ekranıdna artık aktif veri sağlayıcısının ismine yer veriliyor.
