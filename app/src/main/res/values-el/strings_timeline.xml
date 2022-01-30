@@ -7,4 +7,5 @@
     <string name="year">έτος</string>
     <string name="month">μήνας</string>
     <string name="week">εβδομάδα</string>
+    <string name="data_provider">Δεδομένα από <b>%s</b></string>
 </resources>
