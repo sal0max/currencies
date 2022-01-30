@@ -3,7 +3,7 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator"> . </string>
     <string name="desc_toggle_currencies">para birimlerini değiştir</string>
-
+    <string name="last_updated"><b>%1$s</b> tarihli döviz kuru (<b>%2$s</b>)</string>
     <string name="copied_to_clipboard"><b>%s</b> panoya kopyalandı</string>
     <string name="error">Hata: %s</string>
     <string name="error_generic">Bilinmeyen bir sorunla karşılaşıldı.</string>
