@@ -3,7 +3,7 @@
     <!-- main settings -->
     <string name="category_settings">Γενικές Ρυθμίσεις</string>
     <string name="fee_title">Προμήθεια συναλλαγής εξωτερικού</string>
-    <string name="fee_summary">Ανάλογα με το συμβόλαιο της πιστωτικής σας κάρτας, η τράπεζα σας μπορεί να χρεώνει προμήθεια για όλες τις συναλλαγές συναλλάγματος. Εδώ μπορείτε να εισαγάγετε αυτό το τέλος. Θα προστεθεί στον υπολογισμό, ώστε να γνωρίζετε πόσα <i>πραγματικά</i> πληρώνετε.</string>
+    <string name="fee_summary">Ανάλογα με το συμβόλαιο της πιστωτικής σας κάρτας, η τράπεζα σας μπορεί να χρεώνει προμήθεια για όλες τις συναλλαγές συναλλάγματος. Εδώ μπορείτε να εισάγετε αυτό το τέλος. Θα προστεθεί στον υπολογισμό, ώστε να γνωρίζετε πόσα <i>πραγματικά</i> πληρώνετε.</string>
     <string name="previewConversion_title">Προεπισκόπηση ισοτιμίας</string>
     <string name="previewConversion_summary">Εμφάνιση της ισοτιμίας κάθε νομίσματος στον επιλογέα νομισμάτων.</string>
     <string name="category_appearance">Εμφάνιση</string>
@@ -22,8 +22,8 @@
     <string name="api_about_ferEe">Το <a href="https://fer.ee/"><b>Fer.ee</b></a> είναι σχετικά καινούργια υπηρεσία, η οποία (όπως και το Frankfurter.app) παρακολουθεί τις τιμές αναφοράς (forex) της ΕΚΤ.\n<b>Περιλαμβάνει περίπου 30 νομίσματα.</b></string>
     <string name="api_refreshPeriod_title">Ρυθμός ανανέωσης</string>
     <string name="api_refreshPeriod_exchangerateHost">Οι τιμές ανανεώνονται περίπου τα μεσάνυχτα UTC κάθε εργάσιμης ημέρας.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Οι τιμές ανανεώνονται περίπου την 16:00 UTC κάθε εργάσιμης ημέρας.</string>
-    <string name="api_refreshPeriod_ferEe">Οι τιμές ανανεώνονται κάθε εργάσιμη ημέρας.</string>
+    <string name="api_refreshPeriod_frankfurterApi">Οι τιμές ανανεώνονται περίπου την 16:00 CET κάθε εργάσιμης ημέρας.</string>
+    <string name="api_refreshPeriod_ferEe">Οι τιμές ανανεώνονται κάθε εργάσιμη ημέρα.</string>
     <!-- about -->
     <string name="category_about">Σχετικά με την εφαρμογή</string>
     <string name="disclaimer_title">Αποποίηση ευθυνών</string>
