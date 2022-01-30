@@ -7,4 +7,5 @@
     <string name="year">yıl</string>
     <string name="month">ay</string>
     <string name="week">hafta</string>
+    <string name="data_provider">Veri sağlayıcısı: <b>%s</b></string>
 </resources>
