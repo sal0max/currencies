@@ -1,0 +1,4 @@
+- Sağdan sola okumalı dillerde oluşan arayüz hataları düzeltildi.
+- Yeni özellik: Artık mevcut kur oranlarını para birimi seçme ekranında görüntüleyebilirsin. Bu özellik ayarlar menüsünden etkinleştirilebilir.
+- Kur oranları güncellendikten sonra bile bazen güncel olmayan veya yanlış oranların gösterilmesine neden olan bir hata düzeltildi.
+- Uygulamayı daha iyi bir hale getirmek için kaynak kodunda önemli ölçüde iyileştirmeler yaplıdı.
