@@ -3,7 +3,6 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator"> . </string>
     <string name="desc_toggle_currencies">para birimlerini değiştir</string>
-
     <string name="copied_to_clipboard"><b>%s</b> panoya kopyalandı</string>
     <string name="error">Hata: %s</string>
     <string name="error_generic">Bilinmeyen bir sorunla karşılaşıldı.</string>
@@ -15,4 +14,5 @@
     <string name="menu_refresh">Kurları güncelle</string>
     <string name="menu_timeline">Döviz kur grafiği</string>
     <string name="tooltip_filter_starred">Sadece favori para birimlerini göster.</string>
+    <string name="last_updated"><b>%1$s</b> tarihli döviz kuru (<b>%2$s</b>)</string>
 </resources>
