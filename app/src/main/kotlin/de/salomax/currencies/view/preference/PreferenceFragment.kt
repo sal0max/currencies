@@ -8,7 +8,7 @@ import androidx.lifecycle.ViewModelProvider
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
-import androidx.preference.SwitchPreference
+import androidx.preference.SwitchPreferenceCompat
 import de.salomax.currencies.BuildConfig
 import de.salomax.currencies.R
 import de.salomax.currencies.model.ApiProvider
@@ -37,7 +37,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
 
         // conversion preview
-        findPreference<SwitchPreference>(getString(R.string.previewConversion_key))?.apply {
+        findPreference<SwitchPreferenceCompat>(getString(R.string.previewConversion_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
                 viewModel.setPreviewConversionEnabled(newValue.toString().toBoolean())
                 true
@@ -45,7 +45,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
 
         // pure black
-        findPreference<SwitchPreference>(getString(R.string.pure_black_key))?.apply {
+        findPreference<SwitchPreferenceCompat>(getString(R.string.pure_black_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
                 viewModel.setPureBlackEnabled(newValue.toString().toBoolean())
                 true

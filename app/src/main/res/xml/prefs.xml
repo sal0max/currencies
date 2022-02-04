@@ -11,7 +11,7 @@
             android:title="@string/fee_title"
             tools:summary="2.0 %" />
 
-        <SwitchPreference
+        <SwitchPreferenceCompat
             app:defaultValue="false"
             android:key="@string/previewConversion_key"
             android:title="@string/previewConversion_title"
@@ -28,7 +28,7 @@
             android:key="@string/theme_key"
             android:summary="%s"
             android:title="@string/theme_title" />
-        <SwitchPreference
+        <SwitchPreferenceCompat
             android:defaultValue="false"
             android:key="@string/pure_black_key"
             android:summary="@string/pure_black_enabled_summary"
