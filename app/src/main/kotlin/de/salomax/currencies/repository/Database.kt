@@ -161,13 +161,21 @@ class Database(context: Context) {
         }
     }
 
+    private val defaultProvider = ApiProvider.EXCHANGERATE_HOST
+
     fun getApiProvider(): ApiProvider {
-        return ApiProvider.fromNumber(prefs.getInt(keyApi, 0))!!
+        val provider = ApiProvider.fromNumber(prefs.getInt(keyApi, defaultProvider.number))
+        if (provider == null)
+            setApiProvider(defaultProvider)
+        return provider ?: defaultProvider
     }
 
     fun getApiProviderAsync(): LiveData<ApiProvider> {
-        return Transformations.map(SharedPreferenceIntLiveData(prefs, keyApi, 0)) {
-            ApiProvider.fromNumber(it)
+        return Transformations.map(SharedPreferenceIntLiveData(prefs, keyApi, defaultProvider.number)) {
+            val provider = ApiProvider.fromNumber(it)
+            if (provider == null)
+                setApiProvider(defaultProvider)
+            provider ?: defaultProvider
         }
     }
 
