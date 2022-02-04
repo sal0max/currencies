@@ -1,14 +1,14 @@
 package de.salomax.currencies.view.main.spinner
 
-import android.app.AlertDialog
 import android.app.Dialog
 import android.content.Context
 import android.os.Bundle
-import android.view.LayoutInflater
+import android.view.View
 import android.widget.ImageButton
+import androidx.appcompat.app.AlertDialog
+import androidx.appcompat.app.AppCompatDialogFragment
 import androidx.appcompat.widget.SearchView
 import androidx.core.content.ContextCompat
-import androidx.fragment.app.DialogFragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,7 +17,7 @@ import de.salomax.currencies.model.Rate
 import de.salomax.currencies.viewmodel.main.MainViewModel
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 
-class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.OnQueryTextListener {
+class SearchableSpinnerDialog(context: Context) : AppCompatDialogFragment(), SearchView.OnQueryTextListener {
 
     private lateinit var mainViewModel: MainViewModel
     private lateinit var prefViewModel: PreferenceViewModel
@@ -38,14 +38,13 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
     }
 
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
-        val layoutInflater = LayoutInflater.from(activity)
-        val rootView = layoutInflater.inflate(R.layout.searchable_spinner_dialog, null)
+        val view = View.inflate(context, R.layout.searchable_spinner_dialog, null)
 
         this.mainViewModel = ViewModelProvider(this, MainViewModel.Factory(requireActivity().application, true)).get(MainViewModel::class.java)
         this.prefViewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
 
         // listView
-        listView = rootView.findViewById(R.id.listView)
+        listView = view.findViewById(R.id.listView)
         listView?.layoutManager = LinearLayoutManager(context)
         listView?.adapter = adapter
         adapter.onRateClicked = { rate: Rate, position: Int ->
@@ -57,12 +56,12 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         }
 
         // searchView
-        searchView = rootView.findViewById(R.id.searchView)
+        searchView = view.findViewById(R.id.searchView)
         searchView?.setOnQueryTextListener(this)
         searchView?.clearFocus()
 
         // filter starred
-        filterStarredButton = rootView.findViewById(R.id.btn_toggle_fav)
+        filterStarredButton = view.findViewById(R.id.btn_toggle_fav)
         filterStarredButton?.setOnClickListener {
             mainViewModel.toggleStarredActive()
         }
@@ -90,11 +89,10 @@ class SearchableSpinnerDialog(context: Context) : DialogFragment(), SearchView.O
         }
 
         // build dialog
-        val alertBuilder = AlertDialog.Builder(activity)
-        alertBuilder.setView(rootView)
-        alertBuilder.setNegativeButton(getString(android.R.string.cancel), null)
-
-        return alertBuilder.create()
+        return AlertDialog.Builder(requireContext())
+            .setNegativeButton(getString(android.R.string.cancel), null)
+            .setView(view)
+            .create()
     }
 
     override fun onQueryTextChange(query: String?): Boolean {
