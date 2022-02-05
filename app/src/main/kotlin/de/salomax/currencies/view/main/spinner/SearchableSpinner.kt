@@ -8,28 +8,31 @@ import android.view.MotionEvent
 import android.widget.SpinnerAdapter
 import androidx.appcompat.widget.AppCompatSpinner
 import androidx.fragment.app.FragmentActivity
+import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 
 class SearchableSpinner : AppCompatSpinner {
 
-    private val mContext: Context
+    private val mContext = context
     private lateinit var spinnerDialog: SearchableSpinnerDialog
 
     private val adapter = SearchableSpinnerAdapter(context, android.R.layout.simple_spinner_item)
 
-    constructor(context: Context) : super(context) {
-        this.mContext = context
-        init()
-    }
+    constructor(
+        context: Context
+    ) : this(context, null)
 
-    constructor(context: Context, attrs: AttributeSet) : super(context, attrs) {
-        this.mContext = context
-        init()
-    }
+    constructor(
+        context: Context,
+        attrs: AttributeSet?
+    ) : this(context, attrs, R.attr.spinnerStyle)
 
-    constructor (context: Context, attrs: AttributeSet, defStyleAttr: Int) : super(context, attrs, defStyleAttr) {
-        this.mContext = context
+    constructor (
+        context: Context,
+        attrs: AttributeSet?,
+        defStyleAttr: Int
+    ) : super(context, attrs, defStyleAttr) {
         init()
     }
 
