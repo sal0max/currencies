@@ -31,4 +31,6 @@
     <string name="rate_title">Notez cette application</string>
     <string name="rate_summary">Si vous le souhaitez, vous pouvez aider d\'autres personnes à découvrir Currencies. Cliquez ici pour évaluer l\'application sur Google Play.</string>
     <string name="aboutVersion">Version %1$s</string>
+    <string name="previewConversion_title">Aperçu de la conversion</string>
+    <string name="previewConversion_summary">Afficher la conversion actuelle pour chaque taux dans le sélecteur de devises.</string>
 </resources>
