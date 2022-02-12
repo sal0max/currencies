@@ -3,7 +3,6 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">togliere le valute</string>
-
     <string name="copied_to_clipboard">Copiato &lt;b&gt;%s&lt;/b&gt; negli appunti</string>
     <string name="error">Errore: %s</string>
     <string name="error_generic">Problema sconosciuto.</string>
@@ -15,4 +14,5 @@
     <string name="menu_refresh">Tassi di aggiornamento</string>
     <string name="menu_timeline">Cronologia del tasso di cambio</string>
     <string name="tooltip_filter_starred">Mostra solo le valute stellate.</string>
+    <string name="last_updated">tassi di cambio (<b>%1$s</b> <b>%2$s</b>)</string>
 </resources>
