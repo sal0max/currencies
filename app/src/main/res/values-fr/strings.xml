@@ -3,7 +3,6 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">toggle les devises</string>
-
     <string name="copied_to_clipboard">Copie de &lt;b&gt;%s&lt;/b&gt; au presse-papiers</string>
     <string name="error">Erreur : %s</string>
     <string name="error_generic">Problème inconnu.</string>
@@ -15,4 +14,5 @@
     <string name="menu_refresh">Rafraîchissement des taux</string>
     <string name="menu_timeline">Historique des taux de change</string>
     <string name="tooltip_filter_starred">Afficher uniquement les devises étoilées.</string>
+    <string name="last_updated">les taux de change (<b>%1$s</b> <b>%2$s</b>)</string>
 </resources>
