@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> in &lt;b>%2$s&lt;/b></string>
+    <string name="activity_timeline_title">&lt;b&gt;%1$s&lt;/b&gt; in &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="rate_average">media</string>
     <string name="rate_min">min</string>
     <string name="rate_max">max</string>
     <string name="year">anno</string>
     <string name="month">mese</string>
     <string name="week">settimana</string>
+    <string name="data_provider">Dati di <b>%s</b></string>
 </resources>
