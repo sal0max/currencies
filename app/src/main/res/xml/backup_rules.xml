@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<full-backup-content>
-    <include domain="sharedpref" path="."/>
-    <include domain="sharedpref" path="last_state.xml"/>
-    <include domain="sharedpref" path="prefs.xml"/>
-    <include domain="sharedpref" path="rates.xml."/>
-</full-backup-content>
