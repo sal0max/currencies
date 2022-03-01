@@ -10,6 +10,8 @@ import androidx.preference.EditTextPreference;
 import androidx.preference.PreferenceDataStore;
 import androidx.preference.PreferenceViewHolder;
 
+import java.util.Objects;
+
 import de.salomax.currencies.R;
 
 @SuppressWarnings("unused")
@@ -89,8 +91,8 @@ public class EditTextSwitchPreference extends EditTextPreference {
         if (dataStore != null) {
             dataStore.putBoolean(KEY_SWITCH, value);
         } else {
-            getPreferenceManager()
-                    .getSharedPreferences()
+            Objects.requireNonNull(getPreferenceManager()
+                    .getSharedPreferences())
                     .edit()
                     .putBoolean(KEY_SWITCH, value)
                     .apply();
@@ -109,8 +111,8 @@ public class EditTextSwitchPreference extends EditTextPreference {
         if (dataStore != null) {
             return dataStore.getBoolean(KEY_SWITCH, defaultReturnValue);
         } else {
-            return getPreferenceManager()
-                    .getSharedPreferences()
+            return Objects.requireNonNull(getPreferenceManager()
+                    .getSharedPreferences())
                     .getBoolean(KEY_SWITCH, defaultReturnValue);
         }
     }

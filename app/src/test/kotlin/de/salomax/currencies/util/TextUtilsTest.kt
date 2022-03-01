@@ -2,7 +2,6 @@ package de.salomax.currencies.util
 
 import android.content.Context
 import de.salomax.currencies.R
-import de.salomax.currencies.util.toHumanReadableNumber
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
