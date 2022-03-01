@@ -4,6 +4,8 @@
     <string name="category_settings">Configuración general</string>
     <string name="fee_title">Tasa de transacción extranjera</string>
     <string name="fee_summary">Dependiendo del acuerdo de su tarjeta de crédito, su banco puede cobrar una comisión por todas las transacciones de cambio de divisas. Aquí puedes introducir esa comisión. Se añadirá al cálculo, para que sepas cuánto pagas <i>realmente</i>.</string>
+    <string name="previewConversion_title">Vista previa de la conversión</string>
+    <string name="previewConversion_summary">Mostrar la conversión actual para cada tipo de cambio en el selector de moneda.</string>
     <string name="category_appearance">Apariencia</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Claro</string>

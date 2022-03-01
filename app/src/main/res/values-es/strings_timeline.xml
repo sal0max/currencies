@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> a &lt;b>%2$s&lt;/b></string>
+    <string name="activity_timeline_title">&lt;b&gt;%1$s&lt;/b&gt; a &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="data_provider">Datos de &lt;b&gt;%s&lt;/b&gt;</string>
     <string name="rate_average">prm</string>
     <string name="rate_min">mín</string>
     <string name="rate_max">máx</string>

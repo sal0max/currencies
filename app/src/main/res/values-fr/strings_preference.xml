@@ -4,6 +4,8 @@
     <string name="category_settings">Paramètres généraux</string>
     <string name="fee_title">Frais de transaction à l\'étranger</string>
     <string name="fee_summary">Selon votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les transactions de change. Vous pouvez saisir ici ces frais. Elle sera ajoutée en plus du calcul, afin que vous sachiez combien vous <i>réellement</i> payez.</string>
+    <string name="previewConversion_title">Aperçu de la conversion</string>
+    <string name="previewConversion_summary">Afficher la conversion actuelle pour chaque taux dans le sélecteur de devises.</string>
     <string name="category_appearance">Apparition</string>
     <string name="theme_title">Thème</string>
     <string name="theme_option_light">Clair</string>

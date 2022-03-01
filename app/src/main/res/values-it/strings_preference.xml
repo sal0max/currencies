@@ -4,6 +4,8 @@
     <string name="category_settings">Impostazioni generali</string>
     <string name="fee_title">Tassa per transazioni estere</string>
     <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
+    <string name="previewConversion_title">Anteprima di conversione</string>
+    <string name="previewConversion_summary">Mostra la conversione corrente per ogni tasso nel selezionatore di valuta.</string>
     <string name="category_appearance">Aspetto</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Chiaro</string>
