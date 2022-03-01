@@ -5,12 +5,11 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ArrayAdapter
-import android.widget.ImageView
 import android.widget.TextView
+import com.google.android.material.imageview.ShapeableImageView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
-import kotlin.collections.ArrayList
 
 class SearchableSpinnerAdapter(context: Context, resource: Int) :
     ArrayAdapter<Rate>(context, resource) {
@@ -83,7 +82,7 @@ class SearchableSpinnerAdapter(context: Context, resource: Int) :
     }
 
     internal class ViewHolder {
-        var flag: ImageView? = null
+        var flag: ShapeableImageView? = null
         var code: TextView? = null
     }
 

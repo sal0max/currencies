@@ -14,30 +14,34 @@
     android:paddingEnd="@dimen/margin1x"
     tools:ignore="UseCompoundDrawables">
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/image"
         android:layout_width="24dp"
         android:layout_height="17dp"
         android:layout_gravity="center"
+        android:scaleType="fitXY"
         android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
+        app:shapeAppearanceOverlay="@style/AppTheme.FlagRoundedCorners"
         tools:ignore="ContentDescription"
         tools:src="@drawable/flag_sb" />
 
     <TextView
         android:id="@+id/text2"
+        style="@style/TextAppearance.Material3.LabelMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin2x"
+        android:textColor="?android:textColorTertiary"
         app:layout_constraintStart_toEndOf="@id/image"
         app:layout_constraintTop_toTopOf="parent"
         tools:text="SBD" />
 
     <TextView
         android:id="@+id/text"
-        style="@style/TextAppearance.AppCompat.Medium"
+        style="@style/TextAppearance.Material3.BodyLarge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ellipsize="end"
@@ -64,9 +68,11 @@
 
     <TextView
         android:id="@+id/text3"
+        style="@style/TextAppearance.Material3.BodyMedium"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="@dimen/margin2x"
+        android:textColor="?android:textColorTertiary"
         android:textDirection="ltr"
         app:layout_constraintStart_toEndOf="@id/image"
         app:layout_constraintTop_toBottomOf="@id/text"

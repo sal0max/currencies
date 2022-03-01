@@ -25,7 +25,7 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:indeterminate="true"
-            app:indicatorColor="@color/colorAccent"
+            app:indicatorColor="?attr/colorPrimary"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -36,13 +36,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
+            android:backgroundTint="?attr/colorPrimary"
             android:contentDescription="@string/desc_toggle_currencies"
             android:onClick="toggleEvent"
             android:src="@drawable/ic_swap_vert"
             app:layout_constraintBottom_toTopOf="@+id/guideline_display"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline_display"
-            app:tint="@color/colorTextOnAccent" />
+            app:tint="?attr/colorOnPrimary" />
 
         <View
             android:layout_width="0dp"
@@ -58,7 +59,7 @@
         <!-- fee -->
         <TextView
             android:id="@+id/textFee"
-            style="@style/TextAppearance.AppCompat.Small"
+            style="@style/TextAppearance.Material3.TitleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin2x"
@@ -73,7 +74,7 @@
         <!-- exchange rate info text -->
         <TextView
             android:id="@+id/textRefreshed"
-            style="@style/TextAppearance.MaterialComponents.Subtitle1"
+            style="@style/TextAppearance.Material3.TitleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/margin1x"
@@ -119,7 +120,7 @@
 
                 <TextView
                     android:id="@+id/currencyFrom"
-                    style="@style/TextAppearance.AppCompat.Large"
+                    style="@style/TextAppearance.Material3.TitleLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin1x"
@@ -127,7 +128,7 @@
 
                 <TextView
                     android:id="@+id/textFrom"
-                    style="@style/TextAppearance.AppCompat.Large"
+                    style="@style/TextAppearance.Material3.TitleLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:lines="1"
@@ -168,7 +169,7 @@
 
                 <TextView
                     android:id="@+id/currencyTo"
-                    style="@style/TextAppearance.AppCompat.Large"
+                    style="@style/TextAppearance.Material3.TitleLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginEnd="@dimen/margin1x"
@@ -176,7 +177,7 @@
 
                 <TextView
                     android:id="@+id/textTo"
-                    style="@style/TextAppearance.AppCompat.Large"
+                    style="@style/TextAppearance.Material3.TitleLarge"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:lines="1"

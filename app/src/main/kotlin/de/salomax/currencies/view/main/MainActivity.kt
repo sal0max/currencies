@@ -4,15 +4,19 @@ import android.content.ClipData
 import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
+import android.graphics.Color
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import android.view.View
 import android.widget.*
+import androidx.appcompat.widget.AppCompatButton
+import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import com.google.android.material.color.MaterialColors
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
 import de.salomax.currencies.R
@@ -72,8 +76,8 @@ class MainActivity : BaseActivity() {
         this.tvFee = findViewById(R.id.textFee)
 
         // swipe-to-refresh: color scheme (not accessible in xml)
-        swipeRefresh.setColorSchemeResources(R.color.blackOlive)
-        swipeRefresh.setProgressBackgroundColorSchemeResource(R.color.dollarBill)
+        swipeRefresh.setColorSchemeColors(MaterialColors.getColor(this, R.attr.colorOnPrimary, null))
+        swipeRefresh.setProgressBackgroundColorSchemeColor(MaterialColors.getColor(this, R.attr.colorPrimary, null))
 
         // listeners & stuff
         setListeners()
@@ -120,7 +124,7 @@ class MainActivity : BaseActivity() {
 
     private fun setListeners() {
         // long click on delete
-        findViewById<ImageButton>(R.id.btn_delete).setOnLongClickListener {
+        findViewById<AppCompatImageButton>(R.id.btn_delete).setOnLongClickListener {
             viewModel.clear()
             true
         }
@@ -189,8 +193,8 @@ class MainActivity : BaseActivity() {
             ),
             Snackbar.LENGTH_SHORT
         )
-            .setBackgroundTint(getColor(R.color.colorAccent))
-            .setTextColor(getColor(R.color.colorTextOnAccent))
+            .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorPrimary, null))
+            .setTextColor(MaterialColors.getColor(this, R.attr.colorOnPrimary, null))
             .show()
     }
 
@@ -221,7 +225,7 @@ class MainActivity : BaseActivity() {
                 // paint text in red in case the data is old (at least 3 days)
                 tvDate.setTextColor(
                     if (date?.isBefore(LocalDate.now().minusDays(3)) == true)
-                        getColor(android.R.color.holo_red_light)
+                        MaterialColors.getColor(this, R.attr.colorError, null)
                     else
                         getTextColorSecondary()
                 )
@@ -236,8 +240,8 @@ class MainActivity : BaseActivity() {
             // error
             it?.let {
                 Snackbar.make(tvCalculations, it, 5000) // show for 5s
-                    .setBackgroundTint(getColor(android.R.color.holo_red_light))
-                    .setTextColor(getColor(android.R.color.white))
+                    .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorError, null))
+                    .setTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
                     .show()
             }
         }
@@ -290,8 +294,8 @@ class MainActivity : BaseActivity() {
         viewModel.getFee().observe(this) {
             tvFee.text = it.toHumanReadableNumber(this, showPositiveSign = true, suffix = "%")
             tvFee.setTextColor(
-                if (it >= 0) getColor(android.R.color.holo_red_light)
-                else getColor(R.color.dollarBill)
+                if (it >= 0) MaterialColors.getColor(this, R.attr.colorError, null)
+                else MaterialColors.getColor(this, R.attr.colorPrimary, null)
             )
         }
 
@@ -306,7 +310,7 @@ class MainActivity : BaseActivity() {
     private fun getTextColorSecondary(): Int {
         val attrs = intArrayOf(android.R.attr.textColorSecondary)
         val a = theme.obtainStyledAttributes(R.style.AppTheme, attrs)
-        val color = a.getColor(0, getColor(R.color.colorAccent))
+        val color = a.getColor(0, Color.TRANSPARENT)
         a.recycle()
         return color
     }
@@ -315,7 +319,7 @@ class MainActivity : BaseActivity() {
      * keyboard: number input
      */
     fun numberEvent(view: View) {
-        viewModel.addNumber((view as Button).text.toString())
+        viewModel.addNumber((view as AppCompatButton).text.toString())
     }
 
     /*
@@ -336,7 +340,7 @@ class MainActivity : BaseActivity() {
      * keyboard: do some calculations
      */
     fun calculationEvent(view: View) {
-        when((view as Button).text.toString()) {
+        when((view as AppCompatButton).text.toString()) {
             "+" -> viewModel.addition()
             "−" -> viewModel.subtraction()
             "×" -> viewModel.multiplication()

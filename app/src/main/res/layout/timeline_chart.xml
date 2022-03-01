@@ -37,7 +37,7 @@
         app:spark_animateChanges="true"
         app:spark_baseLineColor="?android:attr/textColorSecondary"
         app:spark_baseLineWidth="1dp"
-        app:spark_lineColor="@color/colorAccent"
+        app:spark_lineColor="?attr/colorPrimary"
         app:spark_lineWidth="3dp"
         app:spark_scrubEnabled="true"
         app:spark_scrubLineColor="?android:attr/textColorSecondary"

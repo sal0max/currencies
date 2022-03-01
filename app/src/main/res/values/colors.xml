@@ -4,14 +4,12 @@
    <color name="dirtyWhite">#FAF7F2</color>
    <color name="blackOlive">#333331</color>
    <color name="dollarBill">#85BB65</color>
+   <color name="seaGreen">#228d57</color>
 
-   <color name="colorAccent">@color/dollarBill</color>
-   <color name="colorTextOnAccent">@color/blackOlive</color>
-
-   <!-- light/dark -->
+   <!-- light -->
    <color name="displayOverlay">#26808080</color>
    <color name="colorBackground">@color/dirtyWhite</color>
-   <!-- pure black -->
+   <!-- pure black (equals light in light mode) -->
    <color name="displayOverlayPureBlack">@color/displayOverlay</color>
    <color name="colorBackgroundPureBlack">@color/colorBackground</color>
 </resources>

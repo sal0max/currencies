@@ -5,38 +5,69 @@
 
     <!-- themes to be applied -->
     <style name="AppTheme" parent="BaseAppTheme" />
+
     <style name="AppTheme.PureBlack" parent="BaseAppTheme.PureBlack" />
 
-    <style name="BaseAppTheme" parent="Theme.MaterialComponents.DayNight">
-        <!-- colors -->
+    <style name="BaseAppTheme" parent="Theme.Material3.DayNight">
+        <!-- theme-dependant colors (different for light/dark/black) -->
         <item name="colorBackground">@color/colorBackground</item>
-        <item name="colorAccent">@color/colorAccent</item>
-        <item name="android:colorBackground">?attr/colorBackground</item>
         <item name="colorDisplayOverlay">@color/displayOverlay</item>
+
+        <!-- Material 3 colors +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          - https://material.io/blog/migrating-material-3
+          - https://material.io/blog/android-material-theme-color
+          - https://m3.material.io/libraries/mdc-android/color-theming  -->
+
+        <item name="android:colorBackground">?attr/colorBackground</item>
+        <item name="colorOnBackground">?android:attr/colorForeground</item>
+
+        <item name="colorPrimary">@color/dollarBill</item>
+        <item name="colorOnPrimary">@color/blackOlive</item>
+        <item name="colorPrimaryContainer">?attr/colorPrimary</item>
+        <item name="colorOnPrimaryContainer">?attr/colorOnPrimary</item>
+        <item name="colorPrimaryInverse">?attr/colorPrimary</item>
+
+        <item name="colorSecondary">?attr/colorPrimary</item>
+        <item name="colorOnSecondary">?attr/colorOnPrimary</item>
+        <item name="colorSecondaryContainer">?attr/colorPrimary</item>
+        <item name="colorOnSecondaryContainer">?attr/colorOnPrimary</item>
+
+        <item name="colorTertiary">?attr/colorSecondary</item>
+        <item name="colorOnTertiary">?attr/colorOnSecondary</item>
+        <item name="colorTertiaryContainer">?attr/colorPrimary</item>
+        <item name="colorOnTertiaryContainer">?attr/colorOnPrimary</item>
+
+        <item name="colorError">@android:color/holo_red_light</item>
+        <item name="colorOnError">@android:color/white</item>
+        <item name="colorErrorContainer">?attr/colorOnError</item>
+        <item name="colorOnErrorContainer">@android:color/holo_red_dark</item>
+
+        <item name="colorSurface">?attr/colorBackground</item>
+        <item name="colorOnSurface">?attr/colorOnBackground</item>
+        <item name="colorSurfaceVariant">?attr/colorSurface</item>
+        <item name="colorOnSurfaceVariant">?attr/colorOnSurface</item>
+        <item name="colorSurfaceInverse">?attr/colorOnBackground</item>
+        <item name="colorOnSurfaceInverse">?attr/colorBackground</item>
+
+        <item name="colorOutline">?attr/colorOnBackground</item>
+
+        <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
         <!-- "transparent" action bar -->
         <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
+
         <!-- "transparent" status bar -->
         <item name="colorPrimaryDark">?attr/colorBackground</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
-        <!-- "transparent" navigation bar... -->
-        <!-- ...is set in de.salomax.currencies.view.BaseActivity -->
 
-        <!-- new MaterialComponents attributes. see https://material.io/blog/android-material-theme-color -->
-        <item name="colorPrimary">?android:attr/colorAccent</item>
-        <item name="colorPrimaryVariant">?attr/colorPrimary</item>
-        <item name="colorSecondary">?android:attr/colorAccent</item>
-        <item name="colorSecondaryVariant">?attr/colorSecondary</item>
-        <!-- colorSurface crashes Snackbar in night mode. DON'T USE! (not needed, anyway) -->
-        <!-- <item name="colorSurface">?android:attr/colorBackground</item> -->
-        <item name="shapeAppearanceSmallComponent">?android:attr/colorAccent</item>
-        <item name="shapeAppearanceMediumComponent">?android:attr/colorAccent</item>
-        <item name="shapeAppearanceLargeComponent">?android:attr/colorAccent</item>
-        <!-- The various "On" colors are used to tint foreground content (such as text and icons) -->
-        <item name="colorOnPrimary">?android:attr/textColorPrimary</item>
-        <item name="colorOnSecondary">?android:attr/textColorSecondary</item>
-        <item name="colorOnBackground">?android:attr/textColorPrimary</item>
-        <item name="colorOnError">?android:attr/textColorPrimary</item>
+        <!-- big rounded corners. guide says 28dp; too much for my taste -->
+        <item name="dialogCornerRadius">14dp</item>
+
+        <!-- prevent black colored switch thumbs in disabled state on light theme -->
+        <item name="switchStyle">@style/AppTheme.Switch</item>
+
+        <!-- remove green shade from overflow menu -->
+        <item name="actionOverflowMenuStyle">@style/AppTheme.PopupMenu.Overflow</item>
     </style>
 
     <style name="BaseAppTheme.PureBlack" parent="AppTheme">
@@ -46,21 +77,45 @@
     </style>
 
     <!-- make actionbar the same color as the background -->
-    <style name="AppTheme.ActionBar" parent="Widget.AppCompat.Light.ActionBar.Solid">
+    <style name="AppTheme.ActionBar" parent="Widget.Material3.Light.ActionBar.Solid">
         <item name="android:background">?attr/colorBackground</item>
         <item name="background">?attr/colorBackground</item>
     </style>
 
-    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.MaterialComponents.Body1">
-        <item name="android:textSize">@dimen/textKeypad</item>
+    <!-- more traditional switch style -->
+    <style name="AppTheme.Switch" parent="Widget.Material3.CompoundButton.Switch">
+        <item name="thumbTint">@color/switch_thumb_tint</item>
+        <item name="trackTint">?android:attr/textColorSecondaryInverseNoDisable</item>
+    </style>
+
+    <!-- make popup menu the same color as the background -->
+    <style name="AppTheme.PopupMenu.Overflow" parent="Widget.Material3.PopupMenu.Overflow">
+        <item name="android:popupBackground">@color/colorBackground</item>
+    </style>
+
+
+    <!-- +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+
+    <!-- style of the keypad buttons -->
+    <style name="AppTheme.TextAppearance.Keypad" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">26sp</item>
     </style>
 
     <!-- use for the buttons inside MaterialButtonToggleGroup -->
-    <style name="AppTheme.Button.OutlinedButton" parent="Widget.MaterialComponents.Button.OutlinedButton">
+    <style name="AppTheme.Button.OutlinedButton" parent="Widget.Material3.Button.OutlinedButton">
         <item name="android:stateListAnimator">@animator/btn_elevation</item>
         <item name="android:textColor">@color/btn_text_color</item>
         <item name="backgroundTint">@color/btn_background_tint</item>
         <item name="rippleColor">@color/btn_ripple_color</item>
         <item name="strokeColor">@color/btn_stroke_color</item>
+        <item name="textAllCaps">true</item>
     </style>
+
+    <!-- slightly rounded corners, to be used by the little flag drawables -->
+    <style name="AppTheme.FlagRoundedCorners">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">4dp</item>
+    </style>
+
 </resources>

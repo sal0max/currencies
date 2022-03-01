@@ -6,9 +6,9 @@ import android.graphics.Paint
 import android.os.Bundle
 import android.view.View
 import android.widget.TextView
-import androidx.core.content.ContextCompat
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.ViewModelProvider
+import com.google.android.material.color.MaterialColors
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
@@ -170,10 +170,11 @@ class TimelineActivity : BaseActivity() {
             textRateDifference.text = it?.toHumanReadableNumber(this, 2, true, "%")
             if (it != null) {
                 textRateDifference.setTextColor(
-                    ContextCompat.getColor(
-                        applicationContext,
-                        if (it < 0) android.R.color.holo_red_light
-                        else R.color.dollarBill
+                    MaterialColors.getColor(
+                        this,
+                        if (it < 0) R.attr.colorError
+                        else R.attr.colorPrimary,
+                        null
                     )
                 )
             }

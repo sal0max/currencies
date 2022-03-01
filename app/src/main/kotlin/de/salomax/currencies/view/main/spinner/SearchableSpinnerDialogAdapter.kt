@@ -6,10 +6,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
-import android.widget.ImageView
 import android.widget.TextView
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
+import com.google.android.material.imageview.ShapeableImageView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
@@ -153,7 +153,7 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
-        val ivFlag: ImageView = itemView.findViewById(R.id.image)
+        val ivFlag: ShapeableImageView = itemView.findViewById(R.id.image)
         val tvCode: TextView = itemView.findViewById(R.id.text2)
         val tvName: TextView = itemView.findViewById(R.id.text)
         val tvRate: TextView = itemView.findViewById(R.id.text3)
