@@ -2,7 +2,13 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.13.0</b>
+    <string name="changelog" translatable="false"><b>1.14.0</b>
+        \n⸻
+        \n<li>Some small improvements to follow Googles latest Material Design 3 guideline.</li>
+        \n<li>Updated translations. Thanks to all people who are helping!</li>
+        \n<li>Various stability improvements.</li>
+        \n
+        \n<b>1.13.0</b>
         \n⸻
         \n<li>Another new language: You can now enjoy the app in Arabic. Thanks a lot, Ahmed!\n🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</li>
         \n<li>Some more RTL fixes for the landscape layout.</li>
