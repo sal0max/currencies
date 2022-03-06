@@ -8,7 +8,7 @@
 
     <style name="AppTheme.PureBlack" parent="BaseAppTheme.PureBlack" />
 
-    <style name="BaseAppTheme" parent="Theme.Material3.DayNight">
+    <style name="BaseAppTheme" parent="Theme.Material3.DynamicColors.DayNight">
         <!-- theme-dependant colors (different for light/dark/black) -->
         <item name="colorBackground">@color/colorBackground</item>
         <item name="colorDisplayOverlay">@color/displayOverlay</item>
@@ -42,12 +42,12 @@
         <item name="colorErrorContainer">?attr/colorOnError</item>
         <item name="colorOnErrorContainer">@android:color/holo_red_dark</item>
 
-        <item name="colorSurface">?attr/colorBackground</item>
+        <item name="colorSurface">?android:attr/colorBackground</item>
         <item name="colorOnSurface">?attr/colorOnBackground</item>
         <item name="colorSurfaceVariant">?attr/colorSurface</item>
         <item name="colorOnSurfaceVariant">?attr/colorOnSurface</item>
         <item name="colorSurfaceInverse">?attr/colorOnBackground</item>
-        <item name="colorOnSurfaceInverse">?attr/colorBackground</item>
+        <item name="colorOnSurfaceInverse">?android:attr/colorBackground</item>
 
         <item name="colorOutline">?attr/colorOnBackground</item>
 
@@ -57,7 +57,7 @@
         <item name="actionBarStyle">@style/AppTheme.ActionBar</item>
 
         <!-- "transparent" status bar -->
-        <item name="colorPrimaryDark">?attr/colorBackground</item>
+        <item name="colorPrimaryDark">?android:attr/colorBackground</item>
         <item name="android:windowLightStatusBar">?attr/isLightTheme</item>
 
         <!-- big rounded corners. guide says 28dp; too much for my taste -->
@@ -66,7 +66,7 @@
         <!-- prevent black colored switch thumbs in disabled state on light theme -->
         <item name="switchStyle">@style/AppTheme.Switch</item>
 
-        <!-- remove green shade from overflow menu -->
+        <!-- remove color tint from overflow menu -->
         <item name="actionOverflowMenuStyle">@style/AppTheme.PopupMenu.Overflow</item>
     </style>
 
@@ -78,7 +78,6 @@
 
     <!-- make actionbar the same color as the background -->
     <style name="AppTheme.ActionBar" parent="Widget.Material3.Light.ActionBar.Solid">
-        <item name="android:background">?attr/colorBackground</item>
         <item name="background">?attr/colorBackground</item>
     </style>
 
@@ -90,7 +89,7 @@
 
     <!-- make popup menu the same color as the background -->
     <style name="AppTheme.PopupMenu.Overflow" parent="Widget.Material3.PopupMenu.Overflow">
-        <item name="android:popupBackground">@color/colorBackground</item>
+        <item name="android:popupBackground">?attr/colorBackground</item>
     </style>
 
 
