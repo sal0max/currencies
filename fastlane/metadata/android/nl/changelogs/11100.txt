@@ -1,0 +1,4 @@
+- U kunt nu pull-to-refresh gebruiken om de tarieven bij te werken.
+- Veel verbeterde feedback bij het vernieuwen van tarieven en bij fouten.
+- Nieuwe taal: een vriendelijk lid van de gemeenschap zorgde voor vertalingen voor het Turks. Dank u! 🇹🇷
+- In sommige situaties is de verkeerde API gebruikt voor de tijdlijn. Dat is nu opgelost.

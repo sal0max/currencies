@@ -1,0 +1,1 @@
+- Mogelijke crash op Android 11 repareren
