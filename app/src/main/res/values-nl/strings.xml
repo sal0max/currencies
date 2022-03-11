@@ -1,2 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="thousands_separator"> </string>
+    <string name="last_updated">Tarieven vanaf <b>%1$s</b> t/m <b>%2$s</b></string>
+    <string name="copied_to_clipboard"><b>%s</b> is naar het klembord gekopieerd</string>
+    <string name="error">Fout: %s</string>
+    <string name="error_generic">Onbekende probleem.</string>
+    <string name="error_http">De server reageerde met HTTP %d</string>
+    <string name="error_timeout">De server reageerde op tijd niet of het is onbereikbaar.</string>
+    <string name="error_no_data">Kan geen verbinding maken met de server.</string>
+    <string name="menu_settings">Instellingen</string>
+    <string name="menu_refresh">Cursus updaten</string>
+    <string name="menu_timeline">Wisselkoers-grafiek</string>
+    <string name="tooltip_filter_starred">Toon alleen favoriete valuta\'s.</string>
+    <string name="decimal_separator">.</string>
+    <string name="desc_toggle_currencies">valuta\'s wisselen</string>
+    <string name="error_api_error">Er was een API fout. Probeer het later opnieuw.</string>
+</resources>
