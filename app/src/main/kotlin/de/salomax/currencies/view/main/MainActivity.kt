@@ -185,17 +185,15 @@ class MainActivity : BaseActivity() {
         val clipboard: ClipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
         clipboard.setPrimaryClip(ClipData.newPlainText(null, copyText))
         // notify
-        Snackbar.make(
-            tvCalculations,
-            HtmlCompat.fromHtml(
-                getString(R.string.copied_to_clipboard, copyText),
-                HtmlCompat.FROM_HTML_MODE_LEGACY
-            ),
-            Snackbar.LENGTH_SHORT
-        )
-            .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorPrimary, null))
-            .setTextColor(MaterialColors.getColor(this, R.attr.colorOnPrimary, null))
-            .show()
+        HtmlCompat.fromHtml(
+            getString(R.string.copied_to_clipboard, copyText),
+            HtmlCompat.FROM_HTML_MODE_LEGACY
+        ).let {
+            Snackbar.make(this, tvCalculations, it, Snackbar.LENGTH_SHORT)
+                .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorPrimary, null))
+                .setTextColor(MaterialColors.getColor(this, R.attr.colorOnPrimary, null))
+                .show()
+        }
     }
 
     private fun observe() {
@@ -239,7 +237,7 @@ class MainActivity : BaseActivity() {
         viewModel.getError().observe(this) {
             // error
             it?.let {
-                Snackbar.make(tvCalculations, it, 5000) // show for 5s
+                Snackbar.make(this, tvCalculations, it, 5000) // show for 5s
                     .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorError, null))
                     .setTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
                     .show()
