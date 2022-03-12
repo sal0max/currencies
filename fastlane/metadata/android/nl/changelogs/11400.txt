@@ -1,0 +1,3 @@
+- Enkele kleine verbeteringen om de nieuwste Material Design 3-richtlijn van Google te volgen.
+- Bijgewerkte vertalingen. Dank aan alle mensen die helpen!
+- Diverse stabiliteitsverbeteringen.

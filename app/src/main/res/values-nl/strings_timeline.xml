@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> naar &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">Gegevens per &lt;b>%s&lt;/b></string>
+    <string name="rate_average">gem</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+    <string name="year">jaar</string>
+    <string name="month">maand</string>
+    <string name="week">week</string>
+</resources>

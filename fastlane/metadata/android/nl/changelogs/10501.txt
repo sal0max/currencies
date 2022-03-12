@@ -1,0 +1,2 @@
+- Lost een bug op waarbij de koersen niet werden bijgewerkt wanneer exchangerate.host werd gebruikt.
+- Bibliotheekupdates om de stabiliteit en prestaties te verbeteren.

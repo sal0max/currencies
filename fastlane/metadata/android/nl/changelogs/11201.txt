@@ -1,0 +1,1 @@
+- Fix crash op verversingspercentages. Sorry! 🤕

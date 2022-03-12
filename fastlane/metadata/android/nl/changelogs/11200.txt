@@ -1,0 +1,4 @@
+- Deze release lost verschillende lay-outproblemen op met rechts-naar-links (RTL) talen. Nu zou alles eruit moeten zien zoals verwacht.
+- Nieuwe functie: bekijk een voorbeeld van alle conversies in de valutakiezer. Je moet het inschakelen in de instellingen.
+- Soms vertoonden valuta's oude of verkeerde gegevens na een koersvernieuwing. Dit staat vast.
+- Echt veel codeverbeteringen om deze app nog beter te maken.
