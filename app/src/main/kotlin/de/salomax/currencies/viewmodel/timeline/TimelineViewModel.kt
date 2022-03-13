@@ -1,21 +1,25 @@
 package de.salomax.currencies.viewmodel.timeline
 
 import android.app.Application
+import android.text.Spanned
+import android.text.SpannedString
+import androidx.core.text.HtmlCompat
 import androidx.lifecycle.*
 import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.repository.ExchangeRatesRepository
 import androidx.lifecycle.ViewModel
 
 import androidx.lifecycle.ViewModelProvider
+import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 import java.time.LocalDate
 
 class TimelineViewModel(
-    ctx: Application,
-    private val base: Currency,
-    private val target: Currency
-) : AndroidViewModel(ctx) {
+    private val app: Application,
+    private var base: Currency,
+    private var target: Currency
+) : AndroidViewModel(app) {
 
     class Factory(
         private val mApplication: Application,
@@ -33,15 +37,16 @@ class TimelineViewModel(
         WEEK, MONTH, YEAR
     }
 
-    private var repository: ExchangeRatesRepository = ExchangeRatesRepository(ctx)
+    private var repository: ExchangeRatesRepository = ExchangeRatesRepository(app)
 
-    private val periodLiveData: MutableLiveData<Period> by lazy {
-        MutableLiveData<Period>(Period.YEAR)
-    }
-
-    private val scrubDateLiveData: MutableLiveData<LocalDate?> by lazy {
-        MutableLiveData<LocalDate?>(null)
-    }
+    // week/month/year
+    private val periodLiveData = MutableLiveData(Period.YEAR)
+    // currently selected date
+    private val scrubDateLiveData = MutableLiveData<LocalDate?>()
+    // error
+    private val errorLiveData = repository.getError()
+    // updating
+    private var isUpdating = repository.isUpdating()
 
     private val dbLiveItems: LiveData<Timeline?> by lazy {
         MediatorLiveData<Timeline?>().apply {
@@ -57,7 +62,7 @@ class TimelineViewModel(
                 )
             }
 
-            // 1y timeline data - always call api - really hard to find a decent caching strategy
+            // 1y timeline data - always call api - hard to find a decent caching strategy
             addSource(repository.getTimeline(base, target)) {
                 timeline = it
                 update()
@@ -75,12 +80,33 @@ class TimelineViewModel(
         }
     }
 
-    private val liveError = repository.getError()
-    private var isUpdating: LiveData<Boolean> = repository.isUpdating()
-
     /*
      * getters for the various values ==============================================================
      */
+
+    fun getTitle(): LiveData<Spanned> {
+        return Transformations.map(dbLiveItems) {
+            if (it == null)
+                SpannedString("")
+            else
+                HtmlCompat.fromHtml(
+                    app.getString(
+                        R.string.activity_timeline_title,
+                        base.iso4217Alpha(),
+                        target.iso4217Alpha()
+                    ),
+                    HtmlCompat.FROM_HTML_MODE_LEGACY
+                )
+        }
+    }
+
+    fun toggleCurrencies() {
+        val tmp = base
+        base = target
+        target = tmp
+        // call the api -- timeline live data is auto-updated everywhere where it is used
+        repository.getTimeline(base, target)
+    }
 
     fun getProvider(): LiveData<CharSequence?> {
         return Transformations.map(dbLiveItems) {
@@ -278,7 +304,7 @@ class TimelineViewModel(
      * error =======================================================================================
      */
 
-    fun getError(): LiveData<String?> = liveError
+    fun getError(): LiveData<String?> = errorLiveData
 
     fun isUpdating(): LiveData<Boolean> = isUpdating
 

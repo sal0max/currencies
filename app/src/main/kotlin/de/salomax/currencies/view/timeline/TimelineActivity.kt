@@ -4,6 +4,8 @@ import android.annotation.SuppressLint
 import android.graphics.DashPathEffect
 import android.graphics.Paint
 import android.os.Bundle
+import android.view.Menu
+import android.view.MenuItem
 import android.view.View
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
@@ -23,15 +25,13 @@ import java.time.format.FormatStyle
 
 class TimelineActivity : BaseActivity() {
 
-    // extras
-    private lateinit var currencyFrom: Currency
-    private lateinit var currencyTo: Currency
-
     //
     private val formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)
     private lateinit var timelineModel: TimelineViewModel
 
     // views
+    private var menuItemToggle: MenuItem? = null
+
     private lateinit var refreshIndicator: LinearProgressIndicator
     private lateinit var timelineChart: SparkView
     private lateinit var textProvider: TextView
@@ -57,12 +57,8 @@ class TimelineActivity : BaseActivity() {
         }
 
         // what currencies to convert
-        this.currencyFrom = intent.getSerializableExtra("ARG_FROM")?.let { it as Currency } ?: Currency.EUR
-        this.currencyTo = intent.getSerializableExtra("ARG_TO")?.let { it as Currency } ?: Currency.USD
-        title = HtmlCompat.fromHtml(
-            getString(R.string.activity_timeline_title, currencyFrom, currencyTo),
-            HtmlCompat.FROM_HTML_MODE_LEGACY
-        )
+        val currencyFrom = intent.getSerializableExtra("ARG_FROM")?.let { it as Currency } ?: Currency.EUR
+        val currencyTo = intent.getSerializableExtra("ARG_TO")?.let { it as Currency } ?: Currency.USD
 
         // model
         this.timelineModel = ViewModelProvider(
@@ -86,6 +82,22 @@ class TimelineActivity : BaseActivity() {
     override fun onSupportNavigateUp(): Boolean {
         onBackPressed()
         return true
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        menuInflater.inflate(R.menu.timeline, menu)
+        menuItemToggle = menu.findItem(R.id.toggle)
+        return true
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            R.id.toggle -> {
+                timelineModel.toggleCurrencies()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
     }
 
     private fun findViews() {
@@ -136,17 +148,26 @@ class TimelineActivity : BaseActivity() {
 
     @SuppressLint("SetTextI18n")
     private fun observe() {
+        // title
+        timelineModel.getTitle().observe(this) {
+            title = it
+        }
+
         // error
         timelineModel.getError().observe(this) {
             findViewById<TextView>(R.id.error).apply {
                 visibility = View.VISIBLE
                 text = it
             }
+            // disable toggle button, when there was an error
+            menuItemToggle?.isEnabled = it == null
         }
 
         // progress bar
         timelineModel.isUpdating().observe(this) { isRefreshing ->
             refreshIndicator.visibility = if (isRefreshing) View.VISIBLE else View.GONE
+            // disable toggle button, when data is updating
+            menuItemToggle?.isEnabled = isRefreshing.not()
         }
 
         // populate the chart

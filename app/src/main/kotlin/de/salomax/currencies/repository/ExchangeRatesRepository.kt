@@ -41,6 +41,8 @@ class ExchangeRatesRepository(private val context: Context) {
                     if (rates.success == null || rates.success == true) {
                         postIsUpdating(start)
                         Database(context).insertExchangeRates(rates)
+                        // reset error
+                        liveError.postValue(null)
                     }
                     // ERROR: got response from API, but just an error message
                     else {
@@ -81,6 +83,8 @@ class ExchangeRatesRepository(private val context: Context) {
                         CoroutineScope(Dispatchers.Main).launch {
                             liveTimeline.setValue(timeline)
                         }
+                        // reset error
+                        liveError.postValue(null)
                     }
                     // ERROR! got response from API, but just an error message
                     else {
@@ -155,6 +159,8 @@ class ExchangeRatesRepository(private val context: Context) {
             else
                 context.getString(R.string.error_api_error)
         )
+        // reset timeline
+        liveTimeline.postValue(null)
     }
 
 }
