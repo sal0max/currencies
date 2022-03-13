@@ -1,0 +1,4 @@
+- New language: Dutch. Many thanks to the volunteer! 🇳🇱🌷
+- New feature: You can now toggle the currencies inside the timeline view with one click.
+- Again fixed an issue where the app would crash in some cases, when the dark theme is used.
+- Various little UI improvements.

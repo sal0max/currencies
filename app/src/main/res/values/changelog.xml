@@ -2,7 +2,14 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.14.0</b>
+    <string name="changelog" translatable="false"><b>1.15.0</b>
+        \n⸻
+        \n<li>New language: Dutch. Many thanks to the volunteer! 🇳🇱🌷</li>
+        \n<li>New feature: You can now toggle the currencies inside the timeline view with one click.</li>
+        \n<li>Again fixed an issue where the app would crash in some cases, when the dark theme is used.</li>
+        \n<li>Various little UI improvements.</li>
+        \n
+        \n<b>1.14.0</b>
         \n⸻
         \n<li>Some small improvements to follow Googles latest Material Design 3 guideline.</li>
         \n<li>Updated translations. Thanks to all people who are helping!</li>
