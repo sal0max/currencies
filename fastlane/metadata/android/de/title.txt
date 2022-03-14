@@ -1,1 +1,1 @@
-Currencies
+Currencies: Währungsrechner

@@ -1,4 +1,4 @@
-Valuta's is een eenvoudige en duidelijke valuta-omzetter. Het is niet bedoeld om te worden gebruikt voor realtime financiële zaken, maar als een handige metgezel, b.v. op vakanties.
+Currencies is een eenvoudige en duidelijke valuta-omzetter. Het is niet bedoeld om te worden gebruikt voor realtime financiële zaken, maar als een handige metgezel, b.v. op vakanties.
 
 • De app ondersteunt alle relevante valuta's. U kunt kiezen uit verschillende wisselkoersaanbieders:
     • exchangerate.host met meer dan 160 valuta's
@@ -8,5 +8,5 @@ Valuta's is een eenvoudige en duidelijke valuta-omzetter. Het is niet bedoeld om
 • Historische koersen: bekijk de grafiek van het afgelopen jaar om te zien hoe de valuta's zich hebben ontwikkeld.
 • Een belangrijke feature is de meegeleverde rekenmachine. Handig b.v. als u een restaurantrekening wilt opsplitsen.
 • Kostencalculator: voeg optioneel een aanpasbare wisselkoers toe aan alle berekeningen.
-• Valuta is geschreven voor Android in Kotlin, gericht op Android 12 en ondersteunt lichte en donkere thema's.
+• Currencies is geschreven voor Android in Kotlin, gericht op Android 12 en ondersteunt lichte en donkere thema's.
 • De app is vrij van advertenties en bespioneert de gebruiker niet.
