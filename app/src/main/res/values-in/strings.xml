@@ -1,2 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> . </string>
+    <string name="copied_to_clipboard">Menyalin <b>%s</b> ke papan klip</string>
+    <string name="error_generic">Masalah tak dikenal.</string>
+    <string name="error">Kesalahan: %s</string>
+    <string name="error_http">Server membalas dengan HTTP %d</string>
+    <string name="error_timeout">Server tidak membalas tepat waktu atau tidak dapat dijangkau.</string>
+    <string name="error_no_data">Tidak dapat terhubung dengan server.</string>
+    <string name="error_api_error">Ada kesalahan API. Harap coba lagi nanti.</string>
+    <string name="menu_settings">Pengaturan</string>
+    <string name="tooltip_filter_starred">Tampilkan hanya mata uang yang dibintangi.</string>
+</resources>
