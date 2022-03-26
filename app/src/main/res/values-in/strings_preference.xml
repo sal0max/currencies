@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="category_appearance">Tampilan</string>
+    <string name="theme_option_light">Cerah</string>
+    <string name="theme_option_dark">Gelap</string>
+    <string name="pure_black_enabled_title">Hitam OLED</string>
+    <string name="category_api">Kurs</string>
+    <string name="api_title">Penyedia data</string>
+    <string name="api_about_title">Tentang %s</string>
+    <string name="api_refreshPeriod_frankfurterApi">Data diperbarui setiap hari kerja pada kira-kira pukul 16.00 CET.</string>
+    <string name="api_refreshPeriod_ferEe">Nilai tukar diperbarui setiap hari kerja.</string>
+    <string name="category_about">Tentang aplikasi ini</string>
+    <string name="donate_summary">Berdonasi melalui PayPal</string>
+    <string name="rate_title">Nilai aplikasi ini</string>
+    <string name="aboutVersion">Versi %1$s</string>
+    <string name="category_settings">Pengaturan Umum</string>
+    <string name="theme_title">Desain</string>
+    <string name="theme_option_default">Sistem</string>
+    <string name="pure_black_enabled_summary">Gunakan hitam asli dalam mode gelap</string>
+    <string name="api_refreshPeriod_exchangerateHost">Nilai tukar diperbarui pada tengah malam UTC setiap hari kerja.</string>
+    <string name="donate_title">Dukung pengembang</string>
+</resources>
