@@ -1,4 +1,4 @@
-- Yen dil: Felemenkçe. Gönüllülere teşekkürler! 🇳🇱🌷
+- Yeni dil: Felemenkçe. Gönüllülere teşekkürler! 🇳🇱🌷
 - Yeni özellik: Artık zaman çizelgesi görünümündeyken tek tıklamayla para birimleri arasında geçiş yapabilirsiniz.
 - Koyu temanın kullanıldığı bazı durumlarda uygulamanın çökmesine vermesine sebep olan birkaç hata daha düzeltildi.
 - Çeşitli arayüz geliştirmeleri.
