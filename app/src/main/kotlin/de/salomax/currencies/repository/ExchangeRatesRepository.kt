@@ -134,16 +134,16 @@ class ExchangeRatesRepository(private val context: Context) {
     }
 
     /*
-     * "update" for at least 500ms
+     * "update" for at least 750ms
      */
     private suspend fun postIsUpdating(start: Long) {
         val now = System.currentTimeMillis()
-        if (now - start < 500) {
+        if (now - start < 750) {
             Database(context).setUpdating(true)
 
             withContext(Dispatchers.Main) {
                 launch {
-                    delay(500 - (now - start))
+                    delay(750 - (now - start))
                     Database(context).setUpdating(false)
                 }
             }

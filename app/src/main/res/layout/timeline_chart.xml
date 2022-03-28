@@ -6,6 +6,17 @@
     android:layout_height="match_parent"
     android:background="?attr/colorDisplayOverlay">
 
+    <com.google.android.material.progressindicator.LinearProgressIndicator
+        android:id="@+id/refreshIndicator"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:indeterminate="true"
+        app:indicatorColor="?attr/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:trackColor="@android:color/transparent" />
+
     <!-- error -->
     <TextView
         android:id="@+id/error"
