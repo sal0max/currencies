@@ -22,7 +22,7 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
         ViewModelProvider.Factory {
 
         @Suppress("UNCHECKED_CAST")
-        override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+        override fun <T : ViewModel> create(modelClass: Class<T>): T {
             return MainViewModel(app, onlyCache) as T
         }
     }
