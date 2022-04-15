@@ -10,7 +10,6 @@ import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.util.*
-
 import java.time.LocalDate
 
 class Database(context: Context) {
@@ -59,6 +58,7 @@ class Database(context: Context) {
     private val keyLastStateFrom = "_last_from"
     private val keyLastStateTo = "_last_to"
     private val keyIsUpdating = "_isUpdating"
+    private val keyHistoricalDate = "_historical_date"
 
     fun saveLastUsedRates(from: Currency?, to: Currency?) {
         prefsLastState.apply {
@@ -83,6 +83,24 @@ class Database(context: Context) {
 
     fun isUpdating(): SharedPreferenceBooleanLiveData {
         return SharedPreferenceBooleanLiveData(prefsLastState, keyIsUpdating, false)
+    }
+
+    fun setHistoricalDate(date: LocalDate?) {
+        prefsLastState.edit().putLong(keyHistoricalDate, date?.toMillis() ?: -1).apply()
+    }
+
+    fun getHistoricalLiveDate(): LiveData<LocalDate?> {
+        return SharedPreferenceLongLiveData(prefsLastState, keyHistoricalDate, -1).map {
+            if (it == -1L) null
+            else it.toLocalDate()
+        }
+    }
+
+    fun getHistoricalDate(): LocalDate? {
+        return when (val date = prefsLastState.getLong(keyHistoricalDate, -1)) {
+            -1L -> null
+            else -> date.toLocalDate()
+        }
     }
 
     /*

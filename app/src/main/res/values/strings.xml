@@ -7,8 +7,12 @@
     <string name="thousands_separator">\u2009</string>
 
     <string name="desc_toggle_currencies">toggle currencies</string>
-    <string name="last_updated">Rates as of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_latest">Rates as of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Historical rates of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">Copied &lt;b>%s&lt;/b> to clipboard</string>
+
+    <string name="historical_rates_dialog_title">Historical rates</string>
+    <string name="historical_rates_dialog_toggle">Use exchange rates of a specific date. Disable, to always take the most recent ones.</string>
 
     <string name="error">Error: %s</string>
     <string name="error_generic">Unknown problem.</string>
@@ -20,6 +24,7 @@
     <string name="menu_settings">Settings</string>
     <string name="menu_refresh">Refresh rates</string>
     <string name="menu_timeline">Exchange rate chart</string>
+    <string name="menu_historical_rates" translatable="false">@string/historical_rates_dialog_title</string>
     <string name="title_preferences" translatable="false">@string/menu_settings</string>
 
     <string name="tooltip_filter_starred">Show only starred currencies.</string>

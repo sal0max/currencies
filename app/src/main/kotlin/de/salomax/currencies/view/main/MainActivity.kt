@@ -5,11 +5,14 @@ import android.content.ClipboardManager
 import android.content.Context
 import android.content.Intent
 import android.graphics.Color
+import android.icu.util.Calendar
+import android.icu.util.TimeZone
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.*
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.text.HtmlCompat
@@ -18,6 +21,7 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
+import com.google.android.material.switchmaterial.SwitchMaterial
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Rate
 import de.salomax.currencies.util.toHumanReadableNumber
@@ -116,6 +120,62 @@ class MainActivity : BaseActivity() {
                     false
                 }
             }
+            R.id.date_picker -> {
+                // allow historical rates back until 2010-01-01, as every API at least provides a subset of rates since then
+                val startDate = Calendar.getInstance(TimeZone.getTimeZone("UTC"))
+                    .apply { this.set(2010, Calendar.JANUARY, 1) }
+                    .timeInMillis
+
+                // load all the views
+                val layout = layoutInflater.inflate(R.layout.main_dialog_historical_rates, null)
+                val toggle: SwitchMaterial = layout.findViewById(R.id.toggle)
+                val datePicker: DatePicker = layout.findViewById(R.id.date_picker)
+                val border: View = layout.findViewById(R.id.border)
+
+                val historicalDate = viewModel.getHistoricalDate()
+
+                // enables/disables the date picker and the border on top of it
+                fun showDatePicker(show: Boolean) {
+                    datePicker.visibility = if (show) View.VISIBLE else View.GONE
+                    border.visibility = if (show) View.VISIBLE else View.GONE
+                }
+                // initial dialog state
+                showDatePicker(historicalDate != null)
+                // configure the date picker
+                datePicker.apply {
+                    minDate = startDate
+                    maxDate = Calendar.getInstance().timeInMillis
+                    firstDayOfWeek = Calendar.getInstance().firstDayOfWeek
+                    historicalDate?.let {
+                        updateDate(it.year, it.monthValue - 1, it.dayOfMonth)
+                    }
+                }
+                // configure the toggle button
+                toggle.apply {
+                    setOnCheckedChangeListener { _, enabled -> showDatePicker(enabled) }
+                    isChecked = historicalDate != null
+                }
+                // finally, build the dialog and show it
+                AlertDialog.Builder(this)
+                    .setTitle(R.string.historical_rates_dialog_title)
+                    .setView(layout)
+                    .setPositiveButton(android.R.string.ok) { _, _ ->
+                        viewModel.setHistoricalDate(
+                            // use historical
+                            if (toggle.isChecked) LocalDate.of(
+                                datePicker.year,
+                                datePicker.month + 1,
+                                datePicker.dayOfMonth
+                            )
+                            // use current
+                            else null
+                        )
+                    }
+                    .setNegativeButton(android.R.string.cancel, null)
+                    .create()
+                    .show()
+                true
+            }
             else -> super.onOptionsItemSelected(item)
         }
     }
@@ -206,25 +266,36 @@ class MainActivity : BaseActivity() {
                 val providerString = it.provider?.getName(this)
 
                 // show rate age and rate source
-                tvDate.text = if (dateString != null && providerString != null)
-                    HtmlCompat.fromHtml(
-                        getString(
-                            R.string.last_updated,
-                            dateString,
-                            providerString
-                        ),
-                        HtmlCompat.FROM_HTML_MODE_LEGACY
-                    )
-                else
-                    null
+                tvDate.text =
+                    if (dateString != null && providerString != null)
+                        HtmlCompat.fromHtml(
+                            getString(
+                                if (viewModel.getHistoricalDate() != null)
+                                    R.string.rates_date_historical
+                                else
+                                    R.string.rates_date_latest,
+                                dateString,
+                                providerString
+                            ),
+                            HtmlCompat.FROM_HTML_MODE_LEGACY
+                        )
+                    else
+                        null
 
-                // paint text in red in case the data is old (at least 3 days)
+                // paint text in red in case the data is old (at least 3 days) or historical rates are enabled
                 tvDate.setTextColor(
-                    if (date?.isBefore(LocalDate.now().minusDays(3)) == true)
+                    if (date?.isBefore(LocalDate.now().minusDays(3)) == true || viewModel.getHistoricalDate() != null)
                         MaterialColors.getColor(this, R.attr.colorError, null)
                     else
                         getTextColorSecondary()
                 )
+
+                // show little icon to indicate when historical rates are used
+                findViewById<ImageView>(R.id.iconHistorical).visibility =
+                    if (viewModel.getHistoricalDate() != null)
+                        View.VISIBLE
+                    else
+                        View.GONE
             }
             // rates
             spinnerFrom.setRates(it?.rates)
@@ -336,7 +407,7 @@ class MainActivity : BaseActivity() {
      * keyboard: do some calculations
      */
     fun calculationEvent(view: View) {
-        when((view as AppCompatButton).text.toString()) {
+        when ((view as AppCompatButton).text.toString()) {
             "+" -> viewModel.addition()
             "−" -> viewModel.subtraction()
             "×" -> viewModel.multiplication()

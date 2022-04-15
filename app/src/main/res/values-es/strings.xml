@@ -3,7 +3,7 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">alternar monedas</string>
-    <string name="last_updated">Tipos del &lt;b>%1$s&lt;/b> vía &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_latest">Tipos del &lt;b>%1$s&lt;/b> vía &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">Copiado &lt;b&gt;%s&lt;/b&gt; al portapapeles</string>
     <string name="error">Error: %s</string>
     <string name="error_generic">Problema desconocido.</string>

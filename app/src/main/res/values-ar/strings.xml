@@ -3,7 +3,7 @@
     <string name="decimal_separator">.</string>
     <string name="thousands_separator">.</string>
     <string name="desc_toggle_currencies">تبديل العملات</string>
-    <string name="last_updated">الأسعار اعتبارًا من &lt;b>%1$s&lt;/b> بواسطة &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_latest">الأسعار اعتبارًا من &lt;b>%1$s&lt;/b> بواسطة &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">تم نسخ &lt;b>%s&lt;/b> إلى الحافظة</string>
     <string name="error">خطأ: %s</string>
     <string name="error_generic">مشكلة غير معروفة.</string>

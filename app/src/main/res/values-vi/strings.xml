@@ -3,7 +3,7 @@
     <string name="decimal_separator">.</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">chuyển tiền tệ</string>
-    <string name="last_updated">Tỉ lệ ở <b>%1$s</b> bởi <b>%2$s</b></string>
+    <string name="rates_date_latest">Tỉ lệ ở <b>%1$s</b> bởi <b>%2$s</b></string>
     <string name="copied_to_clipboard">Đã sao chép <b>%s</b> vào bộ nhớ tạm</string>
     <string name="error">Lỗi: %s</string>
     <string name="error_generic">Vấn đề không xác định.</string>

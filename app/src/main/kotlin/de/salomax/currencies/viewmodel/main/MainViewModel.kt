@@ -60,17 +60,26 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
         // "Rates are updated around midnight UTC every working day."
         val currentDate = LocalDate.now(ZoneId.of("UTC"))
         val cachedDate = Database(app).getDate()
-        dbLiveItems =
-            when {
-                // force-use cache
-                onlyCache -> Database(app).getExchangeRates()
-                // first run: fetch data
-                cachedDate == null -> repository.getExchangeRates()
-                // also fetch if stored date is before the current date
-                cachedDate.isBefore(currentDate) -> repository.getExchangeRates()
-                // else just use the cached value
-                else -> Database(app).getExchangeRates()
+        val historicalDate = Database(app).getHistoricalDate()
+
+        dbLiveItems = when {
+            // force-use cache
+            onlyCache -> Database(app).getExchangeRates()
+            // first run: fetch data
+            cachedDate == null -> repository.getExchangeRates()
+            // historical rates in use...
+            historicalDate != null -> {
+                // ...and already cached
+                if (historicalDate == cachedDate) Database(app).getExchangeRates()
+                // ...and not cached
+                else repository.getExchangeRates()
             }
+            // fetch if stored date is before the current date
+            cachedDate.isBefore(currentDate) -> repository.getExchangeRates()
+            // else just use the cached value
+            else -> Database(app).getExchangeRates()
+        }
+
         starredLiveItems = Database(app).getStarredCurrencies()
         onlyShowStarred = Database(app).isFilterStarredEnabled()
 
@@ -499,6 +508,28 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
 
     internal fun getDestinationCurrency(): LiveData<Currency?> {
         return  currentDestinationCurrency
+    }
+
+    /*
+     * historical rates
+     */
+
+    internal fun setHistoricalDate(date: LocalDate?) {
+        // check if previous date was "latest" or historical
+        val wasLatestActive = Database(app).getHistoricalDate() == null
+        // save selected historical date to db
+        Database(getApplication()).setHistoricalDate(date)
+        // refresh, if new date != cached date or if last state was "latest"
+        if (date != Database(app).getDate() || wasLatestActive)
+            forceUpdateExchangeRate()
+    }
+
+    internal fun getHistoricalDate(): LocalDate? {
+        return Database(getApplication()).getHistoricalDate()
+    }
+
+    internal fun getHistoricalLiveDate(): LiveData<LocalDate?> {
+        return Database(getApplication()).getHistoricalLiveDate()
     }
 
 

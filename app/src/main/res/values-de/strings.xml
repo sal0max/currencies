@@ -3,8 +3,11 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">.</string>
     <string name="desc_toggle_currencies">tausche Währungen</string>
-    <string name="last_updated">Kurse vom &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_latest">Kurse vom &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Historische Kurse vom &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; in die Zwischenablage kopiert</string>
+    <string name="historical_rates_dialog_title">Historische Kurse</string>
+    <string name="historical_rates_dialog_toggle">Wechselkurse eines spezifischen Datums verwenden. Deaktivieren, um immer die aktuellsten Kurse zu benutzen.</string>
     <string name="error">Fehler: %s</string>
     <string name="error_generic">Unbekanntes Problem.</string>
     <string name="error_http">Server antwortet mit HTTP %d</string>

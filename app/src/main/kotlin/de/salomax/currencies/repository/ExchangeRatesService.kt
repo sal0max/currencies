@@ -20,19 +20,23 @@ object ExchangeRatesService {
     /**
      * Get all the current exchange rates from the given api provider. Base will be Euro.
      */
-    suspend fun getRates(apiProvider: ApiProvider): Result<ExchangeRates, FuelError> {
+    suspend fun getRates(apiProvider: ApiProvider, date: LocalDate? = null): Result<ExchangeRates, FuelError> {
         // Currency conversions are done relatively to each other - so it basically doesn't matter
         // which base is used here. However, Euro is a strong currency, preventing rounding errors.
         val base = Currency.EUR
+        val dateString = if (date != null) date.format(DateTimeFormatter.ISO_LOCAL_DATE) else "latest"
 
         return Fuel.get(
             when (apiProvider) {
-                ApiProvider.EXCHANGERATE_HOST -> "${apiProvider.baseUrl}/latest" +
+                ApiProvider.EXCHANGERATE_HOST -> apiProvider.baseUrl +
+                        "/$dateString" +
                         "?base=$base" +
                         "&v=${UUID.randomUUID()}"
-                ApiProvider.FRANKFURTER_APP -> "${apiProvider.baseUrl}/latest" +
+                ApiProvider.FRANKFURTER_APP -> apiProvider.baseUrl +
+                        "/$dateString" +
                         "?base=$base"
-                ApiProvider.FER_EE -> "${apiProvider.baseUrl}/latest" +
+                ApiProvider.FER_EE -> apiProvider.baseUrl +
+                        "/$dateString" +
                         "?base=$base"
             }
         ).awaitResult(
