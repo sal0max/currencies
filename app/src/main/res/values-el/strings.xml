@@ -15,4 +15,7 @@
     <string name="menu_refresh">Επικαιροποίηση ισοτιμίας</string>
     <string name="menu_timeline">Διάγραμμα ισοτιμίας</string>
     <string name="tooltip_filter_starred">Εμφάνιση μόνο αγαπημένων νομισμάτων.</string>
+    <string name="rates_date_historical">Ιστορικό ισοτιμίας <b>%1$s</b> της <b>%2$s</b></string>
+    <string name="historical_rates_dialog_title">Ιστορικό ισοτιμίας</string>
+    <string name="historical_rates_dialog_toggle">Χρήση ισοτιμίας μιας παρελθούσης ημερομηνίας. Απενεργοποιήστε για χρήση της πιο πρόσφατης.</string>
 </resources>
