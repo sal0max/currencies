@@ -92,7 +92,7 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     // math
-    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:4.4.2'
+    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:5.0.1'
     // charts
     implementation 'com.robinhood.spark:spark:1.2.0'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
