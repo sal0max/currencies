@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title"><b>%1$s</b> σε <b>%2$s</b></string>
-    <string name="data_provider">Δεδομένα από <b>%s</b></string>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> σε &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">Δεδομένα από &lt;b>%s&lt;/b></string>
     <string name="rate_average">Μ.Ο.</string>
     <string name="rate_min">Ελάχ.</string>
     <string name="rate_max">Μέγ.</string>
