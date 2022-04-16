@@ -4,7 +4,10 @@
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">valuta\'s wisselen</string>
     <string name="rates_date_latest">Tarieven vanaf &lt;b>%1$s&lt;/b> per &lt;b>%2$s&lt;/b></string>
+
     <string name="copied_to_clipboard">&lt;b>%s&lt;/b> is naar het klembord gekopieerd</string>
+
+
     <string name="error">Fout: %s</string>
     <string name="error_generic">Onbekende probleem.</string>
     <string name="error_http">De server reageerde met HTTP %d</string>

@@ -4,7 +4,10 @@
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">toggle les devises</string>
     <string name="rates_date_latest">Taux du &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
+
     <string name="copied_to_clipboard">Copie de &lt;b&gt;%s&lt;/b&gt; au presse-papiers</string>
+
+
     <string name="error">Erreur : %s</string>
     <string name="error_generic">Problème inconnu.</string>
     <string name="error_http">Le serveur a répondu avec HTTP %d</string>
