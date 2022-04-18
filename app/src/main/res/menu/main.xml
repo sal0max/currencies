@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:orderInCategory="0"
+        android:id="@+id/timeline"
+        android:icon="@drawable/ic_timeline"
+        android:title="@string/menu_timeline"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:orderInCategory="1"
+        android:id="@+id/date_picker"
+        android:icon="@drawable/ic_history"
+        android:title="@string/menu_historical_rates"
+        app:showAsAction="ifRoom" />
+
+    <item
+        android:orderInCategory="10"
+        android:id="@+id/refresh"
+        android:title="@string/menu_refresh"
+        app:showAsAction="never" />
+
+    <item
+        android:orderInCategory="1000"
+        android:id="@+id/settings"
+        android:title="@string/menu_settings"
+        app:showAsAction="never" />
+</menu>

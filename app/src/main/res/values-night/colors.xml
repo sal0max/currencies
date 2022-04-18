@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- dark -->
+    <color name="colorBackground">@color/blackOlive</color>
+    <!-- pure black -->
+    <color name="colorBackgroundPureBlack">@android:color/black</color>
+    <color name="displayOverlayPureBlack">@null</color>
+</resources>

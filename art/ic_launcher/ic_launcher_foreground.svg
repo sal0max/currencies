@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="108" height="108" viewBox="0 0 108 108">
+    <g transform="translate(-72 -44)">
+        <rect width="108" height="108" transform="translate(72 44)" fill="none" />
+        <g transform="translate(-1)" opacity="0.1">
+            <path d="M0,18.725H18.725V0"
+                transform="translate(136.864 105.378) rotate(135)" fill="none" stroke="#000"
+                stroke-linejoin="round" stroke-width="9" />
+            <path d="M0,18.725H18.725V0"
+                transform="translate(116.383 92.901) rotate(-45)" fill="none" stroke="#000"
+                stroke-linejoin="round" stroke-width="9" />
+        </g>
+        <path d="M0,18.725H18.725V0"
+            transform="translate(135.864 104.378) rotate(135)" fill="none" stroke="#333331"
+            stroke-linejoin="round" stroke-width="9" />
+        <path d="M0,18.725H18.725V0"
+            transform="translate(115.383 91.901) rotate(-45)" fill="none" stroke="#faf7f2"
+            stroke-linejoin="round" stroke-width="9" />
+    </g>
+</svg>

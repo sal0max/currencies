@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- use fancy dynamic background color -->
+    <color name="colorBackground">@android:color/system_neutral1_900</color>
+    <color name="displayOverlay">@android:color/system_neutral1_800</color>
+</resources>

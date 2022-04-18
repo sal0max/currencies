@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- DON'T REMOVE! Outer frame layout needed; else RTL issues in land/activity_timeline! -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    android:elevation="@dimen/elevation1x">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layoutDirection="ltr"
+        tools:ignore="UselessParent">
+
+        <!-- past rate +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <TextView
+            android:id="@+id/text_date_past"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginVertical="@dimen/margin2x"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.075"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dec 13, 2000" />
+
+        <TextView
+            android:id="@+id/text_symbol_past"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginTop="4dp"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_date_past"
+            tools:text="kr" />
+
+        <TextView
+            android:id="@+id/text_rate_past"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-black"
+            app:layout_constraintBaseline_toBaselineOf="@id/text_symbol_past"
+            app:layout_constraintStart_toEndOf="@id/text_symbol_past"
+            tools:text="122,174" />
+
+        <!-- difference in percent +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <TextView
+            android:id="@+id/text_rate_difference_percent"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/colorPrimary"
+            android:textDirection="ltr"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/text_rate_past"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/text_date_past"
+            tools:text="+ 12 %" />
+
+        <!-- current rate ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <TextView
+            android:id="@+id/text_date_current"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginVertical="@dimen/margin2x"
+            android:fontFamily="sans-serif-light"
+            android:letterSpacing="0.075"
+            android:textColor="?android:attr/textColorSecondary"
+            android:textSize="12sp"
+            app:fontFamily="sans-serif-light"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Dec 13, 2001" />
+
+        <TextView
+            android:id="@+id/text_symbol_current"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="4dp"
+            android:fontFamily="monospace"
+            android:textSize="18sp"
+            app:layout_constraintBaseline_toBaselineOf="@id/text_symbol_past"
+            app:layout_constraintEnd_toStartOf="@id/text_rate_current"
+            tools:text="kr" />
+
+        <TextView
+            android:id="@+id/text_rate_current"
+            style="@style/TextAppearance.MaterialComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18sp"
+            app:fontFamily="sans-serif-black"
+            app:layout_constraintBaseline_toBaselineOf="@id/text_symbol_past"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:text="156,173" />
+
+        <!-- divider +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="0dp"
+            android:layout_height=".75dp"
+            android:layout_marginVertical="@dimen/margin2x"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text_rate_past" />
+
+        <!-- statistics ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <include
+            android:id="@+id/stats_row_1"
+            layout="@layout/timeline_stats_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginTop="@dimen/margin2x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/divider" />
+
+        <include
+            android:id="@+id/stats_row_2"
+            layout="@layout/timeline_stats_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginTop="@dimen/margin1x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stats_row_1" />
+
+        <include
+            android:id="@+id/stats_row_3"
+            layout="@layout/timeline_stats_row"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginTop="@dimen/margin1x"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/stats_row_2" />
+
+        <!-- button row ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            android:layout_marginBottom="@dimen/margin2x"
+            android:gravity="center"
+            app:checkedButton="@id/button_year"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:selectionRequired="true"
+            app:singleSelection="true">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_week"
+                style="@style/AppTheme.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/week"
+                app:cornerRadius="@dimen/margin2x" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_month"
+                style="@style/AppTheme.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/month"
+                app:cornerRadius="@dimen/margin2x" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button_year"
+                style="@style/AppTheme.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/year"
+                app:cornerRadius="@dimen/margin2x" />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
