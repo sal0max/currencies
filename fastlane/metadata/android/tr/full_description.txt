@@ -6,6 +6,7 @@ Currencies, finansal işlerinde kullanacağın bir araçtan ziyade daha gündeli
    • frankfurter.app alternatifi ve aynı para birimlerine sahip fer.ee
 • Basit ve sade tasarıma sahip bir arayüz.
 • Kur geçmişi: Para birimlerinin gelişimlerini görmek için geçmiş yıllara ait grafikleri inceleyebilirsin.
+• Geçmiş kurlar: Geçmiş bir tarihteki kur verilerini kullanabilirsin.
 • Ana özelliklerden birisi olan hesap makinesi: Restoranda hesabı bölüşürken kullanışlı olabilir.
 • İşlem ücreti hesaplayıcı: İstersen hesaplamalarına döviz işlem ücretini katabileceğin, ayarlanabilir bir hesaplama aracı.
 • Currencies, Android 12 için Kotlin ile yazılmıştır. Koyu ve Açık tema desteğine sahiptir.
