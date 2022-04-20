@@ -2,14 +2,14 @@
 <resources>
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">.</string>
-    <string name="desc_toggle_currencies">εναλλαγή νομισμάτων</string>
+    <string name="desc_toggle_currencies">Εναλλαγή νομισμάτων</string>
     <string name="rates_date_latest">Τιμές της &lt;b>%1$s&lt;/b> από &lt;b>%2$s&lt;/b></string>
     <string name="rates_date_historical">Ιστορικό ισοτιμίας &lt;b>%1$s&lt;/b> της &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">Το &lt;b>%s&lt;/b> αντιγράφηκε στο πρόχειρο</string>
     <string name="historical_rates_dialog_title">Ιστορικό ισοτιμίας</string>
     <string name="historical_rates_dialog_toggle">Χρήση ισοτιμίας μιας παρελθούσης ημερομηνίας. Απενεργοποιήστε για χρήση της πιο πρόσφατης.</string>
-    <string name="error_generic">Άγνωστο πρόβλημα.</string>
     <string name="error">Σφάλμα: %s</string>
+    <string name="error_generic">Άγνωστο πρόβλημα.</string>
     <string name="error_http">Ο διακομιστής αποκρίθηκε με HTTP %d</string>
     <string name="error_timeout">Ο διακομιστής δεν αποκρίθηκε έγκαιρα ή δεν είναι προσβάσιμος.</string>
     <string name="error_no_data">Αδυναμία σύνδεσης με τον διακομιστή.</string>
