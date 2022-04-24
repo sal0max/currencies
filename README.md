@@ -12,7 +12,7 @@
 </div>
 
 **Currencies** is a [simple](https://en.wikipedia.org/wiki/KISS_principle) and straightforward currency converter.
-It is **not** intended to be used for realtime financial business, rather to be a handy companion e.g. on vacations.
+It is **not** intended to be used for realtime financial business, rather to be a handy companion e.g., on vacations.
 
 <!-- buttons -->
 <div align="center">
@@ -29,8 +29,9 @@ It is **not** intended to be used for realtime financial business, rather to be 
    * [frankfurter.app](https://frankfurter.app/) with **over 30 currencies**, provided by the European Central Bank
    * [fer.ee](https://fer.ee/): an alternative service that behaves just like Frankfurter.app
 * The UI is simple and pure Material Design.
-* Historic rates: Check out the chart for the past year, to see how the currencies have developed.
-* A major feature is the included calculator. Useful e.g. if you want to split up a restaurant bill.
+* Exchange rate history: Check out the chart for the past year, to see how the currencies have developed.
+* Historical rates: You can use rates from prior dates.
+* A major feature is the included calculator. Useful e.g., if you want to split up a restaurant bill.
 * Fee calculator: optionally add a customizable foreign exchange fee to all calculations.
 * **Currencies** is written for Android in Kotlin, targeting Android 12 and supporting light and dark themes.
 * The app is ad-free and doesn't spy on the user.
