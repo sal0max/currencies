@@ -92,13 +92,13 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     // math
-    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:5.0.1'
+    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:5.0.2'
     // charts
     implementation 'com.robinhood.spark:spark:1.2.0'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     // test
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.mockito:mockito-core:4.4.0'
+    testImplementation 'org.mockito:mockito-core:4.5.1'
 }
 
 private String getSecret(String key) {
