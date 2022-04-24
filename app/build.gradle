@@ -11,8 +11,8 @@ android {
         minSdkVersion 26
         targetSdkVersion 32
         // SemVer
-        versionName = '1.15.0'
-        versionCode = 11500
+        versionName = '1.16.0'
+        versionCode = 11600
         archivesBaseName = "$applicationId-v$versionCode"
     }
 
