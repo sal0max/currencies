@@ -3,11 +3,8 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">alternar monedas</string>
-    <string name="rates_date_latest">Tipos del &lt;b>%1$s&lt;/b> vía &lt;b>%2$s&lt;/b></string>
-
+    <string name="rates_date_latest">Tipos del &lt;b&gt;%1$s&lt;/b&gt; vía &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="copied_to_clipboard">Copiado &lt;b&gt;%s&lt;/b&gt; al portapapeles</string>
-
-
     <string name="error">Error: %s</string>
     <string name="error_generic">Problema desconocido.</string>
     <string name="error_http">El servidor ha respondido con HTTP %d</string>
@@ -18,4 +15,7 @@
     <string name="menu_refresh">Tarifas de actualización</string>
     <string name="menu_timeline">Historial de tipos de cambio</string>
     <string name="tooltip_filter_starred">Mostrar solo las monedas con estrella.</string>
+    <string name="rates_date_historical">Tasas históricas de <b>%1$s</b> por <b>%2$s</b></string>
+    <string name="historical_rates_dialog_title">Tasas históricas</string>
+    <string name="historical_rates_dialog_toggle">Utilice los tipos de cambio de una fecha específica. Deshabilitar, para tomar siempre las más recientes.</string>
 </resources>
