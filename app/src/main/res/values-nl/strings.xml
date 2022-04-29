@@ -3,11 +3,8 @@
     <string name="decimal_separator">.</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">Valuta\'s wisselen</string>
-    <string name="rates_date_latest">Tarieven vanaf &lt;b>%1$s&lt;/b> per &lt;b>%2$s&lt;/b></string>
-
-    <string name="copied_to_clipboard">&lt;b>%s&lt;/b> is naar het klembord gekopieerd</string>
-
-
+    <string name="rates_date_latest">Tarieven vanaf &lt;b&gt;%1$s&lt;/b&gt; per &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; is naar het klembord gekopieerd</string>
     <string name="error">Fout: %s</string>
     <string name="error_generic">Onbekende probleem.</string>
     <string name="error_http">De server reageerde met HTTP %d</string>
@@ -18,4 +15,7 @@
     <string name="menu_refresh">Cursus updaten</string>
     <string name="menu_timeline">Wisselkoers-grafiek</string>
     <string name="tooltip_filter_starred">Toon alleen favoriete valuta\'s.</string>
+    <string name="historical_rates_dialog_toggle">Gebruik wisselkoersen van een specifieke datum. Uitschakelen, om altijd de meest recente te nemen.</string>
+    <string name="rates_date_historical">Historische koersen van <b>%1$s</b> door <b>%2$s</b></string>
+    <string name="historical_rates_dialog_title">Historische koersen</string>
 </resources>
