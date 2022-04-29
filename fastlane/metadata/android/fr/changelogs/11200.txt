@@ -1,0 +1,4 @@
+- Cette version corrige plusieurs problèmes de mise en page avec les langues de droite à gauche. Désormais, tout devrait se présenter comme prévu.
+- Nouvelle fonctionnalité : Prévisualisation de toutes les conversions dans le sélecteur de devises. Vous devez l'activer dans les paramètres.
+- Parfois, les devises affichaient des données anciennes ou erronées après un rafraîchissement des taux.
+- Vraiment beaucoup d'améliorations du code, pour rendre cette application encore meilleure.

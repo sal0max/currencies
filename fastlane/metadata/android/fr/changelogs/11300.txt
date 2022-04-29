@@ -1,0 +1,4 @@
+- Une autre nouvelle langue : Vous pouvez maintenant profiter de l'application en arabe. Merci beaucoup, Ahmed ! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪
+- Quelques corrections RTL supplémentaires pour la mise en page paysage.
+- Correction d'un crash lors de la saisie d'une valeur vide pour le montant des frais.
+- Le fournisseur de données est affiché dans la vue chronologique.
