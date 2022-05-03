@@ -16,4 +16,6 @@
     <string name="menu_timeline">Biểu đồ tỉ lệ chuyển đổi</string>
     <string name="tooltip_filter_starred">Chỉ hiện tiền tệ được gắn sao.</string>
     <string name="rates_date_historical">Tỷ lệ lịch sử của <b>%1$s</b> bởi <b>%2$s</b></string>
+    <string name="historical_rates_dialog_title">Tỷ lệ lịch sử của</string>
+    <string name="historical_rates_dialog_toggle">Sử dụng tỷ giá hối đoái của một ngày cụ thể. Tắt, để luôn lấy những cái gần đây nhất.</string>
 </resources>
