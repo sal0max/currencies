@@ -3,11 +3,11 @@
     <string name="decimal_separator">.</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">chuyển tiền tệ</string>
-    <string name="rates_date_latest">Tỉ lệ ở &lt;b>%1$s&lt;/b> bởi &lt;b>%2$s&lt;/b></string>
-
-    <string name="copied_to_clipboard">Đã sao chép &lt;b>%s&lt;/b> vào bộ nhớ tạm</string>
-
-
+    <string name="rates_date_latest">Tỉ lệ ở &lt;b&gt;%1$s&lt;/b&gt; bởi &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Tỷ lệ lịch sử của &lt;b&gt;%1$s&lt;/b&gt; bởi &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">Đã sao chép &lt;b&gt;%s&lt;/b&gt; vào bộ nhớ tạm</string>
+    <string name="historical_rates_dialog_title">Tỷ lệ lịch sử của</string>
+    <string name="historical_rates_dialog_toggle">Sử dụng tỷ giá hối đoái của một ngày cụ thể. Tắt, để luôn lấy những cái gần đây nhất.</string>
     <string name="error">Lỗi: %s</string>
     <string name="error_generic">Vấn đề không xác định.</string>
     <string name="error_http">Máy chủ trả về HTTP %d</string>

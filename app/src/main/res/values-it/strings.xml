@@ -3,11 +3,11 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">togliere le valute</string>
-    <string name="rates_date_latest">Tassi del &lt;b>%1$s&lt;/b> tramite &lt;b>%2$s&lt;/b></string>
-
+    <string name="rates_date_latest">Tassi del &lt;b&gt;%1$s&lt;/b&gt; tramite &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Tassi storici di &lt;b&gt;%1$s&lt;/b&gt; per &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="copied_to_clipboard">Copiato &lt;b&gt;%s&lt;/b&gt; negli appunti</string>
-
-
+    <string name="historical_rates_dialog_title">Tassi storici</string>
+    <string name="historical_rates_dialog_toggle">Usa i tassi di cambio di una data specifica. Disabilita, per prendere sempre quelli più recenti.</string>
     <string name="error">Errore: %s</string>
     <string name="error_generic">Problema sconosciuto.</string>
     <string name="error_http">Il server ha risposto con HTTP %d</string>
