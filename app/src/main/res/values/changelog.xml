@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.16.0</b>
+    <string name="changelog" translatable="false"><b>1.16.1</b>
+        \n⸻
+        \n<li>Updated translations.</li>
+        \n
+        \n<b>1.16.0</b>
         \n⸻
         \n<li>New feature: Historical rates can now be selected to be used for the calculation.</li>
         \n<li>New language: Indonesian. Thank you very much, @liimee! 🇮🇩🏝️</li>
