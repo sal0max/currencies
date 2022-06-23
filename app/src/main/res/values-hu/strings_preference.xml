@@ -1,2 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="fee_title">Külföldi tranzakciós díj</string>
+    <string name="category_appearance">Megjelenítés</string>
+    <string name="theme_title">Dizájn</string>
+    <string name="theme_option_dark">Sötét</string>
+    <string name="theme_option_default">Rendszer alapértelmezett</string>
+    <string name="pure_black_enabled_title">OLED fekete</string>
+    <string name="pure_black_enabled_summary">Tiszta fekete használata sötét módban</string>
+    <string name="category_api">Árfolyamok</string>
+    <string name="api_title">Adatszolgáltató</string>
+    <string name="api_about_title">%s</string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b> Frankfurter.app</b></a> az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.
+\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
+    <string name="api_refreshPeriod_frankfurterApi">Az adatok minden munkanapon 16:00 CET körül frissülnek.</string>
+    <string name="api_refreshPeriod_ferEe">Az árfolyamok minden munkanapon frissülnek.</string>
+    <string name="category_about">Erről az alkalmazásról</string>
+    <string name="disclaimer_title">Jogi nyilatkozat</string>
+    <string name="donate_title">Támogasd a fejlesztőt</string>
+    <string name="donate_summary">Adományozás PayPal-on keresztül</string>
+    <string name="rate_title">Értékeld az alkalmazást</string>
+    <string name="rate_summary">Ha szeretnéd, segíthetsz másoknak felfedezni a Currencies-t. Kattints ide az alkalmazás értékeléséhez a Google Play-en.</string>
+    <string name="aboutVersion">Verzió: %1$s</string>
+    <string name="category_settings">Általános beállítások</string>
+    <string name="fee_summary">Hitelkártya-szerződésedtől függően bankod díjat számíthat fel minden devizatranzakció után. Itt adhatod meg ezt a díjat. Ez hozzáadódik a számításhoz, így tudod, hogy mennyit fizetsz <i> de ténylegesen </i>.</string>
+    <string name="previewConversion_title">Konverziós előnézet</string>
+    <string name="previewConversion_summary">Az aktuális átváltás megjelenítése minden egyes árfolyamhoz a pénznemválasztóban.</string>
+    <string name="theme_option_light">Világos</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> a devizaárfolyamokat különböző pénzügyi adatszolgáltatóktól és bankoktól, köztük az Európai Központi Banktól szerzi be. Minden árfolyamadatot középárfolyam-adatokban szolgáltatnak. A középárfolyamok meghatározása a vételi és eladási árfolyamok átlagos mediánjának kiszámításával történik.
+\n<b> Körülbelül 160 pénznemet tartalmaz.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> egy viszonylag új szolgáltatás, amely (a Frankfurter.app-hoz hasonlóan) az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.
+\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
+    <string name="api_refreshPeriod_title">Frissítési időszak</string>
+    <string name="api_refreshPeriod_exchangerateHost">Az árfolyamok minden munkanapon éjfél körül frissülnek.</string>
+    <string name="disclaimer_summary">Bár az alkalmazás nagyon alaposan meg van írva és tesztelve, <b>nem garantálható, hogy az általa megjelenített adatok helyesek</b>. Az árfolyamokat egy harmadik fél szolgáltatja, és ez az alkalmazás semmilyen ígéretet nem tud tenni arra, hogy az adatok igazak és naprakészek.
+\nTovábbá a megadott árfolyamok - még ha helyesek is - eltérhetnek a bankod által használt árfolyamoktól.
+\nVégül: Hibák előfordulnak. Soha ne bízz vakon senkiben! Mindezek után nyugodt lehetsz, hogy nem adtam volna ki ezt az alkalmazást, ha bármilyen kétségem lett volna afelől, hogy az rendeltetésszerűen működik.</string>
+</resources>
