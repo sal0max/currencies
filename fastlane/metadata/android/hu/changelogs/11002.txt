@@ -1,0 +1,1 @@
+- Javítottuk a beállítások megnyitásakor bekövetkezett összeomlást.

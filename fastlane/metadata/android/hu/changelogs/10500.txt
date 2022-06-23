@@ -1,0 +1,3 @@
+- Válassz két API szolgáltató közül: exchangerate.host és frankfurter.app
+- A fejlesztőt most a PayPal segítségével adományozással is támogathatod. A linket a beállítások között találod.
+- További UI-fejlesztések

@@ -1,0 +1,2 @@
+- Javítja azt a hibát, hogy az árfolyamok nem frissültek, ha az exchangerate.host-ot használtad.
+- Könyvtári frissítések a stabilitás és a teljesítmény javítása érdekében.

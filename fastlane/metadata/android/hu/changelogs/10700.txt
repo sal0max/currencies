@@ -1,0 +1,3 @@
+- Új funkciót ebben a kiadásban! Az alkalmazás most már tartalmazza a múltbéli árfolyamokat. Nézd meg az elmúlt év grafikonját!
+- Van egy további árfolyamszolgáltató is: Mostantól a fer.ee-t is kiválaszthatod a beállítások között; új szolgáltatás, amely alapvetően úgy viselkedik, mint a frankfurter.app, és csak egy újabb választási lehetőség a számodra.
+- Mint mindig, ez a kiadás is tartalmaz frissített könyvtárakat, apró javításokat és minden olyan dolgot, ami még jobbá teszi a programot.

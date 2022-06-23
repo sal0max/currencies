@@ -1,0 +1,3 @@
+- Néhány apró fejlesztés a Googles legújabb Material Design 3 irányelvének követése érdekében.
+- Frissített fordítások. Köszönöm mindenkinek, aki segít!
+- Különböző stabilitási javítások.
