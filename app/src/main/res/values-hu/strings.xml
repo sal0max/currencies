@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="rates_date_historical">Múltbéli árfolyamok <b>%1$s</b> <b>%2$s</b> által</string>
+    <string name="thousands_separator">" "</string>
+    <string name="historical_rates_dialog_title">Múltbéli árfolyamok</string>
+    <string name="error">Hiba: %s</string>
+    <string name="error_generic">Ismeretlen probléma.</string>
+    <string name="error_no_data">Nem sikerült csatlakozni a szerverhez.</string>
+    <string name="error_api_error">API hiba történt. Kérjük, próbáld meg később újra.</string>
+    <string name="menu_settings">Beállítások</string>
+    <string name="menu_refresh">Árfolyamok frissítése</string>
+    <string name="menu_timeline">Árfolyamgrafikon</string>
+    <string name="tooltip_filter_starred">Csak a kedvenc valuták megjelenítése.</string>
+    <string name="decimal_separator">,</string>
+    <string name="desc_toggle_currencies">valuták váltása</string>
+    <string name="rates_date_latest">Az alábbi időpontban érvényes árfolyamok <b>%1$s</b> <b>%2$s</b> által</string>
+    <string name="copied_to_clipboard"><b>%s</b> másolva a vágólapra</string>
+    <string name="historical_rates_dialog_toggle">Egy adott időpontra vonatkozó árfolyamok használata. Kikapcsolva mindig a legfrissebbeket veszi figyelembe.</string>
+    <string name="error_http">A kiszolgáló HTTP-vel válaszolt %d</string>
+    <string name="error_timeout">A szerver nem válaszolt időben, vagy nem elérhető.</string>
+</resources>
