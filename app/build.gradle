@@ -75,13 +75,13 @@ android {
 
 dependencies {
     // kotlin
-    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.core:core-ktx:1.8.0'
     // support libs
-    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.appcompat:appcompat:1.4.2'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
     implementation 'androidx.preference:preference-ktx:1.2.0'
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'com.google.android.material:material:1.6.1'
     // downloader
     def fuelVersion = '2.3.1'
     implementation "com.github.kittinunf.fuel:fuel:$fuelVersion"
@@ -92,13 +92,13 @@ dependencies {
     implementation "com.squareup.moshi:moshi-kotlin:$moshiVersion"
     kapt "com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion"
     // math
-    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:5.0.2'
+    implementation 'org.mariuszgromada.math:MathParser.org-mXparser:5.0.6'
     // charts
     implementation 'com.robinhood.spark:spark:1.2.0'
     implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
     // test
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.mockito:mockito-core:4.5.1'
+    testImplementation 'org.mockito:mockito-core:4.6.1'
 }
 
 private String getSecret(String key) {
