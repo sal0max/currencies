@@ -115,7 +115,7 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
         }
 
         // update currently selected currencies when rates are updated:
-        // sometimes the selected rates arent available any more, so reset them
+        // sometimes the selected rates aren't available anymore, so reset them
         val baseCurrency = Database(app).getLastBaseCurrency()
         val destinationCurrency = Database(app).getLastDestinationCurrency()
         currentBaseCurrency = object : MediatorLiveData<Currency?>() {

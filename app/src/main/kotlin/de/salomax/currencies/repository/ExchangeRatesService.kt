@@ -56,7 +56,7 @@ object ExchangeRatesService {
     /**
      * Get the historic rates of the past year between the given base and symbol.
      * Won't get all the symbols, as it makes a big difference in transferred data size:
-     * ~12KB for one symbol to ~840KB for all symbols
+     * ~12 KB for one symbol to ~840 KB for all symbols
      */
     suspend fun getTimeline(apiProvider: ApiProvider, base: Currency, symbol: Currency): Result<Timeline, FuelError> {
         val endDate = LocalDate.now()

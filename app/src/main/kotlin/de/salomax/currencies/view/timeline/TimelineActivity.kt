@@ -118,7 +118,7 @@ class TimelineActivity : BaseActivity() {
 
     private fun initChartView() {
         timelineChart.apply {
-            // dashed base line
+            // dashed baseline
             baseLinePaint = baseLinePaint.apply {
                 strokeWidth = 1f.dpToPx()
                 style = Paint.Style.STROKE
