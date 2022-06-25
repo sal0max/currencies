@@ -1,0 +1,4 @@
+- Ez a kiadás számos, a jobbról balra (RTL) nyelveknél felmerülő elrendezési problémát javít. Most már mindennek a várt módon kell kinéznie.
+- Új funkció: Az összes átváltás előnézete a pénznemválasztóban. Ezt a beállításokban kell engedélyezned.
+- Néha a valuták régi vagy rossz adatokat mutattak egy árfolyamfrissítés után. Ez most javítva van.
+- Tényleg sok kódjavítás, hogy ez az alkalmazás még jobb legyen.

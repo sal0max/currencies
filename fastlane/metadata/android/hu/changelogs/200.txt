@@ -1,0 +1,1 @@
+- Másolás funkciót adtunk hozzá: Kattints hosszan a másolni kívánt értékre

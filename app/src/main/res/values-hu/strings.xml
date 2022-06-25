@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator">" "</string>
+    <string name="desc_toggle_currencies">Valuták váltása</string>
+    <string name="rates_date_latest">Az alábbi időpontban érvényes árfolyamok &lt;b&gt;%1$s&lt;/b&gt; &lt;b&gt;%2$s&lt;/b&gt; által</string>
+    <string name="rates_date_historical">Múltbéli árfolyamok &lt;b&gt;%1$s&lt;/b&gt; &lt;b&gt;%2$s&lt;/b&gt; által</string>
+    <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; másolva a vágólapra</string>
+    <string name="historical_rates_dialog_title">Múltbéli árfolyamok</string>
+    <string name="historical_rates_dialog_toggle">Egy adott időpontra vonatkozó árfolyamok használata. Kikapcsolva mindig a legfrissebbeket veszi figyelembe.</string>
+    <string name="error">Hiba: %s</string>
+    <string name="error_generic">Ismeretlen probléma.</string>
+    <string name="error_timeout">A szerver nem válaszolt időben, vagy nem elérhető.</string>
+    <string name="error_http">A kiszolgáló HTTP-vel válaszolt %d</string>
+    <string name="error_no_data">Nem sikerült csatlakozni a szerverhez.</string>
+    <string name="error_api_error">API hiba történt. Kérjük, próbáld meg később újra.</string>
+    <string name="menu_settings">Beállítások</string>
+    <string name="menu_refresh">Árfolyamok frissítése</string>
+    <string name="menu_timeline">Árfolyamgrafikon</string>
+    <string name="tooltip_filter_starred">Csak a kedvenc valuták megjelenítése.</string>
+</resources>

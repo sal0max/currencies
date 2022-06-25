@@ -1,0 +1,2 @@
+- Jobb hibakezelés
+- Kisebb javítások

@@ -1,0 +1,3 @@
+- A valutaárfolyamok hibabiztosabb frissítése
+- Kizáró nyilatkozat hozzáadása
+- Hozzáadva ez a változásnapló

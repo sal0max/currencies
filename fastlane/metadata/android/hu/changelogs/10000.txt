@@ -1,0 +1,3 @@
+- Német fordítás hozzáadva 🇩🇪
+- Kisebb javítás: Az alkalmazás mérete 50%-kal csökkent!
+- Az alkalmazás elég stabilnak tűnik: Nyilvános 1.0 kiadás! 🥳🥳🥳

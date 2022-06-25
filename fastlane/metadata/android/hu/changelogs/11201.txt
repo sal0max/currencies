@@ -1,0 +1,1 @@
+- Az árfolyamok frissítésekor bekövetkező összeomlás javítása. Bocsánat! 🤕

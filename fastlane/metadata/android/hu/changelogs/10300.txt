@@ -1,0 +1,4 @@
+- Még több pénznem! Több mint 160 összesen! Ez azért van, mert a Currencies egy másik API-ra váltott. A régi (exchangeratesapi.io) minden előzetes figyelmeztetés nélkül előfizetési modellre váltott. NEM JÓ! Az új szolgáltatónk az exchangerate.host lesz.
+- Ez azt is jelenti, hogy az elmúlt pár napban az árfolyamok nem tudtak frissülni
+- Emellett magát a frissítési folyamatot is javítottuk, így legalább legközelebb, ha ilyesmi történik, kapsz egy értesítést.
+- Apró UI-javítások

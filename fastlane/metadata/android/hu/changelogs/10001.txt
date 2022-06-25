@@ -1,0 +1,1 @@
+- Lehetséges összeomlás javítása Android 11-en
