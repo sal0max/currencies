@@ -182,9 +182,11 @@ class MainActivity : BaseActivity() {
 
     private fun setListeners() {
         // long click on delete
-        findViewById<AppCompatImageButton>(R.id.btn_delete).setOnLongClickListener {
-            viewModel.clear()
-            true
+        arrayOf<View>(findViewById(R.id.keypad), findViewById(R.id.keypad_extended)).forEach {
+            it.findViewById<AppCompatImageButton>(R.id.btn_delete).setOnLongClickListener {
+                viewModel.clear()
+                true
+            }
         }
 
         // long click on input "from"
@@ -371,6 +373,13 @@ class MainActivity : BaseActivity() {
         }
         viewModel.getResultAsNumber().observe(this) {
             spinnerFrom.setCurrentSum(it)
+        }
+
+        viewModel.isExtendedKeypadEnabled.observe(this) { extendedEnabled ->
+            findViewById<View>(R.id.keypad).visibility =
+                if (extendedEnabled) View.GONE else View.VISIBLE
+            findViewById<View>(R.id.keypad_extended).visibility =
+                if (extendedEnabled) View.VISIBLE else View.GONE
         }
     }
 

@@ -44,6 +44,14 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
         }
 
+        // extended keypad
+        findPreference<SwitchPreferenceCompat>(getString(R.string.extendedKeypad_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setExtendedKeypadEnabled(newValue.toString().toBoolean())
+                true
+            }
+        }
+
         // pure black
         findPreference<SwitchPreferenceCompat>(getString(R.string.pure_black_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->

@@ -38,6 +38,8 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
 
     // ui
     private var isUpdating: LiveData<Boolean> = repository.isUpdating()
+    val isExtendedKeypadEnabled: LiveData<Boolean> = Database(app).isExtendedKeypadEnabled()
+
 
     // number input
     private val currentBaseValueText = MutableLiveData("0")
@@ -381,19 +383,25 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
     internal fun addNumber(value: String) {
         // in calculation mode: add to upper row
         if (isInCalculationMode()) {
-            // last number is "0"
+            // last input was "0"
             if (currentCalculationValueText.value!!.split(" ").last().trim() == "0") {
-                // replace "0" with any other number
-                if (value != "0")
+                // replace that "0" with any other number
+                if (value != "0" && value != "00" && value != "000")
                     currentCalculationValueText.value = currentCalculationValueText.value?.trim()?.dropLast(1)?.plus(value)
-            } else
+            }
+            // last input was an operator: replace "00" and "000" with "0"
+            else if (currentCalculationValueText.value!!.split(" ").last().isEmpty() && (value == "00" || value == "000"))
+                currentCalculationValueText.value += 0
+            else
                 currentCalculationValueText.value += value
         }
         // else: add to lower row
         else {
             currentBaseValueText.value =
-                if (currentBaseValueText.value == "0") value
-                else currentBaseValueText.value.plus(value)
+                if (currentBaseValueText.value == "0") {
+                    if (value == "00" || value == "000") "0"
+                    else value
+                } else currentBaseValueText.value.plus(value)
         }
 
     }

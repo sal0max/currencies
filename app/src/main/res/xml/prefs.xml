@@ -16,6 +16,12 @@
             android:key="@string/previewConversion_key"
             android:title="@string/previewConversion_title"
             android:summary="@string/previewConversion_summary" />
+
+        <SwitchPreferenceCompat
+            app:defaultValue="false"
+            android:key="@string/extendedKeypad_key"
+            android:title="@string/extendedKeypad_title"
+            android:summary="@string/extendedKeypad_summary" />
     </PreferenceCategory>
 
     <PreferenceCategory

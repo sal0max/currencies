@@ -170,6 +170,7 @@ class Database(context: Context) {
     private val keyFeeEnabled = "_feeEnabled"
     private val keyFeeValue = "_fee"
     private val keyPreviewConversionEnabled = "_previewConversionEnabled"
+    private val keyExtendedKeypadEnabled = "_extendedKeypadEnabled"
 
     /* api */
 
@@ -256,6 +257,18 @@ class Database(context: Context) {
 
     fun isPreviewConversionEnabled(): LiveData<Boolean> {
         return SharedPreferenceBooleanLiveData(prefs, keyPreviewConversionEnabled, false)
+    }
+
+    /* extended keypad */
+
+    fun setExtendedKeypadEnabled(enabled: Boolean) {
+        prefs.apply {
+            edit().putBoolean(keyExtendedKeypadEnabled, enabled).apply()
+        }
+    }
+
+    fun isExtendedKeypadEnabled(): LiveData<Boolean> {
+        return SharedPreferenceBooleanLiveData(prefs, keyExtendedKeypadEnabled, false)
     }
 
 }
