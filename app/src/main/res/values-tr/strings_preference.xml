@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Genel Ayarlar</string>
@@ -6,6 +7,8 @@
     <string name="fee_summary">Bankan, kredi kartı sözleşmene bağlı olarak tüm döviz işlemlerinden bir işlem ücreti alabilir. Bu ücreti buraya girebilirsin. Bu miktar hesaplamaya eklenecek, böylece <i>tam olarak</i> ne kadar ödeme yapacağını öğrenebilirsin.</string>
     <string name="previewConversion_title">Kur oranı önizlemesi</string>
     <string name="previewConversion_summary">Para birimi seçme ekranında mevcut kur oranlarını göster.</string>
+    <string name="extendedKeypad_title">Genişletilmiş Tuş Takımı</string>
+    <string name="extendedKeypad_summary">İki ekstra tuş ekler: <b>00</b>&nbsp;ve&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Görünüm</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Açık</string>
