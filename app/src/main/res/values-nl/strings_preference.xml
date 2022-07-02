@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Algemene Instellingen</string>
@@ -6,7 +7,9 @@
     <string name="fee_summary">Afhankelijk van uw creditcardovereenkomst kan uw bank kosten in rekening brengen voor alle valutatransacties. Hier kunt u die vergoeding invullen. Het wordt toegevoegd aan de berekening, zodat u weet hoeveel u <i>echt</i> betaalt.</string>
     <string name="previewConversion_title">Omrekeningvoorbeeld</string>
     <string name="previewConversion_summary">Toon de huidige omrekening voor elke koers in de valutakiezer.</string>
-    <string name="category_appearance">Verschijning</string>
+    <string name="extendedKeypad_title">Uitgebreid Toetsenbord</string>
+    <string name="extendedKeypad_summary">Voeg twee extra knoppen toe: <b>00</b>&nbsp;and&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">Uiterlijk</string>
     <string name="theme_title">Ontwerp</string>
     <string name="theme_option_light">Licht</string>
     <string name="theme_option_dark">Donker</string>
