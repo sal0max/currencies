@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator"> </string>
+    <string name="rates_date_latest"><b>%1$s</b> এ বিনিময় হার <b>%2$s</b> দ্বারা</string>
+    <string name="copied_to_clipboard"><b>%s</b> ক্লিপবোর্ডে অনুলিপিত</string>
+</resources>
