@@ -1,0 +1,1 @@
+Neue Funktion: Aktiviere die erweiterte Tastatur in den Einstellungen um "00"- und "000"-Buttons freizuschalten. Sehr nützlich für Währungen mit vielen Stellen, wie die Indonesische Rupiah, den Chilenischen Peso, den Vietnamesischer Đồng oder den Südkoreanischen Won.

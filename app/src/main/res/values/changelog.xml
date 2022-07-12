@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.16.2</b>
+    <string name="changelog" translatable="false"><b>1.17.0</b>
+        \n⸻
+        \n<li>New feature: Enable the <b>Extended Keypad mode</b> in the settings to unlock <b>00</b> and <b>000</b> buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.</li>
+        \n
+        \n<b>1.16.2</b>
         \n⸻
         \n<li>New translation: Hungarian. Greatly appreciated, József! 🇭🇺</li>
         \n
