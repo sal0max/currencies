@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator">\u2009</string>
+
+    <string name="rates_date_latest">&lt;b&gt;%1$s&lt;/b&gt; এ বিনিময় হার &lt;b&gt;%2$s&lt;/b&gt; দ্বারা</string>
+
+    <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; ক্লিপবোর্ডে অনুলিপিত</string>
+</resources>
