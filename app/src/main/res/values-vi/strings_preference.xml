@@ -8,7 +8,7 @@
     <string name="previewConversion_title">Xem trước chuyển đổi</string>
     <string name="previewConversion_summary">Hiện việc chuyển đổi hiện tại cho mỗi tỉ lệ ở trình chọn tiền tệ.</string>
     <string name="extendedKeypad_title">Bàn phím mở rộng</string>
-    <string name="extendedKeypad_summary">Thêm hai nút: <b>pp</b>&nbsp;và&nbsp;<b>000</b>.</string>
+    <string name="extendedKeypad_summary">Thêm hai nút: <b>00</b>&nbsp;và&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Ngoại hình</string>
     <string name="theme_title">Thiết kế</string>
     <string name="theme_option_light">Sáng</string>
