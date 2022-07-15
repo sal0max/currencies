@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [
-<!ENTITY nbsp "&#160;">
-]>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">الاعدادات العامة</string>
@@ -9,6 +7,8 @@
     <string name="fee_summary">اعتمادًا على اتفاقية بطاقة الائتمان الخاصة بك ، قد يفرض البنك الذي تتعامل معه رسومًا على جميع معاملات الصرف الأجنبي. هنا يمكنك إدخال تلك الرسوم. ستتم إضافته أعلى الحساب ، حتى تعرف مقدار ما تدفعه <i> حقًا </i>.</string>
     <string name="previewConversion_title">معاينة التحويل</string>
     <string name="previewConversion_summary">اعرض التحويل الحالي لكل سعر في منتقي العملات.</string>
+    <string name="extendedKeypad_title">لوحة المفاتيح الممتدة</string>
+    <string name="extendedKeypad_summary">أضف زرين إضافيين: <b>00</b>&nbsp;و&nbsp;<b>000</b>.</string>
     <string name="category_appearance">المظهر</string>
     <string name="theme_title">تصميم</string>
     <string name="theme_option_light">فاتح</string>
@@ -36,6 +36,4 @@
     <string name="rate_title">قيم هذا التطبيق</string>
     <string name="rate_summary">إذا كنت ترغب في ذلك ، يمكنك مساعدة الآخرين في اكتشاف العملات. انقر هنا لتقييم التطبيق على Google Play.</string>
     <string name="aboutVersion">الإصدار %1$s</string>
-    <string name="extendedKeypad_title">لوحة المفاتيح الممتدة</string>
-    <string name="extendedKeypad_summary">أضف زرين إضافيين: &lt;b&gt; 00 &lt;/b&gt; &amp; nbsp؛ و &amp; nbsp؛ &lt;b&gt; 000 &lt;/b&gt;.</string>
 </resources>

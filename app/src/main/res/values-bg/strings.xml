@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="thousands_separator">" "</string>
-    <string name="error">Грешка: %s</string>
-    <string name="error_generic">Неизвестен проблем.</string>
-    <string name="rates_date_historical">Исторически курс от <b>%1$s</b> от <b>%2$s</b></string>
-    <string name="copied_to_clipboard">Стойността <b>%s</b> е копирана в клипборда</string>
-    <string name="rates_date_latest">Курс за <b>%1$s</b> от <b>%2$s</b></string>
-    <string name="menu_settings">Настройки</string>
-    <string name="menu_timeline">Таблица на обявения курс</string>
-    <string name="tooltip_filter_starred">Покажи само любимите курсове.</string>
     <string name="decimal_separator">,</string>
+    <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">обърни валутите</string>
+    <string name="rates_date_latest">Курс за &lt;b>%1$s&lt;/b> от &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Исторически курс от &lt;b>%1$s&lt;/b> от &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">Стойността &lt;b>%s&lt;/b> е копирана в клипборда</string>
     <string name="historical_rates_dialog_title">Исторически курс</string>
     <string name="historical_rates_dialog_toggle">Използвай курс от определена дата. Изключи, за да се се взима винаги най-новата стойност.</string>
+    <string name="error">Грешка: %s</string>
+    <string name="error_generic">Неизвестен проблем.</string>
     <string name="error_http">Сървъра отговаря с HTTP %d</string>
     <string name="error_timeout">Сървърът не отговаря навреме или е недостъпен.</string>
     <string name="error_no_data">Не мога да се свържа със сървъра.</string>
     <string name="error_api_error">Възникна грешка с API-то. Моля опитайте по-късно.</string>
+    <string name="menu_settings">Настройки</string>
     <string name="menu_refresh">Обнови курсовете</string>
+    <string name="menu_timeline">Таблица на обявения курс</string>
+    <string name="tooltip_filter_starred">Покажи само любимите курсове.</string>
 </resources>
