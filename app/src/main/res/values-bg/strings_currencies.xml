@@ -1,2 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="name_afn">Афгански афгани</string>
+    <string name="name_amd">Арменски драм</string>
+    <string name="name_ars">Аржентински песо</string>
+    <string name="name_aud">Австралийски долар</string>
+    <string name="name_awg">Арубски флорин</string>
+    <string name="name_bdt">Бангладешка така</string>
+    <string name="name_bgn">Български лев</string>
+    <string name="name_bmd">Бермудски долар</string>
+    <string name="name_bnd">Бурунейски долар</string>
+    <string name="name_bsd">Бахамски долар</string>
+    <string name="name_cad">Канадски</string>
+    <string name="name_aed">ОАЕ дирхам</string>
+    <string name="name_all">Албански лек</string>
+    <string name="name_ang">Нидерландски Ангелски глулден</string>
+    <string name="name_aoa">Анголски кванза</string>
+    <string name="name_azn">Азербайджански манат</string>
+    <string name="name_bam">Босненска конвертируема марка</string>
+    <string name="name_bbd">Барбадоски долар</string>
+    <string name="name_bhd">Бахрейнски динар</string>
+    <string name="name_bif">Бургундски франк</string>
+    <string name="name_bob">Боливарски боливано</string>
+    <string name="name_brl">Бразилски реал</string>
+    <string name="name_btc">Биткойн</string>
+    <string name="name_bwp">Ботсванска пула</string>
+    <string name="name_byn">Беларуска рубла</string>
+</resources>
