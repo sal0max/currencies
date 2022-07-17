@@ -31,15 +31,14 @@
     <string name="name_chf">Швейцарски франк</string>
     <string name="name_clf">Чилийско Unidad de Fomento</string>
     <string name="name_clp">Чилийско песо</string>
-
-    <string name="name_cny">Китайски юан</string>
+    <string name="name_cny">Китайски ренминби</string>
     <string name="name_cop">Колумбийско песо</string>
     <string name="name_crc">Костарикански колон</string>
     <string name="name_cuc">Кубинско обменяемо песо</string>
     <string name="name_cup">Кубинско песо</string>
     <string name="name_cve">Кабоверденско ескудо</string>
     <string name="name_czk">Чешка крона</string>
-    <string name="name_djf">Джибутски франк</string>
+    <string name="name_djf">Джибутански франк</string>
     <string name="name_dkk">Датска крона</string>
     <string name="name_dop">Доминиканско песо</string>
     <string name="name_dzd">Алжирски динар</string>
@@ -49,10 +48,8 @@
     <string name="name_eur">Евро</string>
     <string name="name_fjd">Фиджийски долар</string>
     <string name="name_fkp">Лира на Фолклендските острови</string>
-
     <string name="name_gbp">Британска лира</string>
     <string name="name_gel">Грузинско лари</string>
-
     <string name="name_ghs">Ганайско седи</string>
     <string name="name_gip">Гибралтарска лира</string>
     <string name="name_gmd">Гамбийски даласи</string>
@@ -66,12 +63,10 @@
     <string name="name_huf">Унгарски форинт</string>
     <string name="name_idr">Индонезийска рупия</string>
     <string name="name_ils">Израелски шекел</string>
-
     <string name="name_inr">Индийска рупия</string>
     <string name="name_iqd">Иракски динар</string>
     <string name="name_irr">Ирански риал</string>
     <string name="name_isk">Исландска крона</string>
-
     <string name="name_jmd">Ямайски долар</string>
     <string name="name_jod">Йордански динар</string>
     <string name="name_jpy">Японска йена</string>
@@ -97,7 +92,7 @@
     <string name="name_mmk">Мианмарски киат</string>
     <string name="name_mnt">Монголски тугрик</string>
     <string name="name_mop">Макайска патака</string>
-    <string name="name_mro">Мавританска угия</string>
+    <string name="name_mro">Мавританска угия(до 2018)</string>
     <string name="name_mru">Мавританска угия</string>
     <string name="name_mur">Мавританска рупия</string>
     <string name="name_mvr">Малдивска руфия</string>
@@ -134,8 +129,7 @@
     <string name="name_sll">Сиералеонско леоне</string>
     <string name="name_sos">Сомалийски шилинг</string>
     <string name="name_srd">Суринамски долар</string>
-
-    <string name="name_std">Добра (Сао Томе и Принсипи)</string>
+    <string name="name_std">Добра (Сао Томе и Принсипи)(до 2018)</string>
     <string name="name_stn">Добра (Сао Томе и Принсипи)</string>
     <string name="name_svc">Елсалвадорски колон</string>
     <string name="name_syp">Сирийска лира</string>
@@ -171,4 +165,11 @@
     <string name="name_zar">Южноафрикански ранд</string>
     <string name="name_zmw">Замбийска куача</string>
     <string name="name_zwl">Зимбабвийски долар</string>
+    <string name="name_cnh">Китайски ренминби (офшор)</string>
+    <string name="name_fok">Фариорска крона</string>
+    <string name="name_jep">Джърси паунд</string>
+    <string name="name_imp">Паунд на остров Ман</string>
+    <string name="name_ssp">Южносудански паунд</string>
+    <string name="name_tmt">Туркменистански манат</string>
+    <string name="name_ggp">Гуернсейски паунд</string>
 </resources>
