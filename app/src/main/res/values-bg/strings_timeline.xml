@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> за &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">Данни от &lt;b>%s&lt;/b></string>
+    <string name="rate_average">Средно</string>
+    <string name="rate_min">минимум</string>
+    <string name="rate_max">максимум</string>
+    <string name="year">година</string>
+    <string name="month">месец</string>
+    <string name="week">седмица</string>
+</resources>

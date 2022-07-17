@@ -3,11 +3,11 @@
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">обърни валутите</string>
-    <string name="rates_date_latest">Курс за &lt;b>%1$s&lt;/b> от &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Исторически курс от &lt;b>%1$s&lt;/b> от &lt;b>%2$s&lt;/b></string>
-    <string name="copied_to_clipboard">Стойността &lt;b>%s&lt;/b> е копирана в клипборда</string>
+    <string name="rates_date_latest">Курс за &lt;b&gt;%1$s&lt;/b&gt; от &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Исторически курс от &lt;b&gt;%1$s&lt;/b&gt; от &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">Стойността &lt;b&gt;%s&lt;/b&gt; е копирана в клипборда</string>
     <string name="historical_rates_dialog_title">Исторически курс</string>
-    <string name="historical_rates_dialog_toggle">Използвай курс от определена дата. Изключи, за да се се взима винаги най-новата стойност.</string>
+    <string name="historical_rates_dialog_toggle">Използвай курс от определена дата. Изключи, за да се взима винаги най-новата стойност.</string>
     <string name="error">Грешка: %s</string>
     <string name="error_generic">Неизвестен проблем.</string>
     <string name="error_http">Сървъра отговаря с HTTP %d</string>
