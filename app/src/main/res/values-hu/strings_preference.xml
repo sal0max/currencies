@@ -1,8 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Általános beállítások</string>
-    <string name="fee_title">Külföldi tranzakciós díj</string>
+    <string name="fee_title">Tranzakciós díj</string>
     <string name="fee_summary">Hitelkártya-szerződésedtől függően bankod díjat számíthat fel minden devizatranzakció után. Itt adhatod meg ezt a díjat. Ez hozzáadódik a számításhoz, így tudod, hogy mennyit fizetsz <i>de ténylegesen</i>.</string>
     <string name="previewConversion_title">Konverziós előnézet</string>
     <string name="previewConversion_summary">Az aktuális átváltás megjelenítése minden egyes árfolyamhoz a pénznemválasztóban.</string>
@@ -33,4 +36,6 @@
     <string name="rate_title">Értékeld az alkalmazást</string>
     <string name="rate_summary">Ha szeretnéd, segíthetsz másoknak felfedezni a Currencies-t. Kattints ide az alkalmazás értékeléséhez a Google Play-en.</string>
     <string name="aboutVersion">Verzió: %1$s</string>
+    <string name="extendedKeypad_title">Kibővített billentyűzet</string>
+    <string name="extendedKeypad_summary">Két további gomb hozzáadása: <b>00</b>&nbsp;és&nbsp;<b>000</b>.</string>
 </resources>
