@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Impostazioni generali</string>
@@ -33,4 +36,6 @@
     <string name="rate_title">Valuta questa applicazione</string>
     <string name="rate_summary">Se vuoi, puoi aiutare gli altri a scoprire Currencies. Clicca qui per votare l\'app su Google Play.</string>
     <string name="aboutVersion">Versione %1$s</string>
+    <string name="extendedKeypad_title">Tastiera estesa</string>
+    <string name="extendedKeypad_summary">Aggiungere due pulsanti supplementari: <b>00</b>&nbsp; e &nbsp;<b>000</b>.</string>
 </resources>
