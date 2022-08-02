@@ -4,10 +4,10 @@ Currencies est un convertisseur de devises simple et direct. Il n'est pas destin
    - exchangerate.host avec plus de 160 devises
    - frankfurter.app avec plus de 30 devises, fourni par la Banque centrale européenne
    - fer.ee comme alternative à frankfurter.app avec les mêmes devises.
-- L'interface utilisateur est simple et pure Material Design.
+- L'interface utilisateur est simple et pure Material 3 Design.
 - Historique des taux de change : Consultez le graphique de l'année passée, pour voir comment les devises ont évolué.
 - Taux historiques : Vous pouvez utiliser les taux de dates antérieures.
 - Une fonctionnalité majeure est la calculatrice incluse. Utile, par exemple, si vous voulez diviser la note d'un restaurant.
 - Calculatrice de frais : vous pouvez ajouter des frais de change personnalisables à tous les calculs.
-- Currencies est écrit pour Android en Kotlin, vise Android 12 et supporte les thèmes clairs et foncés.
+- Currencies est écrit pour Android en Kotlin, vise Android 13 et supporte les thèmes clairs et foncés.
 - L'application est sans publicité et n'espionne pas l'utilisateur.
