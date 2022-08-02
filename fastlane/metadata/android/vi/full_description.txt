@@ -6,6 +6,7 @@ Currencies là ứng dụng chuyển đổi tiền tệ đơn giản. Nó không
    • fer.ee để thay thế cho frankfurter.app với cùng số tiền tệ đó
 • Giao diện đơn giản, thuần thiết kế Material.
 • Lịch sử tỉ lệ: Xem biểu đồ ở năm trước, để xem các tiền tệ đã phát triển thế nào.
+• Tỉ lệ cũ: Bạn có thể sử dụng tỉ lệ từ những ngày trước.
 • Một tính năng lớn là máy tính được tích hợp. Hữu ích vd: nếu bạn muốn chia tiền ăn nhà hàng.
 • Tính phí: thêm phí chuyển đổi tiền nước ngoài có thể tùy chỉnh vào tất cả phép tính (không bắt buộc).
 • Currencies được viết cho Android bằng Kotlin, đặt mục tiêu Android 12 và hỗ trợ chủ đề sáng và tối.

@@ -2,8 +2,20 @@
 <resources>
     <string name="decimal_separator">.</string>
     <string name="thousands_separator">\u2009</string>
-
+    <string name="desc_toggle_currencies">মুদ্রা toggle</string>
     <string name="rates_date_latest">&lt;b&gt;%1$s&lt;/b&gt; এ বিনিময় হার &lt;b&gt;%2$s&lt;/b&gt; দ্বারা</string>
-
+    <string name="rates_date_historical">ঐতিহাসক মূল্য <b>%1$s</b> এর <b>%2$s</b> দ্বারা</string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; ক্লিপবোর্ডে অনুলিপিত</string>
+    <string name="historical_rates_dialog_title">ঐতিহাসক মূল্য</string>
+    <string name="historical_rates_dialog_toggle">একটি নির্দিষ্ট তারিখের বিনিময় হার ব্যবহার করুন। অক্ষম করুন, সর্বদা সাম্প্রতিকতমগুলি নিতে।</string>
+    <string name="error">সমস্যা: %s</string>
+    <string name="error_generic">অজানা সমস্যা ।</string>
+    <string name="error_http">সার্ভার HTTP দিয়ে সাড়া দিয়েছে %d</string>
+    <string name="error_timeout">সার্ভার সময়মতো সাড়া দেয়নি বা পৌঁছানো যাচ্ছে না।</string>
+    <string name="error_no_data">সার্ভারের সাথে সংযোগ করা যায়নি৷</string>
+    <string name="error_api_error">একটি API ত্রুটি ছিল। অনুগ্রহ করে একটু পরে আবার চেষ্টা করুন।</string>
+    <string name="menu_settings">সেটিংস</string>
+    <string name="menu_refresh">রিফ্রেশ হার</string>
+    <string name="menu_timeline">বিনিময় হার চার্ট</string>
+    <string name="tooltip_filter_starred">শুধুমাত্র তারকাচিহ্নিত মুদ্রা দেখান।</string>
 </resources>

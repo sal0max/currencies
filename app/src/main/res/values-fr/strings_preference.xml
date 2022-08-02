@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Paramètres généraux</string>
@@ -6,6 +7,8 @@
     <string name="fee_summary">Selon votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les transactions de change. Vous pouvez saisir ici ces frais. Elle sera ajoutée en plus du calcul, afin que vous sachiez combien vous <i>réellement</i> payez.</string>
     <string name="previewConversion_title">Aperçu de la conversion</string>
     <string name="previewConversion_summary">Afficher la conversion actuelle pour chaque taux dans le sélecteur de devises.</string>
+    <string name="extendedKeypad_title">Clavier étendu</string>
+    <string name="extendedKeypad_summary">Ajouter deux boutons supplémentaires: <b>00</b>&nbsp;et&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Apparition</string>
     <string name="theme_title">Thème</string>
     <string name="theme_option_light">Clair</string>

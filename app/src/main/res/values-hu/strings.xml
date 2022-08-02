@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="decimal_separator">,</string>
-    <string name="thousands_separator">" "</string>
+    <string name="thousands_separator">\u0020</string>
     <string name="desc_toggle_currencies">Valuták váltása</string>
-    <string name="rates_date_latest">Az alábbi időpontban érvényes árfolyamok &lt;b&gt;%1$s&lt;/b&gt; &lt;b&gt;%2$s&lt;/b&gt; által</string>
+    <string name="rates_date_latest">Az árfolyamok &lt;b&gt;%1$s&lt;/b&gt; napján érvényesek &lt;b&gt;%2$s&lt;/b&gt; által</string>
     <string name="rates_date_historical">Múltbéli árfolyamok &lt;b&gt;%1$s&lt;/b&gt; &lt;b&gt;%2$s&lt;/b&gt; által</string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; másolva a vágólapra</string>
     <string name="historical_rates_dialog_title">Múltbéli árfolyamok</string>

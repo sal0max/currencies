@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Impostazioni generali</string>
@@ -6,6 +7,8 @@
     <string name="fee_summary">A seconda del contratto della vostra carta di credito, la vostra banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Qui puoi inserire questa tassa. Verrà aggiunta in cima al calcolo, così saprai quanto <i>realmente</i> paghi.</string>
     <string name="previewConversion_title">Anteprima di conversione</string>
     <string name="previewConversion_summary">Mostra la conversione corrente per ogni tasso nel selezionatore di valuta.</string>
+    <string name="extendedKeypad_title">Tastiera estesa</string>
+    <string name="extendedKeypad_summary">Aggiungere due pulsanti supplementari: <b>00</b>&nbsp;e&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Aspetto</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Chiaro</string>
