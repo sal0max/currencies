@@ -3,6 +3,7 @@ package de.salomax.currencies.view.timeline
 import android.annotation.SuppressLint
 import android.graphics.DashPathEffect
 import android.graphics.Paint
+import android.os.Build
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
@@ -65,8 +66,19 @@ class TimelineActivity : BaseActivity() {
         }
 
         // what currencies to convert
-        val currencyFrom = intent.getSerializableExtra("ARG_FROM")?.let { it as Currency } ?: Currency.EUR
-        val currencyTo = intent.getSerializableExtra("ARG_TO")?.let { it as Currency } ?: Currency.USD
+        val currencyFrom =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
+                intent.getSerializableExtra("ARG_FROM", Currency::class.java) ?: Currency.EUR
+            else
+                @Suppress("DEPRECATION")
+                intent.getSerializableExtra("ARG_FROM")?.let { it as Currency } ?: Currency.EUR
+
+        val currencyTo =
+            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU)
+                intent.getSerializableExtra("ARG_TO", Currency::class.java) ?: Currency.USD
+            else
+                @Suppress("DEPRECATION")
+                intent.getSerializableExtra("ARG_TO")?.let { it as Currency } ?: Currency.USD
 
         // model
         this.timelineModel = ViewModelProvider(
