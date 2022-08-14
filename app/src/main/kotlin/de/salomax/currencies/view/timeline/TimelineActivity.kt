@@ -7,9 +7,15 @@ import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import androidx.window.layout.FoldingFeature
+import androidx.window.layout.WindowInfoTracker
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.robinhood.spark.SparkView
@@ -19,6 +25,8 @@ import de.salomax.currencies.util.dpToPx
 import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.viewmodel.timeline.TimelineViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -77,6 +85,9 @@ class TimelineActivity : BaseActivity() {
 
         // heavy lifting
         observe()
+
+        // foldable devices
+        prepareFoldableLayoutChanges()
     }
 
     override fun onSupportNavigateUp(): Boolean {
@@ -273,6 +284,34 @@ class TimelineActivity : BaseActivity() {
         parent.findViewById<TextView>(R.id.text2).text = symbol
         parent.findViewById<TextView>(R.id.text3).text = value?.toHumanReadableNumber(this, 3)
         parent.findViewById<TextView>(R.id.text4).text = date?.format(formatter)
+    }
+
+    private fun prepareFoldableLayoutChanges() {
+        lifecycleScope.launch(Dispatchers.Main) {
+            lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                WindowInfoTracker.getOrCreate(this@TimelineActivity)
+                    .windowLayoutInfo(this@TimelineActivity)
+                    .collect { newLayoutInfo ->
+                        newLayoutInfo.displayFeatures.filterIsInstance(FoldingFeature::class.java)
+                            .firstOrNull ()?.let { foldingFeature ->
+                                // portrait
+                                if (foldingFeature.orientation == FoldingFeature.Orientation.VERTICAL) {
+                                    if (foldingFeature.state == FoldingFeature.State.HALF_OPENED)
+                                        findViewById<LinearLayout>(R.id.timeline_root).orientation = LinearLayout.HORIZONTAL
+                                    else
+                                        findViewById<LinearLayout>(R.id.timeline_root).orientation = LinearLayout.VERTICAL
+                                }
+                                // landscape
+                                else {
+                                    if (foldingFeature.state == FoldingFeature.State.FLAT || foldingFeature.state == FoldingFeature.State.HALF_OPENED)
+                                        findViewById<LinearLayout>(R.id.timeline_root).orientation = LinearLayout.VERTICAL
+                                    else
+                                        findViewById<LinearLayout>(R.id.timeline_root).orientation = LinearLayout.HORIZONTAL
+                                }
+                            }
+                    }
+            }
+        }
     }
 
 }

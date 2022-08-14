@@ -16,8 +16,13 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.text.HtmlCompat
+import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
 import androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+import androidx.window.layout.FoldingFeature
+import androidx.window.layout.WindowInfoTracker
 import com.google.android.material.color.MaterialColors
 import com.google.android.material.progressindicator.LinearProgressIndicator
 import com.google.android.material.snackbar.Snackbar
@@ -31,6 +36,8 @@ import de.salomax.currencies.view.preference.PreferenceActivity
 import de.salomax.currencies.view.timeline.TimelineActivity
 import de.salomax.currencies.viewmodel.main.MainViewModel
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
@@ -87,6 +94,9 @@ class MainActivity : BaseActivity() {
 
         // heavy lifting
         observe()
+
+        // foldable devices
+        prepareFoldableLayoutChanges()
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
@@ -432,6 +442,34 @@ class MainActivity : BaseActivity() {
         val to = spinnerTo.selectedItemPosition
         spinnerFrom.setSelection(to)
         spinnerTo.setSelection(from)
+    }
+
+    private fun prepareFoldableLayoutChanges() {
+        lifecycleScope.launch(Dispatchers.Main) {
+            lifecycle.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                WindowInfoTracker.getOrCreate(this@MainActivity)
+                    .windowLayoutInfo(this@MainActivity)
+                    .collect { newLayoutInfo ->
+                        newLayoutInfo.displayFeatures.filterIsInstance(FoldingFeature::class.java)
+                            .firstOrNull ()?.let { foldingFeature ->
+                                // portrait
+                                if (foldingFeature.orientation == FoldingFeature.Orientation.VERTICAL) {
+                                    if (foldingFeature.state == FoldingFeature.State.FLAT || foldingFeature.state == FoldingFeature.State.HALF_OPENED)
+                                        findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.HORIZONTAL
+                                    else
+                                        findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.VERTICAL
+                                }
+                                // landscape
+                                else {
+                                    if (foldingFeature.state == FoldingFeature.State.HALF_OPENED)
+                                        findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.VERTICAL
+                                    else
+                                        findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.HORIZONTAL
+                                }
+                            }
+                    }
+            }
+        }
     }
 
 }
