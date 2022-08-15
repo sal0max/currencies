@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.17.1</b>
+    <string name="changelog" translatable="false"><b>1.17.2</b>
+        \n⸻
+        \n<li>New: Numbers can now be pasted from the clipboard.</li>
+        \n
+        \n><b>1.17.1</b>
         \n⸻
         \n<li>New language #1: Bulgarian. Thank you very much, Mihail! 🇧🇬</li>
         \n<li>New language #2: Bengali. Cheers, Pratyay! 🇧🇩🇮🇳</li>
