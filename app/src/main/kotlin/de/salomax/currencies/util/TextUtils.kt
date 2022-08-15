@@ -120,6 +120,8 @@ fun String.toHumanReadableNumber(
  * - Also returns null, for negative values
  */
 fun CharSequence.toNumber(): Number? {
+    if (this.isBlank())
+        return null
     // allow 0-9 , . whitespace
     if (!this.matches("[0-9,.\\s]+".toRegex()))
         return null
