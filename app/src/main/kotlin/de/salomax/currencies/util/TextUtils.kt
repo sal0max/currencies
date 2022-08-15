@@ -4,6 +4,7 @@ import android.content.Context
 import de.salomax.currencies.R
 import java.math.RoundingMode
 import java.text.DecimalFormat
+import java.text.NumberFormat
 
 fun getDecimalSeparator(context: Context): String {
     return context.getString(R.string.decimal_separator)
@@ -109,4 +110,21 @@ fun String.toHumanReadableNumber(
         sb.append(" $suffix")
 
     return sb.toString()
+}
+
+// *************************************************************************************************
+
+/**
+ * Parses the given string to a number. Uses the default locale for thousands and decimal separators.
+ * - Returns null, if invalid characters are found.
+ * - Also returns null, for negative values
+ */
+fun CharSequence.toNumber(): Number? {
+    // allow 0-9 , . whitespace
+    if (!this.matches("[0-9,.\\s]+".toRegex()))
+        return null
+    return NumberFormat.getNumberInstance().parse(
+        toString()
+            .replace("\\s+".toRegex(), "")
+    )
 }

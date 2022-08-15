@@ -1,13 +1,11 @@
 package de.salomax.currencies.view.main
 
-import android.content.ClipData
-import android.content.ClipboardManager
-import android.content.Context
-import android.content.Intent
+import android.content.*
 import android.graphics.Color
 import android.icu.util.Calendar
 import android.icu.util.TimeZone
 import android.os.Bundle
+import android.view.ContextMenu
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
@@ -30,6 +28,7 @@ import com.google.android.material.switchmaterial.SwitchMaterial
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Rate
 import de.salomax.currencies.util.toHumanReadableNumber
+import de.salomax.currencies.util.toNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.view.main.spinner.SearchableSpinner
 import de.salomax.currencies.view.preference.PreferenceActivity
@@ -190,6 +189,48 @@ class MainActivity : BaseActivity() {
         }
     }
 
+    override fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
+        super.onCreateContextMenu(menu, v, menuInfo)
+        when (v.id) {
+            R.id.clickFrom -> {
+                // copy
+                menu.add(0, 0, 0, android.R.string.copy)
+                // paste
+                val paste = menu.add(0, 1, 0, android.R.string.paste)
+                // only show "paste" when applicable
+                val clipboard: ClipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                val clipboardContent = clipboard.primaryClip?.getItemAt(0)?.text?.toNumber()
+                paste.isVisible = (clipboard.hasPrimaryClip()
+                        && clipboard.primaryClipDescription?.hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN) == true
+                        &&  clipboardContent != null)
+            }
+            R.id.clickTo -> {
+                menu.add(0, 2, 0, android.R.string.copy)
+            }
+        }
+    }
+
+    override fun onContextItemSelected(item: MenuItem): Boolean {
+        when (item.itemId) {
+            0 -> { // copy "from"
+                val copyText = "${findViewById<TextView>(R.id.currencyFrom).text} ${findViewById<TextView>(R.id.textFrom).text}"
+                copyToClipboard(copyText)
+            }
+            1 -> { // paste "from"
+                val clipboard: ClipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
+                // no need to check if clipboard is filled -> menu item only shown when it is
+                clipboard.primaryClip?.getItemAt(0)?.text?.toNumber()?.let {
+                    viewModel.paste(it)
+                }
+            }
+            2 -> { // copy "to"
+                val copyText = "${findViewById<TextView>(R.id.currencyTo).text} ${findViewById<TextView>(R.id.textTo).text}"
+                copyToClipboard(copyText)
+            }
+        }
+        return true
+    }
+
     private fun setListeners() {
         // long click on delete
         arrayOf<View>(findViewById(R.id.keypad), findViewById(R.id.keypad_extended)).forEach {
@@ -200,17 +241,9 @@ class MainActivity : BaseActivity() {
         }
 
         // long click on input "from"
-        findViewById<LinearLayout>(R.id.clickFrom).setOnLongClickListener {
-            val copyText = "${it.findViewById<TextView>(R.id.currencyFrom).text} ${it.findViewById<TextView>(R.id.textFrom).text}"
-            copyToClipboard(copyText)
-            true
-        }
+        registerForContextMenu(findViewById<LinearLayout>(R.id.clickFrom))
         // long click on input "to"
-        findViewById<LinearLayout>(R.id.clickTo).setOnLongClickListener {
-            val copyText = "${it.findViewById<TextView>(R.id.currencyTo).text} ${it.findViewById<TextView>(R.id.textTo).text}"
-            copyToClipboard(copyText)
-            true
-        }
+        registerForContextMenu(findViewById<LinearLayout>(R.id.clickTo))
 
         // spinners: listen for changes
         spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {

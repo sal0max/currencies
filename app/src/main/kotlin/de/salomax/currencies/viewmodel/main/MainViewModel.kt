@@ -403,7 +403,15 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
                     else value
                 } else currentBaseValueText.value.plus(value)
         }
+    }
 
+    internal fun paste(value: Number) {
+        // clear base value (but not calculation row!)
+        currentBaseValueText.value = "0"
+        // paste
+        value.toString().forEach {
+            addNumber(it.toString())
+        }
     }
 
     internal fun addDecimal() {
@@ -440,13 +448,11 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
             else
                 clear()
         }
-
     }
 
     internal fun clear() {
         currentBaseValueText.value = "0"
         currentCalculationValueText.value = null
-
     }
 
     internal fun addition() {

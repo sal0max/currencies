@@ -68,6 +68,10 @@
 
         <!-- remove color tint from overflow menu -->
         <item name="actionOverflowMenuStyle">@style/AppTheme.PopupMenu.Overflow</item>
+
+        <!-- remove color tint from popup menu -->
+        <item name="popupMenuBackground">?attr/colorBackground</item>
+        <item name="android:popupBackground">?attr/colorBackground</item>
     </style>
 
     <style name="BaseAppTheme.PureBlack" parent="AppTheme">
