@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator"> , </string>
+    <string name="desc_toggle_currencies">החלפה בין המטבעות</string>
+    <string name="rates_date_latest">שערים לפי <b>%1$s</b> בחסות <b>%2$s</b></string>
+    <string name="rates_date_historical">שערי עבר של <b>%1$s</b> בחסות <b>%2$s</b></string>
+    <string name="copied_to_clipboard"><b>%s</b> הועתק ללוח הגזירים</string>
+    <string name="historical_rates_dialog_title">שערי עבר</string>
+    <string name="historical_rates_dialog_toggle">שימוש בשערי חליפין בתאריך מסוים. כשמושבת ייעשה שימוש רק בעדכניים.</string>
+    <string name="error">שגיאה: %s</string>
+    <string name="error_generic">תקלה לא ידועה.</string>
+    <string name="error_http">תגובת השרת היא HTTP %d</string>
+    <string name="error_timeout">השרת לא הגיב בזמן או שאינו נגיש.</string>
+    <string name="error_no_data">לא ניתן להתחבר לשרת.</string>
+    <string name="error_api_error">אירעה שגיאת API. נא לנסות שוב בהמשך.</string>
+    <string name="menu_settings">הגדרות</string>
+    <string name="menu_refresh">רענון השערים</string>
+    <string name="menu_timeline">תרשים שערי חליפין</string>
+    <string name="tooltip_filter_starred">הצגת מטבעות מסומנים בלבד.</string>
+</resources>
