@@ -1,2 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="category_settings">הגדרות כלליות</string>
+    <string name="fee_title">עמלת עסקה זרה</string>
+    <string name="previewConversion_title">תצוגה מקדימה להמרה</string>
+    <string name="previewConversion_summary">הצגת ההמרה הנוכחית לכל שער בבורר המטבעות.</string>
+    <string name="extendedKeypad_title">מקלדת מורחבת</string>
+    <string name="extendedKeypad_summary">הוספת שני כפתורים חדשים: <b>00</b>&nbsp;וגם&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">מראה</string>
+    <string name="theme_title">עיצוב</string>
+    <string name="theme_option_light">בהיר</string>
+    <string name="theme_option_dark">כהה</string>
+    <string name="theme_option_default">ברירת המחדל המערכתית</string>
+    <string name="pure_black_enabled_title">שחור OLED</string>
+    <string name="pure_black_enabled_summary">להשתמש בשחור טהור במצב כהה</string>
+    <string name="category_api">שערי חליפין</string>
+    <string name="api_title">ספק נתונים</string>
+    <string name="api_about_title">על %s</string>
+    <string name="api_refreshPeriod_title">פער לרענון</string>
+    <string name="api_refreshPeriod_exchangerateHost">שערי החליפין מעודכנים בסביבות חצות לפי UTC בכל יום עבודה.</string>
+    <string name="api_refreshPeriod_ferEe">השערים מתעדכנים בכל יום עבודה.</string>
+    <string name="category_about">על היישומון הזה</string>
+    <string name="disclaimer_title">כתב ויתור</string>
+    <string name="donate_title">תמיכה במתכנת</string>
+    <string name="donate_summary">תרומה דרך PayPal</string>
+    <string name="rate_title">דירוג היישומון</string>
+    <string name="aboutVersion">גרסה %1$s</string>
+    <string name="api_refreshPeriod_frankfurterApi">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
+    <string name="fee_summary">בהתאם להסכמים על כרטיס האשראי שלך, הבנק שלך עלול לחייב עמלה על כל עסקאות החליפין הזרות. כאן ניתן למלא את העמלה הזאת. היא תתווסף לחישוב כדי לאפשר לך לדעת כמה התשלום <i>באמת</i>.</string>
+    <string name="rate_summary">לבחירתך, אפשר לסייע לאחרים להיחשף ליישומון. לחיצה כאן תוביל אותך לדירוג ב־Google Play.</string>
+</resources>
