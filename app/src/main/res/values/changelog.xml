@@ -2,7 +2,11 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.17.2</b>
+    <string name="changelog" translatable="false"><b>1.17.3</b>
+        \n⸻
+        \n<li>New language: Hebrew. Appreciated, Yaron!</li>
+        \n
+        \n<b>1.17.2</b>
         \n⸻
         \n<li>New: Numbers can now be pasted from the clipboard.</li>
         \n
