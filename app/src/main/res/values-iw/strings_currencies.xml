@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="name_aed">דירהם של איחוד האמירויות הערביות</string>
+    <string name="name_afn">אפגני אפגניסטני</string>
+    <string name="name_all">לק אלבני</string>
+    <string name="name_amd">דראם ארמני</string>
+    <string name="name_aoa">קוואנזה אנגולי</string>
+    <string name="name_ars">פסו ארגנטינאי</string>
+    <string name="name_aud">דולר אוסטרלי</string>
+    <string name="name_awg">פלורין ארובי</string>
+    <string name="name_azn">מאנאט אזרבייג׳ני חדש</string>
+    <string name="name_ils">שקל ישראלי חדש</string>
+</resources>
