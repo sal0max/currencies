@@ -16,20 +16,20 @@
     <string name="name_bgn">לב בולגרי</string>
     <string name="name_bhd">דינר בחרייני</string>
     <string name="name_bif">פרנק בורונדי</string>
-
+    <string name="name_bmd">דולר ברמודי</string>
     <string name="name_bnd">דולר ברוניי</string>
     <string name="name_bob">בוליביאנו</string>
     <string name="name_brl">ריאל ברזילאי</string>
     <string name="name_bsd">דולר בהאמי</string>
     <string name="name_btc">ביטקוין</string>
-
+    <string name="name_btn">נגולטרום בהוטני</string>
     <string name="name_bwp">פולה בוטסואני</string>
     <string name="name_byn">רובל בלרוסי</string>
     <string name="name_bzd">דולר בלזאי</string>
     <string name="name_cad">דולר קנדי</string>
-
+    <string name="name_cdf">פרנק קונגיני</string>
     <string name="name_chf">פרנק שוויצרי</string>
-
+    <string name="name_clf">אונידד דה פומנטו (UF) של צ׳ילה</string>
     <string name="name_clp">פסו צ\'יליאני</string>
     <string name="name_cnh">יואן סיני מחוץ לגבולות סין</string>
     <string name="name_cny">יואן סיני</string>
