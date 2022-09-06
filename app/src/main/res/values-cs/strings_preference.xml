@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">Obecná nastavení</string>
+    <string name="fee_title">Neznámý poplatek za převod</string>
+    <string name="fee_summary">V závislosti na smlouvě o kreditní kartě si může vaše banka účtovat poplatek za všechny devizové transakce. Zde můžete zadat tento poplatek. Bude připočten k výpočtu, abyste věděli, kolik <i>skutečně</i> zaplatíte.</string>
+    <string name="previewConversion_title">Náhled převodu</string>
+    <string name="previewConversion_summary">Zobrazí aktuální převod u každého kurzu ve výběru měny.</string>
+    <string name="extendedKeypad_title">Rozšířený číselník</string>
+    <string name="extendedKeypad_summary">Přidat dvě dodatečná tlačítka: <b>00</b>&nbsp;a&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">Vzhled</string>
+    <string name="theme_title">Design</string>
+    <string name="theme_option_light">Světlý</string>
+    <string name="theme_option_dark">Tmavý</string>
+    <string name="theme_option_default">Podle systému</string>
+    <string name="pure_black_enabled_title">OLED černý</string>
+    <string name="pure_black_enabled_summary">Použít plně černou v tmavém režimu</string>
+    <!-- api -->
+    <string name="category_api">Směnné kurzy</string>
+    <string name="api_title">Poskytovatel dat</string>
+    <string name="api_about_title">O %s</string>
+</resources>
