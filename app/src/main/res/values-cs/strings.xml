@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator"> </string>
+    <string name="desc_toggle_currencies">přepnout měny</string>
+    <string name="rates_date_latest">Kurzy z <b>%1$s</b> od <b>%2$s</b></string>
+    <string name="copied_to_clipboard">Zkopírováno <b>%s</b></string>
+    <string name="historical_rates_dialog_title">Historické kurzy</string>
+    <string name="error">Chyba: %s</string>
+    <string name="error_generic">Neznámá chyba.</string>
+    <string name="error_http">Server odpověděl kódem HTTP %d</string>
+    <string name="error_timeout">Server neodpověděl včas nebo není dostupný.</string>
+    <string name="error_api_error">Vyskytla se chyba API. Zkuste to prosím znovu později.</string>
+    <string name="menu_settings">Nastavení</string>
+    <string name="menu_refresh">Obnovit kurzy</string>
+    <string name="menu_timeline">Tabulka kurzů</string>
+    <string name="tooltip_filter_starred">Zobrazit pouze oblíbené měny.</string>
+    <string name="rates_date_historical">Historické kurzy z <b>%1$s</b> od <b>%2$s</b></string>
+    <string name="historical_rates_dialog_toggle">Použít měnové kurzy ze specifického data. Zakažte pro používání nejnovějších.</string>
+    <string name="error_no_data">Nepodařilo se připojit k serveru.</string>
+</resources>
