@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Obecná nastavení</string>
@@ -20,4 +22,24 @@
     <string name="category_api">Směnné kurzy</string>
     <string name="api_title">Poskytovatel dat</string>
     <string name="api_about_title">O %s</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> získává kurzy ze spousty poskytovatelů finančních dat a bank, včetně Evropské centrální banky. Všechna data o kurzech jsou doručena v datech středových saze. Kurzy středových sazeb jsou určeny vypočítáním průměrného mediánu nabídky a poptávky.
+\n<b>Je zahrnuto přibližně 160 měn.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> je poměrně nová služba, která sleduje referenční směnné kurzy zveřejňované Evropskou centrální bankou (podobně jako Frankfurter.app).
+\n<b>Je zahrnuto přibližně 30 měn.</b></string>
+    <string name="api_refreshPeriod_title">Doba obnovení</string>
+    <string name="api_refreshPeriod_exchangerateHost">Směnné kurzy jsou aktualizovány každý pracovní den kolem půlnoci UTC.</string>
+    <string name="api_refreshPeriod_frankfurterApi">Data jsou aktualizována každý pracovní den kolem 16:00 středoevropského času.</string>
+    <string name="api_refreshPeriod_ferEe">Kurzy jsou aktualizovány každý pracovní den.</string>
+    <string name="category_about">O této aplikaci</string>
+    <string name="disclaimer_title">Odmítnutí odpovědnosti</string>
+    <string name="donate_title">Podpořit vývojáře</string>
+    <string name="donate_summary">Přispět pomocí PayPalu</string>
+    <string name="rate_title">Ohodnotit tuto aplikaci</string>
+    <string name="rate_summary">Pokud chcete, můžete ostatním pomoci objevit Currencies. Klepněte sem a ohodnoťte aplikaci v Google Play.</string>
+    <string name="aboutVersion">Verze %1$s</string>
+    <string name="disclaimer_summary">Přestože je aplikace velmi důkladně napsaná a otestovaná, <b>není zaručeno, že údaje, které zobrazuje, jsou správné</b>. Směnné kurzy jsou poskytovány třetí stranou a tato aplikace nemůže vůbec slíbit, že údaje jsou pravdivé a aktuální.
+\nKromě toho se poskytované kurzy – i když jsou správné – mohou lišit od kurzů používaných vaší bankou.
+\nA nakonec: Chyby se stávají. Nikdy nikomu slepě nevěřte! Jak ale již bylo řečeno, můžete si být jisti, že bych tuto aplikaci nevydal, kdybych měl jakékoli pochybnosti o tom, že funguje tak, jak má.</string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sleduje referenční směnné kurzy zveřejňované Evropskou centrální bankou.
+\n<b>Je zahrnuto přibližně 30 měn.</b></string>
 </resources>
