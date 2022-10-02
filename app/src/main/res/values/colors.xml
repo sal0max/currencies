@@ -6,6 +6,10 @@
    <color name="dollarBill">#85BB65</color>
    <color name="seaGreen">#228d57</color>
 
+   <color name="color_primary">@color/dollarBill</color>
+   <color name="color_keypad_operators">@color/color_primary</color>
+   <color name="color_keypad_delete">?attr/colorError</color>
+
    <!-- light -->
    <color name="displayOverlay">#26808080</color>
    <color name="colorBackground">@color/dirtyWhite</color>

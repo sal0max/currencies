@@ -3,4 +3,8 @@
     <!-- use fancy dynamic background color -->
     <color name="colorBackground">@android:color/system_neutral1_50</color>
     <color name="displayOverlay">@android:color/system_neutral1_100</color>
+
+    <color name="color_primary">@android:color/system_accent1_300</color>
+    <color name="color_keypad_operators">@android:color/system_accent1_300</color>
+    <color name="color_keypad_delete">@android:color/system_accent2_300</color>
 </resources>

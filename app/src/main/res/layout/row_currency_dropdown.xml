@@ -46,7 +46,6 @@
         android:layout_height="wrap_content"
         android:ellipsize="end"
         android:lines="1"
-        android:textColor="?android:textColorPrimary"
         android:textDirection="locale"
         app:layout_constraintEnd_toStartOf="@id/btn_fav"
         app:layout_constraintStart_toStartOf="@id/text2"

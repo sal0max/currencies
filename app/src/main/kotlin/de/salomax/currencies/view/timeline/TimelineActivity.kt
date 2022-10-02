@@ -214,12 +214,10 @@ class TimelineActivity : BaseActivity() {
             textRateDifference.text = it?.toHumanReadableNumber(this, 2, true, "%")
             if (it != null) {
                 textRateDifference.setTextColor(
-                    MaterialColors.getColor(
-                        this,
-                        if (it < 0) R.attr.colorError
-                        else R.attr.colorPrimary,
-                        null
-                    )
+                    if (it < 0)
+                        MaterialColors.getColor(this, R.attr.colorError, null) // red
+                    else
+                        getColor(R.color.dollarBill) // green
                 )
             }
         }

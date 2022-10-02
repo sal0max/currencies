@@ -21,7 +21,7 @@
         <item name="android:colorBackground">?attr/colorBackground</item>
         <item name="colorOnBackground">?android:attr/colorForeground</item>
 
-        <item name="colorPrimary">@color/dollarBill</item>
+        <item name="colorPrimary">@color/color_primary</item>
         <item name="colorOnPrimary">@color/blackOlive</item>
         <item name="colorPrimaryContainer">?attr/colorPrimary</item>
         <item name="colorOnPrimaryContainer">?attr/colorOnPrimary</item>

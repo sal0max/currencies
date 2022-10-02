@@ -28,7 +28,6 @@
         android:layout_marginStart="@dimen/margin2x"
         android:ellipsize="end"
         android:lines="1"
-        android:textColor="?android:textColorPrimary"
         tools:text="SBD" />
 
 </LinearLayout>
