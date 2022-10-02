@@ -2,7 +2,12 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.17.3</b>
+    <string name="changelog" translatable="false"><b>1.17.4</b>
+        \n⸻
+        \n<li>Improved design (Material 3).</li>
+        \n<li>New language: Czech. Thank you, Fjuro!</li>
+        \n
+        \n<b>1.17.3</b>
         \n⸻
         \n<li>New language: Hebrew. Appreciated, Yaron!</li>
         \n
