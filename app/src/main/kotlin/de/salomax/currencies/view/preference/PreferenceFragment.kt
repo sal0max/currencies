@@ -26,7 +26,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
 
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.prefs, rootKey)
-        viewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
+        viewModel = ViewModelProvider(this)[PreferenceViewModel::class.java]
 
         // theme
         findPreference<ListPreference>(getString(R.string.theme_key))?.apply {

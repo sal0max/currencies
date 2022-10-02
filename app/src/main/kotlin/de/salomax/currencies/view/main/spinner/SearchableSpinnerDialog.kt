@@ -40,8 +40,8 @@ class SearchableSpinnerDialog(context: Context) : AppCompatDialogFragment(), Sea
     override fun onCreateDialog(savedInstanceState: Bundle?): Dialog {
         val view = View.inflate(context, R.layout.searchable_spinner_dialog, null)
 
-        this.mainViewModel = ViewModelProvider(this, MainViewModel.Factory(requireActivity().application, true)).get(MainViewModel::class.java)
-        this.prefViewModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
+        this.mainViewModel = ViewModelProvider(this, MainViewModel.Factory(requireActivity().application, true))[MainViewModel::class.java]
+        this.prefViewModel = ViewModelProvider(this)[PreferenceViewModel::class.java]
 
         // listView
         listView = view.findViewById(R.id.listView)

@@ -84,7 +84,7 @@ class TimelineActivity : BaseActivity() {
         this.timelineModel = ViewModelProvider(
             this,
             TimelineViewModel.Factory(this.application, currencyFrom, currencyTo)
-        ).get(TimelineViewModel::class.java)
+        )[TimelineViewModel::class.java]
 
         // views
         findViews()

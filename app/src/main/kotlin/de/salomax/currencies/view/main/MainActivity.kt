@@ -68,8 +68,8 @@ class MainActivity : BaseActivity() {
         title = null
 
         // model
-        this.viewModel = ViewModelProvider(this).get(MainViewModel::class.java)
-        this.preferenceModel = ViewModelProvider(this).get(PreferenceViewModel::class.java)
+        this.viewModel = ViewModelProvider(this)[MainViewModel::class.java]
+        this.preferenceModel = ViewModelProvider(this)[PreferenceViewModel::class.java]
 
         // views
         this.refreshIndicator = findViewById(R.id.refreshIndicator)
