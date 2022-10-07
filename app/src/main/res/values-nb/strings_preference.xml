@@ -1,36 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Generelle innstillinger</string>
     <string name="fee_title">Valutagebyr</string>
-
-
-
+    <string name="fee_summary">Avhengig av avtalen for ditt bankkort kan banken din ta en avgift for alle vekslinger i utenlandsk valuta. Her kan du skrive inn dette gebyret. Det vil bli lagt til på toppen av utregningen, slik at du vet hvor mye du <i>virkelig</i> betaler.</string>
+    <string name="previewConversion_title">Vekslingsoverslag</string>
+    <string name="previewConversion_summary">Nåværende vekslingssats for hver kurs i valutavelgeren.</string>
+    <string name="extendedKeypad_title">Utvidet nummertastatur</string>
+    <string name="extendedKeypad_summary">Legger til to ekstra knapper: <b>00</b>&nbsp;og&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Utseende</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Lys</string>
     <string name="theme_option_dark">Mørk</string>
     <string name="theme_option_default">Standard</string>
     <string name="pure_black_enabled_title">OLED-svart</string>
-
+    <string name="pure_black_enabled_summary">Bruk helsvart i nattmodus</string>
     <!-- api -->
     <string name="category_api">Valutakurser</string>
-
-
-
-
-
-
-
-
-
+    <string name="api_title">Datatilbyder</string>
+    <string name="api_about_title">Om %s</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> henter inn valutakurser fra forskjellige finansdatatilbydere og banker, inkludert den Europeiske sentralbanken. All vekslingsdata leveres som midpunktsdata- Disse kursene bestemmes ved å regne ut gjen. medianrate fra tilbud og etterspørsel.\n<b>Ca. 160 valutaer.</b></string>
+    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> er en relativt ny tjeneste, som (akkurat som Frankfurter.app) sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
+    <string name="api_refreshPeriod_title">Gjenoppfriskingsperiode</string>
+    <string name="api_refreshPeriod_exchangerateHost">Valutakurser oppdateres rundt midnatt UTC hver arbeidsdag.</string>
+    <string name="api_refreshPeriod_frankfurterApi">Dataen oppdateres ~16.00 CET hver dag.</string>
+    <string name="api_refreshPeriod_ferEe">Vekslingskursene oppdateres hver arbeidsdag.</string>
     <!-- about -->
     <string name="category_about">Om denne appen</string>
     <string name="disclaimer_title">Ansvarsfraskrivelse</string>
-
-
-
-
-
+    <string name="disclaimer_summary">Selv om programmet er nøye skrevet og testet, <b>er det ingen garanti for at dataen som vises er riktig</b>. Vekslingskursene tilbys av en tredjepart, og dette programmet kan ikke på noe vis love at dataen er sannferdig eller oppdatert.\nSelv om dataen skulle være riktig kan det fremdeles hende at din bank bruker en annen kurs.\nTil sist. Feil skjer. Aldri stol blindt på noen. Når det er sagt ville jeg ikke sluppet programmet hvis jeg var i tvil om at det fungerte som tiltenkt.</string>
+    <string name="donate_title">Støtt utvikleren</string>
+    <string name="donate_summary">Doner via PayPal</string>
+    <string name="rate_title">Vurder programmet</string>
+    <string name="rate_summary">Hjelp andre å oppdage Currencies. Klikk her for å vurdere programmet på Google Play.</string>
     <string name="aboutVersion">Versjon %1$s</string>
 </resources>
