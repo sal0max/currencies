@@ -14,6 +14,7 @@ import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
 import java.time.LocalDate
+import kotlin.math.absoluteValue
 
 class TimelineViewModel(
     private val app: Application,
@@ -38,6 +39,8 @@ class TimelineViewModel(
     }
 
     private var repository: ExchangeRatesRepository = ExchangeRatesRepository(app)
+
+    private var decimalPlaces = 3
 
     // week/month/year
     private val periodLiveData = MutableLiveData(Period.YEAR)
@@ -120,22 +123,35 @@ class TimelineViewModel(
         }
     }
 
-    fun getRateCurrent(): LiveData<Map.Entry<LocalDate, Rate?>?> {
-        return Transformations.map(dbLiveItems) {
-            it?.rates?.entries?.last()
+    fun getRateCurrent(): LiveData<Pair<Map.Entry<LocalDate, Rate?>?, Int>> {
+        return MediatorLiveData<Pair<Map.Entry<LocalDate, Rate?>?, Int>>().apply {
+            var rates: Map.Entry<LocalDate, Rate?>? = null
+
+            fun update() {
+                this.value = Pair(rates, decimalPlaces)
+            }
+
+            addSource(dbLiveItems) {
+                rates = it?.rates?.entries?.last()
+            }
+
+            addSource(getDecimalPlaces()) {
+                decimalPlaces = it
+                update()
+            }
         }
     }
 
-    fun getRatePast(): LiveData<Map.Entry<LocalDate, Rate?>?> {
-        return MediatorLiveData<Map.Entry<LocalDate, Rate?>?>().apply {
+    fun getRatePast(): LiveData<Pair<Map.Entry<LocalDate, Rate?>?, Int>> {
+        return MediatorLiveData<Pair<Map.Entry<LocalDate, Rate?>?, Int>>().apply {
             var date: LocalDate? = null
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
                 this.value = if (date != null)
-                    rates?.find { it.key == date }
+                    Pair(rates?.find { it.key == date }, decimalPlaces)
                 else
-                    rates?.first()
+                    Pair(rates?.first(), decimalPlaces)
             }
 
             addSource(dbLiveItems) {
@@ -145,6 +161,11 @@ class TimelineViewModel(
 
             addSource(scrubDateLiveData) {
                 date = it
+                update()
+            }
+
+            addSource(getDecimalPlaces()) {
+                decimalPlaces = it
                 update()
             }
         }
@@ -184,13 +205,13 @@ class TimelineViewModel(
         }
     }
 
-    fun getRatesAverage(): LiveData<Rate?> {
-        return MediatorLiveData<Rate?>().apply {
+    fun getRatesAverage(): LiveData<Pair<Rate?, Int>> {
+        return MediatorLiveData<Pair<Rate?, Int>>().apply {
             var scrubDate: LocalDate? = null
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
-                this.value = rates
+                val avg = rates
                     ?.filter { map ->
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
@@ -200,6 +221,7 @@ class TimelineViewModel(
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.average()
                     ?.let { average -> Rate(target, average.toFloat()) }
+                this.value = Pair(avg, decimalPlaces)
             }
 
             addSource(dbLiveItems) {
@@ -211,11 +233,16 @@ class TimelineViewModel(
                 scrubDate = it
                 update()
             }
+
+            addSource(getDecimalPlaces()) {
+                decimalPlaces = it
+                update()
+            }
         }
     }
 
-    fun getRatesMin(): LiveData<Pair<Rate?, LocalDate?>> {
-        return MediatorLiveData<Pair<Rate?, LocalDate?>>().apply {
+    fun getRatesMin(): LiveData<Triple<Rate?, LocalDate?, Int>> {
+        return MediatorLiveData<Triple<Rate?, LocalDate?, Int>>().apply {
             var scrubDate: LocalDate? = null
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
@@ -224,11 +251,8 @@ class TimelineViewModel(
                     ?.filter { map ->
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
-                    ?.map { entry ->
-                        entry.value
-                    }
-                    ?.map { rate -> rate?.value ?: 0f }
-                    ?.minOrNull()
+                    ?.map { entry -> entry.value }
+                    ?.minOfOrNull { rate -> rate?.value ?: 0f }
                     ?.let { min -> Rate(target, min) }
                 val date = rates
                     ?.filter { map ->
@@ -238,7 +262,7 @@ class TimelineViewModel(
                         ?.value == min?.value
                     }
                     ?.key
-                this.value = Pair(min, date)
+                this.value = Triple(min, date, decimalPlaces)
             }
 
             addSource(dbLiveItems) {
@@ -250,11 +274,16 @@ class TimelineViewModel(
                 scrubDate = it
                 update()
             }
+
+            addSource(getDecimalPlaces()) {
+                decimalPlaces = it
+                update()
+            }
         }
     }
 
-    fun getRatesMax(): LiveData<Pair<Rate?, LocalDate?>> {
-        return MediatorLiveData<Pair<Rate?, LocalDate?>>().apply {
+    fun getRatesMax(): LiveData<Triple<Rate?, LocalDate?, Int>> {
+        return MediatorLiveData<Triple<Rate?, LocalDate?, Int>>().apply {
             var scrubDate: LocalDate? = null
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
@@ -263,11 +292,8 @@ class TimelineViewModel(
                     ?.filter { map ->
                         scrubDate?.let { !map.key.isBefore(it) } ?: true
                     }
-                    ?.map { entry ->
-                        entry.value
-                    }
-                    ?.map { rate -> rate?.value ?: 0f }
-                    ?.maxOrNull()
+                    ?.map { entry -> entry.value }
+                    ?.maxOfOrNull { rate -> rate?.value ?: 0f }
                     ?.let { max -> Rate(target, max) }
                 val date = rates
                     ?.filter { map ->
@@ -277,7 +303,7 @@ class TimelineViewModel(
                         ?.value == max?.value
                     }
                     ?.key
-                this.value = Pair(max, date)
+                this.value = Triple(max, date, decimalPlaces)
             }
 
             addSource(dbLiveItems) {
@@ -287,6 +313,37 @@ class TimelineViewModel(
 
             addSource(scrubDateLiveData) {
                 scrubDate = it
+                update()
+            }
+
+            addSource(getDecimalPlaces()) {
+                decimalPlaces = it
+                update()
+            }
+        }
+    }
+
+    private fun getDecimalPlaces(): LiveData<Int> {
+        return MediatorLiveData<Int>().apply {
+            var min = 0f
+            var max = 0f
+
+            fun update() {
+                this.value = if (min != 0f && max != 0f) {
+                    val diff = (min - max).absoluteValue
+                    if (diff < 0.001)
+                        5
+                    else if (diff < 0.01)
+                        4
+                    else
+                        3
+                } else
+                    3
+            }
+
+            addSource(dbLiveItems) {
+                min = it?.rates?.entries?.minOfOrNull { rate -> rate.value.value } ?: 0f
+                max = it?.rates?.entries?.maxOfOrNull { rate -> rate.value.value } ?: 0f
                 update()
             }
         }

@@ -224,11 +224,11 @@ class TimelineActivity : BaseActivity() {
 
         // past rate
         timelineModel.getRatePast().observe(this) {
-            val rate = it?.value
+            val rate = it.first?.value
             if (rate != null) {
-                textPastRateDate.text = it.key.format(formatter)
+                textPastRateDate.text = it.first?.key?.format(formatter)
                 textPastRateSymbol.text = rate.currency.symbol()
-                textPastRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = 3)
+                textPastRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = it.second)
                 // only show the divider if this row is populated
                 // highest chance of it populated is with this "past rate" data
                 divider.visibility = View.VISIBLE
@@ -239,11 +239,11 @@ class TimelineActivity : BaseActivity() {
 
         // current rate
         timelineModel.getRateCurrent().observe(this) {
-            val rate = it?.value
+            val rate = it.first?.value
             if (rate != null) {
-                textCurrentRateDate.text = it.key.format(formatter)
+                textCurrentRateDate.text = it.first?.key?.format(formatter)
                 textCurrentRateSymbol.text = rate.currency.symbol()
-                textCurrentRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = 3)
+                textCurrentRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = it.second)
             }
         }
 
@@ -252,9 +252,10 @@ class TimelineActivity : BaseActivity() {
             populateStat(
                 findViewById(R.id.stats_row_1),
                 getString(R.string.rate_average),
-                it?.currency?.symbol(),
-                it?.value,
-                null
+                it.first?.currency?.symbol(),
+                it.first?.value,
+                null,
+                it.second
             )
         }
 
@@ -266,7 +267,8 @@ class TimelineActivity : BaseActivity() {
                 getString(R.string.rate_min),
                 rate?.currency?.symbol(),
                 rate?.value,
-                it.second
+                it.second,
+                it.third
             )
         }
 
@@ -278,13 +280,14 @@ class TimelineActivity : BaseActivity() {
                 getString(R.string.rate_max),
                 rate?.currency?.symbol(),
                 rate?.value,
-                it.second
+                it.second,
+                it.third
             )
         }
 
     }
 
-    private fun populateStat(parent: View, title: String?, symbol: String?, value: Float?, date: LocalDate?) {
+    private fun populateStat(parent: View, title: String?, symbol: String?, value: Float?, date: LocalDate?, places: Int = 3) {
         // hide entire row when there's no data
         parent.visibility = if (symbol == null) View.GONE else View.VISIBLE
         // hide dotted line when there's no date
@@ -292,7 +295,7 @@ class TimelineActivity : BaseActivity() {
 
         parent.findViewById<TextView>(R.id.text).text = title
         parent.findViewById<TextView>(R.id.text2).text = symbol
-        parent.findViewById<TextView>(R.id.text3).text = value?.toHumanReadableNumber(this, 3)
+        parent.findViewById<TextView>(R.id.text3).text = value?.toHumanReadableNumber(this, places)
         parent.findViewById<TextView>(R.id.text4).text = date?.format(formatter)
     }
 
