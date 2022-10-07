@@ -21,11 +21,11 @@
     <string name="api_title">Χορηγός δεδομένων</string>
     <string name="api_about_title">Σχετικά με τον %s</string>
     <string name="api_about_exchangerateHost">Το <a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> παίρνει τα δεδομένα από διάφορες οικονομικές πηγές και τράπεζες, συμπεριλαμβανομένης της ΕΚΤ. Λαμβάνεται ο μέσος όρος, ανάλογα της προσφοράς και της ζήτησης.\n<b>Περιλαμβάνει περίπου 160 νομίσματα.</b></string>
-    <string name="api_about_frankfurterApi">Το <a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> παρακολουθεί τις τιμές αναφοράς (forex) της ΕΚΤ.\n<b>Περιλαμβάνει περίπου 30 νομίσματα.</b></string>
+    <string name="api_about_frankfurterApp">Το <a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> παρακολουθεί τις τιμές αναφοράς (forex) της ΕΚΤ.\n<b>Περιλαμβάνει περίπου 30 νομίσματα.</b></string>
     <string name="api_about_ferEe">Το <a href="https://fer.ee/"><b>Fer.ee</b></a> είναι σχετικά καινούργια υπηρεσία, η οποία (όπως και το Frankfurter.app) παρακολουθεί τις τιμές αναφοράς (forex) της ΕΚΤ.\n<b>Περιλαμβάνει περίπου 30 νομίσματα.</b></string>
     <string name="api_refreshPeriod_title">Ρυθμός ανανέωσης</string>
     <string name="api_refreshPeriod_exchangerateHost">Οι τιμές ανανεώνονται περίπου τα μεσάνυχτα UTC κάθε εργάσιμης ημέρας.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Οι τιμές ανανεώνονται περίπου την 16:00 CET κάθε εργάσιμης ημέρας.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Οι τιμές ανανεώνονται περίπου την 16:00 CET κάθε εργάσιμης ημέρας.</string>
     <string name="api_refreshPeriod_ferEe">Οι τιμές ανανεώνονται κάθε εργάσιμη ημέρα.</string>
     <!-- about -->
     <string name="category_about">Σχετικά με την εφαρμογή</string>

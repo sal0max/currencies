@@ -21,11 +21,11 @@
     <string name="api_title">مزود البيانات</string>
     <string name="api_about_title">حول %s</string>
     <string name="api_about_exchangerateHost">توفر <a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> أسعار العملات من مختلف موفري البيانات المالية والمصارف ، بما في ذلك البنك المركزي الأوروبي. يتم تسليم جميع بيانات سعر الصرف في بيانات نقطة الوسط. يتم تحديد معدلات نقطة الوسط عن طريق حساب متوسط سعر العرض والطلب.\n<b> تم تضمين حوالي 160 عملة. </b></string>
-    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> تتعقب أسعار الصرف المرجعية (الفوركس) التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> تتعقب أسعار الصرف المرجعية (الفوركس) التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> هي خدمة جديدة نسبيًا ، (تمامًا مثل Frankfurter.app) تتعقب تبادل المراجع (فوركس) المعدلات التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
     <string name="api_refreshPeriod_title">فترة التحديث</string>
     <string name="api_refreshPeriod_exchangerateHost">يتم تحديث أسعار الصرف في منتصف الليل بالتوقيت العالمي المنسق كل يوم عمل.</string>
-    <string name="api_refreshPeriod_frankfurterApi">يتم تحديث البيانات في حوالي الساعة 16:00 بتوقيت وسط أوروبا كل يوم عمل.</string>
+    <string name="api_refreshPeriod_frankfurterApp">يتم تحديث البيانات في حوالي الساعة 16:00 بتوقيت وسط أوروبا كل يوم عمل.</string>
     <string name="api_refreshPeriod_ferEe">يتم تحديث الأسعار كل يوم عمل.</string>
     <!-- about -->
     <string name="category_about">عن هذا التطبيق</string>

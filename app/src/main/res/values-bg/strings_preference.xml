@@ -25,7 +25,7 @@
 
     <string name="api_refreshPeriod_title">Период на обновяване</string>
     <string name="api_refreshPeriod_exchangerateHost">Обмени курсове се обновяват около полунощ UTC всеки работен ден.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Данните се обновяват около 16:00 CET всеки работен ден.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Данните се обновяват около 16:00 CET всеки работен ден.</string>
     <string name="api_refreshPeriod_ferEe">Курсовете се обновяват всеки работен ден.</string>
     <!-- about -->
     <string name="category_about">Относно това приложение</string>

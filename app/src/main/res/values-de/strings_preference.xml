@@ -21,11 +21,11 @@
     <string name="api_title">Datenquelle</string>
     <string name="api_about_title">Über %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sammelt Kurswerte von diversen Datenanbietern und Banken, inklusive der Europäischen Zentralbank. Die Werte werden dann als Mittelkurs von <i>Bid and Ask</i>, also dem Median des Kursspielraums, gebildet.\n<b>Etwa 160 Währungen sind enthalten.</b></string>
-    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\n<b>Etwa 30 Währungen sind enthalten.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> verwendet die Kurse, welche durch die Europäische Zentralbank bereitgestellt werden.\n<b>Etwa 30 Währungen sind enthalten.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> ist ein recht neuer Dienst, der (genau wie Frankfurter.app) die Kurse der Europäische Zentralbank bereitstellt.\n<b>Etwa 30 Währungen sind enthalten.</b></string>
     <string name="api_refreshPeriod_title">Aktualisierungsintervall</string>
     <string name="api_refreshPeriod_exchangerateHost">Die Referenzwerte werden um Mitternacht UTC an Werktagen aktualisiert.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Die Referenzwerte werden um ca. 16 Uhr mitteleuropäische Zeit an Werktagen aktualisiert.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Die Referenzwerte werden um ca. 16 Uhr mitteleuropäische Zeit an Werktagen aktualisiert.</string>
     <string name="api_refreshPeriod_ferEe">Die Referenzwerte werden an allen Werktagen aktualisiert.</string>
     <!-- about -->
     <string name="category_about">Über diese App</string>

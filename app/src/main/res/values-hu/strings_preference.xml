@@ -21,11 +21,11 @@
     <string name="api_title">Adatszolgáltató</string>
     <string name="api_about_title">%s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> a devizaárfolyamokat különböző pénzügyi adatszolgáltatóktól és bankoktól, köztük az Európai Központi Banktól szerzi be. Minden árfolyamadatot középárfolyam-adatokban szolgáltatnak. A középárfolyamok meghatározása a vételi és eladási árfolyamok átlagos mediánjának kiszámításával történik.\n<b>Körülbelül 160 pénznemet tartalmaz.</b></string>
-    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> egy viszonylag új szolgáltatás, amely (a Frankfurter.app-hoz hasonlóan) az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
     <string name="api_refreshPeriod_title">Frissítési időszak</string>
     <string name="api_refreshPeriod_exchangerateHost">Az árfolyamok minden munkanapon éjfél körül frissülnek.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Az adatok minden munkanapon 16:00 CET körül frissülnek.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Az adatok minden munkanapon 16:00 CET körül frissülnek.</string>
     <string name="api_refreshPeriod_ferEe">Az árfolyamok minden munkanapon frissülnek.</string>
     <!-- about -->
     <string name="category_about">Erről az alkalmazásról</string>

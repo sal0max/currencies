@@ -21,11 +21,11 @@
     <string name="api_title">Nhà cung cấp dữ liệu</string>
     <string name="api_about_title">Về %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> lấy tỉ lệ tiền tệ từ nhiều nhà cung cấp dữ liệu và ngân hàng khác nhau, bao gồm cả Ngân hàng trung ương châu Âu. Tất cả dữ liệu tỉ lệ chuyển đổi được đưa đến dưới dạng dữ liệu điểm giữa. Tỉ lệ điểm giữa được xác định bằng cách tính trung bình của Bid và Ask.\n<b>Có khoảng 160 tiền tệ.</b></string>
-    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> là một dịch vụ tương đối mới, nó (giống Frankfurter.app) theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
     <string name="api_refreshPeriod_title">Khoảng thời gian làm mới</string>
     <string name="api_refreshPeriod_exchangerateHost">Tỉ lệ chuyển đổi được cập nhật khoảng nửa đêm theo UTC mỗi ngày làm việc.</string>
-    <string name="api_refreshPeriod_frankfurterApi">Dữ liệu được cập nhật khoảng 16:00 theo CET mỗi ngày làm việc.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Dữ liệu được cập nhật khoảng 16:00 theo CET mỗi ngày làm việc.</string>
     <string name="api_refreshPeriod_ferEe">Tỉ lệ được cập nhật mỗi ngày làm việc.</string>
     <!-- about -->
     <string name="category_about">Giới thiệu về ứng dụng</string>

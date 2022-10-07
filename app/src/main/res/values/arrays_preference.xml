@@ -28,13 +28,13 @@
 
     <string-array name="api_about_summary">
         <item>@string/api_about_exchangerateHost</item>
-        <item>@string/api_about_frankfurterApi</item>
+        <item>@string/api_about_frankfurterApp</item>
         <item>@string/api_about_ferEe</item>
     </string-array>
 
     <string-array name="api_refreshPeriod_summary">
         <item>@string/api_refreshPeriod_exchangerateHost</item>
-        <item>@string/api_refreshPeriod_frankfurterApi</item>
+        <item>@string/api_refreshPeriod_frankfurterApp</item>
         <item>@string/api_refreshPeriod_ferEe</item>
     </string-array>
 </resources>

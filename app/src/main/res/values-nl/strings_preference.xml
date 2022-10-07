@@ -21,11 +21,11 @@
     <string name="api_title">Data-aanbieder</string>
     <string name="api_about_title">Over %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> haalt de valutakoersen van verschillende financiële gegevensproviders en banken, waaronder de Europese Centrale Bank. Alle wisselkoersgegevens worden geleverd in middelpuntgegevens. Middelpuntpercentages worden bepaald door het gemiddelde mediaan-tarief van Bieden en Vragen te berekenen.\n<b>Ongeveer 160 valuta\'s zijn inbegrepen.</b></string>
-    <string name="api_about_frankfurterApi"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> houdt de referentiewisselkoersen (forex) bij die zijn gepubliceerd door de Europese Centrale Bank.\n<b>Ongeveer 30 valuta\'s zijn inbegrepen.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> houdt de referentiewisselkoersen (forex) bij die zijn gepubliceerd door de Europese Centrale Bank.\n<b>Ongeveer 30 valuta\'s zijn inbegrepen.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> is een relatief nieuwe service die (net als Frankfurter.app) referentie-uitwisseling (forex) bijhoudt tarieven die worden gepubliceerd door de Europese Centrale Bank.\n<b>Ongeveer 30 valuta\'s zijn inbegrepen.</b></string>
     <string name="api_refreshPeriod_title">Vernieuwingsperiode</string>
     <string name="api_refreshPeriod_exchangerateHost">Wisselkoersen worden elke werkdag rond middernacht UTC bijgewerkt.</string>
-    <string name="api_refreshPeriod_frankfurterApi">De gegevens worden elke werkdag rond 16.00 uur CET bijgewerkt.</string>
+    <string name="api_refreshPeriod_frankfurterApp">De gegevens worden elke werkdag rond 16.00 uur CET bijgewerkt.</string>
     <string name="api_refreshPeriod_ferEe">De tarieven worden elke werkdag bijgewerkt.</string>
     <!-- about -->
     <string name="category_about">Over deze app</string>
