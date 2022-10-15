@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator"> </string>
+    <string name="rates_date_latest">Kursy na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
+    <string name="rates_date_historical">Kursy historyczne na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
+    <string name="desc_toggle_currencies">przełącz waluty</string>
+    <string name="copied_to_clipboard">Skopiowano <b>%s</b> do schowka</string>
+    <string name="historical_rates_dialog_title">Kursy historyczne</string>
+    <string name="historical_rates_dialog_toggle">Użyj kursów wymiany z określonego okresu. Wyłącz, aby zawsze używać najnowszych dane.</string>
+    <string name="error">Błąd: %s</string>
+    <string name="error_generic">Nieznany problem.</string>
+    <string name="error_http">Serwer odpowiedział z kodem HTTP %d</string>
+    <string name="error_timeout">Serwer nie odpowiedział na czas lub jest nieosiągalny.</string>
+    <string name="error_no_data">Nie można się połączyć z serwerem.</string>
+    <string name="error_api_error">Wystąpił błąd API. Proszę spróbować później.</string>
+    <string name="menu_settings">Ustawienia</string>
+    <string name="menu_refresh">Odśwież kursy</string>
+    <string name="menu_timeline">Wykres kursów wymiany</string>
+    <string name="tooltip_filter_starred">Pokaż tylko polubione waluty.</string>
+</resources>
