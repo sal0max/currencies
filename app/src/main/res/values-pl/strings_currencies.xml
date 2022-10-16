@@ -97,8 +97,8 @@
     <string name="name_mmk">Kiat birmański</string>
 
     <string name="name_mop">Pataca Makau</string>
-    <string name="name_mro">Ugija mauretańska</string>
-
+    <string name="name_mro">Ugija mauretańska (pre-2018)</string>
+    <string name="name_mru">Ugija mauretańska</string>
     <string name="name_mur">Rupia Mauritiusa</string>
 
     <string name="name_mwk">Kwacha malawijska</string>
@@ -135,8 +135,8 @@
     <string name="name_sos">Szyling somalijski</string>
 
 
-    <string name="name_std">Dobra Tomasza/Książęca</string>
-
+    <string name="name_std">Dobra Tomasza/Książęca (pre-2018)</string>
+    <string name="name_stn">Dobra Tomasza/Książęca</string>
     <string name="name_svc">Colon salwadorski</string>
     <string name="name_syp">Funt syryjski</string>
     <string name="name_szl">Lilangeni suazyjski</string>
@@ -154,8 +154,8 @@
     <string name="name_usd">US dolar</string>
     <string name="name_uyu">Peso urugwajskie</string>
     <string name="name_uzs">Som uzbecki</string>
-    <string name="name_vef">Boliwar wenezuelski</string>
-
+    <string name="name_vef">Boliwar wenezuelski (stary)</string>
+    <string name="name_ves">Boliwar wenezuelski</string>
     <string name="name_vnd">Dong wietnamski</string>
 
 
