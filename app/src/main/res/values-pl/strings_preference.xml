@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="category_settings">Ustawienia ogólne</string>
+    <string name="theme_title">Motyw</string>
+    <string name="theme_option_light">Jasny</string>
+    <string name="theme_option_dark">Ciemny</string>
+    <string name="theme_option_default">Domyślne ustawienia systemu</string>
+    <string name="category_appearance">Ekran</string>
+</resources>
