@@ -20,17 +20,17 @@
     <string name="category_api">Обмени курсове</string>
     <string name="api_title">Източник на данни</string>
     <string name="api_about_title">Относно %s</string>
-
-
-
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> взима обменните курсове от различни финансови източници и и банки, включително от Европейската Централна Банка. Всички курсове са средна стойност. Средната стойност се изчислява като средното между продава и купува.\n<b>Включени са около 160 валути.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> следи референтните обменни(форекс) курсове публикувани от Европейската Централна Банка.\n<b>включени са около 30 валути.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> е относително нова услуга, която (точно като Frankfurter.app) следи референтните обменни (форекс) курсове публикувани от Европейската Централна Банка.\n<b>Включва около 30 валути.</b></string>
     <string name="api_refreshPeriod_title">Период на обновяване</string>
     <string name="api_refreshPeriod_exchangerateHost">Обмени курсове се обновяват около полунощ UTC всеки работен ден.</string>
     <string name="api_refreshPeriod_frankfurterApp">Данните се обновяват около 16:00 CET всеки работен ден.</string>
     <string name="api_refreshPeriod_ferEe">Курсовете се обновяват всеки работен ден.</string>
     <!-- about -->
     <string name="category_about">Относно това приложение</string>
-
-
+    <string name="disclaimer_title">Опровержение</string>
+    <string name="disclaimer_summary">Въпреки че приложението е щателно написано и тествано, <b>няма гаранция, че данните, които показва, са верни</b>. Обменните курсове се предоставят от трета страна и приложението не може да гарантира, че данните са верни и актуални.\nОсвен това дори и верните длкурсове може да варират спрямо ползваните от банката Ви.\nОсвен това: Случват се грешки. Никога никому не вярвайте сляпо. Въпреки това Ви уверявам, че ако имах някакви съмнения в начинан на работа на приложението не бих го публикувал.</string>
     <string name="donate_title">Помогни на разработчиците</string>
     <string name="donate_summary">Дари чрез PayPal</string>
     <string name="rate_title">Оцени това приложение</string>
