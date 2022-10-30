@@ -86,7 +86,7 @@ dependencies {
     implementation 'androidx.preference:preference-ktx:1.2.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'androidx.window:window:1.0.0'
-    implementation 'com.google.android.material:material:1.6.1'
+    implementation 'com.google.android.material:material:1.7.0'
     // downloader
     def fuelVersion = '2.3.1'
     implementation "com.github.kittinunf.fuel:fuel:$fuelVersion"
@@ -102,7 +102,7 @@ dependencies {
     implementation 'com.robinhood.spark:spark:1.2.0'
     // test
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.mockito:mockito-core:4.8.0'
+    testImplementation 'org.mockito:mockito-core:4.8.1'
 }
 
 private String getSecret(String key) {
