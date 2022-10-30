@@ -131,7 +131,8 @@
     <string name="name_sek">Svensk krone</string>
     <string name="name_sgd">Singaporsk dollar</string>
     <string name="name_shp">Sankthelensk pund</string>
-    <string name="name_sll">Sierraleonsk leone</string>
+    <string name="name_sle">Sierraleonsk leone</string>
+    <string name="name_sll">Sierraleonsk leone (pre-07/2022)</string>
     <string name="name_sos">Somalisk shilling</string>
     <string name="name_srd">Surinamsk dollar</string>
     <string name="name_ssp">Sørsudansk pund</string>

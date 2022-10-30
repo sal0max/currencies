@@ -131,7 +131,8 @@
     <string name="name_sek">Schwedische Krone</string>
     <string name="name_sgd">Singapur-Dollar</string>
     <string name="name_shp">St.-Helena-Pfund</string>
-    <string name="name_sll">Sierra-leonischer Leone</string>
+    <string name="name_sle">Sierra-leonischer Leone</string>
+    <string name="name_sll">Sierra-leonischer Leone (vor 07/2022)</string>
     <string name="name_sos">Somalia-Schilling</string>
     <string name="name_srd">Suriname-Dollar</string>
     <string name="name_ssp">Südsudanesisches Pfund</string>

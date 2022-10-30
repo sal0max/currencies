@@ -131,7 +131,8 @@
     <string name="name_sek">Krona Swedia</string>
     <string name="name_sgd">Dolar Singapura</string>
     <string name="name_shp">Pound Saint Helena</string>
-    <string name="name_sll">Leone Sierra Leone</string>
+    <string name="name_sle">Leone Sierra Leone</string>
+    <string name="name_sll">Leone Sierra Leone (pre-07/2022)</string>
     <string name="name_sos">Shilling Somalia</string>
     <string name="name_srd">Dolar Suriname</string>
     <string name="name_ssp">Pound Sudan Selatan</string>

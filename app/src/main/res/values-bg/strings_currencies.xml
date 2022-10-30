@@ -131,7 +131,8 @@
     <string name="name_sek">Шведска крона</string>
     <string name="name_sgd">Сингапурски долар</string>
     <string name="name_shp">Паунд на остров Света Елена</string>
-    <string name="name_sll">Сиералеонско леоне</string>
+    <string name="name_sle">Сиералеонско леоне</string>
+    <string name="name_sll">Сиералеонско леоне (до 07/2022)</string>
     <string name="name_sos">Сомалийски шилинг</string>
     <string name="name_srd">Суринамски долар</string>
     <string name="name_ssp">Южносудански паунд</string>

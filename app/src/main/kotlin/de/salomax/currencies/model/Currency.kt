@@ -146,6 +146,7 @@ enum class Currency(
     SEK("SEK", 752,  "kr",   R.string.name_sek, R.drawable.flag_se),
     SGD("SGD", 702,  "$",    R.string.name_sgd, R.drawable.flag_sg),
     SHP("SHP", 654,  "£",    R.string.name_shp, R.drawable.flag_sh),
+    SLE("SLE", 925,  "Le",   R.string.name_sle, R.drawable.flag_sl),
     SLL("SLL", 694,  "Le",   R.string.name_sll, R.drawable.flag_sl),
     SOS("SOS", 706,  "Sh",   R.string.name_sos, R.drawable.flag_so),
     SRD("SRD", 968,  "$",    R.string.name_srd, R.drawable.flag_sr),

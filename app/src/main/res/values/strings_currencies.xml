@@ -131,7 +131,8 @@
     <string name="name_sek">Swedish krona</string>
     <string name="name_sgd">Singapore dollar</string>
     <string name="name_shp">Saint Helena pound</string>
-    <string name="name_sll">Sierra Leonean leone</string>
+    <string name="name_sle">Sierra Leonean leone</string>
+    <string name="name_sll">Sierra Leonean leone (pre-07/2022)</string>
     <string name="name_sos">Somali shilling</string>
     <string name="name_srd">Surinamese dollar</string>
     <string name="name_ssp">South Sudanese pound</string>
