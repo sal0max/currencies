@@ -1,0 +1,1 @@
+- Risolto crash nell'aggiornamento dei cambi. Scusate! 🤕

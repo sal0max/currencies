@@ -1,0 +1,4 @@
+- Questa release risolve dei problemi con il layout RTL (destra-sinistra). Ora, tutto dovrebbe funzionare come ti aspetti.
+- Nuova funzionalità: Visualizzare in anteprima tutte le conversioni nella lista delle valute. Da abilitare nelle impostazioni.
+- A volte, le valute visualizzano dati vecchi o errati dopo il ricarico. Questo è stato risolto.
+- Un sacco di miglioramenti nel codice, per rendere questa applicazione migliore.
