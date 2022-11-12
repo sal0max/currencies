@@ -2,7 +2,13 @@
 <resources>
     <string name="title_changelog" translatable="false">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.17.4</b>
+    <string name="changelog" translatable="false"><b>1.17.5</b>
+        \n⸻
+        \n<li>Improved the precision of exchange rates in timeline view.</li>
+        \n<li>New language: Polish. Thanks a lot, ewm!</li>
+        \n<li>Many updated translations. Thanks to all the contributors!</li>
+        \n
+        \n<b>1.17.4</b>
         \n⸻
         \n<li>Improved design (Material 3).</li>
         \n<li>New language: Czech. Thank you, Fjuro!</li>

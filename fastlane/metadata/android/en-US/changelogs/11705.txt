@@ -1,0 +1,3 @@
+- Improved the precision of exchange rates in timeline view.
+- New language: Polish. Thanks a lot, ewm!
+- Many updated translations. Thanks to all the contributors!
