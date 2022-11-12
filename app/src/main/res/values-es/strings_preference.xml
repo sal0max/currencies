@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Configuración general</string>
@@ -6,6 +7,8 @@
     <string name="fee_summary">Dependiendo del acuerdo de su tarjeta de crédito, su banco puede cobrar una comisión por todas las transacciones de cambio de divisas. Aquí puedes introducir esa comisión. Se añadirá al cálculo, para que sepas cuánto pagas <i>realmente</i>.</string>
     <string name="previewConversion_title">Vista previa de la conversión</string>
     <string name="previewConversion_summary">Mostrar la conversión actual para cada tipo de cambio en el selector de moneda.</string>
+    <string name="extendedKeypad_title">Teclado extendido</string>
+    <string name="extendedKeypad_summary">Agregar dos botones adicionales: <b>00</b>&nbsp;y&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Apariencia</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Claro</string>

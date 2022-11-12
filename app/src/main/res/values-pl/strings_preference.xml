@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">Ustawienia ogólne</string>
+    <string name="fee_title">Opłata za transakcję zagraniczną</string>
+    <string name="fee_summary">W zależności od umowy dotyczącej Twojej karty kredytowej, Twój bank może pobrać dodatkową opłatę za wszelkie transakcje zagraniczne. Tutaj możesz podać jej wysokość. Zostanie ona dodana do sumy do zapłaty, dzięki czemu będziesz wiedzieć ile <i>rzeczywiście</i> zapłacisz.</string>
+    <string name="previewConversion_title">Podgląd konwersji</string>
+    <string name="previewConversion_summary">Pokaż obecny kurs w ekranie wyboru waluty.</string>
+
+
+    <string name="category_appearance">Ekran</string>
+    <string name="theme_title">Motyw</string>
+    <string name="theme_option_light">Jasny</string>
+    <string name="theme_option_dark">Ciemny</string>
+    <string name="theme_option_default">Domyślne ustawienia systemu</string>
+
+    <string name="pure_black_enabled_summary">Użyj samej czerni w ciemnym motywie</string>
+    <!-- api -->
+    <string name="category_api">Kursy walut</string>
+
+    <string name="api_about_title">O %s</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> jest zewnętrznym dostawcą usługi dostarczającej informacje na temat różnych banków, nawet Europejskiego Banku Centralnego. Wszystkie dane są dostarczane w danych środkowych. Dane środkowe są obliczane na podstawie mediany <i>Bid and Ask</i>.\n<b>Około 160 walut jest zawartych.</b></string>
+
+
+    <string name="api_refreshPeriod_title">Okres odświeżenia</string>
+    <string name="api_refreshPeriod_exchangerateHost">Kursy walut aktualizowane są każdego dnia roboczego o północy czasu Greenwich.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Dane aktualizowane są każdego dnia roboczego około godziny 16:00 czasu środkowoeuropejskiego.</string>
+    <string name="api_refreshPeriod_ferEe">Kursy aktualizowane są każdego dnia roboczego.</string>
+    <!-- about -->
+    <string name="category_about">O tej aplikacji</string>
+    <string name="disclaimer_title">Ostrzeżenie</string>
+    <string name="disclaimer_summary">Mimo tego że aplikacja jest poddawana ścisłym testom, <b>nie możemy zagwarantować że podane dane mogą być zgodne z prawdą.</b> Kursy walut są podawane przez zewnętrznego dostawcę usługi, a ta nie jest w stanie zagwarantować aktualności tych danych.\nDodatkowo, podane kursy - nawet jeżeli prawidłowe, mogą się różnić od tych stosowanych przez Twój bank.\nNa sam koniec: błędy się zdarzają. Nigdy nie ufaj nikomu bezgranicznie. Mówiąc to, mam na myśli że nie wydałbym tej aplikacji gdybym miał złe przeczucie co do jej poprawnego działania.</string>
+    <string name="donate_title">Wesprzyj dewelopera</string>
+    <string name="donate_summary">Wesprzyj za pomocą PayPala</string>
+
+
+
+</resources>
