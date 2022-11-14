@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator">\u2009.\u2009</string>
+    <string name="desc_toggle_currencies">víxla gjaldmiðla</string>
+    <string name="rates_date_latest">Gengi frá &lt;b>%1$s&lt;/b> frá &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Söguleg gengi frá &lt;b>%1$s&lt;/b> frá &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">Afritaði &lt;b>%s&lt;/b> á klemmuspjald</string>
+    <string name="historical_rates_dialog_title">Söguleg gengi</string>
+    <string name="historical_rates_dialog_toggle">Sýna söguleg gengi af ákveðinni dagsetningu. Slökktu á til að alltaf fá nýjustu gengi.</string>
+    <string name="error">Villa: %s</string>
+    <string name="error_generic">Óþekkt villa.</string>
+    <string name="error_http">Netþjónn svaraði með HTTP %d</string>
+    <string name="error_timeout">Netþjónn svaraði ekki tímanlega eða ekki er hægt að ná í hann.</string>
+    <string name="error_no_data">Gat ekki tengst netþjóni.</string>
+    <string name="error_api_error">Það kom upp villa með forritunarviðmóti. Reyndu aftur síðar.</string>
+    <string name="menu_settings">Stillingar</string>
+    <string name="menu_refresh">Endurnýja gengi</string>
+    <string name="menu_timeline">Línurit</string>
+    <string name="tooltip_filter_starred">Sýna aðeins eftirlæti.</string>
+</resources>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">Almennar stillingar</string>
+    <string name="fee_title">Gjaldeyrisviðskiptagjald</string>
+    <string name="fee_summary">Bankinn þinn gæti innheimt gjald fyrir öll gjaldeyrisviðskipti. Hér er hægt að slá því inn svo þú veist hversu mikið þú borgar <i>í raun</i> .</string>
+    <string name="previewConversion_title">Skiptisforskoðun</string>
+    <string name="previewConversion_summary">Sýna núverandi gjaldmiðlaskipti fyrir hvert gengi í gjaldeyrisvalinu.</string>
+    <string name="extendedKeypad_title">Aukið takkaborð</string>
+    <string name="extendedKeypad_summary">Bætir við tveimur hnöppum til viðbótar: <b>00</b>&nbsp;og&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">Útlit</string>
+    <string name="theme_title">Þema</string>
+    <string name="theme_option_light">Ljós</string>
+    <string name="theme_option_dark">Dökk</string>
+    <string name="theme_option_default">Sjálfgefin</string>
+    <string name="pure_black_enabled_title">OLED svart</string>
+    <string name="pure_black_enabled_summary">Nota kolsvartan fyrir dökku þemu</string>
+    <!-- api -->
+    <string name="category_api">Gengi</string>
+    <string name="api_title">Gagnaveita</string>
+    <string name="api_about_title">Um %s</string>
+
+
+
+
+
+
+
+    <!-- about -->
+
+
+
+
+
+
+
+
+</resources>

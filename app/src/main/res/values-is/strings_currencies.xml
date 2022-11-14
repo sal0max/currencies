@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_aud">Ástralskur dalur</string>
+    <string name="name_ars">Argentínskur pesi</string>
+    <string name="name_byn">Hvítrússnesk rúbla</string>
+    <string name="name_cad">Kanadadalur</string>
+    <string name="name_chf">Svissneskur franki</string>
+    <string name="name_btc">Bitcoin</string>
+    <string name="name_czk">Tékknesk króna</string>
+    <string name="name_dkk">Dönsk króna</string>
+    <string name="name_isk">Íslensk króna</string>
+    <string name="name_gbp">Sterlingspund</string>
+    <string name="name_jpy">Japanskt jen</string>
+    <string name="name_imp"></string>
+    <string name="name_inr">Indversk rúpía</string>
+    <string name="name_hkd">Hong Kong-dalur</string>
+    <string name="name_mxn">Mexíkóskur pesi</string>
+    <string name="name_rub">Rússnesk rúbla</string>
+    <string name="name_sgd">Singapúrskur dalur</string>
+    <string name="name_nok">Norsk króna</string>
+    <string name="name_try">Tyrknesk líra</string>
+    <string name="name_syp">Sýrlenskt pund</string>
+    <string name="name_sek">Sænsk króna</string>
+    <string name="name_scr">Seychellesrúpía</string>
+    <string name="name_nzd">Nýsjálenskur dalur</string>
+    <string name="name_xau">Gull únsa</string>
+    <string name="name_uah">Úkraínsk hrinja</string>
+    <string name="name_vnd">Víetnamskt dong</string>
+    <string name="name_usd">Bandaríkjadalur</string>
+    <string name="name_eur">Evra</string>
+    <string name="name_cny">Kínverskt júan</string>
+</resources>
