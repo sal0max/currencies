@@ -4,6 +4,7 @@
     <string name="name_afn">Afgani</string>
     <string name="name_all">Albanskt lek</string>
     <string name="name_amd">Armenskt dramm</string>
+
     <string name="name_aoa">Angólsk kvansa</string>
     <string name="name_ars">Argentínskur pesi</string>
     <string name="name_aud">Ástralskur dalur</string>
@@ -28,6 +29,7 @@
     <string name="name_cad">Kanadadalur</string>
     <string name="name_cdf">Kongóskur franki</string>
     <string name="name_chf">Svissneskur franki</string>
+
     <string name="name_clp">Síleskur pesi</string>
     <string name="name_cnh">Kínverskt júan (utan heimalands)</string>
     <string name="name_cny">Kínverskt júan</string>
@@ -49,11 +51,35 @@
     <string name="name_fkp">Falklenskt pund</string>
     <string name="name_fok">Færeysk króna</string>
     <string name="name_gbp">Sterlingspund</string>
+
+
+
+
+
+
+
+
     <string name="name_hkd">Hong Kong-dalur</string>
+
+
+
+
+
+
     <string name="name_imp">Manx pund</string>
     <string name="name_inr">Indversk rúpía</string>
+
+
     <string name="name_isk">Íslensk króna</string>
+
+
+
     <string name="name_jpy">Japanskt jen</string>
+
+
+
+
+
     <string name="name_krw">Suðurkóreskt vonn</string>
     <string name="name_kwd">Kúveiskur denari</string>
     <string name="name_kyd">Caymaneyskur dalur</string>
@@ -62,6 +88,7 @@
     <string name="name_lbp">Líbanskt pund</string>
     <string name="name_lkr">Srílönsk rúpía</string>
     <string name="name_lrd">Líberískur dalur</string>
+
     <string name="name_lyd">Líbískur denari</string>
     <string name="name_mad">Marokkóskt dírham</string>
     <string name="name_mdl">Moldavískt lei</string>
@@ -84,14 +111,66 @@
     <string name="name_nok">Norsk króna</string>
     <string name="name_npr">Nepölsk rúpía</string>
     <string name="name_nzd">Nýsjálenskur dalur</string>
+
+
+
+
+
+
+
+
+
+
+
     <string name="name_rub">Rússnesk rúbla</string>
+
+
+
     <string name="name_scr">Seychellesrúpía</string>
+
     <string name="name_sek">Sænsk króna</string>
     <string name="name_sgd">Singapúrskur dalur</string>
+
+
+
+
+
+
+
+
+
     <string name="name_syp">Sýrlenskt pund</string>
+
+
+
+
+
+
     <string name="name_try">Tyrknesk líra</string>
+
+
+
     <string name="name_uah">Úkraínsk hrinja</string>
+
     <string name="name_usd">Bandaríkjadalur</string>
+
+
+
+
     <string name="name_vnd">Víetnamskt dong</string>
+
+
+
+
     <string name="name_xau">Gull únsa</string>
+
+
+
+
+
+
+
+
+
+
 </resources>
