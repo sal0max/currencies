@@ -2,7 +2,7 @@
 
 <!-- badges -->
 <div align="right">
-   <a href="https://weblate.bubu1.eu/engage/currencies/"><img alt="translation status" height="20" src="https://weblate.bubu1.eu/widgets/currencies/-/svg-badge.svg"></a>
+   <a href="https://translate.codeberg.org/engage/currencies/"><img alt="translation status" height="20" src="https://translate.codeberg.org/widgets/currencies/-/svg-badge.svg"></a>
    <img alt="build status" height="20" src="https://github.com/sal0max/currencies/actions/workflows/build.yaml/badge.svg">
 </div>
 
@@ -21,7 +21,6 @@ It is **not** intended to be used for realtime financial business, rather to be 
    <a href="https://www.paypal.com/donate?hosted_button_id=2JCY7E99V9DGC"><img alt="Donate with PayPal" height="75" src="https://raw.githubusercontent.com/aha999/DonateButtons/master/Paypal.png"></a>
 </div>
 
-
 ## Features
 
 * The app supports all relevant currencies. You can choose between several exchange rate providers:
@@ -36,7 +35,6 @@ It is **not** intended to be used for realtime financial business, rather to be 
 * **Currencies** is written for Android in Kotlin, targeting Android 13 and supporting light and dark themes.
 * The app is ad-free and doesn't spy on the user.
 
-
 ## Screenshots
 
 <div align="center">
@@ -44,15 +42,14 @@ It is **not** intended to be used for realtime financial business, rather to be 
    <img src="art/screenshots/screen03.png" width="45%" alt="screenshot 2">
 </div>
 
-
 ## Development
 
 Check out [CONTRIBUTING.md](CONTRIBUTING.md), if you are interested in participating.
 
-
 ## License
+
 Copyright 2021 Maximilian Salomon
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.
+You should have received a copy of the GNU General Public License along with this program. If not, see [http://www.gnu.org/licenses](http://www.gnu.org/licenses/).
