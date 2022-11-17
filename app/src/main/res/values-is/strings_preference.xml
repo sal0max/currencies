@@ -23,17 +23,17 @@
 
 
 
-
-
-
-
+    <string name="api_refreshPeriod_title">Endurnýjunartímabil</string>
+    <string name="api_refreshPeriod_exchangerateHost">Gengi eru uppfærð um miðnætti UTC alla virka daga.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
+    <string name="api_refreshPeriod_ferEe">Gengi eru uppfærð alla virka daga.</string>
     <!-- about -->
+    <string name="category_about">Um forritið</string>
+    <string name="disclaimer_title">Fyrirvari</string>
 
-
-
-
-
-
-
-
+    <string name="donate_title">Styðja höfundinn</string>
+    <string name="donate_summary">Framlag í gegnum PayPal</string>
+    <string name="rate_title">Meta forritið</string>
+    <string name="rate_summary">Það má hjálpa öðrum að finna forritið. Smelltu hingað til að gefa forritinu einkunn á Google Play.</string>
+    <string name="aboutVersion">Útgáfa %1$s</string>
 </resources>

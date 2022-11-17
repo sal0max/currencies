@@ -1,0 +1,4 @@
+- Ahora puedes deslizar hacia abajo para actualizar los precios.
+- Mejor realimentación al actualizar los precios y en caso de que existan errores.
+- Nuevo idioma: Un amable miembro de la comunidad ha ayudado con la traducción a Turco. ¡Gracias! 🇹🇷
+- En algunas situaciones, una API incorrecta fue usada en la cronología. Ya está arreglado.

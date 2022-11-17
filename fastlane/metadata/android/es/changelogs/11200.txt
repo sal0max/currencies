@@ -1,0 +1,4 @@
+- Esta versión soluciona varios problemas de diseño con idiomas que usan la estructura de derecha-a-izquierda. Todo debería verse ya como se esperaba.
+- Nueva función: Previsualiza todas las conversiones de la moneda elegida. Tienes que habilitarlo en ajustes.
+- A veces, las monedas mostraban datos antiguos o erróneos después de actualizar los precios. Ya está solucionado.
+- Una gran cantidad de mejoras en el código, para que esta aplicación sea incluso mejor.

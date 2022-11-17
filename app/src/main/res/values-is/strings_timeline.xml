@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> ➞ &lt;b>%2$s&lt;/b></string>
-    <string name="data_provider">Gagnasett frá &lt;b>%s&lt;/b></string>
-    <string name="rate_average">meðaltal</string>
-    <string name="rate_min">lágmark</string>
-    <string name="rate_max">hámark</string>
+    <string name="activity_timeline_title">&lt;b&gt;%1$s&lt;/b&gt; ➞ &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="data_provider">Gagnasett frá &lt;b&gt;%s&lt;/b&gt;</string>
+    <string name="rate_average">meðal.</string>
+    <string name="rate_min">lágma.</string>
+    <string name="rate_max">hámar.</string>
     <string name="year">ár</string>
     <string name="month">mánuð</string>
     <string name="week">viku</string>
