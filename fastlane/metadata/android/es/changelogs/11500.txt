@@ -1,0 +1,4 @@
+- Nuevo idioma: Holandés. ¡Muchas gracias al voluntario! 🇳🇱🌷
+- Nueva función: Ahora puedes alternar las monedas dentro de la vista de la línea de tiempo con un solo clic.
+- De nuevo se ha solucionado un problema por el que la aplicación se bloqueaba en algunos casos, cuando se utilizaba el tema oscuro.
+- Varias pequeñas mejoras en la interfaz de usuario.

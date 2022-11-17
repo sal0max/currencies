@@ -1,0 +1,2 @@
+- Nueva función: Ahora se pueden seleccionar las tarifas históricas que se utilizarán para el cálculo.
+- Nuevo idioma: Indonesio. Muchas gracias, @liimee! 🇮🇩🏝️
