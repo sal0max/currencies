@@ -1,0 +1,1 @@
+- Arreglado un fallo con la actualización de precios. ¡Perdón! 🤕
