@@ -5,7 +5,7 @@
     <string name="desc_toggle_currencies">alternar moedas</string>
     <string name="rates_date_latest">Taxas a partir de <b>%1$s</b> via <b>%2$s</b></string>
     <string name="rates_date_historical">Taxas históricas de <b>%1$s</b> via <b>%2$s</b></string>
-    <string name="copied_to_clipboard">Copiado <b>%s</b> para área de transferência</string>
+    <string name="copied_to_clipboard">Copiado <b>%s</b> para a área de transferência</string>
     <string name="error_http">O servidor respondeu com HTTP %d</string>
     <string name="error_timeout">O servidor não respondeu a tempo ou não está acessível.</string>
     <string name="historical_rates_dialog_title">Taxas históricas</string>
