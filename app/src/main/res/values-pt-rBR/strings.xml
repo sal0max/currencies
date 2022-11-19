@@ -3,4 +3,5 @@
     <string name="decimal_separator">.</string>
     <string name="thousands_separator"> </string>
     <string name="desc_toggle_currencies">alternar moedas</string>
+    <string name="rates_date_latest">Taxas a partir de <b>%1$s</b> via <b>%2$s</b></string>
 </resources>
