@@ -6,4 +6,14 @@
     <string name="rates_date_latest">Taxas a partir de <b>%1$s</b> via <b>%2$s</b></string>
     <string name="rates_date_historical">Taxas históricas de <b>%1$s</b> via <b>%2$s</b></string>
     <string name="copied_to_clipboard">Copiado <b>%s</b> para área de transferência</string>
+    <string name="error_http">O servidor respondeu com HTTP %d</string>
+    <string name="error_timeout">O servidor não respondeu a tempo ou não está acessível.</string>
+    <string name="historical_rates_dialog_title">Taxas históricas</string>
+    <string name="historical_rates_dialog_toggle">Utilize taxas de câmbio de uma data específica. Desabilite, para pegar sempre as mais recentes.</string>
+    <string name="error">Erro: %s</string>
+    <string name="error_generic">Problema desconhecido.</string>
+    <string name="error_no_data">Não foi possível conectar ao servidor.</string>
+    <string name="error_api_error">Ocorreu um erro de API. Por favor, tente novamente mais tarde.</string>
+    <string name="menu_settings">Configurações</string>
+    <string name="menu_refresh">Atualizar taxas</string>
 </resources>
