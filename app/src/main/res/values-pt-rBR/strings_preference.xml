@@ -1,2 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="fee_title">Taxa de transacção estrangeira</string>
+    <string name="previewConversion_title">Previsão da conversão</string>
+    <string name="extendedKeypad_title">Teclado numérico extendido</string>
+    <string name="extendedKeypad_summary">Adicionar dois botões: <b>00</b>&nbsp;e&nbsp;<b>000</b>.</string>
+    <string name="theme_option_dark">Escuro</string>
+    <string name="theme_option_default">Predefinição do sistema</string>
+    <string name="pure_black_enabled_title">escuro OLED</string>
+    <string name="pure_black_enabled_summary">Usar modo escuro puro no modo escuro</string>
+    <string name="category_api">Taxas de câmbio</string>
+    <string name="api_title">Fornecedor de serviço</string>
+    <string name="api_about_title">Sobre %s</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> apresenta as taxas de câmbios de vários fornecedores de informação financeira e bancos, incluindo o European Central Bank. Todas as taxas de câmbios derivam de um ponto médio. Pontos médios são determinados por cálculo da taxa média da oferta e procura.
+\n<b>Cerca de 160 moedas estão incluídas.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> segue taxas de câmbios de referência (forex) publicadas pelo European Central Bank.
+\n<b>Cerca de 30 moedas estão incluídas.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> é um serviço relativamente novo, que (como o Frankfurter.app) segue as taxas de câmbio de referência (forex) que são publicadas pelo European Central Bank.
+\n<b>Cerca de 30 moedas estão incluídas.</b></string>
+    <string name="api_refreshPeriod_title">Intervalo de atualização</string>
+    <string name="api_refreshPeriod_frankfurterApp">A informação é atualizada cerca das 16:00 CET a cada dia útil.</string>
+    <string name="api_refreshPeriod_exchangerateHost">Taxas de câmbios são atualizadas perto da meia noite UTC a cada dia útil.</string>
+    <string name="api_refreshPeriod_ferEe">Taxas atualizadas a cada dia útil.</string>
+    <string name="category_about">Sobre esta app</string>
+    <string name="disclaimer_title">Renúncia de responsabilidade</string>
+    <string name="donate_title">Apoiar o programador</string>
+    <string name="donate_summary">Doar via PayPal</string>
+    <string name="rate_title">Classifique esta app</string>
+    <string name="rate_summary">Se desejar, pode ajudar outros a descobrir Currencies. Clique aqui para avaliar a aplicação no Google Play.</string>
+    <string name="aboutVersion">Versão %1$s</string>
+    <string name="category_settings">Definições gerais</string>
+    <string name="fee_summary">Dependendo das condições do seu cartão de crédito, o seu banco pode cobrar uma taxa em todas as transacções de moedas estrangeiras. Aqui pode introduzir essa taxa. Será adicionada no início do cálculo, para assim saber quanto paga <i>mesmo</i>.</string>
+    <string name="previewConversion_summary">Mostrar a conversão atual para cada taxa no selecionador de moeda.</string>
+    <string name="category_appearance">Aparência</string>
+    <string name="theme_title">Aspeto</string>
+    <string name="theme_option_light">Claro</string>
+    <string name="disclaimer_summary">Embora a aplicação seja cuidadosamente escrita e testada, <b>não há garantias de que os dados que mostra sejam correctos</b>. As taxas de câmbio são fornecidas por um terceiro e esta aplicação não pode fazer qualquer promessa de que os dados são verdadeiros e atualizados.
+\nAlém disso, as taxas fornecidas - ainda que correctas - podem variar em relação às utilizadas pelo seu banco.
+\nPor último: os erros acontecem. Nunca confie cegamente em ninguém! Dito isto, fique descansado que eu não teria divulgado esta aplicação se tivesse tido alguma dúvida de que funciona como pretendido.</string>
+</resources>
