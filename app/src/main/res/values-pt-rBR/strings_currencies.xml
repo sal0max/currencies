@@ -31,7 +31,7 @@
     <string name="name_chf">Franco Suíço</string>
 
     <string name="name_clp">Peso Chileno</string>
-    <string name="name_cnh">Yuan chinês offshore</string>
+    <string name="name_cnh">Yuan Chinês (Offshore)</string>
     <string name="name_cny">Yuan Chinês</string>
     <string name="name_cop">Peso Colombiano</string>
     <string name="name_crc">Colón Costa-riquenho</string>
@@ -46,7 +46,7 @@
     <string name="name_egp">Libra Egípcia</string>
 
     <string name="name_etb">Birr Etíope</string>
-
+    <string name="name_eur">Euro</string>
     <string name="name_fjd">Dólar de Fiji</string>
 
 

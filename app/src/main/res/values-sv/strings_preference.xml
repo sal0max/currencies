@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">Allmänna inställningar</string>
+    <string name="fee_title">Växlingspåslag</string>
+    <string name="fee_summary">Beroende på ditt avtal för ditt betalkort, så kan din bank ta ut en avgift på transaktioner i utländsk valuta. Här kan du ange vilken avgift du har. Den kommer att läggas på ovanpå kursberäkningarna, så att du vet hur mycket du <i>faktiskt</i> får betala.</string>
+
+
+    <string name="extendedKeypad_title">Utökad knappsats</string>
+    <string name="extendedKeypad_summary">Lägger till två ytterligare knappar: <b>00</b>&nbsp;och&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">Utseende</string>
+    <string name="theme_title">Färgtema</string>
+    <string name="theme_option_light">Ljust</string>
+    <string name="theme_option_dark">Mörkt</string>
+    <string name="theme_option_default">Systemets standard</string>
+    <string name="pure_black_enabled_title">OLED-svart</string>
+    <string name="pure_black_enabled_summary">Använd helt svart färg i mörkt läge</string>
+    <!-- api -->
+    <string name="category_api">Valutakurser</string>
+    <string name="api_title">Dataleverantör</string>
+    <string name="api_about_title">Om %s</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> hämtar in valutakurser från olika leverantörer av finansiell data samt banker, inklusive den Europeiska centralbanken. Alla valutakurser levereras som mittpunktsdata, dvs de beräknas som genomsnittet av köp- och säljkursen.\n<b>Ungefär 160 valutor ingår.</b></string>
+
+
+    <string name="api_refreshPeriod_title">Uppdateringsperiod</string>
+    <string name="api_refreshPeriod_exchangerateHost">Valutakurserna uppdateras varje arbetsdag, runt midnatt UTC.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Datan uppdateras runt 16:00 CET på arbetsdagar.</string>
+    <string name="api_refreshPeriod_ferEe">Valutakurserna uppdateras varje arbetsdag.</string>
+    <!-- about -->
+    <string name="category_about">Om appen</string>
+    <string name="disclaimer_title">Ansvarsfriskrivelse</string>
+    <string name="donate_summary">Donera via PayPal</string>
+    <string name="donate_title">Stöd utvecklaren</string>
+
+    <string name="rate_title">Betygssätt appen</string>
+    <string name="rate_summary">Om du vill så kan du bidra till att fler upptäcker Currencies. Tryck här för att betygssätta appen på Google Play.</string>
+    <string name="aboutVersion">Version %1$s</string>
+</resources>

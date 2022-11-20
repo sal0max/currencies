@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator">\u2009</string>
+    <string name="desc_toggle_currencies">växla köp/sälj</string>
+    <string name="rates_date_latest">Kurser från &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Historiska kurser från &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">Kopierade &lt;b>%s&lt;/b> till urklipp</string>
+    <string name="historical_rates_dialog_title">Historiska kurser</string>
+    <string name="historical_rates_dialog_toggle">Använd växlingskurser från ett specifikt datum. Inaktivera för att använda de senaste kurserna.</string>
+    <string name="error">Fel: %s</string>
+    <string name="error_generic">Okänt problem.</string>
+    <string name="error_http">Servern svarade med HTTP %d</string>
+    <string name="error_timeout">Servern svarade inte i tid eller är inte nåbar.</string>
+    <string name="error_no_data">Kunde inte ansluta till servern.</string>
+    <string name="error_api_error">Ett API-fel har inträffat. Försök igen senare.</string>
+    <string name="menu_settings">Inställningar</string>
+    <string name="menu_refresh">Uppdatera kurser</string>
+    <string name="menu_timeline">Diagram över valutakurs</string>
+    <string name="tooltip_filter_starred">Visa endast favoritvalutor.</string>
+</resources>
