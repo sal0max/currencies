@@ -1,0 +1,3 @@
+- Geniet van enkele grote nieuwe functies in deze versie! Het meest opvallende is dat deze app nu historische koersen bevat. Bekijk de grafiek van het afgelopen jaar, om te zien hoe de valuta's zich hebben ontwikkeld.
+- Er is ook een extra aanbieder van wisselkoersen.
+- Zoals altijd bevat deze release bijgewerkte bibliotheken, kleine verbeteringen en alle dingen die het nog beter maken.

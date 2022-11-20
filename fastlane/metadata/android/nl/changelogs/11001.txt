@@ -1,3 +1,3 @@
 - Crash opgelost op Android 8.0
 - Bijgewerkte vertalingen
-- Kleine UI-verbeteringen
+- Kleine UI verbeteringen

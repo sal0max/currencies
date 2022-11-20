@@ -1,0 +1,3 @@
+- Upplev några stora nya funktioner i denna version! Främst, så visar appen historiska kurser nu. Kolla diagrammet för senaste året för att se hur valutakurserna har utvecklats.
+- Det finns nu ytterligare än kursdataleverantör: Man an nu välja fer.ee i inställningarna. En relativt ny tjänst, som fungerar likt frankfurter.app och ger ännu en valmöjlighet för dig.
+- Som alltid, så innehåller denna version uppdaterade programbibliotek, mindre förbättringar och allt annat som gör den ännu bättre.

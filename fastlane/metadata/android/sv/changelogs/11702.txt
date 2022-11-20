@@ -1,0 +1,1 @@
+Nytt: Belopp kan nu klistras in från urklipp.

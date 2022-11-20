@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Pengaturan Umum</string>
@@ -6,6 +7,8 @@
     <string name="fee_summary">Tergantung kebijakan kartu kredit Anda, bank Anda mungkin mengenakan biaya untuk semua transaksi luar negeri. Di sini Anda dapat memasukkan biayanya. Ini akan ditambahkan ke hasil perhitungan, sehingga Anda tahu berapa yang <i>sebenarnya</i> Anda bayar.</string>
     <string name="previewConversion_title">Pratinjau konversi</string>
     <string name="previewConversion_summary">Tampilkan konversi yang dilakukan untuk setiap nilai tukar pada pemilihan mata uang.</string>
+    <string name="extendedKeypad_title">Papan Ketik Lengkap</string>
+    <string name="extendedKeypad_summary">Menambahkan dua tombol tambahan: <b>00</b>&nbsp;dan&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Tampilan</string>
     <string name="theme_title">Desain</string>
     <string name="theme_option_light">Cerah</string>

@@ -1,0 +1,4 @@
+- Denna version åtgärdas flera layoutproblem med språk med höger-till-vänster-skrift (RTL). Nu så ska all se ut på rätt sätt.
+- Ny funktion: Förhandsvisa alla konverteringar i valutaväljaren. Det behöver aktiveras i inställningarna.
+- Ibland så visades gammal eller felaktig data efter uppdatering. Det är åtgärdat.
+- Verkligen många kodförbättringar, för att göra appen ännu bättre.

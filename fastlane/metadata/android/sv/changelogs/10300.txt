@@ -1,0 +1,4 @@
+- Så många fler valutor! Över 160 total sett nu!! Det är tack vare att Currencies bytte till ett annat API. Det gamla (exchangeratesapi.io) införde abonnemang utan någon föregående varning. ILLA! Vår nya dataleverantör blir exchangerate.host.
+- Därmed gick det inte att uppdatera kurser under de senaste dagarna. Det är givetvis löst nu.
+- Därtill har uppdateringsprocessen förbättrats. Så om det händer igen, så får man åtminstone en varning.
+- Mindre förbättringar av användargränssnittet

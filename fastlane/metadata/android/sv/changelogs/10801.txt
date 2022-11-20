@@ -1,0 +1,1 @@
+- Åtgärdade ett fel som gjorde att appen kraschade i vissa fall, när det mörka färgtemat användes.

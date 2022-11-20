@@ -1,0 +1,2 @@
+- Det är möjligt att uppdatera kurserna manuellt nu. Prova detta i menyn.
+- Förbättrad prestanda

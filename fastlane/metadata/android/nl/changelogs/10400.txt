@@ -1,2 +1,2 @@
-- Het is nu mogelijk om de tarieven handmatig te vernieuwen. Bekijk het in het overloopmenu.
+- Het is nu mogelijk om de tarieven handmatig te vernieuwen. Bekijk het in het "overflow" menu.
 - Prestatieverbeteringen

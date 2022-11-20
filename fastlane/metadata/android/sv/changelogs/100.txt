@@ -1,0 +1,3 @@
+- Mer felsäker uppdatering av valutakurser
+- La till en ansvarsfriskrivning
+- La till denna ändringslogg

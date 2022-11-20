@@ -1,0 +1,4 @@
+- Förbättrade visningen av valutakursens ålder.
+- La till ett menyval under inställningar för att betygssätta appen på Google Play (givetvis inte i F-Droid-versionen).
+- Ännu än översättning: appen har nu översatts till vietnamesiska.
+- Mindre förbättringar.

@@ -1,1 +1,1 @@
-Een valuta-omzetter voor wisselkoersen voor Android
+Een wisselkoersen valuta-omzetter voor Android

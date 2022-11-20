@@ -1,0 +1,4 @@
+- Zoveel meer valuta! Meer dan 160 in totaal! Dat komt omdat Wisselkoersen is overgestapt op een andere API. De oude (exchangeratesapi.io) veranderde naar een abonnementsmodel zonder voorafgaande waarschuwing, dus onze nieuwe provider wordt exchangerate.host.
+- Dat betekent dat de afgelopen dagen de wisselkoersen niet ververst konden worden., nu weer wel.
+- Ook is het verversingsproces verbeterd, dus de volgende keer dat zoiets gebeurt, krijg je tenminste een melding.
+- Kleine UI verbeteringen
