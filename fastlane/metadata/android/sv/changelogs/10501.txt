@@ -1,0 +1,2 @@
+- Åtgärdar en bugg, som gjorde att kurserna in uppdaterades, när exchangerate.host användes.
+- Uppdaterade programbibliotek för att förbättra stabilitet och prestanda.

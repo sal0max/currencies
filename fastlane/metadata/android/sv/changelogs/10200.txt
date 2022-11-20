@@ -1,0 +1,3 @@
+- 17 nya valutor! Det är totalt 50 nu. 🥳 För många för att nämna alla. Men valutor från många populära semesterorter i mellanöstern och östkaribien ingår nu: Förenade arabemiraten, Qatar, Barbados, Bahamas, Kuba, …
+- För att hantera alla nya valutor som kan väljas mellan, så finns det nu en sökfunktion i valutaväljaren.
+- Valutaväljaren visar nu landets fullständiga namn, och inte enbart landskoden. Ett ypperligt tillägg tillsammans med sökfunktionen. Prova den gärna!

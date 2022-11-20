@@ -1,0 +1,4 @@
+- Ytterligare ett till språk: Arabiska. Stort tack till Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪
+- Fler åtgärder för höger-till-vänster-skrift för landskapslayout.
+- Åtgärdade en krasch om man anger ett tomt värde som avgift.
+- Namnet på dataleverantören visas i tidslinjesvyn.

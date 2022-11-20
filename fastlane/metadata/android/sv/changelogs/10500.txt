@@ -1,0 +1,3 @@
+- Val mellan två dataleverantörer: exchangerate.host och frankfurter.app
+- Du kan nu stödja utvecklaren genom en donation via PayPal. Länken finns i inställningarna.
+- Fler förbättringar av användargränssnittet

@@ -1,0 +1,3 @@
+- Det går att välja favoritvalutor nu, för snabbare åtkomst. Ha det så kul! ❤
+- La till en inställning för helt svart färg, vid användning av mörkt läge.
+- Uppdaterade översättningarna. Stort tack till alla bidragsgivare!
