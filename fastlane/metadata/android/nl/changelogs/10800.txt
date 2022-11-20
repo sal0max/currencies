@@ -1,4 +1,4 @@
 - Verbeterde weergave van de wisselkoersleeftijd.
 - Een voorkeursitem toegevoegd om de app op Google Play te beoordelen (uiteraard niet in de F-Droid-versie).
 - Nog een andere lokalisatie: de app is nu vertaald naar het Vietnamees.
-- Kleine kleine verbeteringen.
+- Kleine verbeteringen.
