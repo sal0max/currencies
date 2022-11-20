@@ -30,7 +30,7 @@
     <!-- about -->
     <string name="category_about">Um forritið</string>
     <string name="disclaimer_title">Fyrirvari</string>
-
+    <string name="disclaimer_summary">Þrátt fyrir að forritið sé vel skrifað og prófað er <b>engin trygging fyrir því að gögnin sem það sýnir séu rétt</b>. Gengin eru gefin upp af þriðju aðilum og forritið getur ekki gefið nein loforð um að gögnin séu rétt.\nAð auki geta vextirnir sem gefnir eru upp verið frábrugðnir þeim sem bankinn þinn notar.\nAð lokum: Mistök gerast. Treystu aldrei neinum í blindni! En samt vertu viss um að ég hefði ekki gefið út þetta forrit ef ég hefði verið í nokkrum vafa um að það virki eins og ætlað er.</string>
     <string name="donate_title">Styðja höfundinn</string>
     <string name="donate_summary">Framlag í gegnum PayPal</string>
     <string name="rate_title">Meta forritið</string>

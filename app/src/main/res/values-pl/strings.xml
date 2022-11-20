@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="decimal_separator">.</string>
-    <string name="thousands_separator"> </string>
+    <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">przełącz waluty</string>
     <string name="rates_date_latest">Kursy na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
     <string name="rates_date_historical">Kursy historyczne na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>

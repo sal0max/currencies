@@ -1,0 +1,3 @@
+- Se ha mejorado la precisión de los tipos de cambio en la vista de la línea de tiempo.
+- Nuevo idioma: Polaco. ¡Muchas gracias, ewm!
+- Muchas traducciones actualizadas. ¡Gracias a todos los colaboradores!
