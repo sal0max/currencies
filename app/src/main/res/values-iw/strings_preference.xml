@@ -35,5 +35,4 @@
     <string name="donate_summary">תרומה דרך PayPal</string>
     <string name="rate_title">דירוג היישומון</string>
     <string name="rate_summary">לבחירתך, אפשר לסייע לאחרים להיחשף ליישומון. לחיצה כאן תוביל אותך לדירוג ב־Google Play.</string>
-    <string name="aboutVersion">גרסה %1$s</string>
 </resources>

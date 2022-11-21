@@ -35,5 +35,4 @@
     <string name="donate_summary">Adományozás PayPal-on keresztül</string>
     <string name="rate_title">Értékeld az alkalmazást</string>
     <string name="rate_summary">Ha szeretnéd, segíthetsz másoknak felfedezni a Currencies-t. Kattints ide az alkalmazás értékeléséhez a Google Play-en.</string>
-    <string name="aboutVersion">Verzió: %1$s</string>
 </resources>

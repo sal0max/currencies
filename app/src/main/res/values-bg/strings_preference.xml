@@ -35,5 +35,4 @@
     <string name="donate_summary">Дари чрез PayPal</string>
     <string name="rate_title">Оцени това приложение</string>
     <string name="rate_summary">Ако искаш, можеш да помогнеш на другите да открият Currencies. Натисни тук да оцениш приложението в Google Play.</string>
-    <string name="aboutVersion">Версия %1$s</string>
 </resources>

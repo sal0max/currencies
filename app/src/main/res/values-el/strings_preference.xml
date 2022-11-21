@@ -35,5 +35,4 @@
     <string name="donate_summary">Δωρεά μέσω PayPal</string>
     <string name="rate_title">Αξιολόγηση της εφαρμογής</string>
     <string name="rate_summary">Αν θέλετε, μπορείτε να βοηθήσετε και άλλους να ανακαλύψουν την εφαρμογή. Πατήστε εδώ για να την αξιολογήσετε στο Google Play.</string>
-    <string name="aboutVersion">Έκδοση %1$s</string>
 </resources>

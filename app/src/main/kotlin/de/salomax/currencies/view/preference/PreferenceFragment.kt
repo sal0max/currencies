@@ -118,14 +118,18 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
         }
 
-        // about
-        findPreference<Preference>(getString(R.string.about_key))?.apply {
-            title = getString(R.string.aboutVersion, BuildConfig.VERSION_NAME)
-            summary = getString(R.string.about_summary, Calendar.getInstance().get(Calendar.YEAR).toString())
+        // changelog
+        findPreference<Preference>(getString(R.string.changelog_key))?.apply {
             setOnPreferenceClickListener {
                 ChangelogDialog().show(childFragmentManager, null)
                 true
             }
+        }
+
+        // about
+        findPreference<Preference>(getString(R.string.version_key))?.apply {
+            title = BuildConfig.VERSION_NAME
+            summary = getString(R.string.version_summary, Calendar.getInstance().get(Calendar.YEAR).toString())
         }
 
         // rate

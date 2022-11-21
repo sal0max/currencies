@@ -35,5 +35,5 @@
     <string name="donate_summary">Spende über PayPal</string>
     <string name="rate_title">Diese App bewerten</string>
     <string name="rate_summary">Wenn du möchtest, kannst du helfen, dass noch mehr Leute Currencies entdecken. Klicke hier, um die App auf Google Play zu bewerten.</string>
-    <string name="aboutVersion">Version %1$s</string>
+    <string name="category_versioninfo">Versionsinfo</string>
 </resources>

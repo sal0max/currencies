@@ -12,16 +12,16 @@
             tools:summary="2.0 %" />
 
         <SwitchPreferenceCompat
-            app:defaultValue="false"
             android:key="@string/previewConversion_key"
+            android:summary="@string/previewConversion_summary"
             android:title="@string/previewConversion_title"
-            android:summary="@string/previewConversion_summary" />
+            app:defaultValue="false" />
 
         <SwitchPreferenceCompat
-            app:defaultValue="false"
             android:key="@string/extendedKeypad_key"
+            android:summary="@string/extendedKeypad_summary"
             android:title="@string/extendedKeypad_title"
-            android:summary="@string/extendedKeypad_summary" />
+            app:defaultValue="false" />
     </PreferenceCategory>
 
     <PreferenceCategory
@@ -72,10 +72,19 @@
             android:key="@string/rate_key"
             android:summary="@string/rate_summary"
             android:title="@string/rate_title" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/category_versioninfo"
+        app:allowDividerAbove="false">
         <Preference
-            android:key="@string/about_key"
-            android:summary="@string/about_summary"
-            android:title="@string/aboutVersion" />
+            android:key="@string/changelog_key"
+            android:title="@string/title_changelog" />
+        <Preference
+            android:key="@string/version_key"
+            android:selectable="false"
+            android:summary="@string/version_summary"
+            tools:title="v1.0.0" />
     </PreferenceCategory>
 
 </PreferenceScreen>
