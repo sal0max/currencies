@@ -36,4 +36,5 @@
     <string name="rate_title">Diese App bewerten</string>
     <string name="rate_summary">Wenn du möchtest, kannst du helfen, dass noch mehr Leute Currencies entdecken. Klicke hier, um die App auf Google Play zu bewerten.</string>
     <string name="category_versioninfo">Versionsinfo</string>
+    <string name="title_changelog">Änderungsprotokoll</string>
 </resources>

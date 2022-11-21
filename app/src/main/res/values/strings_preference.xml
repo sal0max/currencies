@@ -47,6 +47,7 @@
     <string name="rate_summary">If you\'d like, you can help others to discover Currencies. Click here to rate the app on Google Play.</string>
     <string name="category_versioninfo">Version info</string>
     <string name="changelog_key" translatable="false">KEY_CHANGELOG</string>
+    <string name="title_changelog">Changelog</string>
     <string name="version_key" translatable="false">KEY_ABOUT</string>
     <string name="version_summary" translatable="false" tools:ignore="PluralsCandidate">© 2020-%1$s Maximilian Salomon</string>
 </resources>

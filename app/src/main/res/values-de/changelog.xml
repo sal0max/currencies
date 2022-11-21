@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_changelog">Änderungsprotokoll</string>
-
     <string-array name="changelog_1.17.5">
         <item>Verbesserte Präzision der Wechselkurse in der Kursverlauf-Anzeige.</item>
         <item>Neue Sprache: Polnisch. Vielen Dank, ewm! 🇵🇱</item>

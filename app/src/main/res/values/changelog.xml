@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_changelog">Changelog</string>
-
     <string-array name="changelog_1.17.5">
         <item>Improved the precision of exchange rates in timeline view.</item>
         <item>New language: Polish. Thanks a lot, ewm! 🇵🇱</item>
