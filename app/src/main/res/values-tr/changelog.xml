@@ -111,7 +111,7 @@
 
     <string-array name="changelog_1.7.0">
         <item>Bu yama ile beraber yeni bir özelliğin tadını çıkarın! Uygulama artık geçmiş kurları da içeriyor. Para birimlerinin gelişimlerini görmek için geçmiş yıllara ait grafikleri inceleyebilirsin.</item>
-        <item>Ayrıca size daha fazla seçenek sunmak adına bir sağlayıcı daha ekledik. Artık ayarlardan frankfurter.app\'a benzer bir hizmet olan fer.ee'yi seçebilirsiniz.</item>
+        <item>Ayrıca size daha fazla seçenek sunmak adına bir sağlayıcı daha ekledik. Artık ayarlardan frankfurter.app\'a benzer bir hizmet olan fer.ee\'yi seçebilirsiniz.</item>
         <item>Bu yama her zamanki gibi kütüphane güncellemeler ve küçük geliştirmelerle beraber uygulamayı daha iyi yapacak birçok yeniliği içermektedir.</item>
     </string-array>
 

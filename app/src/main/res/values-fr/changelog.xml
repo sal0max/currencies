@@ -75,7 +75,7 @@
 
     <string-array name="changelog_1.11.0">
         <item>Vous pouvez maintenant tirer sur le bouton de rafraîchissement pour mettre à jour les tarifs.</item>
-        <item>Le retour d\'information est nettement amélioré lors de l\'actualisation des tarifs et en cas d'erreur.</item>
+        <item>Le retour d\'information est nettement amélioré lors de l\'actualisation des tarifs et en cas d\'erreur.</item>
         <item>Nouvelle langue : Un membre de la communauté a fourni des traductions pour le turc. Merci ! 🇹🇷</item>
         <item>Dans certaines situations, la mauvaise API était utilisée pour la ligne de temps. Cela est maintenant corrigé.</item>
     </string-array>
@@ -147,7 +147,7 @@
     </string-array>
 
     <string-array name="changelog_1.3.0">
-        <item>Tellement plus de devises ! Plus de 160 au total, maintenant ! C\'est parce que Currencies est passé à une API différente. L\'ancienne est passée à un modèle d'abonnement sans aucun avertissement préalable.</item>
+        <item>Tellement plus de devises ! Plus de 160 au total, maintenant ! C\'est parce que Currencies est passé à une API différente. L\'ancienne est passée à un modèle d\'abonnement sans aucun avertissement préalable.</item>
         <item>Cela signifie également que ces derniers jours, les taux de change ne pouvaient pas être actualisés. C\'est corrigé maintenant, bien sûr.</item>
         <item>De plus, le processus de rafraîchissement lui-même a été amélioré.</item>
         <item>Petites améliorations de l\'interface utilisateur</item>
