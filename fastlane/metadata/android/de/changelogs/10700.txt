@@ -1,3 +1,3 @@
 - Dieses Release enthält großartige neue Funktionen! Die App unterstützt nun die Anzeige historischer Daten. Sieh dir die Kursverläufe des vergangenen Jahres an, um nachzuvollziehen, wie sich die Währungen entwickelt haben.
 - Es gibt außerdem einen zusätzlichen Kursdatenanbieter: In den Einstellungen kann nun auch fer.ee ausgewählt werden. Ein recht neuer Dienst, der praktisch gleich wie frankfurter.app ist. Einfach eine Auswahlmöglichkeit mehr.
-- Wie immer enthält dieses Release aktualisierte Programmbibliotheken, kleine Verbesserungen und all die Dinge, die die App einfach besser machen.
+- Wie immer enthält dieses Release aktualisierte Programmbibliotheken, kleine Verbesserungen und all die Dinge, welche die App einfach besser machen.

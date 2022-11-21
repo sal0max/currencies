@@ -1,1 +1,1 @@
-New feature: Enable the Extended Keypad mode in the settings to unlock "00" and "000" buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.
+- New feature: Enable the Extended Keypad mode in the settings to unlock 00 and 000 buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.

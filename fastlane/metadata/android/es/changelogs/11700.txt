@@ -1,1 +1,1 @@
-Nueva función: Activar el modo de teclado extendido en los ajustes para desbloquear los botones "00" y "000". Realmente útil para monedas con números grandes como la rupia indonesia, el peso chileno, el dong vietnamita o el won surcoreano.
+- Nueva función: Activar el modo de teclado extendido en los ajustes para desbloquear los botones "00" y "000". Realmente útil para monedas con números grandes como la rupia indonesia, el peso chileno, el dong vietnamita o el won surcoreano.

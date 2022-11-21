@@ -1,4 +1,1 @@
-Beroende på ditt avtal för ditt betalkort, så kan din bank ta ut ett växlingspåslag.
-Det går nu att lägga till den avgiften i beräkningarna, så du vet hur mycket du egentligen betalar.
-
-Prova på det under Inställningar! 🙂
+- Beroende på ditt avtal för ditt betalkort, så kan din bank ta ut ett växlingspåslag. Det går nu att lägga till den avgiften i beräkningarna, så du vet hur mycket du egentligen betalar.

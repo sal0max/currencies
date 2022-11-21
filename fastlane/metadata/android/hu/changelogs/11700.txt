@@ -1,1 +1,1 @@
-Új funkció: "00" és "000" gombok használatához engedélyezd a Bővített billentyűzet módot a beállításokban. Nagyon hasznos a nagy számokkal rendelkező valuták, például az indonéz rúpia, a chilei peso, a vietnami dong vagy a dél-koreai won esetében.
+- Új funkció: "00" és "000" gombok használatához engedélyezd a Bővített billentyűzet módot a beállításokban. Nagyon hasznos a nagy számokkal rendelkező valuták, például az indonéz rúpia, a chilei peso, a vietnami dong vagy a dél-koreai won esetében.

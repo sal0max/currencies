@@ -1,1 +1,1 @@
-Nouvelle fonctionnalité : Activez le mode Clavier étendu dans les paramètres pour déverrouiller les touches "00" et "000". Très utile pour les devises comportant de grands chiffres comme la roupie indonésienne, le peso chilien, le dong vietnamien ou le won sud-coréen.
+- Nouvelle fonctionnalité : Activez le mode Clavier étendu dans les paramètres pour déverrouiller les touches "00" et "000". Très utile pour les devises comportant de grands chiffres comme la roupie indonésienne, le peso chilien, le dong vietnamien ou le won sud-coréen.

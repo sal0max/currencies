@@ -1,1 +1,1 @@
-Neu: Zahlen können nun aus der Zwischenablage eingefügt werden.
+- Neu: Zahlen können nun aus der Zwischenablage eingefügt werden.

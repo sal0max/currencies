@@ -1,2 +1,2 @@
 - Förbättrad design (Material 3).
-- Nytt språk: Tjeckiska. Tack, Fjuro!
+- Nytt språk: Tjeckiska. Tack, Fjuro! 🇨🇿

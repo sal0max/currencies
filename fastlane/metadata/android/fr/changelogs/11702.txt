@@ -1,1 +1,1 @@
-Nouveau : les nombres peuvent être collés depuis le presse-papier.
+- Nouveau : les nombres peuvent être collés depuis le presse-papier.

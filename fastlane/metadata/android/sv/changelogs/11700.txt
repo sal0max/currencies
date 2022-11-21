@@ -1,1 +1,1 @@
-Ny funktion: Aktivera utökad knappsats i inställningarna för att visa "00"- och "000"-knapparna. Verkligen användbart för valutor med stora belopp, såsom indonesisk rupie, chilensk peso, vietnamesisk dong eller sydkoreansk won.
+- Ny funktion: Aktivera utökad knappsats i inställningarna för att visa "00"- och "000"-knapparna. Verkligen användbart för valutor med stora belopp, såsom indonesisk rupie, chilensk peso, vietnamesisk dong eller sydkoreansk won.

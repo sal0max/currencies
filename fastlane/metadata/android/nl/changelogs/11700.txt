@@ -1,1 +1,1 @@
-Nieuwe functie: Schakel de uitgebreide toetsenbordmodus in de instellingen in om de toetsen "00" en "000" te ontgrendelen. Erg handig voor valuta's met grote getallen zoals de Indonesische rupiah, Chileense peso, Vietnamese dong of Zuid-Koreaanse won.
+- Nieuwe functie: Schakel de uitgebreide toetsenbordmodus in de instellingen in om de toetsen "00" en "000" te ontgrendelen. Erg handig voor valuta's met grote getallen zoals de Indonesische rupiah, Chileense peso, Vietnamese dong of Zuid-Koreaanse won.

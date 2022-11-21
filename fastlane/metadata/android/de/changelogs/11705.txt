@@ -1,3 +1,3 @@
 - Verbesserte Präzision der Wechselkurse in der Kursverlauf-Anzeige.
-- Neue Sprache: Polnisch. Vielen Dank, ewm!
+- Neue Sprache: Polnisch. Vielen Dank, ewm! 🇵🇱
 - Viele aktualisierte Übersetzungen. Dankeschön an alle Mitwirkende!

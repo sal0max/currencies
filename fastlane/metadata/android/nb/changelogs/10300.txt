@@ -1,4 +1,4 @@
-– Så mange flere valutaer! Over 160 totalt, nå!! Det er fordi valutaer byttet til et annet API. Den gamle (exchangeratesapi.io) endret til en abonnementsmodell uten noen forvarsel. IKKE BRA! Vår nye leverandør blir exchangerate.host.
+- Så mange flere valutaer! Over 160 totalt, nå!! Det er fordi valutaer byttet til et annet API. Den gamle (exchangeratesapi.io) endret til en abonnementsmodell uten noen forvarsel. IKKE BRA! Vår nye leverandør blir exchangerate.host.
 - Det betyr også at de siste par dagene ikke kunne oppdateres valutakursene. Det er løst nå, selvfølgelig.
 - Også selve oppdateringsprosessen ble forbedret, så neste gang noe sånt skjer, får du i det minste et varsel.
 - Små UI-forbedringer

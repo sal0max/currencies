@@ -1,1 +1,1 @@
-Nuevo: ahora se pueden pegar números desde el portapapeles.
+- Nuevo: ahora se pueden pegar números desde el portapapeles.

@@ -1,1 +1,1 @@
-New: Numbers can now be pasted from the clipboard.
+- New: Numbers can now be pasted from the clipboard.

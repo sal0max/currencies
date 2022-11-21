@@ -1,3 +1,3 @@
-- ausfallsicherere Aktualisierung der Währungskurse
+- Ausfallsicherere Aktualisierung der Währungskurse
 - Ausschlussklausel hinzugefügt
 - dieses Änderungsprotokoll hinzugefügt

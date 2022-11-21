@@ -1,3 +1,3 @@
-– Précision améliorée des taux de changes dans la vue chronologique ;
-– Nouvelle langue : Polonais. Merci à ewm !
-– De nombreuses traductions mises à jours. Merci à tous les bénévoles !
+- Précision améliorée des taux de changes dans la vue chronologique ;
+- Nouvelle langue : Polonais. Merci à ewm !
+- De nombreuses traductions mises à jour. Merci à tous les bénévoles !

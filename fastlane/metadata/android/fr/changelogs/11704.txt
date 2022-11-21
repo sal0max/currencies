@@ -1,2 +1,2 @@
-– Amélioration de l’interface (Material 3).
-– Nouvelle langue : Tchèque. Merci, Fjuro !
+- Amélioration de l’interface (Material 3).
+- Nouvelle langue: Tchèque. Merci, Fjuro! 🇨🇿

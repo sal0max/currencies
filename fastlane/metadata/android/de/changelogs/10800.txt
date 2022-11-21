@@ -1,4 +1,4 @@
 - Anzeige des Wechselkursalters verbessert.
 - Den Einstellungen einen Eintrag um die App in Google Play zu bewerten hinzugefügt (natürlich nicht in der F-Droid version).
-- Noch eine Lokalisierung: Die App ist nun auch auf Vietnamesisch übersetzt.
+- Noch eine Lokalisierung: Die App ist nun auch auf Vietnamesisch übersetzt. 🇻🇳
 - Kleine Verbesserungen.
