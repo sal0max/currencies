@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.15.0">
+        <item>Nytt språk: nederlandsk. Tusen takk til den frivillige! 🇳🇱🌷</item>
+        <item>Ny funksjon: Du kan nå veksle mellom valutaene i tidslinjevisningen med ett klikk.</item>
+        <item>Igjen fikset et problem der appen ville krasje i noen tilfeller når det mørke temaet ble brukt.</item>
+        <item>Ulike små UI-forbedringer.</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Så mange flere valutaer! Over 160 totalt, nå!! Det er fordi valutaer byttet til et annet API. Den gamle (exchangeratesapi.io) endret til en abonnementsmodell uten noen forvarsel. IKKE BRA! Vår nye leverandør blir exchangerate.host.</item>
+        <item>Det betyr også at de siste par dagene ikke kunne oppdateres valutakursene. Det er løst nå, selvfølgelig.</item>
+        <item>Også selve oppdateringsprosessen ble forbedret, så neste gang noe sånt skjer, får du i det minste et varsel.</item>
+        <item>Små UI-forbedringer</item>
+    </string-array>
+</resources>

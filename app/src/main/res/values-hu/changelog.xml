@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.0">
+        <item>Új funkció: "00" és "000" gombok használatához engedélyezd a Bővített billentyűzet módot a beállításokban. Nagyon hasznos a nagy számokkal rendelkező valuták, például az indonéz rúpia, a chilei peso, a vietnami dong vagy a dél-koreai won esetében.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Új fordítás: Magyar. Nagyra értékelem, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Frissített fordítások</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Új funkció: A számításhoz mostantól a múltbeli árfolyamok is kiválaszthatók.</item>
+        <item>Új nyelv: Indonéz. Köszönjük szépen, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Új nyelv: Holland. Köszönet az önkéntesnek! 🇳🇱🌷</item>
+        <item>Új funkció: Mostantól egy kattintással átkapcsolhatod a pénznemeket az idővonal nézeten belül.</item>
+        <item>Ismét javítottunk egy problémát, ahol az alkalmazás bizonyos esetekben összeomlott, ha a sötét témát használtuk.</item>
+        <item>Különböző apró UI javítások.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Néhány apró fejlesztés a Googles legújabb Material Design 3 irányelvének követése érdekében.</item>
+        <item>Frissített fordítások. Köszönöm mindenkinek, aki segít!</item>
+        <item>Különböző stabilitási javítások.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Egy másik új nyelv: Mostantól arabul is élvezheted az alkalmazást. Köszönjük szépen, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Néhány további RTL javítás fekvő nézethez.</item>
+        <item>A díj összegénél üres érték beírásakor bekövetkezett összeomlás javítása.</item>
+        <item>Az adatszolgáltató megjelenik az idővonal nézetben.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Az árfolyamok frissítésekor bekövetkező összeomlás javítása. Bocsánat! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Ez a kiadás számos, a jobbról balra (RTL) nyelveknél felmerülő elrendezési problémát javít. Most már mindennek a várt módon kell kinéznie.</item>
+        <item>Új funkció: Az összes átváltás előnézete a pénznemválasztóban. Ezt a beállításokban kell engedélyezned.</item>
+        <item>Néha a valuták régi vagy rossz adatokat mutattak egy árfolyamfrissítés után. Ez most javítva van.</item>
+        <item>Tényleg sok kódjavítás, hogy ez az alkalmazás még jobb legyen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Mostantól a frissítésre való húzással frissítheted az árfolyamokat.</item>
+        <item>Sokkal jobb visszajelzés az árak frissítésekor és hiba esetén.</item>
+        <item>Új nyelv: Egy kedves közösségi tag gondoskodott a török nyelvű fordításról. Köszönjük! 🇹🇷</item>
+        <item>Bizonyos helyzetekben rossz API-t használtak az idővonalhoz. Ez most már javítva van.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Kisebb fejlesztések</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Javítottuk a beállítások megnyitásakor bekövetkezett összeomlást.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Összeomlás javítása Android 8.0 alatt</item>
+        <item>Frissített fordítások</item>
+        <item>Kisebb UI javítások</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>A gyorsabb hozzáférés érdekében mostantól kedvenc pénznemeket tudsz választani. Jó szórakozást! ❤</item>
+        <item>Tiszta fekete téma hozzáadása az élményéhez, ha sötét módot használsz.</item>
+        <item>Frissített fordítások. Köszönjük szépen az önkénteseknek!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Új lokalizáció: Az alkalmazás mostantól görögül is beszél. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Javítottunk egy hibát, amely miatt az alkalmazás bizonyos esetekben összeomlott, ha a sötét témát használtuk.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Javítottunk az árfolyamkorszak megjelenítésén.</item>
+        <item>Hozzáadtunk egy preferencia bejegyzést az alkalmazás értékeléséhez a Google Play-en (természetesen nem az F-Droid verzióban).</item>
+        <item>Még egy lokalizáció: az alkalmazás mostantól vietnámi nyelvre is le van fordítva.</item>
+        <item>Apróbb kis javítások.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Új funkciót ebben a kiadásban! Az alkalmazás most már tartalmazza a múltbéli árfolyamokat. Nézd meg az elmúlt év grafikonját!</item>
+        <item>Van egy további árfolyamszolgáltató is: Mostantól a fer.ee-t is kiválaszthatod a beállítások között; új szolgáltatás, amely alapvetően úgy viselkedik, mint a frankfurter.app, és csak egy újabb választási lehetőség a számodra.</item>
+        <item>Mint mindig, ez a kiadás is tartalmaz frissített könyvtárakat, apró javításokat és minden olyan dolgot, ami még jobbá teszi a programot.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>A nagyszerű közösségi tagok támogatásának köszönhetően ez az alkalmazás már nemcsak angol és német, hanem spanyol, francia, olasz és norvég (Bokmål) nyelven is elérhető. Nagyon köszönjük a segítséget! 🙏🙏🙏</item>
+        <item>Kisebb motorháztető alatti frissítések, hogy az alkalmazás még megbízhatóbb legyen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Javítja azt a hibát, hogy az árfolyamok nem frissültek, ha az exchangerate.host-ot használtad.</item>
+        <item>Könyvtári frissítések a stabilitás és a teljesítmény javítása érdekében.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Válassz két API szolgáltató közül: exchangerate.host és frankfurter.app</item>
+        <item>A fejlesztőt most a PayPal segítségével adományozással is támogathatod. A linket a beállítások között találod.</item>
+        <item>További UI-fejlesztések</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>UI fejlesztések</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Mostantól lehetőség van az árfolyamok manuális frissítésére. Nézd meg a menüben.</item>
+        <item>Teljesítményjavítások</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Még több pénznem! Több mint 160 összesen! Ez azért van, mert a Currencies egy másik API-ra váltott. A régi (exchangeratesapi.io) minden előzetes figyelmeztetés nélkül előfizetési modellre váltott. NEM JÓ! Az új szolgáltatónk az exchangerate.host lesz.</item>
+        <item>Ez azt is jelenti, hogy az elmúlt pár napban az árfolyamok nem tudtak frissülni</item>
+        <item>Emellett magát a frissítési folyamatot is javítottuk, így legalább legközelebb, ha ilyesmi történik, kapsz egy értesítést.</item>
+        <item>Apró UI-javítások</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 új pénznem! Ez már összesen 50. 🥳 Túl sok ahhoz, hogy mindet felsoroljam. Viszont sok népszerű közel-keleti és karibi nyaralási célpont is bekerült: Az Egyesült Arab Emírségek, Katar, Barbados, Bahama-szigetek, Kuba, …</item>
+        <item>Ahhoz, hogy az új választási lehetőségek között a csúcson maradhassunk, a valutaválasztóban mostantól elérhető a keresés.</item>
+        <item>A választó mostantól a valuta teljes nevét is megjeleníti, nem csak a kódját. A kereséssel együtt ez egy nagyszerű kiegészítés. Próbád ki!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Kisebb javítások (elírások és dolgok)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Hitelkártya-szerződésétől függően bankod díjat számíthat fel minden devizatranzakció után. Ezt a díjat most már beleszámíthatod a számításokba, így tudod, hogy valójában mennyit fizetsz.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Lehetséges összeomlás javítása Android 11-en</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Német fordítás hozzáadva 🇩🇪</item>
+        <item>Kisebb javítás: Az alkalmazás mérete 50%-kal csökkent!</item>
+        <item>Az alkalmazás elég stabilnak tűnik: Nyilvános 1.0 kiadás! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Kisebb fejlesztések</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Jobb hibakezelés</item>
+        <item>Kisebb javítások</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Másolás funkciót adtunk hozzá: Kattints hosszan a másolni kívánt értékre</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>A valutaárfolyamok hibabiztosabb frissítése</item>
+        <item>Kizáró nyilatkozat hozzáadása</item>
+        <item>Hozzáadva ez a változásnapló</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Kezdeti előzetes kiadás</item>
+    </string-array>
+</resources>

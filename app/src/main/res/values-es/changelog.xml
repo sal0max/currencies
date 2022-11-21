@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.5">
+        <item>Se ha mejorado la precisión de los tipos de cambio en la vista de la línea de tiempo.</item>
+        <item>Nuevo idioma: Polaco. ¡Muchas gracias, ewm!</item>
+        <item>Muchas traducciones actualizadas. ¡Gracias a todos los colaboradores!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Diseño mejorado (Material 3).</item>
+        <item>Nuevo idioma: Checo. ¡Gracias, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Nuevo idioma: hebreo. ¡Apreciado, Yaron!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Nuevo: ahora se pueden pegar números desde el portapapeles.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Nuevo idioma #1: búlgaro. ¡Muchas gracias, Mihail! 🇧🇬</item>
+        <item>Nuevo idioma #2: bengalí. ¡Bravo, Pratyay! 🇧🇩🇮🇳</item>
+        <item>También actualizaciones al resto de las traducciones.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Nueva función: Activar el modo de teclado extendido en los ajustes para desbloquear los botones "00" y "000". Realmente útil para monedas con números grandes como la rupia indonesia, el peso chileno, el dong vietnamita o el won surcoreano.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Nueva traducción: Húngaro. ¡Se agradece mucho, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Traducciones actualizadas</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Nueva función: Ahora se pueden seleccionar las tarifas históricas que se utilizarán para el cálculo.</item>
+        <item>Nuevo idioma: Indonesio. Muchas gracias, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Nuevo idioma: Holandés. ¡Muchas gracias al voluntario! 🇳🇱🌷</item>
+        <item>Nueva función: Ahora puedes alternar las monedas dentro de la vista de la línea de tiempo con un solo clic.</item>
+        <item>De nuevo se ha solucionado un problema por el que la aplicación se bloqueaba en algunos casos, cuando se utilizaba el tema oscuro.</item>
+        <item>Varias pequeñas mejoras en la interfaz de usuario.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Algunas pequeñas mejoras para seguir la última directriz de Material Design 3 de Google.</item>
+        <item>Traducciones actualizadas. ¡Gracias a todas las personas que están ayudando!</item>
+        <item>Varias mejoras de estabilidad.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Otro nuevo idioma: Ahora puedes disfrutar de la aplicación en árabe. ¡Muchas gracias, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Algunas correcciones más en el RTL para el diseño apaisado.</item>
+        <item>Se ha corregido un fallo al introducir un valor vacío para el importe de la tasa.</item>
+        <item>El proveedor de datos se muestra en la vista de la línea de tiempo.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Arreglado un fallo con la actualización de precios. ¡Perdón! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Esta versión soluciona varios problemas de diseño con idiomas que usan la estructura de derecha-a-izquierda. Todo debería verse ya como se esperaba.</item>
+        <item>Nueva función: Previsualiza todas las conversiones de la moneda elegida. Tienes que habilitarlo en ajustes.</item>
+        <item>A veces, las monedas mostraban datos antiguos o erróneos después de actualizar los precios. Ya está solucionado.</item>
+        <item>Una gran cantidad de mejoras en el código, para que esta aplicación sea incluso mejor.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Ahora puedes deslizar hacia abajo para actualizar los precios.</item>
+        <item>Mejor realimentación al actualizar los precios y en caso de que existan errores.</item>
+        <item>Nuevo idioma: Un amable miembro de la comunidad ha ayudado con la traducción a Turco. ¡Gracias! 🇹🇷</item>
+        <item>En algunas situaciones, una API incorrecta fue usada en la cronología. Ya está arreglado.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Mejoras menores</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Se corrigió un bloqueo al abrir las preferencias.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Se corrigió un error en Android 8.0</item>
+        <item>Traducciones actualizadas</item>
+        <item>Pequeñas mejoras en la interfaz de usuario</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Ahora puedes marcar las divisas como favoritas para un acceso más rápido. ¡Diviértete! ❤</item>
+        <item>Se ha añadido una opción para una experiencia de tema negro puro, cuando se utiliza el modo oscuro.</item>
+        <item>Traducciones actualizadas. ¡Muchas gracias a los voluntarios!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Nueva localización: La app también habla griego, ahora. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Se ha corregido un error por el que la aplicación se bloqueaba en algunos casos, cuando se utilizaba el tema oscuro.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Se ha mejorado la visualización de la edad del tipo de cambio.</item>
+        <item>Se ha añadido una entrada de preferencias para valorar la aplicación en Google Play (no en la versión F-Droid, por supuesto).</item>
+        <item>Otra localización más: la aplicación está ahora traducida al vietnamita.</item>
+        <item>Pequeñas mejoras menores.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Disfrute de algunas novedades importantes en esta versión. La más notable es que esta aplicación incluye ahora los tipos de cambio históricos. Consulta el gráfico del año pasado para ver cómo han evolucionado las divisas.</item>
+        <item>También hay un proveedor de tipos de cambio adicional</item>
+        <item>Como siempre, esta versión incluye librerías actualizadas, pequeñas mejoras y todo aquello que lo hace aún mejor.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Gracias al apoyo de los increíbles miembros de la comunidad, esta aplicación no sólo está localizada en inglés y alemán, sino también en español, francés, italiano y noruego (Bokmål). ¡Muchas gracias por vuestra ayuda! 🙏🙏🙏</item>
+        <item>Pequeñas actualizaciones para que la aplicación sea aún más fiable.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Se corrige un error por el que las tarifas no se actualizaban cuando se utilizaba exchangerate.host.</item>
+        <item>Actualizaciones de la biblioteca para mejorar la estabilidad y el rendimiento.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Selecciona entre dos proveedores de API: exchangerate.host y frankfurter.app</item>
+        <item>Ahora puedes apoyar al desarrollador donando con PayPal. Encuentra el enlace en la configuración.</item>
+        <item>Más mejoras en la interfaz de usuario</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Mejoras en la IU</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Ahora es posible actualizar manualmente las tarifas. Compruébalo en el menú de desbordamiento.</item>
+        <item>Mejoras en el rendimiento</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>¡Cuántas más monedas! Más de 160 en total, ¡ahora! Eso es porque Currencies cambió a una API diferente. La antigua (exchangeratesapi.io) cambió a un modelo de suscripción sin previo aviso. ¡NO ES BUENO! Nuestro nuevo proveedor será exchangerate.host.</item>
+        <item>Eso también significa, que el último par de días, los tipos de cambio no podían ser refrescados. Eso está arreglado ahora, por supuesto.</item>
+        <item>También se ha mejorado el proceso de actualización</item>
+        <item>Pequeñas mejoras en la interfaz de usuario</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>¡17 nuevas monedas! Ya son 50 en total. 🥳 Demasiadas para nombrarlas todas. Sin embargo, un montón de destinos vacacionales populares en Oriente Medio y el Caribe están ahora incluidos: EAU, Qatar, Barbados, Bahamas, Cuba, …</item>
+        <item>Para estar al tanto de todas esas nuevas opciones, ahora hay una búsqueda disponible en el selector de divisas.</item>
+        <item>El selector ahora también muestra el nombre completo de la moneda, no sólo su código. Una adición impresionante, en combinación con la búsqueda. ¡Pruébalo!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Mejoras menores (errores tipográficos y otras cosas)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Según el contrato de su tarjeta de crédito, su banco puede cobrar una comisión por todas las operaciones de cambio de divisas. Ahora puedes incluir esa comisión en los cálculos, para saber cuánto pagas realmente.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Corregir un posible fallo en Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Se ha añadido la traducción al alemán 🇩🇪</item>
+        <item>Mejora menor: ¡El tamaño de la app se ha reducido en un 50%!</item>
+        <item>La aplicación parece bastante estable: ¡Lanzamiento público 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Mejoras menores</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Mejora de la gestión de errores</item>
+        <item>Mejoras menores</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Se ha añadido una función de copia: Haga un clic largo en el valor que desea copiar</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Actualización de los tipos de cambio a prueba de fallos</item>
+        <item>Se ha añadido una cláusula de exención de responsabilidad</item>
+        <item>Añadido este registro de cambios</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Pre-lanzamiento inicial</item>
+    </string-array>
+</resources>

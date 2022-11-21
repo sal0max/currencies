@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.4">
+        <item>Tasarım iyileştirmeleri (Material 3).</item>
+        <item>Yeni dil: Çekçe. Teşekkürler, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Yeni dil: İbranice. Teşekkürler, Yaron!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Yeni özellik: Sayılar artık panodan yapıştırılabilir.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Yeni dil: Bulgarca. Çok teşekkürler, Mihail! 🇧🇬</item>
+        <item>Yeni dil: Bengalce. Çok teşekkürler, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Ayrıca çevirilerin geri kalanı için güncellemeler.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Yeni özellik: "00" ve "000" tuşlarının kilidini açmak için ayarlardan Genişletilmiş Tuş Takımı modunu etkinleştirin. Endonezya rupiahı, Şili pezosu, Vietnam dongu veya Güney Kore wonu gibi çok sıfırlı para birimleri için kullanışlı bir özellik.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Yeni çeviri: Macarca. Çok teşekkürler József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Çeviri güncellemeleri</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Yeni özellik: Geçmiş kur verileri artık hesaplamada kullanılabilir.</item>
+        <item>Yeni dil: Endonezyaca. Çok teşekkürler, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Yeni dil: Felemenkçe. Gönüllülere teşekkürler! 🇳🇱🌷</item>
+        <item>Yeni özellik: Artık zaman çizelgesi görünümündeyken tek tıklamayla para birimleri arasında geçiş yapabilirsiniz.</item>
+        <item>Koyu temanın kullanıldığı bazı durumlarda uygulamanın çökmesine vermesine sebep olan birkaç hata daha düzeltildi.</item>
+        <item>Çeşitli arayüz geliştirmeleri.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Google\'ın güncel Material Design 3 yönergelerine uygun bazı küçük iyileştirmeler.</item>
+        <item>Çeviriler güncellendi. Emeği geçen herkese teşekkürler!</item>
+        <item>Çeşitli kararlılık iyileştirmeleri.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Yeni dil: Currencies artık Arapça dil desteğine sahip. Eyvallah Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Sağdan sola okumalı dillerde yatay mod etkinken oluşan bazı arayüz hataları düzeltildi.</item>
+        <item>İşlem ücretine boş bir değer girilince oluşan kilitlenme hatası düzeltildi.</item>
+        <item>Hesapalama ekranıdna artık aktif veri sağlayıcısının ismine yer veriliyor.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Kur oranları güncellenirken oluşan çökme sorunu düzeltildi.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Sağdan sola okumalı dillerde oluşan arayüz hataları düzeltildi.</item>
+        <item>Yeni özellik: Artık mevcut kur oranlarını para birimi seçme ekranında görüntüleyebilirsin. Bu özellik ayarlar menüsünden etkinleştirilebilir.</item>
+        <item>Kur oranları güncellendikten sonra bile bazen güncel olmayan veya yanlış oranların gösterilmesine neden olan bir hata düzeltildi.</item>
+        <item>Uygulamayı daha iyi bir hale getirmek için kaynak kodunda önemli ölçüde iyileştirmeler yaplıdı.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Ekranı aşağı doğru kaydırarak kurları güncelleyebilirsiniz.</item>
+        <item>Kurları yenilerken veya hatalarla karşılaşınca daha iyi geri bildirim</item>
+        <item>Currencies artık Türkçe! Türkçe yerelleştirme için Arda Arslan ve Alparslan Şakçi\'ye teşekkürler! 🇹🇷</item>
+        <item>Bazı durumlarda zaman çizelgesi için yanlış API kullanma hatası düzeldi.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Küçük geliştirmeler</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Tercihleri açarken meydana gelen çökme düzeltildi.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Android 8.0\'daki çökme sorunu düzeltildi</item>
+        <item>Çeviri güncellemeleri</item>
+        <item>Küçük arayüz geliştirmeleri</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Artık daha çabuk erişebilmek için para birimlerini favori olarak işaretleyebilirsiniz. İyi eğlenceler! ❤</item>
+        <item>Koyu temayı kullanırken saf karanlığı deneyimleyebilmek için bir seçenek eklendi.</item>
+        <item>Çeviri Güncellemeleri. Gönüllülere teşekkürler!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Yeni yerelleştirme: Uygulama artık Yunanca.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Koyu temanın kullanıldığı bazı durumlarda uygulamanın çökmesine vermesine sebep olan hata düzeltildi.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Geliştirilmiş döviz kuru göstergesi.</item>
+        <item>Uygulamayı Google Play\'de puanlamak için tercih girdisi eklendi (F-Droid sürümü hariç, tabi ki).</item>
+        <item>Yeni bir yerelleştirme daha: Uygulama artık Vietnamcaya da çevrildi .</item>
+        <item>Küçük geliştirmeler.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Bu yama ile beraber yeni bir özelliğin tadını çıkarın! Uygulama artık geçmiş kurları da içeriyor. Para birimlerinin gelişimlerini görmek için geçmiş yıllara ait grafikleri inceleyebilirsin.</item>
+        <item>Ayrıca size daha fazla seçenek sunmak adına bir sağlayıcı daha ekledik. Artık ayarlardan frankfurter.app\'a benzer bir hizmet olan fer.ee'yi seçebilirsiniz.</item>
+        <item>Bu yama her zamanki gibi kütüphane güncellemeler ve küçük geliştirmelerle beraber uygulamayı daha iyi yapacak birçok yeniliği içermektedir.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Şahane topluluk üyeleri sayesinde bu uygulama sadece Almanca ve İngilizcenin yanısıra İspanyolca, Fransızca, İtalyanca, ve Norveççeye de yerelleştirildi. Desteğiniz için teşekkürler! 🙏🙏🙏</item>
+        <item>Uygulamayı daha güvenilir yapmak için ufak tefek arka plan güncellemeleri.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>exchangerate.host kullanıldığında kurların güncellenmemesine sebep olan hata düzeltildi.</item>
+        <item>Stabiliteyi ve performansı geliştirmek için kütüphane güncellemeleri.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>İki API sağlayıcısı arasında seçim yapabilirsiniz: exchangerate.host ve frankfurter.app</item>
+        <item>Artık geliştiriciyi PayPal üzerinden bağış yaparak destekleyebilirsiniz. Linki ayarlarda bulabilirsiniz.</item>
+        <item>Birkaç arayüz geliştirmesi daha</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Arayüz geliştirmeleri</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Artık kurları manuel güncellemek mümkün. Denemek için dahası kısmını kontrol edebbilirsiniz.</item>
+        <item>Performans geliştirmeleri</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Çok daha fazla para birimi! Toplamda 160\'dan fazla!! Çünkü Currencies farklı bir API kullanmaya başladı. Eskisi (exchangeratesapi.io) herhangi bir ön bilgilendirme olmadan abonelik sistemine geçiş yaptı. Yeni sağlayıcımız exchangerate.host olacak.</item>
+        <item>Ayrıca bu sebeple gündür döviz kurları son birkaç güncellenememişti. Tabi ki düzeltildi.</item>
+        <item>Ayrıca güncelleme işleminin kendisi geliştirildi, en azından bir daha böyle bir şey olduğunda bildirim alacaksınız.</item>
+        <item>Küçük arayüz geliştirmeleri</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>Toplamda 50 olmak üzere 17 yeni para birimi! 🥳 Tek tek sayamayacak kadar çok. BAE, Katar, Barbados, Bahamalar, Küba vb. gibi orta doğu ve Karayipler\'deki pek çok popüler tatil yeri eklendi.</item>
+        <item>Tüm bu yeni seçimleri zapt edebilmek adına para birimi seçicisine arama fonksiyonu eklendi.</item>
+        <item>Artık seçici para biriminin sadece kodunun yanısıra tam adını da gösteriyor. Arama ile beraber muhteşem bir yenilik. Denemeye ne dersin!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Küçük geliştirmeler (yazım vesaire)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Bankanız, kredi kartı sözleşmenize bağlı olarak, tüm döviz işlemlerinden bir işlem ücreti alabilir. Artık bu ücreti hesaplamalara dahil edebilir ve tam olarak ne kadar ödeme yapacağınızı öğrenebilirsiniz.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Android 11\'de oluşabilecek çökmelerin düzeltilmesi</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Almanca çeviri eklendi</item>
+        <item>Küçük bir geliştirme: Uygulama boyutu %50 azaltıldı!</item>
+        <item>Uygulama gayet stabil görünüyor: 1.0 sürümü yayında! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Küçük geliştirmeler</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Daha iyi hata işleme</item>
+        <item>Küçük geliştirmeler</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Kopyalama fonksiyonu eklendi: Kopyalamak istediğiniz değerin üzerine basılı tutun</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Daha tedbirli döviz kuru güncellemeleri</item>
+        <item>Sorumluluk reddi eklendi</item>
+        <item>Bu değişiklik günlüğü eklendi</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>İlk önsürüm</item>
+    </string-array>
+</resources>

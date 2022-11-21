@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_changelog">Änderungsprotokoll</string>
+
+    <string-array name="changelog_1.17.5">
+        <item>Verbesserte Präzision der Wechselkurse in der Kursverlauf-Anzeige.</item>
+        <item>Neue Sprache: Polnisch. Vielen Dank, ewm! 🇵🇱</item>
+        <item>Viele aktualisierte Übersetzungen. Dankeschön an alle Mitwirkende!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Verbessertes Design (Material 3).</item>
+        <item>Neue Sprache: Tschechisch. Vielen Dank, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Neue Übersetzung: Hebräisch. Dankeschön, Yaron! 🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Neu: Zahlen können nun aus der Zwischenablage eingefügt werden.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Neue Übersetzung #1: Bulgarisch. Vielen Dank, Mihail! 🇧🇬</item>
+        <item>Neue Übersetzung #2: Bengalisch. Dankeschön, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Außerdem Aktualisierungen für die restlichen Übersetzungen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Neue Funktion: Aktiviere die erweiterte Tastatur in den Einstellungen um "00"- und "000"-Buttons freizuschalten. Sehr nützlich für Währungen mit vielen Stellen, wie die Indonesische Rupiah, den Chilenischen Peso, den Vietnamesischer Đồng oder den Südkoreanischen Won.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Neue Übersetzung: Ungarisch. Vielen Dank, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Aktualisierte Übersetzungen</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Neue Funktion: Historische Raten können nun für die Berechnung ausgewählt werden.</item>
+        <item>Neue Sprache: Indonesisch. Vielen Dank, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Neue Sprache: Niederländisch. Vielen Dank an den Helfer! 🇳🇱🌷</item>
+        <item>Neue Funktion: Die Währungen in der Kursverlauf-Ansicht können nun mit einem Klick vertauscht werden.</item>
+        <item>Erneut einen Fehler behoben, der die App in seltenen Fällen bei der Verwendung des dunklen Themes abstürzen ließ.</item>
+        <item>Verschiedene kleine Design-Verbesserungen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Einige Verbesserungen um Googles neuesten Material Design 3-Vorgaben zu entsprechen.</item>
+        <item>Aktualisierte Übersetzungen. Danke an alle, die helfen!</item>
+        <item>Einige Stabilität-verbesserungen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Noch eine neue Sprache: Die App kann nun in Arabisch genutzt werden. Vielen Dank, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Noch ein paar RTL-Fehlerbehebungen im Landscape Layout.</item>
+        <item>Absturz behoben, der Auftrat, wenn ein leerer Text als Gebührenwert eingegeben wurde.</item>
+        <item>Der Datenlieferant wird nun auch bei der Kurshistorie angezeigt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Absturz beim Updaten der Kurse behoben. Sorry! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Dieses Release behebt einige Layoutprobleme bei Right-to-Left (RTL) Sprachen. Jetzt sollte alles so aussehen wie es sein soll.</item>
+        <item>Neues Feature: Im Währungsauswahldialog die aktuelle Umrechnung für jeden Kurs anzeigen. Aktiviere es in den Einstellungen.</item>
+        <item>Manchmal wurden nach dem Aktualisieren falsche oder veraltete Daten angezeigt. Das ist behoben.</item>
+        <item>Wirklich viele Code-Verbesserungen, um die App noch zuverlässiger zu machen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Man kann nun die Kurse auch mittels Pull-to-refresh aktualisieren.</item>
+        <item>Deutlich verbesserte Rückmeldungen beim Aktualisieren und wenn Fehler auftreten.</item>
+        <item>Neue Sprache: Ein nettes Communitymitglied hat Übersetzungen für Türkisch bereitgestellt. Vielen Dank! 🇹🇷</item>
+        <item>In manchen Situationen wurde die falsche API für die Kursverlaufsdaten verwendet. Das ist nun korrigiert.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Kleinere Verbesserungen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Absturz beim Öffnen der Einstellungen behoben.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Möglichen Absturz bei Geräte mit Android 8.0 behoben.</item>
+        <item>Aktualisierte Übersetzungen.</item>
+        <item>Kleine UI-Verbesserungen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Währungen können nun als Favorit markiert werden, für eine schnellere Auswahl. Viel Spaß damit! ❤</item>
+        <item>Option hinzugefügt, das Theme im Dark Mode komplett auf Schwarz umzustellen.</item>
+        <item>Aktualisierte Übersetzungen. Vielen Dank an alle Freiwilligen!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Neue Übersetzung: Die App spricht nun auch griechisch. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Fehler behoben, bei dem die App in manchen Fällen abstürzte, wenn das dunkle Design in Verwendung war.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Anzeige des Wechselkursalters verbessert.</item>
+        <item>Den Einstellungen einen Eintrag um die App in Google Play zu bewerten hinzugefügt (natürlich nicht in der F-Droid version).</item>
+        <item>Noch eine Lokalisierung: Die App ist nun auch auf Vietnamesisch übersetzt. 🇻🇳</item>
+        <item>Kleine Verbesserungen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Dieses Release enthält großartige neue Funktionen! Die App unterstützt nun die Anzeige historischer Daten. Sieh dir die Kursverläufe des vergangenen Jahres an, um nachzuvollziehen, wie sich die Währungen entwickelt haben.</item>
+        <item>Es gibt außerdem einen zusätzlichen Kursdatenanbieter: In den Einstellungen kann nun auch fer.ee ausgewählt werden. Ein recht neuer Dienst, der praktisch gleich wie frankfurter.app ist. Einfach eine Auswahlmöglichkeit mehr.</item>
+        <item>Wie immer enthält dieses Release aktualisierte Programmbibliotheken, kleine Verbesserungen und all die Dinge, welche die App einfach besser machen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Dank der Unterstützung durch fantastische Community-Mitglieder ist diese App nicht nur ins Englische und Deutsche übersetzt, sondern auch ins Spanische 🇪🇸, Französische 🇫🇷, Italienische 🇮🇹 und Norwegische (Bokmål) 🇳🇴. Vielen Dank für eure Hilfe! 🙏🙏🙏</item>
+        <item>Kleine Aktualisierungen unter der Haube, um die App noch zuverlässiger zu machen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Behebt einen Fehler, bei dem die Kurse nicht aktualisiert werden, wenn exchangerate.host genutzt wird.</item>
+        <item>Bibliotheksupdates, um die Stabilität und Leistung zu verbessern.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Wähle zwischen zwei API-Anbietern: exchangerate.host und frankfurter.app</item>
+        <item>Du kannst jetzt den Entwickler per PayPal-Spende unterstützen. Den Link findest du in den Einstellungen.</item>
+        <item>Weitere UI-Verbesserungen</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>UI-Verbesserungen</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Es ist jetzt möglich, die Kurse manuell zu aktualisieren. Probier es im Überlauf-Menü aus.</item>
+        <item>Leistungsverbesserungen</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>So viele neue Währungen! Insgesamt jetzt über 160! Das liegt an Currencies\' Wechsel zu einer anderen API. Die alte (exchangeratesapi.io) hat ohne Vorwarnung zu einem Abo-Modell gewechselt. NICHT GUT! Unser neuer Anbieter ist exchangerate.host.</item>
+        <item>Das bedeutet auch, dass die Währungskurse kürzlich nicht erneuert werden konnten. Das ist jetzt natürlich behoben.</item>
+        <item>Außerdem wurde das Aktualisieren selbst verbessert, sodass du beim nächsten Mal einen Hinweis bekommst.</item>
+        <item>Kleine UI-Verbesserungen</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 neue Währungen! Jetzt sind es insgesamt 50. 🥳 Zu viele, um alle aufzuzählen. Eine ganze Reihe beliebter Urlaubsorte im Mittleren Osten und in der Karibik sind jetzt jedoch hinzugefügt worden: die VAE, Katar, Barbados, die Bahamas, Kuba…</item>
+        <item>Obendrein ist nun auch eine Suchfunktion im Währungs-Auswahldialog verfügbar.</item>
+        <item>Der Auswahldialog zeigt jetzt auch den vollen Namen einer Währung, nicht nur ihre Abkürzung. Eine fantastische Ergänzung – in Kombination mit der Suche. Probier es aus!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Kleinere Verbesserungen (Tippfehler und so)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Abhängig von deinem Kreditkartenvertrag, kann deine Bank eine Gebühr auf alle Transaktionen mit Auslandswährungen erheben. Du kannst jetzt jene Gebühr in die Berechnungen einbeziehen, sodass du weißt, wie viel du wirklich bezahlst. 🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Möglichen Absturz unter Android 11 behoben</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Deutsche Übersetzung hinzugefügt 🇩🇪</item>
+        <item>Kleine Verbesserung: App-Größe um 50% verringert!</item>
+        <item>Die App scheint ziemlich stabil zu sein: öffentliche Version 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>kleine Verbesserungen</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Bessere Fehlerbehandlung</item>
+        <item>Kleinere Verbesserungen</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Kopierfunktion hinzugefügt: Klicke lang auf den Wert, den du kopieren willst</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Ausfallsicherere Aktualisierung der Währungskurse</item>
+        <item>Ausschlussklausel hinzugefügt</item>
+        <item>dieses Änderungsprotokoll hinzugefügt</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Erste Vorabveröffentlichung</item>
+    </string-array>
+</resources>

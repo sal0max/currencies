@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.5">
+        <item>Verbeterde nauwkeurigheid van wisselkoersen in tijdlijn weergave.</item>
+        <item>Nieuwe taal: Pools. Bedankt, ewm!</item>
+        <item>Veel bijgewerkte vertalingen. Dank aan alle medewerkers!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Verbeterd ontwerp (Material 3).</item>
+        <item>Nieuwe taal: Tsjechisch. Bedankt, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Nieuwe taal: Hebreeuws. Gewaardeerd, Yaron!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Nieuw: Cijfers kunnen nu vanaf het klembord worden geplakt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Nieuwe taal #1: Bulgaars. Heel erg bedankt, Mihail! 🇧🇬</item>
+        <item>Nieuwe taal #2: Bengaals. Proost, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Ook updates van de rest van de vertalingen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Nieuwe functie: Schakel de uitgebreide toetsenbordmodus in de instellingen in om de toetsen "00" en "000" te ontgrendelen. Erg handig voor valuta\'s met grote getallen zoals de Indonesische rupiah, Chileense peso, Vietnamese dong of Zuid-Koreaanse won.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Nieuwe vertaling: Hongaars. Zeer gewaardeerd, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Bijgewerkte vertalingen</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Nieuwe functie: Historische koersen kunnen nu worden geselecteerd om te worden gebruikt voor de berekening.</item>
+        <item>Nieuwe taal: Indonesisch. Hartelijk dank, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Nieuwe taal: Nederlands. Veel dank aan de vrijwilliger! 🇳🇱🌷</item>
+        <item>Nieuwe functie: Je kunt nu met één klik wisselen tussen de valuta\'s in de tijdlijn weergave.</item>
+        <item>Opnieuw een probleem opgelost waarbij de app in sommige gevallen crashte wanneer het donkere thema werd gebruikt.</item>
+        <item>Diverse kleine UI-verbeteringen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Enkele kleine verbeteringen om de nieuwste Material Design 3-richtlijn van Google te volgen.</item>
+        <item>Bijgewerkte vertalingen. Dank aan alle mensen die helpen!</item>
+        <item>Diverse stabiliteitsverbeteringen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Nog een nieuwe taal: je kunt nu genieten van de app in het Arabisch. Heel erg bedankt, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳 🇾🇪</item>
+        <item>Nog wat RTL-fixes voor de landschapslay-out.</item>
+        <item>Een crash verholpen bij het invoeren van een lege waarde voor het vergoedingsbedrag.</item>
+        <item>De gegevensprovider wordt weergegeven in de tijdlijnweergave.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Fix crash op verversingspercentages. Sorry! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Deze release lost verschillende lay-outproblemen op met rechts-naar-links (RTL) talen. Nu zou alles eruit moeten zien zoals verwacht.</item>
+        <item>Nieuwe functie: bekijk een voorbeeld van alle conversies in de valutakiezer. Je moet het inschakelen in de instellingen.</item>
+        <item>Soms vertoonden valuta\'s oude of verkeerde gegevens na een koersvernieuwing. Dit staat vast.</item>
+        <item>Echt veel codeverbeteringen om deze app nog beter te maken.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>U kunt nu "naar beneden slepen om te verversen" gebruiken om de tarieven bij te werken.</item>
+        <item>Veel verbeterde feedback bij het vernieuwen van tarieven en bij fouten.</item>
+        <item>Nieuwe taal: een vriendelijk lid van de gemeenschap zorgde voor vertalingen voor het Turks. Dank u! 🇹🇷</item>
+        <item>In sommige situaties is de verkeerde API gebruikt voor de tijdlijn. Dat is nu opgelost.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Kleine verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Een crash verholpen bij het openen van de voorkeuren.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Crash opgelost op Android 8.0</item>
+        <item>Bijgewerkte vertalingen</item>
+        <item>Kleine UI verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>U kunt nu uw favoriete valuta\'s kiezen voor een snellere toegang. Veel plezier! ❤</item>
+        <item>Optie toegevoegd voor een puur zwarte thema-ervaring bij gebruik van de donkere modus.</item>
+        <item>Bijgewerkte vertalingen. Heel erg bedankt, vrijwilligers!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Nieuwe lokalisatie: de app spreekt nu ook Grieks. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Een fout opgelost waarbij de app in sommige gevallen crashte, wanneer het donkere thema werd gebruikt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Verbeterde weergave van de wisselkoersleeftijd.</item>
+        <item>Een voorkeursitem toegevoegd om de app op Google Play te beoordelen (uiteraard niet in de F-Droid-versie).</item>
+        <item>Nog een andere lokalisatie: de app is nu vertaald naar het Vietnamees.</item>
+        <item>Kleine verbeteringen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Geniet van enkele grote nieuwe functies in deze versie! Het meest opvallende is dat deze app nu historische koersen bevat. Bekijk de grafiek van het afgelopen jaar, om te zien hoe de valuta\'s zich hebben ontwikkeld.</item>
+        <item>Er is ook een extra aanbieder van wisselkoersen.</item>
+        <item>Zoals altijd bevat deze release bijgewerkte bibliotheken, kleine verbeteringen en alle dingen die het nog beter maken.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Dankzij de steun van geweldige communityleden is deze app nu niet alleen gelokaliseerd in het Engels en Duits, maar ook in het Spaans, Frans, Italiaans en Noors (Bokmål). Hartelijk bedankt voor uw hulp! 🙏🙏🙏</item>
+        <item>Kleine updates onder de motorkap om de app nog betrouwbaarder te maken.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Lost een bug op waarbij de koersen niet werden bijgewerkt wanneer exchangerate.host werd gebruikt.</item>
+        <item>Bibliotheekupdates om de stabiliteit en prestaties te verbeteren.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Kies tussen twee API-providers: exchangerate.host en frankfurter.app</item>
+        <item>Je kunt de ontwikkelaar nu steunen door te doneren met PayPal. Zoek de link in de instellingen.</item>
+        <item>Meer UI verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>UI verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Het is nu mogelijk om de tarieven handmatig te vernieuwen. Bekijk het in het "overflow" menu.</item>
+        <item>Prestatieverbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Zoveel meer valuta! Meer dan 160 in totaal! Dat komt omdat Wisselkoersen is overgestapt op een andere API. De oude (exchangeratesapi.io) veranderde naar een abonnementsmodel zonder voorafgaande waarschuwing, dus onze nieuwe provider wordt exchangerate.host.</item>
+        <item>Dat betekent dat de afgelopen dagen de wisselkoersen niet ververst konden worden., nu weer wel.</item>
+        <item>Ook is het verversingsproces verbeterd, dus de volgende keer dat zoiets gebeurt, krijg je tenminste een melding.</item>
+        <item>Kleine UI verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 nieuwe valuta! Dat zijn er nu in totaal 50. 🥳 Te veel om ze allemaal op te noemen. Veel populaire vakantiebestemmingen in het Midden-Oosten en de Caraïben zijn nu echter inbegrepen: VAE, Qatar, Barbados, Bahama\'s, Cuba, …</item>
+        <item>Om op de hoogte te blijven van al die nieuwe keuzes, is er nu een zoekopdracht beschikbaar in de valutakiezer.</item>
+        <item>De kiezer toont nu ook de volledige naam van een valuta, niet alleen de code. Een te gekke toevoeging, in combinatie met de zoektocht. Probeer het!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Kleine verbeteringen (typfouten enzo)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Afhankelijk van uw creditcardovereenkomst kan uw bank kosten in rekening brengen voor alle valutatransacties. U kunt die vergoeding nu meenemen in de berekeningen, zodat u weet hoeveel u werkelijk betaalt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Mogelijke crash op Android 11 gerepareerd</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Duitse vertaling toegevoegd 🇩🇪</item>
+        <item>Kleine verbetering: App-grootte is met 50% afgenomen!</item>
+        <item>App lijkt redelijk stabiel: Public 1.0 release! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Kleine verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Betere foutafhandeling</item>
+        <item>Kleine verbeteringen</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Kopieerfunctie toegevoegd: klik lang op de waarde die u wilt kopiëren</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Meer faalbestendig actualisering van de valutakoersen</item>
+        <item>Een disclaimer toegevoegd</item>
+        <item>Dit changelog toegevoegd</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Initiale pre-release</item>
+    </string-array>
+</resources>

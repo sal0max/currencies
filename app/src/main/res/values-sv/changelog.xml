@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.5">
+        <item>Förbättrad precision på valutakurserna i tidslinjesvyn.</item>
+        <item>Nytt språk: Polska. Tack så mycket, ewm!</item>
+        <item>Många uppdaterade översättningar. Tack till alla bidragsgivare!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Förbättrad design (Material 3).</item>
+        <item>Nytt språk: Tjeckiska. Tack, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Nytt språk. Hebriska. Det uppskattas, Yaron!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Nytt: Belopp kan nu klistras in från urklipp.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Nytt språk #1: Bulgariska. Tack så mycket, Mihail! 🇧🇬</item>
+        <item>Nytt språk #2: Bengali. Tackar, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Uppdateringar bland övriga översättningar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Ny funktion: Aktivera utökad knappsats i inställningarna för att visa "00"- och "000"-knapparna. Verkligen användbart för valutor med stora belopp, såsom indonesisk rupie, chilensk peso, vietnamesisk dong eller sydkoreansk won.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Ny översättning: Ungerska. Verkligen uppskattat, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Uppdaterade översättningarna</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Ny funktion: Historiska kurser kan nu väljas för att användas för kursberäkningen.</item>
+        <item>Nytt språk: Indonesiska. Tack så mycket, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Nytt språk: Nederländska. Tusen tack till bidragsgivaren! 🇳🇱🌷</item>
+        <item>Ny funktion: Man kan du växla mellan valda valutor i tidslinjesvyn med en enda tryckning.</item>
+        <item>Åtgärdade återigen ett problem som gjorde att appen kraschade i vissa fall, vid användning av mörkt färgtema.</item>
+        <item>Blandade förbättringar av användargränssnittet.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Vissa mindre förbättringar, för att efterleva Googles senaste Material Design 3-riktlinjer.</item>
+        <item>Uppdaterade översättningar. Tack till alla som bidrar!</item>
+        <item>Blandade stabilitetsförbättringar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Ytterligare ett till språk: Arabiska. Stort tack till Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Fler åtgärder för höger-till-vänster-skrift för landskapslayout.</item>
+        <item>Åtgärdade en krasch om man anger ett tomt värde som avgift.</item>
+        <item>Namnet på dataleverantören visas i tidslinjesvyn.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Åtgärdade krasch vid uppdatering av kurser. Sorry! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Denna version åtgärdas flera layoutproblem med språk med höger-till-vänster-skrift (RTL). Nu så ska all se ut på rätt sätt.</item>
+        <item>Ny funktion: Förhandsvisa alla konverteringar i valutaväljaren. Det behöver aktiveras i inställningarna.</item>
+        <item>Ibland så visades gammal eller felaktig data efter uppdatering. Det är åtgärdat.</item>
+        <item>Verkligen många kodförbättringar, för att göra appen ännu bättre.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Det går nu att använda dra-för-att-uppdatera för att uppdatera kurserna.</item>
+        <item>Kraftigt förbättrad återkoppling när kurser uppdateras och vid fel.</item>
+        <item>Nytt språk: En vänlig community-medlem bidrog med översättningar för turkiska. Tack! 🇹🇷</item>
+        <item>I vissa situationer så användes fel API för tidslinjen. Det är åtgärdat nu.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Mindre förbättringar</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Åtgärdade en krasch när inställningarna öppnas.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Åtgärdade en krasch på Android 8.0</item>
+        <item>Uppdaterade översättningarna</item>
+        <item>Mindre förbättringar av användargränssnittet</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Det går att välja favoritvalutor nu, för snabbare åtkomst. Ha det så kul! ❤</item>
+        <item>La till en inställning för helt svart färg, vid användning av mörkt läge.</item>
+        <item>Uppdaterade översättningarna. Stort tack till alla bidragsgivare!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Ny översättning: Appen pratar grekiska nu. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Åtgärdade ett fel som gjorde att appen kraschade i vissa fall, när det mörka färgtemat användes.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Förbättrade visningen av valutakursens ålder.</item>
+        <item>La till ett menyval under inställningar för att betygssätta appen på Google Play (givetvis inte i F-Droid-versionen).</item>
+        <item>Ännu än översättning: appen har nu översatts till vietnamesiska.</item>
+        <item>Mindre förbättringar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Upplev några stora nya funktioner i denna version! Främst, så visar appen historiska kurser nu. Kolla diagrammet för senaste året för att se hur valutakurserna har utvecklats.</item>
+        <item>Det finns nu ytterligare än kursdataleverantör: Man an nu välja fer.ee i inställningarna. En relativt ny tjänst, som fungerar likt frankfurter.app och ger ännu en valmöjlighet för dig.</item>
+        <item>Som alltid, så innehåller denna version uppdaterade programbibliotek, mindre förbättringar och allt annat som gör den ännu bättre.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Tack vare alla fantastiska community-medlemmar, så är finns denna app inte längre bara på engelska och tyska, utan även spanska, franska, italienska och norsk bokmål. Tack så mycket för er hjälp! 🙏🙏🙏</item>
+        <item>Mindre "under huven"-uppdateringar för att göra appen mer pålitlig.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Åtgärdar en bugg, som gjorde att kurserna in uppdaterades, när exchangerate.host användes.</item>
+        <item>Uppdaterade programbibliotek för att förbättra stabilitet och prestanda.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Val mellan två dataleverantörer: exchangerate.host och frankfurter.app</item>
+        <item>Du kan nu stödja utvecklaren genom en donation via PayPal. Länken finns i inställningarna.</item>
+        <item>Fler förbättringar av användargränssnittet</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Förbättringar av användargränssnittet</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Det är möjligt att uppdatera kurserna manuellt nu. Prova detta i menyn.</item>
+        <item>Förbättrad prestanda</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Så många fler valutor! Över 160 total sett nu!! Det är tack vare att Currencies bytte till ett annat API. Det gamla (exchangeratesapi.io) införde abonnemang utan någon föregående varning. ILLA! Vår nya dataleverantör blir exchangerate.host.</item>
+        <item>Därmed gick det inte att uppdatera kurser under de senaste dagarna. Det är givetvis löst nu.</item>
+        <item>Därtill har uppdateringsprocessen förbättrats. Så om det händer igen, så får man åtminstone en varning.</item>
+        <item>Mindre förbättringar av användargränssnittet</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 nya valutor! Det är totalt 50 nu. 🥳 För många för att nämna alla. Men valutor från många populära semesterorter i mellanöstern och östkaribien ingår nu: Förenade arabemiraten, Qatar, Barbados, Bahamas, Kuba, …</item>
+        <item>För att hantera alla nya valutor som kan väljas mellan, så finns det nu en sökfunktion i valutaväljaren.</item>
+        <item>Valutaväljaren visar nu landets fullständiga namn, och inte enbart landskoden. Ett ypperligt tillägg tillsammans med sökfunktionen. Prova den gärna!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Mindre förbättringar (stavfel m.m.)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Beroende på ditt avtal för ditt betalkort, så kan din bank ta ut ett växlingspåslag. Det går nu att lägga till den avgiften i beräkningarna, så du vet hur mycket du egentligen betalar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Åtgärdade möjlig krasch på Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>La till tysk över översättning 🇩🇪</item>
+        <item>Mindre förbättring: Appens storlek har minskats med 50%!</item>
+        <item>Appen verkar nu stabil: Offentligt släpp av 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Mindre förbättringar</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Bättre felhantering</item>
+        <item>Mindre förbättringar</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>La till en kopieringsfunktion: Tryck länge på värdet som du vill kopiera</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Mer felsäker uppdatering av valutakurser</item>
+        <item>La till en ansvarsfriskrivning</item>
+        <item>La till denna ändringslogg</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Första förhandsversion</item>
+    </string-array>
+</resources>

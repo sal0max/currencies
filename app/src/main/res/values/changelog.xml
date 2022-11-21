@@ -1,207 +1,205 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="title_changelog" translatable="false">Changelog</string>
+    <string name="title_changelog">Changelog</string>
 
-    <string name="changelog" translatable="false"><b>1.17.5</b>
-        \n⸻
-        \n<li>Improved the precision of exchange rates in timeline view.</li>
-        \n<li>New language: Polish. Thanks a lot, ewm!</li>
-        \n<li>Many updated translations. Thanks to all the contributors!</li>
-        \n
-        \n<b>1.17.4</b>
-        \n⸻
-        \n<li>Improved design (Material 3).</li>
-        \n<li>New language: Czech. Thank you, Fjuro!</li>
-        \n
-        \n<b>1.17.3</b>
-        \n⸻
-        \n<li>New language: Hebrew. Appreciated, Yaron!</li>
-        \n
-        \n<b>1.17.2</b>
-        \n⸻
-        \n<li>New: Numbers can now be pasted from the clipboard.</li>
-        \n
-        \n<b>1.17.1</b>
-        \n⸻
-        \n<li>New language #1: Bulgarian. Thank you very much, Mihail! 🇧🇬</li>
-        \n<li>New language #2: Bengali. Cheers, Pratyay! 🇧🇩🇮🇳</li>
-        \n<li>Also updates to the rest of the translations.</li>
-        \n
-        \n<b>1.17.0</b>
-        \n⸻
-        \n<li>New feature: Enable the <b>Extended Keypad mode</b> in the settings to unlock <b>00</b> and <b>000</b> buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.</li>
-        \n
-        \n<b>1.16.2</b>
-        \n⸻
-        \n<li>New translation: Hungarian. Greatly appreciated, József! 🇭🇺</li>
-        \n
-        \n<b>1.16.1</b>
-        \n⸻
-        \n<li>Updated translations.</li>
-        \n
-        \n<b>1.16.0</b>
-        \n⸻
-        \n<li>New feature: Historical rates can now be selected to be used for the calculation.</li>
-        \n<li>New language: Indonesian. Thank you very much, @liimee! 🇮🇩🏝️</li>
-        \n
-        \n<b>1.15.0</b>
-        \n⸻
-        \n<li>New language: Dutch. Many thanks to the volunteer! 🇳🇱🌷</li>
-        \n<li>New feature: You can now toggle the currencies inside the timeline view with one click.</li>
-        \n<li>Again fixed an issue where the app would crash in some cases, when the dark theme is used.</li>
-        \n<li>Various little UI improvements.</li>
-        \n
-        \n<b>1.14.0</b>
-        \n⸻
-        \n<li>Some small improvements to follow Googles latest Material Design 3 guideline.</li>
-        \n<li>Updated translations. Thanks to all people who are helping!</li>
-        \n<li>Various stability improvements.</li>
-        \n
-        \n<b>1.13.0</b>
-        \n⸻
-        \n<li>Another new language: You can now enjoy the app in Arabic. Thanks a lot, Ahmed!\n🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</li>
-        \n<li>Some more RTL fixes for the landscape layout.</li>
-        \n<li>Fixed a crash when entering an empty value for the fee amount.</li>
-        \n<li>The data provider is being displayed in the timeline view.</li>
-        \n
-        \n<b>1.12.1</b>
-        \n⸻
-        \n<li>Fix crash on refreshing rates. Sorry! 🤕</li>
-        \n
-        \n<b>1.12.0</b>
-        \n⸻
-        \n<li>This release fixes several layout problems with right-to-left (RTL) languages. Now, everything should look as expected.</li>
-        \n<li>New feature: Preview all conversions in the currency picker. You have to enable it in the settings.</li>
-        \n<li>Sometimes, currencies would show old or wrong data after a rate refresh. This is fixed.</li>
-        \n<li>Really a lot of code improvements, to make this app even better.</li>
-        \n
-        \n<b>1.11.0</b>
-        \n⸻
-        \n<li>You\'re now able to pull-to-refresh to update the rates.</li>
-        \n<li>Much improved feedback when refreshing rates and in case of errors.</li>
-        \n<li>New language: A kind community member provided translations for Turkish. Thank you! 🇹🇷</li>
-        \n<li>In some situations, the wrong API was used for the timeline. That is fixed, now.</li>
-        \n
-        \n<b>1.10.3</b>
-        \n⸻
-        \n<li>Minor improvements.</li>
-        \n
-        \n<b>1.10.2</b>
-        \n⸻
-        \n<li>Fixed a crash when opening the preferences.</li>
-        \n
-        \n<b>1.10.1</b>
-        \n⸻
-        \n<li>Fixed a crash on Android 8.0.</li>
-        \n<li>Updated translations.</li>
-        \n<li>Small UI improvements.</li>
-        \n
-        \n<b>1.10.0</b>
-        \n⸻
-        \n<li>You\'re now able to favorite currencies for a quicker access. Have fun! ❤</li>
-        \n<li>Added option for a pure black theme experience, when using dark mode.</li>
-        \n<li>Updated translations. Thanks a lot to the volunteers!</li>
-        \n
-        \n<b>1.9.0</b>
-        \n⸻
-        \n<li>New localization: The app also speaks Greek, now. 🇬🇷</li>
-        \n
-        \n<b>1.8.1</b>
-        \n⸻
-        \n<li>Fixed an error where the app would crash in some cases, when the dark theme is used.</li>
-        \n
-        \n<b>1.8.0</b>
-        \n⸻
-        \n<li>Improved the display of exchange rate age.</li>
-        \n<li>Added a preference entry to rate the app on Google Play (not in the F-Droid version, of course).</li>
-        \n<li>Yet another localization: the app is now translated to Vietnamese. 🇻🇳</li>
-        \n<li>Small minor improvements.</li>
-        \n
-        \n<b>1.7.0</b>
-        \n⸻
-        \n<li><b>Enjoy some big new feature in this release!</b>
-        \nMost notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.</li>
-        \n<li>There\'s also an additional exchange rate provider: You can now choose <b>fer.ee</b> in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.</li>
-        \n<li>As always, this release includes updated libraries, small improvements and all the stuff that makes it even better.</li>
-        \n
-        \n<b>1.6.0</b>
-        \n⸻
-        \n<li>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish 🇪🇸, French 🇫🇷, Italian 🇮🇹 and Norwegian (Bokmål) 🇳🇴. Thanks so much for your help! 🙏🙏🙏</li>
-        \n<li>Small under-the-hood updates to make the app even more reliable.</li>
-        \n
-        \n<b>1.5.1</b>
-        \n⸻
-        \n<li>Fixes a bug where the rates wouldn\'t update, when exchangerate.host is used.</li>
-        \n<li>Library updates to improve stability and performance.</li>
-        \n
-        \n<b>1.5.0</b>
-        \n⸻
-        \n<li>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></li>
-        \n<li>You can now support the developer by donating with PayPal. Find the link in the settings. (F-Droid version only.)</li>
-        \n<li>More UI improvements</li>
-        \n
-        \n<b>1.4.1</b>
-        \n⸻
-        \n<li>UI improvements</li>
-        \n
-        \n<b>1.4.0</b>
-        \n⸻
-        \n<li>It is now possible to manually refresh the rates. Check it out in the overflow menu.</li>
-        \n<li>Performance improvements</li>
-        \n
-        \n<b>1.3.0</b>
-        \n⸻
-        \n<li><b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.</li>
-        \n<li>That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.</li>
-        \n<li>Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.</li>
-        \n<li>Small UI improvements</li>
-        \n
-        \n<b>1.2.0</b>
-        \n⸻
-        \n<li><b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …</li>
-        \n<li>To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.</li>
-        \n<li>The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!</li>
-        \n
-        \n<b>1.1.1</b>
-        \n⸻
-        \n<li>Minor improvements (typo \'n stuff)</li>
-        \n
-        \n<b>1.1.0</b>
-        \n⸻
-        \n<li>Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions.\nYou can now include that fee in the calculations, so you know how much you really pay. 🙂</li>
-        \n
-        \n<b>1.0.1</b>
-        \n⸻
-        \n<li>Fix possible crash on Android 11</li>
-        \n
-        \n<b>1.0.0</b>
-        \n⸻
-        \n<li>Added German translation 🇩🇪</li>
-        \n<li>Minor improvement: App size decreased by 50%!</li>
-        \n<li>App seems pretty stable: Public 1.0 release! 🥳🥳🥳</li>
-        \n
-        \n<b>0.2.2</b>
-        \n⸻
-        \n<li>Minor improvements</li>
-        \n
-        \n<b>0.2.1</b>
-        \n⸻
-        \n<li>Better error handling</li>
-        \n<li>Minor improvements</li>
-        \n
-        \n<b>0.2.0</b>
-        \n⸻
-        \n<li>Added a copy function: Long click on the value you want to copy</li>
-        \n
-        \n<b>0.1.0</b>
-        \n⸻
-        \n<li>More fail-proof updating of the currency rates</li>
-        \n<li>Added a disclaimer</li>
-        \n<li>Added this changelog</li>
-        \n
-        \n<b>0.0.1</b>
-        \n⸻
-        \n<li>Initial pre-release</li>
-    </string>
+    <string-array name="changelog_1.17.5">
+        <item>Improved the precision of exchange rates in timeline view.</item>
+        <item>New language: Polish. Thanks a lot, ewm! 🇵🇱</item>
+        <item>Many updated translations. Thanks to all the contributors!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Improved design (Material 3).</item>
+        <item>New language: Czech. Thank you, Fjuro!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>New language: Hebrew. Appreciated, Yaron!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>New: Numbers can now be pasted from the clipboard.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>New language #1: Bulgarian. Thank you very much, Mihail! 🇧🇬</item>
+        <item>New language #2: Bengali. Cheers, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Also updates to the rest of the translations.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>New feature: Enable the <b>Extended Keypad mode</b> in the settings to unlock <b>00</b> and <b>000</b> buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>New translation: Hungarian. Greatly appreciated, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Updated translations.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>New feature: Historical rates can now be selected to be used for the calculation.</item>
+        <item>New language: Indonesian. Thank you very much, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>New language: Dutch. Many thanks to the volunteer! 🇳🇱🌷</item>
+        <item>New feature: You can now toggle the currencies inside the timeline view with one click.</item>
+        <item>Again fixed an issue where the app would crash in some cases, when the dark theme is used.</item>
+        <item>Various little UI improvements.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Some small improvements to follow Googles latest Material Design 3 guideline.</item>
+        <item>Updated translations. Thanks to all people who are helping!</item>
+        <item>Various stability improvements.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Another new language: You can now enjoy the app in Arabic. Thanks a lot, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Some more RTL fixes for the landscape layout.</item>
+        <item>Fixed a crash when entering an empty value for the fee amount.</item>
+        <item>The data provider is being displayed in the timeline view.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Fix crash on refreshing rates. Sorry! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>This release fixes several layout problems with right-to-left (RTL) languages. Now, everything should look as expected.</item>
+        <item>New feature: Preview all conversions in the currency picker. You have to enable it in the settings.</item>
+        <item>Sometimes, currencies would show old or wrong data after a rate refresh. This is fixed.</item>
+        <item>Really a lot of code improvements, to make this app even better.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>You\'re now able to pull-to-refresh to update the rates.</item>
+        <item>Much improved feedback when refreshing rates and in case of errors.</item>
+        <item>New language: A kind community member provided translations for Turkish. Thank you! 🇹🇷</item>
+        <item>In some situations, the wrong API was used for the timeline. That is fixed, now.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Minor improvements.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Fixed a crash when opening the preferences.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Fixed a crash on Android 8.0.</item>
+        <item>Updated translations.</item>
+        <item>Small UI improvements.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>You\'re now able to favorite currencies for a quicker access. Have fun! ❤</item>
+        <item>Added option for a pure black theme experience, when using dark mode.</item>
+        <item>Updated translations. Thanks a lot to the volunteers!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>New localization: The app also speaks Greek, now. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Fixed an error where the app would crash in some cases, when the dark theme is used.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Improved the display of exchange rate age.</item>
+        <item>Added a preference entry to rate the app on Google Play (not in the F-Droid version, of course).</item>
+        <item>Yet another localization: the app is now translated to Vietnamese. 🇻🇳</item>
+        <item>Small minor improvements.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Enjoy some big new feature in this release! Most notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.</item>
+        <item>There\'s also an additional exchange rate provider: You can now choose <b>fer.ee</b> in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.</item>
+        <item>As always, this release includes updated libraries, small improvements and all the stuff that makes it even better.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Thanks to the support of awesome community members, this app is now not only localized in English and German, but also Spanish 🇪🇸, French 🇫🇷, Italian 🇮🇹 and Norwegian (Bokmål) 🇳🇴. Thanks so much for your help! 🙏🙏🙏</item>
+        <item>Small under-the-hood updates to make the app even more reliable.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Fixes a bug where the rates wouldn\'t update, when exchangerate.host is used.</item>
+        <item>Library updates to improve stability and performance.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></item>
+        <item>You can now support the developer by donating with PayPal. Find the link in the settings. (F-Droid version only.)</item>
+        <item>More UI improvements</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>UI improvements</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>It is now possible to manually refresh the rates. Check it out in the overflow menu.</item>
+        <item>Performance improvements</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item><b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.</item>
+        <item>That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.</item>
+        <item>Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.</item>
+        <item>Small UI improvements</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item><b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …</item>
+        <item>To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.</item>
+        <item>The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Minor improvements (typo \'n stuff)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Depending on your credit card agreement, your bank may charge a fee on all foreign exchange transactions. You can now include that fee in the calculations, so you know how much you really pay. 🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Fix possible crash on Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Added German translation 🇩🇪</item>
+        <item>Minor improvement: App size decreased by 50%!</item>
+        <item>App seems pretty stable: Public 1.0 release! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Minor improvements</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Better error handling</item>
+        <item>Minor improvements</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Added a copy function: Long click on the value you want to copy</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>More fail-proof updating of the currency rates</item>
+        <item>Added a disclaimer</item>
+        <item>Added this changelog</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Initial pre-release</item>
+    </string-array>
 
 </resources>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.5">
+        <item>Précision améliorée des taux de changes dans la vue chronologique ;</item>
+        <item>Nouvelle langue : Polonais. Merci à ewm !</item>
+        <item>De nombreuses traductions mises à jour. Merci à tous les bénévoles !</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Amélioration de l’interface (Material 3).</item>
+        <item>Nouvelle langue: Tchèque. Merci, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Nouvelle langue : Hébreu. Merci Yaron !</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Nouveau : les nombres peuvent être collés depuis le presse-papier.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Nouvelle langue #1 : Bulgare. Un grand merci à Mihail ! 🇧🇬</item>
+        <item>Nouvelle langue #2 : Bengali. Salut, Pratyay ! 🇧🇩🇮🇳</item>
+        <item>Également des mises à jour sur les autres traductions.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Nouvelle fonctionnalité : Activez le mode Clavier étendu dans les paramètres pour déverrouiller les touches "00" et "000". Très utile pour les devises comportant de grands chiffres comme la roupie indonésienne, le peso chilien, le dong vietnamien ou le won sud-coréen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Nouvelle traduction : Hongrois. J\'apprécie énormément, József ! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Traductions mises à jour</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Nouvelle fonctionnalité : Les taux historiques peuvent désormais être sélectionnés pour être utilisés pour le calcul.</item>
+        <item>Nouvelle langue : Indonésien. Merci beaucoup, @liimee ! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Nouvelle langue : le néerlandais. Un grand merci au volontaire ! 🇳🇱🌷</item>
+        <item>Nouvelle fonctionnalité : Vous pouvez maintenant basculer les devises à l\'intérieur de la vue chronologique en un seul clic.</item>
+        <item>Nous avons à nouveau corrigé un problème où l\'application plantait dans certains cas, lorsque le thème sombre est utilisé.</item>
+        <item>Diverses petites améliorations de l\'interface utilisateur.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Quelques petites améliorations pour suivre les dernières directives de Googles Material Design 3.</item>
+        <item>Mise à jour des traductions. Merci à tous ceux qui nous aident !</item>
+        <item>Diverses améliorations de la stabilité.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Une autre nouvelle langue : Vous pouvez maintenant profiter de l\'application en arabe. Merci beaucoup, Ahmed ! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Quelques corrections RTL supplémentaires pour la mise en page paysage.</item>
+        <item>Correction d\'un crash lors de la saisie d\'une valeur vide pour le montant des frais.</item>
+        <item>Le fournisseur de données est affiché dans la vue chronologique.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Correction du crash lors du rafraîchissement des taux. Désolé ! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Cette version corrige plusieurs problèmes de mise en page avec les langues de droite à gauche. Désormais, tout devrait se présenter comme prévu.</item>
+        <item>Nouvelle fonctionnalité : Prévisualisation de toutes les conversions dans le sélecteur de devises. Vous devez l\'activer dans les paramètres.</item>
+        <item>Parfois, les devises affichaient des données anciennes ou erronées après un rafraîchissement des taux.</item>
+        <item>Vraiment beaucoup d\'améliorations du code, pour rendre cette application encore meilleure.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Vous pouvez maintenant tirer sur le bouton de rafraîchissement pour mettre à jour les tarifs.</item>
+        <item>Le retour d\'information est nettement amélioré lors de l\'actualisation des tarifs et en cas d'erreur.</item>
+        <item>Nouvelle langue : Un membre de la communauté a fourni des traductions pour le turc. Merci ! 🇹🇷</item>
+        <item>Dans certaines situations, la mauvaise API était utilisée pour la ligne de temps. Cela est maintenant corrigé.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Améliorations mineures</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Correction d\'un crash lors de l\'ouverture des préférences.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Correction d\'une erreur sur Android 8.0</item>
+        <item>Traductions mises à jour</item>
+        <item>Petites améliorations de l\'interface utilisateur</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Vous êtes désormais en mesure d\'enregistrer vos devises favorites pour un accès plus rapide. Amusez-vous bien ! ❤</item>
+        <item>Ajout d\'une option pour une expérience de thème noir pur, lors de l\'utilisation du mode sombre.</item>
+        <item>Mise à jour des traductions. Merci beaucoup aux volontaires !</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Nouvelle localisation : L\'application parle aussi le grec, désormais. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Correction d\'une erreur où l\'application se bloquait dans certains cas, lorsque le thème sombre est utilisé.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Amélioration de l\'affichage de l\'âge du taux de change.</item>
+        <item>Ajout d\'une entrée de préférence pour évaluer l\'application sur Google Play (pas dans la version F-Droid, bien sûr).</item>
+        <item>Encore une autre localisation : l\'application est maintenant traduite en vietnamien.</item>
+        <item>Petites améliorations mineures.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Profitez de quelques nouvelles fonctionnalités importantes dans cette version ! La plus remarquable est que cette application inclut maintenant les taux historiques. Consultez le graphique de l\'année dernière, pour voir comment les devises ont évolué.</item>
+        <item>Il y a également un fournisseur de taux de change supplémentaire : fer.ee.</item>
+        <item>Comme toujours, cette version inclut des bibliothèques mises à jour, de petites améliorations et toutes les choses qui rendent l\'application encore meilleure.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Grâce au soutien des membres de la communauté, cette application est maintenant localisée non seulement en anglais et en allemand, mais aussi en espagnol, en français, en italien et en norvégien (Bokmål). Merci beaucoup pour votre aide ! 🙏🙏🙏</item>
+        <item>Petites mises à jour sous le capot pour rendre l\'appli encore plus fiable.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Correction d\'un bogue pour lequel les taux ne se mettaient pas à jour, lorsque exchangerate.host est utilisé.</item>
+        <item>Mises à jour de la bibliothèque pour améliorer la stabilité et les performances.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Choisissez entre deux fournisseurs d\'API : exchangerate.host et frankfurter.app</item>
+        <item>Vous pouvez maintenant soutenir le développeur en faisant un don avec PayPal. Vous trouverez le lien dans les paramètres.</item>
+        <item>Autres améliorations de l\'interface utilisateur</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Améliorations de l\'interface utilisateur</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Il est maintenant possible de rafraîchir manuellement les taux. Vérifiez-le dans le menu de débordement.</item>
+        <item>Amélioration des performances</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Tellement plus de devises ! Plus de 160 au total, maintenant ! C\'est parce que Currencies est passé à une API différente. L\'ancienne est passée à un modèle d'abonnement sans aucun avertissement préalable.</item>
+        <item>Cela signifie également que ces derniers jours, les taux de change ne pouvaient pas être actualisés. C\'est corrigé maintenant, bien sûr.</item>
+        <item>De plus, le processus de rafraîchissement lui-même a été amélioré.</item>
+        <item>Petites améliorations de l\'interface utilisateur</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Améliorations mineures (typo et autres)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>En fonction de votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les opérations de change. Vous pouvez désormais inclure ces frais dans les calculs, afin de savoir combien vous payez réellement.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Correction d\'un éventuel crash sur Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Ajout d\'une traduction en allemand 🇩🇪</item>
+        <item>Amélioration mineure : La taille de l\'appli a diminué de 50% !</item>
+        <item>L\'application semble assez stable : Version publique 1.0 ! 🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Améliorations mineures</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Meilleur traitement des erreurs</item>
+        <item>Améliorations mineures</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Ajout d\'une fonction de copie : Cliquez longuement sur la valeur que vous voulez copier</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Mise à jour plus sûre des taux de change.</item>
+        <item>Ajout d\'une clause de non-responsabilité</item>
+        <item>Ajout de ce journal des modifications</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Pré-version initiale</item>
+    </string-array>
+</resources>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.12.1">
+        <item>Risolto crash nell\'aggiornamento dei cambi. Scusate! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Questa release risolve dei problemi con il layout RTL (destra-sinistra). Ora, tutto dovrebbe funzionare come ti aspetti.</item>
+        <item>Nuova funzionalità: Visualizzare in anteprima tutte le conversioni nella lista delle valute. Da abilitare nelle impostazioni.</item>
+        <item>A volte, le valute visualizzano dati vecchi o errati dopo il ricarico. Questo è stato risolto.</item>
+        <item>Un sacco di miglioramenti nel codice, per rendere questa applicazione migliore.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Siete ora in grado di tirare per aggiornare i tassi.</item>
+        <item>Feedback molto migliorato quando si aggiornano i tassi e in caso di errori.</item>
+        <item>Nuova lingua: Un gentile membro della comunità ha fornito le traduzioni per il turco. Grazie! 🇹🇷</item>
+        <item>In alcune situazioni, è stata usata l\'API sbagliata per la linea temporale. Questo è stato risolto, ora.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Miglioramenti minori</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Risolto un crash durante l\'apertura delle preferenze.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Risolto un errore su Android 8.0</item>
+        <item>Traduzioni aggiornate</item>
+        <item>Piccoli miglioramenti dell\'interfaccia utente</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Ora sei in grado di valute preferite per un accesso più rapido. Divertiti! ❤</item>
+        <item>Aggiunta l\'opzione per un\'esperienza a tema nero puro, quando si utilizza la modalità scura.</item>
+        <item>Traduzioni aggiornate. Grazie mille ai volontari!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Nuova localizzazione: L\'app parla anche il greco, ora. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Corretto un errore per cui l\'app si bloccava in alcuni casi, quando veniva usato il tema scuro.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Migliorata la visualizzazione dell\'età del tasso di cambio.</item>
+        <item>Aggiunta una voce di preferenza per valutare l\'app su Google Play (non nella versione F-Droid, ovviamente).</item>
+        <item>Ancora una localizzazione: l\'app è ora tradotta in vietnamita.</item>
+        <item>Piccoli miglioramenti minori.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Godetevi alcune grandi novità in questa versione! In particolare, questa applicazione ora include i tassi storici. Dai un\'occhiata al grafico dell'anno scorso, per vedere come si sono sviluppate le valute.</item>
+        <item>C\'è anche un ulteriore fornitore di tassi di cambio</item>
+        <item>Come sempre, questa release include librerie aggiornate, piccoli miglioramenti e tutte le cose che la rendono ancora migliore.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Grazie al supporto dei fantastici membri della comunità, questa app è ora localizzata non solo in inglese e tedesco, ma anche in spagnolo, francese, italiano e norvegese (Bokmål). Grazie mille per il vostro aiuto! 🙏🙏🙏</item>
+        <item>Piccoli aggiornamenti sotto il cofano per rendere l\'app ancora più affidabile.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Corregge un bug per cui i tassi non si aggiornavano quando veniva usato exchangerate.host.</item>
+        <item>Aggiornamenti della libreria per migliorare la stabilità e le prestazioni.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Scegli tra due provider API: exchangerate.host e frankfurter.app</item>
+        <item>Ora puoi sostenere lo sviluppatore donando con PayPal. Trova il link nelle impostazioni.</item>
+        <item>Altri miglioramenti dell\'interfaccia utente</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Miglioramenti dell\'interfaccia utente</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>È ora possibile aggiornare manualmente i tassi. Controllate nel menu di overflow.</item>
+        <item>Miglioramenti delle prestazioni</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Tante altre valute! Più di 160 in totale, ora! Questo perché Currencies è passato a un\'altra API. Il nostro nuovo provider sarà exchangerate.host.</item>
+        <item>Questo significa anche che negli ultimi giorni i tassi di cambio non potevano essere aggiornati. Questo è risolto ora, naturalmente.</item>
+        <item>Inoltre, il processo di aggiornamento stesso è stato migliorato, così almeno la prossima volta che succede qualcosa del genere, riceverete un avviso.</item>
+        <item>Piccoli miglioramenti all\'interfaccia utente</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 nuove valute! Ora sono 50 in totale. 🥳 Troppe per nominarle tutte. Tuttavia, un sacco di popolari destinazioni di vacanza in Medio Oriente e nei Caraibi sono ora inclusi: UAE, Qatar, Barbados, Bahamas, Cuba, …</item>
+        <item>Per rimanere in cima a tutte queste nuove scelte, una ricerca è ora disponibile nel selezionatore di valuta.</item>
+        <item>Il selezionatore ora mostra anche il nome completo di una valuta, non solo il suo codice. Un\'aggiunta fantastica, in combinazione con la ricerca. Provatelo!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Miglioramenti minori</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>A seconda del contratto della tua carta di credito, la tua banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Ora puoi includere questa tassa nei calcoli, così sai quanto paghi realmente.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Correzione di un possibile crash su Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Aggiunta la traduzione in tedesco 🇩🇪</item>
+        <item>Miglioramento minore: Dimensione dell\'app diminuita del 50%!</item>
+        <item>App sembra abbastanza stabile: Rilascio pubblico 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Miglioramenti minori</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Migliore gestione degli errori</item>
+        <item>Miglioramenti minori</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Aggiunta una funzione di copia: Cliccare a lungo sul valore che si vuole copiare</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Aggiornamento più a prova di errore dei tassi di cambio</item>
+        <item>Aggiunto un disclaimer</item>
+        <item>Aggiunto questo changelog</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Pre-rilascio iniziale</item>
+    </string-array>
+</resources>
