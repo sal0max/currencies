@@ -1,2 +1,3 @@
-- 17 nouvelles monnaies ! Cela fait maintenant 50 au total. 🥳 Il y en a trop pour les nommer toutes. Cependant, beaucoup de destinations de vacances populaires au Moyen-Orient et dans les Caraïbes sont maintenant incluses : EAU, Qatar, Barbade, Bahamas, Cuba, ...
+- 17 nouvelles monnaies ! Cela fait maintenant 50 au total. 🥳 Il y en a trop pour les nommer toutes. Cependant, beaucoup de destinations de vacances populaires au Moyen-Orient et dans les Caraïbes sont maintenant incluses : EAU, Qatar, Barbade, Bahamas, Cuba, …
 - Pour rester au courant de tous ces nouveaux choix, une recherche est maintenant disponible dans le sélecteur de devises.
+- La boîte de dialogue de sélection affiche désormais également le nom complet d'une devise, et pas seulement son abréviation. Un ajout fantastique - en combinaison avec la recherche. Essayez-le !
