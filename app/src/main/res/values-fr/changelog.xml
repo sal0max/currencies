@@ -2,7 +2,7 @@
 <resources>
     <string-array name="changelog_1.17.5">
         <item>Précision améliorée des taux de changes dans la vue chronologique ;</item>
-        <item>Nouvelle langue : Polonais. Merci à ewm !</item>
+        <item>Nouvelle langue : Polonais. Merci à ewm ! 🇵🇱</item>
         <item>De nombreuses traductions mises à jour. Merci à tous les bénévoles !</item>
     </string-array>
 

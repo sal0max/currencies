@@ -2,7 +2,7 @@
 <resources>
     <string-array name="changelog_1.17.5">
         <item>Se ha mejorado la precisión de los tipos de cambio en la vista de la línea de tiempo.</item>
-        <item>Nuevo idioma: Polaco. ¡Muchas gracias, ewm!</item>
+        <item>Nuevo idioma: Polaco. ¡Muchas gracias, ewm! 🇵🇱</item>
         <item>Muchas traducciones actualizadas. ¡Gracias a todos los colaboradores!</item>
     </string-array>
 
