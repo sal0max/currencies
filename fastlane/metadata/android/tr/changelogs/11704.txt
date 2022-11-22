@@ -1,2 +1,2 @@
 - Tasarım iyileştirmeleri (Material 3).
-- Yeni dil: Çekçe. Teşekkürler, Fjuro! 🇨🇿
+- Yeni dil: Çekçe. Teşekkürler, Fjuro 🇨🇿!

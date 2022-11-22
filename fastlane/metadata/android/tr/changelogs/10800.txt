@@ -1,4 +1,4 @@
 - Geliştirilmiş döviz kuru göstergesi.
 - Uygulamayı Google Play'de puanlamak için tercih girdisi eklendi (F-Droid sürümü hariç, tabi ki).
-- Yeni bir yerelleştirme daha: Uygulama artık Vietnamcaya da çevrildi .
+- Yeni bir yerelleştirme daha: Uygulama artık Vietnamcaya da çevrildi. 🇻🇳
 - Küçük geliştirmeler.

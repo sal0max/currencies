@@ -1,0 +1,3 @@
+- Zaman çizelgesi görünümünde döviz kurlarının hassasiyeti iyileştirildi.
+- Yeni dil: Lehçe. Çok teşekkürler, ewm! 🇵🇱
+- Birçok çeviri güncellemesi. Katkıda bulunan herkese teşekkürler!

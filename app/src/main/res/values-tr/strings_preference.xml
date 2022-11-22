@@ -35,4 +35,6 @@
     <string name="donate_summary">PayPal üzerinden bağış yap</string>
     <string name="rate_title">Uygulamayı puanla</string>
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
+    <string name="category_versioninfo">Sürüm bilgisi</string>
+    <string name="title_changelog">Değişiklik günlüğü</string>
 </resources>
