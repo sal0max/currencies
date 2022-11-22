@@ -56,7 +56,7 @@
     </string-array>
 
     <string-array name="changelog_1.13.0">
-        <item>Nog een nieuwe taal: je kunt nu genieten van de app in het Arabisch. Heel erg bedankt, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳 🇾🇪</item>
+        <item>Nog een nieuwe taal: je kunt nu genieten van de app in het Arabisch. Heel erg bedankt, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
         <item>Nog wat RTL-fixes voor de landschapslay-out.</item>
         <item>Een crash verholpen bij het invoeren van een lege waarde voor het vergoedingsbedrag.</item>
         <item>De gegevensprovider wordt weergegeven in de tijdlijnweergave.</item>

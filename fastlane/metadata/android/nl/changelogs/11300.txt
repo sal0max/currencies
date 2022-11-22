@@ -1,4 +1,4 @@
-- Nog een nieuwe taal: je kunt nu genieten van de app in het Arabisch. Heel erg bedankt, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳 🇾🇪
+- Nog een nieuwe taal: je kunt nu genieten van de app in het Arabisch. Heel erg bedankt, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪
 - Nog wat RTL-fixes voor de landschapslay-out.
 - Een crash verholpen bij het invoeren van een lege waarde voor het vergoedingsbedrag.
 - De gegevensprovider wordt weergegeven in de tijdlijnweergave.
