@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.6">
+        <item>New translations! Icelandic by nazrin 🇮🇸, Portuguese (Brazil) by Cavernosa 🇧🇷 and Swedish by Samuel 🇸🇪. Awesome!</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>Improved the precision of exchange rates in timeline view.</item>
         <item>New language: Polish. Thanks a lot, ewm! 🇵🇱</item>
@@ -8,7 +12,7 @@
 
     <string-array name="changelog_1.17.4">
         <item>Improved design (Material 3).</item>
-        <item>New language: Czech. Thank you, Fjuro!</item>
+        <item>New language: Czech. Thank you, Fjuro! 🇨🇿</item>
     </string-array>
 
     <string-array name="changelog_1.17.3">
@@ -26,7 +30,7 @@
     </string-array>
 
     <string-array name="changelog_1.17.0">
-        <item>New feature: Enable the <b>Extended Keypad mode</b> in the settings to unlock <b>00</b> and <b>000</b> buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.</item>
+        <item>New feature: Enable the Extended Keypad mode in the settings to unlock 00 and 000 buttons. Really useful for currencies with large numbers like the Indonesian rupiah, Chilean peso, Vietnamese dong or South Korean won.</item>
     </string-array>
 
     <string-array name="changelog_1.16.2">
@@ -117,7 +121,7 @@
 
     <string-array name="changelog_1.7.0">
         <item>Enjoy some big new feature in this release! Most notably, this app now includes historic rates. Check out the chart for the past year, to see how the currencies have developed.</item>
-        <item>There\'s also an additional exchange rate provider: You can now choose <b>fer.ee</b> in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.</item>
+        <item>There\'s also an additional exchange rate provider: You can now choose fer.ee in the settings. A relatively new service, that behaves basically like frankfurter.app and is just one more choice for you.</item>
         <item>As always, this release includes updated libraries, small improvements and all the stuff that makes it even better.</item>
     </string-array>
 
@@ -132,7 +136,7 @@
     </string-array>
 
     <string-array name="changelog_1.5.0">
-        <item>Select between two API providers: <b>exchangerate.host</b> and <b>frankfurter.app</b></item>
+        <item>Select between two API providers: exchangerate.host and frankfurter.app</item>
         <item>You can now support the developer by donating with PayPal. Find the link in the settings. (F-Droid version only.)</item>
         <item>More UI improvements</item>
     </string-array>
@@ -147,16 +151,16 @@
     </string-array>
 
     <string-array name="changelog_1.3.0">
-        <item><b>So many more currencies! Over 160 in total, now!!</b> That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.</item>
+        <item>So many more currencies! Over 160 in total, now!! That\'s because Currencies switched to a different API. The old one (exchangeratesapi.io) changed to a subscription model without any prior warning. NOT GOOD! Our new provider will be exchangerate.host.</item>
         <item>That also means, that the last couple of days, the exchange rates couldn\'t be refreshed. That\'s fixed now, of course.</item>
         <item>Also, the refresh process itself got improved, so at least next time something like that happens, you\'ll get a notice.</item>
         <item>Small UI improvements</item>
     </string-array>
 
     <string-array name="changelog_1.2.0">
-        <item><b>17 new currencies!</b> That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …</item>
-        <item>To stay on top of all those new choices, a <b>search</b> is now available in the currency picker.</item>
-        <item>The picker now also shows a currency\'s <b>full name</b>, not only its code. An awesome addition, in combination with the search. Try it out!</item>
+        <item>17 new currencies! That\'s now 50 in total. 🥳 Too many to name them all. However, a lot of popular vacation destinations in the middle east and the caribbean are now included: UAE, Qatar, Barbados, Bahamas, Cuba, …</item>
+        <item>To stay on top of all those new choices, a search is now available in the currency picker.</item>
+        <item>The picker now also shows a currency\'s full name, not only its code. An awesome addition, in combination with the search. Try it out!</item>
     </string-array>
 
     <string-array name="changelog_1.1.1">
@@ -199,5 +203,4 @@
     <string-array name="changelog_0.0.1">
         <item>Initial pre-release</item>
     </string-array>
-
 </resources>

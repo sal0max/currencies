@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.6">
+        <item>Neue Übersetzungen! Isländisch von nazrin 🇮🇸, Portugiesisch (Brasilien) von Cavernosa 🇧🇷 und Schwedisch von Samuel 🇸🇪. Großartig!</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>Verbesserte Präzision der Wechselkurse in der Kursverlauf-Anzeige.</item>
         <item>Neue Sprache: Polnisch. Vielen Dank, ewm! 🇵🇱</item>

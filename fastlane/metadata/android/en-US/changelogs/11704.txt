@@ -1,2 +1,2 @@
 - Improved design (Material 3).
-- New language: Czech. Thank you, Fjuro!
+- New language: Czech. Thank you, Fjuro! 🇨🇿
