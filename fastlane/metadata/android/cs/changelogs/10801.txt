@@ -1,0 +1,1 @@
+- Byla opravena chyba, která v některých případech způsobovala pád aplikace při použití tmavého motivu.

@@ -1,0 +1,4 @@
+- Nový jazyk: Nový jazyk: holandština. Děkujeme dobrovolníkovi! 🇳🇱🌷
+- Nová funkce: Nyní můžete přepínat měny uvnitř zobrazení časové osy jedním kliknutím.
+- Opět opraven problém, kdy aplikace v některých případech padala, pokud bylo použito tmavé téma.
+- Různá drobná vylepšení uživatelského rozhraní.

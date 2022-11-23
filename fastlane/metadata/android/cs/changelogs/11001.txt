@@ -1,0 +1,3 @@
+- Opraven pád v systému Android 8.0.
+- Aktualizované překlady.
+- Drobná vylepšení uživatelského rozhraní.

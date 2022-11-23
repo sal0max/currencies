@@ -1,0 +1,2 @@
+- Opravuje chybu, kdy se sazby neaktualizovaly, pokud se použil soubor exchangerate.host.
+- Aktualizace knihovny pro zlepšení stability a výkonu.

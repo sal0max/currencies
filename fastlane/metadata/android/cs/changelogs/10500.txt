@@ -1,0 +1,3 @@
+- Výběr mezi dvěma poskytovateli API: exchangerate.host a frankfurter.app
+- Nyní můžete vývojáře podpořit příspěvkem přes PayPal. Odkaz najdete v nastavení. (Pouze verze pro F-Droid.)
+- Další vylepšení uživatelského rozhraní

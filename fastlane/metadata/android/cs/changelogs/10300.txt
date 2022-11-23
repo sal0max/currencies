@@ -1,0 +1,4 @@
+- Celkem více než 160 měn!! To proto, že měny přešly na jiné rozhraní API. To staré (exchangeratesapi.io) přešlo na model předplatného bez jakéhokoli předchozího upozornění. NENÍ TO DOBRÉ! Naším novým poskytovatelem bude exchangerate.host.
+- To také znamená, že posledních pár dní nebylo možné obnovovat kurzy měn. To už je samozřejmě opraveno.
+- Také samotný proces obnovy se zlepšil, takže až se příště něco takového stane, dostanete alespoň upozornění.
+- Drobná vylepšení uživatelského rozhraní
