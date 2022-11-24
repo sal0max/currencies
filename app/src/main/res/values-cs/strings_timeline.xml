@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">z &lt;b>%1$s&lt;/b> do &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">Data od &lt;b>%s&lt;/b></string>
+    <string name="rate_average">prům</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+    <string name="year">rok</string>
+    <string name="month">měsíc</string>
+    <string name="week">týden</string>
+</resources>

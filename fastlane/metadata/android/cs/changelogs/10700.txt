@@ -1,0 +1,3 @@
+- Užijte si několik velkých novinek v této verzi! Především tato aplikace nyní obsahuje historické kurzy. Podívejte se na graf za poslední rok a zjistěte, jak se měny vyvíjely.
+- K dispozici je také další poskytovatel směnných kurzů: V nastavení si nyní můžete vybrat fer.ee. Poměrně nová služba, která se chová v podstatě stejně jako frankfurter.app a je pro vás jen další volbou.
+- Jako vždy obsahuje tato verze aktualizované knihovny, drobná vylepšení a všechny věci, které ji dělají ještě lepší.

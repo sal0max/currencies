@@ -1,0 +1,2 @@
+- Nová funkce: Nyní lze pro výpočet použít historické sazby.
+- Nový jazyk: Nově přidána indonéština. Moc děkujeme, @liimee! 🇮🇩🏝️

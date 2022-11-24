@@ -38,7 +38,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Aktualisierte Übersetzungen</item>
+        <item>Aktualisierte Übersetzungen.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">
@@ -137,7 +137,7 @@
 
     <string-array name="changelog_1.5.0">
         <item>Wähle zwischen zwei API-Anbietern: exchangerate.host und frankfurter.app</item>
-        <item>Du kannst jetzt den Entwickler per PayPal-Spende unterstützen. Den Link findest du in den Einstellungen.</item>
+        <item>Du kannst jetzt den Entwickler per PayPal-Spende unterstützen. Den Link findest du in den Einstellungen. (Nur in der F-Droid Version)</item>
         <item>Weitere UI-Verbesserungen</item>
     </string-array>
 

@@ -1,0 +1,4 @@
+- Tato verze opravuje několik problémů s rozvržením v jazycích zprava doleva (RTL). Nyní by vše mělo vypadat podle očekávání.
+- Nová funkce: Náhled všech konverzí ve výběrovém okně měn. Je třeba ji povolit v nastavení.
+- Někdy se u měn po obnovení kurzu zobrazovaly staré nebo nesprávné údaje. To je již opraveno.
+- Opravdu hodně vylepšení kódu, aby byla tato aplikace ještě lepší.

@@ -1,0 +1,3 @@
+- Několik drobných vylepšení v souladu s nejnovějšími pokyny společnosti Google pro Material Design 3.
+- Aktualizované překlady. Děkujeme všem lidem, kteří pomáhají!
+- Různá vylepšení stability.

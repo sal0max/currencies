@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.6">
+        <item>Nouvelles traductions ! Islandais par nazrin 🇮🇸, portugais (Brésil) par Cavernosa 🇧🇷 et Suédois par Samuel 🇸🇪. Génial!</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>Précision améliorée des taux de changes dans la vue chronologique ;</item>
         <item>Nouvelle langue : Polonais. Merci à ewm ! 🇵🇱</item>
@@ -34,7 +38,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Traductions mises à jour</item>
+        <item>Traductions mises à jour.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">
@@ -81,7 +85,7 @@
     </string-array>
 
     <string-array name="changelog_1.10.3">
-        <item>Améliorations mineures</item>
+        <item>Améliorations mineures.</item>
     </string-array>
 
     <string-array name="changelog_1.10.2">
@@ -89,9 +93,9 @@
     </string-array>
 
     <string-array name="changelog_1.10.1">
-        <item>Correction d\'une erreur sur Android 8.0</item>
-        <item>Traductions mises à jour</item>
-        <item>Petites améliorations de l\'interface utilisateur</item>
+        <item>Correction d\'une erreur sur Android 8.0.</item>
+        <item>Traductions mises à jour.</item>
+        <item>Petites améliorations de l\'interface utilisateur.</item>
     </string-array>
 
     <string-array name="changelog_1.10.0">
@@ -111,7 +115,7 @@
     <string-array name="changelog_1.8.0">
         <item>Amélioration de l\'affichage de l\'âge du taux de change.</item>
         <item>Ajout d\'une entrée de préférence pour évaluer l\'application sur Google Play (pas dans la version F-Droid, bien sûr).</item>
-        <item>Encore une autre localisation : l\'application est maintenant traduite en vietnamien.</item>
+        <item>Encore une autre localisation : l\'application est maintenant traduite en vietnamien. 🇻🇳</item>
         <item>Petites améliorations mineures.</item>
     </string-array>
 
@@ -122,7 +126,7 @@
     </string-array>
 
     <string-array name="changelog_1.6.0">
-        <item>Grâce au soutien des membres de la communauté, cette application est maintenant localisée non seulement en anglais et en allemand, mais aussi en espagnol, en français, en italien et en norvégien (Bokmål). Merci beaucoup pour votre aide ! 🙏🙏🙏</item>
+        <item>Grâce au soutien des membres de la communauté, cette application est maintenant localisée non seulement en anglais et en allemand, mais aussi en espagnol 🇪🇸, en français 🇫🇷, en italien 🇮🇹 et en norvégien (Bokmål) 🇳🇴. Merci beaucoup pour votre aide ! 🙏🙏🙏</item>
         <item>Petites mises à jour sous le capot pour rendre l\'appli encore plus fiable.</item>
     </string-array>
 
@@ -133,7 +137,7 @@
 
     <string-array name="changelog_1.5.0">
         <item>Choisissez entre deux fournisseurs d\'API : exchangerate.host et frankfurter.app</item>
-        <item>Vous pouvez maintenant soutenir le développeur en faisant un don avec PayPal. Vous trouverez le lien dans les paramètres.</item>
+        <item>Vous pouvez maintenant soutenir le développeur en faisant un don avec PayPal. Vous trouverez le lien dans les paramètres. (version F-Droid uniquement.)</item>
         <item>Autres améliorations de l\'interface utilisateur</item>
     </string-array>
 

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.17.6">
+        <item>Nové překlady! Islandština od nazrin 🇮🇸, portugalština (Brazílie) od Cavernosa 🇧🇷 a švédština od Samuela 🇸🇪. Úžasné!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.5">
+        <item>Zlepšena přesnost směnných kurzů v zobrazení časové osy.</item>
+        <item>Nový jazyk: Nový jazyk: polština. Díky moc, ewm! 🇵🇱</item>
+        <item>Mnoho aktualizovaných překladů. Díky všem přispěvatelům!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Vylepšen design (Material 3).</item>
+        <item>Nový jazyk: čeština. Děkujeme, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Nový jazyk: Nový jazyk: hebrejština. Oceňuji, Yarone! 🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Novinka: Čísla lze nyní vkládat ze schránky.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Nový jazyk č. 1: bulharština. Děkuji mnohokrát, Mihaile! 🇧🇬</item>
+        <item>Nový jazyk #2: bengálština. Na zdraví, Pratyayi! 🇧🇩🇮🇳</item>
+        <item>Také aktualizace ostatních překladů.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Nová funkce: Povolte v nastavení režim rozšířené klávesnice pro odemknutí tlačítek 00 a 000. Opravdu užitečné pro měny s velkými čísly, jako je indonéská rupie, chilské peso, vietnamský dong nebo jihokorejský won.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Nový překlad: Překlad do maďarštiny. Velmi si toho vážíme, Józsefe! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Aktualizované překlady.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Nová funkce: Nyní lze pro výpočet použít historické sazby.</item>
+        <item>Nový jazyk: Nově přidána indonéština. Moc děkujeme, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Nový jazyk: Nový jazyk: holandština. Děkujeme dobrovolníkovi! 🇳🇱🌷</item>
+        <item>Nová funkce: Nyní můžete přepínat měny uvnitř zobrazení časové osy jedním kliknutím.</item>
+        <item>Opět opraven problém, kdy aplikace v některých případech padala, pokud bylo použito tmavé téma.</item>
+        <item>Různá drobná vylepšení uživatelského rozhraní.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Několik drobných vylepšení v souladu s nejnovějšími pokyny společnosti Google pro Material Design 3.</item>
+        <item>Aktualizované překlady. Děkujeme všem lidem, kteří pomáhají!</item>
+        <item>Různá vylepšení stability.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Další nový jazyk: Nyní můžete aplikaci používat v arabštině. Díky moc, Ahmede! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Další opravy RTL pro rozložení na šířku.</item>
+        <item>Opraven pád při zadání prázdné hodnoty pro výši poplatku.</item>
+        <item>Poskytovatel údajů se zobrazuje v zobrazení časové osy.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Oprava pádu při obnovování sazeb. Omlouváme se! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Tato verze opravuje několik problémů s rozvržením v jazycích zprava doleva (RTL). Nyní by vše mělo vypadat podle očekávání.</item>
+        <item>Nová funkce: Náhled všech konverzí ve výběrovém okně měn. Je třeba ji povolit v nastavení.</item>
+        <item>Někdy se u měn po obnovení kurzu zobrazovaly staré nebo nesprávné údaje. To je již opraveno.</item>
+        <item>Opravdu hodně vylepšení kódu, aby byla tato aplikace ještě lepší.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Nyní můžete aktualizovat sazby pomocí funkce pull-to-refresh.</item>
+        <item>Mnohem lepší zpětná vazba při aktualizaci sazeb a v případě chyb.</item>
+        <item>Nový jazyk: Laskavý člen komunity poskytl překlad pro turečtinu. Děkujeme! 🇹🇷</item>
+        <item>V některých situacích bylo pro časovou osu použito nesprávné API. To je nyní opraveno.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Drobná vylepšení.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Opraven pád při otevření předvoleb.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Opraven pád v systému Android 8.0.</item>
+        <item>Aktualizované překlady.</item>
+        <item>Drobná vylepšení uživatelského rozhraní.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Nyní si můžete oblíbit měny pro rychlejší přístup. Bavte se! ❤</item>
+        <item>Přidána možnost čistě černého zobrazení tématu při použití tmavého režimu.</item>
+        <item>Aktualizované překlady. Moc děkujeme dobrovolníkům!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Nová lokalizace: Aplikace nyní mluví také řecky. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Byla opravena chyba, která v některých případech způsobovala pád aplikace při použití tmavého motivu.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Vylepšeno zobrazení věku směnného kurzu.</item>
+        <item>Přidána položka předvoleb pro hodnocení aplikace na Google Play (samozřejmě ne ve verzi pro F-Droid).</item>
+        <item>Další lokalizace: aplikace je nyní přeložena do vietnamštiny. 🇻🇳</item>
+        <item>Drobná drobná vylepšení.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Užijte si několik velkých novinek v této verzi! Především tato aplikace nyní obsahuje historické kurzy. Podívejte se na graf za poslední rok a zjistěte, jak se měny vyvíjely.</item>
+        <item>K dispozici je také další poskytovatel směnných kurzů: V nastavení si nyní můžete vybrat fer.ee. Poměrně nová služba, která se chová v podstatě stejně jako frankfurter.app a je pro vás jen další volbou.</item>
+        <item>Jako vždy obsahuje tato verze aktualizované knihovny, drobná vylepšení a všechny věci, které ji dělají ještě lepší.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Díky podpoře úžasných členů komunity je nyní tato aplikace lokalizována nejen do angličtiny a němčiny, ale také do španělštiny 🇪🇸, francouzštiny 🇫🇷, italštiny 🇮🇹 a norštiny (Bokmål) 🇳🇴. Moc děkujeme za pomoc! 🙏🙏🙏</item>
+        <item>Drobné aktualizace pod kapotou, aby byla aplikace ještě spolehlivější.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Opravuje chybu, kdy se sazby neaktualizovaly, pokud se použil soubor exchangerate.host.</item>
+        <item>Aktualizace knihovny pro zlepšení stability a výkonu.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Výběr mezi dvěma poskytovateli API: exchangerate.host a frankfurter.app</item>
+        <item>Nyní můžete vývojáře podpořit příspěvkem přes PayPal. Odkaz najdete v nastavení. (Pouze verze pro F-Droid.)</item>
+        <item>Další vylepšení uživatelského rozhraní</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Vylepšení rozhraní</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Nyní je možné sazby obnovovat ručně. Podívejte se na to v nabídce přetečení.</item>
+        <item>Vylepšení výkonu</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Celkem více než 160 měn!! To proto, že měny přešly na jiné rozhraní API. To staré (exchangeratesapi.io) přešlo na model předplatného bez jakéhokoli předchozího upozornění. NENÍ TO DOBRÉ! Naším novým poskytovatelem bude exchangerate.host.</item>
+        <item>To také znamená, že posledních pár dní nebylo možné obnovovat kurzy měn. To už je samozřejmě opraveno.</item>
+        <item>Také samotný proces obnovy se zlepšil, takže až se příště něco takového stane, dostanete alespoň upozornění.</item>
+        <item>Drobná vylepšení uživatelského rozhraní</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 nových měn! Celkem je jich nyní 50. 🥳 Je jich příliš mnoho na to, abychom je všechny vyjmenovali. Nově je však zahrnuta spousta oblíbených dovolenkových destinací na Blízkém východě a v Karibiku: Spojené arabské emiráty, Katar, Barbados, Bahamy, Kuba, …</item>
+        <item>Abyste měli přehled o všech těchto nových možnostech, je nyní k dispozici vyhledávání ve výběru měny.</item>
+        <item>Výběr měny nyní zobrazuje také její úplný název, nikoli pouze její kód. Úžasný doplněk v kombinaci s vyhledáváním. Vyzkoušejte to!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Drobná vylepšení (překlepy)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>V závislosti na smlouvě o kreditní kartě může vaše banka účtovat poplatek za všechny devizové transakce. Nyní můžete tento poplatek zahrnout do výpočtu, abyste věděli, kolik skutečně zaplatíte. 🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Oprava možného pádu v systému Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Přidán německý překlad 🇩🇪</item>
+        <item>Drobné vylepšení: Velikost aplikace se zmenšila o 50 %!</item>
+        <item>Aplikace se zdá být poměrně stabilní: Veřejná verze 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Drobná vylepšení</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Lepší zpracování chyb</item>
+        <item>Drobná vylepšení</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Přidána funkce kopírování: Dlouhé kliknutí na hodnotu, kterou chcete zkopírovat</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Větší spolehlivost aktualizace měnových kurzů</item>
+        <item>Přidáno prohlášení o vyloučení odpovědnosti</item>
+        <item>Přidán tento seznam změn</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>První předběžné vydání</item>
+    </string-array>
+</resources>

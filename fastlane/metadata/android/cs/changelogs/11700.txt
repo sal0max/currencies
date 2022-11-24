@@ -1,0 +1,1 @@
+- Nová funkce: Povolte v nastavení režim rozšířené klávesnice pro odemknutí tlačítek 00 a 000. Opravdu užitečné pro měny s velkými čísly, jako je indonéská rupie, chilské peso, vietnamský dong nebo jihokorejský won.

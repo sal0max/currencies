@@ -1,0 +1,4 @@
+- Nyní můžete aktualizovat sazby pomocí funkce pull-to-refresh.
+- Mnohem lepší zpětná vazba při aktualizaci sazeb a v případě chyb.
+- Nový jazyk: Laskavý člen komunity poskytl překlad pro turečtinu. Děkujeme! 🇹🇷
+- V některých situacích bylo pro časovou osu použito nesprávné API. To je nyní opraveno.

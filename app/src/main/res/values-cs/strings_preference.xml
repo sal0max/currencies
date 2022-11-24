@@ -35,4 +35,6 @@
     <string name="donate_summary">Přispět pomocí PayPalu</string>
     <string name="rate_title">Ohodnotit tuto aplikaci</string>
     <string name="rate_summary">Pokud chcete, můžete ostatním pomoci objevit Currencies. Klepněte sem a ohodnoťte aplikaci v Google Play.</string>
+    <string name="category_versioninfo">Info o verzi</string>
+    <string name="title_changelog">Seznam změn</string>
 </resources>
