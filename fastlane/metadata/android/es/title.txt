@@ -1,1 +1,1 @@
-Monedas: obtener tipos de cambio
+Moneda: obtenga el cambio

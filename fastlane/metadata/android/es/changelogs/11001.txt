@@ -1,3 +1,3 @@
-- Se corrigió un error en Android 8.0
-- Traducciones actualizadas
-- Pequeñas mejoras en la interfaz de usuario
+- Se ha corregido un fallo en Android 8.0.
+- Actualizadas las traducciones.
+- Pequeñas mejoras en la interfaz de usuario.
