@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Paramètres généraux</string>
@@ -35,4 +37,6 @@
     <string name="donate_summary">Donner via PayPal</string>
     <string name="rate_title">Notez cette application</string>
     <string name="rate_summary">Si vous le souhaitez, vous pouvez aider d\'autres personnes à découvrir Currencies. Cliquez ici pour évaluer l\'application sur Google Play.</string>
+    <string name="title_changelog">Journal des modifications</string>
+    <string name="category_versioninfo">Informations sur les versions</string>
 </resources>
