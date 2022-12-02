@@ -1,0 +1,3 @@
+- Traduzimos o app para Alemão 🇩🇪
+- Melhora pequena: O tamanho do app diminuiu por 50%!
+- Aplicativo pareçe estar estável: Lancamento público 1.0! 🥳🥳🥳
