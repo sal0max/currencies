@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.6">
+        <item>¡Nuevas traducciones! Al islandés por nazrin 🇮🇸, al portugués (Brasil) por Cavernosa 🇧🇷 y al sueco por Samuel 🇸🇪. ¡Impresionante!</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>Se ha mejorado la precisión de los tipos de cambio en la vista de la línea de tiempo.</item>
         <item>Nuevo idioma: Polaco. ¡Muchas gracias, ewm! 🇵🇱</item>
@@ -34,7 +38,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Traducciones actualizadas</item>
+        <item>Traducciones actualizadas.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">
@@ -81,7 +85,7 @@
     </string-array>
 
     <string-array name="changelog_1.10.3">
-        <item>Mejoras menores</item>
+        <item>Mejoras menores.</item>
     </string-array>
 
     <string-array name="changelog_1.10.2">
@@ -89,9 +93,9 @@
     </string-array>
 
     <string-array name="changelog_1.10.1">
-        <item>Se corrigió un error en Android 8.0</item>
-        <item>Traducciones actualizadas</item>
-        <item>Pequeñas mejoras en la interfaz de usuario</item>
+        <item>Se ha corregido un fallo en Android 8.0.</item>
+        <item>Actualizadas las traducciones.</item>
+        <item>Pequeñas mejoras en la interfaz de usuario.</item>
     </string-array>
 
     <string-array name="changelog_1.10.0">
@@ -111,7 +115,7 @@
     <string-array name="changelog_1.8.0">
         <item>Se ha mejorado la visualización de la edad del tipo de cambio.</item>
         <item>Se ha añadido una entrada de preferencias para valorar la aplicación en Google Play (no en la versión F-Droid, por supuesto).</item>
-        <item>Otra localización más: la aplicación está ahora traducida al vietnamita.</item>
+        <item>Otra localización más: la app está ahora traducida al vietnamita. 🇻🇳</item>
         <item>Pequeñas mejoras menores.</item>
     </string-array>
 
@@ -122,8 +126,8 @@
     </string-array>
 
     <string-array name="changelog_1.6.0">
-        <item>Gracias al apoyo de los increíbles miembros de la comunidad, esta aplicación no sólo está localizada en inglés y alemán, sino también en español, francés, italiano y noruego (Bokmål). ¡Muchas gracias por vuestra ayuda! 🙏🙏🙏</item>
-        <item>Pequeñas actualizaciones para que la aplicación sea aún más fiable.</item>
+        <item>Gracias al apoyo de los increíbles miembros de la comunidad, esta aplicación no solo está localizada en inglés y alemán, sino también en español 🇪🇸, francés 🇫🇷, italiano 🇮🇹 y noruego (Bokmål) 🇳🇴. ¡Muchas gracias por tu ayuda! 🙏🙏🙏</item>
+        <item>Pequeñas actualizaciones bajo el capó para que la app sea aún más fiable.</item>
     </string-array>
 
     <string-array name="changelog_1.5.1">
@@ -133,7 +137,7 @@
 
     <string-array name="changelog_1.5.0">
         <item>Selecciona entre dos proveedores de API: exchangerate.host y frankfurter.app</item>
-        <item>Ahora puedes apoyar al desarrollador donando con PayPal. Encuentra el enlace en la configuración.</item>
+        <item>Ahora puedes apoyar al desarrollador donando con PayPal. Encuentra el enlace en los ajustes. (Sólo en la versión F-Droid).</item>
         <item>Más mejoras en la interfaz de usuario</item>
     </string-array>
 
@@ -164,7 +168,7 @@
     </string-array>
 
     <string-array name="changelog_1.1.0">
-        <item>Según el contrato de su tarjeta de crédito, su banco puede cobrar una comisión por todas las operaciones de cambio de divisas. Ahora puedes incluir esa comisión en los cálculos, para saber cuánto pagas realmente.</item>
+        <item>Según el contrato de tu tarjeta de crédito, tu banco puede cobrar una comisión por todas las operaciones de cambio de divisas. Ahora puedes incluir esa comisión en los cálculos, para saber cuánto pagas realmente. 🙂</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">

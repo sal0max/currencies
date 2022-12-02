@@ -35,4 +35,6 @@
     <string name="donate_summary">Donera via PayPal</string>
     <string name="rate_title">Betygssätt appen</string>
     <string name="rate_summary">Om du vill så kan du bidra till att fler upptäcker Currencies. Tryck här för att betygssätta appen på Google Play.</string>
+    <string name="category_versioninfo">Info om version</string>
+    <string name="title_changelog">Ändringslogg</string>
 </resources>

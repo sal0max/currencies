@@ -2,9 +2,9 @@
 <!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
-    <string name="category_settings">Definições gerais</string>
-    <string name="fee_title">Taxa de transacção estrangeira</string>
-    <string name="fee_summary">Dependendo das condições do seu cartão de crédito, o seu banco pode cobrar uma taxa em todas as transacções de moedas estrangeiras. Aqui pode introduzir essa taxa. Será adicionada no início do cálculo, para assim saber quanto paga <i>mesmo</i>.</string>
+    <string name="category_settings">Configurações Gerais</string>
+    <string name="fee_title">Taxa de transação estrangeira</string>
+    <string name="fee_summary">Dependendo do seu contrato de cartão de crédito, seu banco pode cobrar uma taxa em todas as transações de câmbio. Aqui você pode inserir essa taxa. Ele será adicionado no topo do cálculo, para que você saiba quanto você <i>realmente</i> paga.</string>
     <string name="previewConversion_title">Previsão da conversão</string>
     <string name="previewConversion_summary">Mostrar a conversão atual para cada taxa no selecionador de moeda.</string>
     <string name="extendedKeypad_title">Teclado numérico extendido</string>
@@ -35,4 +35,6 @@
     <string name="donate_summary">Doar via PayPal</string>
     <string name="rate_title">Classifique esta app</string>
     <string name="rate_summary">Se desejar, pode ajudar outros a descobrir Currencies. Clique aqui para avaliar a aplicação no Google Play.</string>
+
+
 </resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+
+    <string name="rate_min">min</string>
+    <string name="rate_max">max</string>
+    <string name="year">ano</string>
+    <string name="month">mês</string>
+    <string name="week">semana</string>
+</resources>

@@ -1,4 +1,4 @@
 - Se ha mejorado la visualización de la edad del tipo de cambio.
 - Se ha añadido una entrada de preferencias para valorar la aplicación en Google Play (no en la versión F-Droid, por supuesto).
-- Otra localización más: la aplicación está ahora traducida al vietnamita.
+- Otra localización más: la app está ahora traducida al vietnamita. 🇻🇳
 - Pequeñas mejoras menores.
