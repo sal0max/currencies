@@ -1,18 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.3">
+        <item>Nova lingua: Hebreu. Obrigada, Yaron! 🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Traduções atualizadas.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Pequenos ajustes.</item>
+    </string-array>
+
     <string-array name="changelog_1.10.0">
         <item>Agora você pode favoritar moedas para um acesso mais rápido. Se divirta! ❤</item>
         <item>Adicionamos uma opção para uma experiência de tema escuro puro, para quando o modo escuro for usado.</item>
         <item>Traduções atualizadas. Agradecemos muito os voluntários!</item>
     </string-array>
 
+    <string-array name="changelog_1.9.0">
+        <item>Nova língua: O app agora está disponível em Grego.🇬🇷</item>
+    </string-array>
+
     <string-array name="changelog_1.4.1">
         <item>Melhoras na UI</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Pequenos ajustes(melhoras na gramática, etc)</item>
     </string-array>
 
     <string-array name="changelog_1.0.0">
         <item>Traduzimos o app para Alemão 🇩🇪</item>
         <item>Melhora pequena: O tamanho do app diminuiu por 50%!</item>
         <item>Aplicativo pareçe estar estável: Lancamento público 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Pequenos ajustes</item>
     </string-array>
 </resources>
