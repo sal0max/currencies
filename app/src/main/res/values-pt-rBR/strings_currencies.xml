@@ -8,7 +8,7 @@
     <string name="name_aoa">Kwanza Angolano</string>
     <string name="name_ars">Peso Argentino</string>
     <string name="name_aud">Dólar Australiano</string>
-
+    <string name="name_awg">Florim arubano</string>
     <string name="name_azn">Manat Azeri</string>
     <string name="name_bam">Marco Conversível</string>
     <string name="name_bbd">Dólar de Barbados</string>
@@ -16,7 +16,7 @@
     <string name="name_bgn">Lev Búlgaro</string>
     <string name="name_bhd">Dinar do Bahrein</string>
     <string name="name_bif">Franco Burundinês</string>
-
+    <string name="name_bmd">Dólar bermudense</string>
     <string name="name_bnd">Dólar de Brunei</string>
     <string name="name_bob">Boliviano</string>
     <string name="name_brl">Real Brasileiro</string>
@@ -27,7 +27,7 @@
     <string name="name_byn">Rublo Bielorrusso</string>
     <string name="name_bzd">Dólar do Belize</string>
     <string name="name_cad">Dólar Canadiano</string>
-
+    <string name="name_cdf">Franco congolês</string>
     <string name="name_chf">Franco Suíço</string>
 
     <string name="name_clp">Peso Chileno</string>
@@ -35,7 +35,7 @@
     <string name="name_cny">Yuan Chinês</string>
     <string name="name_cop">Peso Colombiano</string>
     <string name="name_crc">Colón Costa-riquenho</string>
-
+    <string name="name_cuc">Peso Cubano convertível</string>
     <string name="name_cup">Peso Cubano</string>
     <string name="name_cve">Escudo cabo-verdiano</string>
     <string name="name_czk">Coroa Checa</string>
