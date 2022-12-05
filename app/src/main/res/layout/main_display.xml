@@ -11,7 +11,8 @@
         android:layout_height="match_parent"
         android:background="?attr/colorDisplayOverlay">
 
-        <!-- guideline -->
+        <!-- guideline **************************************************** -->
+
         <androidx.constraintlayout.widget.Guideline
             android:id="@+id/guideline_display"
             android:layout_width="0dp"
@@ -19,7 +20,8 @@
             android:orientation="horizontal"
             app:layout_constraintGuide_percent=".5" />
 
-        <!-- refresh indicator -->
+        <!-- refresh indicator ******************************************** -->
+
         <com.google.android.material.progressindicator.LinearProgressIndicator
             android:id="@+id/refreshIndicator"
             android:layout_width="0dp"
@@ -31,7 +33,8 @@
             app:layout_constraintTop_toTopOf="parent"
             app:trackColor="@android:color/transparent" />
 
-        <!-- toggle button & separator -->
+        <!-- toggle button & separator ************************************ -->
+
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/btn_toggle"
             android:layout_width="wrap_content"
@@ -42,35 +45,27 @@
             android:onClick="toggleEvent"
             android:src="@drawable/ic_swap_vert"
             app:layout_constraintBottom_toTopOf="@+id/guideline_display"
+            app:layout_constraintEnd_toEndOf="@id/spinnerFrom"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/guideline_display"
             app:tint="?attr/colorOnPrimary" />
 
-        <View
-            android:layout_width="0dp"
-            android:layout_height=".75dp"
-            android:layout_marginStart="@dimen/margin2x"
-            android:layout_marginEnd="@dimen/margin2x"
-            android:background="?android:attr/listDivider"
-            app:layout_constraintBottom_toBottomOf="@id/guideline_display"
-            app:layout_constraintEnd_toStartOf="@id/textFee"
-            app:layout_constraintStart_toEndOf="@id/btn_toggle"
-            app:layout_constraintTop_toTopOf="@id/guideline_display" />
+        <!-- fee ********************************************************** -->
 
-        <!-- fee -->
         <TextView
             android:id="@+id/textFee"
             style="@style/TextAppearance.Material3.TitleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_margin="@dimen/margin2x"
+            android:layout_marginEnd="@dimen/margin2x"
             android:gravity="center_vertical|end"
             android:textColor="@android:color/holo_red_light"
             android:textDirection="ltr"
-            app:layout_constraintBottom_toTopOf="@+id/guideline_display"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/guideline_display"
+            app:layout_constraintBottom_toTopOf="@id/scrollViewTextTo"
+            app:layout_constraintEnd_toEndOf="@id/scrollViewTextTo"
             tools:text="+ 2.2 %" />
+
+        <!-- exchange rate info text ************************************** -->
 
         <ImageView
             android:id="@+id/iconHistorical"
@@ -86,7 +81,6 @@
             app:tint="?attr/colorError"
             tools:ignore="ContentDescription" />
 
-        <!-- exchange rate info text -->
         <TextView
             android:id="@+id/textRefreshed"
             style="@style/TextAppearance.Material3.TitleSmall"
@@ -101,7 +95,17 @@
             app:layout_constraintEnd_toEndOf="parent"
             tools:text="Rates as of 1/21/22 by Exchangerate.host" />
 
-        <!-- top main_display -->
+        <!-- top main_display ********************************************* -->
+
+        <de.salomax.currencies.view.main.spinner.SearchableSpinner
+            android:id="@+id/spinnerFrom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:nestedScrollingEnabled="true"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextFrom"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/scrollViewTextFrom" />
+
         <TextView
             android:id="@+id/textCalculations"
             android:layout_width="wrap_content"
@@ -153,16 +157,27 @@
             </LinearLayout>
         </HorizontalScrollView>
 
+        <!-- divider ****************************************************** -->
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height=".75dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintBottom_toBottomOf="@id/guideline_display"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/guideline_display" />
+
+        <!-- bottom main_display ****************************************** -->
+
         <de.salomax.currencies.view.main.spinner.SearchableSpinner
-            android:id="@+id/spinnerFrom"
+            android:id="@+id/spinnerTo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:nestedScrollingEnabled="true"
-            app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextFrom"
+            app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextTo"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/scrollViewTextFrom" />
+            app:layout_constraintTop_toTopOf="@+id/scrollViewTextTo" />
 
-        <!-- bottom main_display -->
         <HorizontalScrollView
             android:id="@+id/scrollViewTextTo"
             android:layout_width="0dp"
@@ -201,14 +216,6 @@
                     tools:text="383.99" />
             </LinearLayout>
         </HorizontalScrollView>
-
-        <de.salomax.currencies.view.main.spinner.SearchableSpinner
-            android:id="@+id/spinnerTo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintBottom_toBottomOf="@+id/scrollViewTextTo"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/scrollViewTextTo" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>

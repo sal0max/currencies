@@ -6,7 +6,9 @@
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:orientation="horizontal"
-    android:padding="@dimen/margin2x"
+    android:paddingVertical="@dimen/margin2x"
+    android:paddingStart="@dimen/margin2x"
+    android:paddingEnd="0dp"
     tools:ignore="UseCompoundDrawables">
 
     <com.google.android.material.imageview.ShapeableImageView
@@ -14,6 +16,7 @@
         android:layout_width="24dp"
         android:layout_height="17dp"
         android:layout_gravity="center"
+        android:layout_marginTop="1dp"
         android:scaleType="fitXY"
         android:textAppearance="?android:attr/textAppearanceLargePopupMenu"
         app:shapeAppearanceOverlay="@style/AppTheme.FlagRoundedCorners"
