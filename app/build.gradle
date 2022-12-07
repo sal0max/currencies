@@ -12,8 +12,8 @@ android {
         minSdkVersion 26
         targetSdkVersion 33
         // SemVer
-        versionName = '1.17.6'
-        versionCode = 11706
+        versionName = '1.17.7'
+        versionCode = 11707
         archivesBaseName = "$applicationId-v$versionCode"
     }
 
@@ -36,9 +36,8 @@ android {
             minifyEnabled true
             shrinkResources true
             zipAlignEnabled true
-            proguardFiles [
+            proguardFiles getDefaultProguardFile("proguard-android-optimize.txt"),
                     'proguard-rules.pro'
-            ]
         }
         debug {
             applicationIdSuffix '.debug'

@@ -16,6 +16,7 @@ class ChangelogDialog : AppCompatDialogFragment() {
         val view = View.inflate(context, R.layout.fragment_changelog, null)
         val textView = view.findViewById<TextView>(R.id.changelog)
 
+        // HINT: needs proguard rule to work in release config
         for (declaredField in R.array::class.java.declaredFields
             .filter { field -> field.name.startsWith("changelog_") }
             .sortedByDescending { field ->

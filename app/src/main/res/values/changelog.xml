@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.7">
+        <item>Fixed: empty changelog</item>
+    </string-array>
+
     <string-array name="changelog_1.17.6">
         <item>New translations! Icelandic by nazrin 🇮🇸, Portuguese (Brazil) by Cavernosa 🇧🇷 and Swedish by Samuel 🇸🇪. Awesome!</item>
     </string-array>
