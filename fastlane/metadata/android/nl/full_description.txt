@@ -1,12 +1,12 @@
 Currencies is een eenvoudige en duidelijke valuta-omzetter. Het is niet bedoeld om te worden gebruikt voor realtime financiële zaken, maar als een handige metgezel, b.v. op vakanties.
 
-• De app ondersteunt alle relevante valuta's. U kunt kiezen uit verschillende wisselkoersaanbieders:
-    • exchangerate.host met meer dan 160 valuta's
-    • frankfurter.app met meer dan 30 valuta's, aangeboden door de Europese Centrale Bank
-    • fer.ee als alternatief voor frankfurter.app met dezelfde valuta
-• De gebruikersinterface is eenvoudig en puur Material 3 Design.
-• Historische koersen: bekijk de grafiek van het afgelopen jaar om te zien hoe de valuta's zich hebben ontwikkeld.
-• Een belangrijke feature is de meegeleverde rekenmachine. Handig b.v. als u een restaurantrekening wilt opsplitsen.
-• Kostencalculator: voeg optioneel een aanpasbare wisselkoers toe aan alle berekeningen.
-• Currencies is geschreven voor Android in Kotlin, gericht op Android 13 en ondersteunt lichte en donkere thema's.
-• De app is vrij van advertenties en bespioneert de gebruiker niet.
+- De app ondersteunt alle relevante valuta's. U kunt kiezen uit verschillende wisselkoersaanbieders:
+   - exchangerate.host met meer dan 160 valuta's
+   - frankfurter.app met meer dan 30 valuta's, aangeboden door de Europese Centrale Bank
+   - fer.ee als alternatief voor frankfurter.app met dezelfde valuta
+- De gebruikersinterface is eenvoudig en puur Material 3 Design.
+- Historische koersen: bekijk de grafiek van het afgelopen jaar om te zien hoe de valuta's zich hebben ontwikkeld.
+- Een belangrijke feature is de meegeleverde rekenmachine. Handig b.v. als u een restaurantrekening wilt opsplitsen.
+- Kostencalculator: voeg optioneel een aanpasbare wisselkoers toe aan alle berekeningen.
+- Currencies is geschreven voor Android in Kotlin, gericht op Android 13 en ondersteunt lichte en donkere thema's.
+- De app is vrij van advertenties en bespioneert de gebruiker niet.

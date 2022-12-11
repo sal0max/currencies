@@ -1,13 +1,13 @@
 Currencies är en enkel och intuitiv valutakursomräknare. Den är inte avsedd för att användas för finansiella realtidsaffärer, utan däremot som ett smidigt hjälpmedel på t.ex. semestrar.
 
-• Appen stöder alla relevanta valutor. Det går att välja mellan flera dataleverantörer för kursdata:
-   • exchangerate.host med över 160 valutor
-   • frankfurter.app med över 30 valutor, tillhandahållen av Europeiska centralbanken.
-   • fer.ee som ett alternativ till frankfurter.app med samma valutor
-• Användargränssnittet är enkelt, och följer Material 3-design.
-• Valutakurshistorik: Se diagrammet för det senaste året, för att se hur valutakurserna har utvecklats.
-• Historiska kurser: Du kan ta fram kurser från tidigare datum.
-• Den inbyggda kalkylatorn är en betydande funktion. Användbar för att t.ex. dela upp en restaurangnota.
-• Växlingspåslagskalkylator: Det går att lägga till avgift för växlingspåslag till alla beräkningar.
-• Currencies har kodats för Android i Kotlin, med stöd för Android 13 samt mörka och ljusa färgteman.
-• Appen är reklamfri och spionerar inte på användaren.
+- Appen stöder alla relevanta valutor. Det går att välja mellan flera dataleverantörer för kursdata:
+   - exchangerate.host med över 160 valutor
+   - frankfurter.app med över 30 valutor, tillhandahållen av Europeiska centralbanken.
+   - fer.ee som ett alternativ till frankfurter.app med samma valutor
+- Användargränssnittet är enkelt, och följer Material 3-design.
+- Valutakurshistorik: Se diagrammet för det senaste året, för att se hur valutakurserna har utvecklats.
+- Historiska kurser: Du kan ta fram kurser från tidigare datum.
+- Den inbyggda kalkylatorn är en betydande funktion. Användbar för att t.ex. dela upp en restaurangnota.
+- Växlingspåslagskalkylator: Det går att lägga till avgift för växlingspåslag till alla beräkningar.
+- Currencies har kodats för Android i Kotlin, med stöd för Android 13 samt mörka och ljusa färgteman.
+- Appen är reklamfri och spionerar inte på användaren.
