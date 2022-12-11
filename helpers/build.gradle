@@ -1,0 +1,5 @@
+apply plugin: 'kotlin'
+
+dependencies {
+    implementation 'org.jsoup:jsoup:1.15.3'
+}
