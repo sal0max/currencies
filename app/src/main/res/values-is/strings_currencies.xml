@@ -4,7 +4,7 @@
     <string name="name_afn">Afgani</string>
     <string name="name_all">Albanskt lek</string>
     <string name="name_amd">Armenskt dramm</string>
-
+    <string name="name_ang">Hollenskt Antillugyllini</string>
     <string name="name_aoa">Angólsk kvansa</string>
     <string name="name_ars">Argentínskur pesi</string>
     <string name="name_aud">Ástralskur dalur</string>
@@ -29,7 +29,7 @@
     <string name="name_cad">Kanadadalur</string>
     <string name="name_cdf">Kongóskur franki</string>
     <string name="name_chf">Svissneskur franki</string>
-
+    <string name="name_clf">Unidades de formento (Fjármunakóði)</string>
     <string name="name_clp">Síleskur pesi</string>
     <string name="name_cnh">Kínverskt júan (utan heimalands)</string>
     <string name="name_cny">Kínverskt júan</string>
