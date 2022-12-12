@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="activity_timeline_title"><b>%1$s</b> a <b>%2$s</b></string>
+    <string name="data_provider">Dades proveïdes per <b>%s</b></string>
+    <string name="rate_average">mitj</string>
+    <string name="rate_min">mín</string>
+    <string name="rate_max">màx</string>
+    <string name="year">any</string>
+    <string name="month">mes</string>
+    <string name="week">setmana</string>
+</resources>
