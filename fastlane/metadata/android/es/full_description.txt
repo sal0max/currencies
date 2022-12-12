@@ -1,13 +1,13 @@
-Currencies es un conversor de divisas sencillo y directo, que no está pensado para ser utilizado en negocios financieros en tiempo real, sino para ser un compañero práctico, por ejemplo, en vacaciones.
+Currencies es un conversor de divisas simple y directo. No está diseñado para ser utilizado para negocios financieros en tiempo real, sino para ser un compañero útil, por ejemplo, en vacaciones.
 
-- La aplicación es compatible con todas las divisas relevantes. Puedes elegir entre varios proveedores de tipos de cambio:
+- La aplicación admite todas las monedas relevantes. Puede elegir entre varios proveedores de tipos de cambio:
    - exchangerate.host con más de 160 monedas
-   - frankfurter.app con más de 30 divisas, proporcionadas por el Banco Central Europeo
+   - frankfurter.app con más de 30 monedas, proporcionado por el Banco Central Europeo
    - fer.ee como alternativa a frankfurter.app con las mismas monedas
 - La interfaz de usuario es simple y puro Material 3 Design.
-- Historial de los tipos de cambio: Consulta el gráfico del último año, para ver la evolución de las divisas.
-- Tipos de cambio históricos: Puedes utilizar tipos de cambio de fechas anteriores.
-- Una característica importante es la calculadora incluida. Útil, por ejemplo, si quieres dividir la cuenta de un restaurante.
-- Calculadora de tasas: opcionalmente se puede añadir una tasa de cambio personalizable a todos los cálculos.
-- Currencies está escrita para Android en Kotlin, orientada a Android 13 y soporta temas claros y oscuros.
+- Historial de tipos de cambio: consulte el gráfico del año pasado para ver cómo se han desarrollado las monedas.
+- Tarifas históricas: Puede utilizar tarifas de fechas anteriores.
+- Una característica importante es la calculadora incluida. Útil, por ejemplo, si desea dividir la cuenta de un restaurante.
+- Calculadora de tarifas: agregue opcionalmente una tarifa de cambio de divisas personalizable a todos los cálculos.
+- Currencies está escrito para Android en Kotlin, dirigido a Android 13 y compatible con temas claros y oscuros.
 - La aplicación no tiene publicidad y no espía al usuario.
