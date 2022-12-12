@@ -15,52 +15,52 @@
 
     <string-array name="language_names" translatable="false">
         <item>@string/system_default</item>
-        <item>English</item>
-        <item>اَلْعَرَبِيَّة</item>
-        <item>Български</item>
-        <item>বাংলা</item>
+        <item>Bahasa Indonesia</item>
         <item>Čeština</item>
         <item>Deutsch</item>
-        <item>Ελληνικά</item>
+        <item>English</item>
         <item>Español</item>
+        <item>Ελληνικά</item>
         <item>Français</item>
-        <item>Magyar</item>
-        <item>Bahasa Indonesia</item>
         <item>Íslenska</item>
         <item>Italiano</item>
-        <item>עִבְרִית</item>
-        <item>Norsk</item>
+        <item>Magyar</item>
         <item>Nederlands</item>
+        <item>Norsk</item>
         <item>Polski</item>
         <item>Português (Brasil)</item>
         <item>Svenska</item>
-        <item>Türkçe</item>
         <item>Tiếng Việt</item>
+        <item>Türkçe</item>
+        <item>Български</item>
+        <item>বাংলা</item>
+        <item>اَلْعَرَبِيَّة</item>
+        <item>עִבְרִית</item>
     </string-array>
 
     <string-array name="language_values" translatable="false">
         <item>system</item>
-        <item>en</item>
-        <item>ar</item>
-        <item>bg</item>
-        <item>bn</item>
+        <item>in</item>
         <item>cs</item>
         <item>de</item>
-        <item>el</item>
+        <item>en</item>
         <item>es</item>
+        <item>el</item>
         <item>fr</item>
-        <item>hu</item>
-        <item>in</item>
         <item>is</item>
         <item>it</item>
-        <item>iw</item>
-        <item>nb</item>
+        <item>hu</item>
         <item>nl</item>
+        <item>nb</item>
         <item>pl</item>
         <item>pt_BR</item>
         <item>sv</item>
-        <item>tr</item>
         <item>vi</item>
+        <item>tr</item>
+        <item>bg</item>
+        <item>bn</item>
+        <item>ar</item>
+        <item>iw</item>
     </string-array>
 
     <!-- api -->
