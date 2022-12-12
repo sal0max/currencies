@@ -16,6 +16,7 @@
     <string-array name="language_names" translatable="false">
         <item>@string/system_default</item>
         <item>Bahasa Indonesia</item>
+        <item>Català</item>
         <item>Čeština</item>
         <item>Deutsch</item>
         <item>English</item>
@@ -41,6 +42,7 @@
     <string-array name="language_values" translatable="false">
         <item>system</item>
         <item>in</item>
+        <item>ca</item>
         <item>cs</item>
         <item>de</item>
         <item>en</item>
