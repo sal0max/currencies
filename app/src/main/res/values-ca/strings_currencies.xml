@@ -24,7 +24,7 @@
     <string name="name_btc">Bitcoin</string>
     <string name="name_btn">Ngultrum bhutanès</string>
     <string name="name_bwp">Pula de Botswana</string>
-
+    <string name="name_byn">Ruble bielorús</string>
     <string name="name_bzd">Dòlar de Belize</string>
     <string name="name_cad">Dòlar canadenc</string>
     <string name="name_cdf">Franc congolès</string>
@@ -46,13 +46,13 @@
     <string name="name_egp">Lliura egípcia</string>
     <string name="name_ern">Nakfa eritrea</string>
     <string name="name_etb">Birr etíop</string>
-    <string name="name_eur">Euro de l\'Eurozona</string>
+    <string name="name_eur">Euro</string>
     <string name="name_fjd">Dòlar fijià</string>
     <string name="name_fkp">Lliura de les Malvines</string>
-
-    <string name="name_gbp">Lliura esterlina del Regne Unit</string>
+    <string name="name_fok">Corona feroesa</string>
+    <string name="name_gbp">Lliura esterlina</string>
     <string name="name_gel">Lari georgià</string>
-
+    <string name="name_ggp">Lliura de Guernsey</string>
     <string name="name_ghs">Cedi ghanès</string>
     <string name="name_gip">Lliura de Gibraltar</string>
     <string name="name_gmd">Dalasi gambià</string>
@@ -66,12 +66,12 @@
     <string name="name_huf">Fòrint hongarès</string>
     <string name="name_idr">Rupia indonèsia</string>
     <string name="name_ils">Nou xéquel israelià</string>
-
+    <string name="name_imp">Lliura de l\'illa de Man</string>
     <string name="name_inr">Rupia índia</string>
     <string name="name_iqd">Dinar iraquià</string>
     <string name="name_irr">Rial iranià</string>
     <string name="name_isk">Corona islandesa</string>
-
+    <string name="name_jep">Lliura de Jersey</string>
     <string name="name_jmd">Dòlar jamaicà</string>
     <string name="name_jod">Dinar jordà</string>
     <string name="name_jpy">Ien japonès</string>
@@ -97,8 +97,8 @@
     <string name="name_mmk">Kyat birmà</string>
     <string name="name_mnt">Tögrög mongol</string>
     <string name="name_mop">Pataca de Macau</string>
-    <string name="name_mro">Ouguiya maurità</string>
-
+    <string name="name_mro">Ouguiya maurità (anterior al 2018)</string>
+    <string name="name_mru">Ouguiya maurità</string>
     <string name="name_mur">Rupia de Maurici</string>
     <string name="name_mvr">Rupia de les Maldives</string>
     <string name="name_mwk">Kwacha malawià</string>
@@ -132,13 +132,13 @@
     <string name="name_sgd">Dòlar de Singapur</string>
     <string name="name_shp">Lliura de Santa Helena</string>
     <string name="name_sle">Leone de Sierra Leone</string>
-
+    <string name="name_sll">Leone de Sierra Leone (anterior al 07/2022)</string>
     <string name="name_sos">Xíling somali</string>
     <string name="name_srd">Dòlar de Surinam</string>
     <string name="name_ssp">Lliura sud-sudanesa</string>
-
+    <string name="name_std">Dobra de São Tomé i Príncipe (anterior al 2018)</string>
     <string name="name_stn">Dobra de São Tomé i Príncipe</string>
-
+    <string name="name_svc">Colon salvadorenc</string>
     <string name="name_syp">Lliura síria</string>
     <string name="name_szl">Lilangeni de Swazilàndia</string>
     <string name="name_thb">Baht tailandès</string>
@@ -155,7 +155,7 @@
     <string name="name_usd">Dòlar dels Estats Units</string>
     <string name="name_uyu">Peso uruguaià</string>
     <string name="name_uzs">Som uzbek</string>
-
+    <string name="name_vef">Bolívar fort veneçolà (antic)</string>
     <string name="name_ves">Bolívar sobirà veneçolà</string>
     <string name="name_vnd">Dong vietnamita</string>
     <string name="name_vuv">Vatu de Vanuatu</string>
@@ -172,5 +172,5 @@
     <string name="name_yer">Rial iemenita</string>
     <string name="name_zar">Rand sud-africà</string>
     <string name="name_zmw">Kwacha zambià</string>
-
+    <string name="name_zwl">Dòlar de Zimbàbue</string>
 </resources>
