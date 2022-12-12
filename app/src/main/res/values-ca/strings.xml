@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> . </string>
+    <string name="desc_toggle_currencies">alternar monedes</string>
+    <string name="rates_date_latest">Taxes del <b>%1$s</b> proveïdes per <b>%2$s</b></string>
+    <string name="rates_date_historical">Taxes històriques del <b>%1$s</b> proveïdes per <b>%2$s</b></string>
+    <string name="copied_to_clipboard">S\'ha copiat <b>%s</b> al porta-retalls</string>
+    <string name="historical_rates_dialog_title">Taxes històriques</string>
+    <string name="historical_rates_dialog_toggle">Utilitza les taxes de canvi d\'una data específica. Desactivar si es vol utilitzar sempre les més recents.</string>
+    <string name="error">Error: %s</string>
+    <string name="error_generic">Problema desconegut.</string>
+    <string name="error_http">El servidor ha respost amb HTTP %d</string>
+    <string name="error_no_data">No s\'ha pogut connectar amb el servidor.</string>
+    <string name="error_api_error">Hi ha hagut un error amb l\'API. Torneu-ho a provar més tard.</string>
+    <string name="menu_settings">Configuració</string>
+    <string name="menu_refresh">Actualitza les taxes</string>
+    <string name="menu_timeline">Gràfic de la taxa de canvi</string>
+    <string name="tooltip_filter_starred">Mostra només les monedes preferides.</string>
+    <string name="error_timeout">El servidor no ha respost a temps o no es pot accedir.</string>
+</resources>
