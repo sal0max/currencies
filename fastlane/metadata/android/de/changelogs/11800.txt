@@ -1,0 +1,2 @@
+- Unterstützung für per-App-Spracheinstellung hinzugefügt (ein neues Feature in Android 13).
+- Außerdem gibt es nun eine Option für ALLE Geräte (auch < Android 13) die Sprache in den App-Einstellungen zu ändern.
