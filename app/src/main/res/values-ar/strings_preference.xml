@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">لوحة المفاتيح الممتدة</string>
     <string name="extendedKeypad_summary">أضف زرين إضافيين: <b>00</b>&nbsp;و&nbsp;<b>000</b>.</string>
     <string name="category_appearance">المظهر</string>
+    <string name="system_default">الإعداد التلقائي للنظام</string>
     <string name="theme_title">تصميم</string>
     <string name="theme_option_light">فاتح</string>
     <string name="theme_option_dark">غامق</string>
-    <string name="theme_option_default">النظام الافتراضي</string>
     <string name="pure_black_enabled_title">أسود OLED</string>
     <string name="pure_black_enabled_summary">استخدم الأسود النقي في الوضع المظلم</string>
+    <string name="language_title">لغة التطبيق</string>
     <!-- api -->
     <string name="category_api">معدل التحويل</string>
     <string name="api_title">مزود البيانات</string>

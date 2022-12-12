@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Bàn phím mở rộng</string>
     <string name="extendedKeypad_summary">Thêm hai nút: <b>00</b>&nbsp;và&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Ngoại hình</string>
+    <string name="system_default">Theo chế độ mặc định của hệ thống</string>
     <string name="theme_title">Thiết kế</string>
     <string name="theme_option_light">Sáng</string>
     <string name="theme_option_dark">Tối</string>
-    <string name="theme_option_default">Mặc định hệ thống</string>
     <string name="pure_black_enabled_title">Đen OLED</string>
     <string name="pure_black_enabled_summary">Sử dụng màu đen kịt ở chế độ tối</string>
+    <string name="language_title">Ngôn ngữ ứng dụng</string>
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>

@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Kibővített billentyűzet</string>
     <string name="extendedKeypad_summary">Két további gomb hozzáadása: <b>00</b>&nbsp;és&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Megjelenítés</string>
+    <string name="system_default">Rendszerbeállítás</string>
     <string name="theme_title">Dizájn</string>
     <string name="theme_option_light">Világos</string>
     <string name="theme_option_dark">Sötét</string>
-    <string name="theme_option_default">Rendszer alapértelmezett</string>
     <string name="pure_black_enabled_title">OLED fekete</string>
     <string name="pure_black_enabled_summary">Tiszta fekete használata sötét módban</string>
+    <string name="language_title">Az alkalmazás nyelve</string>
     <!-- api -->
     <string name="category_api">Árfolyamok</string>
     <string name="api_title">Adatszolgáltató</string>

@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Genişletilmiş Tuş Takımı</string>
     <string name="extendedKeypad_summary">İki ekstra tuş ekler: <b>00</b>&nbsp;ve&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Görünüm</string>
+    <string name="system_default">Sistem varsayılanı</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Açık</string>
     <string name="theme_option_dark">Koyu</string>
-    <string name="theme_option_default">Sistem varsayılanı</string>
     <string name="pure_black_enabled_title">OLED siyahı</string>
     <string name="pure_black_enabled_summary">Koyu modda saf siyah kullan</string>
+    <string name="language_title">Uygulama Dili</string>
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcısı</string>

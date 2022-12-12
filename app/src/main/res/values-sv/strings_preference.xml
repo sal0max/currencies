@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Utökad knappsats</string>
     <string name="extendedKeypad_summary">Lägger till två ytterligare knappar: <b>00</b>&nbsp;och&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Utseende</string>
+    <string name="system_default">Systemets standardinställning</string>
     <string name="theme_title">Färgtema</string>
     <string name="theme_option_light">Ljust</string>
     <string name="theme_option_dark">Mörkt</string>
-    <string name="theme_option_default">Systemets standard</string>
     <string name="pure_black_enabled_title">OLED-svart</string>
     <string name="pure_black_enabled_summary">Använd helt svart färg i mörkt läge</string>
+    <string name="language_title">Appspråk</string>
     <!-- api -->
     <string name="category_api">Valutakurser</string>
     <string name="api_title">Dataleverantör</string>

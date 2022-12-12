@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Teclado numérico extendido</string>
     <string name="extendedKeypad_summary">Adicionar dois botões: <b>00</b>&nbsp;e&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Aparência</string>
+    <string name="system_default">Padrão do sistema</string>
     <string name="theme_title">Aspeto</string>
     <string name="theme_option_light">Claro</string>
     <string name="theme_option_dark">Escuro</string>
-    <string name="theme_option_default">Predefinição do sistema</string>
     <string name="pure_black_enabled_title">escuro OLED</string>
     <string name="pure_black_enabled_summary">Usar modo escuro puro no modo escuro</string>
+    <string name="language_title">Idioma do app</string>
     <!-- api -->
     <string name="category_api">Taxas de câmbio</string>
     <string name="api_title">Fornecedor de serviço</string>

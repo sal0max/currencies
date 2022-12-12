@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Rozšířený číselník</string>
     <string name="extendedKeypad_summary">Přidat dvě dodatečná tlačítka: <b>00</b>&nbsp;a&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Vzhled</string>
+    <string name="system_default">Výchozí nastavení systému</string>
     <string name="theme_title">Design</string>
     <string name="theme_option_light">Světlý</string>
     <string name="theme_option_dark">Tmavý</string>
-    <string name="theme_option_default">Podle systému</string>
     <string name="pure_black_enabled_title">OLED černý</string>
     <string name="pure_black_enabled_summary">Použít plně černou v tmavém režimu</string>
+    <string name="language_title">Jazyk aplikace</string>
     <!-- api -->
     <string name="category_api">Směnné kurzy</string>
     <string name="api_title">Poskytovatel dat</string>

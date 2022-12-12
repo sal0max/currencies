@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+
+
+
+
+
+
+
+
+    <string name="system_default">সিস্টেম ডিফল্ট</string>
+
+
+
+
+
+    <string name="language_title">অ্যাপ ভাষা</string>
+    <!-- api -->
+
+
+
+
+
+
+
+
+
+
+    <!-- about -->
+
+
+
+
+
+
+
+</resources>

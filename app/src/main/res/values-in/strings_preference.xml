@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Papan Ketik Lengkap</string>
     <string name="extendedKeypad_summary">Menambahkan dua tombol tambahan: <b>00</b>&nbsp;dan&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Tampilan</string>
+    <string name="system_default">Default sistem</string>
     <string name="theme_title">Desain</string>
     <string name="theme_option_light">Cerah</string>
     <string name="theme_option_dark">Gelap</string>
-    <string name="theme_option_default">Sistem</string>
     <string name="pure_black_enabled_title">Hitam OLED</string>
     <string name="pure_black_enabled_summary">Gunakan hitam asli dalam mode gelap</string>
+    <string name="language_title">Bahasa Aplikasi</string>
     <!-- api -->
     <string name="category_api">Nilai tukar</string>
     <string name="api_title">Penyedia data</string>

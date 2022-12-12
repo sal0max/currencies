@@ -39,6 +39,13 @@
             android:key="@string/pure_black_key"
             android:summary="@string/pure_black_enabled_summary"
             android:title="@string/pure_black_enabled_title" />
+        <ListPreference
+            android:defaultValue="system"
+            android:entries="@array/language_names"
+            android:entryValues="@array/language_values"
+            android:key="@string/language_key"
+            android:summary="%s"
+            android:title="@string/language_title" />
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_api">

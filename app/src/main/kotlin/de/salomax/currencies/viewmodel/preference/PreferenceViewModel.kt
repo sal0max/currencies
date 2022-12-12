@@ -5,6 +5,7 @@ import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.core.app.TaskStackBuilder
+import androidx.core.os.LocaleListCompat
 import androidx.lifecycle.AndroidViewModel
 import androidx.lifecycle.LiveData
 import de.salomax.currencies.R
@@ -40,6 +41,29 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
                 else -> AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM
             }
         )
+    }
+
+    fun setLanguage(language: String) {
+        val appLocale: LocaleListCompat =
+            if (language == "system")
+                LocaleListCompat.getEmptyLocaleList()
+            else
+                LocaleListCompat.forLanguageTags(
+                    // pt_BR -> pt-BR
+                    language.replace('_', '-')
+                )
+        AppCompatDelegate.setApplicationLocales(appLocale)
+    }
+
+    /**
+     * returns the currently selected language in the following format:
+     * "de_DE" or "de", if no country is set
+     */
+    fun getLanguage(): String? {
+        val appLocale = AppCompatDelegate.getApplicationLocales()[0]
+        return if (appLocale == null)
+            null
+        else "${appLocale.language}_${appLocale.country}"
     }
 
     fun setPureBlackEnabled(enabled: Boolean) {

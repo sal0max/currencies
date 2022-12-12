@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Uitgebreid Toetsenbord</string>
     <string name="extendedKeypad_summary">Voeg twee extra knoppen toe: <b>00</b>&nbsp;and&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Uiterlijk</string>
+    <string name="system_default">Systeemstandaard</string>
     <string name="theme_title">Ontwerp</string>
     <string name="theme_option_light">Licht</string>
     <string name="theme_option_dark">Donker</string>
-    <string name="theme_option_default">Systeem standaard</string>
     <string name="pure_black_enabled_title">OLED-zwart</string>
     <string name="pure_black_enabled_summary">Gebruik puur zwart in donkere modus</string>
+    <string name="language_title">App-taal</string>
     <!-- api -->
     <string name="category_api">Wisselkoersen</string>
     <string name="api_title">Data-aanbieder</string>

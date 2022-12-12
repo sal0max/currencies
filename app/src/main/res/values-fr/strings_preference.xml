@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Clavier étendu</string>
     <string name="extendedKeypad_summary">Ajouter deux boutons supplémentaires: <b>00</b>&nbsp;et&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Apparition</string>
+    <string name="system_default">Paramètre système par défaut</string>
     <string name="theme_title">Thème</string>
     <string name="theme_option_light">Clair</string>
     <string name="theme_option_dark">Sombre</string>
-    <string name="theme_option_default">Thème par défaut du système</string>
     <string name="pure_black_enabled_title">OLED noir</string>
     <string name="pure_black_enabled_summary">Utiliser le noir pur en mode sombre</string>
+    <string name="language_title">Langue de l\'appli</string>
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>

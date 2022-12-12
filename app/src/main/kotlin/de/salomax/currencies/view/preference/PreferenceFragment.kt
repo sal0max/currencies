@@ -16,7 +16,6 @@ import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
-import java.lang.NumberFormatException
 import java.util.*
 
 @Suppress("unused")
@@ -34,6 +33,32 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 viewModel.setTheme(newValue.toString().toInt())
                 true
             }
+        }
+
+        // language
+        findPreference<ListPreference>(getString(R.string.language_key))?.apply {
+            // listen for changes
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setLanguage(newValue.toString())
+                true
+            }
+            // set current active language on instantiation
+            val appLanguage = viewModel.getLanguage()
+            val index =
+                // empty response: use system default
+                if (appLanguage.isNullOrEmpty()) 0
+                // custom app locale is set
+                else entryValues.indexOfFirst {
+                    if(entryValues.contains(appLanguage))
+                        // direct match: de <-> de or pt_BR <-> pt_BR
+                        it == appLanguage
+                    else
+                        // either the resource string has no country, or the selected locale has none:
+                        // use only language
+                        it.toString().substringBefore("_") == appLanguage.substringBefore("_")
+                }
+            if (index != -1)
+                setValueIndex(index)
         }
 
         // conversion preview
@@ -106,6 +131,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         // donate
         findPreference<Preference>(getString(R.string.donate_key))?.apply {
             // hide for Play Store - Google is a cunt
+            @Suppress("KotlinConstantConditions")
             isVisible = when (BuildConfig.FLAVOR) {
                 "play" -> false
                 "fdroid" -> true
@@ -135,6 +161,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         // rate
         findPreference<Preference>(getString(R.string.rate_key))?.apply {
             // hide for F-Droid - no rating mechanism there
+            @Suppress("KotlinConstantConditions")
             isVisible = when (BuildConfig.FLAVOR) {
                 "play" -> true
                 else -> false

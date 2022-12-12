@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Tastiera estesa</string>
     <string name="extendedKeypad_summary">Aggiungere due pulsanti supplementari: <b>00</b>&nbsp;e&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Aspetto</string>
+    <string name="system_default">Predefinita di sistema</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Chiaro</string>
     <string name="theme_option_dark">Scuro</string>
-    <string name="theme_option_default">Predefinite di sistema</string>
     <string name="pure_black_enabled_title">OLED nero</string>
     <string name="pure_black_enabled_summary">Usare il nero puro in modalità scura</string>
+    <string name="language_title">Lingua dell\'app</string>
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>

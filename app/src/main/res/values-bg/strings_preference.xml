@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Разширена клавиатура</string>
     <string name="extendedKeypad_summary">Добави два допълнителни бутона: <b>00</b>&nbsp;и&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Изглед</string>
+    <string name="system_default">Стандартно за системата</string>
     <string name="theme_title">Дизайн</string>
     <string name="theme_option_light">Сетъл</string>
     <string name="theme_option_dark">Тъмен</string>
-    <string name="theme_option_default">Системна стойност</string>
     <string name="pure_black_enabled_title">OLED черно</string>
     <string name="pure_black_enabled_summary">Използвай чисто черно в тъмен режим</string>
+    <string name="language_title">Език на приложението</string>
     <!-- api -->
     <string name="category_api">Обмени курсове</string>
     <string name="api_title">Източник на данни</string>

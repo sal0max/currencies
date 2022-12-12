@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Εκτεταμένο πληκτρολόγιο</string>
     <string name="extendedKeypad_summary">Προσθήκη δύο επιπλέον κουμπιών: <b>00</b>&nbsp;και&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Εμφάνιση</string>
+    <string name="system_default">Συστήματος</string>
     <string name="theme_title">Θέμα</string>
     <string name="theme_option_light">Ανοικτό</string>
     <string name="theme_option_dark">Σκούρο</string>
-    <string name="theme_option_default">Συστήματος</string>
     <string name="pure_black_enabled_title">Μαύρο OLED</string>
     <string name="pure_black_enabled_summary">Χρήση μαύρου στο σκούρο θέμα</string>
+    <string name="language_title">Γλώσσα εφαρμογής</string>
     <!-- api -->
     <string name="category_api">Ισοτιμίες</string>
     <string name="api_title">Χορηγός δεδομένων</string>

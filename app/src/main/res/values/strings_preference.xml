@@ -13,14 +13,16 @@
     <string name="extendedKeypad_title">Extended Keypad</string>
     <string name="extendedKeypad_summary">Add two additional buttons: <b>00</b>&nbsp;and&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Appearance</string>
+    <string name="system_default">System default</string>
     <string name="theme_key" translatable="false">KEY_THEME</string>
     <string name="theme_title">Design</string>
     <string name="theme_option_light">Light</string>
     <string name="theme_option_dark">Dark</string>
-    <string name="theme_option_default">System default</string>
     <string name="pure_black_key" translatable="false">KEY_PURE_BLACK_ENABLED</string>
     <string name="pure_black_enabled_title">OLED black</string>
     <string name="pure_black_enabled_summary">Use pure black in dark mode</string>
+    <string name="language_key" translatable="false">KEY_LANGUAGE</string>
+    <string name="language_title">App Language</string>
     <!-- api -->
     <string name="category_api">Exchange rates</string>
     <string name="api_key" translatable="false">KEY_API</string>

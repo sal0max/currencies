@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">Erweiterte Tastatur</string>
     <string name="extendedKeypad_summary">Füge zwei zusätzliche Tasten hinzu: <b>00</b>&nbsp;und&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Aussehen</string>
+    <string name="system_default">Standardeinstellung des Systems</string>
     <string name="theme_title">Design</string>
     <string name="theme_option_light">Hell</string>
     <string name="theme_option_dark">Dunkel</string>
-    <string name="theme_option_default">Systemstandard</string>
     <string name="pure_black_enabled_title">OLED-Schwarz</string>
     <string name="pure_black_enabled_summary">Komplett schwarzes Design im Dark-Modus verwenden</string>
+    <string name="language_title">App-Sprache</string>
     <!-- api -->
     <string name="category_api">Wechselkurse</string>
     <string name="api_title">Datenquelle</string>

@@ -10,12 +10,13 @@
     <string name="extendedKeypad_title">מקלדת מורחבת</string>
     <string name="extendedKeypad_summary">הוספת שני כפתורים חדשים: <b>00</b>&nbsp;וגם&nbsp;<b>000</b>.</string>
     <string name="category_appearance">מראה</string>
+    <string name="system_default">ברירת המחדל של המערכת</string>
     <string name="theme_title">עיצוב</string>
     <string name="theme_option_light">בהיר</string>
     <string name="theme_option_dark">כהה</string>
-    <string name="theme_option_default">ברירת המחדל המערכתית</string>
     <string name="pure_black_enabled_title">שחור OLED</string>
     <string name="pure_black_enabled_summary">להשתמש בשחור טהור במצב כהה</string>
+    <string name="language_title">שפת האפליקציה</string>
     <!-- api -->
     <string name="category_api">שערי חליפין</string>
     <string name="api_title">ספק נתונים</string>
