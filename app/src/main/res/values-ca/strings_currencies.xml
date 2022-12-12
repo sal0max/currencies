@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="name_aed">Dírham dels EAU</string>
+    <string name="name_all">Lek albanès</string>
+    <string name="name_afn">Afgani afganès</string>
+</resources>
