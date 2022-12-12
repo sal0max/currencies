@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">Configuració general</string>
+    <string name="fee_title">Comissió per transacció amb l’estranger</string>
+    <string name="fee_summary">El vostre banc pot cobrar una comissió a les transaccions fetes a l\'estranger depenent del contracte de la targeta de crèdit. Introduïu aquí el valor d\'aquesta comissió. Aquesta s\'afegeix al càlcul per tal de determinar quant es pagarà <i>realment</i>.</string>
+    <string name="previewConversion_title">Previsualització de la conversió</string>
+    <string name="previewConversion_summary">Mostra la conversió actual per a cada taxa de canvi en el selector de monedes.</string>
+    <string name="extendedKeypad_title">Teclat ampliat</string>
+    <string name="extendedKeypad_summary">Afegeix dos tecles addicionals: <b>00</b>&nbsp;i&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">Aparença</string>
+    <string name="system_default">Opció predeterminada del sistema</string>
+    <string name="theme_title">Tema</string>
+    <string name="theme_option_light">Clar</string>
+    <string name="theme_option_dark">Fosc</string>
+    <string name="pure_black_enabled_title">OLED negre</string>
+    <string name="pure_black_enabled_summary">Utilitza el negre pur en el mode fosc</string>
+    <string name="language_title">Idioma de l\'aplicació</string>
+    <!-- api -->
+    <string name="category_api">Taxes de canvi</string>
+    <string name="api_title">Proveïdor de les dades</string>
+    <string name="api_about_title">Sobre %s</string>
+
+
+
+    <string name="api_refreshPeriod_title">Interval d\'actualització</string>
+    <string name="api_refreshPeriod_exchangerateHost">Les taxes de canvi s\'actualitzen al voltant de la mitjanit (zona horària UTC) de cada dia laborable.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Les dades s\'actualitzen al voltant de les 16:00 (zona horària CET) de cada dia laborable.</string>
+    <string name="api_refreshPeriod_ferEe">Les taxes s\'actualitzen cada dia laborable.</string>
+    <!-- about -->
+    <string name="category_about">Quant a aquesta aplicació</string>
+    <string name="disclaimer_title">Avís d\'exempció de responsabilitat</string>
+
+    <string name="donate_title">Dona suport al desenvolupador</string>
+    <string name="donate_summary">Fes una donació a través de PayPal</string>
+    <string name="rate_title">Valoreu l\'aplicació</string>
+    <string name="rate_summary">Podeu ajudar a altres persones a descobrir Currencies. Toqueu aquí per a puntuar l\'aplicació a Google Play.</string>
+    <string name="category_versioninfo">Informació de la versió</string>
+    <string name="title_changelog">Registre de canvis</string>
+</resources>
