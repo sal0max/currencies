@@ -2,12 +2,12 @@
 <resources>
     <string name="decimal_separator">,</string>
     <string name="thousands_separator">\u2009.\u2009</string>
-    <string name="desc_toggle_currencies">alternar monedes</string>
-    <string name="rates_date_latest">Taxes del &lt;b>%1$s&lt;/b> proveïdes per &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Taxes històriques del &lt;b>%1$s&lt;/b> proveïdes per &lt;b>%2$s&lt;/b></string>
-    <string name="copied_to_clipboard">S\'ha copiat &lt;b>%s&lt;/b> al porta-retalls</string>
+    <string name="desc_toggle_currencies">Alternar monedes</string>
+    <string name="rates_date_latest">Taxes del <b>%1$s</b> proveïdes per <b>%2$s</b></string>
+    <string name="rates_date_historical">Taxes històriques del &lt;b&gt;%1$s&lt;/b&gt; proveïdes per &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">S\'ha copiat &lt;b&gt;%s&lt;/b&gt; al porta-retalls</string>
     <string name="historical_rates_dialog_title">Taxes històriques</string>
-    <string name="historical_rates_dialog_toggle">Utilitza les taxes de canvi d\'una data específica. Desactivar si es vol utilitzar sempre les més recents.</string>
+    <string name="historical_rates_dialog_toggle">Utilitza els tipus de canvi d\'una data específica. Desactivar si es vol utilitzar sempre les més recents.</string>
     <string name="error">Error: %s</string>
     <string name="error_generic">Problema desconegut.</string>
     <string name="error_http">El servidor ha respost amb HTTP %d</string>
