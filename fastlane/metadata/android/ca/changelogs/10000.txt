@@ -1,0 +1,3 @@
+- Afegida la traducció a l'alemany 🇩🇪
+- Millora menor: La mida de l'aplicació s'ha reduït a la meitat!
+- L'aplicació sembla estable: Versió pública 1.0! 🥳🥳🥳
