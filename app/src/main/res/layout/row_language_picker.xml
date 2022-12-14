@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:clickable="true"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="true"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/margin2x"
+    android:paddingVertical="@dimen/margin1x">
+
+    <com.google.android.material.radiobutton.MaterialRadioButton
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        app:layout_constraintBottom_toBottomOf="@id/text2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/text"
+        tools:checked="true" />
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/TextAppearance.Material3.TitleMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/radio"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Deutsch" />
+
+    <TextView
+        android:id="@+id/text2"
+        style="@style/TextAppearance.Material3.BodyMedium"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="?android:textColorTertiary"
+        android:textDirection="locale"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/text"
+        app:layout_constraintTop_toBottomOf="@id/text"
+        tools:text="German" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

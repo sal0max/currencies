@@ -36,29 +36,12 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         }
 
         // language
-        findPreference<ListPreference>(getString(R.string.language_key))?.apply {
+        findPreference<LanguagePickerPreference>(getString(R.string.language_key))?.apply {
             // listen for changes
             setOnPreferenceChangeListener { _, newValue ->
                 viewModel.setLanguage(newValue.toString())
                 true
             }
-            // set current active language on instantiation
-            val appLanguage = viewModel.getLanguage()
-            val index =
-                // empty response: use system default
-                if (appLanguage.isNullOrEmpty()) 0
-                // custom app locale is set
-                else entryValues.indexOfFirst {
-                    if(entryValues.contains(appLanguage))
-                        // direct match: de <-> de or pt_BR <-> pt_BR
-                        it == appLanguage
-                    else
-                        // either the resource string has no country, or the selected locale has none:
-                        // use only language
-                        it.toString().substringBefore("_") == appLanguage.substringBefore("_")
-                }
-            if (index != -1)
-                setValueIndex(index)
         }
 
         // conversion preview

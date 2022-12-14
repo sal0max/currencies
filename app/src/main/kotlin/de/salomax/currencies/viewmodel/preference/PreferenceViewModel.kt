@@ -61,9 +61,14 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
      */
     fun getLanguage(): String? {
         val appLocale = AppCompatDelegate.getApplicationLocales()[0]
-        return if (appLocale == null)
+        return if (appLocale == null || (appLocale.language.isEmpty() && appLocale.country.isEmpty()))
             null
-        else "${appLocale.language}_${appLocale.country}"
+        else if (appLocale.country.isEmpty())
+            appLocale.language
+        else if (appLocale.language.isEmpty())
+            appLocale.country
+        else
+            "${appLocale.language}_${appLocale.country}"
     }
 
     fun setPureBlackEnabled(enabled: Boolean) {

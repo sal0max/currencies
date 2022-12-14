@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- main settings -->
+    <!-- theme settings -->
     <string-array name="theme_names" translatable="false">
         <item>@string/theme_option_light</item>
         <item>@string/theme_option_dark</item>
@@ -11,58 +11,6 @@
         <item>0</item>
         <item>1</item>
         <item>2</item>
-    </string-array>
-
-    <string-array name="language_names" translatable="false">
-        <item>@string/system_default</item>
-        <item>Bahasa Indonesia</item>
-        <item>Català</item>
-        <item>Čeština</item>
-        <item>Deutsch</item>
-        <item>English</item>
-        <item>Español</item>
-        <item>Ελληνικά</item>
-        <item>Français</item>
-        <item>Íslenska</item>
-        <item>Italiano</item>
-        <item>Magyar</item>
-        <item>Nederlands</item>
-        <item>Norsk</item>
-        <item>Polski</item>
-        <item>Português (Brasil)</item>
-        <item>Svenska</item>
-        <item>Tiếng Việt</item>
-        <item>Türkçe</item>
-        <item>Български</item>
-        <item>বাংলা</item>
-        <item>اَلْعَرَبِيَّة</item>
-        <item>עִבְרִית</item>
-    </string-array>
-
-    <string-array name="language_values" translatable="false">
-        <item>system</item>
-        <item>in</item>
-        <item>ca</item>
-        <item>cs</item>
-        <item>de</item>
-        <item>en</item>
-        <item>es</item>
-        <item>el</item>
-        <item>fr</item>
-        <item>is</item>
-        <item>it</item>
-        <item>hu</item>
-        <item>nl</item>
-        <item>nb</item>
-        <item>pl</item>
-        <item>pt_BR</item>
-        <item>sv</item>
-        <item>vi</item>
-        <item>tr</item>
-        <item>bg</item>
-        <item>bn</item>
-        <item>ar</item>
-        <item>iw</item>
     </string-array>
 
     <!-- api -->

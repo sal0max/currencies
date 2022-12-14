@@ -21,8 +21,31 @@
     <string name="pure_black_key" translatable="false">KEY_PURE_BLACK_ENABLED</string>
     <string name="pure_black_enabled_title">OLED black</string>
     <string name="pure_black_enabled_summary">Use pure black in dark mode</string>
+    <!-- languages -->
     <string name="language_key" translatable="false">KEY_LANGUAGE</string>
     <string name="language_title">App Language</string>
+    <string name="language_ar">Arabic</string>
+    <string name="language_bg">Bulgarian</string>
+    <string name="language_bn">Bengali</string>
+    <string name="language_ca">Catalan</string>
+    <string name="language_cs">Czech</string>
+    <string name="language_de">German</string>
+    <string name="language_el">Greek</string>
+    <string name="language_en">English</string>
+    <string name="language_es">Spanish</string>
+    <string name="language_fr">French</string>
+    <string name="language_hu">Hungarian</string>
+    <string name="language_in">Indonesian</string>
+    <string name="language_is">Icelandic</string>
+    <string name="language_it">Italian</string>
+    <string name="language_iw">Hebrew</string>
+    <string name="language_nb">Norwegian</string>
+    <string name="language_nl">Dutch</string>
+    <string name="language_pl">Polish</string>
+    <string name="language_pt_BR">Portuguese (Brazil)</string>
+    <string name="language_sv">Swedish</string>
+    <string name="language_tr">Turkish</string>
+    <string name="language_vi">Vietnames</string>
     <!-- api -->
     <string name="category_api">Exchange rates</string>
     <string name="api_key" translatable="false">KEY_API</string>
