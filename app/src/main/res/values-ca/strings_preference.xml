@@ -16,7 +16,30 @@
     <string name="theme_option_dark">Fosc</string>
     <string name="pure_black_enabled_title">OLED negre</string>
     <string name="pure_black_enabled_summary">Utilitza el negre pur en el mode fosc</string>
+    <!-- languages -->
     <string name="language_title">Idioma de l\'aplicació</string>
+    <string name="language_ar">Àrab</string>
+    <string name="language_bg">Búlgar</string>
+    <string name="language_bn">Bengalí</string>
+    <string name="language_ca">Català</string>
+    <string name="language_cs">Txec</string>
+    <string name="language_de">Alemany</string>
+    <string name="language_el">Grec</string>
+    <string name="language_en">Anglès</string>
+    <string name="language_es">Castellà</string>
+    <string name="language_fr">Francès</string>
+    <string name="language_hu">Hongarès</string>
+    <string name="language_in">Indonesi</string>
+    <string name="language_is">Islandès</string>
+    <string name="language_it">Italià</string>
+    <string name="language_iw">Hebreu</string>
+    <string name="language_nb">Noruec</string>
+    <string name="language_nl">Neerlandès</string>
+    <string name="language_pl">Polonès</string>
+    <string name="language_pt_BR">Português (Brasiler)</string>
+    <string name="language_sv">Suec</string>
+    <string name="language_tr">Turc</string>
+    <string name="language_vi">Vietnamita</string>
     <!-- api -->
     <string name="category_api">Taxes de canvi</string>
     <string name="api_title">Proveïdor de les dades</string>

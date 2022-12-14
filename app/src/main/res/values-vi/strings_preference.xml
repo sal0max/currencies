@@ -16,7 +16,30 @@
     <string name="theme_option_dark">Tối</string>
     <string name="pure_black_enabled_title">Đen OLED</string>
     <string name="pure_black_enabled_summary">Sử dụng màu đen kịt ở chế độ tối</string>
+    <!-- languages -->
     <string name="language_title">Ngôn ngữ ứng dụng</string>
+    <string name="language_ar">Tiếng Ả Rập</string>
+    <string name="language_bg">Tiếng Bungaria</string>
+    <string name="language_bn">Tiếng Bengal</string>
+    <string name="language_ca">Tiếng Catalunya</string>
+    <string name="language_cs">Tiếng Séc</string>
+    <string name="language_de">Tiếng Đức</string>
+    <string name="language_el">Tiếng Hy Lạp</string>
+    <string name="language_en">Tiếng Anh</string>
+    <string name="language_es">Tiếng Tây Ban Nha</string>
+    <string name="language_fr">Tiếng Pháp</string>
+    <string name="language_hu">Tiếng Hungary</string>
+    <string name="language_in">Tiếng Indonesia</string>
+    <string name="language_is">Tiếng Iceland</string>
+    <string name="language_it">Tiếng Ý</string>
+    <string name="language_iw">Tiếng Hebrew</string>
+    <string name="language_nb">Tiếng Na Uy</string>
+    <string name="language_nl">Tiếng Hà Lan</string>
+    <string name="language_pl">Tiếng Ba Lan</string>
+    <string name="language_pt_BR">Tiếng Bồ Đào Nha (Brasil)</string>
+    <string name="language_sv">Tiếng Thụy Điển</string>
+    <string name="language_tr">Tiếng Thổ Nhĩ Kỳ</string>
+    <string name="language_vi">Tiếng Việt</string>
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
