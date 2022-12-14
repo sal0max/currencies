@@ -1,0 +1,13 @@
+Currencies és un convertidor de moneda simple i directe. No està pensat per ser una eina financera de treball, sinó per a un ús més quotidià com podria ser anar de vacances.
+
+- S'inclou totes les monedes importants. Es pot triar entre diferents proveïdors de tipus de canvi:
+- exchangerate.host amb unes 160 monedes
+- frankfurter.app amb unes 30 monedes. A partir de les dades del Banc Central Europeu
+- fer.ee com a alternativa a frankfurter.app amb les mateixes monedes
+- Interfície d'usuari simple i amb el disseny Material 3.
+- Historial de tipus: Utilitzeu el gràfic per veure com ha sigut l'evolució durant l'últim any.
+- Tipus històrics: Feu servir valors de dates anteriors.
+- Una característica rellevant és la calculadora que s'inclou. Útil, per exemple, per si es vol repartir el compte d'un restaurant.
+- Calculadora de comissions: Per afegir opcionalment una comissió als càlculs de canvi de moneda.
+- Currencies s'ha escrit per a Android utilitzant Kotlin, dirigit a Android 13 i inclou els temes fosc i clar.
+- Lliure d'anuncis i sense espionatge a l'usuari.

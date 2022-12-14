@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.1.1">
+        <item>Millores menors (errors tipogràfics i altres)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>El vostre banc pot cobrar una comissió a les transaccions fetes a l\'estranger depenent del contracte de la targeta de crèdit. A partir d\'ara podreu introduir aquest valor per determinar quant es pagarà realment.🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Corregida una possible fallada a l\'Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Afegida la traducció a l\'alemany 🇩🇪</item>
+        <item>Millora menor: La mida de l\'aplicació s\'ha reduït a la meitat!</item>
+        <item>L\'aplicació sembla estable: Versió pública 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Més actualitzacions a prova d\'errors dels tipus de canvi</item>
+        <item>Afegit un avís d\'exempció de responsabilitat</item>
+        <item>Afegit el registre de canvis</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Versió inicial prèvia al llançament</item>
+    </string-array>
+</resources>

@@ -1,0 +1,3 @@
+- Més actualitzacions a prova d'errors dels tipus de canvi
+- Afegit un avís d'exempció de responsabilitat
+- Afegit el registre de canvis
