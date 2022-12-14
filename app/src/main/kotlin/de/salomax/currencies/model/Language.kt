@@ -5,10 +5,10 @@ import de.salomax.currencies.R
 
 enum class Language(
     val iso: String,
-    private val nameNative: Any,
-    private val nameLocalized: Int?
+    private val nameNative: String?,
+    private val nameLocalized: Int
 ) {
-    SYSTEM("system", R.string.system_default, null),
+    SYSTEM("system", null, R.string.system_default),
     IN("in", "Bahasa Indonesia", R.string.language_in),
     CA("ca", "Català", R.string.language_ca),
     CS("cs", "Čeština", R.string.language_cs),
@@ -48,6 +48,6 @@ enum class Language(
     }
 
     fun localizedName(context: Context): String? =
-        this.nameLocalized?.let { context.getString(it) }
+        this.nameLocalized.let { context.getString(it) }
 
 }

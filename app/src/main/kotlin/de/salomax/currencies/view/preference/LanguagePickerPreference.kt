@@ -120,13 +120,17 @@ class LanguagePickerPreference: ListPreference {
                 // check current active language
                 radioButton?.isChecked = (languages[position] == selectedItem)
                 // fill text
-                textNative?.text = languages[position].nativeName(context)
-                textLocale?.text = languages[position].localizedName(context)
-                // hide second row, if no text
-                if (languages[position].localizedName(context).isNullOrEmpty())
-                    textLocale?.visibility = View.GONE
-                else
-                    textLocale?.visibility = View.VISIBLE
+                when (languages[position]) {
+                    Language.SYSTEM -> {
+                        textNative?.text = languages[position].localizedName(context)
+                        textLocale?.visibility = View.GONE
+                    }
+                    else -> {
+                        textNative?.text = languages[position].nativeName(context)
+                        textLocale?.text = languages[position].localizedName(context)
+                        textLocale?.visibility = View.VISIBLE
+                    }
+                }
             }
 
             return view!!
