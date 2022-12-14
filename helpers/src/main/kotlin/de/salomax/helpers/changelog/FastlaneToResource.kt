@@ -36,7 +36,7 @@ private class FastlaneToResource {
                 "values-${language.substringBefore('-')}-r${language.substringAfter('-')}"
             else
                 "values-$language"
-        val targetFile = File("app/src/de.salomax.helpers.currencies.main/res/$languageDir/changelog.xml")
+        val targetFile = File("app/src/main/res/$languageDir/changelog.xml")
         targetFile.parentFile.mkdirs()
         val fileWriter = FileWriter(targetFile, Charset.forName("UTF-8"), false)
 
@@ -74,7 +74,7 @@ private class FastlaneToResource {
     private fun List<String>.createVersionChangelog(): String {
         val sb = java.lang.StringBuilder()
         for (entry in this) {
-            sb.appendLine("        <item>${entry.removePrefix("- ").replace("'", "\\'")}</item>")
+            sb.appendLine("        <item>${entry.removePrefix("- ").replace("'", "\\'").replace("<", "&lt;").replace(">", "&gt;")}</item>")
         }
         return sb.toString()
     }
