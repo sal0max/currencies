@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.0">
+        <item>Přidána podpora předvoleb jazyka pro jednotlivé aplikace (nová funkce v systému Android 13).</item>
+        <item>Kromě toho je nyní pro VŠECHNA zařízení (také &lt; Android 13) k dispozici možnost přepnout jazyk aplikace v nastavení aplikace.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Opraveno: prázdný seznam změn</item>
+    </string-array>
+
     <string-array name="changelog_1.17.6">
         <item>Nové překlady! Islandština od nazrin 🇮🇸, portugalština (Brazílie) od Cavernosa 🇧🇷 a švédština od Samuela 🇸🇪. Úžasné!</item>
     </string-array>

@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.0">
+        <item>Añadido soporte para preferencias de idioma por aplicación (nueva característica en Android 13).</item>
+        <item>Además, para todos los dispositivos (también &lt; Android 13) ahora hay una opción para cambiar el idioma de la aplicación dentro de la configuración de la aplicación.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Corregido: registro de cambios vacío</item>
+    </string-array>
+
     <string-array name="changelog_1.17.6">
         <item>¡Nuevas traducciones! Al islandés por nazrin 🇮🇸, al portugués (Brasil) por Cavernosa 🇧🇷 y al sueco por Samuel 🇸🇪. ¡Impresionante!</item>
     </string-array>

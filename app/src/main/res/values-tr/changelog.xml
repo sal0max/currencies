@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.17.7">
+        <item>Düzeltildi: boş değişiklik günlüğü</item>
+    </string-array>
+
     <string-array name="changelog_1.17.6">
         <item>Yeni çeviriler! nazrin tarafından İzlandaca 🇮🇸, Cavernosa tarafından Portekizce (Brezilya) 🇧🇷 ve Samuel tarafından İsveççe 🇸🇪. Harika!</item>
     </string-array>
