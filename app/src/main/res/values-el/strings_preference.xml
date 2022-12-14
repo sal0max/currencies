@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Γενικές Ρυθμίσεις</string>
@@ -38,4 +40,26 @@
     <string name="rate_summary">Αν θέλετε, μπορείτε να βοηθήσετε και άλλους να ανακαλύψουν την εφαρμογή. Πατήστε εδώ για να την αξιολογήσετε στο Google Play.</string>
     <string name="category_versioninfo">Πληροφορίες έκδοσης</string>
     <string name="title_changelog">Αρχείο αλλαγών</string>
+    <string name="language_bg">Βουλγάρικα</string>
+    <string name="language_ca">Καταλανικά</string>
+    <string name="language_cs">Τσέχικα</string>
+    <string name="language_de">Γερμανικά</string>
+    <string name="language_el">Ελληνικά</string>
+    <string name="language_en">Αγγλικά</string>
+    <string name="language_es">Ισπανικά</string>
+    <string name="language_hu">Ουγγρικά</string>
+    <string name="language_in">Ινδονησιακά</string>
+    <string name="language_is">Ισλανδικά</string>
+    <string name="language_it">Ιταλικά</string>
+    <string name="language_iw">Εβραϊκά</string>
+    <string name="language_nb">Νορβηγικά</string>
+    <string name="language_pl">Πολωνικά</string>
+    <string name="language_pt_BR">Πορτογαλικά (Βραζιλίας)</string>
+    <string name="language_sv">Σουηδικά</string>
+    <string name="language_tr">Τουρκικά</string>
+    <string name="language_ar">Αραβικά</string>
+    <string name="language_bn">Μπενγκάλι</string>
+    <string name="language_fr">Γαλλικά</string>
+    <string name="language_nl">Ολλανδικά</string>
+    <string name="language_vi">Βιετναμέζικα</string>
 </resources>
