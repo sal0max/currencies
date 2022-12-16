@@ -16,7 +16,30 @@
     <string name="theme_option_dark">Sombre</string>
     <string name="pure_black_enabled_title">OLED noir</string>
     <string name="pure_black_enabled_summary">Utiliser le noir pur en mode sombre</string>
+    <!-- languages -->
     <string name="language_title">Langue de l\'appli</string>
+    <string name="language_ar">Arabe</string>
+    <string name="language_bg">Bulgare</string>
+    <string name="language_bn">Bengali</string>
+    <string name="language_ca">Catalan</string>
+    <string name="language_cs">Tchèque</string>
+    <string name="language_de">Allemand</string>
+    <string name="language_el">Grec</string>
+    <string name="language_en">Anglais</string>
+    <string name="language_es">Espagnol</string>
+    <string name="language_fr">Français</string>
+    <string name="language_hu">Hongrois</string>
+    <string name="language_in">Indonésien</string>
+    <string name="language_is">Islandais</string>
+    <string name="language_it">Italien</string>
+    <string name="language_iw">Hébreu</string>
+    <string name="language_nb">Norvégien</string>
+    <string name="language_nl">Néerlandais</string>
+    <string name="language_pl">Polonais</string>
+    <string name="language_pt_BR">Portugais (Brésil)</string>
+    <string name="language_sv">Suédois</string>
+    <string name="language_tr">Turc</string>
+    <string name="language_vi">Vietnamien</string>
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>

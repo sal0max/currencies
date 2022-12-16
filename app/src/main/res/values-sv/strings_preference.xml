@@ -16,7 +16,30 @@
     <string name="theme_option_dark">Mörkt</string>
     <string name="pure_black_enabled_title">OLED-svart</string>
     <string name="pure_black_enabled_summary">Använd helt svart färg i mörkt läge</string>
+    <!-- languages -->
     <string name="language_title">Appspråk</string>
+    <string name="language_ar">Arabiska</string>
+    <string name="language_bg">Bulgariska</string>
+    <string name="language_bn">Bengali</string>
+    <string name="language_ca">Katalanska</string>
+    <string name="language_cs">Tjeckiska</string>
+    <string name="language_de">Tyska</string>
+    <string name="language_el">Grekiska</string>
+    <string name="language_en">Engelska</string>
+    <string name="language_es">Spanska</string>
+    <string name="language_fr">Franska</string>
+    <string name="language_hu">Ungerska</string>
+    <string name="language_in">Indonesiska</string>
+    <string name="language_is">Isländska</string>
+    <string name="language_it">Italienska</string>
+    <string name="language_iw">Hebreiska</string>
+    <string name="language_nb">Norska</string>
+    <string name="language_nl">Nederländska</string>
+    <string name="language_pl">Polska</string>
+    <string name="language_pt_BR">Portugisiska (Brasilien)</string>
+    <string name="language_sv">Svenska</string>
+    <string name="language_tr">Turkiska</string>
+    <string name="language_vi">Vietnamesiska</string>
     <!-- api -->
     <string name="category_api">Valutakurser</string>
     <string name="api_title">Dataleverantör</string>

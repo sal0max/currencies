@@ -16,7 +16,30 @@
     <string name="theme_option_dark">غامق</string>
     <string name="pure_black_enabled_title">أسود OLED</string>
     <string name="pure_black_enabled_summary">استخدم الأسود النقي في الوضع المظلم</string>
+    <!-- languages -->
     <string name="language_title">لغة التطبيق</string>
+    <string name="language_ar">العربية</string>
+    <string name="language_bg">البلغارية</string>
+    <string name="language_bn">اللغة البنغالية</string>
+    <string name="language_ca">الكتالونية</string>
+    <string name="language_cs">التشيكية</string>
+    <string name="language_de">اللغة الألمانية</string>
+    <string name="language_el">يونانية</string>
+    <string name="language_en">الإنجليزية</string>
+    <string name="language_es">الإسبانيَّة</string>
+    <string name="language_fr">الفَرَنْسية</string>
+    <string name="language_hu">اللغة المجرية</string>
+    <string name="language_in">إندونيسية</string>
+    <string name="language_is">الآيسلندية</string>
+    <string name="language_it">الإيطالية</string>
+    <string name="language_iw">العبرية</string>
+    <string name="language_nb">اللغة النرويجية</string>
+    <string name="language_nl">هولندية</string>
+    <string name="language_pl">البولندية</string>
+    <string name="language_pt_BR">برتغالية (البرازيل)</string>
+    <string name="language_sv">اللغة السويدية</string>
+    <string name="language_tr">تركية</string>
+    <string name="language_vi">اللغة الفيتنامية</string>
     <!-- api -->
     <string name="category_api">معدل التحويل</string>
     <string name="api_title">مزود البيانات</string>
