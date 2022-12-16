@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Obecná nastavení</string>
@@ -38,4 +40,26 @@
     <string name="rate_summary">Pokud chcete, můžete ostatním pomoci objevit Currencies. Klepněte sem a ohodnoťte aplikaci v Google Play.</string>
     <string name="category_versioninfo">Info o verzi</string>
     <string name="title_changelog">Seznam změn</string>
+    <string name="language_bg">Bulharština</string>
+    <string name="language_bn">Bengálština</string>
+    <string name="language_ca">Katalánština</string>
+    <string name="language_cs">Čeština</string>
+    <string name="language_de">Němčina</string>
+    <string name="language_en">Angličtina</string>
+    <string name="language_es">Španělština</string>
+    <string name="language_fr">Farncouzština</string>
+    <string name="language_hu">Maďarština</string>
+    <string name="language_in">Indonéština</string>
+    <string name="language_is">Islandština</string>
+    <string name="language_it">Italština</string>
+    <string name="language_nb">Norština</string>
+    <string name="language_nl">Nizozemština</string>
+    <string name="language_pl">Polština</string>
+    <string name="language_pt_BR">Portugalština (Brazílie)</string>
+    <string name="language_sv">Švédština</string>
+    <string name="language_tr">Turečtina</string>
+    <string name="language_vi">Vietnamština</string>
+    <string name="language_ar">Arabština</string>
+    <string name="language_el">Řečtina</string>
+    <string name="language_iw">Hebrejština</string>
 </resources>
