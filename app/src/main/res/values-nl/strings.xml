@@ -7,11 +7,11 @@
     <string name="rates_date_historical">Historische koersen van &lt;b&gt;%1$s&lt;/b&gt; door &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; is naar het klembord gekopieerd</string>
     <string name="historical_rates_dialog_title">Historische koersen</string>
-    <string name="historical_rates_dialog_toggle">Gebruik wisselkoersen van een specifieke datum. Uitschakelen, om altijd de meest recente te nemen.</string>
+    <string name="historical_rates_dialog_toggle">Gebruik wisselkoersen van een specifieke datum. Schakel deze optie uit om altijd de nieuwste gegevens te gebruiken.</string>
     <string name="error">Fout: %s</string>
-    <string name="error_generic">Onbekende probleem.</string>
+    <string name="error_generic">Onbekend probleem.</string>
     <string name="error_http">De server reageerde met HTTP %d</string>
-    <string name="error_timeout">De server reageerde op tijd niet of het is onbereikbaar.</string>
+    <string name="error_timeout">De server reageerde niet op tijd, of is onbereikbaar.</string>
     <string name="error_no_data">Kan geen verbinding maken met de server.</string>
     <string name="error_api_error">Er was een API fout. Probeer het later opnieuw.</string>
     <string name="menu_settings">Instellingen</string>

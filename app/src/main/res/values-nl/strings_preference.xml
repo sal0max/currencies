@@ -4,11 +4,11 @@
     <!-- main settings -->
     <string name="category_settings">Algemene Instellingen</string>
     <string name="fee_title">Buitenlandse transactiekosten</string>
-    <string name="fee_summary">Afhankelijk van uw creditcardovereenkomst kan uw bank kosten in rekening brengen voor alle valutatransacties. Hier kunt u die vergoeding invullen. Het wordt toegevoegd aan de berekening, zodat u weet hoeveel u <i>echt</i> betaalt.</string>
+    <string name="fee_summary">Afhankelijk van uw creditcardovereenkomst kan uw bankkosten in rekening brengen voor alle valutatransacties. Hier kunt u die vergoeding invullen. Het wordt toegevoegd aan de berekening, zodat u weet hoeveel u <i>echt</i> betaalt.</string>
     <string name="previewConversion_title">Omrekeningvoorbeeld</string>
     <string name="previewConversion_summary">Toon de huidige omrekening voor elke koers in de valutakiezer.</string>
     <string name="extendedKeypad_title">Uitgebreid Toetsenbord</string>
-    <string name="extendedKeypad_summary">Voeg twee extra knoppen toe: <b>00</b>&nbsp;and&nbsp;<b>000</b>.</string>
+    <string name="extendedKeypad_summary">Voeg twee extra knoppen toe: <b>00</b>&nbsp;en&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Uiterlijk</string>
     <string name="system_default">Systeemstandaard</string>
     <string name="theme_title">Ontwerp</string>
@@ -44,17 +44,17 @@
     <string name="category_api">Wisselkoersen</string>
     <string name="api_title">Data-aanbieder</string>
     <string name="api_about_title">Over %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> haalt de valutakoersen van verschillende financiële gegevensproviders en banken, waaronder de Europese Centrale Bank. Alle wisselkoersgegevens worden geleverd in middelpuntgegevens. Middelpuntpercentages worden bepaald door het gemiddelde mediaan-tarief van Bieden en Vragen te berekenen.\n<b>Ongeveer 160 valuta\'s zijn inbegrepen.</b></string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> haalt de valutakoersen van verschillende financiële gegevensproviders en banken op, waaronder de Europese Centrale Bank. Alle wisselkoersgegevens worden geleverd in middelpuntgegevens. Middelpuntpercentages worden bepaald door het gemiddelde mediaan-tarief van Bieden en Vragen te berekenen.\n<b>Ongeveer 160 valuta\'s zijn inbegrepen.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> houdt de referentiewisselkoersen (forex) bij die zijn gepubliceerd door de Europese Centrale Bank.\n<b>Ongeveer 30 valuta\'s zijn inbegrepen.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> is een relatief nieuwe service die (net als Frankfurter.app) referentie-uitwisseling (forex) bijhoudt tarieven die worden gepubliceerd door de Europese Centrale Bank.\n<b>Ongeveer 30 valuta\'s zijn inbegrepen.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> is een relatief nieuwe service die (net als Frankfurter.app) referentiewisselkoersen (forex) bijhoudt die worden gepubliceerd door de Europese Centrale Bank.\n<b>Ongeveer 30 valuta\'s zijn inbegrepen.</b></string>
     <string name="api_refreshPeriod_title">Vernieuwingsperiode</string>
     <string name="api_refreshPeriod_exchangerateHost">Wisselkoersen worden elke werkdag rond middernacht UTC bijgewerkt.</string>
     <string name="api_refreshPeriod_frankfurterApp">De gegevens worden elke werkdag rond 16.00 uur CET bijgewerkt.</string>
     <string name="api_refreshPeriod_ferEe">De tarieven worden elke werkdag bijgewerkt.</string>
     <!-- about -->
     <string name="category_about">Over deze app</string>
-    <string name="disclaimer_title">Ontkenning</string>
-    <string name="disclaimer_summary">Hoewel de app zeer grondig is geschreven en getest, <b>er is geen garantie dat de weergegeven gegevens correct zijn</b>. De wisselkoersen worden geleverd door een derde partij en deze app kan geen enkele belofte doen dat de gegevens waar en up-to-date zijn.\nBovendien kunnen de verstrekte tarieven - nog steeds indien correct - afwijken van de tarieven die door uw bank worden gebruikt.\nTot slot: Fouten gebeuren. Vertrouw nooit iemand blindelings! Dat gezegd hebbende, wees gerust, ik zou deze app niet hebben uitgebracht als ik enige twijfel had of deze werkt zoals bedoeld.</string>
+    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_summary">Hoewel de app zeer grondig is geschreven en getest, <b>is er geen garantie dat de getoonde gegevens correct zijn</b>. De wisselkoersen worden geleverd door een derde partij en deze app kan geen enkele belofte doen dat de gegevens waar en up-to-date zijn.\nBovendien kunnen de verstrekte tarieven - nog steeds indien correct - afwijken van de tarieven die door uw bank worden gebruikt.\nTot slot: Fouten gebeuren. Vertrouw nooit iemand blindelings! Dat gezegd hebbende, wees gerust, ik zou deze app niet hebben uitgebracht als ik enige twijfel had of deze werkt zoals bedoeld.</string>
     <string name="donate_title">Steun de ontwikkelaar</string>
     <string name="donate_summary">Doneer via PayPal</string>
     <string name="rate_title">Beoordeel deze app</string>
