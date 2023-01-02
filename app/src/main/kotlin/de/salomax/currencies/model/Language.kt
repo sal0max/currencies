@@ -47,7 +47,7 @@ enum class Language(
         else -> this.nameNative as String
     }
 
-    fun localizedName(context: Context): String? =
+    fun localizedName(context: Context): String =
         this.nameLocalized.let { context.getString(it) }
 
 }
