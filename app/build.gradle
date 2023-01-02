@@ -103,7 +103,7 @@ dependencies {
     implementation 'com.robinhood.spark:spark:1.2.0'
     // test
     testImplementation 'junit:junit:4.13.2'
-    testImplementation 'org.mockito:mockito-core:4.10.0'
+    testImplementation 'org.mockito:mockito-core:4.11.0'
 }
 
 private String getSecret(String key) {
