@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="changelog_1.17.3">
-        <item>Nova lingua: Hebreu. Obrigada, Yaron! 🇮🇱</item>
+        <item>Nova língua: Hebreu. Obrigada, Yaron! 🇮🇱</item>
     </string-array>
 
     <string-array name="changelog_1.16.1">

@@ -35,7 +35,7 @@ class TextUtilsTest {
         )
         assertEquals(
             "123.45",
-            123.446123f.toHumanReadableNumber(mockContext,  decimalPlaces = 2)
+            123.44612f.toHumanReadableNumber(mockContext,  decimalPlaces = 2)
         )
         assertEquals(
             "+ 30.0 cm",
