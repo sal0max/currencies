@@ -14,8 +14,8 @@ android {
         minSdkVersion 26
         targetSdkVersion 33
         // SemVer
-        versionName = '1.17.7'
-        versionCode = 11707
+        versionName = '1.18.0'
+        versionCode = 11800
         archivesBaseName = "$applicationId-v$versionCode"
     }
 
@@ -58,12 +58,12 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_1_8
+        jvmTarget = JavaVersion.VERSION_11
     }
 
     testOptions {
