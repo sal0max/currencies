@@ -1,3 +1,3 @@
 - Zlepšena přesnost směnných kurzů v zobrazení časové osy.
-- Nový jazyk: Nový jazyk: polština. Díky moc, ewm! 🇵🇱
+- Nový jazyk: polština. Díky moc, ewm! 🇵🇱
 - Mnoho aktualizovaných překladů. Díky všem přispěvatelům!

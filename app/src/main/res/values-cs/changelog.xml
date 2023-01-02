@@ -3,6 +3,7 @@
     <string-array name="changelog_1.18.0">
         <item>Přidána podpora předvoleb jazyka pro jednotlivé aplikace (nová funkce v systému Android 13).</item>
         <item>Kromě toho je nyní pro VŠECHNA zařízení (také &lt; Android 13) k dispozici možnost přepnout jazyk aplikace v nastavení aplikace.</item>
+        <item>Nový jazyk: katalánština 🇪🇸🇦🇩</item>
     </string-array>
 
     <string-array name="changelog_1.17.7">
@@ -15,7 +16,7 @@
 
     <string-array name="changelog_1.17.5">
         <item>Zlepšena přesnost směnných kurzů v zobrazení časové osy.</item>
-        <item>Nový jazyk: Nový jazyk: polština. Díky moc, ewm! 🇵🇱</item>
+        <item>Nový jazyk: polština. Díky moc, ewm! 🇵🇱</item>
         <item>Mnoho aktualizovaných překladů. Díky všem přispěvatelům!</item>
     </string-array>
 

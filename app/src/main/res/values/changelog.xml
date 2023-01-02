@@ -3,6 +3,7 @@
     <string-array name="changelog_1.18.0">
         <item>Added support for per-app language preferences (new feature in Android 13).</item>
         <item>Additionally, for ALL devices (also &lt; Android 13) there\'s now an option to switch the app language inside the app settings.</item>
+        <item>New language: Catalan 🇪🇸🇦🇩</item>
     </string-array>
 
     <string-array name="changelog_1.17.7">

@@ -1,2 +1,3 @@
 - Přidána podpora předvoleb jazyka pro jednotlivé aplikace (nová funkce v systému Android 13).
 - Kromě toho je nyní pro VŠECHNA zařízení (také < Android 13) k dispozici možnost přepnout jazyk aplikace v nastavení aplikace.
+- Nový jazyk: katalánština 🇪🇸🇦🇩

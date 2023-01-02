@@ -3,6 +3,7 @@
     <string-array name="changelog_1.18.0">
         <item>Unterstützung für per-App-Spracheinstellung hinzugefügt (ein neues Feature in Android 13).</item>
         <item>Außerdem gibt es nun eine Option für ALLE Geräte (auch &lt; Android 13) die Sprache in den App-Einstellungen zu ändern.</item>
+        <item>Neue Sprache: Katalanisch 🇪🇸🇦🇩</item>
     </string-array>
 
     <string-array name="changelog_1.17.7">

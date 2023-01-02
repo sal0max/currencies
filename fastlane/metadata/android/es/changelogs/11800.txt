@@ -1,2 +1,3 @@
 - Añadido soporte para preferencias de idioma por aplicación (nueva característica en Android 13).
 - Además, para todos los dispositivos (también < Android 13) ahora hay una opción para cambiar el idioma de la aplicación dentro de la configuración de la aplicación.
+- Nuevo idioma: Catalán 🇪🇸🇦🇩
