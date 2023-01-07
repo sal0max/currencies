@@ -1,2 +1,67 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="category_settings">Opće postavke</string>
+    <string name="fee_title">Mjenjačka provizija</string>
+    <string name="fee_summary">Vaša banka može naplaćivati mjenjačku proviziju na sve transakcije u stranim valutama. Ovdje možete postaviti iznos provizije. Ta će se vrijednost nadodati preračunatom iznosu i tako vam prikazati koliko ćete <i>zaista</i> platiti.</string>
+    <string name="previewConversion_title">Pretpregled konverzije</string>
+    <string name="previewConversion_summary">Prikazuje tečaj konverzije za svaku valutu u izborniku valuta.</string>
+    <string name="extendedKeypad_title">Proširena tipkovnica</string>
+    <string name="category_appearance">Izgled</string>
+    <string name="system_default">Zadan od sustava</string>
+    <string name="theme_title">Tema</string>
+    <string name="theme_option_light">Svijetla</string>
+    <string name="theme_option_dark">Tamna</string>
+    <string name="pure_black_enabled_title">Crna za OLED zaslone</string>
+    <string name="pure_black_enabled_summary">Koristi potpuno crnu boju u tamnom načinu rada</string>
+    <string name="language_title">Jezik aplikacije</string>
+    <string name="language_ar">arapski</string>
+    <string name="language_bg">bugarski</string>
+    <string name="language_bn">bengalski</string>
+    <string name="language_ca">katalonski</string>
+    <string name="language_cs">češki</string>
+    <string name="language_de">njemački</string>
+    <string name="language_el">grčki</string>
+    <string name="language_en">engleski</string>
+    <string name="language_es">španjolski</string>
+    <string name="language_fr">francuski</string>
+    <string name="language_in">indonezijski</string>
+    <string name="language_is">islandski</string>
+    <string name="language_it">talijanski</string>
+    <string name="language_iw">hebrejski</string>
+    <string name="language_nb">norveški</string>
+    <string name="language_nl">nizozemski</string>
+    <string name="language_pl">poljski</string>
+    <string name="language_sv">švedski</string>
+    <string name="language_tr">turski</string>
+    <string name="language_vi">vijetnamski</string>
+    <string name="category_api">Tečajne liste</string>
+    <string name="api_title">Pružatelj podataka</string>
+    <string name="api_about_title">O aplikaciji %s</string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> prati referentne tečajeve (forex) koje objavljuje Europska središnja banka.
+\n<b>Uključuje oko 30 valuta.</b></string>
+    <string name="api_refreshPeriod_title">Vrijeme osvježavanja</string>
+    <string name="api_refreshPeriod_exchangerateHost">Tečajevi se osvježavaju svakodnevno oko ponoći po univerzalnom vremenu.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Podaci se ažuriraju radnim danom u 16.00 sati po srednjeeuropskom vremenu.</string>
+    <string name="api_refreshPeriod_ferEe">Tečajevi se ažuriraju svakog radnog dana.</string>
+    <string name="category_about">O ovoj aplikaciji</string>
+    <string name="disclaimer_title">Izjava o odricanju od odgovornosti</string>
+    <string name="extendedKeypad_summary">Prikazuje dva dodatna gumba: <b>00</b>&nbsp;i&nbsp;<b>000</b>.</string>
+    <string name="language_hu">mađarski</string>
+    <string name="language_pt_BR">portugalski (brazilski)</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> prikuplja tečajne liste različitih pružatelja podataka i banaka, uključujući i Europsku središnju banku. Navedeni su srednji tečajevi. Srednji tečajevi utvrđuju se izračunom srednje vrijednosti kupovnog i prodajnog tečaja.
+\n<b>Uključuje oko 160 valuta.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> je relativno nova usluga koja (kao i Frankfurter.app) prati referentne tečajeve (forex) koje objavljuje Središnja europska banka.
+\n<b>Uključuje oko 30 valuta.</b></string>
+    <string name="disclaimer_summary">Iako je aplikacija izrađena i provjerena s velikom pažnjom, <b>ne jamčimo da su podaci koje prikazuje točni</b>. Tečajevi se prikupljaju od trećih strana i ova aplikacija ni na koji način ne može obećati da će ti podaci biti istiniti i ažurin.
+\nDodatno, tečajne liste koje pružamo – iako možda točne – mogu se razlikovati od onih kojima se koristi vaša banka.
+\nNa kraju krajeva: pogreške se događaju. Nemojte nikome slijepo vjerovati! Međutim, možete biti sigurni da ovu aplikaciju ne bih objavio da ne vjerujem da ona funkcionira kako bi trebala.</string>
+    <string name="donate_title">Podržite autora aplikacije</string>
+    <string name="donate_summary">Donirajte preko PayPala</string>
+    <string name="rate_title">Ocijenite ovu aplikaciju</string>
+    <string name="rate_summary">Ako to želite, možete pomoći drugima da otkriju ovu aplikaciju. Ovdje kliknite kako biste je ocijenili na Trgovini Play.</string>
+    <string name="category_versioninfo">Podaci o inačici</string>
+    <string name="title_changelog">Povijest izmjena</string>
+</resources>
