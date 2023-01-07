@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> . </string>
+    <string name="desc_toggle_currencies">zamijeni valute</string>
+    <string name="rates_date_latest">Tečaj na dan <b>%1$s</b>, izvor: <b>%2$s</b></string>
+    <string name="rates_date_historical">Arhiva tečaja na dan <b>%1$s</b>, izvor <b>%2$s</b></string>
+    <string name="copied_to_clipboard">Iznos <b>%s</b> kopiran u međuspremnik</string>
+    <string name="error">Pogreška: %s</string>
+    <string name="error_generic">Nepoznata pogreška.</string>
+    <string name="error_http">Poslužitelj je odgovorio HTTP statusom %d</string>
+    <string name="error_timeout">Poslužitelj nije odgovorio u zadanom vremenu ili nije dostupan.</string>
+    <string name="error_no_data">Povezivanje s poslužiteljem nije uspjelo.</string>
+    <string name="error_api_error">Dogodila se pogreška u API-ju. Molimo pokušajte kasnije.</string>
+    <string name="menu_settings">Postavke</string>
+    <string name="menu_refresh">Osvježi tečajnu listu</string>
+    <string name="menu_timeline">Grafikon tečajne liste</string>
+    <string name="tooltip_filter_starred">Prikaži samo odabrane valute.</string>
+    <string name="historical_rates_dialog_title">Arhiva tečajeva</string>
+    <string name="historical_rates_dialog_toggle">Arhiva tečajeva za određeni dan. Isključite ako želite trenutni tečaj.</string>
+</resources>
