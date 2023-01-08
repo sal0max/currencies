@@ -1,0 +1,2 @@
+- Sada možete i ručno osvježiti tečajeve. Pronađite tu opciju u izborniku s tri točkice.
+- Poboljšanje performansi

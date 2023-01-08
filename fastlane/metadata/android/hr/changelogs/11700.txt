@@ -1,0 +1,1 @@
+- Nova značajka: uključivanjem "Omogući proširenu tipkovnicu" u postavkama dodaju se gumbi 00 i 000. Zaista korisna mogućnost za valute s velikim brojevima kao što su indonezijska rupija, čileanski pezo, vijetnamski dong ili južnokorejski von.

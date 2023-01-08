@@ -1,0 +1,1 @@
+- Ispravljena pogreška zbog koje se aplikacija rušila prilikom otvaranja postavki.

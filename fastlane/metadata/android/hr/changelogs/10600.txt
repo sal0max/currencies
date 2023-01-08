@@ -1,0 +1,2 @@
+- Hvala zajednici na podršci, aplikacija je sada lokalizirana ne samo na engleski i njemački, već i španjolski 🇪🇸, francuski 🇫🇷, talijanski 🇮🇹 i norveški (Bokmål) 🇳🇴. Puno hvala na pomoći! 🙏🙏🙏
+- Manji ispravci ispod haube da bi aplikacija bila još pouzdanija.

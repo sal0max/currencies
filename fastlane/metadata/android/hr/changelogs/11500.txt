@@ -1,0 +1,4 @@
+- Novi jezik: nizozemski. Puno hvala volonteru! 🇳🇱🌷
+- Nova značajka: valute u grafikonima možete prebacivati jednim klikom.
+- Ponovno ispravljen problem rušenja aplikacije prilikom korištenja tamne teme.
+- Razna manja poboljšanja sučelja.

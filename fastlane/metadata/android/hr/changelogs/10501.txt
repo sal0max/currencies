@@ -1,0 +1,2 @@
+- Ispravljen bug zbog kojega se tečajevi nisu ažurirali kod korištenja servisa exchangerate.host.
+- Ažurirane biblioteke za veću stabilnost i bolji rad.
