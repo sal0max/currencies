@@ -16,7 +16,30 @@
     <string name="theme_option_dark">Koyu</string>
     <string name="pure_black_enabled_title">OLED siyahı</string>
     <string name="pure_black_enabled_summary">Koyu modda saf siyah kullan</string>
+    <!-- languages -->
     <string name="language_title">Uygulama Dili</string>
+    <string name="language_ar">Arapça</string>
+    <string name="language_bg">Bulgarca</string>
+    <string name="language_bn">Bengalce</string>
+    <string name="language_ca">Katalanca</string>
+    <string name="language_cs">Çek</string>
+    <string name="language_de">Almanca</string>
+    <string name="language_el">Yunanca</string>
+    <string name="language_en">İngilizce</string>
+    <string name="language_es">İspanyolca</string>
+    <string name="language_fr">Fransızca</string>
+    <string name="language_hu">Macarca</string>
+    <string name="language_in">Endonezyaca</string>
+    <string name="language_is">İzlandaca</string>
+    <string name="language_it">İtalyanca</string>
+    <string name="language_iw">İbranice</string>
+    <string name="language_nb">Norveççe</string>
+    <string name="language_nl">Flemenkçe</string>
+    <string name="language_pl">Lehçe</string>
+    <string name="language_pt_BR">Portekizce (Brezilya)</string>
+    <string name="language_sv">İsveççe</string>
+    <string name="language_tr">Türkçe</string>
+    <string name="language_vi">Vietnamca</string>
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcısı</string>

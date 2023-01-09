@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.0">
+        <item>Uygulama başına dil tercihleri için destek eklendi (Android 13\'teki yeni özellik).</item>
+        <item>Ek olarak, TÜM cihazlar için (ayrıca &lt; Android 13) artık uygulama ayarlarında uygulama dilini değiştirme seçeneği var.</item>
+        <item>Yeni dil: Katalanca 🇪🇸🇦🇩</item>
+    </string-array>
+
     <string-array name="changelog_1.17.7">
         <item>Düzeltildi: boş değişiklik günlüğü</item>
     </string-array>
