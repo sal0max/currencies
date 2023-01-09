@@ -1,0 +1,3 @@
+- Izbor između dva API-ja: exchangerate.host and frankfurter.app
+- Sada možete podržati autora donacijom preko PayPala. Poveznica se nalazi u postavkama (Samo u F-Droid inačici.)
+- Još poboljšanja korisničkog sučelja

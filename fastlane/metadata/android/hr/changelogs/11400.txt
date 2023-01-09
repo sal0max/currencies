@@ -1,0 +1,3 @@
+- Manja poboljšanja u skladu s najnovijim Googleovim smjernicama za Material Design 3 .
+- Ažurirani prijevodi. Hvala svima koji pomažu!
+- Različita poboljšanja stabilnosti.

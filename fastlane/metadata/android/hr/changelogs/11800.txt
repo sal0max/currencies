@@ -1,0 +1,3 @@
+- Dodana podrška za odabir jezika za pojedinačne aplikacije (nova značajka u Androidu 13).
+- Dodatno, na SVIM uređajima (i onima s Androidom ispod 13) možete odabrati jezik aplikacije u postavkama aplikacije.
+- Novi jezik: katalonski 🇪🇸🇦🇩

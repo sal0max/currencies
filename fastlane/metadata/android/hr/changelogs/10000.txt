@@ -1,0 +1,3 @@
+- Dodan njemački prijevod 🇩🇪
+- Manje poboljšanje: Veličina aplikacije smanjena za 50%!
+- Aplikacija djeluje stabilno: Javno izdanje 1.0! 🥳🥳🥳

@@ -1,0 +1,4 @@
+- Još više novih valuta! Sada ih je ukupno preko 160!! Prebacili smo Valute na novi API. Prethodni (exchangeratesapi.io) bez prethodnog upozorenja je uveo je pretplatu. LOŠE! Naš novi pružatelj podataka bit će exchangerate.host.
+- Iz tog razloga tečajevi se nisu ažurirali zadnjih nekoliko dana. To je sada ispravljeno, naravno.
+- Poboljšali smo i proces osvježavanja tečajeva, tako da ćete dobiti upozorenje ako se nešto ovakvo ponovi.
+- Manja poboljšanja sučelja

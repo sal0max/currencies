@@ -1,0 +1,4 @@
+- Sada tečajeve možete osvježiti povlačenjem prstom s vrha zaslona.
+- Znatno poboljšane povratne informacije prilikom osvježavanja tečajeva i u slučaju pogrešaka.
+- Novi jezik: dobili smo i prijevod na turski. Hvala vam! 🇹🇷
+- U nekim slučajevima korišten je krivi API za grafikone. To je sada ispravljeno.

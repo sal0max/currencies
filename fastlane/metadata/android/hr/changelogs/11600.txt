@@ -1,0 +1,2 @@
+- Nova značajka: Sada možete odabrati arhivirane tečajeve za preračunavanje.
+- Novi jezik: indonezijski. Puno hvala, @liimee! 🇮🇩🏝️

@@ -1,0 +1,2 @@
+- Dorađen dizajn (Material 3).
+- Novi jezik: češki. Hvala, Fjuro! 🇨🇿

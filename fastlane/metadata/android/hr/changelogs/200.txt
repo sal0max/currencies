@@ -1,0 +1,1 @@
+- Dodana funkcija kopiranja: Dodirnite i držite na vrijednosti koju želite kopirati

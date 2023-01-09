@@ -1,0 +1,4 @@
+- Poboljšan prikaz starosti tečajne liste.
+- Dodana mogućnost ocjenjivanja aplikacije na Trgovini Play (naravno, ne na F-Droid inačici).
+- Još jedna lokalizacija: aplikacija je prevedena i na vijetnamski. 🇻🇳
+- Manja poboljšanja.

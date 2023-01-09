@@ -1,0 +1,4 @@
+- Ovo izdanje ispravilo je više problema s prijelomom kod jezika koji pišu s desna na lijevo. Sada bi sve trebalo izgledati kako treba.
+- Nova značajka: unaprijed provjerite sve konverzije u izborniku valuta. Tu mogućnost morate omogućiti u postavkama.
+- Ponekad valute prikazuju stare ili krive podatke nakon osvježavanja tečaja. To je sada ispravljeno.
+- Mnoštvo poboljšanja koda kako bi aplikacija bila još bolja.

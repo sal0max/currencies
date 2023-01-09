@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.18.0">
+        <item>Dodana podrška za odabir jezika za pojedinačne aplikacije (nova značajka u Androidu 13).</item>
+        <item>Dodatno, na SVIM uređajima (i onima s Androidom ispod 13) možete odabrati jezik aplikacije u postavkama aplikacije.</item>
+        <item>Novi jezik: katalonski 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Ispravljeno: prazna povijest izmjena</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>Novi prijevodi! Islandski - nazrin 🇮🇸, brazilski portugalski - Cavernosa 🇧🇷 i švedski - Samuel 🇸🇪. Mrak!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.5">
+        <item>Povećana preciznost tečajeva na grafikonima.</item>
+        <item>Novi jezik: poljski. Puno hvala, ewm! 🇵🇱</item>
+        <item>Mnoštvo ažuriranih prijevoda. Hvala svima koji su pridonijeli!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Dorađen dizajn (Material 3).</item>
+        <item>Novi jezik: češki. Hvala, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Novi jezik: hebrejski. Hvala, Yaron! 🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Novo: Brojevi se sada mogu zalijepiti iz međuspremnika.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>Novi jezik broj 1: bugarski. Puno hvala, Mihail! 🇧🇬</item>
+        <item>Novi jezik broj 2: bengalski. Živio, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Ažuriranja i ostalih prijevoda.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Nova značajka: uključivanjem "Omogući proširenu tipkovnicu" u postavkama dodaju se gumbi 00 i 000. Zaista korisna mogućnost za valute s velikim brojevima kao što su indonezijska rupija, čileanski pezo, vijetnamski dong ili južnokorejski von.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Novi prijevod: mađarski. Zahvaljujem, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Ažurirani prijevodi.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Nova značajka: Sada možete odabrati arhivirane tečajeve za preračunavanje.</item>
+        <item>Novi jezik: indonezijski. Puno hvala, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>Novi jezik: nizozemski. Puno hvala volonteru! 🇳🇱🌷</item>
+        <item>Nova značajka: valute u grafikonima možete prebacivati jednim klikom.</item>
+        <item>Ponovno ispravljen problem rušenja aplikacije prilikom korištenja tamne teme.</item>
+        <item>Razna manja poboljšanja sučelja.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Manja poboljšanja u skladu s najnovijim Googleovim smjernicama za Material Design 3 .</item>
+        <item>Ažurirani prijevodi. Hvala svima koji pomažu!</item>
+        <item>Različita poboljšanja stabilnosti.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Novi jezik - aplikaciju sada možete koristiti na arapskom. Puno hvala, Ahmede! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Ispravci za jezike koji pišu s desna na lijevo u vodoravnom prikazu.</item>
+        <item>Ispravljeno rušenje prilikom unosa prazne vrijednosti provizije.</item>
+        <item>Izvor podataka sada se prikazuje na grafikonima.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Ispravljeno rušenje prilikom osvježavanja tečajeva. Ispričavam se! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Ovo izdanje ispravilo je više problema s prijelomom kod jezika koji pišu s desna na lijevo. Sada bi sve trebalo izgledati kako treba.</item>
+        <item>Nova značajka: unaprijed provjerite sve konverzije u izborniku valuta. Tu mogućnost morate omogućiti u postavkama.</item>
+        <item>Ponekad valute prikazuju stare ili krive podatke nakon osvježavanja tečaja. To je sada ispravljeno.</item>
+        <item>Mnoštvo poboljšanja koda kako bi aplikacija bila još bolja.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Sada tečajeve možete osvježiti povlačenjem prstom s vrha zaslona.</item>
+        <item>Znatno poboljšane povratne informacije prilikom osvježavanja tečajeva i u slučaju pogrešaka.</item>
+        <item>Novi jezik: dobili smo i prijevod na turski. Hvala vam! 🇹🇷</item>
+        <item>U nekim slučajevima korišten je krivi API za grafikone. To je sada ispravljeno.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Manja poboljšanja.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Ispravljena pogreška zbog koje se aplikacija rušila prilikom otvaranja postavki.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Ispravljeno rušenje na Androidu 8.0.</item>
+        <item>Ažurirani prijevodi.</item>
+        <item>Manji ispravci korisničkog sučelja.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Sada možete označiti svoje omiljene valute da biste im lakše pristupili. Zabavite se! ❤</item>
+        <item>Dodana mogućnost potpuno crne teme dok je aplikacija u tamnom načinu rada.</item>
+        <item>Ažurirani prijevodi. Puno hvala volonterima!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Nova lokalizacija: aplikacija sada govori grčki. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Ispravljena pogreška zbog koje se aplikacija ponekad rušila prilikom korištenja tamne teme.</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>Poboljšan prikaz starosti tečajne liste.</item>
+        <item>Dodana mogućnost ocjenjivanja aplikacije na Trgovini Play (naravno, ne na F-Droid inačici).</item>
+        <item>Još jedna lokalizacija: aplikacija je prevedena i na vijetnamski. 🇻🇳</item>
+        <item>Manja poboljšanja.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Nove značajke u ovom izdanju! Najvažnije - aplikacija sada prikazuje i arhivu tečajeva. Pogledajte grafikon za zadnjih godinu dana ako vas zanima kako su se kretali tečajevi.</item>
+        <item>Dodali smo još jedan izvor podataka o tečajevima: U postavkama možete odabrati fer.ee. Relativno novi servis koji se ponaša isto kao frankfurter.app i nudi vam još jedan izbor.</item>
+        <item>Kao i uvijek, ovo izdanje sadrži ažurirane biblioteke, manja poboljšanja i sve što aplikaciju čini još boljom.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Hvala zajednici na podršci, aplikacija je sada lokalizirana ne samo na engleski i njemački, već i španjolski 🇪🇸, francuski 🇫🇷, talijanski 🇮🇹 i norveški (Bokmål) 🇳🇴. Puno hvala na pomoći! 🙏🙏🙏</item>
+        <item>Manji ispravci ispod haube da bi aplikacija bila još pouzdanija.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Ispravljen bug zbog kojega se tečajevi nisu ažurirali kod korištenja servisa exchangerate.host.</item>
+        <item>Ažurirane biblioteke za veću stabilnost i bolji rad.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Izbor između dva API-ja: exchangerate.host and frankfurter.app</item>
+        <item>Sada možete podržati autora donacijom preko PayPala. Poveznica se nalazi u postavkama (Samo u F-Droid inačici.)</item>
+        <item>Još poboljšanja korisničkog sučelja</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Poboljšanje korisničkog sučelja</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Sada možete i ručno osvježiti tečajeve. Pronađite tu opciju u izborniku s tri točkice.</item>
+        <item>Poboljšanje performansi</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>Još više novih valuta! Sada ih je ukupno preko 160!! Prebacili smo Valute na novi API. Prethodni (exchangeratesapi.io) bez prethodnog upozorenja je uveo je pretplatu. LOŠE! Naš novi pružatelj podataka bit će exchangerate.host.</item>
+        <item>Iz tog razloga tečajevi se nisu ažurirali zadnjih nekoliko dana. To je sada ispravljeno, naravno.</item>
+        <item>Poboljšali smo i proces osvježavanja tečajeva, tako da ćete dobiti upozorenje ako se nešto ovakvo ponovi.</item>
+        <item>Manja poboljšanja sučelja</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 novih valuta! Sada ih je ukupno 50. 🥳 Previše da bi ih naveo poimence. Međutim, uključeno je mnogo popularnih destinacija za odmorna Bliskom istoku i u Karibima: UAE, Katar, Barbados, Bahami, Kuba, …</item>
+        <item>Da biste lakše pronašli nove valute uveli smo pretragu u izborniku valuta.</item>
+        <item>Izbornik valuta sada prikazuje puni naziv valute, ne samo njezinu oznaku. Odlična funkcija u kombinaciji s pretragom. Probajte!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Manji ispravci (tipfeleri i sl.)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Ovisno o vašem pružatelju kartičnih usluga, vaša banka može naplaćivati proviziju na sve transakcije u stranim valutama. Sada tu proviziju možete uključiti u izračune kako biste znali točno koliko plaćate. 🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Ispravljeno moguće rušenje na Androidu 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Dodan njemački prijevod 🇩🇪</item>
+        <item>Manje poboljšanje: Veličina aplikacije smanjena za 50%!</item>
+        <item>Aplikacija djeluje stabilno: Javno izdanje 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Manja poboljšanja</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Bolja obrada pogrešaka</item>
+        <item>Manja poboljšanja</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Dodana funkcija kopiranja: Dodirnite i držite na vrijednosti koju želite kopirati</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Ažuriranje tečajeva otpornije na pogrješke</item>
+        <item>Dodana izjava o odricanju od odgovornosti</item>
+        <item>Dodana povijest izmjena</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Početno pred-izdanje</item>
+    </string-array>
+</resources>

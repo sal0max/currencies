@@ -1,0 +1,3 @@
+- Nove značajke u ovom izdanju! Najvažnije - aplikacija sada prikazuje i arhivu tečajeva. Pogledajte grafikon za zadnjih godinu dana ako vas zanima kako su se kretali tečajevi.
+- Dodali smo još jedan izvor podataka o tečajevima: U postavkama možete odabrati fer.ee. Relativno novi servis koji se ponaša isto kao frankfurter.app i nudi vam još jedan izbor.
+- Kao i uvijek, ovo izdanje sadrži ažurirane biblioteke, manja poboljšanja i sve što aplikaciju čini još boljom.
