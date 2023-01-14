@@ -2,7 +2,7 @@
 <resources>
     <string-array name="changelog_1.17.5">
         <item>Förbättrad precision på valutakurserna i tidslinjesvyn.</item>
-        <item>Nytt språk: Polska. Tack så mycket, ewm!  🇵🇱</item>
+        <item>Nytt språk: Polska. Tack så mycket, ewm! 🇵🇱</item>
         <item>Många uppdaterade översättningar. Tack till alla bidragsgivare!</item>
     </string-array>
 

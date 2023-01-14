@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.1">
+        <item>Nuevo idioma: croata 🇭🇷🇧🇦. ¡Excelente trabajo, Iván!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.0">
         <item>Añadido soporte para preferencias de idioma por aplicación (nueva característica en Android 13).</item>
         <item>Además, para todos los dispositivos (también &lt; Android 13) ahora hay una opción para cambiar el idioma de la aplicación dentro de la configuración de la aplicación.</item>

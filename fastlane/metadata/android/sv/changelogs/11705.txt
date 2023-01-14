@@ -1,3 +1,3 @@
 - Förbättrad precision på valutakurserna i tidslinjesvyn.
-- Nytt språk: Polska. Tack så mycket, ewm!  🇵🇱
+- Nytt språk: Polska. Tack så mycket, ewm! 🇵🇱
 - Många uppdaterade översättningar. Tack till alla bidragsgivare!

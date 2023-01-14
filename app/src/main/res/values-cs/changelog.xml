@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.1">
+        <item>Nový jazyk: chorvatština 🇭🇷🇧🇦. Výborná práce, Ivane!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.0">
         <item>Přidána podpora předvoleb jazyka pro jednotlivé aplikace (nová funkce v systému Android 13).</item>
         <item>Kromě toho je nyní pro VŠECHNA zařízení (také &lt; Android 13) k dispozici možnost přepnout jazyk aplikace v nastavení aplikace.</item>

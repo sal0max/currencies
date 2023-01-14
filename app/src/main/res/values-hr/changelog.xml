@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.1">
+        <item>Novi jezik: hrvatski 🇭🇷🇧🇦. Izvrsno odrađeno, Ivane!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.0">
         <item>Dodana podrška za odabir jezika za pojedinačne aplikacije (nova značajka u Androidu 13).</item>
         <item>Dodatno, na SVIM uređajima (i onima s Androidom ispod 13) možete odabrati jezik aplikacije u postavkama aplikacije.</item>
