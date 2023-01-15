@@ -176,19 +176,22 @@ object ExchangeRatesService {
             while (reader.hasNext()) {
                 val name: String = reader.nextName()
                 val value: Double = reader.nextDouble()
-                // filter these:
-                if (name != "BTC" // Bitcoin
-                    && name != "CLF" // Unidad de Fomento
-                    && name != "XDR" // special drawing rights
+                // filter out these:
+                if (name != "BTC"    // Bitcoin
+                    // metals
                     && name != "XAG" // silver
                     && name != "XAU" // gold
                     && name != "XPD" // palladium
                     && name != "XPT" // platinum
-                    && name != "MRO" // Mauritanian ouguiya (pre-2018)
-                    && name != "STD" // São Tomé and Príncipe dobra (pre-2018)
-                    && name != "VEF" // Venezuelan bolívar fuerte (old)
-                    && name != "CNH" // Chinese renminbi (Offshore)
-                    && name != "CUP" // Cuban peso (moneda nacional)
+                    // superseded
+                    && name != "MRO" // Mauritanian ouguiya         (until 2018/01/01)
+                    && name != "STD" // São Tomé and Príncipe dobra (until 2018/01/01)
+                    && name != "VEF" // Venezuelan bolívar fuerte   (2008/01/01 – 2018/08/20)
+                    && name != "CUC" // Cuban convertible peso      (1994 - 2020/01/01)
+                    // special
+                    && name != "XDR" // special drawing rights of the IMF
+                    && name != "CLF" // Unidad de Fomento (non-circulating Chilean currency)
+                    && name != "CNH" // Chinese renminbi  (Offshore e.g. Hong Kong)
                 ) {
                     Currency.fromString(name)?.let { list.add(Rate(it, value.toFloat())) }
                 }
