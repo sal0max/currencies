@@ -17,6 +17,7 @@ enum class Language(
     ES("es", "Español", R.string.language_es),
     EL("el", "Ελληνικά", R.string.language_el),
     FR("fr", "Français", R.string.language_fr),
+    HR("hr", "Hrvatski", R.string.language_hr),
     IS("is", "Íslenska", R.string.language_is),
     IT("it", "Italiano", R.string.language_it),
     HU("hu", "Magyar", R.string.language_hu),
