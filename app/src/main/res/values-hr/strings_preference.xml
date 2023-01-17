@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Opće postavke</string>
@@ -10,7 +12,7 @@
     <string name="extendedKeypad_title">Proširena tipkovnica</string>
     <string name="extendedKeypad_summary">Prikazuje dva dodatna gumba: <b>00</b>&nbsp;i&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Izgled</string>
-    <string name="system_default">Zadan od sustava</string>
+    <string name="system_default">Zadano od sustava</string>
     <string name="theme_title">Tema</string>
     <string name="theme_option_light">Svijetla</string>
     <string name="theme_option_dark">Tamna</string>
