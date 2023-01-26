@@ -1,0 +1,3 @@
+- Tillagt stöd för språkinställningar per app (ny funktion i Android 13).
+- Dessutom, för ALLA enheter (även < Android 13) finns det nu ett alternativ att byta appspråk i appinställningarna.
+- Nytt språk: katalanska 🇪🇸🇦🇩

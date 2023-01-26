@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.1">
+        <item>Nytt språk: kroatiska 🇭🇷🇧🇦. Enastående arbete, Ivan!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>Tillagt stöd för språkinställningar per app (ny funktion i Android 13).</item>
+        <item>Dessutom, för ALLA enheter (även &lt; Android 13) finns det nu ett alternativ att byta appspråk i appinställningarna.</item>
+        <item>Nytt språk: katalanska 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Fixat: tom ändringslogg</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>Nya översättningar! Isländska av nazrin 🇮🇸, portugisiska (Brasilien) av Cavernosa 🇧🇷 och svenska av Samuel 🇸🇪. Fantastiskt!</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>Förbättrad precision på valutakurserna i tidslinjesvyn.</item>
         <item>Nytt språk: Polska. Tack så mycket, ewm! 🇵🇱</item>
@@ -34,7 +52,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Uppdaterade översättningarna</item>
+        <item>Uppdaterade översättningarna.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">
@@ -81,7 +99,7 @@
     </string-array>
 
     <string-array name="changelog_1.10.3">
-        <item>Mindre förbättringar</item>
+        <item>Mindre förbättringar.</item>
     </string-array>
 
     <string-array name="changelog_1.10.2">
@@ -89,9 +107,9 @@
     </string-array>
 
     <string-array name="changelog_1.10.1">
-        <item>Åtgärdade en krasch på Android 8.0</item>
-        <item>Uppdaterade översättningarna</item>
-        <item>Mindre förbättringar av användargränssnittet</item>
+        <item>Åtgärdade en krasch på Android 8.0.</item>
+        <item>Uppdaterade översättningarna.</item>
+        <item>Mindre förbättringar av användargränssnittet.</item>
     </string-array>
 
     <string-array name="changelog_1.10.0">
@@ -111,7 +129,7 @@
     <string-array name="changelog_1.8.0">
         <item>Förbättrade visningen av valutakursens ålder.</item>
         <item>La till ett menyval under inställningar för att betygssätta appen på Google Play (givetvis inte i F-Droid-versionen).</item>
-        <item>Ännu än översättning: appen har nu översatts till vietnamesiska.</item>
+        <item>Ännu än översättning: appen har nu översatts till vietnamesiska. 🇻🇳</item>
         <item>Mindre förbättringar.</item>
     </string-array>
 
@@ -122,7 +140,7 @@
     </string-array>
 
     <string-array name="changelog_1.6.0">
-        <item>Tack vare alla fantastiska community-medlemmar, så är finns denna app inte längre bara på engelska och tyska, utan även spanska, franska, italienska och norsk bokmål. Tack så mycket för er hjälp! 🙏🙏🙏</item>
+        <item>Tack vare alla fantastiska community-medlemmar, så är finns denna app inte längre bara på engelska och tyska, utan även spanska 🇪🇸, franska 🇫🇷, italienska 🇮🇹 och norsk bokmål 🇳🇴. Tack så mycket för er hjälp! 🙏🙏🙏</item>
         <item>Mindre "under huven"-uppdateringar för att göra appen mer pålitlig.</item>
     </string-array>
 
@@ -133,7 +151,7 @@
 
     <string-array name="changelog_1.5.0">
         <item>Val mellan två dataleverantörer: exchangerate.host och frankfurter.app</item>
-        <item>Du kan nu stödja utvecklaren genom en donation via PayPal. Länken finns i inställningarna.</item>
+        <item>Du kan nu stödja utvecklaren genom en donation via PayPal. Länken finns i inställningarna. (Endast F-Droid-version.)</item>
         <item>Fler förbättringar av användargränssnittet</item>
     </string-array>
 
@@ -164,7 +182,7 @@
     </string-array>
 
     <string-array name="changelog_1.1.0">
-        <item>Beroende på ditt avtal för ditt betalkort, så kan din bank ta ut ett växlingspåslag. Det går nu att lägga till den avgiften i beräkningarna, så du vet hur mycket du egentligen betalar.</item>
+        <item>Beroende på ditt kreditkortsavtal kan din bank ta ut en avgift på alla valutatransaktioner. Den avgiften kan du nu ta med i beräkningarna, så att du vet hur mycket du verkligen betalar. 🙂</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">
