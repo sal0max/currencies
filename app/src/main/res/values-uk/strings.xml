@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator">.</string>
+    <string name="desc_toggle_currencies">поміняти валюти місцями</string>
+    <string name="rates_date_latest">Курс станом на &lt;b>%1$s&lt;/b> згідно &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Історичний курс, на &lt;b>%1$s&lt;/b> згідно &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">Скопійовано &lt;b>%s&lt;/b> до буферу</string>
+    <string name="historical_rates_dialog_title">Історичний курс</string>
+    <string name="historical_rates_dialog_toggle">Використовувати курс валют на певну дату. Вимкніть, щоб завжди брати найновіші.</string>
+    <string name="error">Помилка: %s</string>
+    <string name="error_generic">Невідома проблема.</string>
+    <string name="error_http">Сервер відповів зі статусом HTTP %d</string>
+    <string name="error_timeout">Сервер не відповів своєчасно, або недоступний.</string>
+    <string name="error_no_data">Не можу під\'єднатись до серверу.</string>
+    <string name="error_api_error">Відбулась помилка при виклику API. Будь-ласка спробуйте пізніше.</string>
+    <string name="menu_settings">Налаштування</string>
+    <string name="menu_refresh">Оновити курс</string>
+    <string name="menu_timeline">Графік зміни курсу</string>
+    <string name="tooltip_filter_starred">Показувати лише обрані валюти.</string>
+</resources>

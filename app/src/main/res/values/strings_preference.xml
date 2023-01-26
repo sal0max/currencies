@@ -46,6 +46,7 @@
     <string name="language_pt_BR">Portuguese (Brazil)</string>
     <string name="language_sv">Swedish</string>
     <string name="language_tr">Turkish</string>
+    <string name="language_uk">Ukrainian</string>
     <string name="language_vi">Vietnames</string>
     <!-- api -->
     <string name="category_api">Exchange rates</string>

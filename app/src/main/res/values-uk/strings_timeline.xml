@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> до &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">Дані надано &lt;b>%s&lt;/b></string>
+    <string name="rate_average">сер.</string>
+    <string name="rate_min">мін.</string>
+    <string name="rate_max">макс.</string>
+    <string name="year">рік</string>
+    <string name="month">місяць</string>
+    <string name="week">тиждень</string>
+</resources>
