@@ -11,6 +11,7 @@ import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
+import androidx.core.view.doOnLayout
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -31,6 +32,7 @@ import kotlinx.coroutines.launch
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
 import java.time.format.FormatStyle
+import kotlin.math.max
 
 class TimelineActivity : BaseActivity() {
 
@@ -91,6 +93,7 @@ class TimelineActivity : BaseActivity() {
 
         // configure timeline view
         initChartView()
+        initStatsView()
 
         // listeners & stuff
         setListeners()
@@ -154,6 +157,30 @@ class TimelineActivity : BaseActivity() {
             }
             // adapter
             adapter = ChartAdapter()
+        }
+    }
+
+    private fun initStatsView() {
+        val view1 = findViewById<View>(R.id.stats_row_1).findViewById<TextView>(R.id.text)
+        val view2 = findViewById<View>(R.id.stats_row_2).findViewById<TextView>(R.id.text)
+        val view3 = findViewById<View>(R.id.stats_row_3).findViewById<TextView>(R.id.text)
+
+        // set the title of "avg", "min", "max
+        view1.text = getString(R.string.rate_average)
+        view2.text = getString(R.string.rate_min)
+        view3.text = getString(R.string.rate_max)
+
+        // set the width of "avg", "min", "max" to the same value
+        listOf(view1, view2, view3).forEach {
+            it.doOnLayout {
+                val maxWidth = max(view1.width, max(view2.width, view3.width))
+                // only apply, if changed
+                if (maxWidth != view1.width) {
+                    view1.width = maxWidth
+                    view2.width = maxWidth
+                    view3.width = maxWidth
+                }
+            }
         }
     }
 
@@ -251,7 +278,6 @@ class TimelineActivity : BaseActivity() {
         timelineModel.getRatesAverage().observe(this) {
             populateStat(
                 findViewById(R.id.stats_row_1),
-                getString(R.string.rate_average),
                 it.first?.currency?.symbol(),
                 it.first?.value,
                 null,
@@ -264,7 +290,6 @@ class TimelineActivity : BaseActivity() {
             val rate = it.first
             populateStat(
                 findViewById(R.id.stats_row_2),
-                getString(R.string.rate_min),
                 rate?.currency?.symbol(),
                 rate?.value,
                 it.second,
@@ -277,7 +302,6 @@ class TimelineActivity : BaseActivity() {
             val rate = it.first
             populateStat(
                 findViewById(R.id.stats_row_3),
-                getString(R.string.rate_max),
                 rate?.currency?.symbol(),
                 rate?.value,
                 it.second,
@@ -287,13 +311,12 @@ class TimelineActivity : BaseActivity() {
 
     }
 
-    private fun populateStat(parent: View, title: String?, symbol: String?, value: Float?, date: LocalDate?, places: Int = 3) {
+    private fun populateStat(parent: View, symbol: String?, value: Float?, date: LocalDate?, places: Int = 3) {
         // hide entire row when there's no data
         parent.visibility = if (symbol == null) View.GONE else View.VISIBLE
         // hide dotted line when there's no date
         parent.findViewById<View>(R.id.dotted_line).visibility = if (date == null) View.GONE else View.VISIBLE
 
-        parent.findViewById<TextView>(R.id.text).text = title
         parent.findViewById<TextView>(R.id.text2).text = symbol
         parent.findViewById<TextView>(R.id.text3).text = value?.toHumanReadableNumber(this, places)
         parent.findViewById<TextView>(R.id.text4).text = date?.format(formatter)

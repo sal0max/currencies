@@ -12,7 +12,6 @@
         style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:minWidth="40sp"
         android:textAllCaps="true"
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="@id/text2"
