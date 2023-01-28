@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Algemene Instellingen</string>
@@ -61,4 +63,5 @@
     <string name="donate_summary">Doneer via PayPal</string>
     <string name="rate_title">Beoordeel deze app</string>
     <string name="rate_summary">Als je wilt, kun je anderen helpen valuta\'s te ontdekken. Klik hier om de app te beoordelen op Google Play.</string>
+    <string name="category_versioninfo">Versie-informatie</string>
 </resources>
