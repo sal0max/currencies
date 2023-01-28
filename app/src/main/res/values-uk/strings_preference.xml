@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Загальні налаштування</string>
     <string name="fee_title">Комісія за міжнарожні тразакції</string>
     <string name="fee_summary">Залежно від угоди вашої кредитної картки, ваш банк може стягувати комісію за всі операції обміну валюти. Тут ви можете ввести її розмір. Його буде додано до розрахунку, щоб ви знали, скільки ви <i>насправді</i> платите.</string>
     <string name="previewConversion_title">Попередній перегляд обміну</string>
-
     <string name="extendedKeypad_title">Розширена клавіатура</string>
     <string name="extendedKeypad_summary">Додати дві додаткові кнопки: <b>00</b>&nbsp;та&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Зовнішній вигляд</string>
@@ -22,26 +23,7 @@
     <string name="language_bg">Болгарська</string>
     <string name="language_bn">Бенгальська</string>
     <string name="language_ca">Каталонська</string>
-    <string name="language_cs">Čeština</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="language_cs">Чеська</string>
     <!-- api -->
     <string name="category_api">Курси обміну</string>
     <string name="api_title">Постачальник даних</string>
@@ -50,9 +32,6 @@
     <string name="api_refreshPeriod_exchangerateHost">Курси обміну оновлються приблизно о півночі за UTC, кожного робочого дня.</string>
     <string name="api_refreshPeriod_frankfurterApp">Дані оновлюються близько 16:00 CET (центрально європейський час) кожного робочого дня.</string>
     <string name="api_refreshPeriod_ferEe">Дані оновлюються кожного робочого дня.</string>
-
-
-
     <!-- about -->
     <string name="category_about">Про цей додаток</string>
     <string name="disclaimer_title">Відмова від відповідальності</string>
@@ -63,4 +42,30 @@
     <string name="rate_summary">Якщо ви хочете, ви можете допомогти іншим відкрити для себе <b>Currencies</b>. Натисніть тут, щоб оцінити програму в Google Play.</string>
     <string name="category_versioninfo">Інформація про версію</string>
     <string name="title_changelog">Історія змін</string>
+    <string name="language_de">Німецька</string>
+    <string name="language_el">Грецька</string>
+    <string name="language_en">Англійська</string>
+    <string name="language_es">Іспанська</string>
+    <string name="language_fr">Французська</string>
+    <string name="language_hr">Хорватська</string>
+    <string name="language_hu">Угорська</string>
+    <string name="language_in">Індонезійська</string>
+    <string name="language_is">Ісландська</string>
+    <string name="language_it">Італійська</string>
+    <string name="language_iw">Іврит</string>
+    <string name="language_nb">Норвезька</string>
+    <string name="language_nl">Голландська</string>
+    <string name="language_pl">Польська</string>
+    <string name="language_pt_BR">Португальська (Бразилія)</string>
+    <string name="language_sv">Шведська</string>
+    <string name="language_tr">Турецька</string>
+    <string name="language_vi">В\'єтнамська</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> отримує курси валют від різних постачальників фінансових даних і банків, зокрема Європейського центрального банку. Усі дані про обмінний курс надаються в середніх значеннях. Середні ставки визначаються шляхом розрахунку середньої медіани ставок купівлі та продажу.
+\n<b>Включено близько 160 валют.</b></string>
+    <string name="previewConversion_summary">Показувати поточні ставки в списку валют.</string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> є відносно новою службою, яка (як і Frankfurter.app) відстежує довідковий обмін (форекс) ставки, які публікує Європейський центральний банк.
+\n<b>Включено близько 30 валют.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> відстежує довідкові обмінні курси (форекс), опубліковані Європейським центральним банком.
+\n<b>Включено близько 30 валют.</b></string>
+    <string name="language_uk">Українська</string>
 </resources>
