@@ -16,6 +16,6 @@
     <string name="error_api_error">Ocorreu um erro de API. Por favor, tente novamente mais tarde.</string>
     <string name="menu_settings">Configurações</string>
     <string name="menu_refresh">Atualizar taxas</string>
-    <string name="menu_timeline">Gráfico de taxa de câmbio</string>
+    <string name="menu_timeline">Gráfico da taxa de câmbio</string>
     <string name="tooltip_filter_starred">Mostrar apenas moedas marcadas com estrela.</string>
 </resources>
