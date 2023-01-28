@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.16.0">
+        <item>Ny funksjon: Historiske kurser kan nå velges som skal brukes til beregningen.</item>
+        <item>Nytt språk: indonesisk. Tusen takk, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
     <string-array name="changelog_1.15.0">
         <item>Nytt språk: nederlandsk. Tusen takk til den frivillige! 🇳🇱🌷</item>
         <item>Ny funksjon: Du kan nå veksle mellom valutaene i tidslinjevisningen med ett klikk.</item>
@@ -7,10 +12,146 @@
         <item>Ulike små UI-forbedringer.</item>
     </string-array>
 
+    <string-array name="changelog_1.14.0">
+        <item>Noen små forbedringer for å følge Googles siste Material Design 3-retningslinje.</item>
+        <item>Oppdaterte oversettelser. Takk til alle som hjelper til!</item>
+        <item>Ulike stabilitetsforbedringer.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Nok et nytt språk: Du kan nå nyte appen på arabisk. Tusen takk, Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳 🇾🇪</item>
+        <item>Noen flere RTL-fikser for landskapsoppsettet.</item>
+        <item>Rettet krasj ved inntasting av en tom verdi for gebyrbeløpet.</item>
+        <item>Dataleverandøren vises i tidslinjevisningen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>Fiks krasj på oppdateringsfrekvenser. Unnskyld! 🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>Denne utgivelsen løser flere layoutproblemer med høyre-til-venstre-språk (RTL). Nå skal alt se ut som forventet.</item>
+        <item>Ny funksjon: Forhåndsvis alle konverteringer i valutavelgeren. Du må aktivere det i innstillingene.</item>
+        <item>Noen ganger vil valutaer vise gamle eller feil data etter en kursoppdatering. Dette er fikset.</item>
+        <item>Virkelig mange kodeforbedringer, for å gjøre denne appen enda bedre.</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>Du kan nå dra for å oppdatere for å oppdatere prisene.</item>
+        <item>Mye forbedret tilbakemelding ved oppdateringsfrekvenser og ved feil.</item>
+        <item>Nytt språk: Et vennlig medlem av fellesskapet ga oversettelser til tyrkisk. Takk skal du ha! 🇹🇷</item>
+        <item>– I noen situasjoner ble feil API brukt for tidslinjen. Det er fikset nå.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Mindre forbedringer.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>Rettet et krasj når du åpnet preferansene.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>Rettet et krasj på Android 8.0.</item>
+        <item>Oppdaterte oversettelser.</item>
+        <item>Små UI-forbedringer.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>Du kan nå favorittvalutaer for raskere tilgang. Ha det gøy! ❤</item>
+        <item>Lagt til alternativ for en ren svart temaopplevelse når du bruker mørk modus.</item>
+        <item>Oppdaterte oversettelser. Tusen takk til de frivillige!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>Ny lokalisering: Appen snakker også gresk, nå. 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>Rettet en feil der appen ville krasje i noen tilfeller når det mørke temaet ble brukt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>Nyt noen store nye funksjoner i denne utgivelsen! Mest bemerkelsesverdig inkluderer denne appen nå historiske priser. Sjekk ut diagrammet for det siste året, for å se hvordan valutaene har utviklet seg.</item>
+        <item>Det er også en ekstra valutakursleverandør: Du kan nå velge fer.ee i innstillingene. En relativt ny tjeneste, som i utgangspunktet oppfører seg som frankfurter.app og er bare ett valg til for deg.</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>Takket være støtten fra fantastiske fellesskapsmedlemmer, er denne appen nå ikke bare lokalisert på engelsk og tysk, men også spansk 🇪🇸, fransk 🇫🇷, italiensk 🇮🇹 og norsk (bokmål) 🇳🇴. Tusen takk for hjelpen! 🙏🙏🙏</item>
+        <item>Små oppdateringer under panseret for å gjøre appen enda mer pålitelig.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>Retter en feil der prisene ikke ville oppdateres når exchangerate.host brukes.</item>
+        <item>Bibliotekoppdateringer for å forbedre stabilitet og ytelse.</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>Velg mellom to API-leverandører: exchangerate.host og frankfurter.app</item>
+        <item>Du kan nå støtte utvikleren ved å donere med PayPal. Finn lenken i innstillingene.</item>
+        <item>Flere UI-forbedringer</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>Forbedringer av brukergrensesnittet</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>Det er nå mulig å oppdatere satsene manuelt. Sjekk det ut i overløpsmenyen.</item>
+        <item>Ytelsesforbedringer</item>
+    </string-array>
+
     <string-array name="changelog_1.3.0">
         <item>Så mange flere valutaer! Over 160 totalt, nå!! Det er fordi valutaer byttet til et annet API. Den gamle (exchangeratesapi.io) endret til en abonnementsmodell uten noen forvarsel. IKKE BRA! Vår nye leverandør blir exchangerate.host.</item>
         <item>Det betyr også at de siste par dagene ikke kunne oppdateres valutakursene. Det er løst nå, selvfølgelig.</item>
         <item>Også selve oppdateringsprosessen ble forbedret, så neste gang noe sånt skjer, får du i det minste et varsel.</item>
         <item>Små UI-forbedringer</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>17 nye valutaer! Det er nå 50 totalt. 🥳 For mange til å nevne dem alle. Imidlertid er mange populære feriedestinasjoner i Midtøsten og Karibia nå inkludert: UAE, Qatar, Barbados, Bahamas, Cuba, …</item>
+        <item>For å holde deg oppdatert på alle de nye valgene, er et søk tilgjengelig i valutavelgeren.</item>
+        <item>– Velgeren viser nå også en valutas fulle navn, ikke bare dens kode. Et fantastisk tillegg, i kombinasjon med søket. Prøv det!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>Mindre forbedringer (skrivefeil)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Avhengig av kredittkortavtalen din, kan banken din kreve et gebyr på alle valutatransaksjoner. Du kan nå inkludere den avgiften i beregningene, slik at du vet hvor mye du egentlig betaler. 🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Rett opp mulig krasj på Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Lagt til tysk oversettelse 🇩🇪</item>
+        <item>Mindre forbedring: Appstørrelsen ble redusert med 50 %!</item>
+        <item>Appen virker ganske stabil: Public 1.0-utgivelse! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Mindre forbedringer</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Bedre feilhåndtering</item>
+        <item>Mindre forbedringer</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Lagt til en kopifunksjon: Langt klikk på verdien du vil kopiere</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Mer feilsikker oppdatering av valutakursene</item>
+        <item>Lagt til en ansvarsfraskrivelse</item>
+        <item>Lagt til denne endringsloggen</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Første forhåndsutgivelse</item>
     </string-array>
 </resources>

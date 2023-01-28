@@ -1,4 +1,4 @@
 - Javítottunk az árfolyamkorszak megjelenítésén.
 - Hozzáadtunk egy preferencia bejegyzést az alkalmazás értékeléséhez a Google Play-en (természetesen nem az F-Droid verzióban).
-- Még egy lokalizáció: az alkalmazás mostantól vietnámi nyelvre is le van fordítva.
+- Még egy lokalizáció: az alkalmazás mostantól vietnámi nyelvre is le van fordítva. 🇻🇳
 - Apróbb kis javítások.

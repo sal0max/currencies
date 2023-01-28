@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="changelog_1.17.6">
-        <item>Nouvelles traductions ! Islandais par nazrin 🇮🇸, portugais (Brésil) par Cavernosa 🇧🇷 et Suédois par Samuel 🇸🇪. Génial!</item>
+        <item>Nouvelles traductions ! Islandais par nazrin 🇮🇸, portugais (Brésil) par Cavernosa 🇧🇷 et Suédois par Samuel 🇸🇪. Génial !</item>
     </string-array>
 
     <string-array name="changelog_1.17.5">
@@ -12,7 +12,7 @@
 
     <string-array name="changelog_1.17.4">
         <item>Amélioration de l’interface (Material 3).</item>
-        <item>Nouvelle langue: Tchèque. Merci, Fjuro! 🇨🇿</item>
+        <item>Nouvelle langue : Tchèque. Merci, Fjuro ! 🇨🇿</item>
     </string-array>
 
     <string-array name="changelog_1.17.3">
@@ -168,7 +168,7 @@
     </string-array>
 
     <string-array name="changelog_1.1.0">
-        <item>En fonction de votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les opérations de change. Vous pouvez désormais inclure ces frais dans les calculs, afin de savoir combien vous payez réellement.</item>
+        <item>En fonction de votre contrat de carte de crédit, votre banque peut facturer des frais sur toutes les opérations de change. Vous pouvez désormais inclure ces frais dans les calculs, afin de savoir combien vous payez réellement. 🙂</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">

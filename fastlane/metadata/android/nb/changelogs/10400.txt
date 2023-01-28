@@ -1,0 +1,2 @@
+- Det er nå mulig å oppdatere satsene manuelt. Sjekk det ut i overløpsmenyen.
+- Ytelsesforbedringer

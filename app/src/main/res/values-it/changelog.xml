@@ -19,7 +19,7 @@
     </string-array>
 
     <string-array name="changelog_1.10.3">
-        <item>Miglioramenti minori</item>
+        <item>Miglioramenti minori.</item>
     </string-array>
 
     <string-array name="changelog_1.10.2">
@@ -27,9 +27,9 @@
     </string-array>
 
     <string-array name="changelog_1.10.1">
-        <item>Risolto un errore su Android 8.0</item>
-        <item>Traduzioni aggiornate</item>
-        <item>Piccoli miglioramenti dell\'interfaccia utente</item>
+        <item>Risolto un errore su Android 8.0.</item>
+        <item>Traduzioni aggiornate.</item>
+        <item>Piccoli miglioramenti dell\'interfaccia utente.</item>
     </string-array>
 
     <string-array name="changelog_1.10.0">
@@ -49,7 +49,7 @@
     <string-array name="changelog_1.8.0">
         <item>Migliorata la visualizzazione dell\'età del tasso di cambio.</item>
         <item>Aggiunta una voce di preferenza per valutare l\'app su Google Play (non nella versione F-Droid, ovviamente).</item>
-        <item>Ancora una localizzazione: l\'app è ora tradotta in vietnamita.</item>
+        <item>Ancora una localizzazione: l\'app è ora tradotta in vietnamita. 🇻🇳</item>
         <item>Piccoli miglioramenti minori.</item>
     </string-array>
 
@@ -60,7 +60,7 @@
     </string-array>
 
     <string-array name="changelog_1.6.0">
-        <item>Grazie al supporto dei fantastici membri della comunità, questa app è ora localizzata non solo in inglese e tedesco, ma anche in spagnolo, francese, italiano e norvegese (Bokmål). Grazie mille per il vostro aiuto! 🙏🙏🙏</item>
+        <item>Grazie al supporto dei fantastici membri della comunità, questa app è ora localizzata non solo in inglese e tedesco, ma anche in spagnolo 🇪🇸, francese 🇫🇷, italiano 🇮🇹 e norvegese (Bokmål) 🇳🇴. Grazie mille per il vostro aiuto! 🙏🙏🙏</item>
         <item>Piccoli aggiornamenti sotto il cofano per rendere l\'app ancora più affidabile.</item>
     </string-array>
 
@@ -102,7 +102,7 @@
     </string-array>
 
     <string-array name="changelog_1.1.0">
-        <item>A seconda del contratto della tua carta di credito, la tua banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Ora puoi includere questa tassa nei calcoli, così sai quanto paghi realmente.</item>
+        <item>A seconda del contratto della tua carta di credito, la tua banca potrebbe addebitare una commissione su tutte le transazioni in valuta estera. Ora puoi includere questa tassa nei calcoli, così sai quanto paghi realmente. 🙂</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">

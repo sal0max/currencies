@@ -9,7 +9,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Frissített fordítások</item>
+        <item>Frissített fordítások.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">
@@ -56,7 +56,7 @@
     </string-array>
 
     <string-array name="changelog_1.10.3">
-        <item>Kisebb fejlesztések</item>
+        <item>Kisebb fejlesztések.</item>
     </string-array>
 
     <string-array name="changelog_1.10.2">
@@ -64,9 +64,9 @@
     </string-array>
 
     <string-array name="changelog_1.10.1">
-        <item>Összeomlás javítása Android 8.0 alatt</item>
-        <item>Frissített fordítások</item>
-        <item>Kisebb UI javítások</item>
+        <item>Összeomlás javítása Android 8.0 alatt.</item>
+        <item>Frissített fordítások.</item>
+        <item>Kisebb UI javítások.</item>
     </string-array>
 
     <string-array name="changelog_1.10.0">
@@ -86,7 +86,7 @@
     <string-array name="changelog_1.8.0">
         <item>Javítottunk az árfolyamkorszak megjelenítésén.</item>
         <item>Hozzáadtunk egy preferencia bejegyzést az alkalmazás értékeléséhez a Google Play-en (természetesen nem az F-Droid verzióban).</item>
-        <item>Még egy lokalizáció: az alkalmazás mostantól vietnámi nyelvre is le van fordítva.</item>
+        <item>Még egy lokalizáció: az alkalmazás mostantól vietnámi nyelvre is le van fordítva. 🇻🇳</item>
         <item>Apróbb kis javítások.</item>
     </string-array>
 
@@ -97,7 +97,7 @@
     </string-array>
 
     <string-array name="changelog_1.6.0">
-        <item>A nagyszerű közösségi tagok támogatásának köszönhetően ez az alkalmazás már nemcsak angol és német, hanem spanyol, francia, olasz és norvég (Bokmål) nyelven is elérhető. Nagyon köszönjük a segítséget! 🙏🙏🙏</item>
+        <item>A nagyszerű közösségi tagok támogatásának köszönhetően ez az alkalmazás már nemcsak angol és német, hanem spanyol 🇪🇸, francia 🇫🇷, olasz 🇮🇹 és norvég (Bokmål) 🇳🇴 nyelven is elérhető. Nagyon köszönjük a segítséget! 🙏🙏🙏</item>
         <item>Kisebb motorháztető alatti frissítések, hogy az alkalmazás még megbízhatóbb legyen.</item>
     </string-array>
 
@@ -139,7 +139,7 @@
     </string-array>
 
     <string-array name="changelog_1.1.0">
-        <item>Hitelkártya-szerződésétől függően bankod díjat számíthat fel minden devizatranzakció után. Ezt a díjat most már beleszámíthatod a számításokba, így tudod, hogy valójában mennyit fizetsz.</item>
+        <item>Hitelkártya-szerződésétől függően bankod díjat számíthat fel minden devizatranzakció után. Ezt a díjat most már beleszámíthatod a számításokba, így tudod, hogy valójában mennyit fizetsz. 🙂</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">

@@ -34,7 +34,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Bijgewerkte vertalingen</item>
+        <item>Bijgewerkte vertalingen.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">
@@ -81,7 +81,7 @@
     </string-array>
 
     <string-array name="changelog_1.10.3">
-        <item>Kleine verbeteringen</item>
+        <item>Kleine verbeteringen.</item>
     </string-array>
 
     <string-array name="changelog_1.10.2">
@@ -89,9 +89,9 @@
     </string-array>
 
     <string-array name="changelog_1.10.1">
-        <item>Crash opgelost op Android 8.0</item>
-        <item>Bijgewerkte vertalingen</item>
-        <item>Kleine UI verbeteringen</item>
+        <item>Crash opgelost op Android 8.0.</item>
+        <item>Bijgewerkte vertalingen.</item>
+        <item>Kleine UI verbeteringen.</item>
     </string-array>
 
     <string-array name="changelog_1.10.0">
@@ -111,7 +111,7 @@
     <string-array name="changelog_1.8.0">
         <item>Verbeterde weergave van de wisselkoersleeftijd.</item>
         <item>Een voorkeursitem toegevoegd om de app op Google Play te beoordelen (uiteraard niet in de F-Droid-versie).</item>
-        <item>Nog een andere lokalisatie: de app is nu vertaald naar het Vietnamees.</item>
+        <item>Nog een andere lokalisatie: de app is nu vertaald naar het Vietnamees. 🇻🇳</item>
         <item>Kleine verbeteringen.</item>
     </string-array>
 
@@ -122,7 +122,7 @@
     </string-array>
 
     <string-array name="changelog_1.6.0">
-        <item>Dankzij de steun van geweldige communityleden is deze app nu niet alleen gelokaliseerd in het Engels en Duits, maar ook in het Spaans, Frans, Italiaans en Noors (Bokmål). Hartelijk bedankt voor uw hulp! 🙏🙏🙏</item>
+        <item>Dankzij de steun van geweldige communityleden is deze app nu niet alleen gelokaliseerd in het Engels en Duits, maar ook in het Spaans 🇪🇸, Frans 🇫🇷, Italiaans 🇮🇹 en Noors (Bokmål) 🇳🇴. Hartelijk bedankt voor uw hulp! 🙏🙏🙏</item>
         <item>Kleine updates onder de motorkap om de app nog betrouwbaarder te maken.</item>
     </string-array>
 
@@ -164,7 +164,7 @@
     </string-array>
 
     <string-array name="changelog_1.1.0">
-        <item>Afhankelijk van uw creditcardovereenkomst kan uw bank kosten in rekening brengen voor alle valutatransacties. U kunt die vergoeding nu meenemen in de berekeningen, zodat u weet hoeveel u werkelijk betaalt.</item>
+        <item>Afhankelijk van uw creditcardovereenkomst kan uw bank kosten in rekening brengen voor alle valutatransacties. U kunt die vergoeding nu meenemen in de berekeningen, zodat u weet hoeveel u werkelijk betaalt. 🙂</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">
