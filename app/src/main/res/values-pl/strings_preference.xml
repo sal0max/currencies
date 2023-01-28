@@ -16,7 +16,32 @@
     <string name="theme_option_dark">Ciemny</string>
 
     <string name="pure_black_enabled_summary">Użyj samej czerni w ciemnym motywie</string>
+    <!-- languages -->
     <string name="language_title">Język aplikacji</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- api -->
     <string name="category_api">Kursy walut</string>
 

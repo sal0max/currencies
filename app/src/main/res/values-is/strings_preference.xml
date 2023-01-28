@@ -40,6 +40,7 @@
     <string name="language_pt_BR">Brasílísk Portúgalska</string>
     <string name="language_sv">Sænska</string>
     <string name="language_tr">Tyrkneska</string>
+    <string name="language_uk">Úkraínska</string>
     <string name="language_vi">Víetnamska</string>
     <!-- api -->
     <string name="category_api">Gengi</string>
@@ -60,4 +61,6 @@
     <string name="donate_summary">Framlag í gegnum PayPal</string>
     <string name="rate_title">Meta forritið</string>
     <string name="rate_summary">Það má hjálpa öðrum að finna forritið. Smelltu hingað til að gefa forritinu einkunn á Google Play.</string>
+
+    <string name="title_changelog">Breytingarskrá</string>
 </resources>
