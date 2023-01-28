@@ -1,2 +1,2 @@
-- A nagyszerű közösségi tagok támogatásának köszönhetően ez az alkalmazás már nemcsak angol és német, hanem spanyol, francia, olasz és norvég (Bokmål) nyelven is elérhető. Nagyon köszönjük a segítséget! 🙏🙏🙏
+- A nagyszerű közösségi tagok támogatásának köszönhetően ez az alkalmazás már nemcsak angol és német, hanem spanyol 🇪🇸, francia 🇫🇷, olasz 🇮🇹 és norvég (Bokmål) 🇳🇴 nyelven is elérhető. Nagyon köszönjük a segítséget! 🙏🙏🙏
 - Kisebb motorháztető alatti frissítések, hogy az alkalmazás még megbízhatóbb legyen.
