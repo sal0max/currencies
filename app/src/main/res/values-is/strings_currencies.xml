@@ -52,7 +52,6 @@
     <string name="name_fok">Færeysk króna</string>
     <string name="name_gbp">Sterlingspund</string>
     <string name="name_gel">Georgískur lari</string>
-
     <string name="name_ghs">Ganverskur sedi</string>
     <string name="name_gip">Gíbraltarspund</string>
     <string name="name_gmd">Gambískur dalasi</string>
@@ -65,13 +64,11 @@
     <string name="name_htg">Haítískur gúrdi</string>
     <string name="name_huf">Ungversk fórinta</string>
     <string name="name_idr">Indónesísk rúpía</string>
-
     <string name="name_imp">Manx pund</string>
     <string name="name_inr">Indversk rúpía</string>
     <string name="name_iqd">Írakskur denari</string>
     <string name="name_irr">Íranskt ríal</string>
     <string name="name_isk">Íslensk króna</string>
-
     <string name="name_jmd">Jamaískur dalur</string>
     <string name="name_jod">Jórdanskur denari</string>
     <string name="name_jpy">Japanskt jen</string>
@@ -88,7 +85,6 @@
     <string name="name_lbp">Líbanskt pund</string>
     <string name="name_lkr">Srílönsk rúpía</string>
     <string name="name_lrd">Líberískur dalur</string>
-
     <string name="name_lyd">Líbískur denari</string>
     <string name="name_mad">Marokkóskt dírham</string>
     <string name="name_mdl">Moldavískt lei</string>
@@ -131,14 +127,11 @@
     <string name="name_sek">Sænsk króna</string>
     <string name="name_sgd">Singapúrskur dalur</string>
     <string name="name_shp">Helenskt pund</string>
-
-
     <string name="name_sos">Sómalískur skildingur</string>
     <string name="name_srd">Súrínamdalur</string>
     <string name="name_ssp">Suðursúdanskt pund</string>
     <string name="name_std">Saó Tóme og Prinsípe-dóbra (fyrir 2018)</string>
     <string name="name_stn">Saó Tóme og Prinsípe-dóbra</string>
-
     <string name="name_syp">Sýrlenskt pund</string>
     <string name="name_szl">Svasílenskur lílangeni</string>
     <string name="name_thb">Taílenskt bat</string>
@@ -155,22 +148,27 @@
     <string name="name_usd">Bandaríkjadalur</string>
     <string name="name_uyu">Úrúgvæskur pesi</string>
     <string name="name_uzs">Úsbekskt súm</string>
-
     <string name="name_ves">Venesúelskur bólívari</string>
     <string name="name_vnd">Víetnamskt dong</string>
     <string name="name_vuv">Vanúatúskt vatú</string>
     <string name="name_wst">Samóatala</string>
     <string name="name_xaf">Miðafrískur franki</string>
-
     <string name="name_xau">Gull únsa</string>
     <string name="name_xcd">Austurkarabískur dalur</string>
-
     <string name="name_xof">Vesturafrískur franki</string>
-
     <string name="name_xpf">Pólinesískur franki</string>
-
     <string name="name_yer">Jemenskt ríal</string>
     <string name="name_zar">Suðurafrískt rand</string>
     <string name="name_zmw">Sambísk kvaka</string>
-
+    <string name="name_ils">Ísraelskur Nýsjekell</string>
+    <string name="name_lsl">Lesótó loti</string>
+    <string name="name_xpd">Palladín</string>
+    <string name="name_xpt">Platína</string>
+    <string name="name_zwl">Simbabveskur dalur</string>
+    <string name="name_ggp">Guernseyjarpund</string>
+    <string name="name_jep">Jerseyjarpund</string>
+    <string name="name_sle">Síerra Leónska leóne</string>
+    <string name="name_sll">Síerra Leónska leóna (fyrir 07/2022)</string>
+    <string name="name_xag">Silfur</string>
+    <string name="name_xdr">Sérstök dráttarréttindi</string>
 </resources>
