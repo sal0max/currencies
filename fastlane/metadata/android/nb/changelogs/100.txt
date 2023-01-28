@@ -1,0 +1,3 @@
+- Mer feilsikker oppdatering av valutakursene
+- Lagt til en ansvarsfraskrivelse
+- Lagt til denne endringsloggen

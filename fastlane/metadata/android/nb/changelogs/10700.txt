@@ -1,0 +1,2 @@
+- Nyt noen store nye funksjoner i denne utgivelsen! Mest bemerkelsesverdig inkluderer denne appen nå historiske priser. Sjekk ut diagrammet for det siste året, for å se hvordan valutaene har utviklet seg.
+- Det er også en ekstra valutakursleverandør: Du kan nå velge fer.ee i innstillingene. En relativt ny tjeneste, som i utgangspunktet oppfører seg som frankfurter.app og er bare ett valg til for deg.

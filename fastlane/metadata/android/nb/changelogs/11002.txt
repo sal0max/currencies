@@ -1,0 +1,1 @@
+- Rettet et krasj når du åpnet preferansene.

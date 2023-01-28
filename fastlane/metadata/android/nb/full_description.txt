@@ -1,0 +1,13 @@
+Valuta er en enkel og grei valutaomregner. Den er ikke ment å brukes til finansiell virksomhet i sanntid, snarere å være en praktisk følgesvenn, f.eks. på ferier.
+
+- Appen støtter alle relevante valutaer. Du kan velge mellom flere valutakursleverandører:
+   - exchangerate.host med over 160 valutaer
+   - frankfurter.app med over 30 valutaer, levert av den europeiske sentralbanken
+   - fer.ee som et alternativ til frankfurter.app med samme valutaer
+- Brukergrensesnittet er enkelt og rent materialdesign.
+- Valutakurshistorikk: Sjekk ut diagrammet for det siste året for å se hvordan valutaene har utviklet seg.
+- Historiske priser: Du kan bruke priser fra tidligere datoer.
+- En viktig funksjon er den medfølgende kalkulatoren. Nyttig f.eks. hvis du vil dele opp en restaurantregning.
+- Gebyrkalkulator: legg eventuelt til et tilpassbart valutagebyr i alle beregninger.
+- Valutaer er skrevet for Android i Kotlin, rettet mot Android 12 og støtter lyse og mørke temaer.
+- Appen er annonsefri og spionerer ikke på brukeren.

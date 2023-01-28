@@ -1,0 +1,1 @@
+- Rettet en feil der appen ville krasje i noen tilfeller når det mørke temaet ble brukt.

@@ -1,0 +1,1 @@
+- Rett opp mulig krasj på Android 11
