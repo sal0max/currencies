@@ -28,7 +28,7 @@ enum class Language(
     SV("sv", "Svenska", R.string.language_sv),
     VI("vi", "Tiếng Việt", R.string.language_vi),
     TR("tr", "Türkçe", R.string.language_tr),
-    UK("uk", "українська мова", R.string.language_uk),
+    UK("uk", "Українська", R.string.language_uk),
     BG("bg", "Български", R.string.language_bg),
     BN("bn", "বাংলা", R.string.language_bn),
     AR("ar", "اَلْعَرَبِيَّة", R.string.language_ar),
