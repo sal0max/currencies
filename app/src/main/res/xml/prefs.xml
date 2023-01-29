@@ -7,17 +7,20 @@
         <de.salomax.currencies.widget.EditTextSwitchPreference
             android:dialogLayout="@layout/preference_dialog_fee"
             android:dialogMessage="@string/fee_summary"
+            android:icon="@drawable/ic_fee"
             android:key="@string/fee_key"
             android:title="@string/fee_title"
             tools:summary="2.0 %" />
 
         <SwitchPreferenceCompat
+            android:icon="@drawable/ic_conversion_preview"
             android:key="@string/previewConversion_key"
             android:summary="@string/previewConversion_summary"
             android:title="@string/previewConversion_title"
             app:defaultValue="false" />
 
         <SwitchPreferenceCompat
+            android:icon="@drawable/ic_keyboard_extended"
             android:key="@string/extendedKeypad_key"
             android:summary="@string/extendedKeypad_summary"
             android:title="@string/extendedKeypad_title"
@@ -31,15 +34,18 @@
             android:defaultValue="2"
             android:entries="@array/theme_names"
             android:entryValues="@array/theme_values"
+            android:icon="@drawable/ic_theme"
             android:key="@string/theme_key"
             android:summary="%s"
             android:title="@string/theme_title" />
         <SwitchPreferenceCompat
             android:defaultValue="false"
+            android:icon="@drawable/ic_black"
             android:key="@string/pure_black_key"
             android:summary="@string/pure_black_enabled_summary"
             android:title="@string/pure_black_enabled_title" />
         <de.salomax.currencies.view.preference.LanguagePickerPreference
+            android:icon="@drawable/ic_language"
             android:key="@string/language_key"
             android:title="@string/language_title" />
     </PreferenceCategory>
@@ -49,6 +55,7 @@
             android:defaultValue="0"
             android:entries="@array/api_names"
             android:entryValues="@array/api_values"
+            android:icon="@drawable/ic_data_provider"
             android:key="@string/api_key"
             android:summary="%s"
             android:title="@string/api_title" />
@@ -68,10 +75,12 @@
             android:summary="@string/disclaimer_summary"
             android:title="@string/disclaimer_title" />
         <Preference
+            android:icon="@drawable/ic_donate"
             android:key="@string/donate_key"
             android:summary="@string/donate_summary"
             android:title="@string/donate_title" />
         <Preference
+            android:icon="@drawable/ic_rate"
             android:key="@string/rate_key"
             android:summary="@string/rate_summary"
             android:title="@string/rate_title" />
@@ -81,6 +90,7 @@
         android:title="@string/category_versioninfo"
         app:allowDividerAbove="false">
         <Preference
+            android:icon="@drawable/ic_changelog"
             android:key="@string/changelog_key"
             android:title="@string/title_changelog" />
         <Preference
