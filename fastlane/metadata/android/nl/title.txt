@@ -1,1 +1,1 @@
-Valuta: Wisselkoersen Rekenmachine
+Currencies: Koersenrekenmachine

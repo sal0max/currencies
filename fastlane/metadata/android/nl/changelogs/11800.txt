@@ -1,0 +1,3 @@
+- Ondersteuning toegevoegd voor taalvoorkeuren per app (nieuwe functie in Android 13).
+- Bovendien is er nu voor ALLE toestellen (ook < Android 13) een optie om de app-taal te wijzigen in de app-instellingen.
+- Nieuwe taal: Catalaans 🇪🇸🇦🇩
