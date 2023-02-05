@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.2">
+        <item>Neue Sprache: Ukrainisch 🇺🇦! Vielen Dank an Bogdan!</item>
+        <item>Kuba: Zeige den Kubanischen Peso (CUP) statt den ausgelaufenen Kubanischen Convertible Peso (CUC)</item>
+        <item>Viele verbesserte Übersetzungen. Ein großes Dankeschön an alle Freiwilligen!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.1">
         <item>Neue Sprache: Kroatisch 🇭🇷🇧🇦. Überragende Arbeit, Ivan!</item>
     </string-array>

@@ -1,0 +1,3 @@
+- New language: Ukrainian 🇺🇦! Many thanks to Bogdan!
+- Cuba: Provide Cuban peso (CUP) instead of the obsolete Cuban convertible peso (CUC)
+- A lot of improved translations. Thanks so much to all the volunteers!
