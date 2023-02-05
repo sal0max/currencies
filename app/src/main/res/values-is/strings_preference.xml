@@ -61,6 +61,6 @@
     <string name="donate_summary">Framlag í gegnum PayPal</string>
     <string name="rate_title">Meta forritið</string>
     <string name="rate_summary">Það má hjálpa öðrum að finna forritið. Smelltu hingað til að gefa forritinu einkunn á Google Play.</string>
-
+    <string name="category_versioninfo">Útgáfuupplýsingar</string>
     <string name="title_changelog">Breytingarskrá</string>
 </resources>

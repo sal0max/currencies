@@ -55,10 +55,12 @@
     <string name="api_refreshPeriod_ferEe">De tarieven worden elke werkdag bijgewerkt.</string>
     <!-- about -->
     <string name="category_about">Over deze app</string>
-    <string name="disclaimer_title">Disclaimer</string>
+    <string name="disclaimer_title">Ontkenning</string>
     <string name="disclaimer_summary">Hoewel de app zeer grondig is geschreven en getest, <b>is er geen garantie dat de getoonde gegevens correct zijn</b>. De wisselkoersen worden geleverd door een derde partij en deze app kan geen enkele belofte doen dat de gegevens waar en up-to-date zijn.\nBovendien kunnen de verstrekte tarieven - nog steeds indien correct - afwijken van de tarieven die door uw bank worden gebruikt.\nTot slot: Fouten gebeuren. Vertrouw nooit iemand blindelings! Dat gezegd hebbende, wees gerust, ik zou deze app niet hebben uitgebracht als ik enige twijfel had of deze werkt zoals bedoeld.</string>
     <string name="donate_title">Steun de ontwikkelaar</string>
     <string name="donate_summary">Doneer via PayPal</string>
     <string name="rate_title">Beoordeel deze app</string>
     <string name="rate_summary">Als je wilt, kun je anderen helpen valuta\'s te ontdekken. Klik hier om de app te beoordelen op Google Play.</string>
+    <string name="category_versioninfo">Versie-informatie</string>
+    <string name="title_changelog">Wijzigingsoverzicht</string>
 </resources>

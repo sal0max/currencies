@@ -1,5 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.1">
+        <item>Nieuwe taal: Kroatisch 🇭🇷🇧🇦. Uitzonderlijk werk, Ivan!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>Ondersteuning toegevoegd voor taalvoorkeuren per app (nieuwe functie in Android 13).</item>
+        <item>Bovendien is er nu voor ALLE toestellen (ook &lt; Android 13) een optie om de app-taal te wijzigen in de app-instellingen.</item>
+        <item>Nieuwe taal: Catalaans 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Vast: lege changelog</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>Nieuwe vertalingen! IJslands door nazrin 🇮🇸, Portugees (Brazilië) door Cavernosa 🇧🇷 en Zweeds door Samuel 🇸🇪. Geweldig!</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>Verbeterde nauwkeurigheid van wisselkoersen in tijdlijn weergave.</item>
         <item>Nieuwe taal: Pools. Bedankt, ewm! 🇵🇱</item>
@@ -133,7 +151,7 @@
 
     <string-array name="changelog_1.5.0">
         <item>Kies tussen twee API-providers: exchangerate.host en frankfurter.app</item>
-        <item>Je kunt de ontwikkelaar nu steunen door te doneren met PayPal. Zoek de link in de instellingen.</item>
+        <item>Je kunt de ontwikkelaar nu steunen door te doneren met PayPal. Zoek de link in de instellingen (alleen voor de F-Droid versie).</item>
         <item>Meer UI verbeteringen</item>
     </string-array>
 

@@ -16,7 +16,32 @@
     <string name="theme_option_dark">Escuro</string>
     <string name="pure_black_enabled_title">escuro OLED</string>
     <string name="pure_black_enabled_summary">Usar modo escuro puro no modo escuro</string>
+    <!-- languages -->
     <string name="language_title">Idioma do app</string>
+
+
+
+
+
+    <string name="language_de">Alemão</string>
+    <string name="language_el">Grego</string>
+    <string name="language_en">Inglês</string>
+    <string name="language_es">Espanhol</string>
+    <string name="language_fr">Francês</string>
+
+
+
+
+    <string name="language_it">Italiano</string>
+
+
+
+
+
+
+
+
+
     <!-- api -->
     <string name="category_api">Taxas de câmbio</string>
     <string name="api_title">Fornecedor de serviço</string>
