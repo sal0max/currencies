@@ -1,2 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="fee_title">兑换手续费</string>
+    <string name="previewConversion_title">预览</string>
+    <string name="previewConversion_summary">在选择货币页面显示当前汇率。</string>
+    <string name="extendedKeypad_title">额外输入键</string>
+    <string name="extendedKeypad_summary">增加两个大额按键 <b>00</b>&nbsp;和&nbsp;<b>000</b>。</string>
+    <string name="category_appearance">显示</string>
+    <string name="system_default">系统默认</string>
+    <string name="theme_title">主题</string>
+    <string name="theme_option_light">亮色</string>
+    <string name="theme_option_dark">暗色</string>
+    <string name="language_title">所有支持的语言</string>
+    <string name="language_ar">阿拉伯文</string>
+    <string name="language_bg">保加利亚文</string>
+    <string name="language_bn">孟加拉文</string>
+    <string name="language_ca">加泰隆文</string>
+    <string name="language_cs">捷克文</string>
+    <string name="language_de">德文</string>
+    <string name="language_el">希腊文</string>
+    <string name="language_en">英文</string>
+    <string name="language_es">西班牙文</string>
+    <string name="language_hr">克罗地亚文</string>
+    <string name="language_hu">匈牙利文</string>
+    <string name="language_in">印尼文</string>
+    <string name="language_is">冰岛文</string>
+    <string name="language_it">意大利文</string>
+    <string name="language_iw">希伯来文</string>
+    <string name="language_nb">挪威文</string>
+    <string name="language_nl">荷兰文</string>
+    <string name="language_pl">波兰文</string>
+    <string name="language_pt_BR">葡萄牙文（巴西）</string>
+    <string name="language_sv">瑞典文</string>
+    <string name="language_tr">土耳其文</string>
+    <string name="language_uk">乌克兰文</string>
+    <string name="language_vi">越南文</string>
+    <string name="category_api">汇率</string>
+    <string name="api_title">汇率源</string>
+    <string name="api_about_title">关于 %s</string>
+    <string name="api_refreshPeriod_title">更新周期</string>
+    <string name="api_refreshPeriod_exchangerateHost">汇率在每个工作日的UTC 0点更新。</string>
+    <string name="api_refreshPeriod_frankfurterApp">数据会在每个工作日的16:00 （UTC+1）更新。</string>
+    <string name="api_refreshPeriod_ferEe">数据会在工作日更新。</string>
+    <string name="category_about">关于这个应用</string>
+    <string name="disclaimer_title">免责声明</string>
+    <string name="donate_title">支持开发者</string>
+    <string name="donate_summary">通过PayPal捐赠</string>
+    <string name="rate_title">评价这个应用</string>
+    <string name="rate_summary">如果你喜欢这个应用，并希望其他人能找到它。点击这里在Google Play留下评价。</string>
+    <string name="category_versioninfo">版本信息</string>
+    <string name="title_changelog">更新记录</string>
+    <string name="category_settings">常规设置</string>
+    <string name="fee_summary">根据您的信用卡协议，您的银行可能对所有外汇交易收取费用。这个比例会被直接加上，这样能知道<i>最终</i>支付了多少钱。</string>
+    <string name="pure_black_enabled_title">OLED 纯黑模式</string>
+    <string name="pure_black_enabled_summary">在暗色模式中用纯黑背景</string>
+    <string name="language_fr">法文</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> 的货币汇率来自于各种金融数据提供商和银行，包括欧洲中央银行。 所有的汇率数据都是以中点数据的形式交付。中点汇率是通过计算买入和卖出的平均中点汇率确定的。 
+\n<b>包括大约160种货币的数据。</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 跟踪欧洲中央银行公布的参考汇率。
+\n<b>包括大约30种货币。</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> 是新汇率源, 和Frankfurter.app一样追踪来自欧洲中央银行的数据。
+\n<b>包括大约30种货币。</b></string>
+    <string name="disclaimer_summary">虽然该应用程序的编写和测试非常彻底，但<b>不保证其显示的数据是正确的</b>。汇率是由第三方提供的，这个应用程序不能保证数据是真实和最新的。
+\n此外，所提供的汇率--即使正确--也可能与你的银行所使用的汇率不同。
+\n最后：错误时有发生。永远不要盲目地相信任何人! 既然如此，请放心，如果我对这个应用程序有任何不放心，我就不会发布它。</string>
+</resources>
