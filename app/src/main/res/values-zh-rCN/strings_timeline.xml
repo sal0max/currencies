@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> 兑 &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">日期 &lt;b>%s&lt;/b></string>
+    <string name="rate_average">均价</string>
+    <string name="rate_min">最低</string>
+    <string name="rate_max">最高</string>
+    <string name="year">年线</string>
+    <string name="month">月线</string>
+    <string name="week">周线</string>
+</resources>

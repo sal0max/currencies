@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.18.2">
+        <item>新语言：乌克兰人!🇺🇦!非常感谢Bogdan！</item>
+        <item>古巴：提供古巴比索（CUP），而不是过时的古巴可兑换比索（CUC）</item>
+        <item>很多改进的翻译。非常感谢所有的志愿者！</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>新语言：克罗地亚文。🇭🇷🇧🇦.干得漂亮，Ivan！</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>添加了分别为每应用设定语言的支持（Android 13中的新功能）。</item>
+        <item>此外，对于所有设备（包含低于Android 13），现在有一个选项可以在应用设置中切换应用语言。</item>
+        <item>新语言：加泰罗尼亚🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>修复：更改日志为空</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>新翻译!冰岛文由nazrin🇮🇸, 葡萄牙文 (巴西) 由Cavernosa 🇧🇷和瑞典文由Samuel 🇸🇪。赞！</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.5">
+        <item>改进了图表视图中汇率的精确度。</item>
+        <item>新语言：波兰文。非常感谢，ewm！🇵🇱</item>
+        <item>许多更新的翻译。感谢所有的贡献者!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>改进设计（Material 3）。</item>
+        <item>新语言：捷克文。谢谢你，Fjuro!🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>新语言：希伯来文。谢谢你，Yaron！🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>新增：现在可以从剪贴板粘贴数字。</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>新语言#1：保加利亚文。非常感谢你，Mihail！🇧🇬</item>
+        <item>新语言#2：孟加拉文。干杯，Pratyay！🇧🇩🇮🇳</item>
+        <item>还更新了其余的翻译。</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>新功能：在设置中启用扩展键盘模式，以解锁00和000按钮。对那些货币数值很大的货币很有帮助，如印尼卢比，智利比索，越南盾或韩元。</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>新语言：匈牙利文。非常感谢 József！🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>更新了新的翻译。</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>新功能：现在可以选择历史汇率用于计算。</item>
+        <item>新语言：印尼文。非常感谢@limee！🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>新语言：荷兰文。非常感谢志愿者！🇳🇱🌷</item>
+        <item>新功能：现在，您只需单击一下即可在图表视图中切换货币。</item>
+        <item>再次修复了应用程序在某些情况下会崩溃的问题，当使用暗色主题。</item>
+        <item>各种小的UI改进。</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>一些小的改进，以遵循谷歌最新的 Material Design 3的指引。</item>
+        <item>更新翻译。感谢所有帮助我们的人!</item>
+        <item>各种稳定性改进。</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>另一种新语言：现在可以在应用里启用阿拉伯语了。多谢了， Ahmed！🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪 </item>
+        <item>一些更多的由右往左的布局。</item>
+        <item>修正了输入空值作为费用时的崩溃。</item>
+        <item>数据源将显示在图表视图中。</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>修复更新汇率会崩溃。对不起!🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>此版本修复了从右往左语言的几个布局问题。现在，一切看起来应该如预期。</item>
+        <item>新功能：在货币选择器中预览所有汇率。须在设置中启用。</item>
+        <item>有时，汇率刷新后，货币会显示旧的或错误的数据。已经修复。</item>
+        <item>真的有很多代码改进，使这个应用程序更好。</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>您现在可以通过下拉刷新来更新汇率。</item>
+        <item>刷新汇率和出现错误时的反馈大大改善。</item>
+        <item>新语言：一位好心的社区成员提供了土耳其语的翻译。谢谢大家！🇹🇷</item>
+        <item>在某些情况下，时间轴使用了错误的API。已经修复。</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>小改进。</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>修复了打开首选项时的崩溃。</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>修复了在Android 8.0上会崩溃。</item>
+        <item>更新翻译。</item>
+        <item>小的UI改进。</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>您现在可以更快地访问收藏的货币。❤</item>
+        <item>使用暗色模式时添加纯黑主题的选项。</item>
+        <item>更新翻译。非常感谢志愿者们!</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>新本地化：这个应用程序现在也会说希腊语了。🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>修正了一个错误，在某些情况下，当使用黑暗主题时，应用程序会崩溃。</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>改进了汇率年代的显示。</item>
+        <item>添加了一个选项，以在Google Play上评价应用（当然，F-Droid版本中没有）。</item>
+        <item>又一个本地化：现已被翻译成越南文语。🇻🇳</item>
+        <item>其他小小的改进。</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>在这个版本中有一些大的新功能！其中最值得一提的是，现在可以查看历史汇率。能过去一年的图表里货币汇率的走势。</item>
+        <item>增加额外的汇率源：现在您可以在设置中选择fer.ee。这是一个相对较新的服务，其行为基本上类似于frankfurter.app，可以多一个选择。</item>
+        <item>一如既往，这个版本包括更新的库，小的改进和所有的东西，使它更好。</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>受惠与社区成员的帮助，这款应用现在不仅支持显示英文和德文，还本地化为西班牙文🇪🇸、法文 🇫🇷、意大利文 🇮🇹 和挪威文（Bokmål） 🇳🇴。非常感谢你的帮助！🙏🙏🙏</item>
+        <item>深层次的更新，使应用程序更加可靠。</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>修复了当使用exchangerate.host时不会自动更新的错误。</item>
+        <item>更新提高稳定性和性能。</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>可以在两个汇率源API exchangerate.host 和 frankfurter.app之间进行选择。</item>
+        <item>你现在可以通过PayPal捐款来支持开发者。在设置中找到链接。（仅限F-Droid版本。）</item>
+        <item>更多UI的改进</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>UI 改进</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>现在可以手动刷新汇率。呼出菜单中查看。</item>
+        <item>性能改进</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>这么多的货币!总共超过160个，现在!!这是因为货币切换到了不同的API。旧版本（exchangeratesapi.io）在没有任何预先警告的情况下更改为订阅制。不好!我们的新汇率源序将是exchangerate.host。</item>
+        <item>这也意味着，在过去的几天里，汇率无法刷新。当然，现在已经解决了。</item>
+        <item>此外，刷新过程本身也得到了改进，所以至少下次发生类似情况时，您会收到通知。</item>
+        <item>小的UI改进</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>新增17种货币!现在总共有50个。🥳 太多了，无法一一列举。然而，中东和加勒比海地区的许多热门度假目的地现在都包括在内：阿拉伯联合酋长国、卡塔尔、巴巴多斯、巴哈马、古巴......</item>
+        <item>为了掌握所有这些新选择，货币选择器现在提供了搜索功能。</item>
+        <item>选择器现在还显示货币的全名，而不仅仅是它的ISO代码。一个很棒的改进。试试看!</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>微小改进（拼写错误）</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>根据您的信用卡协议，您的银行可能会对所有外汇交易收取费用。你现在可以把这笔费用包括在计算中，这样你就知道你真正支付了多少。🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>修复Android 11上可能的崩溃</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>添加德语翻译 🇩🇪</item>
+        <item>轻微改善：应用程序大小减少了50%</item>
+        <item>应用程序似乎相当稳定：公开版本1.0发布！🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>微小改进</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>更好的错误处理</item>
+        <item>微小改进</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>添加了复制功能：长按复制</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>更可靠的汇率更新</item>
+        <item>添加免责声明</item>
+        <item>已添加此更改日志</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>初始版本预发布</item>
+    </string-array>
+</resources>

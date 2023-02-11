@@ -1,0 +1,3 @@
+- 可以在两个汇率源API exchangerate.host 和 frankfurter.app之间进行选择。
+- 你现在可以通过PayPal捐款来支持开发者。在设置中找到链接。（仅限F-Droid版本。）
+- 更多UI的改进

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.2">
+        <item>Nuevo idioma: ¡Ucraniano 🇺🇦! ¡Muchas gracias a Bogdan!</item>
+        <item>Cuba: Proporcionar peso cubano (CUP) en lugar del obsoleto peso cubano convertible (CUC).</item>
+        <item>Muchas traducciones mejoradas. ¡Muchas gracias a todos los voluntarios!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.1">
         <item>Nuevo idioma: croata 🇭🇷🇧🇦. ¡Excelente trabajo, Iván!</item>
     </string-array>

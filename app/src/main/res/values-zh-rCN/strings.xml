@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="decimal_separator">.</string>
+    <string name="thousands_separator">" "</string>
+    <string name="desc_toggle_currencies">切换货币</string>
+    <string name="rates_date_latest">汇率更新于 &lt;b>%1$s&lt;/b> 汇率源 &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">历史汇率日期 &lt;b>%1$s&lt;/b> 汇率源 &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">复制 &lt;b>%s&lt;/b> 到剪贴板</string>
+    <string name="historical_rates_dialog_title">历史汇率</string>
+    <string name="historical_rates_dialog_toggle">打开就会显示选定特定日期的汇率。关上则永远会显示最新的汇率。</string>
+    <string name="error">错误: %s</string>
+    <string name="error_generic">出现未知问题。</string>
+    <string name="error_http">服务器返回HTTP状态码： %d</string>
+    <string name="error_timeout">服务器未及时响应或无法访问。</string>
+    <string name="error_no_data">无法连接到服务器。</string>
+    <string name="error_api_error">API出错，请稍后重试。</string>
+    <string name="menu_settings">设定</string>
+    <string name="menu_refresh">更新汇率</string>
+    <string name="menu_timeline">查看汇率走势图</string>
+    <string name="tooltip_filter_starred">仅显示收藏的货币。</string>
+</resources>
