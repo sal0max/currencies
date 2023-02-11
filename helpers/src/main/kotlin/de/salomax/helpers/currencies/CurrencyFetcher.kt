@@ -30,32 +30,36 @@ private val ISO_NAMES = listOf(
 fun main() {
     for (isoName in ISO_NAMES) {
         val iso = isoName.lowercase()
-        var hit = false
 
-
-        getLocaleStringFromInvestingCom(TARGET_LANGUAGE, iso)?.let {
-            hit = true
-            println("""<string name="name_$iso">$it</string>""")
-        }
         // bad results; don't use!
-//        getLocaleStringFromExchangeRatesCom(TARGET_LANGUAGE, iso)?.let {
-//            hit = true
-//            println("""<string name="name_$iso">$it</string>""")
-//        }
-        getWiseCom(TARGET_LANGUAGE, iso)?.let {
-            hit = true
-            println("""<string name="name_$iso">$it</string>""")
-        }
-        getCoinmillCom(TARGET_LANGUAGE, iso)?.let {
-            hit = true
-            println("""<string name="name_$iso">$it</string>""")
-        }
-        getMataffNet(TARGET_LANGUAGE, iso)?.let {
-            hit = true
-            println("""<string name="name_$iso">$it</string>""")
-        }
+//        getLocaleStringFromExchangeRatesCom(TARGET_LANGUAGE, iso)
 
-        if (!hit) println()
+        val s0 = getLocaleStringFromInvestingCom(TARGET_LANGUAGE, iso)
+        val s1 = getWiseCom(TARGET_LANGUAGE, iso)
+        val s2 = getCoinmillCom(TARGET_LANGUAGE, iso)
+        val s3 = getMataffNet(TARGET_LANGUAGE, iso)
+
+        val hits = listOf(s0, s1, s2, s3)
+            .filterNot { it.isNullOrEmpty() }
+        val s = hits
+                .groupingBy { it }
+                .eachCount()
+                .filter {
+                    // good enough: 3/4
+                    if (hits.size == 4)
+                        it.value >= 3
+                    // good enough: 2/3, 2/2
+                    else if (hits.size >= 2)
+                        it.value >= 2
+                    else
+                        false
+                }
+                .keys.let { if (it.isEmpty()) null else it.first() }
+
+        if (s != null)
+            println("""<string name="name_$iso">$s</string>""")
+        else
+            println()
 
         Thread.sleep(1200)
     }
