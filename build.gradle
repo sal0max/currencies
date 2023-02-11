@@ -6,14 +6,14 @@ buildscript {
       mavenCentral()
    }
    dependencies {
-      classpath 'com.android.tools.build:gradle:7.4.0'
+      classpath 'com.android.tools.build:gradle:7.4.1'
       classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
    }
 }
 
 // dependency-update-checker: gradle dependencyUpdates
 plugins {
-   id "com.github.ben-manes.versions" version "0.44.0"
+   id "com.github.ben-manes.versions" version "0.45.0"
 }
 // only check for stable versions
 dependencyUpdates.resolutionStrategy {
