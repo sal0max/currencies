@@ -1,2 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="fee_title">Комиссия за международный перевод</string>
+    <string name="previewConversion_title">Предпросмотр обменных курсов</string>
+    <string name="previewConversion_summary">Показывать текущий обменный курс для каждой валюты в меню выбора валют.</string>
+    <string name="extendedKeypad_title">Расширенная клавиатура</string>
+    <string name="category_appearance">Внешний вид</string>
+    <string name="system_default">Как в системе</string>
+    <string name="theme_title">Тема</string>
+    <string name="theme_option_light">Светлая</string>
+    <string name="theme_option_dark">Тёмная</string>
+    <string name="pure_black_enabled_title">OLED чёрный</string>
+    <string name="pure_black_enabled_summary">Использовать абсолютно чёрный цвет в тёмной теме</string>
+    <string name="language_title">Язык приложения</string>
+    <string name="language_ar">Арабский</string>
+    <string name="language_bg">Болгарский</string>
+    <string name="language_ca">Каталанский</string>
+    <string name="language_cs">Чешский</string>
+    <string name="language_de">Немецкий</string>
+    <string name="language_el">Греческий</string>
+    <string name="language_en">Английский</string>
+    <string name="language_fr">Французский</string>
+    <string name="language_hr">Хорватский</string>
+    <string name="language_hu">Венгерский</string>
+    <string name="language_in">Индонезийский</string>
+    <string name="language_is">Исландский</string>
+    <string name="language_it">Итальянский</string>
+    <string name="language_iw">Иврит</string>
+    <string name="language_nb">Норвежский</string>
+    <string name="language_nl">Нидерландский</string>
+    <string name="language_pl">Польский</string>
+    <string name="language_pt_BR">Португальский (Бразилия)</string>
+    <string name="language_sv">Шведский</string>
+    <string name="language_tr">Турецкий</string>
+    <string name="language_uk">Украинский</string>
+    <string name="language_vi">Вьетнамский</string>
+    <string name="language_zh_CN">Китайский (упрощённый)</string>
+    <string name="category_api">Обменные курсы</string>
+    <string name="api_title">Провайдер данных</string>
+    <string name="api_about_title">Про %s</string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.
+\n<b>Включает в себя около 30 валют.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> это относительно новый сервис, который (как и Frankfurter.app) отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.
+\n<b>Включает в себя около 30 валют.</b></string>
+    <string name="api_refreshPeriod_title">Период обновления</string>
+    <string name="api_refreshPeriod_exchangerateHost">Обменные курсы обновляются около полуночи по UTC каждый рабочий день.</string>
+    <string name="api_refreshPeriod_frankfurterApp">Данные обновляются около 16:00 по CET каждый рабочий день.</string>
+    <string name="api_refreshPeriod_ferEe">Курсы обновляются каждый рабочий день.</string>
+    <string name="category_about">Об этом приложении</string>
+    <string name="donate_title">Поддержать разработчика</string>
+    <string name="donate_summary">Пожертвовать через PayPal</string>
+    <string name="rate_title">Оценить это приложение</string>
+    <string name="rate_summary">Если вам всё понравилось, то вы можете помочь другим узнать о Currencies. Нажмите здесь, чтобы оценить приложение в Google Play.</string>
+    <string name="category_versioninfo">Информация о версии</string>
+    <string name="title_changelog">История изменений</string>
+    <string name="category_settings">Основные настройки</string>
+    <string name="fee_summary">В зависимости от вашего договора по кредитной карте, ваш банк может взымать комиссию за все международные переводы. Здесь вы можете ввести эту комиссию. Она будет добавлена в итоговую сумму, чтобы вы знали, сколько вы <i>действительно</i> заплатите.</string>
+    <string name="extendedKeypad_summary">Добавить две дополнительные кнопки: <b>00</b>&nbsp;и&nbsp;<b>000</b>.</string>
+    <string name="language_bn">Бенгальский</string>
+    <string name="language_es">Испанский</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> получает обменные курсы от различных финансовых провайдеров данных и банков, включая Европейский Центральный Банк. Все обменные курсы предоставляются усереднёнными. Значения курсов определяются по медианным курсам покупки и продажи.
+\n<b>Включает в себя около 160 валют.</b></string>
+    <string name="disclaimer_title">Отказ от ответственности</string>
+    <string name="disclaimer_summary">Не смотря на то, что это приложение очень тщательно разрабатывается и тестируется, <b>нет никаких гарантий, что отображаемые им данные верны</b>. Обменные курсы предоставляются третьей стороной и данное приложение не может гарантировать, что данные верны и обновлены.
+\nДополнительно, предоставляемые курсы (если они верны) – всё ещё могут отличаться от используемых вашим банком.
+\nИ наконец: Ошибки случаются. Никогда слепо не доверяйте кому-либо! Учитывая это, будьте уверены, что я бы не выпустил это приложение, если бы у меня были сомнения в том, что оно работает так, как задумано.</string>
+</resources>
