@@ -507,7 +507,7 @@ class MainActivity : BaseActivity() {
 
     /**
      * Show snackbar at the top instead of the bottom.
-     * Also make it only as width as the main display is. Looking way better in landscape mode.
+     * Also make it only as wide as the main display is. Looking way better in landscape mode.
      */
     private fun Snackbar.placeOnTop(): Snackbar {
         swipeRefresh.doOnLayout {
