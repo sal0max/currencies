@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">常规设置</string>
@@ -63,4 +65,5 @@
     <string name="rate_summary">如果你喜欢这个应用，并希望其他人能找到它。点击这里在Google Play留下评价。</string>
     <string name="category_versioninfo">版本信息</string>
     <string name="title_changelog">更新记录</string>
+    <string name="language_zh_CN">简体中文</string>
 </resources>
