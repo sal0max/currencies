@@ -6,7 +6,7 @@
     <string name="name_amd">Армянский драм</string>
     <string name="name_ang">Нидерландский антильский гульден</string>
     <string name="name_aoa">Ангольская кванза</string>
-    <string name="name_ars">Аргентинский песо</string>
+    <string name="name_ars">Аргентинское песо</string>
     <string name="name_aud">Австралийский доллар</string>
     <string name="name_awg">Арубанский флорин</string>
     <string name="name_azn">Азербайджанский манат</string>
@@ -30,16 +30,16 @@
     <string name="name_cdf">Конголезский франк</string>
     <string name="name_chf">Швейцарский франк</string>
     <string name="name_clf">Условная расчётная единица Чили (UF)</string>
-    <string name="name_clp">Чилийский песо</string>
+    <string name="name_clp">Чилийское песо</string>
     <string name="name_cnh">Китайский юань (оффшорный)</string>
     <string name="name_cny">Китайский юань</string>
-    <string name="name_cop">Колумбийский песо</string>
+    <string name="name_cop">Колумбийское песо</string>
     <string name="name_crc">Коста-Риканский колон</string>
     <string name="name_cuc">Кубинский конвертируемый песо</string>
     <string name="name_cup">Кубинский песо</string>
     <string name="name_cve">Эскудо Кабо-Верде</string>
     <string name="name_czk">Чешская крона</string>
-    <string name="name_djf">Джибутийский франк</string>
+    <string name="name_djf">Франк Джибути</string>
     <string name="name_dkk">Датская крона</string>
     <string name="name_dop">Доминиканский песо</string>
     <string name="name_dzd">Алжирский динар</string>
@@ -48,7 +48,7 @@
     <string name="name_etb">Эфиопский быр</string>
     <string name="name_eur">Евро</string>
     <string name="name_fjd">Фиджийский доллар</string>
-    <string name="name_fkp">Фунт Фолклендских Островов</string>
+    <string name="name_fkp">Фунт Фолклендских островов</string>
     <string name="name_fok">Фарерская крона</string>
     <string name="name_gbp">Фунт стерлингов</string>
     <string name="name_gel">Грузинский лари</string>
@@ -74,7 +74,7 @@
     <string name="name_jep">Джерсийский фунт</string>
     <string name="name_jmd">Ямайский доллар</string>
     <string name="name_jod">Иорданский динар</string>
-    <string name="name_jpy">Японская йена</string>
+    <string name="name_jpy">Японская иена</string>
     <string name="name_kes">Кенийский шиллинг</string>
     <string name="name_kgs">Киргизский сом</string>
     <string name="name_khr">Камбоджийский риель</string>
@@ -82,7 +82,7 @@
     <string name="name_kpw">Северокорейская вона</string>
     <string name="name_krw">Южнокорейская вона</string>
     <string name="name_kwd">Кувейтский динар</string>
-    <string name="name_kyd">Доллар Каймановых Островов</string>
+    <string name="name_kyd">Доллар Каймановых островов</string>
     <string name="name_kzt">Казахстанский тенге</string>
     <string name="name_lak">Лаосский кип</string>
     <string name="name_lbp">Ливанский фунт</string>
@@ -102,8 +102,8 @@
     <string name="name_mur">Маврикийская рупия</string>
     <string name="name_mvr">Мальдивская руфия</string>
     <string name="name_mwk">Малавийская квача</string>
-    <string name="name_mxn">Мексиканский песо</string>
-    <string name="name_myr">Малазийский ринггит</string>
+    <string name="name_mxn">Мексиканское песо</string>
+    <string name="name_myr">Малайзийский ринггит</string>
     <string name="name_mzn">Мозамбикский метикал</string>
     <string name="name_nad">Намибийский доллар</string>
     <string name="name_ngn">Нигерийская найра</string>
@@ -113,7 +113,7 @@
     <string name="name_nzd">Новозеландский доллар</string>
     <string name="name_omr">Оманский риал</string>
     <string name="name_pab">Панамский бальбоа</string>
-    <string name="name_pen">Перуанский соль</string>
+    <string name="name_pen">Перуанский новый соль</string>
     <string name="name_pgk">Кина Папуа-Новой Гвинеи</string>
     <string name="name_php">Филиппинский песо</string>
     <string name="name_pkr">Пакистанская рупия</string>
@@ -124,7 +124,7 @@
     <string name="name_rsd">Сербский динар</string>
     <string name="name_rub">Российский рубль</string>
     <string name="name_rwf">Руандийский франк</string>
-    <string name="name_sar">Саудовский риал</string>
+    <string name="name_sar">Саудовский риял</string>
     <string name="name_sbd">Доллар Соломоновых Островов</string>
     <string name="name_scr">Сейшельская рупия</string>
     <string name="name_sdg">Суданский фунт</string>
