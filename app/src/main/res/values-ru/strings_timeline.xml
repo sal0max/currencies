@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="activity_timeline_title"><b>%1$s</b> к <b>%2$s</b></string>
+    <string name="data_provider">Данные на <b>%s</b></string>
+    <string name="rate_average">средний</string>
+    <string name="rate_min">минимальный</string>
+    <string name="rate_max">максимальный</string>
+    <string name="year">год</string>
+    <string name="month">месяц</string>
+    <string name="week">неделя</string>
+</resources>
