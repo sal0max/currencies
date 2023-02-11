@@ -31,6 +31,7 @@ enum class Language(
     UK("uk", "Українська", R.string.language_uk),
     BG("bg", "Български", R.string.language_bg),
     BN("bn", "বাংলা", R.string.language_bn),
+    ZH_CN("zh_CN", "简体中文", R.string.language_zh_CN),
     AR("ar", "اَلْعَرَبِيَّة", R.string.language_ar),
     IW("iw", "עִבְרִית", R.string.language_iw);
 
