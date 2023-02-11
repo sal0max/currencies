@@ -1,2 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="decimal_separator">,</string>
+    <string name="thousands_separator"> </string>
+    <string name="desc_toggle_currencies">переключить валюты</string>
+    <string name="rates_date_latest">Курсы валют на <b>%1$s</b> от <b>%2$s</b></string>
+    <string name="rates_date_historical">Исторические курсы валют на <b>%1$s</b> от <b>%2$s</b></string>
+    <string name="copied_to_clipboard"><b>%s</b> скопировано в буфер обмена</string>
+    <string name="historical_rates_dialog_title">Исторические курсы валют</string>
+    <string name="historical_rates_dialog_toggle">Использовать обменные курсы от определённой даты. Отключите, чтобы всегда получать актуальные.</string>
+    <string name="error">Ошибка: %s</string>
+    <string name="error_generic">Неизвестная проблема.</string>
+    <string name="error_http">Сервер ответил HTTP кодом %d</string>
+    <string name="error_no_data">Невозможно подключиться к серверу.</string>
+    <string name="error_api_error">Произошла ошибка API. Пожалуйста, попробуйте позже.</string>
+    <string name="menu_settings">Настройки</string>
+    <string name="menu_timeline">График обменного курса</string>
+    <string name="tooltip_filter_starred">Показывать только избранные валюты.</string>
+    <string name="error_timeout">Сервер не ответил вовремя, или недоступен.</string>
+    <string name="menu_refresh">Обновить курсы валют</string>
+</resources>
