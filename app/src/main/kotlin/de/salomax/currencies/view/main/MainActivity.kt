@@ -5,15 +5,13 @@ import android.graphics.Color
 import android.icu.util.Calendar
 import android.icu.util.TimeZone
 import android.os.Bundle
-import android.view.ContextMenu
-import android.view.Menu
-import android.view.MenuItem
-import android.view.View
+import android.view.*
 import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.text.HtmlCompat
+import androidx.core.view.doOnLayout
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -293,6 +291,7 @@ class MainActivity : BaseActivity() {
             HtmlCompat.FROM_HTML_MODE_LEGACY
         ).let {
             Snackbar.make(this, tvCalculations, it, Snackbar.LENGTH_SHORT)
+                .placeOnTop()
                 .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorPrimary, null))
                 .setTextColor(MaterialColors.getColor(this, R.attr.colorOnPrimary, null))
                 .show()
@@ -352,6 +351,7 @@ class MainActivity : BaseActivity() {
             // error
             it?.let {
                 Snackbar.make(this, tvCalculations, it, 5000) // show for 5s
+                    .placeOnTop()
                     .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorError, null))
                     .setTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
                     .show()
@@ -503,6 +503,22 @@ class MainActivity : BaseActivity() {
                     }
             }
         }
+    }
+
+    /**
+     * Show snackbar at the top instead of the bottom.
+     * Also make it only as width as the main display is. Looking way better in landscape mode.
+     */
+    private fun Snackbar.placeOnTop(): Snackbar {
+        swipeRefresh.doOnLayout {
+            val view = this.view
+            val params = view.layoutParams as FrameLayout.LayoutParams
+            params.gravity = Gravity.TOP
+            // setting width
+            params.width = it.measuredWidth - this.view.paddingStart - this.view.paddingEnd
+            view.layoutParams = params
+        }
+        return this
     }
 
 }
