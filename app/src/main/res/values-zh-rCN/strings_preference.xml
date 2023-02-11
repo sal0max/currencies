@@ -42,6 +42,7 @@
     <string name="language_tr">土耳其文</string>
     <string name="language_uk">乌克兰文</string>
     <string name="language_vi">越南文</string>
+    <string name="language_zh_CN">简体中文</string>
     <!-- api -->
     <string name="category_api">汇率</string>
     <string name="api_title">汇率源</string>

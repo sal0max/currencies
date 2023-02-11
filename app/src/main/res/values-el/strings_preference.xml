@@ -42,6 +42,7 @@
     <string name="language_tr">Τουρκικά</string>
     <string name="language_uk">Ουκρανικά</string>
     <string name="language_vi">Βιετναμέζικα</string>
+    <string name="language_zh_CN">Κινέζικα (Απλοποιημένα)</string>
     <!-- api -->
     <string name="category_api">Ισοτιμίες</string>
     <string name="api_title">Χορηγός δεδομένων</string>
@@ -63,5 +64,4 @@
     <string name="rate_summary">Αν θέλετε, μπορείτε να βοηθήσετε και άλλους να ανακαλύψουν την εφαρμογή. Πατήστε εδώ για να την αξιολογήσετε στο Google Play.</string>
     <string name="category_versioninfo">Πληροφορίες έκδοσης</string>
     <string name="title_changelog">Αρχείο αλλαγών</string>
-
 </resources>
