@@ -35,6 +35,8 @@ fun main() {
         try {
             val name = Currency.getInstance(isoName).getDisplayName(targetLanguage)
                 .replaceFirstChar { if (it.isLowerCase()) it.titlecase(targetLanguage) else it.toString() }
+                .replace("&", "&amp;")
+                .replace("'", "\\'")
             println("""    <string name="name_${isoName.lowercase()}">$name</string>""")
         } catch (e: java.lang.IllegalArgumentException) {
             println(isoName)
