@@ -49,10 +49,8 @@
     <string name="name_eur">Euro</string>
     <string name="name_fjd">Dólar fijiano</string>
     <string name="name_fkp">Libra malvinense</string>
-
     <string name="name_gbp">Libra esterlina</string>
     <string name="name_gel">Lari georgiano</string>
-
     <string name="name_ghs">Cedi ganês</string>
     <string name="name_gip">Libra de Gibraltar</string>
     <string name="name_gmd">Dalasi gambiano</string>
@@ -66,12 +64,10 @@
     <string name="name_huf">Florim húngaro</string>
     <string name="name_idr">Rupia indonésia</string>
     <string name="name_ils">Sheqel novo israelita</string>
-
     <string name="name_inr">Rupia indiana</string>
     <string name="name_iqd">Dinar iraquiano</string>
     <string name="name_irr">Rial iraniano</string>
     <string name="name_isk">Coroa islandesa</string>
-
     <string name="name_jmd">Dólar jamaicano</string>
     <string name="name_jod">Dinar jordaniano</string>
     <string name="name_jpy">Iene japonês</string>
