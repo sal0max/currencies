@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Основные настройки</string>
@@ -64,4 +66,5 @@
     <string name="rate_summary">Если вам всё понравилось, то вы можете помочь другим узнать о Currencies. Нажмите здесь, чтобы оценить приложение в Google Play.</string>
     <string name="category_versioninfo">Информация о версии</string>
     <string name="title_changelog">История изменений</string>
+    <string name="language_ru">Русский</string>
 </resources>
