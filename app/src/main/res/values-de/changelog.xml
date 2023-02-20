@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.3">
+        <item>Einige Verbesserungen der Benutzeroberfläche.</item>
+        <item>Neue Sprachen: Chinesisch 🇨🇳🇹🇼🇸🇬 und Russisch 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
     <string-array name="changelog_1.18.2">
         <item>Neue Sprache: Ukrainisch 🇺🇦! Vielen Dank an Bogdan!</item>
         <item>Kuba: Zeige den Kubanischen Peso (CUP) statt den ausgelaufenen Kubanischen Convertible Peso (CUC)</item>

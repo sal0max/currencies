@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.2">
+        <item>Yeni dil: Ukraynaca 🇺🇦! Bogdan\'a çok teşekkürler!</item>
+        <item>Küba: Eski Cuban convertible peso (CUC) yerine yeni Cuban Peso (CUP) getirildi.</item>
+        <item>Iyilestirilen sayılarca çeviriler. Gönüllülere çok teşekkür ederiz!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>Yeni dil: Hırvatça 🇭🇷🇧🇦. Mükemmel iş, Ivan!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.0">
         <item>Uygulama başına dil tercihleri için destek eklendi (Android 13\'teki yeni özellik).</item>
         <item>Ek olarak, TÜM cihazlar için (ayrıca &lt; Android 13) artık uygulama ayarlarında uygulama dilini değiştirme seçeneği var.</item>
