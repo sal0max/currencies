@@ -13,6 +13,7 @@ import com.google.android.material.imageview.ShapeableImageView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.util.hasAppendedCurrencySymbol
 import de.salomax.currencies.util.toHumanReadableNumber
 
 @SuppressLint("NotifyDataSetChanged")
@@ -68,7 +69,13 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
                 .toString()
                 .toHumanReadableNumber(context, decimalPlaces = 2, trim = true)
             // set text
-            holder.tvRate.text = "$sourceSymbol $source = $destinationSymbol $destination".replace("\u200F", "").trim()
+            val left =
+                if (sourceSymbol.isEmpty()) source
+                else if (hasAppendedCurrencySymbol(context)) "$source $sourceSymbol" else "$sourceSymbol $source"
+            val right =
+                if (destinationSymbol.isEmpty()) destination
+                else if (hasAppendedCurrencySymbol(context)) "$destination $destinationSymbol" else "$destinationSymbol $destination"
+            holder.tvRate.text = "$left = $right".replace("\u200F", "").trim()
         } else {
             if (holder.tvRate.visibility != View.GONE)
                 holder.tvRate.visibility = View.GONE
