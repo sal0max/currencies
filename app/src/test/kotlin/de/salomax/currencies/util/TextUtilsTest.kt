@@ -23,13 +23,13 @@ class TextUtilsTest {
 
     @Before
     fun init() {
-        val resources: Resources = Mockito.mock(Resources::class.java)
-        `when`(mockContext.resources).thenReturn(resources)
-        val configuration: Configuration = Mockito.mock(Configuration::class.java)
-        `when`(mockContext.resources.configuration).thenReturn(configuration)
-        val localeList = Mockito.mock(LocaleList::class.java)
-        `when`(mockContext.resources.configuration.locales).thenReturn(localeList)
-        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale.US)
+        // val resources: Resources = Mockito.mock(Resources::class.java)
+        // `when`(mockContext.resources).thenReturn(resources)
+        // val configuration: Configuration = Mockito.mock(Configuration::class.java)
+        // `when`(mockContext.resources.configuration).thenReturn(configuration)
+        // val localeList = Mockito.mock(LocaleList::class.java)
+        // `when`(mockContext.resources.configuration.locales).thenReturn(localeList)
+        // `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale.US)
 
         `when`(mockContext.getString(R.string.locale_language)).thenReturn("en")
         `when`(mockContext.getString(R.string.locale_country)).thenReturn("")
@@ -99,28 +99,24 @@ class TextUtilsTest {
     @Test
     fun getDecimalSeparatorGetGroupingSeparator() {
         // default
-        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("en"))
         `when`(mockContext.getString(R.string.locale_language)).thenReturn("en")
         `when`(mockContext.getString(R.string.locale_country)).thenReturn("")
         assertEquals(".", getDecimalSeparator(mockContext))
         assertEquals(",", getGroupingSeparator(mockContext))
 
         // de
-        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("de"))
         `when`(mockContext.getString(R.string.locale_language)).thenReturn("de")
         `when`(mockContext.getString(R.string.locale_country)).thenReturn("")
         assertEquals(",", getDecimalSeparator(mockContext))
         assertEquals(".", getGroupingSeparator(mockContext))
 
         // pt-BR
-        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("pt"))
         `when`(mockContext.getString(R.string.locale_language)).thenReturn("pt")
         `when`(mockContext.getString(R.string.locale_country)).thenReturn("br")
         assertEquals(",", getDecimalSeparator(mockContext))
         assertEquals(".", getGroupingSeparator(mockContext))
 
         // pt-PT
-        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("pt"))
         `when`(mockContext.getString(R.string.locale_language)).thenReturn("pt")
         `when`(mockContext.getString(R.string.locale_country)).thenReturn("PT")
         assertEquals(",", getDecimalSeparator(mockContext))
