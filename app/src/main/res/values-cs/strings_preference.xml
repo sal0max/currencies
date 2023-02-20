@@ -38,10 +38,12 @@
     <string name="language_nl">Nizozemština</string>
     <string name="language_pl">Polština</string>
     <string name="language_pt_BR">Portugalština (Brazílie)</string>
+    <string name="language_ru">Ruština</string>
     <string name="language_sv">Švédština</string>
     <string name="language_tr">Turečtina</string>
     <string name="language_uk">Ukrajinština</string>
     <string name="language_vi">Vietnamština</string>
+    <string name="language_zh_CN">Čínština (zjednodušená)</string>
     <!-- api -->
     <string name="category_api">Směnné kurzy</string>
     <string name="api_title">Poskytovatel dat</string>

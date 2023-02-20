@@ -38,10 +38,12 @@
     <string name="language_nl">Nederländska</string>
     <string name="language_pl">Polska</string>
     <string name="language_pt_BR">Portugisiska (Brasilien)</string>
+    <string name="language_ru">Ryska</string>
     <string name="language_sv">Svenska</string>
     <string name="language_tr">Turkiska</string>
     <string name="language_uk">Ukrainska</string>
     <string name="language_vi">Vietnamesiska</string>
+    <string name="language_zh_CN">Kinesiska (Förenklad)</string>
     <!-- api -->
     <string name="category_api">Valutakurser</string>
     <string name="api_title">Dataleverantör</string>
