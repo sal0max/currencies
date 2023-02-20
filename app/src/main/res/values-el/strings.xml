@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="decimal_separator">,</string>
-    <string name="thousands_separator">.</string>
     <string name="desc_toggle_currencies">Εναλλαγή νομισμάτων</string>
     <string name="rates_date_latest">Τιμές της &lt;b>%1$s&lt;/b> από &lt;b>%2$s&lt;/b></string>
     <string name="rates_date_historical">Ιστορικό ισοτιμίας &lt;b>%1$s&lt;/b> της &lt;b>%2$s&lt;/b></string>

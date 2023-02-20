@@ -1,12 +1,16 @@
 package de.salomax.currencies.viewmodel.main
 
 import android.app.Application
+import android.text.SpannableStringBuilder
+import androidx.core.text.bold
 import androidx.lifecycle.*
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
+import de.salomax.currencies.util.combineWith
 import de.salomax.currencies.util.getDecimalSeparator
+import de.salomax.currencies.util.hasAppendedCurrencySymbol
 import de.salomax.currencies.util.toHumanReadableNumber
 import org.mariuszgromada.math.mxparser.Expression
 import java.text.Collator
@@ -282,22 +286,32 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
     }
 
     /**
-     * the nicely formatted, total base value
+     * the nicely formatted, total base value including the currency symbol at the right position.
      */
-    internal fun getCurrentBaseValueFormatted(): LiveData<String> {
-        return Transformations.map(currentBaseValue) {
-            it?.toHumanReadableNumber(
+    internal fun getCurrentBaseValueFormatted(): LiveData<SpannableStringBuilder> {
+        return currentBaseValue.combineWith(currentBaseCurrency) { value, currency ->
+            val number = (value?.toHumanReadableNumber(
                 app,
                 trim = isInCalculationMode(),
                 decimalPlaces = if (isInCalculationMode()) 2 else null
-            ) ?: "0"
+            ) ?: "0")
+            val symbol = currency?.symbol()
+
+            if (hasAppendedCurrencySymbol(app))
+                SpannableStringBuilder() // 123 $
+                    .bold { append(number) }
+                    .append(if (symbol != null) " $symbol" else "")
+            else
+                SpannableStringBuilder() // $ 123
+                    .append(if (symbol != null) "$symbol " else "")
+                    .bold { append(number) }
         }
     }
 
     // ===============================
 
     /**
-     * the nicely formatted, calculation string: e.g. 4 + 2.2 - 4 / 2
+     * the nicely formatted calculation string: e.g. 4 + 2.2 - 4 / 2
      */
     internal fun getCalculationInputFormatted(): LiveData<String?> {
         return Transformations.map(currentCalculationValueText) {
@@ -364,15 +378,25 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
     }
 
     /**
-     * the nicely formatted, total destination value
+     * the nicely formatted, total destination value including the currency symbol at the right position.
      */
-    internal fun getResultFormatted(): LiveData<String> {
-        return Transformations.map(result) {
-            it?.toHumanReadableNumber(
+    internal fun getResultFormatted(): LiveData<SpannableStringBuilder> {
+        return result.combineWith(currentDestinationCurrency) { value, currency ->
+            val number = (value?.toHumanReadableNumber(
                 app,
                 trim = true,
                 decimalPlaces = 2
-            )
+            ) ?: "0")
+            val symbol = currency?.symbol()
+
+            if (hasAppendedCurrencySymbol(app))
+                SpannableStringBuilder() // 123 $
+                    .bold { append(number) }
+                    .append(if (symbol != null) " $symbol" else "")
+            else
+                SpannableStringBuilder() // $ 123
+                    .append(if (symbol != null) "$symbol " else "")
+                    .bold { append(number) }
         }
     }
 

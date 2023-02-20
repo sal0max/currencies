@@ -128,33 +128,17 @@
             app:layout_constraintStart_toEndOf="@+id/spinnerFrom"
             app:layout_constraintTop_toTopOf="parent">
 
-            <LinearLayout
-                android:id="@+id/clickFrom"
+            <TextView
+                android:id="@+id/textFrom"
+                style="@style/TextAppearance.Material3.TitleLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layoutDirection="ltr"
+                android:lines="1"
                 android:longClickable="true"
-                android:padding="@dimen/margin2x">
-
-                <TextView
-                    android:id="@+id/currencyFrom"
-                    style="@style/TextAppearance.Material3.TitleLarge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/margin1x"
-                    tools:text="€" />
-
-                <TextView
-                    android:id="@+id/textFrom"
-                    style="@style/TextAppearance.Material3.TitleLarge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lines="1"
-                    android:textDirection="ltr"
-                    android:textStyle="bold"
-                    tools:text="13.99" />
-            </LinearLayout>
+                android:padding="@dimen/margin2x"
+                android:textDirection="ltr"
+                tools:text="$ 13.99" />
         </HorizontalScrollView>
 
         <!-- divider ****************************************************** -->
@@ -188,33 +172,17 @@
             app:layout_constraintStart_toEndOf="@+id/spinnerTo"
             app:layout_constraintTop_toTopOf="@+id/guideline_display">
 
-            <LinearLayout
-                android:id="@+id/clickTo"
+            <TextView
+                android:id="@+id/textTo"
+                style="@style/TextAppearance.Material3.TitleLarge"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
-                android:layoutDirection="ltr"
+                android:lines="1"
                 android:longClickable="true"
-                android:padding="@dimen/margin2x">
-
-                <TextView
-                    android:id="@+id/currencyTo"
-                    style="@style/TextAppearance.Material3.TitleLarge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="@dimen/margin1x"
-                    tools:text="€" />
-
-                <TextView
-                    android:id="@+id/textTo"
-                    style="@style/TextAppearance.Material3.TitleLarge"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:lines="1"
-                    android:textDirection="ltr"
-                    android:textStyle="bold"
-                    tools:text="383.99" />
-            </LinearLayout>
+                android:padding="@dimen/margin2x"
+                android:textDirection="ltr"
+                tools:text="€ 383.99" />
         </HorizontalScrollView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

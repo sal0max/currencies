@@ -1,14 +1,19 @@
 package de.salomax.currencies.util
 
 import android.content.Context
+import android.content.res.Configuration
+import android.content.res.Resources
+import android.os.LocaleList
 import de.salomax.currencies.R
 import org.junit.Assert.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.mockito.Mock
+import org.mockito.Mockito
 import org.mockito.Mockito.`when`
 import org.mockito.junit.MockitoJUnitRunner
+import java.util.*
 
 @RunWith(MockitoJUnitRunner::class)
 class TextUtilsTest {
@@ -18,8 +23,16 @@ class TextUtilsTest {
 
     @Before
     fun init() {
-        `when`(mockContext.getString(R.string.decimal_separator)).thenReturn(".")
-        `when`(mockContext.getString(R.string.thousands_separator)).thenReturn(" ")
+        val resources: Resources = Mockito.mock(Resources::class.java)
+        `when`(mockContext.resources).thenReturn(resources)
+        val configuration: Configuration = Mockito.mock(Configuration::class.java)
+        `when`(mockContext.resources.configuration).thenReturn(configuration)
+        val localeList = Mockito.mock(LocaleList::class.java)
+        `when`(mockContext.resources.configuration.locales).thenReturn(localeList)
+        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale.US)
+
+        `when`(mockContext.getString(R.string.locale_language)).thenReturn("en")
+        `when`(mockContext.getString(R.string.locale_country)).thenReturn("")
     }
 
     @Test
@@ -42,15 +55,15 @@ class TextUtilsTest {
             30f.toHumanReadableNumber(mockContext,  showPositiveSign = true, suffix = "cm")
         )
         assertEquals(
-            "12 345 678",
+            "12,345,678",
             "12345678".toHumanReadableNumber(mockContext)
         )
         assertEquals(
-            "1 234.12312",
+            "1,234.12312",
             "1234.12312".toHumanReadableNumber(mockContext)
         )
         assertEquals(
-            "- 111 222",
+            "- 111,222",
             "-111222".toHumanReadableNumber(mockContext)
         )
     }
@@ -81,21 +94,37 @@ class TextUtilsTest {
             null,
             "".toNumber()
         )
-        // working for German locale
-        // assertEquals(
-        //     123.0001,
-        //     "123,0001".toNumber()
-        // )
-        // // working for German locale
-        // assertEquals(
-        //     123123.1,
-        //     "123.123,1".toNumber()
-        // )
-        // // working for German locale
-        // assertEquals(
-        //     11,
-        //     "1.1".toNumber()?.toInt()
-        // )
+    }
+
+    @Test
+    fun getDecimalSeparatorGetGroupingSeparator() {
+        // default
+        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("en"))
+        `when`(mockContext.getString(R.string.locale_language)).thenReturn("en")
+        `when`(mockContext.getString(R.string.locale_country)).thenReturn("")
+        assertEquals(".", getDecimalSeparator(mockContext))
+        assertEquals(",", getGroupingSeparator(mockContext))
+
+        // de
+        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("de"))
+        `when`(mockContext.getString(R.string.locale_language)).thenReturn("de")
+        `when`(mockContext.getString(R.string.locale_country)).thenReturn("")
+        assertEquals(",", getDecimalSeparator(mockContext))
+        assertEquals(".", getGroupingSeparator(mockContext))
+
+        // pt-BR
+        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("pt"))
+        `when`(mockContext.getString(R.string.locale_language)).thenReturn("pt")
+        `when`(mockContext.getString(R.string.locale_country)).thenReturn("br")
+        assertEquals(",", getDecimalSeparator(mockContext))
+        assertEquals(".", getGroupingSeparator(mockContext))
+
+        // pt-PT
+        `when`(mockContext.resources.configuration.locales.get(0)).thenReturn(Locale("pt"))
+        `when`(mockContext.getString(R.string.locale_language)).thenReturn("pt")
+        `when`(mockContext.getString(R.string.locale_country)).thenReturn("PT")
+        assertEquals(",", getDecimalSeparator(mockContext))
+        assertEquals(" ", getGroupingSeparator(mockContext))
     }
 
 }

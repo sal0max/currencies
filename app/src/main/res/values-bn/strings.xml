@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="decimal_separator">.</string>
-    <string name="thousands_separator">\u2009</string>
     <string name="desc_toggle_currencies">মুদ্রা toggle</string>
     <string name="rates_date_latest">&lt;b&gt;%1$s&lt;/b&gt; এ বিনিময় হার &lt;b&gt;%2$s&lt;/b&gt; দ্বারা</string>
     <string name="rates_date_historical">ঐতিহাসক মূল্য <b>%1$s</b> এর <b>%2$s</b> দ্বারা</string>

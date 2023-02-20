@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="decimal_separator">,</string>
-    <string name="thousands_separator">.</string>
     <string name="desc_toggle_currencies">поміняти валюти місцями</string>
     <string name="rates_date_latest">Курс станом на &lt;b&gt;%1$s&lt;/b&gt; згідно &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="rates_date_historical">Історичний курс, на &lt;b&gt;%1$s&lt;/b&gt; згідно &lt;b&gt;%2$s&lt;/b&gt;</string>

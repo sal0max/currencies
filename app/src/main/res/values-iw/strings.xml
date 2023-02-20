@@ -1,7 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="decimal_separator">.</string>
-    <string name="thousands_separator"> , </string>
     <string name="desc_toggle_currencies">החלפה בין המטבעות</string>
     <string name="rates_date_latest">שערים לפי &lt;b>%1$s&lt;/b> בחסות &lt;b>%2$s&lt;/b></string>
     <string name="rates_date_historical">שערי עבר של &lt;b>%1$s&lt;/b> בחסות &lt;b>%2$s&lt;/b></string>

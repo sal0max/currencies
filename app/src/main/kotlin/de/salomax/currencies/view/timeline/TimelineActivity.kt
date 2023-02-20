@@ -5,13 +5,14 @@ import android.graphics.DashPathEffect
 import android.graphics.Paint
 import android.os.Build
 import android.os.Bundle
+import android.text.SpannableStringBuilder
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
 import android.widget.LinearLayout
 import android.widget.TextView
 import androidx.core.text.HtmlCompat
-import androidx.core.view.doOnLayout
+import androidx.core.text.bold
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -24,6 +25,8 @@ import com.robinhood.spark.SparkView
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.util.dpToPx
+import de.salomax.currencies.util.getLocale
+import de.salomax.currencies.util.hasAppendedCurrencySymbol
 import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.view.BaseActivity
 import de.salomax.currencies.viewmodel.timeline.TimelineViewModel
@@ -37,7 +40,7 @@ import kotlin.math.max
 class TimelineActivity : BaseActivity() {
 
     //
-    private val formatter = DateTimeFormatter.ofLocalizedDate(FormatStyle.MEDIUM)
+    private lateinit var formatter: DateTimeFormatter
     private lateinit var timelineModel: TimelineViewModel
 
     // views
@@ -50,15 +53,17 @@ class TimelineActivity : BaseActivity() {
     private lateinit var divider: View
 
     private lateinit var textPastRateDate: TextView
-    private lateinit var textPastRateSymbol: TextView
     private lateinit var textPastRateValue: TextView
 
     private lateinit var textCurrentRateDate: TextView
-    private lateinit var textCurrentRateSymbol: TextView
     private lateinit var textCurrentRateValue: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+
+        formatter = DateTimeFormatter
+            .ofLocalizedDate(FormatStyle.MEDIUM)
+            .withLocale(getLocale(this))
 
         // general layout
         setContentView(R.layout.activity_timeline)
@@ -134,11 +139,9 @@ class TimelineActivity : BaseActivity() {
         this.divider = findViewById(R.id.divider)
 
         this.textPastRateDate = findViewById(R.id.text_date_past)
-        this.textPastRateSymbol = findViewById(R.id.text_symbol_past)
         this.textPastRateValue = findViewById(R.id.text_rate_past)
 
         this.textCurrentRateDate = findViewById(R.id.text_date_current)
-        this.textCurrentRateSymbol = findViewById(R.id.text_symbol_current)
         this.textCurrentRateValue = findViewById(R.id.text_rate_current)
     }
 
@@ -166,22 +169,21 @@ class TimelineActivity : BaseActivity() {
         val view3 = findViewById<View>(R.id.stats_row_3).findViewById<TextView>(R.id.text)
 
         // set the title of "avg", "min", "max
-        view1.text = getString(R.string.rate_average)
-        view2.text = getString(R.string.rate_min)
-        view3.text = getString(R.string.rate_max)
+        val string1 = getString(R.string.rate_average)
+        val string2 = getString(R.string.rate_min)
+        val string3 = getString(R.string.rate_max)
+        view1.text = string1
+        view2.text = string2
+        view3.text = string3
 
         // set the width of "avg", "min", "max" to the same value
-        listOf(view1, view2, view3).forEach {
-            it.doOnLayout {
-                val maxWidth = max(view1.width, max(view2.width, view3.width))
-                // only apply, if changed
-                if (maxWidth != view1.width) {
-                    view1.width = maxWidth
-                    view2.width = maxWidth
-                    view3.width = maxWidth
-                }
-            }
-        }
+        val width1 = view1.paint.measureText(string1)
+        val width2 = view2.paint.measureText(string2)
+        val width3 = view3.paint.measureText(string3)
+        val maxWidth = (max(width1, max(width2, width3)) * 1.25).toInt()
+        view1.width = maxWidth
+        view2.width = maxWidth
+        view3.width = maxWidth
     }
 
     private fun setListeners() {
@@ -254,8 +256,7 @@ class TimelineActivity : BaseActivity() {
             val rate = it.first?.value
             if (rate != null) {
                 textPastRateDate.text = it.first?.key?.format(formatter)
-                textPastRateSymbol.text = rate.currency.symbol()
-                textPastRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = it.second)
+                textPastRateValue.text = combineValueAndSymbol(rate.value, rate.currency.symbol(), it.second)
                 // only show the divider if this row is populated
                 // highest chance of it populated is with this "past rate" data
                 divider.visibility = View.VISIBLE
@@ -269,8 +270,7 @@ class TimelineActivity : BaseActivity() {
             val rate = it.first?.value
             if (rate != null) {
                 textCurrentRateDate.text = it.first?.key?.format(formatter)
-                textCurrentRateSymbol.text = rate.currency.symbol()
-                textCurrentRateValue.text = rate.value.toHumanReadableNumber(this, decimalPlaces = it.second)
+                textCurrentRateValue.text = combineValueAndSymbol(rate.value, rate.currency.symbol(), it.second)
             }
         }
 
@@ -316,10 +316,38 @@ class TimelineActivity : BaseActivity() {
         parent.visibility = if (symbol == null) View.GONE else View.VISIBLE
         // hide dotted line when there's no date
         parent.findViewById<View>(R.id.dotted_line).visibility = if (date == null) View.GONE else View.VISIBLE
+        if (value != null)
+            parent.findViewById<TextView>(R.id.text2).text = combineValueAndSymbol(value, symbol, places)
+        parent.findViewById<TextView>(R.id.text3).text = date?.format(formatter)
+    }
 
-        parent.findViewById<TextView>(R.id.text2).text = symbol
-        parent.findViewById<TextView>(R.id.text3).text = value?.toHumanReadableNumber(this, places)
-        parent.findViewById<TextView>(R.id.text4).text = date?.format(formatter)
+    private fun combineValueAndSymbol(
+        value: Float,
+        symbol: String?,
+        decimalPlaces: Int
+    ): SpannableStringBuilder {
+        return if (hasAppendedCurrencySymbol(this))
+            SpannableStringBuilder()
+                .bold {
+                    append(
+                        value.toHumanReadableNumber(
+                            this@TimelineActivity,
+                            decimalPlaces = decimalPlaces
+                        )
+                    )
+                }
+                .append(" " + (symbol ?: ""))
+        else
+            SpannableStringBuilder()
+                .append((symbol ?: "") + " ")
+                .bold {
+                    append(
+                        value.toHumanReadableNumber(
+                            this@TimelineActivity,
+                            decimalPlaces = decimalPlaces
+                        )
+                    )
+                }
     }
 
     private fun prepareFoldableLayoutChanges() {

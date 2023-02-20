@@ -1,17 +1,61 @@
 package de.salomax.currencies.util
 
 import android.content.Context
+import androidx.appcompat.app.AppCompatDelegate
 import de.salomax.currencies.R
 import java.math.RoundingMode
 import java.text.DecimalFormat
+import java.text.DecimalFormatSymbols
 import java.text.NumberFormat
+import java.util.*
 
-fun getDecimalSeparator(context: Context): String {
-    return context.getString(R.string.decimal_separator)
+/**
+ * Return the *used* Locale, based on the currently active resource folder,
+ * not the one set in the System (which one would get with context.resources.configuration.locales[0]).
+ * Example: app is localized in en (default) + fr
+ * - system=en & app=system-default -> en
+ * - system=fr & app=system-default -> fr
+ * - system=en & app=en             -> en
+ * - system=en & app=fr             -> fr
+ * - system=af & app=system-default -> en (as there's no af localization it falls back to en)
+ */
+fun getLocale(context: Context): Locale {
+    return AppCompatDelegate.getApplicationLocales()[0] ?: Locale(
+        context.getString(R.string.locale_language),
+        context.getString(R.string.locale_country)
+    )
 }
 
-fun getThousandsSeparator(context: Context): String {
-    return context.getString(R.string.thousands_separator)
+/**
+ * Returns the DecimalFormatSymbols for the localization that is active in the app.
+ */
+private fun getDecimalSymbols(context: Context): DecimalFormatSymbols {
+    val decimalFormatter = NumberFormat.getInstance(getLocale(context)) as DecimalFormat
+    return decimalFormatter.decimalFormatSymbols
+}
+
+/**
+ * Returns the decimal separator character for the localization that is active in the app.
+ */
+fun getDecimalSeparator(context: Context): String {
+    return getDecimalSymbols(context).decimalSeparator.toString()
+}
+
+/**
+ * Returns the grouping separator character for the localization that is active in the app.
+ */
+fun getGroupingSeparator(context: Context): String {
+    return getDecimalSymbols(context).groupingSeparator.toString()
+}
+
+/**
+ * True, when the currency symbol should be placed after the value for the current locale.
+ * False, when the currency symbol should be placed before the value.
+ */
+fun hasAppendedCurrencySymbol(context: Context): Boolean {
+    val currencyFormatter = NumberFormat.getCurrencyInstance(getLocale(context))
+    val formattedCurrency = currencyFormatter.format(1.23)
+    return formattedCurrency.last().digitToIntOrNull() == null
 }
 
 // *************************************************************************************************
@@ -54,12 +98,12 @@ fun String.toHumanReadableNumber(
         // group thousands
         for ((i, c) in this.reversed().withIndex()) {
             if (i % 3 == 0 && i != 0)
-                sb.append(getThousandsSeparator(context))
+                sb.append(getGroupingSeparator(context))
             sb.append(c)
         }
         return sb.toString().reversed()
             // fix negative values (-.123 -> -123)
-            .replace("-${getThousandsSeparator(context)}", "-")
+            .replace("-${getGroupingSeparator(context)}", "-")
     }
 
 

@@ -25,6 +25,8 @@ import com.google.android.material.snackbar.Snackbar
 import com.google.android.material.switchmaterial.SwitchMaterial
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.util.getDecimalSeparator
+import de.salomax.currencies.util.getLocale
 import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.util.toNumber
 import de.salomax.currencies.view.BaseActivity
@@ -51,8 +53,6 @@ class MainActivity : BaseActivity() {
     private lateinit var tvCalculations: TextView
     private lateinit var tvFrom: TextView
     private lateinit var tvTo: TextView
-    private lateinit var tvCurrencySymbolFrom: TextView
-    private lateinit var tvCurrencySymbolTo: TextView
     private lateinit var spinnerFrom: SearchableSpinner
     private lateinit var spinnerTo: SearchableSpinner
     private lateinit var tvDate: TextView
@@ -75,8 +75,6 @@ class MainActivity : BaseActivity() {
         this.tvCalculations = findViewById(R.id.textCalculations)
         this.tvFrom = findViewById(R.id.textFrom)
         this.tvTo = findViewById(R.id.textTo)
-        this.tvCurrencySymbolFrom = findViewById(R.id.currencyFrom)
-        this.tvCurrencySymbolTo = findViewById(R.id.currencyTo)
         this.spinnerFrom = findViewById(R.id.spinnerFrom)
         this.spinnerTo = findViewById(R.id.spinnerTo)
         this.tvDate = findViewById(R.id.textRefreshed)
@@ -190,7 +188,7 @@ class MainActivity : BaseActivity() {
     override fun onCreateContextMenu(menu: ContextMenu, v: View, menuInfo: ContextMenu.ContextMenuInfo?) {
         super.onCreateContextMenu(menu, v, menuInfo)
         when (v.id) {
-            R.id.clickFrom -> {
+            R.id.textFrom -> {
                 // copy
                 menu.add(0, 0, 0, android.R.string.copy)
                 // paste
@@ -202,7 +200,7 @@ class MainActivity : BaseActivity() {
                         && clipboard.primaryClipDescription?.hasMimeType(ClipDescription.MIMETYPE_TEXT_PLAIN) == true
                         &&  clipboardContent != null)
             }
-            R.id.clickTo -> {
+            R.id.textTo -> {
                 menu.add(0, 2, 0, android.R.string.copy)
             }
         }
@@ -211,8 +209,8 @@ class MainActivity : BaseActivity() {
     override fun onContextItemSelected(item: MenuItem): Boolean {
         when (item.itemId) {
             0 -> { // copy "from"
-                val copyText = "${findViewById<TextView>(R.id.currencyFrom).text} ${findViewById<TextView>(R.id.textFrom).text}"
-                copyToClipboard(copyText)
+                val copyText = findViewById<TextView>(R.id.textFrom).text
+                copyToClipboard(copyText.toString())
             }
             1 -> { // paste "from"
                 val clipboard: ClipboardManager = getSystemService(Context.CLIPBOARD_SERVICE) as ClipboardManager
@@ -222,8 +220,8 @@ class MainActivity : BaseActivity() {
                 }
             }
             2 -> { // copy "to"
-                val copyText = "${findViewById<TextView>(R.id.currencyTo).text} ${findViewById<TextView>(R.id.textTo).text}"
-                copyToClipboard(copyText)
+                val copyText = findViewById<TextView>(R.id.textTo).text
+                copyToClipboard(copyText.toString())
             }
         }
         return true
@@ -239,9 +237,9 @@ class MainActivity : BaseActivity() {
         }
 
         // long click on input "from"
-        registerForContextMenu(findViewById<LinearLayout>(R.id.clickFrom))
+        registerForContextMenu(findViewById<LinearLayout>(R.id.textFrom))
         // long click on input "to"
-        registerForContextMenu(findViewById<LinearLayout>(R.id.clickTo))
+        registerForContextMenu(findViewById<LinearLayout>(R.id.textTo))
 
         // spinners: listen for changes
         spinnerFrom.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
@@ -305,7 +303,7 @@ class MainActivity : BaseActivity() {
             it?.let {
                 val date = it.date
                 val dateString = date
-                    ?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT))
+                    ?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT).withLocale(getLocale(this)))
                     ?.replace("\u200F", "") // remove rtl-mark (fixes broken arab date)
                 val providerString = it.provider?.getName(this)
 
@@ -379,7 +377,6 @@ class MainActivity : BaseActivity() {
 
         // selected rates changed
         viewModel.getBaseCurrency().observe(this) { currency ->
-            tvCurrencySymbolFrom.text = currency?.symbol()
             spinnerFrom.setSelection(currency)
             // conversion preview
             if (currency != null)
@@ -389,7 +386,6 @@ class MainActivity : BaseActivity() {
                     ?.let { spinnerTo.setCurrentRate(Rate(currency, it)) }
         }
         viewModel.getDestinationCurrency().observe(this) { currency ->
-            tvCurrencySymbolTo.text = currency?.symbol()
             spinnerTo.setSelection(currency)
             // conversion preview
             if (currency != null)
@@ -419,10 +415,15 @@ class MainActivity : BaseActivity() {
         }
 
         viewModel.isExtendedKeypadEnabled.observe(this) { extendedEnabled ->
-            findViewById<View>(R.id.keypad).visibility =
-                if (extendedEnabled) View.GONE else View.VISIBLE
-            findViewById<View>(R.id.keypad_extended).visibility =
-                if (extendedEnabled) View.VISIBLE else View.GONE
+            val keypadRegular = findViewById<View>(R.id.keypad)
+            val keypadExtended = findViewById<View>(R.id.keypad_extended)
+            // activate the correct keypad
+            keypadRegular.visibility = if (extendedEnabled) View.GONE else View.VISIBLE
+            keypadExtended.visibility = if (extendedEnabled) View.VISIBLE else View.GONE
+            // decimal button: use correct char for the current locale
+            val separator = getDecimalSeparator(this)
+            keypadExtended.findViewById<TextView>(R.id.btn_decimal).text = separator
+            keypadRegular.findViewById<TextView>(R.id.btn_decimal).text = separator
         }
     }
 
