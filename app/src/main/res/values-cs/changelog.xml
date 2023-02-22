@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.18.3">
+        <item>Vylepšení rozhraní</item>
+        <item>Nové jazyky: čínština 🇨🇳🇹🇼🇸🇬 a ruština 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
     <string-array name="changelog_1.18.2">
         <item>Nový jazyk: Ukrajinština 🇺🇦! Děkujeme Bogdanovi!</item>
         <item>Kuba: Kubánské peso (CUP) místo zastaralého kubánského konvertibilního pesa (CUC)</item>
