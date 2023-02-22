@@ -1,0 +1,3 @@
+- Novi jezik: ukrajinski 🇺🇦! Puno hvala, Bogdane!
+- Kuba: Dodan kubanski peso (CUP) umjesto napuštenog kubanskog konvertibilnog pesa (CUC)
+- Mnogi prijevodi su dorađeni. Puno hvala svim volonterima!
