@@ -13,6 +13,7 @@ import de.salomax.currencies.util.getDecimalSeparator
 import de.salomax.currencies.util.hasAppendedCurrencySymbol
 import de.salomax.currencies.util.toHumanReadableNumber
 import org.mariuszgromada.math.mxparser.Expression
+import org.mariuszgromada.math.mxparser.License
 import java.text.Collator
 import java.time.LocalDate
 import java.time.ZoneId
@@ -62,6 +63,9 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
      */
 
     init {
+        // MathParser.org-mXparser TOS
+        License.iConfirmNonCommercialUse("Salomax")
+
         // only update if data is old: https://github.com/Formicka/exchangerate.host
         // "Rates are updated around midnight UTC every working day."
         val currentDate = LocalDate.now(ZoneId.of("UTC"))
