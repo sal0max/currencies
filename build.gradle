@@ -13,7 +13,7 @@ buildscript {
 
 // dependency-update-checker: gradle dependencyUpdates
 plugins {
-   id "com.github.ben-manes.versions" version "0.45.0"
+   id "com.github.ben-manes.versions" version "0.46.0"
 }
 // only check for stable versions
 dependencyUpdates.resolutionStrategy {
