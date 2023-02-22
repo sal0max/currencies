@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string-array name="changelog_1.18.3">
+    <string-array name="changelog_1.19.0">
         <item>Varias mejoras en la interfaz de usuario.</item>
         <item>Nuevos idiomas: Chino 🇨🇳🇹🇼🇸🇬 y ruso 🇷🇺🇧🇾🇰🇿.</item>
     </string-array>
