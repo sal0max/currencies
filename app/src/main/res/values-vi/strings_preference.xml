@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Cài đặt chung</string>
@@ -63,4 +65,6 @@
     <string name="rate_summary">Nếu bạn muốn, bạn có thể giúp những người khác khám phá ra Currencies. Hãy nhấn vào đây để đánh giá ứng dụng trên Google Play.</string>
     <string name="category_versioninfo">Thông tin phiên bản</string>
     <string name="title_changelog">Nhật ký thay đổi</string>
+    <string name="language_zh_CN">Tiếng Trung giản thể</string>
+    <string name="language_ru">Tiếng Nga</string>
 </resources>
