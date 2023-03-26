@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Genel Ayarlar</string>
@@ -63,4 +65,6 @@
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
     <string name="category_versioninfo">Sürüm bilgisi</string>
     <string name="title_changelog">Değişiklik günlüğü</string>
+    <string name="language_ru">Rusça</string>
+    <string name="language_zh_CN">Çince (Basitleştirilmiş)</string>
 </resources>
