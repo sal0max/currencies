@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Загальні налаштування</string>
@@ -41,7 +43,7 @@
     <string name="language_sv">Шведська</string>
     <string name="language_tr">Турецька</string>
     <string name="language_uk">Українська</string>
-    <string name="language_vi">В\'єтнамська</string>
+    <string name="language_vi">В’єтнамська</string>
     <!-- api -->
     <string name="category_api">Курси обміну</string>
     <string name="api_title">Постачальник даних</string>
@@ -56,11 +58,15 @@
     <!-- about -->
     <string name="category_about">Про цей додаток</string>
     <string name="disclaimer_title">Відмова від відповідальності</string>
-    <string name="disclaimer_summary">Незважаючи на те, що програма дуже ретельно написана та протестована, <b>немає жодної гарантії, що дані, які вона показує, правильні</b>. Курси обміну надає третя сторона, і ця програма не може гарантувати, що дані правдиві та актуальні.\nКрім того, надані курси (якщо правильні) можуть відрізнятися від тих, які використовує ваш банк.\nНарешті: помилки трапляються. Ніколи нікому сліпо не вірте! З огляду на це, будьте впевнені, я б не випускав цю програму, якби мав сумніви, що вона працює належним чином.</string>
+    <string name="disclaimer_summary">Незважаючи на те, що програма дуже ретельно написана та протестована, <b>немає жодної гарантії, що дані, які вона показує, правильні</b>. Курси обміну надає третя сторона, і ця програма не може гарантувати, що дані правдиві та актуальні.
+\nКрім того, надані курси (якщо правильні) можуть відрізнятися від тих, які використовує ваш банк.
+\nЗрештою: помилки трапляються. Ніколи нікому сліпо не вірте! З огляду на це, будьте впевнені, я б не випускав цю програму, якби мав сумніви, що вона працює належним чином.</string>
     <string name="donate_title">Підтримати розробника</string>
     <string name="donate_summary">Пожертвування через PayPal</string>
     <string name="rate_title">Оцініть цей додаток</string>
     <string name="rate_summary">Якщо ви хочете, ви можете допомогти іншим відкрити для себе <b>Currencies</b>. Натисніть тут, щоб оцінити програму в Google Play.</string>
     <string name="category_versioninfo">Інформація про версію</string>
     <string name="title_changelog">Історія змін</string>
+    <string name="language_zh_CN">Китайська (спрощена)</string>
+    <string name="language_ru">Кацапська</string>
 </resources>
