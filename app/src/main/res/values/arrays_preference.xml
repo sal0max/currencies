@@ -18,23 +18,27 @@
         <item>Exchangerate.host</item>
         <item>Frankfurter.app</item>
         <item>Fer.ee</item>
+        <item>InforEuro</item>
     </string-array>
 
     <string-array name="api_values" translatable="false">
         <item>0</item>
         <item>1</item>
         <item>2</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="api_about_summary">
         <item>@string/api_about_exchangerateHost</item>
         <item>@string/api_about_frankfurterApp</item>
         <item>@string/api_about_ferEe</item>
+        <item>@string/api_about_inforEuro</item>
     </string-array>
 
     <string-array name="api_refreshPeriod_summary">
         <item>@string/api_refreshPeriod_exchangerateHost</item>
         <item>@string/api_refreshPeriod_frankfurterApp</item>
         <item>@string/api_refreshPeriod_ferEe</item>
+        <item>@string/api_refreshPeriod_inforEuro</item>
     </string-array>
 </resources>

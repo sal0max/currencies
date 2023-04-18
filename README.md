@@ -27,6 +27,7 @@ It is **not** intended to be used for realtime financial business, rather to be 
    * [exchangerate.host](https://exchangerate.host/) with **over 160 currencies**
    * [frankfurter.app](https://frankfurter.app/) with **over 30 currencies**, provided by the European Central Bank
    * [fer.ee](https://fer.ee/): an alternative service that behaves just like Frankfurter.app
+   * [InforEuro](https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en): provides the European Commission’s official monthly accounting rates for the euro and **over 150 corresponding conversion rates**
 * The UI is simple and pure Material 3 Design.
 * Exchange rate history: Check out the chart for the past year, to see how the currencies have developed.
 * Historical rates: You can use rates from prior dates.
@@ -48,7 +49,7 @@ Check out [CONTRIBUTING.md](CONTRIBUTING.md), if you are interested in participa
 
 ## License
 
-Copyright 2021 Maximilian Salomon
+Copyright 2020 Maximilian Salomon
 
 This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.

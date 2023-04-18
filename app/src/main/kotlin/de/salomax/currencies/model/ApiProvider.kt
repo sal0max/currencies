@@ -11,7 +11,8 @@ enum class ApiProvider(
 ) {
     EXCHANGERATE_HOST(0, "https://api.exchangerate.host"),
     FRANKFURTER_APP(1, "https://api.frankfurter.app"),
-    FER_EE(2, "https://api.fer.ee");
+    FER_EE(2, "https://api.fer.ee"),
+    INFOR_EURO(3, "https://ec.europa.eu/budg/inforeuro/api/public");
 
     companion object {
         fun fromNumber(value: Int): ApiProvider? = values().firstOrNull { it.number == value }
@@ -23,6 +24,7 @@ enum class ApiProvider(
                     EXCHANGERATE_HOST -> 0
                     FRANKFURTER_APP -> 1
                     FER_EE -> 2
+                    INFOR_EURO -> 3
                 }
         ]
     }
@@ -33,6 +35,7 @@ enum class ApiProvider(
                     EXCHANGERATE_HOST -> 0
                     FRANKFURTER_APP -> 1
                     FER_EE -> 2
+                    INFOR_EURO -> 3
                 }
         ]
     }
@@ -43,6 +46,7 @@ enum class ApiProvider(
                     EXCHANGERATE_HOST -> 0
                     FRANKFURTER_APP -> 1
                     FER_EE -> 2
+                    INFOR_EURO -> 3
                 }
         ]
     }

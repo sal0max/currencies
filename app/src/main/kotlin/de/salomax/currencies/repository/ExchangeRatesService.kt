@@ -6,14 +6,16 @@ import com.github.kittinunf.fuel.core.awaitResult
 import com.github.kittinunf.fuel.moshi.moshiDeserializerOf
 import com.github.kittinunf.result.Result
 import com.github.kittinunf.result.map
-import com.squareup.moshi.*
+import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
-import de.salomax.currencies.model.*
+import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.model.Currency
-import java.io.IOException
+import de.salomax.currencies.model.ExchangeRates
+import de.salomax.currencies.model.Timeline
 import java.time.LocalDate
+import java.time.ZoneOffset
 import java.time.format.DateTimeFormatter
-import java.util.*
+import java.util.UUID
 
 object ExchangeRatesService {
 
@@ -38,18 +40,28 @@ object ExchangeRatesService {
                 ApiProvider.FER_EE -> apiProvider.baseUrl +
                         "/$dateString" +
                         "?base=$base"
+                ApiProvider.INFOR_EURO -> apiProvider.baseUrl +
+                        "/monthly-rates" +
+                        if (date != null) "?year=${date.year}" + "&month=${date.monthValue}"
+                        else ""
             }
         ).awaitResult(
             moshiDeserializerOf(
                 Moshi.Builder()
                     .addLast(KotlinJsonAdapterFactory())
-                    .add(RatesAdapter(base))
-                    .add(LocalDateAdapter())
+                    .apply {
+                        if (apiProvider == ApiProvider.INFOR_EURO) {
+                            add(InforEuroAdapter(date ?: LocalDate.now(ZoneOffset.UTC)))
+                        } else {
+                            add(RatesAdapter(base))
+                            add(LocalDateAdapter())
+                        }
+                    }
                     .build()
                     .adapter(ExchangeRates::class.java)
             )
-        ).map { timeline ->
-            timeline.copy(provider = apiProvider)
+        ).map { rates ->
+            rates.copy(provider = apiProvider)
         }
     }
 
@@ -64,8 +76,8 @@ object ExchangeRatesService {
 
         val dateFormatter = DateTimeFormatter.ofPattern("yyyy-MM-dd")
         // can't search for FOK - have to use DKK instead
-        val parameterBase = if (base == Currency.FOK) "DKK" else base
-        val parameterSymbol = if (symbol == Currency.FOK) "DKK" else symbol
+        val parameterBase = if (base == Currency.FOK) "DKK" else base.iso4217Alpha()
+        val parameterSymbol = if (symbol == Currency.FOK) "DKK" else symbol.iso4217Alpha()
         // call api
         return Fuel.get(
             when (apiProvider) {
@@ -87,14 +99,23 @@ object ExchangeRatesService {
                         endDate.format(dateFormatter) +
                         "?base=$parameterBase" +
                         "&symbols=$parameterSymbol"
+                ApiProvider.INFOR_EURO -> "${apiProvider.baseUrl}/" +
+                        "currencies/" +
+                        parameterSymbol
             }
         ).awaitResult(
             moshiDeserializerOf(
                 Moshi.Builder()
                     .addLast(KotlinJsonAdapterFactory())
-                    .add(RatesAdapter(base))
-                    .add(LocalDateAdapter())
-                    .add(TimelineRatesToRateAdapter(symbol))
+                    .apply {
+                        if (apiProvider == ApiProvider.INFOR_EURO) {
+                            add(InforEuroTimelineAdapter(startDate, endDate))
+                        } else {
+                            add(RatesAdapter(base))
+                            add(LocalDateAdapter())
+                            add(TimelineRatesAdapter(symbol))
+                        }
+                    }
                     .build()
                     .adapter(Timeline::class.java)
             )
@@ -109,130 +130,4 @@ object ExchangeRatesService {
         }
     }
 
-    /*
-     * Converts a timeline rates object to a Map<LocalDate, Rate?>>
-     * The API actually returns Map<LocalDate, List<Rate>>>, however, we only want one Rate per day.
-     * This converter reduces the list.
-     */
-    @Suppress("unused", "UNUSED_PARAMETER")
-    internal class TimelineRatesToRateAdapter(private val symbol: Currency) {
-
-        @Synchronized
-        @FromJson
-        fun fromJson(reader: JsonReader): Map<LocalDate, Rate> {
-            val map = mutableMapOf<LocalDate, Rate>()
-            reader.beginObject()
-            // convert
-            while (reader.hasNext()) {
-                val date: LocalDate = LocalDate.parse(reader.nextName())
-                var rate: Rate? = null
-                reader.beginObject()
-                // sometimes there's no rate yet, but an empty body or more than one rate, so check first
-                while (reader.hasNext() && reader.peek() == JsonReader.Token.NAME) {
-                    val name = Currency.fromString(reader.nextName())
-                    val value = reader.nextDouble().toFloat()
-                    rate =
-                        // change dkk to fok, when needed
-                        if (name == Currency.DKK && symbol == Currency.FOK)
-                            Rate(Currency.FOK, value)
-                        // make sure that the symbol matches the one we requested
-                        else if (name == symbol)
-                            Rate(name, value)
-                        else
-                            null
-                }
-                if (rate != null)
-                    map[date] = rate
-                reader.endObject()
-            }
-            reader.endObject()
-            return map
-        }
-
-        @Synchronized
-        @ToJson
-        @Throws(IOException::class)
-        fun toJson(writer: JsonWriter, value: Map<LocalDate, Rate>?) {
-            writer.nullValue()
-        }
-
-    }
-
-    /*
-     * Converts currency object to array of currencies.
-     * Also removes some unwanted values and adds some wanted ones.
-     */
-    @Suppress("unused", "UNUSED_PARAMETER")
-    internal class RatesAdapter(private val base: Currency) {
-
-        @Synchronized
-        @FromJson
-        @Suppress("SpellCheckingInspection")
-        @Throws(IOException::class)
-        fun fromJson(reader: JsonReader): List<Rate> {
-            val list = mutableListOf<Rate>()
-            reader.beginObject()
-            // convert
-            while (reader.hasNext()) {
-                val name: String = reader.nextName()
-                val value: Double = reader.nextDouble()
-                // filter out these:
-                if (name != "BTC"    // Bitcoin
-                    // metals
-                    && name != "XAG" // silver
-                    && name != "XAU" // gold
-                    && name != "XPD" // palladium
-                    && name != "XPT" // platinum
-                    // superseded
-                    && name != "MRO" // Mauritanian ouguiya         (until 2018/01/01)
-                    && name != "STD" // São Tomé and Príncipe dobra (until 2018/01/01)
-                    && name != "VEF" // Venezuelan bolívar fuerte   (2008/01/01 – 2018/08/20)
-                    && name != "CUC" // Cuban convertible peso      (1994 - 2020/01/01)
-                    // special
-                    && name != "XDR" // special drawing rights of the IMF
-                    && name != "CLF" // Unidad de Fomento (non-circulating Chilean currency)
-                    && name != "CNH" // Chinese renminbi  (Offshore e.g. Hong Kong)
-                ) {
-                    Currency.fromString(name)?.let { list.add(Rate(it, value.toFloat())) }
-                }
-            }
-            reader.endObject()
-            // add base - but only if it's missing in the api response!
-            if (list.find { rate -> rate.currency == base } == null)
-                list.add(Rate(base, 1f))
-            // also add Faroese króna (same as Danish krone) if it isn't already there - I simply like it!
-            if (list.find { it.currency == Currency.FOK } == null)
-                list.find { it.currency == Currency.DKK }?.value?.let { dkk ->
-                    list.add(Rate(Currency.FOK, dkk))
-                }
-            return list
-        }
-
-        @Synchronized
-        @ToJson
-        @Throws(IOException::class)
-        fun toJson(writer: JsonWriter, value: List<Rate>?) {
-            writer.nullValue()
-        }
-
-    }
-
-    @Suppress("unused", "UNUSED_PARAMETER")
-    internal class LocalDateAdapter {
-
-        @Synchronized
-        @FromJson
-        @Throws(IOException::class)
-        fun fromJson(reader: JsonReader): LocalDate? {
-            return LocalDate.parse(reader.nextString())
-        }
-
-        @Synchronized
-        @ToJson
-        @Throws(IOException::class)
-        fun toJson(writer: JsonWriter, value: LocalDate?) {
-            writer.value(value?.toString())
-        }
-
-    }
 }

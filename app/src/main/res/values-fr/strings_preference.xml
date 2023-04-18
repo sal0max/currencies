@@ -47,12 +47,14 @@
     <string name="api_title">Fournisseur de données</string>
     <string name="api_about_title">À propos de %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> s\'approvisionne en taux de change auprès de divers fournisseurs de données financières et de banques, dont la Banque centrale européenne. Toutes les données sur les taux de change sont livrées en données midpoint. Les taux midpoint sont déterminés en calculant le taux médian moyen de Bid et Ask.\n<b>Environ 160 devises sont incluses.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> suit les taux de change (forex) de référence publiés par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> suit les taux de change (forex) de référence publiée par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> est un service relativement nouveau, qui (tout comme Frankfurter.app) suit les taux de change de référence (forex) qui sont publiés par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>
+    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_fr"><b>InforEuro</b></a> fournit le cours comptable mensuel officiel de la Commission européenne pour l’euro et les taux de conversion établis par le comptable de la Commission européenne conformément à l’article 19 du règlement financier.\nCes taux servent à calculer les montants pour le remboursement des dépenses et frais de voyage ou de séjour des personnes externes participant à des réunions, à des entretiens, etc., à la demande de la Commission européenne.\n<b>Environ 150 devises sont incluses.</b></string>
     <string name="api_refreshPeriod_title">Période de rafraîchissement</string>
     <string name="api_refreshPeriod_exchangerateHost">Les taux de change sont mis à jour vers minuit UTC chaque jour ouvrable.</string>
     <string name="api_refreshPeriod_frankfurterApp">Les données sont mises à jour vers 16h00 CET chaque jour ouvrable.</string>
     <string name="api_refreshPeriod_ferEe">Les tarifs sont mis à jour chaque jour ouvrable.</string>
+    <string name="api_refreshPeriod_inforEuro">Les taux indiqués sont les taux du marché du deuxième au dernier jour du mois précédent, tels qu’indiqués par la Banque centrale européenne ou, selon la disponibilité, communiqués par les délégations ou d’autres sources appropriées à une date proche.</string>
     <!-- about -->
     <string name="category_about">À propos de cette application</string>
     <string name="disclaimer_title">Exclusion de responsabilité</string>

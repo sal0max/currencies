@@ -4,6 +4,7 @@ Currencies is a simple and straightforward currency converter.It is not intended
    - exchangerate.host with over 160 currencies
    - frankfurter.app with over 30 currencies, provided by the European Central Bank
    - fer.ee as an alternative to frankfurter.app with the same currencies
+   - InforEuro provides the European Commission’s official monthly accounting rates for the euro and over 150 corresponding conversion rates
 - The UI is simple and pure Material 3 Design.
 - Exchange rate history: Check out the chart for the past year, to see how the currencies have developed.
 - Historical rates: You can use rates from prior dates.

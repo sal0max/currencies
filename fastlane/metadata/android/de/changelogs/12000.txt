@@ -1,0 +1,1 @@
+- Neue zusätzliche API: InforEuro bietet den offiziellen monatlichen Buchungskurs der Europäischen Kommission für den Euro und entsprechenden Umrechnungskurse für über 150 andere Währungen.

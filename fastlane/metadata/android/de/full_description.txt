@@ -4,6 +4,7 @@ Currencies ist ein schlichter Währungsrechner für Android. ist ein praktischer
    - exchangerate.host mit über 160 Währungen
    - frankfurter.app mit über 30 Währungen, bereitgestellt direkt von der Europäischen Zentralbank
    - fer.ee als eine Alternative zu frankfurter.app, mit denselben Währungen
+   - InforEuro bietet den offiziellen monatlichen Buchungskurs der Europäischen Kommission für den Euro und entsprechenden Umrechnungskurse für über 150 andere Währungen
 - Das User-Interface is schlicht und echtes Material 3 Design.
 - Kursverlauf: Schaue das Diagramm des letzten Jahres an, um zu sehen, wie sich eine Währung entwickelt hat.
 - Historische Daten: Du kannst Wechselkurse eines früheren Datums auswählen.

@@ -51,10 +51,12 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> získává kurzy ze spousty poskytovatelů finančních dat a bank, včetně Evropské centrální banky. Všechna data o kurzech jsou doručena v datech středových saze. Kurzy středových sazeb jsou určeny vypočítáním průměrného mediánu nabídky a poptávky.\n<b>Je zahrnuto přibližně 160 měn.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sleduje referenční směnné kurzy zveřejňované Evropskou centrální bankou.\n<b>Je zahrnuto přibližně 30 měn.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> je poměrně nová služba, která sleduje referenční směnné kurzy zveřejňované Evropskou centrální bankou (podobně jako Frankfurter.app).\n<b>Je zahrnuto přibližně 30 měn.</b></string>
+    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_cs"><b>InforEuro</b></a> zajišťuje Evropské komisi oficiální měsíční účetní kurz eura a přepočítací koeficienty, jak je stanoví účetní Evropské komise v souladu s článkem 19 finančního nařízení.\nTyto koeficienty se používají k výpočtu částek na úhradu výdajů, příspěvků na pokrytí nákladů na cestu a pobyt externistů, kteří se u Evropské komise účastní zasedání, pohovorů atp.\n<b>Je zahrnuto přibližně 150 měn.</b></string>
     <string name="api_refreshPeriod_title">Doba obnovení</string>
     <string name="api_refreshPeriod_exchangerateHost">Směnné kurzy jsou aktualizovány každý pracovní den kolem půlnoci UTC.</string>
     <string name="api_refreshPeriod_frankfurterApp">Data jsou aktualizována každý pracovní den kolem 16:00 středoevropského času.</string>
     <string name="api_refreshPeriod_ferEe">Kurzy jsou aktualizovány každý pracovní den.</string>
+    <string name="api_refreshPeriod_inforEuro">Uvedené sazby představují tržní kurzy platné pro druhý až poslední den v předchozím měsíci, jak je stanovila Evropská centrální banka nebo je v závislosti na dostupnosti poskytly delegace či jiné relevantní zdroje k tomuto datu.</string>
     <!-- about -->
     <string name="category_about">O této aplikaci</string>
     <string name="disclaimer_title">Odmítnutí odpovědnosti</string>
