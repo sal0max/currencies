@@ -284,7 +284,7 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
      * the total base value, converted to double (internal is string)
      */
     internal fun getCurrentBaseValueAsNumber(): LiveData<Double> {
-        return Transformations.map(currentBaseValue) {
+        return currentBaseValue.map {
             it?.toBigDecimal()?.toDouble() ?: 0.0
         }
     }
@@ -318,7 +318,7 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
      * the nicely formatted calculation string: e.g. 4 + 2.2 - 4 / 2
      */
     internal fun getCalculationInputFormatted(): LiveData<String?> {
-        return Transformations.map(currentCalculationValueText) {
+        return currentCalculationValueText.map {
             it?.replace(".", getDecimalSeparator(app))
         }
     }
@@ -376,7 +376,7 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
      * the total destination value, converted to double (internal is string)
      */
     internal fun getResultAsNumber(): LiveData<Double> {
-        return Transformations.map(result) {
+        return result.map {
             it?.toBigDecimal()?.toDouble() ?: 0.0
         }
     }

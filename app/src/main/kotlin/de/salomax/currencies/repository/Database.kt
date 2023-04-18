@@ -4,7 +4,6 @@ import android.content.Context
 import android.content.Context.MODE_PRIVATE
 import android.content.SharedPreferences
 import androidx.lifecycle.LiveData
-import androidx.lifecycle.Transformations
 import androidx.lifecycle.map
 import de.salomax.currencies.model.ApiProvider
 import de.salomax.currencies.model.Currency
@@ -190,7 +189,7 @@ class Database(context: Context) {
     }
 
     fun getApiProviderAsync(): LiveData<ApiProvider> {
-        return Transformations.map(SharedPreferenceIntLiveData(prefs, keyApi, defaultProvider.number)) {
+        return SharedPreferenceIntLiveData(prefs, keyApi, defaultProvider.number).map {
             val provider = ApiProvider.fromNumber(it)
             if (provider == null)
                 setApiProvider(defaultProvider)

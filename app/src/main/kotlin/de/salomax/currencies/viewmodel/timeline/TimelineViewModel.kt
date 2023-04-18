@@ -88,7 +88,7 @@ class TimelineViewModel(
      */
 
     fun getTitle(): LiveData<Spanned> {
-        return Transformations.map(dbLiveItems) {
+        return dbLiveItems.map {
             if (it == null)
                 SpannedString("")
             else
@@ -112,13 +112,13 @@ class TimelineViewModel(
     }
 
     fun getProvider(): LiveData<CharSequence?> {
-        return Transformations.map(dbLiveItems) {
+        return dbLiveItems.map {
             it?.provider?.getName(getApplication())
         }
     }
 
     fun getRates(): LiveData<Map<LocalDate, Rate>?> {
-        return Transformations.map(dbLiveItems) {
+        return dbLiveItems.map {
             it?.rates
         }
     }
