@@ -1,9 +1,0 @@
-apply plugin: 'kotlin'
-
-dependencies {}
-
-compileKotlin {
-    kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11
-    }
-}
