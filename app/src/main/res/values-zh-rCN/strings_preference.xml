@@ -38,6 +38,7 @@
     <string name="language_nl">荷兰文</string>
     <string name="language_pl">波兰文</string>
     <string name="language_pt_BR">葡萄牙文（巴西）</string>
+    <string name="language_ru">俄文</string>
     <string name="language_sv">瑞典文</string>
     <string name="language_tr">土耳其文</string>
     <string name="language_uk">乌克兰文</string>
@@ -50,10 +51,12 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> 的货币汇率来自于各种金融数据提供商和银行，包括欧洲中央银行。 所有的汇率数据都是以中点数据的形式交付。中点汇率是通过计算买入和卖出的平均中点汇率确定的。\n<b>包括大约160种货币的数据。</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 跟踪欧洲中央银行公布的参考汇率。\n<b>包括大约30种货币。</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> 是新汇率源, 和Frankfurter.app一样追踪来自欧洲中央银行的数据。\n<b>包括大约30种货币。</b></string>
+
     <string name="api_refreshPeriod_title">更新周期</string>
     <string name="api_refreshPeriod_exchangerateHost">汇率在每个工作日的UTC 0点更新。</string>
     <string name="api_refreshPeriod_frankfurterApp">数据会在每个工作日的16:00 （UTC+1）更新。</string>
     <string name="api_refreshPeriod_ferEe">数据会在工作日更新。</string>
+
     <!-- about -->
     <string name="category_about">关于这个应用</string>
     <string name="disclaimer_title">免责声明</string>

@@ -38,10 +38,12 @@
     <string name="language_nl">Belanda</string>
     <string name="language_pl">Polski</string>
     <string name="language_pt_BR">Portugis (Brasil)</string>
+
     <string name="language_sv">Swedia</string>
     <string name="language_tr">Turki</string>
     <string name="language_uk">Ukraina</string>
     <string name="language_vi">Vietnam</string>
+
     <!-- api -->
     <string name="category_api">Nilai tukar</string>
     <string name="api_title">Penyedia data</string>
@@ -49,10 +51,12 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> menerima nilai tukar mata uang dari berbagai penyedia data keuangan dan bank, termasuk Bank Sentral Eropa (European Central Bank). Semua data nilai tukar disampaikan dalam data titik tengah. Titik tengah ditentukan dengan menghitung rata-rata Bid dan Ask.\n<b>Sekitar 160 mata uang tersedia.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> memantau nilai valas yang dipublikasikan oleh Bank Sentral Eropa (European Central Bank).\n<b>Sekitar 30 mata uang tersedia.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> adalah layanan yang relatif lebih baru, yang (seperti Frankfurter.app) memantau nilai valas yang dipublikasikan oleh Bank Sentral Eropa (European Central Bank).\n<b>Sekitar 30 mata uang tersedia.</b></string>
+
     <string name="api_refreshPeriod_title">Waktu pembaruan</string>
     <string name="api_refreshPeriod_exchangerateHost">Nilai tukar diperbarui pada tengah malam UTC setiap hari kerja.</string>
     <string name="api_refreshPeriod_frankfurterApp">Data diperbarui sekitar pukul 16.00 CET setiap hari kerja.</string>
     <string name="api_refreshPeriod_ferEe">Nilai tukar diperbarui setiap hari kerja.</string>
+
     <!-- about -->
     <string name="category_about">Tentang aplikasi ini</string>
     <string name="disclaimer_title">Peringatan</string>
@@ -61,4 +65,6 @@
     <string name="donate_summary">Berdonasi melalui PayPal</string>
     <string name="rate_title">Nilai aplikasi ini</string>
     <string name="rate_summary">Jika Anda mau, Anda dapat membantu orang lain menemukan Currencies. Klik di sini untuk menilai aplikasi di Google Play.</string>
+
+
 </resources>

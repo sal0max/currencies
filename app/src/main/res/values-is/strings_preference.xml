@@ -38,10 +38,12 @@
     <string name="language_nl">Hollenska</string>
     <string name="language_pl">Pólska</string>
     <string name="language_pt_BR">Brasílísk Portúgalska</string>
+    <string name="language_ru">Rússneska</string>
     <string name="language_sv">Sænska</string>
     <string name="language_tr">Tyrkneska</string>
     <string name="language_uk">Úkraínska</string>
     <string name="language_vi">Víetnamska</string>
+    <string name="language_zh_CN">Einfölduð kínverska</string>
     <!-- api -->
     <string name="category_api">Gengi</string>
     <string name="api_title">Gagnaveita</string>
@@ -49,10 +51,12 @@
 
 
 
+
     <string name="api_refreshPeriod_title">Endurnýjunartímabil</string>
     <string name="api_refreshPeriod_exchangerateHost">Gengi eru uppfærð um miðnætti UTC alla virka daga.</string>
     <string name="api_refreshPeriod_frankfurterApp">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
     <string name="api_refreshPeriod_ferEe">Gengi eru uppfærð alla virka daga.</string>
+
     <!-- about -->
     <string name="category_about">Um forritið</string>
     <string name="disclaimer_title">Fyrirvari</string>

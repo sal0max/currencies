@@ -38,10 +38,12 @@
     <string name="language_nl">הולנדית</string>
     <string name="language_pl">פולנית</string>
     <string name="language_pt_BR">פורטוגזית (ברזיל)</string>
+
     <string name="language_sv">שוודית</string>
     <string name="language_tr">טורקית</string>
     <string name="language_uk">אוקראינית</string>
     <string name="language_vi">וייטנאמית</string>
+
     <!-- api -->
     <string name="category_api">שערי חליפין</string>
     <string name="api_title">ספק נתונים</string>
@@ -49,10 +51,12 @@
 
 
 
+
     <string name="api_refreshPeriod_title">פער לרענון</string>
     <string name="api_refreshPeriod_exchangerateHost">שערי החליפין מעודכנים בסביבות חצות לפי UTC בכל יום עבודה.</string>
     <string name="api_refreshPeriod_frankfurterApp">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
     <string name="api_refreshPeriod_ferEe">השערים מתעדכנים בכל יום עבודה.</string>
+
     <!-- about -->
     <string name="category_about">על היישומון הזה</string>
     <string name="disclaimer_title">כתב ויתור</string>
@@ -61,4 +65,6 @@
     <string name="donate_summary">תרומה דרך PayPal</string>
     <string name="rate_title">דירוג היישומון</string>
     <string name="rate_summary">לבחירתך, אפשר לסייע לאחרים להיחשף ליישומון. לחיצה כאן תוביל אותך לדירוג ב־Google Play.</string>
+
+
 </resources>

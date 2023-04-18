@@ -38,10 +38,12 @@
     <string name="language_nl">Tiếng Hà Lan</string>
     <string name="language_pl">Tiếng Ba Lan</string>
     <string name="language_pt_BR">Tiếng Bồ Đào Nha (Brasil)</string>
+    <string name="language_ru">Tiếng Nga</string>
     <string name="language_sv">Tiếng Thụy Điển</string>
     <string name="language_tr">Tiếng Thổ Nhĩ Kỳ</string>
     <string name="language_uk">Tiếng Ukraina</string>
     <string name="language_vi">Tiếng Việt</string>
+    <string name="language_zh_CN">Tiếng Trung giản thể</string>
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
@@ -49,10 +51,12 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> lấy tỉ lệ tiền tệ từ nhiều nhà cung cấp dữ liệu và ngân hàng khác nhau, bao gồm cả Ngân hàng trung ương châu Âu. Tất cả dữ liệu tỉ lệ chuyển đổi được đưa đến dưới dạng dữ liệu điểm giữa. Tỉ lệ điểm giữa được xác định bằng cách tính trung bình của Bid và Ask.\n<b>Có khoảng 160 tiền tệ.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> là một dịch vụ tương đối mới, nó (giống Frankfurter.app) theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
+
     <string name="api_refreshPeriod_title">Khoảng thời gian làm mới</string>
     <string name="api_refreshPeriod_exchangerateHost">Tỉ lệ chuyển đổi được cập nhật khoảng nửa đêm theo UTC mỗi ngày làm việc.</string>
     <string name="api_refreshPeriod_frankfurterApp">Dữ liệu được cập nhật khoảng 16:00 theo CET mỗi ngày làm việc.</string>
     <string name="api_refreshPeriod_ferEe">Tỉ lệ được cập nhật mỗi ngày làm việc.</string>
+
     <!-- about -->
     <string name="category_about">Giới thiệu về ứng dụng</string>
     <string name="disclaimer_title">Miễn trừ trách nhiệm</string>

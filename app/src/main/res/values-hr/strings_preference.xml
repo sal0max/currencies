@@ -38,10 +38,12 @@
     <string name="language_nl">nizozemski</string>
     <string name="language_pl">poljski</string>
     <string name="language_pt_BR">portugalski (brazilski)</string>
+    <string name="language_ru">ruski</string>
     <string name="language_sv">švedski</string>
     <string name="language_tr">turski</string>
     <string name="language_uk">ukrajinski</string>
     <string name="language_vi">vijetnamski</string>
+    <string name="language_zh_CN">kineski (pojednostavljeni)</string>
     <!-- api -->
     <string name="category_api">Tečajne liste</string>
     <string name="api_title">Pružatelj podataka</string>

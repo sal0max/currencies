@@ -38,10 +38,12 @@
     <string name="language_nl">Flemenkçe</string>
     <string name="language_pl">Lehçe</string>
     <string name="language_pt_BR">Portekizce (Brezilya)</string>
+    <string name="language_ru">Rusça</string>
     <string name="language_sv">İsveççe</string>
     <string name="language_tr">Türkçe</string>
     <string name="language_uk">Ukraynaca</string>
     <string name="language_vi">Vietnamca</string>
+    <string name="language_zh_CN">Çince (Basitleştirilmiş)</string>
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcısı</string>
@@ -49,10 +51,12 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> döviz kurlarını Avrupa Merkez Bankası\'nın da dahil olduğu güvenilir banka ve sağlayıcılardan alır. Tüm döviz kurları orta nokta verisi olarak alınır. Orta nokta oranları Bid ve Ask\'ın ortalama medyanı hesaplanarak belirlenir.\n <b>Yaklaşık 160 para birimi bulunmaktadır.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a>, Avrupa Merkez Bankası tarafından yayınlanan gösterge niteliğindeki döviz (forex) kurlarını esas alır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> (tıpkı Frankfurter.app gibi) Avrupa Merkez Bankası tarafından yayınlanan gösterge döviz (forex) kurlarını esas alan, kısmen yeni bir veri sağlayıcısıdır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
+
     <string name="api_refreshPeriod_title">Güncelleme sıklığı</string>
     <string name="api_refreshPeriod_exchangerateHost">Döviz kurları her iş gününde gece yarısı (UTC) civarında güncellenir.</string>
     <string name="api_refreshPeriod_frankfurterApp">Veri güncellemesi her iş günü 16:00 (CET) civarında gerçekleşir.</string>
     <string name="api_refreshPeriod_ferEe">Kurlar her iş günü güncellenir.</string>
+
     <!-- about -->
     <string name="category_about">Uygulama hakkında</string>
     <string name="disclaimer_title">Sorumluluk Reddi</string>

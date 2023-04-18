@@ -7,50 +7,50 @@
     <string name="fee_summary">W zależności od umowy dotyczącej Twojej karty kredytowej, Twój bank może pobrać dodatkową opłatę za wszelkie transakcje zagraniczne. Tutaj możesz podać jej wysokość. Zostanie ona dodana do sumy do zapłaty, dzięki czemu będziesz wiedzieć ile <i>rzeczywiście</i> zapłacisz.</string>
     <string name="previewConversion_title">Podgląd konwersji</string>
     <string name="previewConversion_summary">Pokaż obecny kurs w ekranie wyboru waluty.</string>
-
-
+    <string name="extendedKeypad_title">Rozszerzona klawiatura</string>
+    <string name="extendedKeypad_summary">Dodaj dwa dodatkowe przyciski: <b>00</b>&nbsp;i&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Ekran</string>
     <string name="system_default">Ustawienie domyślne systemu</string>
     <string name="theme_title">Motyw</string>
     <string name="theme_option_light">Jasny</string>
     <string name="theme_option_dark">Ciemny</string>
-
+    <string name="pure_black_enabled_title">OLEDowa czerń</string>
     <string name="pure_black_enabled_summary">Użyj samej czerni w ciemnym motywie</string>
     <!-- languages -->
     <string name="language_title">Język aplikacji</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="language_ar">Arabski</string>
+    <string name="language_bg">Bułgarski</string>
+    <string name="language_bn">Bengalski</string>
+    <string name="language_ca">Kataloński</string>
+    <string name="language_cs">Czeski</string>
+    <string name="language_de">Niemiecki</string>
+    <string name="language_el">Grecki</string>
+    <string name="language_en">Angielski</string>
+    <string name="language_es">Hiszpański</string>
+    <string name="language_fr">Francuski</string>
+    <string name="language_hr">Croatian</string>
+    <string name="language_hu">Węgierski</string>
+    <string name="language_in">Indonezyjski</string>
+    <string name="language_is">Islandzki</string>
+    <string name="language_it">Włoski</string>
+    <string name="language_iw">Hebrajski</string>
+    <string name="language_nb">Norweski</string>
+    <string name="language_nl">Holenderski</string>
+    <string name="language_pl">Polski</string>
+    <string name="language_pt_BR">Portugalski (Brazylia)</string>
+    <string name="language_ru">Rosyjski</string>
+    <string name="language_sv">Szwedzki</string>
+    <string name="language_tr">Turecki</string>
+    <string name="language_uk">Ukraiński</string>
+    <string name="language_vi">Wietnamski</string>
+    <string name="language_zh_CN">Chiński (uproszczony)</string>
     <!-- api -->
     <string name="category_api">Kursy walut</string>
-
+    <string name="api_title">Dostawca danych</string>
     <string name="api_about_title">O %s</string>
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> jest zewnętrznym dostawcą usługi dostarczającej informacje na temat różnych banków, nawet Europejskiego Banku Centralnego. Wszystkie dane są dostarczane w danych środkowych. Dane środkowe są obliczane na podstawie mediany <i>Bid and Ask</i>.\n<b>Około 160 walut jest zawartych.</b></string>
-
-
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> śledzi referencyjne kursy wymiany walut (forex) publikowane przez Europejski Bank Centralny.\n<b>Uwzględniono około 30 walut.</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> jest stosunkowo nową usługą, która (podobnie jak Frankfurter.app) śledzi kursy referencyjnej wymiany walut (Forex) publikowane przez Europejski Bank Centralny.\n<b>Uwzględniono około 30 walut.</b></string>
     <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_pl"><b>InforEuro</b></a> podaje oficjalny miesięczny kurs księgowy euro Komisji Europejskiej i kursy wymiany ustalone przez jej księgowego zgodnie z art. 19 rozporządzenia finansowego.\nKursy te wykorzystuje się do obliczania zwrotu wydatków oraz kosztów podróży lub pobytu osób z zewnątrz, które biorą udział w spotkaniach, rozmowach kwalifikacyjnych i innych wydarzeniach na zaproszenie Komisji Europejskiej.\n<b>Około 150 walut jest zawartych.</b></string>
     <string name="api_refreshPeriod_title">Okres odświeżenia</string>
     <string name="api_refreshPeriod_exchangerateHost">Kursy walut aktualizowane są każdego dnia roboczego o północy czasu Greenwich.</string>
@@ -63,7 +63,8 @@
     <string name="disclaimer_summary">Mimo tego że aplikacja jest poddawana ścisłym testom, <b>nie możemy zagwarantować że podane dane mogą być zgodne z prawdą.</b> Kursy walut są podawane przez zewnętrznego dostawcę usługi, a ta nie jest w stanie zagwarantować aktualności tych danych.\nDodatkowo, podane kursy - nawet jeżeli prawidłowe, mogą się różnić od tych stosowanych przez Twój bank.\nNa sam koniec: błędy się zdarzają. Nigdy nie ufaj nikomu bezgranicznie. Mówiąc to, mam na myśli że nie wydałbym tej aplikacji gdybym miał złe przeczucie co do jej poprawnego działania.</string>
     <string name="donate_title">Wesprzyj dewelopera</string>
     <string name="donate_summary">Wesprzyj za pomocą PayPala</string>
-
-
-
+    <string name="rate_title">Oceń tę aplikację</string>
+    <string name="rate_summary">Jeśli chcesz, możesz pomóc innym w odkrywaniu aplikacji Currencies. Kliknij tutaj, aby ocenić aplikację w Google Play.</string>
+    <string name="category_versioninfo">Informacje o werski</string>
+    <string name="title_changelog">Dziennik zmian</string>
 </resources>

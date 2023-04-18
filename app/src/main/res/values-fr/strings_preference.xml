@@ -38,10 +38,12 @@
     <string name="language_nl">Néerlandais</string>
     <string name="language_pl">Polonais</string>
     <string name="language_pt_BR">Portugais (Brésil)</string>
+    <string name="language_ru">Russe</string>
     <string name="language_sv">Suédois</string>
     <string name="language_tr">Turc</string>
     <string name="language_uk">Ukrainien</string>
     <string name="language_vi">Vietnamien</string>
+    <string name="language_zh_CN">Chinois (simplifié)</string>
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>

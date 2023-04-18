@@ -16,7 +16,34 @@
     <string name="theme_option_dark">Тъмен</string>
     <string name="pure_black_enabled_title">OLED черно</string>
     <string name="pure_black_enabled_summary">Използвай чисто черно в тъмен режим</string>
+    <!-- languages -->
     <string name="language_title">Език на приложението</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- api -->
     <string name="category_api">Обмени курсове</string>
     <string name="api_title">Източник на данни</string>
@@ -38,4 +65,6 @@
     <string name="donate_summary">Дари чрез PayPal</string>
     <string name="rate_title">Оцени това приложение</string>
     <string name="rate_summary">Ако искаш, можеш да помогнеш на другите да открият Currencies. Натисни тук да оцениш приложението в Google Play.</string>
+
+
 </resources>

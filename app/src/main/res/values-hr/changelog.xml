@@ -1,5 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.19.0">
+        <item>Poboljšanja UI-ja.</item>
+        <item>Novi jezici: kineski 🇨🇳🇹🇼🇸🇬 i ruski 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>Novi jezik: ukrajinski 🇺🇦! Puno hvala, Bogdane!</item>
+        <item>Kuba: Dodan kubanski peso (CUP) umjesto napuštenog kubanskog konvertibilnog pesa (CUC)</item>
+        <item>Mnogi prijevodi su dorađeni. Puno hvala svim volonterima!</item>
+    </string-array>
+
     <string-array name="changelog_1.18.1">
         <item>Novi jezik: hrvatski 🇭🇷🇧🇦. Izvrsno odrađeno, Ivane!</item>
     </string-array>

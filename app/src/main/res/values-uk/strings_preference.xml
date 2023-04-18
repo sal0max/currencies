@@ -38,10 +38,12 @@
     <string name="language_nl">Нідерландська</string>
     <string name="language_pl">Польська</string>
     <string name="language_pt_BR">Португальська (Бразилія)</string>
+    <string name="language_ru">Кацапська</string>
     <string name="language_sv">Шведська</string>
     <string name="language_tr">Турецька</string>
     <string name="language_uk">Українська</string>
-    <string name="language_vi">В\'єтнамська</string>
+    <string name="language_vi">В’єтнамська</string>
+    <string name="language_zh_CN">Китайська (спрощена)</string>
     <!-- api -->
     <string name="category_api">Курси обміну</string>
     <string name="api_title">Постачальник даних</string>
@@ -49,14 +51,16 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> отримує курси валют від різних постачальників фінансових даних і банків, зокрема Європейського центрального банку. Усі дані про обмінний курс надаються в середніх значеннях. Середні ставки визначаються шляхом розрахунку середньої медіани ставок купівлі та продажу.\n<b>Включено близько 160 валют.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> відстежує довідкові обмінні курси (форекс), опубліковані Європейським центральним банком.\n<b>Включено близько 30 валют.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> є відносно новою службою, яка (як і Frankfurter.app) відстежує довідковий обмін (форекс) ставки, які публікує Європейський центральний банк.\n<b>Включено близько 30 валют.</b></string>
+
     <string name="api_refreshPeriod_title">Період оновлення</string>
     <string name="api_refreshPeriod_exchangerateHost">Курси обміну оновлються приблизно о півночі за UTC, кожного робочого дня.</string>
     <string name="api_refreshPeriod_frankfurterApp">Дані оновлюються близько 16:00 CET (центрально європейський час) кожного робочого дня.</string>
     <string name="api_refreshPeriod_ferEe">Дані оновлюються кожного робочого дня.</string>
+
     <!-- about -->
     <string name="category_about">Про цей додаток</string>
     <string name="disclaimer_title">Відмова від відповідальності</string>
-    <string name="disclaimer_summary">Незважаючи на те, що програма дуже ретельно написана та протестована, <b>немає жодної гарантії, що дані, які вона показує, правильні</b>. Курси обміну надає третя сторона, і ця програма не може гарантувати, що дані правдиві та актуальні.\nКрім того, надані курси (якщо правильні) можуть відрізнятися від тих, які використовує ваш банк.\nНарешті: помилки трапляються. Ніколи нікому сліпо не вірте! З огляду на це, будьте впевнені, я б не випускав цю програму, якби мав сумніви, що вона працює належним чином.</string>
+    <string name="disclaimer_summary">Незважаючи на те, що програма дуже ретельно написана та протестована, <b>немає жодної гарантії, що дані, які вона показує, правильні</b>. Курси обміну надає третя сторона, і ця програма не може гарантувати, що дані правдиві та актуальні.\nКрім того, надані курси (якщо правильні) можуть відрізнятися від тих, які використовує ваш банк.\nЗрештою: помилки трапляються. Ніколи нікому сліпо не вірте! З огляду на це, будьте впевнені, я б не випускав цю програму, якби мав сумніви, що вона працює належним чином.</string>
     <string name="donate_title">Підтримати розробника</string>
     <string name="donate_summary">Пожертвування через PayPal</string>
     <string name="rate_title">Оцініть цей додаток</string>

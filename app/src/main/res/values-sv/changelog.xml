@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.19.0">
+        <item>Flera UI-förbättringar</item>
+        <item>-Nya språk: Kinesiska 🇨🇳🇹🇼🇸🇬 och Ryska 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
     <string-array name="changelog_1.18.2">
         <item>Nytt språk: ukrainska 🇺🇦! Stort tack till Bogdan!</item>
         <item>Kuba: Ge kubansk peso (CUP) istället för den föråldrade kubanska konvertibla peson (CUC)</item>

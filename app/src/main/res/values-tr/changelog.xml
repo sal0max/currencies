@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.19.0">
+        <item>Çeşitli kullanıcı arayüzü iyileştirmeleri.</item>
+        <item>Yeni diller: Çince 🇨🇳🇹🇼🇸🇬 ve Rusça 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
     <string-array name="changelog_1.18.2">
         <item>Yeni dil: Ukraynaca 🇺🇦! Bogdan\'a çok teşekkürler!</item>
         <item>Küba: Eski Cuban convertible peso (CUC) yerine yeni Cuban Peso (CUP) getirildi.</item>

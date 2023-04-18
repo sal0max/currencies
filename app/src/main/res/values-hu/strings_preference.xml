@@ -16,7 +16,34 @@
     <string name="theme_option_dark">Sötét</string>
     <string name="pure_black_enabled_title">OLED fekete</string>
     <string name="pure_black_enabled_summary">Tiszta fekete használata sötét módban</string>
+    <!-- languages -->
     <string name="language_title">Az alkalmazás nyelve</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- api -->
     <string name="category_api">Árfolyamok</string>
     <string name="api_title">Adatszolgáltató</string>
@@ -38,4 +65,6 @@
     <string name="donate_summary">Adományozás PayPal-on keresztül</string>
     <string name="rate_title">Értékeld az alkalmazást</string>
     <string name="rate_summary">Ha szeretnéd, segíthetsz másoknak felfedezni a Currencies-t. Kattints ide az alkalmazás értékeléséhez a Google Play-en.</string>
+
+
 </resources>

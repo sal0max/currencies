@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.19.0">
+        <item>UI方面的一些改进</item>
+        <item>新的语言: 中文 🇨🇳🇹🇼🇸🇬 和 俄文 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
     <string-array name="changelog_1.18.2">
         <item>新语言：乌克兰人!🇺🇦!非常感谢Bogdan！</item>
         <item>古巴：提供古巴比索（CUP），而不是过时的古巴可兑换比索（CUC）</item>
