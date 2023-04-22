@@ -2,8 +2,9 @@ Currencies je jednoduchý a přehledný převodník měn.Není určen pro finan�
 
 - Aplikace podporuje všechny relevantní měny. Můžete si vybrat mezi několika poskytovateli směnných kurzů:
    - exchangerate.host s více než 160 měnami
-   - frankfurter.app s více než 30 měnami, které poskytuje Evropská centrální banka.
-   - fer.ee jako alternativa k frankfurter.app se stejnými měnami.
+   - frankfurter.app s více než 30 měnami, které poskytuje Evropská centrální banka
+   - fer.ee jako alternativa k frankfurter.app se stejnými měnami
+   - InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících přepočítacích kurzů.
 - Uživatelské rozhraní je jednoduché a v čistém designu Material 3.
 - Historie směnných kurzů: Podívejte se na graf za poslední rok a zjistěte, jak se měny vyvíjely.
 - Historické kurzy: Můžete použít kurzy z předchozích dat.
