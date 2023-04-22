@@ -2,6 +2,7 @@
 <resources>
     <string-array name="changelog_1.20.0">
         <item>New additional API: InforEuro provides the European Commission’s official monthly accounting rates for the euro and over 150 corresponding conversion rates.</item>
+        <item>Fixed layout issues with some particular foldable devices.</item>
     </string-array>
 
     <string-array name="changelog_1.19.0">

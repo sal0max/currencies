@@ -1,1 +1,2 @@
 - New additional API: InforEuro provides the European Commission’s official monthly accounting rates for the euro and over 150 corresponding conversion rates.
+- Fixed layout issues with some particular foldable devices.

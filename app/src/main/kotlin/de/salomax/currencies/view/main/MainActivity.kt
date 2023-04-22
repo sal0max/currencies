@@ -486,20 +486,21 @@ class MainActivity : BaseActivity() {
                     .collect { newLayoutInfo ->
                         newLayoutInfo.displayFeatures.filterIsInstance(FoldingFeature::class.java)
                             .firstOrNull ()?.let { foldingFeature ->
-                                // portrait
-                                if (foldingFeature.orientation == FoldingFeature.Orientation.VERTICAL) {
-                                    if (foldingFeature.state == FoldingFeature.State.FLAT || foldingFeature.state == FoldingFeature.State.HALF_OPENED)
-                                        findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.HORIZONTAL
-                                    else
+                                // flat
+                                if (foldingFeature.state == FoldingFeature.State.FLAT) {
+                                    // portrait
+                                    if (resources.configuration.screenHeightDp >= resources.configuration.screenWidthDp)
                                         findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.VERTICAL
-                                }
-                                // landscape
-                                else {
-                                    if (foldingFeature.state == FoldingFeature.State.HALF_OPENED)
-                                        findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.VERTICAL
+                                    // landscape
                                     else
                                         findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.HORIZONTAL
                                 }
+                                // half & portrait
+                                else if (foldingFeature.orientation == FoldingFeature.Orientation.VERTICAL)
+                                    findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.HORIZONTAL
+                                // half & landscape
+                                else
+                                    findViewById<LinearLayout>(R.id.main_root).orientation = LinearLayout.VERTICAL
                             }
                     }
             }
