@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.0">
+        <item>Nové doplňkové rozhraní API: InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících konverzních kurzů.</item>
+        <item>Opraveny problémy s rozložením u některých konkrétních skládacích zařízení.</item>
+    </string-array>
+
     <string-array name="changelog_1.19.0">
         <item>Vylepšení rozhraní</item>
         <item>Nové jazyky: čínština 🇨🇳🇹🇼🇸🇬 a ruština 🇷🇺🇧🇾🇰🇿.</item>

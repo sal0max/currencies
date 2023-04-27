@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.0">
+        <item>Nueva API adicional: InforEuro proporciona los tipos contables mensuales oficiales de la Comisión Europea para el euro y más de 150 tipos de conversión correspondientes.</item>
+        <item>Solucionados problemas de diseño con algunos dispositivos plegables concretos.</item>
+    </string-array>
+
     <string-array name="changelog_1.19.0">
         <item>Varias mejoras en la interfaz de usuario.</item>
         <item>Nuevos idiomas: Chino 🇨🇳🇹🇼🇸🇬 y ruso 🇷🇺🇧🇾🇰🇿.</item>

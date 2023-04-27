@@ -4,6 +4,7 @@ Currencies es un conversor de divisas simple y directo. No está diseñado para 
    - exchangerate.host con más de 160 monedas
    - frankfurter.app con más de 30 monedas, proporcionado por el Banco Central Europeo
    - fer.ee como alternativa a frankfurter.app con las mismas monedas
+   - InforEuro proporciona las tasas contables mensuales oficiales de la Comisión Europea para el euro y más de 150 tasas de conversión correspondientes
 - La interfaz de usuario es simple y puro Material 3 Design.
 - Historial de tipos de cambio: consulte el gráfico del año pasado para ver cómo se han desarrollado las monedas.
 - Tarifas históricas: Puede utilizar tarifas de fechas anteriores.

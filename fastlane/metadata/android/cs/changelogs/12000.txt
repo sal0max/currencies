@@ -1,0 +1,2 @@
+- Nové doplňkové rozhraní API: InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících konverzních kurzů.
+- Opraveny problémy s rozložením u některých konkrétních skládacích zařízení.
