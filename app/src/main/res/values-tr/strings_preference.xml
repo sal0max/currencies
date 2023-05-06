@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Genel Ayarlar</string>
@@ -51,12 +53,10 @@
     <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> döviz kurlarını Avrupa Merkez Bankası\'nın da dahil olduğu güvenilir banka ve sağlayıcılardan alır. Tüm döviz kurları orta nokta verisi olarak alınır. Orta nokta oranları Bid ve Ask\'ın ortalama medyanı hesaplanarak belirlenir.\n <b>Yaklaşık 160 para birimi bulunmaktadır.</b></string>
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a>, Avrupa Merkez Bankası tarafından yayınlanan gösterge niteliğindeki döviz (forex) kurlarını esas alır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> (tıpkı Frankfurter.app gibi) Avrupa Merkez Bankası tarafından yayınlanan gösterge döviz (forex) kurlarını esas alan, kısmen yeni bir veri sağlayıcısıdır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
-
     <string name="api_refreshPeriod_title">Güncelleme sıklığı</string>
     <string name="api_refreshPeriod_exchangerateHost">Döviz kurları her iş gününde gece yarısı (UTC) civarında güncellenir.</string>
     <string name="api_refreshPeriod_frankfurterApp">Veri güncellemesi her iş günü 16:00 (CET) civarında gerçekleşir.</string>
     <string name="api_refreshPeriod_ferEe">Kurlar her iş günü güncellenir.</string>
-
     <!-- about -->
     <string name="category_about">Uygulama hakkında</string>
     <string name="disclaimer_title">Sorumluluk Reddi</string>
@@ -67,4 +67,8 @@
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
     <string name="category_versioninfo">Sürüm bilgisi</string>
     <string name="title_changelog">Değişiklik günlüğü</string>
+    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a>, Avrupa Komisyonu\'nun Euro için resmi aylık muhasebe kurunu ve Mali Tüzüğün 19. maddesi uyarınca Avrupa Komisyonu Muhasebe Sorumlusu tarafından belirlenen dönüşüm oranlarını paylaşır.
+\nBu oranlar, Avrupa Komisyonu\'nun talebi üzerine toplantılar, görüşmeler gibi etkinliklere dışarıdan katılan kişilerin harcamalarının, seyahat veya konaklama masraflarının geri ödenmesine ilişkin tutarları hesaplamak için kullanılır.
+\n<b>Yaklaşık 150 para birimi bulunmaktadır.</b></string>
+    <string name="api_refreshPeriod_inforEuro">Belirtilen oranlar, bir önceki ayın sondan ikinci günü için Avrupa Merkez Bankası tarafından verilen veya mevcudiyete bağlı olarak delegasyonlar ya da diğer uygun kaynaklar tarafından o tarihe yakın bir zamanda sağlanan piyasa oranlarıdır.</string>
 </resources>
