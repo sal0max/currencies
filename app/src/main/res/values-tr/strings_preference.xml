@@ -4,7 +4,7 @@
 ]>
 <resources>
     <!-- main settings -->
-    <string name="category_settings">Genel Ayarlar</string>
+    <string name="category_settings">General Ayala</string>
     <string name="fee_title">Döviz işlem ücreti</string>
     <string name="fee_summary">Bankan, kredi kartı sözleşmene bağlı olarak tüm döviz işlemlerinden bir işlem ücreti alabilir. Bu ücreti buraya girebilirsin. Bu miktar hesaplamaya eklenecek, böylece <i>tam olarak</i> ne kadar ödeme yapacağını öğrenebilirsin.</string>
     <string name="previewConversion_title">Kur oranı önizlemesi</string>
