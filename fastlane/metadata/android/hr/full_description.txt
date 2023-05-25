@@ -4,6 +4,7 @@ Valute jednostavan je pretvarač valuta. Ne služi za financijsko poslovanje u s
    - exchangerate.host s preko 160 valuta
    - frankfurter.app s preko 30 valuta koje objavljuje Europska središnja banka
    - fer.ee kao alternativa za frankfurter.app s istim valutama
+   - InforEuro pruža službene mjesečne obračunske tečajeve Europske komisije za euro i pripadajuće tečajeve više od 150  valuta
 - Korisničko sučelje je jednostavno, čisti Material 3 Design.
 - Povijest tečaja: provjerite tečajeve za zadnjih godinu dana, kako su se kretali tečajevi.
 - Arhiva tečajne liste: koristite se tečajevima na dane u prošlosti.
