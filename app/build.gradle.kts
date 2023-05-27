@@ -83,7 +83,7 @@ android {
 
 dependencies {
     // kotlin
-    implementation("androidx.core:core-ktx:1.10.0")
+    implementation("androidx.core:core-ktx:1.10.1")
     // support libs
     val appCompatVersion = "1.6.1"
     implementation("androidx.appcompat:appcompat:$appCompatVersion")
@@ -96,14 +96,14 @@ dependencies {
     implementation("androidx.preference:preference-ktx:1.2.0")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation("androidx.window:window:1.0.0")
-    implementation("com.google.android.material:material:1.8.0")
+    implementation("com.google.android.material:material:1.9.0")
     // downloader
     val fuelVersion = "2.3.1"
     implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-moshi:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-coroutines:$fuelVersion")
-    val moshiVersion = "1.14.0"
+    val moshiVersion = "1.15.0"
     implementation("com.squareup.moshi:moshi-kotlin:$moshiVersion")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
     // math
