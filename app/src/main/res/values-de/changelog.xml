@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.1">
+        <item>Aktualisierte Übersetzungen.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.0">
         <item>Neue zusätzliche API: InforEuro bietet den offiziellen monatlichen Buchungskurs der Europäischen Kommission für den Euro und entsprechenden Umrechnungskurse für über 150 andere Währungen.</item>
         <item>Layout-Probleme bei einigen speziellen Foldable-Geräten behoben.</item>
