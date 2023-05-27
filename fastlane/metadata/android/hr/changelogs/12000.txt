@@ -1,0 +1,2 @@
+- Novododani API: InforEuro pruža službene mjesečne tečajeve Europske komisije za euro i više od 150 pripadajućih valuta.
+- Ispravljeni problemi s prikazom na određenim preklopivim uređajima.

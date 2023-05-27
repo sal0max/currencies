@@ -1,0 +1,2 @@
+- Yeni ek API: Avrupa Komisyonu'nun Euro için resmi aylık muhasebe oranlarını ve 150'den fazla para birimi için kur oranlarını sağlayan InforEuro
+- Bazı özel katlanabilir cihazlarla ilgili sayfa düzeni sorunları düzeltildi.

@@ -4,6 +4,7 @@ Currencies, finansal işlerinde kullanacağın bir araçtan ziyade daha gündeli
    - 160'dan fazla para birimiyle exchangerate.host
    - Avrupa Merkez Bankas tarafından sağlanan 30'dan fazla para birimiyle frankfurter.app
    - frankfurter.app alternatifi ve aynı para birimlerine sahip fer.ee
+   - Avrupa Komisyonu'nun Euro için resmi aylık muhasebe oranlarını ve 150'den fazla para birimi için kur oranlarını sağlayan InforEuro
 - Basit ve sade tasarıma sahip bir arayüz.
 - Kur geçmişi: Para birimlerinin gelişimlerini görmek için geçmiş yıllara ait grafikleri inceleyebilirsin.
 - Geçmiş kurlar: Geçmiş bir tarihteki kur verilerini kullanabilirsin.

@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.0">
+        <item>Novododani API: InforEuro pruža službene mjesečne tečajeve Europske komisije za euro i više od 150 pripadajućih valuta.</item>
+        <item>Ispravljeni problemi s prikazom na određenim preklopivim uređajima.</item>
+    </string-array>
+
     <string-array name="changelog_1.19.0">
         <item>Poboljšanja UI-ja.</item>
         <item>Novi jezici: kineski 🇨🇳🇹🇼🇸🇬 i ruski 🇷🇺🇧🇾🇰🇿.</item>
