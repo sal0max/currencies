@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.1">
+        <item>Aktualizovány překlady.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.0">
         <item>Nové doplňkové rozhraní API: InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících konverzních kurzů.</item>
         <item>Opraveny problémy s rozložením u některých konkrétních skládacích zařízení.</item>
@@ -167,7 +171,7 @@
 
     <string-array name="changelog_1.5.0">
         <item>Výběr mezi dvěma poskytovateli API: exchangerate.host a frankfurter.app</item>
-        <item>Nyní můžete vývojáře podpořit příspěvkem přes PayPal. Odkaz najdete v nastavení. (Pouze verze pro F-Droid.)</item>
+        <item>Nyní můžete vývojáře podpořit příspěvkem přes PayPal. Odkaz naj dete v Nst a vení. (Pouze verze pro F-Droid.)</item>
         <item>Další vylepšení uživatelského rozhraní</item>
     </string-array>
 
@@ -212,7 +216,7 @@
     </string-array>
 
     <string-array name="changelog_0.2.2">
-        <item>Drobná vylepšení</item>
+        <item>Drobná vylepšen í</item>
     </string-array>
 
     <string-array name="changelog_0.2.1">
