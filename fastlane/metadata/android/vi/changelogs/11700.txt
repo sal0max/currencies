@@ -1,0 +1,1 @@
+- Tính năng mới: Bật chế độ bàn phím mở rộng trong cài đặt để hiển thị các phím gõ nhanh hai số không và ba số không – “00” và “000”, giúp cho việc nhập các loại tiền tệ có nhiều chữ số như đồng rupiad Indonesia, peso Chile, Việt Nam đồng hoặc Won Hàn Quốc.

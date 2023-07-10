@@ -1,0 +1,2 @@
+- Cải thiện xử lý lỗi
+- Thên một số cải thiện nhỏ

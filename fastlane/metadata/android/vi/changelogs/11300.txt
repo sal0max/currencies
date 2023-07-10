@@ -1,0 +1,4 @@
+- Ngôn ngữ mới: Giờ đây bạn đã có thể sử dụng app bằng tiến Ả Rập. Xin cảm ơn Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪
+- Cải thiện một số lỗi trình bày giao diện trong chế độ màn hình ngang cho các ngôn ngữ đọc từ phải sang trái.
+- Sửa lỗi rớt ứng dụng khi nhập giá trị trống vào mục phí.
+- Hiển thị tên nhà cung cấp dữ liệu trong chế độ xem timeline.

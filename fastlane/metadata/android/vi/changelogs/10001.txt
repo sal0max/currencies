@@ -1,0 +1,1 @@
+- Sửa lỗi rớt ứng dụng trên Android 11

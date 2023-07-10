@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.1">
+        <item>Çeviriler güncellendi.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.0">
         <item>Yeni ek API: Avrupa Komisyonu\'nun Euro için resmi aylık muhasebe oranlarını ve 150\'den fazla para birimi için kur oranlarını sağlayan InforEuro</item>
         <item>Bazı özel katlanabilir cihazlarla ilgili sayfa düzeni sorunları düzeltildi.</item>
@@ -68,7 +72,7 @@
     </string-array>
 
     <string-array name="changelog_1.16.1">
-        <item>Çeviri güncellemeleri.</item>
+        <item>Çeviriler güncellendi.</item>
     </string-array>
 
     <string-array name="changelog_1.16.0">

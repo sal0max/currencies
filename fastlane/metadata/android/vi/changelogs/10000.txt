@@ -1,0 +1,3 @@
+- Thêm tiếng Đức 🇩🇪
+- Cải tiến nhỏ: Dung lượng ứng dụng giảm xuống tới 50%
+- Ứng dụng có vẻ khá ổn định: Phát hành phiên bản công khai 1.0!🥳🥳🥳

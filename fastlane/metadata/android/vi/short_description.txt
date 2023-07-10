@@ -1,1 +1,1 @@
-Ứng dụng chuyển đổi tiền tệ theo tỉ lệ cho Android
+Ứng dụng tính và quy đổi tỷ giá ngoại tệ cho Android

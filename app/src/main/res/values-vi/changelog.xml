@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.20.1">
+        <item>Cập nhật một số đoạn dịch thuật.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.0">
+        <item>API mới: “InforEuro” cung cấp hàng tháng cho Ủy Ban Châu Âu tỷ giá kế toán chính thức của đồng euro và hơn 150 tỷ giá hối đoái liên quan.</item>
+        <item>Sửa lỗi giao diện cho một số thiết bị gập cụ thể.</item>
+    </string-array>
+
+    <string-array name="changelog_1.19.0">
+        <item>Một vài cải tiến cho giao diện.</item>
+        <item>Hỗ trợ ngôn ngữ mới: Tiếng Hoa 🇨🇳🇸🇬 và tiếng Nga 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>Ngôn ngữ mới: Tiếng Ukraina🇺🇦! Xin cảm ơn Bogdan!</item>
+        <item>Cuba: Hỗ trợ đồng peso Cuba chính thức (CUP) thay thế cho đồng peso chuyển-đổi (CUC) nay đã không sử dụng nữa.</item>
+        <item>Rất nhiều cải tiến với dịch thuật. Xin cảm ơn tất cả những tình nguyện viên!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>Ngôn ngữ mới: Tiếng Croatia🇭🇷🇧🇦. Làm rất tốt, Ivan!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>Thêm hỗ trợ cho cài đặt ngôn ngữ riêng trong ứng dụng (tính năng mới trên Android 13).</item>
+        <item>Ngoài ra TẤT CẢ thiết bị (kể cả Android 13 trở về trước) đều sẽ có được tùy chọn để đổi ngôn ngữ ngay trong cài đặt của ứng dụng.</item>
+        <item>Ngôn ngữ mới: Tiếng Catalunya 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>Ngôn ngữ mới! Tiếng Iceland, đóng góp bởi nazrin 🇮🇸 Tiếng Bồ Đào Nha (Brasil), đóng góp bởi Cavernosa 🇧🇷 & Tiếng Thụy Điển, đóng góp bởi Samuel 🇸🇪. Quá tuyệt vời!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Tính năng mới: Bật chế độ bàn phím mở rộng trong cài đặt để hiển thị các phím gõ nhanh hai số không và ba số không – “00” và “000”, giúp cho việc nhập các loại tiền tệ có nhiều chữ số như đồng rupiad Indonesia, peso Chile, Việt Nam đồng hoặc Won Hàn Quốc.</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>Một số cải thiện nhỏ để tuân theo chỉ dẫn mới nhất của chuẩn thiết kế Material Design 3 bởi Google.</item>
+        <item>Cập nhật một số bản dịch. Cảm ơn tất cả đã giúp đỡ chúng tôi!</item>
+        <item>Một số cải thiện cho ứng dụng ổn định hơn.</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>Ngôn ngữ mới: Giờ đây bạn đã có thể sử dụng app bằng tiến Ả Rập. Xin cảm ơn Ahmed! 🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>Cải thiện một số lỗi trình bày giao diện trong chế độ màn hình ngang cho các ngôn ngữ đọc từ phải sang trái.</item>
+        <item>Sửa lỗi rớt ứng dụng khi nhập giá trị trống vào mục phí.</item>
+        <item>Hiển thị tên nhà cung cấp dữ liệu trong chế độ xem timeline.</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>Thêm một số cải tiến nhỏ.</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>Ngân hàng của bạn có thể tính phí trên tất cả giao dịch ngoại tệ dựa theo điều khoản trên thẻ tín dụng của bạn. Giờ đây bạn có thể thêm khoản phí đó vào trong máy tính của ứng dụng và biết chắc chắn rằng mình sẽ trả bao nhiêu. 🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Sửa lỗi rớt ứng dụng trên Android 11</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Thêm tiếng Đức 🇩🇪</item>
+        <item>Cải tiến nhỏ: Dung lượng ứng dụng giảm xuống tới 50%</item>
+        <item>Ứng dụng có vẻ khá ổn định: Phát hành phiên bản công khai 1.0!🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Thêm một số cải tiến nhỏ.</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Cải thiện xử lý lỗi</item>
+        <item>Thên một số cải thiện nhỏ</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Thêm tính năng sao chép (copy): Chạm và giữ trên giá trị bạn muốn sao chép</item>
+    </string-array>
+</resources>

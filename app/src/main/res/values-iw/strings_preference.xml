@@ -38,12 +38,12 @@
     <string name="language_nl">הולנדית</string>
     <string name="language_pl">פולנית</string>
     <string name="language_pt_BR">פורטוגזית (ברזיל)</string>
-
+    <string name="language_ru">רוסית</string>
     <string name="language_sv">שוודית</string>
     <string name="language_tr">טורקית</string>
     <string name="language_uk">אוקראינית</string>
     <string name="language_vi">וייטנאמית</string>
-
+    <string name="language_zh_CN">סינית מפושטת</string>
     <!-- api -->
     <string name="category_api">שערי חליפין</string>
     <string name="api_title">ספק נתונים</string>

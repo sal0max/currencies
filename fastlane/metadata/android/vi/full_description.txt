@@ -1,13 +1,13 @@
-Currencies là ứng dụng chuyển đổi tiền tệ đơn giản. Nó không dành cho việc kinh doanh tài chính theo thời gian thực, mà là để làm người bạn đồng hành vd: trong kỳ nghỉ.
+Currencies là một ứng dụng chuyển đổi đơn vị tiền tệ nhanh, gọn, lẹ. Ứng dụng được tạo ra không nhằm phục vụ cho công việc kinh doanh tài chính theo thời gian thực, mà để làm công cụ thuận tiện trong túi bạn để dùng thường ngày hoặc những khi đi du lịch.
 
-- Ứng dụng hỗ trợ tất cả các tiền tệ phổ biến hiện đang được dùng. Bạn có thể chọn giữa nhiều nhà cung cấp tỉ lệ chuyển đổi:
-   - exchangerate.host với hơn 160 tiền tệ
-   - frankfurter.app với hơn 30 tiền tệ, được Ngân hàng trung ương châu Âu cung cấp
-   - fer.ee để thay thế cho frankfurter.app với cùng số tiền tệ đó
-- Giao diện đơn giản, thuần thiết kế Material 3.
-- Lịch sử tỉ lệ: Xem biểu đồ ở năm trước, để xem các tiền tệ đã phát triển thế nào.
-- Tỉ lệ cũ: Bạn có thể sử dụng tỉ lệ từ những ngày trước.
-- Một tính năng lớn là máy tính được tích hợp. Hữu ích vd: nếu bạn muốn chia tiền ăn nhà hàng.
-- Tính phí: thêm phí chuyển đổi tiền nước ngoài có thể tùy chỉnh vào tất cả phép tính (không bắt buộc).
-- Currencies được viết cho Android bằng Kotlin, đặt mục tiêu Android 13 và hỗ trợ chủ đề sáng và tối.
-- Ứng dụng không có quảng cáo và không theo dõi người dùng.
+– Ứng dụng hỗ trợ tất cả các loại tiền tệ phổ biến đang lưu hành. Bạn có thể chọn giữa nhiều nhà cung cấp tỷ giá hối đoái:
+   – “exchangerate.host” với hơn 160 loại tiền tệ
+   – “frankfurter.app” với hơn 30 loại tiền tệ, được Ngân Hàng Trung Ương Châu Âu cung cấp
+   – “fer.ee” để thay thế cho “frankfurter.app” với cùng số lượng tiền tệ
+– Giao diện đơn giản được thiết kế theo chuẩn Material 3.
+– Lịch sử tỷ giá: Xem biểu đồ ở năm trước để xem các loại tiền tệ đã thay đổi như thế nào.
+– Tỷ giá trong quá khứ: Bạn có thể sử dụng tỉ lệ từ những ngày trước.
+– Máy tính được tích hợp: Đây là một tính năng lớn, rất hữu dụng trong những lúc bạn muốn chia tiền như khi đi ăn ở nhà hàng.
+– Máy tính phụ phí: tính thêm phí chuyển đổi tiền nước ngoài, có thể tự thêm vào tất cả phép tính (không bắt buộc).
+– Currencies được lập trình cho Android bằng Kotlin, nhắm đến hệ điệu hành Android  3 và hỗ trợ chế độ sáng và tối.
+– Ứng dụng hoàn toàn không có quảng cáo và không theo dõi người dùng.

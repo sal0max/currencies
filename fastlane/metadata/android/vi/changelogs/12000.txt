@@ -1,0 +1,2 @@
+- API mới: “InforEuro” cung cấp hàng tháng cho Ủy Ban Châu Âu tỷ giá kế toán chính thức của đồng euro và hơn 150 tỷ giá hối đoái liên quan.
+- Sửa lỗi giao diện cho một số thiết bị gập cụ thể.

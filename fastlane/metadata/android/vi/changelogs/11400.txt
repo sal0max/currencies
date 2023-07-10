@@ -1,0 +1,3 @@
+- Một số cải thiện nhỏ để tuân theo chỉ dẫn mới nhất của chuẩn thiết kế Material Design 3 bởi Google.
+- Cập nhật một số bản dịch. Cảm ơn tất cả đã giúp đỡ chúng tôi!
+- Một số cải thiện cho ứng dụng ổn định hơn.
