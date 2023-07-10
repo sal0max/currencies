@@ -7,7 +7,7 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.8.22-1.0.11"
+    id("com.google.devtools.ksp") version "1.9.0-1.0.11"
 }
 
 android {
@@ -112,7 +112,7 @@ dependencies {
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.3.1")
+    testImplementation("org.mockito:mockito-core:5.4.0")
 }
 
 fun getSecret(key: String): String? {
