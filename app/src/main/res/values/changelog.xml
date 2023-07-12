@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.2">
+        <item>Fixed wrong timeline data with InforEuro API.</item>
+        <item>Updated translations.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.1">
         <item>Updated translations.</item>
     </string-array>

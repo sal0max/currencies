@@ -1,0 +1,2 @@
+- Fixed wrong timeline data with InforEuro API.
+- Updated translations.

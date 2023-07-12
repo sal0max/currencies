@@ -1,0 +1,2 @@
+- Fehlerhafte Timeline-Daten bei InforEuro behoben.
+- Aktualisierte Übersetzungen.
