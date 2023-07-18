@@ -1,0 +1,2 @@
+- Opravena špatná data časové osy s InforEuro API.
+- Aktualizovány překlady.

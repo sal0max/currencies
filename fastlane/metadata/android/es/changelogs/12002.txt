@@ -1,0 +1,2 @@
+- Se corrigieron datos incorrectos de la línea de tiempo con la API de InforEuro.
+- Traducciones actualizadas.
