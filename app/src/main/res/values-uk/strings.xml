@@ -10,8 +10,8 @@
     <string name="error_generic">Невідома помилка.</string>
     <string name="error_http">Сервер відповів зі статусом HTTP %d</string>
     <string name="error_timeout">Сервер не відповів своєчасно, або недоступний.</string>
-    <string name="error_no_data">Не можу під\'єднатись до серверу.</string>
-    <string name="error_api_error">Відбулась помилка при виклику API. Будь-ласка спробуйте пізніше.</string>
+    <string name="error_no_data">Неможливо під\'єднатися до сервера.</string>
+    <string name="error_api_error">Сталася помилка при виклику API. Будь ласка, спробуйте пізніше.</string>
     <string name="menu_settings">Налаштування</string>
     <string name="menu_refresh">Оновити курс</string>
     <string name="menu_timeline">Графік зміни курсу</string>
