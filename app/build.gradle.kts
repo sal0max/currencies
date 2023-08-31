@@ -7,7 +7,7 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.9.0-1.0.11"
+    id("com.google.devtools.ksp") version "1.9.10-1.0.13"
 }
 
 android {
@@ -93,7 +93,7 @@ dependencies {
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$livecycleVersion")
-    implementation("androidx.preference:preference-ktx:1.2.0")
+    implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation("androidx.window:window:1.1.0")
     implementation("com.google.android.material:material:1.9.0")
@@ -112,7 +112,7 @@ dependencies {
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.4.0")
+    testImplementation("org.mockito:mockito-core:5.5.0")
 }
 
 fun getSecret(key: String): String? {
