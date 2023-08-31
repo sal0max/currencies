@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>Traductions mises à jour.</item>
+    </string-array>
+
     <string-array name="changelog_1.17.6">
         <item>Nouvelles traductions ! Islandais par nazrin 🇮🇸, portugais (Brésil) par Cavernosa 🇧🇷 et Suédois par Samuel 🇸🇪. Génial !</item>
     </string-array>

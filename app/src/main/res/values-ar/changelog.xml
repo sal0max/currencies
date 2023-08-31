@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>تحديث للترجمات</item>
+    </string-array>
+
     <string-array name="changelog_1.17.5">
         <item>تحسين دقة أسعار الصرف في عرض الجدول الزمني.</item>
         <item>لغة جديدة: البولندية. شكرا جزيلا ، ewm! 🇵🇱</item>

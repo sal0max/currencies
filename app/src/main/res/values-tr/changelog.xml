@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>Çeviriler güncellendi.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.1">
         <item>Çeviriler güncellendi.</item>
     </string-array>

@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>Uppdaterade översättningarna.</item>
+    </string-array>
+
     <string-array name="changelog_1.19.0">
         <item>Flera UI-förbättringar</item>
         <item>-Nya språk: Kinesiska 🇨🇳🇹🇼🇸🇬 och Ryska 🇷🇺🇧🇾🇰🇿.</item>

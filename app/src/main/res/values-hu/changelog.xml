@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>Frissített fordítások.</item>
+    </string-array>
+
     <string-array name="changelog_1.17.0">
         <item>Új funkció: "00" és "000" gombok használatához engedélyezd a Bővített billentyűzet módot a beállításokban. Nagyon hasznos a nagy számokkal rendelkező valuták, például az indonéz rúpia, a chilei peso, a vietnami dong vagy a dél-koreai won esetében.</item>
     </string-array>

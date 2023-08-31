@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>Traducciones actualizadas.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.2">
         <item>Se corrigieron datos incorrectos de la línea de tiempo con la API de InforEuro.</item>
         <item>Traducciones actualizadas.</item>

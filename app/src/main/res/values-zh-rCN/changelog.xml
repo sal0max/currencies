@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.3">
+        <item>更新了新的翻译。</item>
+    </string-array>
+
     <string-array name="changelog_1.19.0">
         <item>UI方面的一些改进</item>
         <item>新的语言: 中文 🇨🇳🇹🇼🇸🇬 和 俄文 🇷🇺🇧🇾🇰🇿.</item>
