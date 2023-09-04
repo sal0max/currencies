@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.4">
+        <item>Falsche Werte für den Unterschied in Prozent in der Wechselkursverlaufsanzeige behoben.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Aktualisierte Übersetzungen.</item>
     </string-array>

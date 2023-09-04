@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.4">
+        <item>Fix wrong values for the difference in percent in timeline chart view.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Updated translations.</item>
     </string-array>

@@ -1,0 +1,1 @@
+- Fix wrong values for the difference in percent in timeline chart view.

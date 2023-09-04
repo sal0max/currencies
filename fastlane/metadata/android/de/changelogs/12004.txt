@@ -1,0 +1,1 @@
+- Falsche Werte für den Unterschied in Prozent in der Wechselkursverlaufsanzeige behoben.
