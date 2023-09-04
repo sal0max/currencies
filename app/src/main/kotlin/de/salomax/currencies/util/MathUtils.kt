@@ -19,7 +19,14 @@ fun decimalPlaces(min: Float, max: Float): Int {
         3
     else {
         val diff = (min - max).absoluteValue
-        if (diff < 0.001)
+        // x < 0.0001
+        if (diff < 0.00001)
+            7
+        // 0.00001 <= x < 0.0001
+        else if (diff < 0.0001)
+            6
+        // 0.0001 <= x < 0.001
+        else if (diff < 0.001)
             5
         // 0.001 <= x < 0.01
         else if (diff < 0.01)

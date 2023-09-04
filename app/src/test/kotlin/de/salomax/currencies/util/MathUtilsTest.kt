@@ -27,6 +27,9 @@ class MathUtilsTest {
         assertEquals(4, decimalPlaces(0.0026f, 0.0073f)) // 0.0047
         assertEquals(4, decimalPlaces(0.998f, 1f)) // 0.002
         assertEquals(5, decimalPlaces(0.9991f, 1f)) // 0.0009
+        assertEquals(6, decimalPlaces(0.99991f, 1f)) // 0.00009
+        assertEquals(7, decimalPlaces(0.999991f, 1f)) // 0.000009
+        assertEquals(7, decimalPlaces(0.9999991f, 1f)) // 0.0000009
     }
 
 }
