@@ -13,6 +13,8 @@ import androidx.lifecycle.ViewModelProvider
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.util.calculateDifference
+import de.salomax.currencies.util.decimalPlaces
 import java.time.LocalDate
 import kotlin.math.absoluteValue
 
@@ -185,12 +187,7 @@ class TimelineViewModel(
 
                 val ratePast = past?.value
                 val rateCurrent = current?.value
-                this.value = if (ratePast != null && rateCurrent != null) {
-                    val percentage = (rateCurrent - ratePast) / ratePast * 100
-                    if (percentage.isFinite()) percentage else null
-                } else {
-                    null
-                }
+                this.value = calculateDifference(ratePast, rateCurrent)
             }
 
             addSource(dbLiveItems) {
@@ -328,18 +325,7 @@ class TimelineViewModel(
             var min = 0f
             var max = 0f
 
-            fun update() {
-                this.value = if (min != 0f && max != 0f) {
-                    val diff = (min - max).absoluteValue
-                    if (diff < 0.001)
-                        5
-                    else if (diff < 0.01)
-                        4
-                    else
-                        3
-                } else
-                    3
-            }
+            fun update() { this.value = decimalPlaces(min, max) }
 
             addSource(dbLiveItems) {
                 min = it?.rates?.entries?.minOfOrNull { rate -> rate.value.value } ?: 0f
