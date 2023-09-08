@@ -1,0 +1,1 @@
+- Corregido los valores erróneos para la diferencia en el porcentaje en la vista del gráfico de línea de tiempo.
