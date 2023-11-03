@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.4">
+        <item>Corregido los valores erróneos para la diferencia en el porcentaje en la vista del gráfico de línea de tiempo.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Traducciones actualizadas.</item>
     </string-array>

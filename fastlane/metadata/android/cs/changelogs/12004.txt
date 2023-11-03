@@ -1,0 +1,1 @@
+- Oprava chybných hodnot rozdílu v procentech v zobrazení grafu časové osy.

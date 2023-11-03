@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.4">
+        <item>Oprava chybných hodnot rozdílu v procentech v zobrazení grafu časové osy.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Aktualizované překlady.</item>
     </string-array>
