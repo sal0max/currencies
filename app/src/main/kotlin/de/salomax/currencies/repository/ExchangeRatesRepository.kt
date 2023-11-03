@@ -106,7 +106,7 @@ class ExchangeRatesRepository(private val context: Context) {
             fuelError == null ->
                 postError(context.getString(R.string.error_generic))
             // print http response code, if available
-            fuelError.response.statusCode != -1 -> {
+            fuelError.response.statusCode != -1 && fuelError.response.statusCode != 200 -> {
                 postError(context.getString(R.string.error_http, fuelError.response.statusCode))
             }
             // generic network error
