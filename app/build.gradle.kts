@@ -7,18 +7,18 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.9.10-1.0.13"
+    id("com.google.devtools.ksp") version "1.9.20-1.0.14"
 }
 
 android {
     namespace = "de.salomax.currencies"
-    compileSdk = 33
+    compileSdk = 34
     buildToolsVersion = "33.0.1"
 
     defaultConfig {
         applicationId = "de.salomax.currencies"
         minSdk = 26
-        targetSdk = 33
+        targetSdk = 34
         // SemVer
         versionName = "1.20.4"
         versionCode = 12004
@@ -83,20 +83,20 @@ android {
 
 dependencies {
     // kotlin
-    implementation("androidx.core:core-ktx:1.10.1")
+    implementation("androidx.core:core-ktx:1.12.0")
     // support libs
     val appCompatVersion = "1.6.1"
     implementation("androidx.appcompat:appcompat:$appCompatVersion")
     implementation("androidx.appcompat:appcompat-resources:$appCompatVersion")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    val livecycleVersion = "2.6.1"
+    val livecycleVersion = "2.6.2"
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$livecycleVersion")
     implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
     implementation("androidx.window:window:1.1.0")
-    implementation("com.google.android.material:material:1.9.0")
+    implementation("com.google.android.material:material:1.10.0")
     // downloader
     val fuelVersion = "2.3.1"
     implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
@@ -112,7 +112,7 @@ dependencies {
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.5.0")
+    testImplementation("org.mockito:mockito-core:5.7.0")
 }
 
 fun getSecret(key: String): String? {
