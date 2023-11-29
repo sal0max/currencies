@@ -67,6 +67,8 @@
     <string name="category_about">Über diese App</string>
     <string name="disclaimer_title">Haftungsausschluss</string>
     <string name="disclaimer_summary">Auch wenn diese App sehr sorgfältig geschrieben und getestet ist, <b>besteht keinerlei Garantie, dass die angezeigen Daten korrekt sind</b>. Die Währungskurse werden durch Drittparteien bereitgestellt und diese App hat keinerlei Möglichkeit zu überprüfen, ob diese Daten richtig und aktuell sind.\nAußerdem können die Daten – selbst wenn sie stimmen – von denen abweichen, die deine Bank nutzt.\nZu guter Letzt: Fehler passieren. Vertraue niemals jemandem blind! Sei dennoch versichert, dass ich diese App nicht veröffentlicht hätte, wenn ich an ihr zweifeln würde.</string>
+    <string name="sourcecode_title">Quelltext</string>
+    <string name="sourcecode_summary">Diese App ist Open Source. Gehe zum Code-Repository, um Issues zu öffnen, herauszufinden wie man beitragen kann, oder einfach nur einen Blick auf den Quelltext zu werfen.</string>
     <string name="donate_title">Unterstütze den Entwickler</string>
     <string name="donate_summary">Spende über PayPal</string>
     <string name="rate_title">Diese App bewerten</string>

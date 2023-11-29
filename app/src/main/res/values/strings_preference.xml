@@ -76,6 +76,9 @@
     <string name="category_about">About this app</string>
     <string name="disclaimer_title">Disclaimer</string>
     <string name="disclaimer_summary">Although the app is very thoroughly written and tested, <b>there is no guarantee that the data it shows is correct</b>. The exchange rates are provided by a third party and this app can\'t make no promise whatsoever that the data is true and up-to-date.\nAdditionally, the rates provided – still if correct – may vary from the ones used by your bank.\nLastly: Mistakes happen. Never blindly trust anyone! That being said, rest assured I wouldn\'t have released this app if I\'ve had any doubt that it works as intended.</string>
+    <string name="sourcecode_key" translatable="false">KEY_SOURCECODE</string>
+    <string name="sourcecode_title">Source code</string>
+    <string name="sourcecode_summary">This app is open source. Go to the code repository to open issues, find out how to contribute or just have a look at the sources.</string>
     <string name="donate_key" translatable="false">KEY_DONATE</string>
     <string name="donate_title">Support the developer</string>
     <string name="donate_summary">Donate via PayPal</string>

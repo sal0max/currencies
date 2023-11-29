@@ -72,6 +72,11 @@
             android:summary="@string/disclaimer_summary"
             android:title="@string/disclaimer_title" />
         <Preference
+            android:icon="@drawable/ic_code"
+            android:key="@string/sourcecode_key"
+            android:summary="@string/sourcecode_summary"
+            android:title="@string/sourcecode_title" />
+        <Preference
             android:icon="@drawable/ic_donate"
             android:key="@string/donate_key"
             android:summary="@string/donate_summary"

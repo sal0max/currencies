@@ -115,12 +115,25 @@ class PreferenceFragment: PreferenceFragmentCompat() {
         viewModel.getApiProvider().observe(this) {
             findPreference<LongSummaryPreference>(getString(R.string.key_apiProvider))?.apply {
                 title =
-                    resources.getString(R.string.api_about_title, it.getName(context))
+                    resources.getString(R.string.api_about_title, it.getName())
                 summary =
                     it.getDescription(context)
             }
             findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
                 it.getUpdateIntervalDescription(requireContext())
+        }
+
+        // open source code repo
+        findPreference<Preference>(getString(R.string.sourcecode_key))?.apply {
+            setOnPreferenceClickListener {
+                startActivity(
+                    Intent(
+                        Intent.ACTION_VIEW,
+                        Uri.parse("https://github.com/sal0max/currencies")
+                    )
+                )
+                true
+            }
         }
 
         // donate
