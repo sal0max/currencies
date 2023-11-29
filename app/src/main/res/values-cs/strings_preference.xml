@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Obecná nastavení</string>
@@ -67,4 +69,15 @@
     <string name="rate_summary">Pokud chcete, můžete ostatním pomoci objevit Currencies. Klepněte sem a ohodnoťte aplikaci v Google Play.</string>
     <string name="category_versioninfo">Info o verzi</string>
     <string name="title_changelog">Seznam změn</string>
+    <string name="api_about_bankOfCanada">Denní průměrné kurzy banky <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.
+\n<b>Obsahuje asi 23 měn.</b></string>
+    <string name="api_about_norgesBank">Kurzy poskytované Norskou centrální bankou <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.
+\n<b>Norges Bank uvádí přibližně 40 směnných kurzů.</b></string>
+    <string name="api_about_bankRossii">Kurzy poskytované Ruskou centrální bankou <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rosii</b></a>. Při aktuálních sankcích udává tento zdroj nejspíše nejdůvěryhodnější data směnných kurzů na ruský rubl.
+\n<b>Bank Rosii uvádí přibližně 40 směnných kurzů.</b></string>
+    <string name="api_refreshPeriod_bankOfCanada">Kurzy jsou zveřejňované každý pracovní den v 16.30 VSČ (22:30 SEČ)</string>
+    <string name="api_refreshPeriod_bankRossii">Kurzy jsou aktualizovány každý den kromě <a href="https://cbr.ru/eng/other/holidays/">veřejných svátů v Rusku</a>.</string>
+    <string name="sourcecode_title">Zdrojový kód</string>
+    <string name="api_refreshPeriod_norgesBank">Čas zveřejnění denních směnných kurzů je přibližně v 16.00 SEČ.</string>
+    <string name="sourcecode_summary">Tato aplikace je open source. Pro nahlášení problémů, přispění do kódu nebo jeho prosté prohlédnutí přejděte do jejího repozitáře.</string>
 </resources>
