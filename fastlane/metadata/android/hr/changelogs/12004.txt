@@ -1,0 +1,1 @@
+- Ispravljene krive vrijednosti postotnih razlika u grafikonu kretanja tečaja.

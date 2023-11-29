@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.20.4">
+        <item>Ispravljene krive vrijednosti postotnih razlika u grafikonu kretanja tečaja.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Ažurirani prijevodi.</item>
     </string-array>
