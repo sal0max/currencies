@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height=".75dp"
+        android:background="?android:attr/listDivider" />
+
+    <TextView
+        style="@style/TextAppearance.Material3.LabelMedium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingHorizontal="@dimen/margin2x"
+        android:paddingBottom="@dimen/margin1x"
+        android:paddingTop="@dimen/margin2x"
+        android:text="@string/currency_dropdown_api_hint" />
+</LinearLayout>

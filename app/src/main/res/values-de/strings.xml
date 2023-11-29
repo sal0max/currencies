@@ -18,4 +18,5 @@
     <string name="menu_refresh">Kurse aktualisieren</string>
     <string name="menu_timeline">Wechselkursverlauf</string>
     <string name="tooltip_filter_starred">Nur favorisierte Währungen anzeigen.</string>
+    <string name="currency_dropdown_api_hint">Fehlt etwas? Unterschiedliche Datenquellen bieten unterschiedliche Währungen an. In die Einstellungen gehen, um eine andere auszuprobieren!\u00A0\uD83E\uDD17</string>
 </resources>

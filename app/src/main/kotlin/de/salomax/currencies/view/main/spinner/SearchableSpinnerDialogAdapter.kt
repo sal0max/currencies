@@ -18,7 +18,7 @@ import de.salomax.currencies.util.toHumanReadableNumber
 
 @SuppressLint("NotifyDataSetChanged")
 class SearchableSpinnerDialogAdapter(private val context: Context) :
-    RecyclerView.Adapter<SearchableSpinnerDialogAdapter.ViewHolder>() {
+    RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     // listeners
     var onRateClicked: ((Rate, Int) -> Unit)? = null
@@ -38,13 +38,35 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
     private val drawableFav = ContextCompat.getDrawable(context, R.drawable.ic_favorite)
     private val drawableFavEmpty = ContextCompat.getDrawable(context, R.drawable.ic_favorite_empty)
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val view = LayoutInflater.from(context).inflate(R.layout.row_currency_dropdown, parent, false)
-        return ViewHolder(view)
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
+        return when (viewType) {
+            // regular
+            0 -> ViewHolder(LayoutInflater.from(context).inflate(R.layout.row_currency_dropdown, parent, false))
+            // api hint
+            1 -> ViewHolderApiHint(LayoutInflater.from(context).inflate(R.layout.row_currency_dropdown_api_hint, parent, false))
+            else -> throw IllegalArgumentException("View type must either be 0 or 1.")
+        }
+    }
+
+    override fun getItemViewType(position: Int): Int {
+        return if (position == itemCount - 1) 1 else 0
     }
 
     @SuppressLint("SetTextI18n")
-    override fun onBindViewHolder(holder: ViewHolder, position: Int) {
+    override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
+        // api hint
+        if (position == itemCount - 1) {
+            holder as ViewHolderApiHint
+            // here, we just show the hint, that there are more APIs to choose from
+            return
+        }
+        // regular
+        holder as ViewHolder
+
+        holder.ivFlag.visibility = View.VISIBLE
+        holder.tvCode.visibility = View.VISIBLE
+        holder.btnStar.visibility = View.VISIBLE
+
         val item = ratesFiltered[position]
         // flag
         holder.ivFlag.setImageDrawable(item.currency.flag(context))
@@ -87,7 +109,8 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
     }
 
     override fun getItemCount(): Int {
-        return ratesFiltered.size
+        // + 1: add another row, with a hint that there are different API providers
+        return ratesFiltered.size + 1
     }
 
     fun setRates(rates: List<Rate>?) {
@@ -157,6 +180,8 @@ class SearchableSpinnerDialogAdapter(private val context: Context) :
         filterText = null
         ratesFiltered = rates.toMutableList()
     }
+
+    inner class ViewHolderApiHint(itemView: View) : RecyclerView.ViewHolder(itemView)
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
 
