@@ -209,7 +209,7 @@ class TimelineActivity : BaseActivity() {
         timelineModel.getError().observe(this) {
             findViewById<TextView>(R.id.error).apply {
                 visibility = View.VISIBLE
-                text = it
+                text = HtmlCompat.fromHtml(it ?: "", HtmlCompat.FROM_HTML_MODE_LEGACY)
             }
             // disable toggle button, when there was an error
             menuItemToggle?.isEnabled = it == null

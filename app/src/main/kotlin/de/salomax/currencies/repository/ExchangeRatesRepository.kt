@@ -8,7 +8,11 @@ import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.model.Timeline
-import kotlinx.coroutines.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.delay
+import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.net.SocketTimeoutException
 import java.net.UnknownHostException
 
@@ -104,23 +108,26 @@ class ExchangeRatesRepository(private val context: Context) {
         when {
             // shouldn't happen...
             fuelError == null ->
-                postError(context.getString(R.string.error_generic))
+                postError(R.string.error_generic.text())
             // print http response code, if available
             fuelError.response.statusCode != -1 && fuelError.response.statusCode != 200 -> {
-                postError(context.getString(R.string.error_http, fuelError.response.statusCode))
+                postError(R.string.error_http.text(fuelError.response.statusCode))
             }
             // generic network error
             else -> {
                 when (fuelError.exception) {
                     // timeout after 15s. likely server not reachable
                     is SocketTimeoutException ->
-                        postError(context.getString(R.string.error_timeout))
+                        postError(R.string.error_timeout.text())
                     // happens e.g. when device is offline or there's a DNS error
                     is UnknownHostException ->
-                        postError(context.getString(R.string.error_no_data))
+                        postError(R.string.error_no_data.text())
+                    // received no data - happens e.g. with RUB @ Norges Bank
+                    is NoSuchElementException ->
+                        postError(R.string.error_empty_response.text())
                     // everything else
                     else ->
-                        postError(fuelError.localizedMessage ?: context.getString(R.string.error_generic))
+                        postError(fuelError.localizedMessage?.let { R.string.error.text(it) } ?: R.string.error_generic.text())
                 }
             }
         }
@@ -153,15 +160,22 @@ class ExchangeRatesRepository(private val context: Context) {
     }
 
     private fun postError(message: String?) {
+        // disable progress bar
         Database(context).setUpdating(false)
-        liveError.postValue(
-            if (message != null)
-                context.getString(R.string.error, message)
-            else
-                context.getString(R.string.error_api_error)
-        )
+
+        // post error
+        var errorMessage = "<b>" + (message ?: R.string.error_api_error.text()) + "\u00A0\uD83D\uDC40</b>"
+        // tell the user the API can be changed
+        if (message?.contains(R.string.error_no_data.text()) != true)
+            errorMessage += "\n<br>${R.string.error_try_another_api.text()}\u00A0\uD83E\uDD13"
+        liveError.postValue(errorMessage)
+
         // reset timeline
         liveTimeline.postValue(null)
+    }
+
+    private fun Int.text(vararg message: Any): String {
+        return context.getString(this, *message)
     }
 
 }

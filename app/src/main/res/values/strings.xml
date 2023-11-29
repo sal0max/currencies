@@ -13,10 +13,12 @@
 
     <string name="error">Error: %s</string>
     <string name="error_generic">Unknown problem.</string>
-    <string name="error_http">Server responded with HTTP %d</string>
-    <string name="error_timeout">Server didn\'t respond in time or isn\'t reachable.</string>
+    <string name="error_http">The server responded with HTTP %d.</string>
+    <string name="error_timeout">The server didn\'t respond in time or isn\'t reachable.</string>
     <string name="error_no_data">Couldn\'t connect to the server.</string>
+    <string name="error_empty_response">The server has no data for this request.</string>
     <string name="error_api_error">There was an API error. Please try again later.</string>
+    <string name="error_try_another_api">However, there are other data providers you can choose from in the settings. Just try it!</string>
 
     <string name="menu_settings">Settings</string>
     <string name="menu_refresh">Refresh rates</string>

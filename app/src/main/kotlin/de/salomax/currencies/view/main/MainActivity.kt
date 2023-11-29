@@ -348,10 +348,13 @@ class MainActivity : BaseActivity() {
         viewModel.getError().observe(this) {
             // error
             it?.let {
-                Snackbar.make(this, tvCalculations, it, 5000) // show for 5s
+                Snackbar.make(this, tvCalculations, HtmlCompat.fromHtml(it, HtmlCompat.FROM_HTML_MODE_LEGACY), Snackbar.LENGTH_INDEFINITE) // show for 5s
                     .placeOnTop()
                     .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorError, null))
                     .setTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
+                    .setActionTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
+                    .setAction(android.R.string.ok) { /* onClick dismisses, by default */ }
+                    .setTextMaxLines(20)
                     .show()
             }
         }
