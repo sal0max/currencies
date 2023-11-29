@@ -93,7 +93,7 @@
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            tools:text="Rates as of 1/21/22 by Exchangerate.host" />
+            tools:text="Rates as of 1/21/22 by Frankfurter.app" />
 
         <!-- top main_display ********************************************* -->
 
