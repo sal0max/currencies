@@ -14,5 +14,5 @@ data class Timeline(
     @field:Json(name = "end_date") val endDate: LocalDate?,
     @field:Json(name = "rates") val rates: Map<LocalDate, Rate>?,
 
-    val provider: ApiProvider?
+    @Transient val provider: ApiProvider? = null
 )

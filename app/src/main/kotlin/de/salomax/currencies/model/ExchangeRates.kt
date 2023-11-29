@@ -13,5 +13,5 @@ data class ExchangeRates(
     @field:Json(name = "date") val date: LocalDate?,
     @field:Json(name = "rates") val rates: List<Rate>?,
 
-    val provider: ApiProvider?
+    @Transient val provider: ApiProvider? = null
 )

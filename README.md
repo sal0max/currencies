@@ -24,10 +24,12 @@ It is **not** intended to be used for realtime financial business, rather to be 
 ## Features
 
 * The app supports all relevant currencies. You can choose between several exchange rate providers:
-   * [exchangerate.host](https://exchangerate.host/) with **over 160 currencies**
    * [frankfurter.app](https://frankfurter.app/) with **over 30 currencies**, provided by the European Central Bank
    * [fer.ee](https://fer.ee/): an alternative service that behaves just like Frankfurter.app
    * [InforEuro](https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en): provides the European Commission’s official monthly accounting rates for the euro and **over 150 corresponding conversion rates**
+   * [Bank of Canada](https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/) provides about 23 currency rates of the Canadian Central Bank
+   * The Norwegian Central Bank [Norges Bank](https://www.norges-bank.no/en/topics/Statistics/exchange_rates/) lists some 40 exchange rates
+   * The Russian Central Bank [Bank Rossii](https://cbr.ru/eng/currency_base/daily/) gives probably the most reliable data of exchange rates to Russian Ruble. Some 44 exchange rates are listed
 * The UI is simple and pure Material 3 Design.
 * Exchange rate history: Check out the chart for the past year, to see how the currencies have developed.
 * Historical rates: You can use rates from prior dates.

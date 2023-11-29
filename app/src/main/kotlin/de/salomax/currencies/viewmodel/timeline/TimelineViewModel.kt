@@ -5,18 +5,14 @@ import android.text.Spanned
 import android.text.SpannedString
 import androidx.core.text.HtmlCompat
 import androidx.lifecycle.*
-import de.salomax.currencies.model.Timeline
-import de.salomax.currencies.repository.ExchangeRatesRepository
-import androidx.lifecycle.ViewModel
-
-import androidx.lifecycle.ViewModelProvider
 import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.Rate
+import de.salomax.currencies.model.Timeline
+import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.util.calculateDifference
 import de.salomax.currencies.util.decimalPlaces
 import java.time.LocalDate
-import kotlin.math.absoluteValue
 
 class TimelineViewModel(
     private val app: Application,
@@ -115,7 +111,7 @@ class TimelineViewModel(
 
     fun getProvider(): LiveData<CharSequence?> {
         return dbLiveItems.map {
-            it?.provider?.getName(getApplication())
+            it?.provider?.getName()
         }
     }
 

@@ -1,4 +1,4 @@
-package de.salomax.currencies.repository
+package de.salomax.currencies.model.adapter
 
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonReader
@@ -13,7 +13,7 @@ import java.io.IOException
  * Also removes some unwanted values and adds some wanted ones.
  */
 @Suppress("unused", "UNUSED_PARAMETER")
-internal class RatesAdapter(private val base: Currency) {
+internal class FrankfurterAppRatesAdapter(private val base: Currency) {
 
     @Synchronized
     @FromJson

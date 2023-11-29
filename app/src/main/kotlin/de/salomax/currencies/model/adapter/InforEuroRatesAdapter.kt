@@ -1,4 +1,4 @@
-package de.salomax.currencies.repository
+package de.salomax.currencies.model.adapter
 
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonReader
@@ -12,7 +12,7 @@ import java.io.IOException
 import java.time.LocalDate
 
 @Suppress("unused", "UNUSED_PARAMETER")
-internal class InforEuroAdapter(private val date: LocalDate) {
+internal class InforEuroRatesAdapter(private val date: LocalDate) {
 
     @Synchronized
     @FromJson

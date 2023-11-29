@@ -32,7 +32,7 @@ class Database(context: Context) {
                 // apply new ones
                 editor.putString(keyDate, items.date.toString())
                 editor.putString(keyBaseRate, items.base?.iso4217Alpha())
-                editor.putInt(keyProvider, items.provider?.number ?: -1)
+                editor.putInt(keyProvider, items.provider?.id ?: -1)
                 items.rates?.forEach { rate ->
                     editor.putFloat(rate.currency.iso4217Alpha(), rate.value)
                 }
@@ -175,25 +175,17 @@ class Database(context: Context) {
 
     fun setApiProvider(api: ApiProvider) {
         prefs.apply {
-            edit().putInt(keyApi, api.number).apply()
+            edit().putInt(keyApi, api.id).apply()
         }
     }
 
-    private val defaultProvider = ApiProvider.EXCHANGERATE_HOST
-
     fun getApiProvider(): ApiProvider {
-        val provider = ApiProvider.fromNumber(prefs.getInt(keyApi, defaultProvider.number))
-        if (provider == null)
-            setApiProvider(defaultProvider)
-        return provider ?: defaultProvider
+        return ApiProvider.fromId(prefs.getInt(keyApi, -1))
     }
 
     fun getApiProviderAsync(): LiveData<ApiProvider> {
-        return SharedPreferenceIntLiveData(prefs, keyApi, defaultProvider.number).map {
-            val provider = ApiProvider.fromNumber(it)
-            if (provider == null)
-                setApiProvider(defaultProvider)
-            provider ?: defaultProvider
+        return SharedPreferenceIntLiveData(prefs, keyApi, -1).map {
+            ApiProvider.fromId(it)
         }
     }
 

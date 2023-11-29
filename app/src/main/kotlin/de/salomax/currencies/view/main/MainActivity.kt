@@ -305,7 +305,7 @@ class MainActivity : BaseActivity() {
                 val dateString = date
                     ?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT).withLocale(getLocale(this)))
                     ?.replace("\u200F", "") // remove rtl-mark (fixes broken arab date)
-                val providerString = it.provider?.getName(this)
+                val providerString = it.provider?.getName()
 
                 // show rate age and rate source
                 tvDate.text =

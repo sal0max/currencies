@@ -1,4 +1,4 @@
-package de.salomax.currencies.repository
+package de.salomax.currencies.model.adapter
 
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonReader
@@ -15,7 +15,7 @@ import java.time.LocalDate
  * This converter reduces the list.
  */
 @Suppress("unused", "UNUSED_PARAMETER")
-internal class TimelineRatesAdapter(private val symbol: Currency) {
+internal class FrankfurterAppTimelineAdapter(private val symbol: Currency) {
 
     @Synchronized
     @FromJson

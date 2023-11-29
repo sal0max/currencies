@@ -13,21 +13,6 @@ import java.time.ZoneId
 class ExchangeRatesServiceTest {
 
     @Test
-    fun testExchangerateHost() = runBlocking {
-        // latest
-        testWebservice(
-            ExchangeRatesService.getRates(ApiProvider.EXCHANGERATE_HOST).get(), 1
-        )
-        // timeline
-        testTimeline(
-            ExchangeRatesService.getTimeline(
-                ApiProvider.EXCHANGERATE_HOST,
-                Currency.EUR, Currency.ISK
-            ).get()
-        )
-    }
-
-    @Test
     fun testFrankfurterApp() = runBlocking {
         // latest
         testWebservice(
@@ -72,6 +57,55 @@ class ExchangeRatesServiceTest {
         )
     }
 
+    /*
+     * Can't unit test providers where XmlPullParserFactory is used. It's an Android component!
+     */
+
+//    @Test
+//    fun testBankOfCanada() = runBlocking {
+//        // latest
+//        testWebservice(
+//            ExchangeRatesService.getRates(ApiProvider.BANK_OF_CANADA).get(), 4
+//        )
+//        // timeline
+//        testTimeline(
+//            ExchangeRatesService.getTimeline(
+//                ApiProvider.BANK_OF_CANADA,
+//                Currency.EUR, Currency.CAD
+//            ).get()
+//        )
+//    }
+//
+//    @Test
+//    fun testBankRossii() = runBlocking {
+//        // latest
+//        testWebservice(
+//            ExchangeRatesService.getRates(ApiProvider.BANK_ROSSII).get(), 4
+//        )
+//        // timeline
+//        testTimeline(
+//            ExchangeRatesService.getTimeline(
+//                ApiProvider.BANK_ROSSII,
+//                Currency.EUR, Currency.RUB
+//            ).get()
+//        )
+//    }
+//
+//    @Test
+//    fun testNorgesBank() = runBlocking {
+//        // latest
+//        testWebservice(
+//            ExchangeRatesService.getRates(ApiProvider.NORGES_BANK).get(), 4
+//        )
+//        // timeline
+//        testTimeline(
+//            ExchangeRatesService.getTimeline(
+//                ApiProvider.NORGES_BANK,
+//                Currency.EUR, Currency.NOK
+//            ).get()
+//        )
+//    }
+
     private fun testWebservice(rates: ExchangeRates?, maxAge: Long) {
         // see there is some valid data
         assertNotNull(rates)
@@ -82,7 +116,6 @@ class ExchangeRatesServiceTest {
         // check for some currencies
         val eur = rates.rates!!.find { rate -> rate.currency == Currency.EUR }
         assertTrue(eur != null)
-        assertEquals(1.0f, eur!!.value)
         println(eur)
 
         val usd = rates.rates!!.find { rate -> rate.currency == Currency.USD }

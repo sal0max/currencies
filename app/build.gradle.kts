@@ -101,8 +101,8 @@ dependencies {
     val fuelVersion = "2.3.1"
     implementation("com.github.kittinunf.fuel:fuel:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
-    implementation("com.github.kittinunf.fuel:fuel-moshi:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-coroutines:$fuelVersion")
+    implementation("com.github.kittinunf.fuel:fuel-moshi:$fuelVersion")
     val moshiVersion = "1.15.0"
     implementation("com.squareup.moshi:moshi-kotlin:$moshiVersion")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")

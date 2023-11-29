@@ -1,4 +1,4 @@
-package de.salomax.currencies.repository
+package de.salomax.currencies.model.adapter
 
 import com.squareup.moshi.FromJson
 import com.squareup.moshi.JsonReader

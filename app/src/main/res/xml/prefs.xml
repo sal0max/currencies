@@ -52,9 +52,6 @@
 
     <PreferenceCategory android:title="@string/category_api">
         <ListPreference
-            android:defaultValue="0"
-            android:entries="@array/api_names"
-            android:entryValues="@array/api_values"
             android:icon="@drawable/ic_data_provider"
             android:key="@string/api_key"
             android:summary="%s"

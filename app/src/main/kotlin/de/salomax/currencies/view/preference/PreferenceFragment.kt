@@ -93,10 +93,22 @@ class PreferenceFragment: PreferenceFragmentCompat() {
 
         // api provider
         findPreference<ListPreference>(getString(R.string.api_key))?.apply {
+            // initialize values
+            val providers = ApiProvider.entries
+            entries = providers.map { it.getName() }.toTypedArray()         // names
+            entryValues = providers.map { it.id.toString() }.toTypedArray() // ids
+            // listen for changes
             setOnPreferenceChangeListener { _, newValue ->
-                ApiProvider.fromNumber(newValue.toString().toInt())
-                    ?.let { viewModel.setApiProvider(it) }
+                viewModel.setApiProvider(
+                    ApiProvider.fromId(newValue.toString().toInt())
+                )
                 true
+            }
+            // set default, if empty (empty means, there was no mapping for the stored value)
+            if (entry == null) {
+                val defaultProvider = ApiProvider.fromId(-1)
+                viewModel.setApiProvider(defaultProvider)
+                value = defaultProvider.id.toString()
             }
         }
         // change text according to selected api
