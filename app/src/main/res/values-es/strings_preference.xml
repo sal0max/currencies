@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Configuración general</string>
@@ -67,4 +69,15 @@
     <string name="rate_summary">Si quieres, puedes ayudar a otros a descubrir Currencies. Haz clic aquí para valorar la aplicación en Google Play.</string>
     <string name="category_versioninfo">Información de la versión</string>
     <string name="title_changelog">Registro de cambios</string>
+    <string name="api_about_bankOfCanada">Tipos de cambio medios diarios del <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Banco de Canadá</b></a>.
+\n<b>Se incluyen unas 23 divisas.</b></string>
+    <string name="api_about_norgesBank">Tipos de cambio, facilitados por el Banco Central Noruego <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.
+\n<b>Norges Bank enumera unos 40 tipos de cambio.</b></string>
+    <string name="api_about_bankRossii">Tipos de cambio, facilitados por el banco central ruso <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Con las sanciones actuales, esta fuente proporciona probablemente los datos más confiables sobre los tipos de cambio del rublo ruso.
+\n<b>Bank Rossii enumera unos 44 tipos de cambio.</b></string>
+    <string name="api_refreshPeriod_bankOfCanada">Las tarifas se publican una vez cada día laborable antes de las 16:30 ET</string>
+    <string name="api_refreshPeriod_bankRossii">Las tarifas se actualizan diariamente, excepto los días <a href="https://cbr.ru/eng/other/holidays/">festivos en Rusia</a>.</string>
+    <string name="sourcecode_title">Código fuente</string>
+    <string name="api_refreshPeriod_norgesBank">La hora de publicación de los tipos de cambio diarios es aproximadamente a las 16:00 CET.</string>
+    <string name="sourcecode_summary">Esta aplicación es de código abierto. Accede al repositorio de código para abrir incidencias, descubrir cómo contribuir o simplemente echar un vistazo a las fuentes.</string>
 </resources>
