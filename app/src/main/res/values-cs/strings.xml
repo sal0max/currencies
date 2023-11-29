@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">přepnout měny</string>
-    <string name="rates_date_latest">Kurzy z &lt;b>%1$s&lt;/b> od &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Historické kurzy z &lt;b>%1$s&lt;/b> od &lt;b>%2$s&lt;/b></string>
-    <string name="copied_to_clipboard">Zkopírováno &lt;b>%s&lt;/b></string>
+    <string name="rates_date_latest">Kurzy z &lt;b&gt;%1$s&lt;/b&gt; od &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Historické kurzy z &lt;b&gt;%1$s&lt;/b&gt; od &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">Zkopírováno &lt;b&gt;%s&lt;/b&gt;</string>
     <string name="historical_rates_dialog_title">Historické kurzy</string>
     <string name="historical_rates_dialog_toggle">Použít měnové kurzy ze specifického data. Zakažte pro používání nejnovějších.</string>
     <string name="error">Chyba: %s</string>
     <string name="error_generic">Neznámá chyba.</string>
-    <string name="error_http">Server odpověděl kódem HTTP %d</string>
+    <string name="error_http">Server odpověděl kódem HTTP %d.</string>
     <string name="error_timeout">Server neodpověděl včas nebo není dostupný.</string>
     <string name="error_no_data">Nepodařilo se připojit k serveru.</string>
     <string name="error_api_error">Vyskytla se chyba API. Zkuste to prosím znovu později.</string>
@@ -16,4 +16,7 @@
     <string name="menu_refresh">Obnovit kurzy</string>
     <string name="menu_timeline">Tabulka kurzů</string>
     <string name="tooltip_filter_starred">Zobrazit pouze oblíbené měny.</string>
+    <string name="error_try_another_api">V nastavení si nicméně můžete vybrat z jiných poskytovatelů dat. Zkuste to!</string>
+    <string name="currency_dropdown_api_hint">Chybí tu něco? Různí poskytovatelé dat poskytují různé měny. Zajděte do nastavení a vyzkoušejte jiného! 🤗</string>
+    <string name="error_empty_response">Server nemá žádná data pro tento požadavek.</string>
 </resources>
