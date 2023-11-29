@@ -1,0 +1,7 @@
+- Remove Exchangerate.host, as the API was sold and is now commercial.
+- Instead, there's a bunch of new data providers. We will focus more on offical providers (aka Central Banks) and try to add even more in the future.
+- New: Canadian central bank: Bank of Canada
+- New: Norwegian central bank: Norges Bank
+- New: Russian central bank: Bank Rossii
+- Now, there's a link in the settings which brings you straight to the source code repo.
+- Overall improvements, like improved error handling and updated translations.

@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.0">
+        <item>Exchangerate.host entfernt, weil die API verkauft wurde und nun kommerziell ist.</item>
+        <item>Stattdessen gibt es nun einige neue Datenquellen. Wir werden uns künftig mehr auf offizielle Anbieter fokusieren (also Zentralbanken) und versuchen in der Zukunft noch weitere hinzuzufügen.</item>
+        <item>Neu: kanadische Zentralbank - Bank of Canada</item>
+        <item>Neu: norwegische Zentralbank - Norges Bank</item>
+        <item>Neu: russische Zentralbank - Bank Rossii</item>
+        <item>Es gibt jetzt in den Einstellungen einen Link, der direkt zum Quellcode-Repository leitet.</item>
+        <item>Generelle Verbesserungen, wie bessere Fehlerbehandlung und aktualisierte Übersetzungen.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.4">
         <item>Falsche Werte für den Unterschied in Prozent in der Wechselkursverlaufsanzeige behoben.</item>
     </string-array>
