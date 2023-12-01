@@ -1,0 +1,7 @@
+- Odebrán Exchangerate.host, jelikož bylo jeho API prodáno a je nyní komerční.
+- Místo něj bylo přidáno několik nových poskytovatelů dat. Nyní se zaměřujeme spíše na oficiální poskytovatele (centrální banky) a v budoucnu se jich pokusíme přidat ještě více.
+- Nová: Kanadská centrální banka: Bank of Canada
+- Nová: Norská centrální banka: Norges Bank
+- Nová: Ruská centrální banka: Bank Rossii
+- V nastavení je nyní odkaz vedoucí ke zdrojovému kódu.
+- Zlepšené řešení chyb a aktualizované překlady.

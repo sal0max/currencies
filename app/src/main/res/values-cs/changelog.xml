@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.0">
+        <item>Odebrán Exchangerate.host, jelikož bylo jeho API prodáno a je nyní komerční.</item>
+        <item>Místo něj bylo přidáno několik nových poskytovatelů dat. Nyní se zaměřujeme spíše na oficiální poskytovatele (centrální banky) a v budoucnu se jich pokusíme přidat ještě více.</item>
+        <item>Nová: Kanadská centrální banka: Bank of Canada</item>
+        <item>Nová: Norská centrální banka: Norges Bank</item>
+        <item>Nová: Ruská centrální banka: Bank Rossii</item>
+        <item>V nastavení je nyní odkaz vedoucí ke zdrojovému kódu.</item>
+        <item>Zlepšené řešení chyb a aktualizované překlady.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.4">
         <item>Oprava chybných hodnot rozdílu v procentech v zobrazení grafu časové osy.</item>
     </string-array>

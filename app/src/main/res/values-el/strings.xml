@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">Εναλλαγή νομισμάτων</string>
-    <string name="rates_date_latest">Τιμές της &lt;b>%1$s&lt;/b> από &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Ιστορικό ισοτιμίας &lt;b>%1$s&lt;/b> της &lt;b>%2$s&lt;/b></string>
-    <string name="copied_to_clipboard">Το &lt;b>%s&lt;/b> αντιγράφηκε στο πρόχειρο</string>
+    <string name="rates_date_latest">Τιμές της &lt;b&gt;%1$s&lt;/b&gt; από &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Ιστορικό ισοτιμίας &lt;b&gt;%1$s&lt;/b&gt; της &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">Το &lt;b&gt;%s&lt;/b&gt; αντιγράφηκε στο πρόχειρο</string>
     <string name="historical_rates_dialog_title">Ιστορικό ισοτιμίας</string>
     <string name="historical_rates_dialog_toggle">Χρήση ισοτιμίας μιας παρελθούσης ημερομηνίας. Απενεργοποιήστε για χρήση της πιο πρόσφατης.</string>
     <string name="error">Σφάλμα: %s</string>
@@ -11,9 +11,12 @@
     <string name="error_http">Ο διακομιστής αποκρίθηκε με HTTP %d</string>
     <string name="error_timeout">Ο διακομιστής δεν αποκρίθηκε έγκαιρα ή δεν είναι προσβάσιμος.</string>
     <string name="error_no_data">Αδυναμία σύνδεσης με τον διακομιστή.</string>
+    <string name="error_empty_response">Ο διακομιστής δεν έχει δεδομένα για αυτό το αίτημα.</string>
     <string name="error_api_error">Σφάλμα API. Προσπαθήστε αργότερα.</string>
+    <string name="error_try_another_api">Ωστόσο, υπάρχουν άλλοι πάροχοι δεδομένων από τους οποίους μπορείτε να επιλέξετε στις ρυθμίσεις. Απλά δοκιμάστε το!</string>
     <string name="menu_settings">Ρυθμίσεις</string>
     <string name="menu_refresh">Επικαιροποίηση ισοτιμίας</string>
     <string name="menu_timeline">Διάγραμμα ισοτιμίας</string>
     <string name="tooltip_filter_starred">Εμφάνιση μόνο αγαπημένων νομισμάτων.</string>
+    <string name="currency_dropdown_api_hint">Κάτι λείπει; Διαφορετικοί πάροχοι δεδομένων προσφέρουν διαφορετικά νομίσματα. Μεταβείτε στις ρυθμίσεις για να δοκιμάσετε έναν άλλο!\u00A0\uD83E\uDD17</string>
 </resources>

@@ -11,9 +11,12 @@
     <string name="error_http">El servidor ha respondido con HTTP %d</string>
     <string name="error_timeout">El servidor no ha respondido a tiempo o no está localizable.</string>
     <string name="error_no_data">No se ha podido conectar con el servidor.</string>
+    <string name="error_empty_response">El servidor no tiene datos para esta solicitud.</string>
     <string name="error_api_error">Ha habido un error en la API. Por favor, inténtelo de nuevo más tarde.</string>
+    <string name="error_try_another_api">Sin embargo, hay otros proveedores de datos que puedes elegir en los ajustes. ¡Pruébalo!</string>
     <string name="menu_settings">Configuración</string>
     <string name="menu_refresh">Tarifas de actualización</string>
     <string name="menu_timeline">Historial de tipos de cambio</string>
     <string name="tooltip_filter_starred">Mostrar solo las monedas con estrella.</string>
+    <string name="currency_dropdown_api_hint">¿Falta algo? Los distintos proveedores de datos ofrecen monedas diferentes. ¡Ve a la configuración para probar con otra!\u00A0\uD83E\uDD17</string>
 </resources>

@@ -1,10 +1,12 @@
 Currencies je jednoduchý a přehledný převodník měn.Není určen pro finanční obchody v reálném čase, ale spíše jako praktický společník např. na dovolené.
 
-- Aplikace podporuje všechny relevantní měny. Můžete si vybrat mezi několika poskytovateli směnných kurzů:
-   - exchangerate.host s více než 160 měnami
+- Aplikace podporuje všechny relevantní měny. Můžete si vybrat mezi několika oficiálními poskytovateli směnných kurzů:
    - frankfurter.app s více než 30 měnami, které poskytuje Evropská centrální banka
    - fer.ee jako alternativa k frankfurter.app se stejnými měnami
-   - InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících přepočítacích kurzů.
+   - InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících směnných kurzů
+   - Bank of Canada poskytuje asi 23 směnných kurzů Kanadské centrální banky
+   - Norská centrální banka „Norges Bank“ uvádí přibližně 40 směnných kurzů
+   - Ruská centrální banka „Bank Rossii“ uvádí nejspíše nejdůvěryhodnější data směnných kurzů ruského rublu. Uvádí asi 44 směnných kurzů
 - Uživatelské rozhraní je jednoduché a v čistém designu Material 3.
 - Historie směnných kurzů: Podívejte se na graf za poslední rok a zjistěte, jak se měny vyvíjely.
 - Historické kurzy: Můžete použít kurzy z předchozích dat.
