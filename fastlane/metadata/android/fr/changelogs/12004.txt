@@ -1,0 +1,1 @@
+- Correction de valeurs incorrectes pour la différence en pourcentage dans la vue graphique chronologique.

@@ -1,0 +1,4 @@
+- Nouvelle API supplémentaire : InforEuro fournit les taux comptables mensuels officiels de la Commission européenne pour l'euro et plus de 150 taux de conversion correspondants.
+- Correction de problèmes de mise en page avec certains appareils pliables particuliers.
+- Nouvelle API supplémentaire : InforEuro fournit les taux comptables mensuels officiels de la Commission européenne pour l'euro et plus de 150 taux de conversion correspondants.
+- Correction de problèmes de mise en page avec certains appareils pliables particuliers.

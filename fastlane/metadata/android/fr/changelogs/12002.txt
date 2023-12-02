@@ -1,0 +1,2 @@
+- Correction de données chronologiques incorrectes avec l'API InforEuro.
+- Traductions mises à jour.
