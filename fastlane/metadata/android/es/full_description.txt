@@ -1,14 +1,16 @@
-Currencies es un conversor de divisas simple y directo. No está diseñado para ser utilizado para negocios financieros en tiempo real, sino para ser un compañero útil, por ejemplo, en vacaciones.
+Currencies es un conversor de divisas sencillo y directo que no está pensado para ser utilizado en operaciones financieras en tiempo real, sino como un práctico compañero, por ejemplo, durante las vacaciones.
 
-- La aplicación admite todas las monedas relevantes. Puede elegir entre varios proveedores de tipos de cambio:
-   - exchangerate.host con más de 160 monedas
-   - frankfurter.app con más de 30 monedas, proporcionado por el Banco Central Europeo
-   - fer.ee como alternativa a frankfurter.app con las mismas monedas
-   - InforEuro proporciona las tasas contables mensuales oficiales de la Comisión Europea para el euro y más de 150 tasas de conversión correspondientes
+- La aplicación admite todas las divisas relevantes. Puedes elegir entre varios proveedores oficiales de tipos de cambio:
+   - frankfurter.app con más de 30 divisas, proporcionado por el Banco Central Europeo
+   - fer.ee como alternativa a frankfurter.app con las mismas divisas
+   - InforEuro proporciona los tipos contables mensuales oficiales de la Comisión Europea para el euro y más de 150 tipos de conversión correspondientes
+   - Bank of Canada proporciona unos 23 tipos de cambio del Banco Central de Canadá
+   - El Banco Central de Noruega "Norges Bank" ofrece una lista de unos 40 tipos de cambio
+   - El Banco Central de Rusia "Bank Rossii" ofrece probablemente los datos más fiables de los tipos de cambio del rublo ruso. Se enumeran unos 44 tipos de cambio
 - La interfaz de usuario es simple y puro Material 3 Design.
-- Historial de tipos de cambio: consulte el gráfico del año pasado para ver cómo se han desarrollado las monedas.
-- Tarifas históricas: Puede utilizar tarifas de fechas anteriores.
-- Una característica importante es la calculadora incluida. Útil, por ejemplo, si desea dividir la cuenta de un restaurante.
-- Calculadora de tarifas: agregue opcionalmente una tarifa de cambio de divisas personalizable a todos los cálculos.
-- Currencies está escrito para Android en Kotlin, dirigido a Android 13 y compatible con temas claros y oscuros.
+- Historia de los tipos de cambio: Echa un vistazo a la tabla del año pasado, para ver cómo las monedas han evolucionado.
+- Tipos de cambio históricos: Puedes utilizar tipos de fechas anteriores.
+- Una característica importante es la calculadora incluida. Útil, por ejemplo, si quieres dividir la cuenta de un restaurante.
+- Calculadora de tasas: añade opcionalmente una tasa de cambio personalizable a todos los cálculos.
+- Currencies está escrita para Android en Kotlin, orientada a Android 13 y soporta temas claros y oscuros.
 - La aplicación no tiene publicidad y no espía al usuario.
