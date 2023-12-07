@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Opće postavke</string>
@@ -67,4 +69,15 @@
     <string name="rate_summary">Ako to želite, možete pomoći drugima da otkriju ovu aplikaciju. Ovdje kliknite kako biste je ocijenili na Trgovini Play.</string>
     <string name="category_versioninfo">Podaci o inačici</string>
     <string name="title_changelog">Povijest izmjena</string>
+    <string name="api_about_bankOfCanada">Prosječni dnevni tečajevi <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.
+\n<b>Uključuje oko 23 valute.</b></string>
+    <string name="api_about_norgesBank">Tečajna lista koju objavljuje norveška središnja banka <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.
+\n<b>Tečajnica Norges Bank sadrži oko 40 valuta.</b></string>
+    <string name="api_about_bankRossii">Tečajevi koje objavljuje ruska središnja banka <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Uz trenutne sankcije ovaj izvor ima vjerojatno najpouzdanije podatke o tečajevima u odnosu na ruski rubalj.
+\n<b>Bank Rossii objavljuje tečajeve za 44 valute.</b></string>
+    <string name="api_refreshPeriod_bankOfCanada">Tečajna lista objavljuje se svakog radnog dana do 16:30 po istočnoameričkom vremenu</string>
+    <string name="api_refreshPeriod_bankRossii">Tečajevi se objavljuju svakodnevno, osim na <a href="https://cbr.ru/eng/other/holidays/">državne praznike u Rusiji</a>.</string>
+    <string name="sourcecode_title">Izvorni kod</string>
+    <string name="api_refreshPeriod_norgesBank">Dnevni tečajevi objavljuju se oko 16.00 sati po srednjoeuropskom vremenu.</string>
+    <string name="sourcecode_summary">Ova aplikacija otvorenog je koda. Posjetite repozitorij izvornog koda kako biste prijavili probleme, saznali kako doprinijeti razvoju ili jednostavno pregledali izvorni kod.</string>
 </resources>
