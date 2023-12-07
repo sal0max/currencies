@@ -1,10 +1,12 @@
 Valute jednostavan je pretvarač valuta. Ne služi za financijsko poslovanje u stvarnom vremenu, nego kao korisno pomagalo na, primjerice, putovanjima.
 
-- Aplikacija podržava sve važne valute. Odaberite između sljedećih pružatelja podataka o tečaju:
-   - exchangerate.host s preko 160 valuta
+- Aplikacija podržava sve važne valute. Odaberite između sljedećih službenih pružatelja podataka o tečaju:
    - frankfurter.app s preko 30 valuta koje objavljuje Europska središnja banka
    - fer.ee kao alternativa za frankfurter.app s istim valutama
    - InforEuro pruža službene mjesečne obračunske tečajeve Europske komisije za euro i pripadajuće tečajeve više od 150  valuta
+   - Bank of Canada objavljuje oko 23 tečaja kanadske Središnje banke
+   - Norveška središnja banka, Norges Bank, objavljuje 40-ak tečajeva
+   - Ruska središnja banka, Bank Rossii, objavljuje vjerojatno najpouzdaniji tečaj ruskog rublja u odnosu na 44 druge valute
 - Korisničko sučelje je jednostavno, čisti Material 3 Design.
 - Povijest tečaja: provjerite tečajeve za zadnjih godinu dana, kako su se kretali tečajevi.
 - Arhiva tečajne liste: koristite se tečajevima na dane u prošlosti.
