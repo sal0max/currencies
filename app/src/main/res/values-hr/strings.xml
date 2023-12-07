@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">zamijeni valute</string>
-    <string name="rates_date_latest">Tečajevi na dan &lt;b>%1$s&lt;/b>, izvor: &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Arhiva tečaja na dan &lt;b>%1$s&lt;/b>, izvor: &lt;b>%2$s&lt;/b></string>
-    <string name="copied_to_clipboard">Iznos &lt;b>%s&lt;/b> kopiran u međuspremnik</string>
+    <string name="rates_date_latest">Tečajevi na dan &lt;b&gt;%1$s&lt;/b&gt;, izvor: &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Arhiva tečaja na dan &lt;b&gt;%1$s&lt;/b&gt;, izvor: &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">Iznos &lt;b&gt;%s&lt;/b&gt; kopiran u međuspremnik</string>
     <string name="historical_rates_dialog_title">Arhiva tečajeva</string>
     <string name="historical_rates_dialog_toggle">Arhiva tečajeva za određeni dan. Isključite ako želite trenutni tečaj.</string>
     <string name="error">Pogreška: %s</string>
     <string name="error_generic">Nepoznata pogreška.</string>
-    <string name="error_http">Poslužitelj je odgovorio HTTP statusom %d</string>
+    <string name="error_http">Poslužitelj je odgovorio HTTP statusom %d.</string>
     <string name="error_timeout">Poslužitelj nije odgovorio u zadanom vremenu ili nije dostupan.</string>
     <string name="error_no_data">Povezivanje s poslužiteljem nije uspjelo.</string>
     <string name="error_api_error">Dogodila se pogreška u API-ju. Molimo pokušajte kasnije.</string>
@@ -16,4 +16,7 @@
     <string name="menu_refresh">Osvježi tečajnu listu</string>
     <string name="menu_timeline">Grafikon tečaja</string>
     <string name="tooltip_filter_starred">Prikaži samo označene valute.</string>
+    <string name="error_try_another_api">Međutim, postoje i drugi pružatelji podataka koje možete odabrati u postavkama. Pokušajte!</string>
+    <string name="currency_dropdown_api_hint">Nešto nedostaje? Drugi pružatelji podataka nude podatke za druge valute. U postavkama možete odabrati nekog drugog pružatelja! 🤗</string>
+    <string name="error_empty_response">Poslužitelj nema podataka za ovaj zahtjev.</string>
 </resources>
