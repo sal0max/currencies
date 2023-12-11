@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="month">月線</string>
+    <string name="activity_timeline_title"><b>%1$s</b> 換 <b>%2$s</b></string>
+    <string name="year">年線</string>
+    <string name="rate_min">最低</string>
+    <string name="data_provider">資料來源 <b>%s</b></string>
+    <string name="rate_max">最高</string>
+    <string name="week">週線</string>
+    <string name="rate_average">均價</string>
+</resources>
