@@ -1,0 +1,3 @@
+- 在兩種 API 供應商之間選擇: exchangerate.host 和 frankfurter.app
+- 您現在可以透過 PayPal 資助開發者。連結在設定裡面 (只限 F-Droid 版本)
+- 更多的使用者介面改善
