@@ -62,7 +62,9 @@
     <!-- about -->
     <string name="category_about">O ovoj aplikaciji</string>
     <string name="disclaimer_title">Izjava o odricanju od odgovornosti</string>
-    <string name="disclaimer_summary">Iako je aplikacija izrađena i provjerena s velikom pažnjom, <b>ne jamčimo da su podaci koje prikazuje točni</b>. Tečajevi se prikupljaju od trećih strana i ova aplikacija ni na koji način ne može obećati da će ti podaci biti istiniti i ažurin.\nDodatno, tečajne liste koje pružamo – iako možda točne – mogu se razlikovati od onih kojima se koristi vaša banka.\nNa kraju krajeva: pogreške se događaju. Nemojte nikome slijepo vjerovati! Međutim, možete biti sigurni da ovu aplikaciju ne bih objavio da ne vjerujem da ona funkcionira kako bi trebala.</string>
+    <string name="disclaimer_summary">Iako je aplikacija izrađena i provjerena s velikom pažnjom, <b>ne jamčimo da su podaci koje prikazuje točni</b>. Tečajevi se prikupljaju od trećih strana i ova aplikacija ni na koji način ne može obećati da će ti podaci biti istiniti i ažurni.
+\nDodatno, tečajne liste koje pružamo – iako možda točne – mogu se razlikovati od onih kojima se koristi vaša banka.
+\nNa kraju krajeva: pogreške se događaju. Nemojte nikome slijepo vjerovati! Međutim, možete biti sigurni da ovu aplikaciju ne bih objavio da ne vjerujem da ona funkcionira kako bi trebala.</string>
     <string name="donate_title">Podržite autora aplikacije</string>
     <string name="donate_summary">Donirajte preko PayPala</string>
     <string name="rate_title">Ocijenite ovu aplikaciju</string>
