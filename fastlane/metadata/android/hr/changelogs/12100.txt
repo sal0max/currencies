@@ -1,0 +1,7 @@
+- Uklonjen Exchangerate.host, API je promijenio vlasnika i sada komercijalan.
+- Umjesto toga dodali smo hrpu novih izvora podataka. Više ćemo se usredotočiti na službene izvore (tj. središnje banke) i u budućnosti ih pokušati dodati još više.
+- Novo: kanadska središnja banka: Bank of Canada
+- Novo: norveška središnja banka: Norges Bank
+- Novo: ruska središnja banka: Bank Rossii
+- U postavke smo dodali poveznicu koja izravno vodi do repozitorija izvornog koda.
+- Ostala poboljšanja, bolja obrada pogrešaka i ažuriranje prijevoda.

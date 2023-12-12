@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">一般設定</string>
+    <string name="fee_title">外匯手續費</string>
+    <string name="fee_summary">根據您的信用卡合約，您的銀行可能會收取外匯手續費。這裡可以輸入，手續費會直接加上去，所以您會知道<i>實際</i>要付多少錢。</string>
+    <string name="previewConversion_title">匯率預覽</string>
+    <string name="previewConversion_summary">在選擇貨幣頁面顯示目前匯率</string>
+    <string name="extendedKeypad_title">額外按鍵</string>
+    <string name="extendedKeypad_summary">增加兩個額外按鍵: <b>00</b>&nbsp;和&nbsp;<b>000</b></string>
+    <string name="category_appearance">應用程式外觀</string>
+    <string name="system_default">系統預設值</string>
+    <string name="theme_title">風格</string>
+    <string name="theme_option_light">亮色</string>
+    <string name="theme_option_dark">暗色</string>
+    <string name="pure_black_enabled_title">OLED 純黑</string>
+    <string name="pure_black_enabled_summary">在暗色模式中使用純黑色</string>
+    <!-- languages -->
+    <string name="language_ar">阿拉伯文</string>
+    <string name="language_bg">保加利亞文</string>
+    <string name="language_bn">孟加拉文</string>
+    <string name="language_ca">加泰隆尼亞語</string>
+    <string name="language_cs">捷克文</string>
+    <string name="language_de">德文</string>
+    <string name="language_el">希臘文</string>
+    <string name="language_en">英文</string>
+    <string name="language_es">西班牙文</string>
+    <string name="language_fr">法文</string>
+    <string name="language_hr">克羅埃西亞文</string>
+    <string name="language_hu">匈牙利文</string>
+    <string name="language_in">印尼文</string>
+    <string name="language_is">冰島文</string>
+    <string name="language_it">義大利文</string>
+    <string name="language_iw">希伯來文</string>
+    <string name="language_nb">挪威文</string>
+    <string name="language_nl">荷蘭文</string>
+    <string name="language_pl">波蘭文</string>
+    <string name="language_pt_BR">葡萄牙文 (巴西)</string>
+    <string name="language_ru">俄文</string>
+    <string name="language_sv">瑞典文</string>
+    <string name="language_title">應用程式語言</string>
+    <string name="language_tr">土耳其文</string>
+    <string name="language_uk">烏克蘭文</string>
+    <string name="language_vi">越南文</string>
+    <string name="language_zh_CN">簡體中文</string>
+
+    <!-- api -->
+    <string name="category_api">匯率</string>
+    <string name="api_title">資料來源</string>
+    <string name="api_about_title">關於 %s</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> 從各種金融資料供應商和銀行 (包括歐洲央行) 取得貨幣匯率。所有匯率資料均以中點匯率呈現。中點匯率是透過計算買入價和賣出價的平均中位數率決定的。\n<b>大約包含 160 種貨幣</b></string>
+    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 追蹤歐洲中央銀行發布的外幣參考匯率 (forex)\n<b>大約包含 30 種貨幣</b></string>
+    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a>是非常新穎的服務，跟 Frankfurter.app 一樣是追蹤歐洲中央銀行發布的外幣參考匯率 (forex)\n<b>大約包含 30 種貨幣</b></string>
+    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a>提供歐洲委員會官方的歐元月度會計匯率，以及由歐洲委員會的會計官根據《財務規則》第 19 條確定的換算率。\n這些匯率用於計算外部人員因應歐洲委員會的邀請參與會議、面談等活動的費用、差旅或生活費用的金額。\n<b>大約包含 150 種貨幣</b></string>
+    <string name="api_about_bankOfCanada"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>的日平均匯率\n<b>大約包含 23 種貨幣</b></string>
+    <string name="api_about_norgesBank">匯率由挪威的中央銀行<a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>挪威銀行</b></a>提供\n<b>大約有 40 種貨幣</b></string>
+    <string name="api_about_bankRossii">匯率由俄羅斯的中央銀行 <a href="https://cbr.ru/eng/currency_base/daily/"><b>俄羅斯銀行</b></a>提供。在目前的制裁環境下，這個來源可能提供對俄羅斯盧布匯率最可靠的數據。\n<b>俄羅斯銀行列出約 44 種貨幣匯率</b></string>
+    <string name="api_refreshPeriod_title">更新週期</string>
+    <string name="api_refreshPeriod_exchangerateHost">匯率在每個工作日的 UTC 午夜左右更新</string>
+    <string name="api_refreshPeriod_frankfurterApp">資料在每個工作日的 16:00 CET 左右更新</string>
+    <string name="api_refreshPeriod_ferEe">匯率在每個工作日更新</string>
+    <string name="api_refreshPeriod_inforEuro">顯示的匯率是由歐洲中央銀行引述的前一月倒數第二天的市場匯率，或根據可取得的情況由代表團或其他在那日期附近的適當來源提供。</string>
+    <string name="api_refreshPeriod_bankOfCanada">在每個工作日的 16:30 ET 發布一次匯率</string>
+    <string name="api_refreshPeriod_norgesBank">大約在 16:00 CET 左右發布每日匯率</string>
+    <string name="api_refreshPeriod_bankRossii">匯率根據每天的需求更新，除了 <a href="https://cbr.ru/eng/other/holidays/">俄羅斯國定假日</a>.</string>
+    <!-- about -->
+    <string name="category_about">關於這個 App</string>
+    <string name="disclaimer_title">免責聲明</string>
+    <string name="disclaimer_summary">儘管這個應用程式在編寫和測試的過程非常細心，但仍<b>無法保證所顯示的資料完全正確</b>。匯率由第三方提供，這個應用程式無法承諾資料為正確且即時的。\n此外，提供的匯率 -即使是- 正確的，也可能與您往來的銀行不同\n最後: 發生錯誤在所難免，絕對不要盲目地相信任何人！話雖如此，請放心，如果我對這個應用程式的正常運作有任何疑慮，我是不會發布它的。</string>
+    <string name="sourcecode_title">原始碼</string>
+    <string name="sourcecode_summary">這個應用程式是開源的，前往儲存庫提出問題，了解如何參與貢獻，或是來參觀一下也好。</string>
+    <string name="donate_title">支持開發者</string>
+    <string name="donate_summary">透過 Paypal 捐贈</string>
+    <string name="rate_title">為此應用程式評分</string>
+    <string name="rate_summary">如果您喜歡的話，您可以幫忙其他人發現 Currencies。按這裡在 Google Play 為這個應用程式評分。</string>
+    <string name="category_versioninfo">版本資訊</string>
+    <string name="title_changelog">更新日誌</string>
+</resources>

@@ -44,6 +44,7 @@
     <string name="language_uk">Ukrainien</string>
     <string name="language_vi">Vietnamien</string>
     <string name="language_zh_CN">Chinois (simplifié)</string>
+
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>
@@ -52,15 +53,23 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> suit les taux de change (forex) de référence publiée par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> est un service relativement nouveau, qui (tout comme Frankfurter.app) suit les taux de change de référence (forex) qui sont publiés par la Banque centrale européenne.\n<b>Une trentaine de devises sont incluses.</b></string>
     <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_fr"><b>InforEuro</b></a> fournit le cours comptable mensuel officiel de la Commission européenne pour l’euro et les taux de conversion établis par le comptable de la Commission européenne conformément à l’article 19 du règlement financier.\nCes taux servent à calculer les montants pour le remboursement des dépenses et frais de voyage ou de séjour des personnes externes participant à des réunions, à des entretiens, etc., à la demande de la Commission européenne.\n<b>Environ 150 devises sont incluses.</b></string>
+    <string name="api_about_bankOfCanada">Taux de change moyens quotidiens de la <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Banque du Canada</b></a>.\n<b>Environ 23 devises sont incluses.</b></string>
+    <string name="api_about_norgesBank">Taux de change, tels que fournis par la banque centrale norvégienne <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a> .\n<b>La Norges Bank répertorie une quarantaine de taux de change.</b></string>
+    <string name="api_about_bankRossii">Taux de change, tels que fournis par la banque centrale russe <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Avec les sanctions actuelles, cette source fournit probablement les données les plus fiables sur les taux de change du rouble russe.\n<b>La Banque Rossii répertorie quelque 44 taux de change.</b></string>
     <string name="api_refreshPeriod_title">Période de rafraîchissement</string>
     <string name="api_refreshPeriod_exchangerateHost">Les taux de change sont mis à jour vers minuit UTC chaque jour ouvrable.</string>
     <string name="api_refreshPeriod_frankfurterApp">Les données sont mises à jour vers 16h00 CET chaque jour ouvrable.</string>
     <string name="api_refreshPeriod_ferEe">Les tarifs sont mis à jour chaque jour ouvrable.</string>
     <string name="api_refreshPeriod_inforEuro">Les taux indiqués sont les taux du marché du deuxième au dernier jour du mois précédent, tels qu’indiqués par la Banque centrale européenne ou, selon la disponibilité, communiqués par les délégations ou d’autres sources appropriées à une date proche.</string>
+    <string name="api_refreshPeriod_bankOfCanada">Les tarifs sont publiés une fois par jour ouvrable avant 16h30 HE</string>
+    <string name="api_refreshPeriod_norgesBank">L’heure de publication des taux de change quotidiens est environ 16h00 CET.</string>
+    <string name="api_refreshPeriod_bankRossii">Les tarifs sont mis à jour quotidiennement, sauf les <a href="https://cbr.ru/eng/other/holidays/">jours fériés en Russie</a>.</string>
     <!-- about -->
     <string name="category_about">À propos de cette application</string>
     <string name="disclaimer_title">Exclusion de responsabilité</string>
     <string name="disclaimer_summary">Bien que l\'appli soit très minutieusement écrite et testée, <b>il n\'y a aucune garantie que les données qu\'elle affiche soient correctes</b>. Les taux de change sont fournis par une tierce partie et cette application ne peut pas promettre que les données sont vraies et à jour.\nEn outre, les taux fournis – même s\'ils sont corrects – peuvent varier de ceux utilisés par votre banque.\nNe faites jamais aveuglément confiance à qui que ce soit ! Ceci étant dit, soyez assuré que je n\'aurais pas sorti cette application si j\'avais eu le moindre doute sur son fonctionnement.</string>
+    <string name="sourcecode_title">Code source</string>
+    <string name="sourcecode_summary">Cette application est open source. Accédez au référentiel de code pour ouvrir des tickets, découvrir comment contribuer ou simplement consulter les sources.</string>
     <string name="donate_title">Soutenir le développeur</string>
     <string name="donate_summary">Donner via PayPal</string>
     <string name="rate_title">Notez cette application</string>

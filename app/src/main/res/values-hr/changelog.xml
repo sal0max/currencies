@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.0">
+        <item>Uklonjen Exchangerate.host, API je promijenio vlasnika i sada komercijalan.</item>
+        <item>Umjesto toga dodali smo hrpu novih izvora podataka. Više ćemo se usredotočiti na službene izvore (tj. središnje banke) i u budućnosti ih pokušati dodati još više.</item>
+        <item>Novo: kanadska središnja banka: Bank of Canada</item>
+        <item>Novo: norveška središnja banka: Norges Bank</item>
+        <item>Novo: ruska središnja banka: Bank Rossii</item>
+        <item>U postavke smo dodali poveznicu koja izravno vodi do repozitorija izvornog koda.</item>
+        <item>Ostala poboljšanja, bolja obrada pogrešaka i ažuriranje prijevoda.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.4">
         <item>Ispravljene krive vrijednosti postotnih razlika u grafikonu kretanja tečaja.</item>
     </string-array>

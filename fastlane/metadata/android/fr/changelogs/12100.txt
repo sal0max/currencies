@@ -1,0 +1,7 @@
+- Supprimez Exchangerate.host, car l'API a été vendue et est désormais commerciale.
+- Au lieu de cela, il y a un tas de nouveaux fournisseurs de données. Nous nous concentrerons davantage sur les prestataires officiels (c’est-à-dire les banques centrales) et essaierons d’en ajouter encore davantage à l’avenir.
+- Nouveau : Banque centrale canadienne : Banque du Canada
+- Nouveau : Banque centrale norvégienne : Norges Bank
+- Nouveau : Banque centrale russe : Bank Rossii
+- Maintenant, il y a un lien dans les paramètres qui vous amène directement au dépôt du code source.
+- Améliorations globales, comme une gestion améliorée des erreurs et des traductions mises à jour.

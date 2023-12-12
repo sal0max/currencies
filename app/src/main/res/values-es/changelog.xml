@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.0">
+        <item>Eliminar Exchangerate.host, ya que la API fue vendida y ahora es comercial.</item>
+        <item>En su lugar, hay un montón de nuevos proveedores de datos. Nos centraremos más en los proveedores oficiales (también conocidos como Bancos Centrales) e intentaremos añadir aún más en el futuro.</item>
+        <item>Nuevo: Banco central canadiense: Banco de Canadá</item>
+        <item>Nuevo: Banco central noruego: Norges Bank</item>
+        <item>Nuevo: Banco central ruso: Bank Rossii</item>
+        <item>Ahora, hay un enlace en la configuración que te lleva directamente al repositorio del código fuente.</item>
+        <item>Mejoras generales, como un mejor tratamiento de los errores y traducciones actualizadas.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.4">
         <item>Corregido los valores erróneos para la diferencia en el porcentaje en la vista del gráfico de línea de tiempo.</item>
     </string-array>

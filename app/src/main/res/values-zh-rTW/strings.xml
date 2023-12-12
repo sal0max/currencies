@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desc_toggle_currencies">切換貨幣</string>
+    <string name="rates_date_latest">匯率更新於 &lt;b>%1$s&lt;/b> 來源 &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">歷史匯率日期 &lt;b>%1$s&lt;/b> 來源 &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">已經複製 &lt;b>%s&lt;/b> 到剪貼簿</string>
+    <string name="historical_rates_dialog_title">歷史匯率</string>
+    <string name="historical_rates_dialog_toggle">使用特定日期的匯率。關閉則一律顯示最新匯率</string>
+    <string name="error">錯誤: %s</string>
+    <string name="error_generic">發生不明的錯誤。</string>
+    <string name="error_http">伺服器回應 HTTP %d.</string>
+    <string name="error_timeout">伺服器沒有在時間內回應或無法存取。</string>
+    <string name="error_no_data">無法連線到伺服器。</string>
+    <string name="error_empty_response">伺服器對於這個請求沒有資料。</string>
+    <string name="error_api_error">發生了 API 錯誤。請稍後再試。</string>
+    <string name="error_try_another_api">不過，您還是可以從設定選擇其他的資料來源。試試看吧！</string>
+    <string name="menu_settings">設定</string>
+    <string name="menu_refresh">更新匯率</string>
+    <string name="menu_timeline">匯率走勢圖</string>
+    <string name="tooltip_filter_starred">只顯示最愛的匯率</string>
+    <string name="currency_dropdown_api_hint">有東西不見了嗎？每個資料來源提供的數量不盡相同。請到設定去調整看看！\u00A0\uD83E\uDD17</string>
+</resources>

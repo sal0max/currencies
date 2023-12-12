@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.21.0">
+        <item>移除 Exchangerate.host，API 現在已經商業化。</item>
+        <item>現在有好幾個新的資料來源，未來我們會專注在提供更多官方資料來源 (例如中央銀行)。</item>
+        <item>新資料來源: 加拿大中央銀行</item>
+        <item>新資料來源: 挪威中央銀行</item>
+        <item>新資料來源: 俄羅斯中央銀行</item>
+        <item>現在可以直接從設定裡面點擊連結前往資料來源</item>
+        <item>整體改善，修正錯誤與翻譯更新。</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>修正趨勢圖中百分比差值的錯誤數值。</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.3">
+        <item>翻譯更新。</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>修正了使用 InforEuro API 時趨勢圖資料出錯</item>
+        <item>翻譯更新</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.1">
+        <item>翻譯更新。</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.0">
+        <item>新增額外的 API：InforEuro 提供歐洲委員會歐元的官方月度會計匯率和 150 多個相應的換算匯率。</item>
+        <item>修復了某些特定可折疊設備的版面配置問題。</item>
+    </string-array>
+
+    <string-array name="changelog_1.19.0">
+        <item>幾個 UI 的改善</item>
+        <item>新語言選項: 中文 🇨🇳🇹🇼🇸🇬 和俄文 🇷🇺🇧🇾🇰🇿。</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>新語言選項: 烏克蘭文 🇺🇦！非常感謝 Bogdan！</item>
+        <item>古巴: 新增古巴披索 (CUP) 用以取代過時的古巴可兌換披索 (CUC)。</item>
+        <item>改進了許多翻譯。非常感謝所有的志願者！</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>新語言選項: 克羅埃西亞文 🇭🇷🇧🇦。非常出色，Ivan！</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>支援應用程式的語言選項 (Android 13 的新功能)</item>
+        <item>除此之外，現在可以在所有設備上 (也包含低於 Android 13) 從設定裡面切換應用程式語言</item>
+        <item>新語言選項: 加泰隆尼亞文 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>更新: 版本紀錄顯示空白</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>新語言選項！由 nazrin 翻譯的冰島文🇮🇸，由 Cavernosa 翻譯的巴西文 🇧🇷 和 Samuel 翻譯的瑞典文 🇸🇪。太棒啦！</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.5">
+        <item>改善了趨勢圖顯式的匯率精確度</item>
+        <item>新語言選項: 波蘭文。非常感謝 ewm！🇵🇱</item>
+        <item>更新了非常多翻譯，感謝所有的貢獻者！</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>改善設計 (Material 3)</item>
+        <item>新語言選項: 捷克文。謝謝 Fjuro！🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>新語言選項: 希伯來文。非常感謝，Yaron！🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>新功能: 現在可以從剪貼簿貼上數字</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.1">
+        <item>新語言選項 #1: 保加利亞文。謝謝您 Mihail！ 🇧🇬</item>
+        <item>新語言選項 #2: 孟加拉文。乾杯，Pratyay！ 🇧🇩🇮🇳</item>
+        <item>也有更新其餘的翻譯</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>新功能: 在設定中打開 00 和 000 額外按鍵。對於大額貨幣非常好用，像是印尼盾、智利披索、越南盾和韓圓</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>-新語言選項: 匈牙利文。非常感謝 József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>翻譯更新</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>-新功能: 現在可以在計算的時候選擇歷史匯率</item>
+        <item>新語言選項: 印尼文。@liimee 謝謝您！ 🇮🇩🏝️</item>
+    </string-array>
+
+    <string-array name="changelog_1.15.0">
+        <item>新語言選項: 荷蘭文。謝謝志願者的貢獻！🇳🇱🌷</item>
+        <item>新功能: 現在只要按一下就可以在趨勢圖中轉換貨幣</item>
+        <item>再次修正使用暗色主題時，在某些情況下會當機的錯誤</item>
+        <item>好幾個小幅度 UI 改善</item>
+    </string-array>
+
+    <string-array name="changelog_1.14.0">
+        <item>依照 Google 的 Material Design 3 指引做一些改善</item>
+        <item>翻譯更新。謝謝所有幫忙的人！</item>
+        <item>幾項穩定性改善</item>
+    </string-array>
+
+    <string-array name="changelog_1.13.0">
+        <item>新語言選項: 您現在可以選擇阿拉伯文了。非常感謝！🇦🇪🇧🇭🇩🇯🇩🇿🇪🇬🇪🇭🇪🇷🇮🇱🇮🇶🇯🇴🇰🇲🇰🇼🇱🇧🇱🇾🇲🇦🇲🇷🇴🇲🇶🇦🇸🇦🇸🇩🇸🇴🇸🇸🇸🇾🇹🇩🇹🇳🇾🇪</item>
+        <item>一些從右到左書寫的語言版面改善</item>
+        <item>修正手續費輸入空值會造成當機的錯誤</item>
+        <item>趨勢圖現在會顯示資料來源</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.1">
+        <item>修正更新匯率會造成當機。對不起！🤕</item>
+    </string-array>
+
+    <string-array name="changelog_1.12.0">
+        <item>這次更新了從右到左書寫的語言版面問題，現在應該看起來很正常</item>
+        <item>新功能: 在貨幣選擇器中預覽所有貨幣轉換結果，從設定裡面可以打開</item>
+        <item>更新匯率有時候會顯示舊的或錯誤資料，此問題已修正</item>
+        <item>程式碼大幅改善，讓應用程式更加完美</item>
+    </string-array>
+
+    <string-array name="changelog_1.11.0">
+        <item>現在可以透過下拉的方式更新匯率</item>
+        <item>更新匯率並防止錯誤發生的回應已大幅改善</item>
+        <item>新語言選項: 社群成員提供了土耳其文。謝謝！🇹🇷</item>
+        <item>在某些情況下，時間軸使用了錯誤的 API，此問題已經被修復</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.3">
+        <item>小幅度改善</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.2">
+        <item>修正了打開設定會當機的錯誤</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.1">
+        <item>修復在 Android 8.0 會當機的錯誤</item>
+        <item>更新翻譯</item>
+        <item>小幅度 UI 改進</item>
+    </string-array>
+
+    <string-array name="changelog_1.10.0">
+        <item>您現在可以將貨幣標註為最愛以加速存取，祝您使用愉快！❤</item>
+        <item>新增了使用暗色模式時，純黑主題體驗的選項</item>
+        <item>更新翻譯。謝謝眾多的志願者們！</item>
+    </string-array>
+
+    <string-array name="changelog_1.9.0">
+        <item>新的在地化：應用程式現在會說希臘文了 🇬🇷</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.1">
+        <item>修正了在使用暗色主題時，某些情況下會當機的錯誤</item>
+    </string-array>
+
+    <string-array name="changelog_1.8.0">
+        <item>改進了匯率顯示</item>
+        <item>在設定裡面新增在 Google Play 上為此應用程式評分的入口 (當然這在 F-Droid 版本裡面是沒有的)</item>
+        <item>又一個在地化：應用程式現在已翻譯成越南文 🇻🇳</item>
+        <item>小幅度改進</item>
+    </string-array>
+
+    <string-array name="changelog_1.7.0">
+        <item>在這次的更新中，享受一些重大的新功能！特別是，現在包括歷史匯率。查看過去一年的圖表，了解各種貨幣的趨勢。</item>
+        <item>還有一個額外的匯率提供者：現在您可以在設定中選擇 fer.ee。這是一個相對較新的服務，基本上與 frankfurter.app 類似，是您的另一個選擇。</item>
+        <item>一如既往，這次的更新包括更新函式庫、小幅改進以及使應用應用程式更加出色的所有內容。</item>
+    </string-array>
+
+    <string-array name="changelog_1.6.0">
+        <item>謝謝社群成員的支持，現在應用程式不只有英文和德文，還多了西班牙文 🇪🇸、法文 🇫🇷、義大利文 🇮🇹 和挪威文 🇳🇴。謝謝您們的幫助！🙏🙏🙏</item>
+        <item>小幅度的內部更新，使應用程式更加可靠</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.1">
+        <item>修正當使用 exchangerate.host 時匯率沒有更新</item>
+        <item>改善資料庫穩定性和效能</item>
+    </string-array>
+
+    <string-array name="changelog_1.5.0">
+        <item>在兩種 API 供應商之間選擇: exchangerate.host 和 frankfurter.app</item>
+        <item>您現在可以透過 PayPal 資助開發者。連結在設定裡面 (只限 F-Droid 版本)</item>
+        <item>更多的使用者介面改善</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.1">
+        <item>使用者介面改善</item>
+    </string-array>
+
+    <string-array name="changelog_1.4.0">
+        <item>現在可以手動更新匯率。到選單中找找看吧</item>
+        <item>效能改進</item>
+    </string-array>
+
+    <string-array name="changelog_1.3.0">
+        <item>越來越多的貨幣！現在總數超過 160 種！！這是因為切換到了不同的 API。舊的 API (exchangeratesapi.io) 轉為了訂閱模式，而且沒有事先通知。沒禮貌！我們的新供應商將是 exchangerate.host。</item>
+        <item>這也意味著，在過去的幾天裡，無法更新匯率。當然目前已經修復了。</item>
+        <item>此外，更新流程本身也得到了改進，所以下次有類似情況發生時，你會收到通知。</item>
+        <item>UI 小幅度的改進</item>
+    </string-array>
+
+    <string-array name="changelog_1.2.0">
+        <item>新增 17 種貨幣！總數達到 50 種啦。🥳太多種了，無法一一列舉。然而，現在包括了中東和加勒比海一些受歡迎的度假勝地：阿聯酋、卡達、巴貝多、巴哈馬、古巴等⋯</item>
+        <item>為了應對所有這些新選擇，現在在貨幣選擇器中提供了搜尋功能。</item>
+        <item>選擇器現在還顯示貨幣的全名，不僅僅是其代碼。這是一個很棒的新增功能，特別是與搜尋功能作結合。試試看吧！</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.1">
+        <item>-小幅度改進 (一些拼寫錯誤)</item>
+    </string-array>
+
+    <string-array name="changelog_1.1.0">
+        <item>-根據您的信用卡合約，您的銀行可能會對外匯收手續費。您現在可以在計算器中增加手續費，就可以知道實際要付多少錢了🙂</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>-修正了在 Android 11 上有可能當機的錯誤</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>新增德文翻譯 🇩🇪</item>
+        <item>小幅度改進: App 瘦身了 50%!</item>
+        <item>App 看起來非常穩定: 公開版本 1.0 發布! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>小幅度改善</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>更好的錯誤處理</item>
+        <item>小幅度改善</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>新增複製功能: 長按您想要複製的數值</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>-更可靠的匯率更新</item>
+        <item>-增加免責聲明</item>
+        <item>-增加版本紀錄</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>-初始版本預先發布</item>
+    </string-array>
+</resources>

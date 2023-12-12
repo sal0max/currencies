@@ -1,7 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.0">
+        <item>Supprimez Exchangerate.host, car l\'API a été vendue et est désormais commerciale.</item>
+        <item>Au lieu de cela, il y a un tas de nouveaux fournisseurs de données. Nous nous concentrerons davantage sur les prestataires officiels (c’est-à-dire les banques centrales) et essaierons d’en ajouter encore davantage à l’avenir.</item>
+        <item>Nouveau : Banque centrale canadienne : Banque du Canada</item>
+        <item>Nouveau : Banque centrale norvégienne : Norges Bank</item>
+        <item>Nouveau : Banque centrale russe : Bank Rossii</item>
+        <item>Maintenant, il y a un lien dans les paramètres qui vous amène directement au dépôt du code source.</item>
+        <item>Améliorations globales, comme une gestion améliorée des erreurs et des traductions mises à jour.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>Correction de valeurs incorrectes pour la différence en pourcentage dans la vue graphique chronologique.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Traductions mises à jour.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>Correction de données chronologiques incorrectes avec l\'API InforEuro.</item>
+        <item>Traductions mises à jour.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.1">
+        <item>Traductions mises à jour.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.0">
+        <item>Nouvelle API supplémentaire : InforEuro fournit les taux comptables mensuels officiels de la Commission européenne pour l\'euro et plus de 150 taux de conversion correspondants.</item>
+        <item>Correction de problèmes de mise en page avec certains appareils pliables particuliers.</item>
+        <item>Nouvelle API supplémentaire : InforEuro fournit les taux comptables mensuels officiels de la Commission européenne pour l\'euro et plus de 150 taux de conversion correspondants.</item>
+        <item>Correction de problèmes de mise en page avec certains appareils pliables particuliers.</item>
+    </string-array>
+
+    <string-array name="changelog_1.19.0">
+        <item>Plusieurs améliorations de l\'interface utilisateur.</item>
+        <item>Nouvelles langues : chinois 🇨🇳🇹🇼🇸🇬 et russe 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>Nouvelle langue : ukrainien 🇺🇦 ! Un grand merci à Bogdan !</item>
+        <item>Cuba : Fournir du peso cubain (CUP) au lieu du peso cubain convertible (CUC), obsolète.</item>
+        <item>Beaucoup de traductions améliorées. Merci beaucoup à tous les bénévoles !</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>Nouvelle langue : croate 🇭🇷🇧🇦. Travail exceptionnel, Ivan !</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>Ajout de la prise en charge des préférences linguistiques par application (nouvelle fonctionnalité dans Android 13).</item>
+        <item>De plus, pour TOUS les appareils (également &lt; Android 13), il existe désormais une option permettant de changer la langue de l\'application dans les paramètres de l\'application.</item>
+        <item>Nouvelle langue : Catalan 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Corrigé : journal des modifications vide</item>
     </string-array>
 
     <string-array name="changelog_1.17.6">
