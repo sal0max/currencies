@@ -50,6 +50,7 @@
     <string name="language_uk">Ukrainian</string>
     <string name="language_vi">Vietnames</string>
     <string name="language_zh_CN">Chinese (Simplified)</string>
+    <string name="language_zh_TW">Chinese (Traditional)</string>
     <!-- api -->
     <string name="category_api">Exchange rates</string>
     <string name="api_key" translatable="false">KEY_API</string>

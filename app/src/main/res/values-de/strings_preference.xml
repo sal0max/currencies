@@ -44,6 +44,7 @@
     <string name="language_uk">Ukrainisch</string>
     <string name="language_vi">Vietnamesisch</string>
     <string name="language_zh_CN">Chinesisch (Vereinfacht)</string>
+    <string name="language_zh_TW">Chinesisch (Traditionell)</string>
     <!-- api -->
     <string name="category_api">Wechselkurse</string>
     <string name="api_title">Datenquelle</string>
