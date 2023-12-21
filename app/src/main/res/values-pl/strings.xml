@@ -8,7 +8,7 @@
     <string name="historical_rates_dialog_toggle">Użyj kursów wymiany z określonego okresu. Wyłącz, aby zawsze używać najnowszych dane.</string>
     <string name="error">Błąd: %s</string>
     <string name="error_generic">Nieznany problem.</string>
-    <string name="error_http">Serwer odpowiedział z kodem HTTP %d</string>
+    <string name="error_http">Serwer odpowiedział z kodem HTTP %d.</string>
     <string name="error_timeout">Serwer nie odpowiedział na czas lub jest nieosiągalny.</string>
     <string name="error_no_data">Nie można się połączyć z serwerem.</string>
     <string name="error_api_error">Wystąpił błąd API. Proszę spróbować później.</string>
@@ -16,4 +16,7 @@
     <string name="menu_refresh">Odśwież kursy</string>
     <string name="menu_timeline">Wykres kursów wymiany</string>
     <string name="tooltip_filter_starred">Pokaż tylko polubione waluty.</string>
+    <string name="error_try_another_api">Istnieją jednak inni dostawcy danych, których możesz wybrać w ustawieniach. Po prostu spróbuj!</string>
+    <string name="currency_dropdown_api_hint">Czegoś brakuje? Różni dostawcy danych oferują różne waluty. Przejdź do ustawień, aby wypróbować innego dostawcę! 🤗</string>
+    <string name="error_empty_response">Serwer nie posiada danych na temat tego zapytania.</string>
 </resources>
