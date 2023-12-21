@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Ustawienia ogólne</string>
@@ -67,4 +69,7 @@
     <string name="rate_summary">Jeśli chcesz, możesz pomóc innym w odkrywaniu aplikacji Currencies. Kliknij tutaj, aby ocenić aplikację w Google Play.</string>
     <string name="category_versioninfo">Informacje o werski</string>
     <string name="title_changelog">Dziennik zmian</string>
+    <string name="sourcecode_title">Kod źródłowy</string>
+    <string name="language_zh_TW">Chiński (tradycyjny)</string>
+    <string name="api_refreshPeriod_norgesBank">Dzienny czas publikacji średnich kursów wymiany to 16:00 CET.</string>
 </resources>
