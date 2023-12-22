@@ -44,6 +44,7 @@
     <string name="language_uk">Ukrajinština</string>
     <string name="language_vi">Vietnamština</string>
     <string name="language_zh_CN">Čínština (zjednodušená)</string>
+    <string name="language_zh_TW">Čínština (tradiční)</string>
     <!-- api -->
     <string name="category_api">Směnné kurzy</string>
     <string name="api_title">Poskytovatel dat</string>

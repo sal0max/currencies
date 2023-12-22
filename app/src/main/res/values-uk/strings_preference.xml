@@ -44,6 +44,7 @@
     <string name="language_uk">Українська</string>
     <string name="language_vi">В’єтнамська</string>
     <string name="language_zh_CN">Китайська (спрощена)</string>
+    <string name="language_zh_TW">Китайська (традиційна)</string>
     <!-- api -->
     <string name="category_api">Курси обміну</string>
     <string name="api_title">Постачальник даних</string>

@@ -44,6 +44,7 @@
     <string name="language_uk">Ucraniano</string>
     <string name="language_vi">Vietnamita</string>
     <string name="language_zh_CN">Chino (simplificado)</string>
+    <string name="language_zh_TW">Chino (tradicional)</string>
     <!-- api -->
     <string name="category_api">Tipos de cambio</string>
     <string name="api_title">Proveedor de datos</string>
