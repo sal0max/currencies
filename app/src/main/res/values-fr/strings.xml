@@ -8,7 +8,7 @@
     <string name="historical_rates_dialog_toggle">Utilisez les taux de change d\'une date précise. Désactiver, pour toujours prendre les plus récents.</string>
     <string name="error">Erreur : %s</string>
     <string name="error_generic">Problème inconnu.</string>
-    <string name="error_http">Le serveur a répondu avec HTTP %d</string>
+    <string name="error_http">Le serveur a répondu avec HTTP %d.</string>
     <string name="error_timeout">Le serveur n\'a pas répondu à temps ou n\'est pas joignable.</string>
     <string name="error_no_data">Impossible de se connecter au serveur.</string>
     <string name="error_api_error">Il y a eu une erreur d\'API. Veuillez réessayer plus tard.</string>
