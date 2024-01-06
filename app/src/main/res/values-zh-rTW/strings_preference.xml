@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">一般設定</string>
@@ -44,7 +46,6 @@
     <string name="language_uk">烏克蘭文</string>
     <string name="language_vi">越南文</string>
     <string name="language_zh_CN">簡體中文</string>
-
     <!-- api -->
     <string name="category_api">匯率</string>
     <string name="api_title">資料來源</string>
@@ -76,4 +77,5 @@
     <string name="rate_summary">如果您喜歡的話，您可以幫忙其他人發現 Currencies。按這裡在 Google Play 為這個應用程式評分。</string>
     <string name="category_versioninfo">版本資訊</string>
     <string name="title_changelog">更新日誌</string>
+    <string name="language_zh_TW">正體中文</string>
 </resources>
