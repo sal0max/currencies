@@ -44,7 +44,7 @@
     <string name="language_uk">烏克蘭文</string>
     <string name="language_vi">越南文</string>
     <string name="language_zh_CN">簡體中文</string>
-
+    <string name="language_zh_TW">正體中文</string>
     <!-- api -->
     <string name="category_api">匯率</string>
     <string name="api_title">資料來源</string>
