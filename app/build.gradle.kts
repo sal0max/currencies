@@ -7,13 +7,13 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.9.21-1.0.16"
+    id("com.google.devtools.ksp") version "1.9.22-1.0.16"
 }
 
 android {
     namespace = "de.salomax.currencies"
     compileSdk = 34
-    buildToolsVersion = "33.0.1"
+    buildToolsVersion = "34.0.0"
 
     defaultConfig {
         applicationId = "de.salomax.currencies"
@@ -89,7 +89,7 @@ dependencies {
     implementation("androidx.appcompat:appcompat:$appCompatVersion")
     implementation("androidx.appcompat:appcompat-resources:$appCompatVersion")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    val livecycleVersion = "2.6.2"
+    val livecycleVersion = "2.7.0"
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$livecycleVersion")
