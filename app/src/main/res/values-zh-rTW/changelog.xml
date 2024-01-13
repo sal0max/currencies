@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.1">
+        <item>翻譯更新。</item>
+    </string-array>
+
     <string-array name="changelog_1.21.0">
         <item>移除 Exchangerate.host，API 現在已經商業化。</item>
         <item>現在有好幾個新的資料來源，未來我們會專注在提供更多官方資料來源 (例如中央銀行)。</item>

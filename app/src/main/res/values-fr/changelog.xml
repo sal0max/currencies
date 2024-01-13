@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.1">
+        <item>Traductions mises à jour.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.0">
         <item>Supprimez Exchangerate.host, car l\'API a été vendue et est désormais commerciale.</item>
         <item>Au lieu de cela, il y a un tas de nouveaux fournisseurs de données. Nous nous concentrerons davantage sur les prestataires officiels (c’est-à-dire les banques centrales) et essaierons d’en ajouter encore davantage à l’avenir.</item>

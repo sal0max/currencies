@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.1">
+        <item>Aktualisierte Übersetzungen.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.0">
         <item>Exchangerate.host entfernt, weil die API verkauft wurde und nun kommerziell ist.</item>
         <item>Stattdessen gibt es nun einige neue Datenquellen. Wir werden uns künftig mehr auf offizielle Anbieter fokusieren (also Zentralbanken) und versuchen in der Zukunft noch weitere hinzuzufügen.</item>

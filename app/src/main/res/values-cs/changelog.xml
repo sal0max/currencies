@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.1">
+        <item>Aktualizovány překlady.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.0">
         <item>Odebrán Exchangerate.host, jelikož bylo jeho API prodáno a je nyní komerční.</item>
         <item>Místo něj bylo přidáno několik nových poskytovatelů dat. Nyní se zaměřujeme spíše na oficiální poskytovatele (centrální banky) a v budoucnu se jich pokusíme přidat ještě více.</item>

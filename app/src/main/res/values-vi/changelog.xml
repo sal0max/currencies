@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.1">
+        <item>Cập nhật một số đoạn dịch thuật.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.1">
         <item>Cập nhật một số đoạn dịch thuật.</item>
     </string-array>
