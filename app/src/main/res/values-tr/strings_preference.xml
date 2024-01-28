@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">General Ayala</string>
@@ -67,4 +69,16 @@
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
     <string name="category_versioninfo">Sürüm bilgisi</string>
     <string name="title_changelog">Değişiklik günlüğü</string>
+    <string name="api_about_bankOfCanada"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Kanada Merkez Bankası</b></a>\'nın günlük ortalama döviz kurları.
+\n<b>Yaklaşık 23 para birimi dahildir.</b></string>
+    <string name="api_about_norgesBank">Norveç merkez bankası <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a> tarafından sağlanan döviz kurları.
+\n<b>Norges Bank yaklaşık 40 döviz kurunu listeler.</b></string>
+    <string name="api_about_bankRossii">Rusya merkez bankası <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a> tarafından sağlanan döviz kurları. Şu anki yaptırımlarla birlikte, bu kaynak muhtemelen Rus Rublesi için en güvenilir döviz kuru verilerini vermektedir.
+\n<b>Bank Rossii yaklaşık 44 döviz kurunu listeler.</b></string>
+    <string name="api_refreshPeriod_bankOfCanada">Kurlar her iş günü 16:30 ET\'ye kadar bir kez yayınlanır</string>
+    <string name="api_refreshPeriod_bankRossii">Kurlar, <a href="https://cbr.ru/eng/other/holidays/">Rusya\'daki resmi tatiller</a> dışında günlük olarak güncellenir.</string>
+    <string name="sourcecode_title">Kaynak kodu</string>
+    <string name="language_zh_TW">Çince (Geleneksel)</string>
+    <string name="api_refreshPeriod_norgesBank">Günlük döviz kurlarının yayınlanma saati yaklaşık olarak 16:00 CET\'dir.</string>
+    <string name="sourcecode_summary">Bu uygulama açık kaynaklıdır. Sorun açmak için kod deposuna gidin, nasıl katkıda bulunacağınızı öğrenin veya yalnızca kaynaklara bir göz atın.</string>
 </resources>
