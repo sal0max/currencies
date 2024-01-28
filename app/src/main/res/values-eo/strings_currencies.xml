@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_aed">UAE-dirhamo</string>
+    <string name="name_afn">Afgana afganio</string>
+    <string name="name_all">Albana leko</string>
+    <string name="name_amd">Armena dramo</string>
+    <string name="name_ang">Nederlandantila guldeno</string>
+    <string name="name_aoa">Angola kvanzo</string>
+    <string name="name_ars">Argentina peso</string>
+    <string name="name_aud">Aŭstralia dolaro</string>
+    <string name="name_awg">Aruba guldeno</string>
+    <string name="name_azn">Azerbajĝana manato</string>
+
+    <string name="name_bam">Bosnio-Hercegovino konvertebla marko</string>
+    <string name="name_bbd">Barbada dolaro</string>
+    <string name="name_bdt">Bangladeŝa tako</string>
+    <string name="name_bgn">Bulgara levo</string>
+    <string name="name_bhd">Barejna dinaro</string>
+    <string name="name_bif">Burunda franko</string>
+    <string name="name_bmd">Bermuda dolaro</string>
+    <string name="name_bnd">Bruneja dolaro</string>
+    <string name="name_bob">Bolivia bolivjano</string>
+    <string name="name_brl">Brazila realo</string>
+    <string name="name_bsd">Bahama dolaro</string>
+
+    <string name="name_btn">Butana ngultrumo</string>
+    <string name="name_bwp">Bocvana pulao</string>
+
+    <string name="name_bzd">Beliza dolaro</string>
+
+    <string name="name_cad">Kanada dolaro</string>
+    <string name="name_cdf">Konga franko</string>
+    <string name="name_chf">Svisa franko</string>
+    <string name="name_clf">Ĉiliaj Unidades de fomento</string>
+    <string name="name_clp">Ĉilia peso</string>
+
+    <string name="name_cny">Ĉina renminbi</string>
+    <string name="name_cop">Kolombia peso</string>
+    <string name="name_crc">Kostarika kolumbo</string>
+
+    <string name="name_cup">Kuba peso</string>
+    <string name="name_cve">Kaboverda eskudo</string>
+    <string name="name_czk">Ĉeĥa krono</string>
+
+    <string name="name_djf">Ĝibutia franko</string>
+    <string name="name_dkk">Dana krono</string>
+    <string name="name_dop">Dominga peso</string>
+    <string name="name_dzd">Alĝeria dinaro</string>
+
+    <string name="name_egp">Egipta pundo</string>
+    <string name="name_ern">Eritrea nakfo</string>
+    <string name="name_etb">Etiopa birro</string>
+    <string name="name_eur">Eŭro</string>
+
+    <string name="name_fjd">Fiĝia dolaro</string>
+    <string name="name_fkp">Falklanda pundo</string>
+
+
+    <string name="name_gbp">Sterlinga pundo</string>
+    <string name="name_gel">Kartvela lario</string>
+
+    <string name="name_ghs">Ganaa cedio</string>
+    <string name="name_gip">Ĝibraltara pundo</string>
+    <string name="name_gmd">Gambia dalasio</string>
+    <string name="name_gnf">Gvinea franko</string>
+    <string name="name_gtq">Gvatemala kecalo</string>
+    <string name="name_gyd">Gujana dolaro</string>
+
+    <string name="name_hkd">Honkonga dolaro</string>
+    <string name="name_hnl">Hondura lempiro</string>
+
+    <string name="name_htg">Haitia gurdo</string>
+    <string name="name_huf">Hungara forinto</string>
+
+    <string name="name_idr">Indonezia rupio</string>
+    <string name="name_ils">Nova israela siklo</string>
+
+    <string name="name_inr">Barata rupio</string>
+    <string name="name_iqd">Iraka dinaro</string>
+    <string name="name_irr">Irana rialo</string>
+    <string name="name_isk">Islanda krono</string>
+
+    <string name="name_jep">Jersey-pundo</string>
+    <string name="name_jmd">Jamajka dolaro</string>
+    <string name="name_jod">Jordania dinaro</string>
+    <string name="name_jpy">Japana eno</string>
+
+    <string name="name_kes">Kenja ŝilingo</string>
+    <string name="name_kgs">Kirgiza somo</string>
+    <string name="name_khr">Kamboĝa rielo</string>
+    <string name="name_kmf">Komora franko</string>
+    <string name="name_kpw">Nord-korea ŭono</string>
+    <string name="name_krw">Sud-korea ŭono</string>
+    <string name="name_kwd">Kuvajta dinaro</string>
+    <string name="name_kyd">Kajmana dolaro</string>
+    <string name="name_kzt">Kazaĥa tengo</string>
+
+    <string name="name_lak">Laosa kipo</string>
+    <string name="name_lbp">Libana liro</string>
+    <string name="name_lkr">Srilanka rupio</string>
+    <string name="name_lrd">Liberia dolaro</string>
+    <string name="name_lsl">Lesota lotio</string>
+    <string name="name_lyd">Libia dinaro</string>
+
+    <string name="name_mad">Maroka dirhamo</string>
+    <string name="name_mdl">Moldava leŭo</string>
+    <string name="name_mga">Malagasa ariaro</string>
+    <string name="name_mkd">Makedona denaro</string>
+    <string name="name_mmk">Birma kjato</string>
+    <string name="name_mnt">Mongola tugriko</string>
+    <string name="name_mop">Makaa patako</string>
+    <string name="name_mro">Maŭritania uguijao</string>
+
+    <string name="name_mur">Maŭricia rupio</string>
+    <string name="name_mvr">Maldiva rufijao</string>
+    <string name="name_mwk">Malavia kvaĉo</string>
+    <string name="name_mxn">Meksika peso</string>
+    <string name="name_myr">Malajzia ringito</string>
+    <string name="name_mzn">Mozambika metikalo</string>
+
+    <string name="name_nad">Namibia dolaro</string>
+    <string name="name_ngn">Niĝeria najro</string>
+    <string name="name_nio">Nikaragva kordovo</string>
+    <string name="name_nok">Norvega krono</string>
+    <string name="name_npr">Nepala rupio</string>
+    <string name="name_nzd">Novzelanda dolaro</string>
+
+    <string name="name_omr">Omana rialo</string>
+
+    <string name="name_pab">Panama balboo</string>
+    <string name="name_pen">Perua nova suno</string>
+    <string name="name_pgk">Papuonovgvinea kinao</string>
+    <string name="name_php">Filipina peso</string>
+    <string name="name_pkr">Pakistana rupio</string>
+    <string name="name_pln">Pola zloto</string>
+    <string name="name_pyg">Paragvaja gvaranio</string>
+
+    <string name="name_qar">Katara rialo</string>
+
+    <string name="name_ron">Rumana leŭo</string>
+    <string name="name_rsd">Serba dinaro</string>
+    <string name="name_rub">Rusa rublo</string>
+    <string name="name_rwf">Ruanda franko</string>
+
+    <string name="name_sar">Sauda rialo</string>
+    <string name="name_sbd">Salomona dolaro</string>
+    <string name="name_scr">Sejŝela rupio</string>
+
+    <string name="name_sek">Sveda krono</string>
+    <string name="name_sgd">Singapura dolaro</string>
+    <string name="name_shp">Sankthelena pundo</string>
+
+    <string name="name_sll">Sieraleona leono</string>
+    <string name="name_sos">Somalia ŝilingo</string>
+    <string name="name_srd">Surinama dolaro</string>
+    <string name="name_ssp">Sudsudana pundo</string>
+    <string name="name_std">Saotomea dobro</string>
+
+
+    <string name="name_syp">Siria pundo</string>
+    <string name="name_szl">Svazilanda lilangenio</string>
+
+    <string name="name_thb">Tajlanda bahto</string>
+    <string name="name_tjs">Taĝika somonio</string>
+
+    <string name="name_tnd">Tunizia dinaro</string>
+    <string name="name_top">Tonga paangao</string>
+
+    <string name="name_ttd">Trinidada dolaro</string>
+    <string name="name_twd">Nova tajvana dolaro</string>
+    <string name="name_tzs">Tanzania ŝilingo</string>
+
+    <string name="name_uah">Ukraina hrivno</string>
+    <string name="name_ugx">Uganda ŝilingo</string>
+    <string name="name_usd">Usona dolaro</string>
+    <string name="name_uyu">Urugvaja peso</string>
+    <string name="name_uzs">Uzbeka somo</string>
+
+    <string name="name_vef">Venezuela bolivaro</string>
+
+    <string name="name_vnd">Vjetnama dongo</string>
+    <string name="name_vuv">Vanuatua vatuo</string>
+
+    <string name="name_wst">Samoa dolaro</string>
+
+    <string name="name_xaf">CFA-franko BEAC</string>
+    <string name="name_xag">Arĝento</string>
+    <string name="name_xau">Oro</string>
+    <string name="name_xcd">Orientkaribia dolaro</string>
+    <string name="name_xdr">Specialaj rajtoj de enspezo</string>
+    <string name="name_xof">CFA-franko BCEAO</string>
+    <string name="name_xpd">Paladio</string>
+    <string name="name_xpf">CFP-franko</string>
+    <string name="name_xpt">Plateno</string>
+
+    <string name="name_yer">Jemena rialo</string>
+
+    <string name="name_zar">Sudafrika rando</string>
+    <string name="name_zmw">Zambia kvaĉo</string>
+    <string name="name_zwl">Zimbabva dolaro</string>
+</resources>
