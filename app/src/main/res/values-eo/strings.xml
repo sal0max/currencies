@@ -1,2 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="historical_rates_dialog_toggle">Uzi kurzojn de specifa dato. Malebligi, por ĉiam preni la plej freŝajn.</string>
+    <string name="rates_date_historical">Historiaj tarifoj de <b>%1$s</b> je <b>%2$s</b></string>
+    <string name="copied_to_clipboard">Kopiis <b>%s</b> al tondujo</string>
+    <string name="historical_rates_dialog_title">Historiaj tarifoj</string>
+    <string name="error_timeout">La servilo ne respondis ĝustatempe aŭ ne estas atingebla.</string>
+    <string name="menu_settings">Agordoj</string>
+    <string name="rates_date_latest">Tarifoj de <b>%1$s</b> je <b>%2$s</b></string>
+    <string name="menu_refresh">Refreŝigaj tarifoj</string>
+    <string name="error_try_another_api">Tamen, estas aliaj datumprovizantoj, kiujn vi povas elekti en la agordoj. Nur provu ĝin!</string>
+    <string name="error_generic">Nekonata problemo.</string>
+    <string name="error_http">La servilo respondis per HTTP %d.</string>
+    <string name="desc_toggle_currencies">baskuligi valutojn</string>
+    <string name="currency_dropdown_api_hint">Io mankas? Aliaj datumprovizantoj ofertas malsamajn valutojn. Iru al la agordoj por provi alian! 🤗</string>
+    <string name="tooltip_filter_starred">Montri nur stelumitajn valutojn.</string>
+    <string name="error_no_data">Ne eblis konektiĝi al la servilo.</string>
+    <string name="error">Eraro: %s</string>
+    <string name="error_empty_response">La servilo ne havas datumojn por ĉi tiu peto.</string>
+    <string name="menu_timeline">Kurza diagramo</string>
+    <string name="error_api_error">Okazis API-eraro. Bonvolu reprovi poste.</string>
+</resources>
