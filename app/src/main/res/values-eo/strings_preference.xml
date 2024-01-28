@@ -1,2 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="category_api">Tarifoj</string>
+    <string name="language_hu">Hungara</string>
+    <string name="language_ar">Araba</string>
+    <string name="language_ru">Rusa</string>
+    <string name="pure_black_enabled_title">OLED nigra</string>
+    <string name="language_cs">Ĉeĥia</string>
+    <string name="language_it">Itala</string>
+    <string name="fee_summary">Depende de via kreditkarta interkonsento, via banko povas kosti kotizon por ĉiuj eksterlandaj transakcioj. Ĉi tie vi povas enigi tiun kotizon. Ĝi estos aldonita al la kalkulo, do vi sciu kiom vi <i>vere</i> pagas.</string>
+    <string name="language_pl">Pola</string>
+    <string name="language_iw">Hebrea</string>
+    <string name="language_in">Indonezia</string>
+    <string name="theme_option_dark">Malhela</string>
+    <string name="language_tr">Turka</string>
+    <string name="pure_black_enabled_summary">Uzi puran nigran en malhela reĝimo</string>
+    <string name="language_title">Aplikaĵa Lingvo</string>
+    <string name="language_bg">Bulgara</string>
+    <string name="theme_option_light">Hela</string>
+    <string name="extendedKeypad_title">Plilongigita Klavaro</string>
+    <string name="language_zh_CN">Ĉina (Simpligita)</string>
+    <string name="language_is">Islanda</string>
+    <string name="language_uk">Ukraina</string>
+    <string name="api_about_title">Pri %s</string>
+    <string name="language_ca">Kataluna</string>
+    <string name="language_sv">Sveda</string>
+    <string name="language_es">Hispana</string>
+    <string name="language_nb">Norvega</string>
+    <string name="language_el">Greka</string>
+    <string name="api_title">Datumprovizanto</string>
+    <string name="language_zh_TW">Ĉina (Tradicia)</string>
+    <string name="language_de">Germana</string>
+    <string name="language_en">Angla</string>
+    <string name="previewConversion_title">Antaŭrigardo de konvertiĝo</string>
+    <string name="previewConversion_summary">Montri la nunan konvertiĝon por ĉiu kurzo en la valutelektilo.</string>
+    <string name="language_pt_BR">Portugala (Brazilo)</string>
+    <string name="language_nl">Nederlanda</string>
+    <string name="language_vi">Vjetnama</string>
+    <string name="language_bn">Bengala</string>
+    <string name="fee_title">Eksterlanda transakcia kotizo</string>
+    <string name="extendedKeypad_summary">Aldoni du pliajn butonojn: <b>00</b>&nbsp;kaj&nbsp;<b>000</b>.</string>
+    <string name="category_settings">Ĝeneralaj Agordoj</string>
+    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> fontas la valutajn kurzoj el diversaj financaj datumprovizantoj kaj bankoj, inkluzive de la Eŭropa Centra Banko. Ĉiuj kurzoj-datumoj estas liveritaj en mezpunkto-datumoj. Mezpunktaj kurzoj estas determinitaj kalkulante la mezan kurzon de Bid and Ask.
+\n<b>Proksime 160 valutoj estas inkluzivitaj.</b></string>
+    <string name="language_fr">Franca</string>
+    <string name="category_appearance">Aspekto</string>
+    <string name="language_hr">Kroata</string>
+    <string name="theme_title">Dezajno</string>
+    <string name="system_default">Sistema defaŭlta</string>
+</resources>
