@@ -1,0 +1,7 @@
+- API satıldığı ve artık ticari olduğu için Exchangerate.host kaldırıldı.
+- Bunun yerine, bir dizi yeni veri sağlayıcı var. Daha çok resmi sağlayıcılara odaklanacağız ve gelecekte daha da fazlasını eklemeye çalışacağız.
+- Yeni: Kanada Merkez Bankası: Bank of Canada
+- Yeni: Norveç Merkez Bankası: Norges Bank
+- Yeni: Rus Merkez Bankası: Bank Rossii
+- Ayarlarda sizi doğrudan kaynak koduna götüren bir bağlantı var.
+- İyileştirilen hata işleme ve güncellenen çeviriler gibi genel iyileştirmeler.
