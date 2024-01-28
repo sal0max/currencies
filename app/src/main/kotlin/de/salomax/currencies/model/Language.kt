@@ -14,6 +14,7 @@ enum class Language(
     CS("cs", "Čeština", R.string.language_cs),
     DE("de", "Deutsch", R.string.language_de),
     EN("en", "English", R.string.language_en),
+    EO("eo", "Esperanto", R.string.language_eo),
     ES("es", "Español", R.string.language_es),
     EL("el", "Ελληνικά", R.string.language_el),
     FR("fr", "Français", R.string.language_fr),
@@ -38,7 +39,7 @@ enum class Language(
     IW("iw", "עִבְרִית", R.string.language_iw);
 
     companion object {
-        private val isoMapping: Map<String, Language> = values().associateBy(Language::iso)
+        private val isoMapping: Map<String, Language> = entries.associateBy(Language::iso)
         fun byIso(isoValue: String?): Language? =
             // direct match: e.g. de <-> de or e.g. pt_BR <-> pt_BR
             isoMapping[isoValue]

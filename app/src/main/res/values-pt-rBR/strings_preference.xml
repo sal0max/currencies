@@ -26,6 +26,7 @@
     <string name="language_de">Alemão</string>
     <string name="language_el">Grego</string>
     <string name="language_en">Inglês</string>
+    <string name="language_eo">Esperanto</string>
     <string name="language_es">Espanhol</string>
     <string name="language_fr">Francês</string>
 
@@ -33,6 +34,7 @@
 
 
     <string name="language_it">Italiano</string>
+
 
 
 
@@ -52,15 +54,23 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> segue taxas de câmbios de referência (forex) publicadas pelo European Central Bank.\n<b>Cerca de 30 moedas estão incluídas.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> é um serviço relativamente novo, que (como o Frankfurter.app) segue as taxas de câmbio de referência (forex) que são publicadas pelo European Central Bank.\n<b>Cerca de 30 moedas estão incluídas.</b></string>
     <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_pt"><b>InforEuro</b></a> indica a taxa contabilística mensal oficial da Comissão Europeia para o euro e as taxas de conversão fixadas pelo contabilista da Comissão Europeia, em conformidade com o artigo 19.º do Regulamento Financeiro.\nEstas taxas são utilizadas para calcular os montantes dos reembolsos das despesas, nomeadamente de deslocação e de estada, de pessoas externas que participam, a convite da Comissão Europeia, em reuniões, entrevistas, etc.\n<b>Cerca de 150 moedas estão incluídas.</b></string>
+
+
+
     <string name="api_refreshPeriod_title">Intervalo de atualização</string>
     <string name="api_refreshPeriod_exchangerateHost">Taxas de câmbios são atualizadas perto da meia noite UTC a cada dia útil.</string>
     <string name="api_refreshPeriod_frankfurterApp">A informação é atualizada cerca das 16:00 CET a cada dia útil.</string>
     <string name="api_refreshPeriod_ferEe">Taxas atualizadas a cada dia útil.</string>
     <string name="api_refreshPeriod_inforEuro">As taxas indicadas são as taxas de mercado do período compreendido entre o segundo e o último dia do mês anterior, divulgadas pelo Banco Central Europeu, ou, caso estejam disponíveis, fornecidas pelas delegações ou por outras fontes adequadas existentes na proximidade dessa data.</string>
+
+
+
     <!-- about -->
     <string name="category_about">Sobre esta app</string>
     <string name="disclaimer_title">Renúncia de responsabilidade</string>
     <string name="disclaimer_summary">Embora a aplicação seja cuidadosamente escrita e testada, <b>não há garantias de que os dados que mostra sejam correctos</b>. As taxas de câmbio são fornecidas por um terceiro e esta aplicação não pode fazer qualquer promessa de que os dados são verdadeiros e atualizados.\nAlém disso, as taxas fornecidas - ainda que correctas - podem variar em relação às utilizadas pelo seu banco.\nPor último: os erros acontecem. Nunca confie cegamente em ninguém! Dito isto, fique descansado que eu não teria divulgado esta aplicação se tivesse tido alguma dúvida de que funciona como pretendido.</string>
+
+
     <string name="donate_title">Apoiar o programador</string>
     <string name="donate_summary">Doar via PayPal</string>
     <string name="rate_title">Classifique esta app</string>

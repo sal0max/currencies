@@ -26,6 +26,7 @@
     <string name="language_de">Tysk</string>
     <string name="language_el">Gresk</string>
     <string name="language_en">Engelsk</string>
+    <string name="language_eo">Esperanto</string>
     <string name="language_es">Spansk</string>
     <string name="language_fr">Fransk</string>
     <string name="language_hr">Kroatisk</string>
@@ -44,6 +45,7 @@
     <string name="language_uk">Ukrainsk</string>
     <string name="language_vi">Vietnamesisk</string>
 
+
     <!-- api -->
     <string name="category_api">Valutakurser</string>
     <string name="api_title">Datatilbyder</string>
@@ -52,15 +54,23 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> er en relativt ny tjeneste, som (akkurat som Frankfurter.app) sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
 
+
+
+
     <string name="api_refreshPeriod_title">Gjenoppfriskingsperiode</string>
     <string name="api_refreshPeriod_exchangerateHost">Valutakurser oppdateres rundt midnatt UTC hver arbeidsdag.</string>
     <string name="api_refreshPeriod_frankfurterApp">Dataen oppdateres ~16.00 CET hver dag.</string>
     <string name="api_refreshPeriod_ferEe">Vekslingskursene oppdateres hver arbeidsdag.</string>
 
+
+
+
     <!-- about -->
     <string name="category_about">Om denne appen</string>
     <string name="disclaimer_title">Ansvarsfraskrivelse</string>
     <string name="disclaimer_summary">Selv om programmet er nøye skrevet og testet, <b>er det ingen garanti for at dataen som vises er riktig</b>. Vekslingskursene tilbys av en tredjepart, og dette programmet kan ikke på noe vis love at dataen er sannferdig eller oppdatert.\nSelv om dataen skulle være riktig kan det fremdeles hende at din bank bruker en annen kurs.\nTil sist. Feil skjer. Aldri stol blindt på noen. Når det er sagt ville jeg ikke sluppet programmet hvis jeg var i tvil om at det fungerte som tiltenkt.</string>
+
+
     <string name="donate_title">Støtt utvikleren</string>
     <string name="donate_summary">Doner via PayPal</string>
     <string name="rate_title">Vurder programmet</string>

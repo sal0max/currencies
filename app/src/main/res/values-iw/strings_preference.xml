@@ -26,6 +26,7 @@
     <string name="language_de">גרמנית</string>
     <string name="language_el">יוונית</string>
     <string name="language_en">אנגלית</string>
+    <string name="language_eo">אספרנטו</string>
     <string name="language_es">ספרדית</string>
     <string name="language_fr">צרפתית</string>
     <string name="language_hr">קרואטית</string>
@@ -44,10 +45,14 @@
     <string name="language_uk">אוקראינית</string>
     <string name="language_vi">וייטנאמית</string>
     <string name="language_zh_CN">סינית מפושטת</string>
+
     <!-- api -->
     <string name="category_api">שערי חליפין</string>
     <string name="api_title">ספק נתונים</string>
     <string name="api_about_title">על %s</string>
+
+
+
 
 
 
@@ -57,9 +62,14 @@
     <string name="api_refreshPeriod_frankfurterApp">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
     <string name="api_refreshPeriod_ferEe">השערים מתעדכנים בכל יום עבודה.</string>
 
+
+
+
     <!-- about -->
     <string name="category_about">על היישומון הזה</string>
     <string name="disclaimer_title">כתב ויתור</string>
+
+
 
     <string name="donate_title">תמיכה במתכנת</string>
     <string name="donate_summary">תרומה דרך PayPal</string>

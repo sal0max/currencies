@@ -26,6 +26,7 @@
     <string name="language_de">Немецкий</string>
     <string name="language_el">Греческий</string>
     <string name="language_en">Английский</string>
+    <string name="language_eo">Эсперанто</string>
     <string name="language_es">Испанский</string>
     <string name="language_fr">Французский</string>
     <string name="language_hr">Хорватский</string>
@@ -44,6 +45,7 @@
     <string name="language_uk">Украинский</string>
     <string name="language_vi">Вьетнамский</string>
     <string name="language_zh_CN">Китайский (упрощённый)</string>
+
     <!-- api -->
     <string name="category_api">Обменные курсы</string>
     <string name="api_title">Провайдер данных</string>
@@ -52,15 +54,23 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.\n<b>Включает в себя около 30 валют.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> это относительно новый сервис, который (как и Frankfurter.app) отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.\n<b>Включает в себя около 30 валют.</b></string>
 
+
+
+
     <string name="api_refreshPeriod_title">Период обновления</string>
     <string name="api_refreshPeriod_exchangerateHost">Обменные курсы обновляются около полуночи по UTC каждый рабочий день.</string>
     <string name="api_refreshPeriod_frankfurterApp">Данные обновляются около 16:00 по CET каждый рабочий день.</string>
     <string name="api_refreshPeriod_ferEe">Курсы обновляются каждый рабочий день.</string>
 
+
+
+
     <!-- about -->
     <string name="category_about">Об этом приложении</string>
     <string name="disclaimer_title">Отказ от ответственности</string>
     <string name="disclaimer_summary">Не смотря на то, что это приложение очень тщательно разрабатывается и тестируется, <b>нет никаких гарантий, что отображаемые им данные верны</b>. Обменные курсы предоставляются третьей стороной и данное приложение не может гарантировать, что данные верны и обновлены.\nДополнительно, предоставляемые курсы (если они верны) – всё ещё могут отличаться от используемых вашим банком.\nИ наконец: Ошибки случаются. Никогда слепо не доверяйте кому-либо! Учитывая это, будьте уверены, что я бы не выпустил это приложение, если бы у меня были сомнения в том, что оно работает так, как задумано.</string>
+
+
     <string name="donate_title">Поддержать разработчика</string>
     <string name="donate_summary">Пожертвовать через PayPal</string>
     <string name="rate_title">Оценить это приложение</string>

@@ -26,6 +26,7 @@
     <string name="language_de">Almanca</string>
     <string name="language_el">Yunanca</string>
     <string name="language_en">İngilizce</string>
+    <string name="language_eo">Esperanto</string>
     <string name="language_es">İspanyolca</string>
     <string name="language_fr">Fransızca</string>
     <string name="language_hr">Hırvatça</string>
@@ -44,6 +45,7 @@
     <string name="language_uk">Ukraynaca</string>
     <string name="language_vi">Vietnamca</string>
     <string name="language_zh_CN">Çince (Basitleştirilmiş)</string>
+    <string name="language_zh_TW">Çince (Geleneksel)</string>
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcısı</string>
@@ -52,17 +54,25 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a>, Avrupa Merkez Bankası tarafından yayınlanan gösterge niteliğindeki döviz (forex) kurlarını esas alır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> (tıpkı Frankfurter.app gibi) Avrupa Merkez Bankası tarafından yayınlanan gösterge döviz (forex) kurlarını esas alan, kısmen yeni bir veri sağlayıcısıdır.\n<b>Yaklaşık 30 para birimi bulunmaktadır.</b></string>
     <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a>, Avrupa Komisyonu\'nun Euro için resmi aylık muhasebe kurunu ve Mali Tüzüğün 19. maddesi uyarınca Avrupa Komisyonu Muhasebe Sorumlusu tarafından belirlenen dönüşüm oranlarını paylaşır.\nBu oranlar, Avrupa Komisyonu\'nun talebi üzerine toplantılar, görüşmeler gibi etkinliklere dışarıdan katılan kişilerin harcamalarının, seyahat veya konaklama masraflarının geri ödenmesine ilişkin tutarları hesaplamak için kullanılır.\n<b>Yaklaşık 150 para birimi bulunmaktadır.</b></string>
+    <string name="api_about_bankOfCanada"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Kanada Merkez Bankası</b></a>\'nın günlük ortalama döviz kurları.\n<b>Yaklaşık 23 para birimi dahildir.</b></string>
+    <string name="api_about_norgesBank">Norveç merkez bankası <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a> tarafından sağlanan döviz kurları.\n<b>Norges Bank yaklaşık 40 döviz kurunu listeler.</b></string>
+    <string name="api_about_bankRossii">Rusya merkez bankası <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a> tarafından sağlanan döviz kurları. Şu anki yaptırımlarla birlikte, bu kaynak muhtemelen Rus Rublesi için en güvenilir döviz kuru verilerini vermektedir.\n<b>Bank Rossii yaklaşık 44 döviz kurunu listeler.</b></string>
     <string name="api_refreshPeriod_title">Güncelleme sıklığı</string>
     <string name="api_refreshPeriod_exchangerateHost">Döviz kurları her iş gününde gece yarısı (UTC) civarında güncellenir.</string>
     <string name="api_refreshPeriod_frankfurterApp">Veri güncellemesi her iş günü 16:00 (CET) civarında gerçekleşir.</string>
     <string name="api_refreshPeriod_ferEe">Kurlar her iş günü güncellenir.</string>
     <string name="api_refreshPeriod_inforEuro">Belirtilen oranlar, bir önceki ayın sondan ikinci günü için Avrupa Merkez Bankası tarafından verilen veya mevcudiyete bağlı olarak delegasyonlar ya da diğer uygun kaynaklar tarafından o tarihe yakın bir zamanda sağlanan piyasa oranlarıdır.</string>
+    <string name="api_refreshPeriod_bankOfCanada">Kurlar her iş günü 16:30 ET\'ye kadar bir kez yayınlanır</string>
+    <string name="api_refreshPeriod_norgesBank">Günlük döviz kurlarının yayınlanma saati yaklaşık olarak 16:00 CET\'dir.</string>
+    <string name="api_refreshPeriod_bankRossii">Kurlar, <a href="https://cbr.ru/eng/other/holidays/">Rusya\'daki resmi tatiller</a> dışında günlük olarak güncellenir.</string>
     <!-- about -->
     <string name="category_about">Uygulama hakkında</string>
     <string name="disclaimer_title">Sorumluluk Reddi</string>
     <string name="disclaimer_summary">Uygulama derin bir yazılım sürecinden geçip test edilmiş olsa dahi <b>gösterilen verilerin doğru olduğu garanti edilmez</b>. Döviz kurları üçüncü taraflarca sağlanır ve bu uygulama hiçbir şekilde bu kurların doğru veya güncel olduğunu vadetmez.\nBuna ek olarak sağlanan kurlar doğru olsa dahi bankanızda kullanılan kurlara göre farklılık gösterebilir.\nSon olarak, hatalar her daim gerçekleşebilir. Kimseye körü körüne güvenme! Yine de belirtmek isterim ki, eğer düzgün çalışmayacağını düşünseydim bu uygulamayı asla yayınlamazdım.</string>
     <string name="donate_title">Geliştiriciyi destekle</string>
     <string name="donate_summary">PayPal üzerinden bağış yap</string>
+    <string name="sourcecode_title">Kaynak kodu</string>
+    <string name="sourcecode_summary">Bu uygulama açık kaynaklıdır. Sorun açmak için kod deposuna gidin, nasıl katkıda bulunacağınızı öğrenin veya yalnızca kaynaklara bir göz atın.</string>
     <string name="rate_title">Uygulamayı puanla</string>
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
     <string name="category_versioninfo">Sürüm bilgisi</string>

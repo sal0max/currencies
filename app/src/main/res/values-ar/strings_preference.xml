@@ -26,6 +26,7 @@
     <string name="language_de">اللغة الألمانية</string>
     <string name="language_el">يونانية</string>
     <string name="language_en">الإنجليزية</string>
+    <string name="language_eo">إسبرانتو</string>
     <string name="language_es">الإسبانيَّة</string>
     <string name="language_fr">الفَرَنْسية</string>
     <string name="language_hr">الكرواتية</string>
@@ -44,6 +45,7 @@
     <string name="language_uk">اللغة الأوكرانية</string>
     <string name="language_vi">اللغة الفيتنامية</string>
 
+
     <!-- api -->
     <string name="category_api">معدل التحويل</string>
     <string name="api_title">مزود البيانات</string>
@@ -52,10 +54,18 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> تتعقب أسعار الصرف المرجعية (الفوركس) التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> هي خدمة جديدة نسبيًا ، (تمامًا مثل Frankfurter.app) تتعقب تبادل المراجع (فوركس) المعدلات التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
 
+
+
+
+
     <string name="api_refreshPeriod_title">فترة التحديث</string>
     <string name="api_refreshPeriod_exchangerateHost">يتم تحديث أسعار الصرف في منتصف الليل بالتوقيت العالمي المنسق كل يوم عمل.</string>
     <string name="api_refreshPeriod_frankfurterApp">يتم تحديث البيانات في حوالي الساعة 16:00 بتوقيت وسط أوروبا كل يوم عمل.</string>
     <string name="api_refreshPeriod_ferEe">يتم تحديث الأسعار كل يوم عمل.</string>
+
+
+
+
 
     <!-- about -->
     <string name="category_about">عن هذا التطبيق</string>

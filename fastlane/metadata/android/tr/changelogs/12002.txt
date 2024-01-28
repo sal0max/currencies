@@ -1,0 +1,2 @@
+- InforEuro API ile yanlış zaman çizelgesi verileri düzeltildi.
+- Çeviriler güncellendi.

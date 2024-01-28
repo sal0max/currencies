@@ -26,6 +26,7 @@
     <string name="language_de">Þýska</string>
     <string name="language_el">Gríska</string>
     <string name="language_en">Enska</string>
+    <string name="language_eo">Esperanto</string>
     <string name="language_es">Spænska</string>
     <string name="language_fr">Franska</string>
     <string name="language_hr">Króatíska</string>
@@ -44,10 +45,14 @@
     <string name="language_uk">Úkraínska</string>
     <string name="language_vi">Víetnamska</string>
     <string name="language_zh_CN">Einfölduð kínverska</string>
+
     <!-- api -->
     <string name="category_api">Gengi</string>
     <string name="api_title">Gagnaveita</string>
     <string name="api_about_title">Um %s</string>
+
+
+
 
 
 
@@ -57,10 +62,15 @@
     <string name="api_refreshPeriod_frankfurterApp">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
     <string name="api_refreshPeriod_ferEe">Gengi eru uppfærð alla virka daga.</string>
 
+
+
+
     <!-- about -->
     <string name="category_about">Um forritið</string>
     <string name="disclaimer_title">Fyrirvari</string>
     <string name="disclaimer_summary">Þrátt fyrir að forritið sé vel skrifað og prófað er <b>engin trygging fyrir því að gögnin sem það sýnir séu rétt</b>. Gengin eru gefin upp af þriðju aðilum og forritið getur ekki gefið nein loforð um að gögnin séu rétt.\nAð auki geta vextirnir sem gefnir eru upp verið frábrugðnir þeim sem bankinn þinn notar.\nAð lokum: Mistök gerast. Treystu aldrei neinum í blindni! En samt vertu viss um að ég hefði ekki gefið út þetta forrit ef ég hefði verið í nokkrum vafa um að það virki eins og ætlað er.</string>
+
+
     <string name="donate_title">Styðja höfundinn</string>
     <string name="donate_summary">Framlag í gegnum PayPal</string>
     <string name="rate_title">Meta forritið</string>

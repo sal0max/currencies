@@ -26,6 +26,7 @@
     <string name="language_de">Γερμανικά</string>
     <string name="language_el">Ελληνικά</string>
     <string name="language_en">Αγγλικά</string>
+    <string name="language_eo">Εσπεράντο</string>
     <string name="language_es">Ισπανικά</string>
     <string name="language_fr">Γαλλικά</string>
     <string name="language_hr">Κροατικά</string>
@@ -44,6 +45,7 @@
     <string name="language_uk">Ουκρανικά</string>
     <string name="language_vi">Βιετναμέζικα</string>
     <string name="language_zh_CN">Κινέζικα (Απλοποιημένα)</string>
+
     <!-- api -->
     <string name="category_api">Ισοτιμίες</string>
     <string name="api_title">Χορηγός δεδομένων</string>

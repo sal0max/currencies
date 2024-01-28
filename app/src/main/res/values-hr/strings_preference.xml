@@ -26,6 +26,7 @@
     <string name="language_de">njemački</string>
     <string name="language_el">grčki</string>
     <string name="language_en">engleski</string>
+    <string name="language_eo">esperanto</string>
     <string name="language_es">španjolski</string>
     <string name="language_fr">francuski</string>
     <string name="language_hr">hrvatski</string>
@@ -44,7 +45,7 @@
     <string name="language_uk">ukrajinski</string>
     <string name="language_vi">vijetnamski</string>
     <string name="language_zh_CN">kineski (pojednostavljeni)</string>
-
+    <string name="language_zh_TW">kineski (tradicionalni)</string>
     <!-- api -->
     <string name="category_api">Tečajne liste</string>
     <string name="api_title">Pružatelj podataka</string>

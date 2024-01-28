@@ -26,6 +26,7 @@
     <string name="language_de">德文</string>
     <string name="language_el">希腊文</string>
     <string name="language_en">英文</string>
+
     <string name="language_es">西班牙文</string>
     <string name="language_fr">法文</string>
     <string name="language_hr">克罗地亚文</string>
@@ -44,6 +45,7 @@
     <string name="language_uk">乌克兰文</string>
     <string name="language_vi">越南文</string>
     <string name="language_zh_CN">简体中文</string>
+
     <!-- api -->
     <string name="category_api">汇率</string>
     <string name="api_title">汇率源</string>
@@ -52,10 +54,18 @@
     <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 跟踪欧洲中央银行公布的参考汇率。\n<b>包括大约30种货币。</b></string>
     <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> 是新汇率源, 和Frankfurter.app一样追踪来自欧洲中央银行的数据。\n<b>包括大约30种货币。</b></string>
 
+
+
+
+
     <string name="api_refreshPeriod_title">更新周期</string>
     <string name="api_refreshPeriod_exchangerateHost">汇率在每个工作日的UTC 0点更新。</string>
     <string name="api_refreshPeriod_frankfurterApp">数据会在每个工作日的16:00 （UTC+1）更新。</string>
     <string name="api_refreshPeriod_ferEe">数据会在工作日更新。</string>
+
+
+
+
 
     <!-- about -->
     <string name="category_about">关于这个应用</string>
