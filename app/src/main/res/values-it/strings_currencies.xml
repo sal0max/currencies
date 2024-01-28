@@ -10,6 +10,7 @@
     <string name="name_aud">Dollaro australiano</string>
     <string name="name_awg">Florino africano</string>
     <string name="name_azn">Manat azero</string>
+
     <string name="name_bam">Marchio convertibile della Bosnia-Erzegovina</string>
     <string name="name_bbd">Dollaro delle Barbados</string>
     <string name="name_bdt">Taka del Bangladesh</string>
@@ -26,6 +27,7 @@
     <string name="name_bwp">Pola del Botswana</string>
     <string name="name_byn">Rublo bielorusso</string>
     <string name="name_bzd">Dollaro belga</string>
+
     <string name="name_cad">Dollaro canadese</string>
     <string name="name_cdf">Franco congolese</string>
     <string name="name_chf">Franco svizzero</string>
@@ -39,17 +41,21 @@
     <string name="name_cup">Peso cubano</string>
     <string name="name_cve">Escudo di Capo Verde</string>
     <string name="name_czk">corona ceca</string>
+
     <string name="name_djf">Franco di Gibuti</string>
     <string name="name_dkk">corona danese</string>
     <string name="name_dop">Peso dominicano</string>
     <string name="name_dzd">Dinaro algerino</string>
+
     <string name="name_egp">Libra egiziana</string>
     <string name="name_ern">Nakfa eritreo</string>
     <string name="name_etb">Birra etiope</string>
     <string name="name_eur">Euro</string>
+
     <string name="name_fjd">Dollaro figiano</string>
     <string name="name_fkp">Lira delle Isole Falkland</string>
     <string name="name_fok">Cróna faroese</string>
+
     <string name="name_gbp">Lira sterlina</string>
     <string name="name_gel">Lari georgiano</string>
     <string name="name_ggp">Libra di Guernsey</string>
@@ -59,11 +65,13 @@
     <string name="name_gnf">Franco guineano</string>
     <string name="name_gtq">quetzal guatemalteco</string>
     <string name="name_gyd">Dollaro della Guyana</string>
+
     <string name="name_hkd">Dollaro di Hong Kong</string>
     <string name="name_hnl">Lempira honduregna</string>
     <string name="name_hrk">Croato kuna</string>
     <string name="name_htg">Gourde haitiano</string>
     <string name="name_huf">Franco ungherese</string>
+
     <string name="name_idr">Rupia indonesiana</string>
     <string name="name_ils">nuovo shekel israeliano</string>
     <string name="name_imp">Lira sterlina manx</string>
@@ -71,10 +79,12 @@
     <string name="name_iqd">Dinaro iracheno</string>
     <string name="name_irr">Rial iraniano</string>
     <string name="name_isk">Króna islandese</string>
+
     <string name="name_jep">libbra del New Jersey</string>
     <string name="name_jmd">Dollaro giamaicano</string>
     <string name="name_jod">Dinaro giordano</string>
     <string name="name_jpy">Yen giapponese</string>
+
     <string name="name_kes">Scellino keniota</string>
     <string name="name_kgs">Som kirghiso</string>
     <string name="name_khr">Riel cambogiano</string>
@@ -84,12 +94,14 @@
     <string name="name_kwd">Dinaro kuwaitiano</string>
     <string name="name_kyd">Dollaro delle Isole Cayman</string>
     <string name="name_kzt">Tenge kazako</string>
+
     <string name="name_lak">Laotian kip</string>
     <string name="name_lbp">Libano pound</string>
     <string name="name_lkr">Rupia dello Sri Lanka</string>
     <string name="name_lrd">Dollaro liberiano</string>
     <string name="name_lsl">Lesotho loti</string>
     <string name="name_lyd">Dinaro libico</string>
+
     <string name="name_mad">Dirham marocchino</string>
     <string name="name_mdl">leu moldavo</string>
     <string name="name_mga">Ariary malgascio</string>
@@ -105,13 +117,16 @@
     <string name="name_mxn">Peso messicano</string>
     <string name="name_myr">Riggit malese</string>
     <string name="name_mzn">Metical mozambicano</string>
+
     <string name="name_nad">Dollaro namibiano</string>
     <string name="name_ngn">naira nigeriana</string>
     <string name="name_nio">Córdoba nicaraguense</string>
     <string name="name_nok">Crone norvegesi</string>
     <string name="name_npr">Rupia nepalese</string>
     <string name="name_nzd">Dollaro neozelandese</string>
+
     <string name="name_omr">Rial omanita</string>
+
     <string name="name_pab">Balboa panamense</string>
     <string name="name_pen">Sol peruviano</string>
     <string name="name_pgk">Papua Nuova Guinea kina</string>
@@ -119,11 +134,14 @@
     <string name="name_pkr">Rupia pakistana</string>
     <string name="name_pln">Zloty polacco</string>
     <string name="name_pyg">guarani paraguaiano</string>
+
     <string name="name_qar">Riyal del Qatar</string>
+
     <string name="name_ron">leu rumeno</string>
     <string name="name_rsd">Dinaro serbo</string>
     <string name="name_rub">Rublo russo</string>
     <string name="name_rwf">franco ruandese</string>
+
     <string name="name_sar">Riyal saudita</string>
     <string name="name_sbd">Dollaro delle Isole Salomone</string>
     <string name="name_scr">Rupia sangallese</string>
@@ -141,6 +159,7 @@
     <string name="name_svc">Salvadoran colón</string>
     <string name="name_syp">Lega siriana</string>
     <string name="name_szl">Swazi lilangeni</string>
+
     <string name="name_thb">Baht thailandese</string>
     <string name="name_tjs">Tajikistani somoni</string>
     <string name="name_tmt">Turkmenistani manat</string>
@@ -150,16 +169,20 @@
     <string name="name_ttd">Dollaro di Trinidad e Tobago</string>
     <string name="name_twd">Nuovo dollaro di Taiwan</string>
     <string name="name_tzs">Scellino tanzaniano</string>
+
     <string name="name_uah">Hryvnia ucraina</string>
     <string name="name_ugx">Scellino ugandese</string>
     <string name="name_usd">Dollaro USA</string>
     <string name="name_uyu">Peso uruguaiano</string>
     <string name="name_uzs">Uzbekistan som</string>
+
     <string name="name_vef">Bolívar fuerte venezuelano (vecchio)</string>
     <string name="name_ves">Bolívar venezuelano soberano</string>
     <string name="name_vnd">Dong vietnamita</string>
     <string name="name_vuv">Vanuatu vatu</string>
+
     <string name="name_wst">Samoan tala</string>
+
     <string name="name_xaf">Franco CFA BEAC</string>
     <string name="name_xag">Oncia d\'argento</string>
     <string name="name_xau">Oncia d\'oro</string>
@@ -169,7 +192,9 @@
     <string name="name_xpd">Oncia di palladio</string>
     <string name="name_xpf">Franco CFA</string>
     <string name="name_xpt">Oncia di platino</string>
+
     <string name="name_yer">Rial yemenita</string>
+
     <string name="name_zar">Rand sudafricano</string>
     <string name="name_zmw">kwacha zambiano</string>
     <string name="name_zwl">Dollaro dello Zimbabwe</string>

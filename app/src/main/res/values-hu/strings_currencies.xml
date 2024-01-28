@@ -10,6 +10,7 @@
     <string name="name_aud">Ausztrál dollár</string>
     <string name="name_awg">Arubai florin</string>
     <string name="name_azn">Azerbajdzsáni manat</string>
+
     <string name="name_bam">Bosnyák konvertibilis márka</string>
     <string name="name_bbd">Barbadosi dollár</string>
     <string name="name_bdt">Bangladesi taka</string>
@@ -26,6 +27,7 @@
     <string name="name_bwp">Botswanai pula</string>
     <string name="name_byn">Belarusz rubel</string>
     <string name="name_bzd">Belize-i dollár</string>
+
     <string name="name_cad">Kanadai dollár</string>
     <string name="name_cdf">Kongói frank</string>
     <string name="name_chf">Svájci frank</string>
@@ -39,17 +41,21 @@
     <string name="name_cup">Kubai peso</string>
     <string name="name_cve">Zöld-foki escudo</string>
     <string name="name_czk">Cseh korona</string>
+
     <string name="name_djf">Dzsibuti frank</string>
     <string name="name_dkk">Dán korona</string>
     <string name="name_dop">Dominikai peso</string>
     <string name="name_dzd">Algériai dinár</string>
+
     <string name="name_egp">Egyiptomi font</string>
     <string name="name_ern">Eritreai nakfa</string>
     <string name="name_etb">Etióp birr</string>
     <string name="name_eur">Euró</string>
+
     <string name="name_fjd">Fidzsi dollár</string>
     <string name="name_fkp">Falkland-szigeteki font</string>
     <string name="name_fok">Feröeri korona</string>
+
     <string name="name_gbp">Angol font</string>
     <string name="name_gel">Grúz lari</string>
     <string name="name_ggp">Guernsey-i font</string>
@@ -59,11 +65,13 @@
     <string name="name_gnf">Guineai frank</string>
     <string name="name_gtq">Guatemalai quetzal</string>
     <string name="name_gyd">Guyanai dollár</string>
+
     <string name="name_hkd">Hongkongi dollár</string>
     <string name="name_hnl">Hondurasi lempira</string>
     <string name="name_hrk">Horvát kuna</string>
     <string name="name_htg">Haiti gourde</string>
     <string name="name_huf">Magyar forint</string>
+
     <string name="name_idr">Indonéz rúpia</string>
     <string name="name_ils">Izraeli új sékel</string>
     <string name="name_imp">Man-szigeti font</string>
@@ -71,10 +79,12 @@
     <string name="name_iqd">Iraki dinár</string>
     <string name="name_irr">Iráni riál</string>
     <string name="name_isk">Izlandi korona</string>
+
     <string name="name_jep">Jersey font</string>
     <string name="name_jmd">Jamaicai dollár</string>
     <string name="name_jod">Jordán dinár</string>
     <string name="name_jpy">Japán jen</string>
+
     <string name="name_kes">Kenyai shilling</string>
     <string name="name_kgs">Kirgiz szom</string>
     <string name="name_khr">Kambodzsai riel</string>
@@ -84,12 +94,14 @@
     <string name="name_kwd">Kuvaiti dinár</string>
     <string name="name_kyd">Kajmán-szigeteki dollár</string>
     <string name="name_kzt">Kazah tenge</string>
+
     <string name="name_lak">Laoszi kip</string>
     <string name="name_lbp">Libanoni font</string>
     <string name="name_lkr">Srí Lanka-i rúpia</string>
     <string name="name_lrd">Libériai dollár</string>
     <string name="name_lsl">Lesothói loti</string>
     <string name="name_lyd">Líbiai dinár</string>
+
     <string name="name_mad">Marokkói dirham</string>
     <string name="name_mdl">Moldáv lej</string>
     <string name="name_mga">Madagaszkári ariary</string>
@@ -105,13 +117,16 @@
     <string name="name_mxn">Mexikói peso</string>
     <string name="name_myr">Maláj ringgit</string>
     <string name="name_mzn">Mozambiki metikális</string>
+
     <string name="name_nad">Namíbiai dollár</string>
     <string name="name_ngn">Nigériai naira</string>
     <string name="name_nio">Nicaraguai córdoba</string>
     <string name="name_nok">Norvég korona</string>
     <string name="name_npr">Nepáli rúpia</string>
     <string name="name_nzd">Új-zélandi dollár</string>
+
     <string name="name_omr">Ománi riál</string>
+
     <string name="name_pab">Panamai balboa</string>
     <string name="name_pen">Perui sol</string>
     <string name="name_pgk">Pápua új-guineai kina</string>
@@ -119,11 +134,14 @@
     <string name="name_pkr">Pakisztáni rúpia</string>
     <string name="name_pln">Lengyel złoty</string>
     <string name="name_pyg">Paraguayi guaraní</string>
+
     <string name="name_qar">Katari riál</string>
+
     <string name="name_ron">Román lej</string>
     <string name="name_rsd">Szerb dinár</string>
     <string name="name_rub">Orosz rubel</string>
     <string name="name_rwf">Ruandai frank</string>
+
     <string name="name_sar">Szaúdi riál</string>
     <string name="name_sbd">Salamon-szigeteki dollár</string>
     <string name="name_scr">Seychelle-i rúpia</string>
@@ -141,6 +159,7 @@
     <string name="name_svc">Salvadori colón</string>
     <string name="name_syp">Szír font</string>
     <string name="name_szl">Szváziföldi lilangeni</string>
+
     <string name="name_thb">Thai bát</string>
     <string name="name_tjs">Tádzsik szomoni</string>
     <string name="name_tmt">Türkmén manat</string>
@@ -150,16 +169,20 @@
     <string name="name_ttd">Trinidad és Tobagó-i dollár</string>
     <string name="name_twd">Tajvani új dollár</string>
     <string name="name_tzs">Tanzániai shilling</string>
+
     <string name="name_uah">Ukrán hrivnya</string>
     <string name="name_ugx">Ugandai shilling</string>
     <string name="name_usd">Amerikai dollár</string>
     <string name="name_uyu">Uruguayi peso</string>
     <string name="name_uzs">Üzbég szom</string>
+
     <string name="name_vef">Venezuelai bolívar (régi)</string>
     <string name="name_ves">Venezuelai bolívar</string>
     <string name="name_vnd">Vietnámi đồng</string>
     <string name="name_vuv">Vanuatui vatu</string>
+
     <string name="name_wst">Szamoai tala</string>
+
     <string name="name_xaf">Közép-afrikai valutaközösségi frank</string>
     <string name="name_xag">Ezüst uncia</string>
     <string name="name_xau">Arany uncia</string>
@@ -169,7 +192,9 @@
     <string name="name_xpd">Palládium uncia</string>
     <string name="name_xpf">Csendes-óceáni valutaközösségi frank</string>
     <string name="name_xpt">Platina uncia</string>
+
     <string name="name_yer">Jemeni riál</string>
+
     <string name="name_zar">Dél-afrikai rand</string>
     <string name="name_zmw">Zambiai kwacha</string>
     <string name="name_zwl">Zimbabwei dollár</string>
