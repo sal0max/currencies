@@ -4,7 +4,26 @@
         <item>Çeviriler güncellendi.</item>
     </string-array>
 
+    <string-array name="changelog_1.21.0">
+        <item>API satıldığı ve artık ticari olduğu için Exchangerate.host kaldırıldı.</item>
+        <item>Bunun yerine, bir dizi yeni veri sağlayıcı var. Daha çok resmi sağlayıcılara odaklanacağız ve gelecekte daha da fazlasını eklemeye çalışacağız.</item>
+        <item>Yeni: Kanada Merkez Bankası: Bank of Canada</item>
+        <item>Yeni: Norveç Merkez Bankası: Norges Bank</item>
+        <item>Yeni: Rus Merkez Bankası: Bank Rossii</item>
+        <item>Ayarlarda sizi doğrudan kaynak koduna götüren bir bağlantı var.</item>
+        <item>İyileştirilen hata işleme ve güncellenen çeviriler gibi genel iyileştirmeler.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>Zaman çizelgesi grafik görünümünde yüzde farkı için yanlış değerler düzeltildi.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
+        <item>Çeviriler güncellendi.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>InforEuro API ile yanlış zaman çizelgesi verileri düzeltildi.</item>
         <item>Çeviriler güncellendi.</item>
     </string-array>
 

@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.2">
+        <item>New selectable language: Esperanto!</item>
+        <item>Supporting hardware keyboard input.</item>
+        <item>Updated translations.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.1">
         <item>Updated translations.</item>
     </string-array>
