@@ -6,6 +6,7 @@ import com.github.kittinunf.result.Result
 import com.squareup.moshi.JsonClass
 import de.salomax.currencies.model.provider.BankOfCanada
 import de.salomax.currencies.model.provider.BankRossii
+import de.salomax.currencies.model.provider.CeskaNarodniBanka
 import de.salomax.currencies.model.provider.FerEe
 import de.salomax.currencies.model.provider.FrankfurterApp
 import de.salomax.currencies.model.provider.InforEuro
@@ -25,7 +26,8 @@ enum class ApiProvider(
     NORGES_BANK(4, NorgesBank()),
     BANK_ROSSII(5, BankRossii()),
     BANK_OF_CANADA(6, BankOfCanada()),
-    OPEN_EXCHANGERATES(7, OpenExchangerates());
+    OPEN_EXCHANGERATES(7, OpenExchangerates()),
+    CESKA_NARODNI_BANKA(8, CeskaNarodniBanka());
 
     companion object {
         fun fromId(value: Int): ApiProvider = entries.firstOrNull { it.id == value }
