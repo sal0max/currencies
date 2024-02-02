@@ -1,12 +1,26 @@
 package de.salomax.currencies.view.main
 
-import android.content.*
+import android.content.ClipData
+import android.content.ClipDescription
+import android.content.ClipboardManager
+import android.content.Context
+import android.content.Intent
 import android.graphics.Color
 import android.icu.util.Calendar
 import android.icu.util.TimeZone
 import android.os.Bundle
-import android.view.*
-import android.widget.*
+import android.view.ContextMenu
+import android.view.Gravity
+import android.view.KeyEvent
+import android.view.Menu
+import android.view.MenuItem
+import android.view.View
+import android.widget.AdapterView
+import android.widget.DatePicker
+import android.widget.FrameLayout
+import android.widget.ImageView
+import android.widget.LinearLayout
+import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
@@ -469,6 +483,42 @@ class MainActivity : BaseActivity() {
             "×" -> viewModel.multiplication()
             "÷" -> viewModel.division()
         }
+    }
+
+    // capture hardware keyboard input
+    override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
+        // IMPORTANT: can't work with simple keyCodes here, as depending on the keyboard
+        // configuration, wrong values will be returned (e.g. KEYCODE_8 instad of KEYCODE_PLUS).
+        @Suppress("MoveVariableDeclarationIntoWhen")
+        val key = event?.keyCharacterMap?.get(keyCode, event.metaState)?.let { Char(it) }
+        when (key) {
+            // numbers
+            '0' -> viewModel.addNumber("0")
+            '1' -> viewModel.addNumber("1")
+            '2' -> viewModel.addNumber("2")
+            '3' -> viewModel.addNumber("3")
+            '4' -> viewModel.addNumber("4")
+            '5' -> viewModel.addNumber("5")
+            '6' -> viewModel.addNumber("6")
+            '7' -> viewModel.addNumber("7")
+            '8' -> viewModel.addNumber("8")
+            '9' -> viewModel.addNumber("9")
+            // decimal
+            '.' -> viewModel.addDecimal()
+            ',' -> viewModel.addDecimal()
+            // operators
+            '+' -> viewModel.addition()
+            '-' -> viewModel.subtraction()
+            '*' -> viewModel.multiplication()
+            '/' -> viewModel.division()
+            else ->
+                // delete
+                if (keyCode == KeyEvent.KEYCODE_DEL)
+                    viewModel.delete()
+                else
+                    return false
+        }
+        return true
     }
 
     /*
