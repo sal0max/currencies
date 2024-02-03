@@ -10,6 +10,7 @@ import de.salomax.currencies.model.provider.FerEe
 import de.salomax.currencies.model.provider.FrankfurterApp
 import de.salomax.currencies.model.provider.InforEuro
 import de.salomax.currencies.model.provider.NorgesBank
+import de.salomax.currencies.model.provider.OpenExchangerates
 import java.time.LocalDate
 
 @JsonClass(generateAdapter = false) // see https://stackoverflow.com/a/64085370/421140
@@ -23,7 +24,8 @@ enum class ApiProvider(
     INFOR_EURO(3, InforEuro()),
     NORGES_BANK(4, NorgesBank()),
     BANK_ROSSII(5, BankRossii()),
-    BANK_OF_CANADA(6, BankOfCanada());
+    BANK_OF_CANADA(6, BankOfCanada()),
+    OPEN_EXCHANGERATES(7, OpenExchangerates());
 
     companion object {
         fun fromId(value: Int): ApiProvider = entries.firstOrNull { it.id == value }
