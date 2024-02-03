@@ -31,7 +31,7 @@
     <string name="name_cad">Канадський долар</string>
     <string name="name_cdf">Конголезький франк</string>
     <string name="name_chf">Швейцарський франк</string>
-    <string name="name_clf">Чилійський унідад де Фоменто (UF)</string>
+    <string name="name_clf">Чилійський унідад де фоменто (UF)</string>
     <string name="name_clp">Чилійський песо</string>
     <string name="name_cnh">Китайський юань (офшори)</string>
     <string name="name_cny">Китайський юань</string>
@@ -77,7 +77,7 @@
     <string name="name_imp">Менський фунт</string>
     <string name="name_inr">Індійська рупія</string>
     <string name="name_iqd">Іракський динар</string>
-    <string name="name_irr">іранський ріал</string>
+    <string name="name_irr">Іранський ріал</string>
     <string name="name_isk">Ісландська крона</string>
 
     <string name="name_jep">Джерсійський фунт</string>
