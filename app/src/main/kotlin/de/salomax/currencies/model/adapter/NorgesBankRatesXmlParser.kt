@@ -41,8 +41,8 @@ class NorgesBankRatesXmlParser {
                     val date = LocalDate.parse(parser.getAttributeValue(null, "TIME_PERIOD"))
                     // get value
                     val value = parser.getAttributeValue(null, "OBS_VALUE").toFloatOrNull()
-                    // filter out XDR
-                    if (base != null && value != null && base != Currency.XDR) {
+                    // store
+                    if (base != null && value != null) {
                         // check if there is already an older value and remove it
                         // (api is sorted ascending, so later currencies are always newer)
                         rates.removeIf { rate -> rate.currency == base }

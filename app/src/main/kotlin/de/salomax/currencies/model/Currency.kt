@@ -190,7 +190,27 @@ enum class Currency(
     ZWL("ZWL", 932,  "$",    R.string.name_zwl, R.drawable.flag_zw);
 
     companion object {
-        fun fromString(value: String): Currency? = values().firstOrNull { it.iso4217Alpha == value }
+        fun fromString(value: String): Currency? =
+            // filter out these:
+            if (value != "BTC"    // Bitcoin
+                // metals
+                && value != "XAG" // silver
+                && value != "XAU" // gold
+                && value != "XPD" // palladium
+                && value != "XPT" // platinum
+                // superseded
+                && value != "MRO" // Mauritanian ouguiya         (until 2018/01/01)
+                && value != "STD" // São Tomé and Príncipe dobra (until 2018/01/01)
+                && value != "VEF" // Venezuelan bolívar fuerte   (2008/01/01 – 2018/08/20)
+                && value != "CUC" // Cuban convertible peso      (1994 - 2020/01/01)
+                // special
+                && value != "XDR" // special drawing rights of the IMF
+                && value != "CLF" // Unidad de Fomento (non-circulating Chilean currency)
+                && value != "CNH" // Chinese renminbi  (Offshore e.g. Hong Kong)
+            ) {
+                entries.firstOrNull { it.iso4217Alpha == value }
+            } else
+                null
     }
 
     /**

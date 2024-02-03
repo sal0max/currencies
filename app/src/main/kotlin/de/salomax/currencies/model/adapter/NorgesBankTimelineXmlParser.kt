@@ -46,9 +46,8 @@ class NorgesBankTimelineXmlParser(
                     val date = LocalDate.parse(parser.getAttributeValue(null, "TIME_PERIOD"))
                     // get value
                     val value = parser.getAttributeValue(null, "OBS_VALUE").toFloatOrNull()
-                    // filter out XDR
-                    if (base != null && value != null && base != Currency.XDR) {
-                        // add rate
+                    // add rate
+                    if (base != null && value != null) {
                         currentTimeline[date] = Rate(base, (1f / value) * multiplier)
                     }
                 }

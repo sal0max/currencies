@@ -45,8 +45,8 @@ class BankRossiiRatesXmlParser {
                 }
             } else if (eventType == XmlPullParser.END_TAG) {
                 if (tagname == "Valute") {
-                    // store rate (filter out XDR)
-                    if (currency != null && value != null && currency != Currency.XDR) {
+                    // store rate
+                    if (currency != null && value != null) {
                         rates.add(Rate(currency, value))
                     }
                     // reset
