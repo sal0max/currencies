@@ -513,10 +513,11 @@ class MainActivity : BaseActivity() {
             '/' -> viewModel.division()
             else ->
                 // delete
-                if (keyCode == KeyEvent.KEYCODE_DEL)
-                    viewModel.delete()
-                else
-                    return false
+                when (keyCode) {
+                    KeyEvent.KEYCODE_DEL -> viewModel.delete()
+                    KeyEvent.KEYCODE_BACK -> super.onBackPressedDispatcher.onBackPressed()
+                    else -> return false
+                }
         }
         return true
     }
