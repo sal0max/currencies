@@ -26,7 +26,7 @@ enum class ApiProvider(
     BANK_OF_CANADA(6, BankOfCanada());
 
     companion object {
-        fun fromId(value: Int): ApiProvider = values().firstOrNull { it.id == value }
+        fun fromId(value: Int): ApiProvider = entries.firstOrNull { it.id == value }
             // this is our fallback, e.g. if an API is removed from the app
             ?: BANK_ROSSII
     }
