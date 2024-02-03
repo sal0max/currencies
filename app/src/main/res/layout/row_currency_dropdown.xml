@@ -41,12 +41,14 @@
 
     <TextView
         android:id="@+id/text"
-        style="@style/TextAppearance.Material3.BodyLarge"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:ellipsize="end"
-        android:lines="1"
+        android:letterSpacing="0.03125"
+        android:lineSpacingMultiplier="0.9"
+        android:maxLines="2"
         android:textDirection="locale"
+        android:textSize="16sp"
         app:layout_constraintEnd_toStartOf="@id/btn_fav"
         app:layout_constraintStart_toStartOf="@id/text2"
         app:layout_constraintTop_toBottomOf="@id/text2"
