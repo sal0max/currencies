@@ -1,0 +1,3 @@
+- Fixed: Back key didn't close the app.
+- Updated translations.
+- Overall improvements.

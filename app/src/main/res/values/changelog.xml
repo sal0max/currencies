@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.3">
+        <item>Fixed: Back key didn\'t close the app.</item>
+        <item>Updated translations.</item>
+        <item>Overall improvements.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.2">
         <item>New selectable language: Esperanto!</item>
         <item>Supporting hardware keyboard input.</item>

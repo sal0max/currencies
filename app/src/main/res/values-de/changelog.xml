@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.3">
+        <item>Behoben: Zurück-Button hat die App nicht beendet.</item>
+        <item>Aktualisierte Übersetzungen.</item>
+        <item>Allgemeine Verbesserungen.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.2">
         <item>Neue auswählbare Sprache: Esperanto!</item>
         <item>Unterstütze Eingaben per Hardware-Tastatur.</item>
