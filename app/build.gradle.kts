@@ -7,7 +7,7 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "1.9.22-1.0.16"
+    id("com.google.devtools.ksp") version "1.9.22-1.0.17"
 }
 
 android {
@@ -103,7 +103,7 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-coroutines:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-moshi:$fuelVersion")
-    val moshiVersion = "1.15.0"
+    val moshiVersion = "1.15.1"
     implementation("com.squareup.moshi:moshi-kotlin:$moshiVersion")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
     // math
@@ -112,7 +112,7 @@ dependencies {
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.8.0")
+    testImplementation("org.mockito:mockito-core:5.10.0")
 }
 
 fun getSecret(key: String): String? {
