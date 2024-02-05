@@ -38,7 +38,7 @@ class LanguagePickerPreference: ListPreference {
 
     // e.g. ["en", "de", "pt_BR"]
     override fun getEntryValues(): Array<String> {
-        return Language.values().map { it.iso }.toTypedArray()
+        return Language.entries.map { it.iso }.toTypedArray()
     }
 
     override fun findIndexOfValue(value: String?): Int {
@@ -50,7 +50,7 @@ class LanguagePickerPreference: ListPreference {
     }
 
     override fun setValueIndex(index: Int) {
-        currentValue = Language.values()[index]
+        currentValue = Language.entries[index]
     }
 
     override fun getValue(): String? {
@@ -86,7 +86,7 @@ class LanguagePickerPreference: ListPreference {
 
         // listener
         var onLanguageClicked: ((Language) -> Unit)? = null
-        private val languages = Language.values()
+        private val languages = Language.entries
 
         override fun getCount() = languages.size
 
@@ -115,19 +115,20 @@ class LanguagePickerPreference: ListPreference {
             }
 
             holder.run {
+                val language = languages[position]
                 // register clicks
-                parentView?.setOnClickListener { onLanguageClicked?.invoke(languages[position]) }
+                parentView?.setOnClickListener { onLanguageClicked?.invoke(language) }
                 // check current active language
-                radioButton?.isChecked = (languages[position] == selectedItem)
+                radioButton?.isChecked = (language == selectedItem)
                 // fill text
-                when (languages[position]) {
+                when (language) {
                     Language.SYSTEM -> {
-                        textNative?.text = languages[position].localizedName(context)
+                        textNative?.text = language.localizedName(context)
                         textLocale?.visibility = View.GONE
                     }
                     else -> {
-                        textNative?.text = languages[position].nativeName(context)
-                        textLocale?.text = languages[position].localizedName(context)
+                        textNative?.text = language.nativeName(context)
+                        textLocale?.text = language.localizedName(context)
                         textLocale?.visibility = View.VISIBLE
                     }
                 }
