@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> sources the currency rates from various financial data providers and banks, including the European Central Bank. All exchange rate data are delivered in midpoint data. Midpoint rates are determined by calculating the average median rate of Bid and Ask.\n<b>About 160 currencies are included.</b></string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">Exchange rates are updated around midnight UTC every working day.</string>
+
+    <string name="api_frankfurterApp_source">European Central Bank</string>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank.\n<b>About 30 currencies are included.</b></string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">The data is getting updated around 16:00 CET every working day.</string>
+
+    <string name="api_ferEe_source" translatable="false">@string/api_frankfurterApp_source</string>
+    <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> is a relatively new service, that (just like Frankfurter.app) does track reference exchange (forex) rates that are published by the European Central Bank.\n<b>About 30 currencies are included.</b></string>
+    <string name="api_ferEe_descriptionUpdateInterval">Rates are updated every working day.</string>
+
+    <string name="api_inforEuro_source">European Commission</string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a> provides the European Commission’s official monthly accounting rate for the Euro and the conversion rates as established by the Accounting Officer of the European Commission in line with article 19 of the Financial Regulation.\nThese rates are used to calculate amounts for the reimbursement of expenses, travel or subsistence costs for external people participating in meetings, interviews etc. at the request of the European Commission.\n<b>About 150 currencies are included.</b></string>
+    <string name="api_inforEuro_descriptionUpdateInterval">The rates indicated are the market rates for the second to last day of the previous month as quoted by the European Central Bank or, depending on availability, provided by the delegations or other appropriate sources close to that date.</string>
+    <string name="api_inforEuro_hint">Rates only get updated once a month!</string>
+
+    <string name="api_bankOfCanada_source">Central Bank of Canada</string>
+    <string name="api_bankOfCanada_descriptionFull">Daily average exchange rates of the <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.\n<b>About 23 currencies are included.</b></string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">The rates are published once each business day by 16:30 ET</string>
+
+    <string name="api_norgesBank_source">Central Bank of Norway</string>
+    <string name="api_norgesBank_descriptionFull">Exchange rates, as provided by the Norwegian central bank <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.\n<b>Norges Bank lists some 40 exchange rates.</b></string>
+    <string name="api_norgesBank_descriptionUpdateInterval">Publication time of daily exchange rates is approximately 16:00 CET.</string>
+    <string name="api_norgesBank_hint">Service regularly has downtimes (HTTP 503), during which rates can\'t be refreshed!</string>
+
+    <string name="api_bankRossii_source">Central Bank of Russia</string>
+    <string name="api_bankRossii_descriptionFull">Exchange rates, as provided by the Russian central bank <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. With the current sanctions, this source gives probably the most reliable exchange rates for Russian Ruble.\n<b>Bank Rossii lists some 44 exchange rates.</b></string>
+    <string name="api_bankRossii_descriptionUpdateInterval">Rates are updated on a daily basis, except on <a href="https://cbr.ru/eng/other/holidays/">public holidays in Russia</a>.</string>
+</resources>

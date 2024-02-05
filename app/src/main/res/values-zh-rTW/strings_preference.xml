@@ -49,22 +49,9 @@
     <!-- api -->
     <string name="category_api">匯率</string>
     <string name="api_title">資料來源</string>
+
     <string name="api_about_title">關於 %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> 從各種金融資料供應商和銀行 (包括歐洲央行) 取得貨幣匯率。所有匯率資料均以中點匯率呈現。中點匯率是透過計算買入價和賣出價的平均中位數率決定的。\n<b>大約包含 160 種貨幣</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 追蹤歐洲中央銀行發布的外幣參考匯率 (forex)\n<b>大約包含 30 種貨幣</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a>是非常新穎的服務，跟 Frankfurter.app 一樣是追蹤歐洲中央銀行發布的外幣參考匯率 (forex)\n<b>大約包含 30 種貨幣</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a>提供歐洲委員會官方的歐元月度會計匯率，以及由歐洲委員會的會計官根據《財務規則》第 19 條確定的換算率。\n這些匯率用於計算外部人員因應歐洲委員會的邀請參與會議、面談等活動的費用、差旅或生活費用的金額。\n<b>大約包含 150 種貨幣</b></string>
-    <string name="api_about_bankOfCanada"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>的日平均匯率\n<b>大約包含 23 種貨幣</b></string>
-    <string name="api_about_norgesBank">匯率由挪威的中央銀行<a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>挪威銀行</b></a>提供\n<b>大約有 40 種貨幣</b></string>
-    <string name="api_about_bankRossii">匯率由俄羅斯的中央銀行<a href="https://cbr.ru/eng/currency_base/daily/"><b>俄羅斯銀行</b></a>提供。在目前的制裁環境下，這個來源可能提供對俄羅斯盧布匯率最可靠的數據。\n<b>俄羅斯銀行列出約 44 種貨幣匯率</b></string>
     <string name="api_refreshPeriod_title">更新週期</string>
-    <string name="api_refreshPeriod_exchangerateHost">匯率在每個工作日的 UTC 午夜左右更新</string>
-    <string name="api_refreshPeriod_frankfurterApp">資料在每個工作日的 16:00 CET 左右更新</string>
-    <string name="api_refreshPeriod_ferEe">匯率在每個工作日更新</string>
-    <string name="api_refreshPeriod_inforEuro">顯示的匯率是由歐洲中央銀行引述的前一月倒數第二天的市場匯率，或根據可取得的情況由代表團或其他在那日期附近的適當來源提供。</string>
-    <string name="api_refreshPeriod_bankOfCanada">在每個工作日的 16:30 ET 發布一次匯率</string>
-    <string name="api_refreshPeriod_norgesBank">大約在 16:00 CET 左右發布每日匯率</string>
-    <string name="api_refreshPeriod_bankRossii">匯率根據每天的需求更新，除了<a href="https://cbr.ru/eng/other/holidays/">俄羅斯國定假日</a>。</string>
     <!-- about -->
     <string name="category_about">關於這個 App</string>
     <string name="disclaimer_title">免責聲明</string>

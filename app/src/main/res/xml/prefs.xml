@@ -51,7 +51,7 @@
     </PreferenceCategory>
 
     <PreferenceCategory android:title="@string/category_api">
-        <ListPreference
+        <de.salomax.currencies.view.preference.ProviderPickerPreference
             android:icon="@drawable/ic_data_provider"
             android:key="@string/api_key"
             android:summary="%s"

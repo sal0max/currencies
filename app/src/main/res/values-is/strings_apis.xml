@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">Gengi eru uppfærð um miðnætti UTC alla virka daga.</string>
+    <string name="api_ferEe_descriptionUpdateInterval">Gengi eru uppfærð alla virka daga.</string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
+</resources>

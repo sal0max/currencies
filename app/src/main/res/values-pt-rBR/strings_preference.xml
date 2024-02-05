@@ -49,22 +49,9 @@
     <!-- api -->
     <string name="category_api">Taxas de câmbio</string>
     <string name="api_title">Fornecedor de serviço</string>
+
     <string name="api_about_title">Sobre %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> apresenta as taxas de câmbios de vários fornecedores de informação financeira e bancos, incluindo o European Central Bank. Todas as taxas de câmbios derivam de um ponto médio. Pontos médios são determinados por cálculo da taxa média da oferta e procura.\n<b>Cerca de 160 moedas estão incluídas.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> segue taxas de câmbios de referência (forex) publicadas pelo European Central Bank.\n<b>Cerca de 30 moedas estão incluídas.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> é um serviço relativamente novo, que (como o Frankfurter.app) segue as taxas de câmbio de referência (forex) que são publicadas pelo European Central Bank.\n<b>Cerca de 30 moedas estão incluídas.</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_pt"><b>InforEuro</b></a> indica a taxa contabilística mensal oficial da Comissão Europeia para o euro e as taxas de conversão fixadas pelo contabilista da Comissão Europeia, em conformidade com o artigo 19.º do Regulamento Financeiro.\nEstas taxas são utilizadas para calcular os montantes dos reembolsos das despesas, nomeadamente de deslocação e de estada, de pessoas externas que participam, a convite da Comissão Europeia, em reuniões, entrevistas, etc.\n<b>Cerca de 150 moedas estão incluídas.</b></string>
-
-
-
     <string name="api_refreshPeriod_title">Intervalo de atualização</string>
-    <string name="api_refreshPeriod_exchangerateHost">Taxas de câmbios são atualizadas perto da meia noite UTC a cada dia útil.</string>
-    <string name="api_refreshPeriod_frankfurterApp">A informação é atualizada cerca das 16:00 CET a cada dia útil.</string>
-    <string name="api_refreshPeriod_ferEe">Taxas atualizadas a cada dia útil.</string>
-    <string name="api_refreshPeriod_inforEuro">As taxas indicadas são as taxas de mercado do período compreendido entre o segundo e o último dia do mês anterior, divulgadas pelo Banco Central Europeu, ou, caso estejam disponíveis, fornecidas pelas delegações ou por outras fontes adequadas existentes na proximidade dessa data.</string>
-
-
-
     <!-- about -->
     <string name="category_about">Sobre esta app</string>
     <string name="disclaimer_title">Renúncia de responsabilidade</string>

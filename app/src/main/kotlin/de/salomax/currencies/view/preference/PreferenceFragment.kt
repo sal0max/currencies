@@ -16,7 +16,7 @@ import de.salomax.currencies.util.toHumanReadableNumber
 import de.salomax.currencies.viewmodel.preference.PreferenceViewModel
 import de.salomax.currencies.widget.EditTextSwitchPreference
 import de.salomax.currencies.widget.LongSummaryPreference
-import java.util.*
+import java.util.Calendar
 
 @Suppress("unused")
 class PreferenceFragment: PreferenceFragmentCompat() {
@@ -26,47 +26,6 @@ class PreferenceFragment: PreferenceFragmentCompat() {
     override fun onCreatePreferences(savedInstanceState: Bundle?, rootKey: String?) {
         setPreferencesFromResource(R.xml.prefs, rootKey)
         viewModel = ViewModelProvider(this)[PreferenceViewModel::class.java]
-
-        // theme
-        findPreference<ListPreference>(getString(R.string.theme_key))?.apply {
-            setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setTheme(newValue.toString().toInt())
-                true
-            }
-        }
-
-        // language
-        findPreference<LanguagePickerPreference>(getString(R.string.language_key))?.apply {
-            // listen for changes
-            setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setLanguage(newValue.toString())
-                true
-            }
-        }
-
-        // conversion preview
-        findPreference<SwitchPreferenceCompat>(getString(R.string.previewConversion_key))?.apply {
-            setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setPreviewConversionEnabled(newValue.toString().toBoolean())
-                true
-            }
-        }
-
-        // extended keypad
-        findPreference<SwitchPreferenceCompat>(getString(R.string.extendedKeypad_key))?.apply {
-            setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setExtendedKeypadEnabled(newValue.toString().toBoolean())
-                true
-            }
-        }
-
-        // pure black
-        findPreference<SwitchPreferenceCompat>(getString(R.string.pure_black_key))?.apply {
-            setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setPureBlackEnabled(newValue.toString().toBoolean())
-                true
-            }
-        }
 
         // transaction fee
         val feePreference = findPreference<EditTextSwitchPreference>(getString(R.string.fee_key))
@@ -91,17 +50,60 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             feePreference?.text = it.toString()
         }
 
+        // conversion preview
+        findPreference<SwitchPreferenceCompat>(getString(R.string.previewConversion_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setPreviewConversionEnabled(newValue.toString().toBoolean())
+                true
+            }
+        }
+
+        // extended keypad
+        findPreference<SwitchPreferenceCompat>(getString(R.string.extendedKeypad_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setExtendedKeypadEnabled(newValue.toString().toBoolean())
+                true
+            }
+        }
+
+        // -------------------------------------------------------------------------------------
+
+        // theme
+        findPreference<ListPreference>(getString(R.string.theme_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setTheme(newValue.toString().toInt())
+                true
+            }
+        }
+
+        // pure black
+        findPreference<SwitchPreferenceCompat>(getString(R.string.pure_black_key))?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setPureBlackEnabled(newValue.toString().toBoolean())
+                true
+            }
+        }
+
+        // language
+        findPreference<LanguagePickerPreference>(getString(R.string.language_key))?.apply {
+            // listen for changes
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setLanguage(newValue.toString())
+                true
+            }
+        }
+
+        // -------------------------------------------------------------------------------------
+
         // api provider
-        findPreference<ListPreference>(getString(R.string.api_key))?.apply {
+        findPreference<ProviderPickerPreference>(getString(R.string.api_key))?.apply {
             // initialize values
             val providers = ApiProvider.entries
             entries = providers.map { it.getName() }.toTypedArray()         // names
             entryValues = providers.map { it.id.toString() }.toTypedArray() // ids
             // listen for changes
             setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setApiProvider(
-                    ApiProvider.fromId(newValue.toString().toInt())
-                )
+                viewModel.setApiProvider(ApiProvider.fromId(newValue.toString().toInt()))
                 true
             }
             // set default, if empty (empty means, there was no mapping for the stored value)
@@ -120,8 +122,10 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                     it.getDescription(context)
             }
             findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
-                it.getUpdateIntervalDescription(requireContext())
+                it.getDescriptionUpdateInterval(requireContext())
         }
+
+        // -------------------------------------------------------------------------------------
 
         // open source code repo
         findPreference<Preference>(getString(R.string.sourcecode_key))?.apply {
@@ -152,20 +156,6 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
         }
 
-        // changelog
-        findPreference<Preference>(getString(R.string.changelog_key))?.apply {
-            setOnPreferenceClickListener {
-                ChangelogDialog().show(childFragmentManager, null)
-                true
-            }
-        }
-
-        // about
-        findPreference<Preference>(getString(R.string.version_key))?.apply {
-            title = BuildConfig.VERSION_NAME
-            summary = getString(R.string.version_summary, Calendar.getInstance().get(Calendar.YEAR).toString())
-        }
-
         // rate
         findPreference<Preference>(getString(R.string.rate_key))?.apply {
             // hide for F-Droid - no rating mechanism there
@@ -186,6 +176,22 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 }
                 true
             }
+        }
+
+        // -------------------------------------------------------------------------------------
+
+        // changelog
+        findPreference<Preference>(getString(R.string.changelog_key))?.apply {
+            setOnPreferenceClickListener {
+                ChangelogDialog().show(childFragmentManager, null)
+                true
+            }
+        }
+
+        // about
+        findPreference<Preference>(getString(R.string.version_key))?.apply {
+            title = BuildConfig.VERSION_NAME
+            summary = getString(R.string.version_summary, Calendar.getInstance().get(Calendar.YEAR).toString())
         }
     }
 

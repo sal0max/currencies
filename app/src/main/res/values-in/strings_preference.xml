@@ -49,20 +49,15 @@
     <!-- api -->
     <string name="category_api">Nilai tukar</string>
     <string name="api_title">Penyedia data</string>
+
     <string name="api_about_title">Tentang %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> menerima nilai tukar mata uang dari berbagai penyedia data keuangan dan bank, termasuk Bank Sentral Eropa (European Central Bank). Semua data nilai tukar disampaikan dalam data titik tengah. Titik tengah ditentukan dengan menghitung rata-rata Bid dan Ask.\n<b>Sekitar 160 mata uang tersedia.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> memantau nilai valas yang dipublikasikan oleh Bank Sentral Eropa (European Central Bank).\n<b>Sekitar 30 mata uang tersedia.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> adalah layanan yang relatif lebih baru, yang (seperti Frankfurter.app) memantau nilai valas yang dipublikasikan oleh Bank Sentral Eropa (European Central Bank).\n<b>Sekitar 30 mata uang tersedia.</b></string>
-
     <string name="api_refreshPeriod_title">Waktu pembaruan</string>
-    <string name="api_refreshPeriod_exchangerateHost">Nilai tukar diperbarui pada tengah malam UTC setiap hari kerja.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Data diperbarui sekitar pukul 16.00 CET setiap hari kerja.</string>
-    <string name="api_refreshPeriod_ferEe">Nilai tukar diperbarui setiap hari kerja.</string>
-
     <!-- about -->
     <string name="category_about">Tentang aplikasi ini</string>
     <string name="disclaimer_title">Peringatan</string>
     <string name="disclaimer_summary">Walaupun aplikasi ini telah ditulis dan diuji secara menyeluruh, <b>tidak ada jaminan bahwa data yang ditampilkan benar</b>. Nilai tukar disediakan oleh pihak ketiga dan aplikasi ini tidak dapat memastikan bagaimanapun bahwa data tersebut benar dan mutakhir.\nKemudian, Nilai tukar yang diberikan – kalaupun benar – mungkin berbeda dari apa yang digunakan bank Anda.\nTerakhir: Kesalahan pasti terjadi. Jangan pernah memercayai orang tanpa berpikir dahulu! Oleh karena itu, saya tidak akan meluncurkan aplikasi ini jika saya ragu-ragu aplikasi ini tidak bekerja sesuai dengan yang diharapkan.</string>
+
+
     <string name="donate_title">Dukung pengembang</string>
     <string name="donate_summary">Berdonasi melalui PayPal</string>
     <string name="rate_title">Nilai aplikasi ini</string>

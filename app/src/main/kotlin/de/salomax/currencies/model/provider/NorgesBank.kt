@@ -21,11 +21,19 @@ class NorgesBank: ApiProvider.Api() {
 
     override val name = "Norges Bank"
 
-    override fun description(context: Context) =
-        context.getText(R.string.api_about_norgesBank)
+    override val currencyCount: Int = 40
 
-    override fun updateIntervalDescription(context: Context) =
-        context.getText(R.string.api_refreshPeriod_norgesBank)
+    override fun source(context: Context) =
+        context.getString(R.string.api_norgesBank_source)
+
+    override fun description(context: Context) =
+        context.getText(R.string.api_norgesBank_descriptionFull)
+
+    override fun descriptionUpdateInterval(context: Context) =
+        context.getText(R.string.api_norgesBank_descriptionUpdateInterval)
+
+    override fun descriptionHint(context: Context) =
+        context.getText(R.string.api_norgesBank_hint)
 
     override val baseUrl = "https://data.norges-bank.no/api"
 

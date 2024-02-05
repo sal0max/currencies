@@ -49,28 +49,15 @@
     <!-- api -->
     <string name="category_api">汇率</string>
     <string name="api_title">汇率源</string>
+
     <string name="api_about_title">关于 %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> 的货币汇率来自于各种金融数据提供商和银行，包括欧洲中央银行。 所有的汇率数据都是以中点数据的形式交付。中点汇率是通过计算买入和卖出的平均中点汇率确定的。\n<b>包括大约160种货币的数据。</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 跟踪欧洲中央银行公布的参考汇率。\n<b>包括大约30种货币。</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> 是新汇率源, 和Frankfurter.app一样追踪来自欧洲中央银行的数据。\n<b>包括大约30种货币。</b></string>
-
-
-
-
-
     <string name="api_refreshPeriod_title">更新周期</string>
-    <string name="api_refreshPeriod_exchangerateHost">汇率在每个工作日的UTC 0点更新。</string>
-    <string name="api_refreshPeriod_frankfurterApp">数据会在每个工作日的16:00 （UTC+1）更新。</string>
-    <string name="api_refreshPeriod_ferEe">数据会在工作日更新。</string>
-
-
-
-
-
     <!-- about -->
     <string name="category_about">关于这个应用</string>
     <string name="disclaimer_title">免责声明</string>
     <string name="disclaimer_summary">虽然该应用程序的编写和测试非常彻底，但<b>不保证其显示的数据是正确的</b>。汇率是由第三方提供的，这个应用程序不能保证数据是真实和最新的。\n此外，所提供的汇率—即使正确—也可能与你的银行所使用的汇率不同。\n最后：错误时有发生。永远不要盲目地相信任何人! 既然如此，请放心，如果我对这个应用程序有任何不放心，我就不会发布它。</string>
+
+
     <string name="donate_title">支持开发者</string>
     <string name="donate_summary">通过PayPal捐赠</string>
     <string name="rate_title">评价这个应用</string>

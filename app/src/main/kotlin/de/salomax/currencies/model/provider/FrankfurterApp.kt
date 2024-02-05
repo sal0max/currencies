@@ -24,11 +24,19 @@ class FrankfurterApp : ApiProvider.Api() {
 
     override val name = "Frankfurter.app"
 
-    override fun description(context: Context) =
-        context.getText(R.string.api_about_frankfurterApp)
+    override val currencyCount: Int = 30
 
-    override fun updateIntervalDescription(context: Context) =
-        context.getText(R.string.api_refreshPeriod_frankfurterApp)
+    override fun source(context: Context) =
+        context.getString(R.string.api_frankfurterApp_source)
+
+    override fun description(context: Context) =
+        context.getText(R.string.api_frankfurterApp_descriptionFull)
+
+    override fun descriptionUpdateInterval(context: Context) =
+        context.getText(R.string.api_frankfurterApp_descriptionUpdateInterval)
+
+    override fun descriptionHint(context: Context) =
+        null
 
     override val baseUrl = "https://api.frankfurter.app"
 

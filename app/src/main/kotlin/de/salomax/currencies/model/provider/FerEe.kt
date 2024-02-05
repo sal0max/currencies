@@ -24,11 +24,19 @@ class FerEe : ApiProvider.Api() {
 
     override val name = "Fer.ee"
 
-    override fun description(context: Context) =
-        context.getText(R.string.api_about_ferEe)
+    override val currencyCount: Int = 30
 
-    override fun updateIntervalDescription(context: Context) =
-        context.getText(R.string.api_refreshPeriod_ferEe)
+    override fun source(context: Context) =
+        context.getString(R.string.api_ferEe_source)
+
+    override fun description(context: Context) =
+        context.getText(R.string.api_ferEe_descriptionFull)
+
+    override fun descriptionUpdateInterval(context: Context) =
+        context.getText(R.string.api_ferEe_descriptionUpdateInterval)
+
+    override fun descriptionHint(context: Context) =
+        null
 
     override val baseUrl = "https://api.fer.ee"
 

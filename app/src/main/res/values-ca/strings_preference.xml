@@ -49,22 +49,9 @@
     <!-- api -->
     <string name="category_api">Taxes de canvi</string>
     <string name="api_title">Proveïdor de les dades</string>
+
     <string name="api_about_title">Sobre %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> obté els tipus de canvi de diferents proveïdors de dades financeres i bancs, inclòs el Banc Central Europeu. S\'ofereix el tipus de canvi mitjà, el qual es calcula fent la mitjana entre les taxes d\'oferta i demanda d\'una moneda.\n<b>Inclou unes 160 monedes.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> fa el seguiment dels tipus de canvi de referència (Forex) publicats pel Banc Central Europeu.\n<b>Inclou unes 30 monedes.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> és un servei relativament nou que, similarment a Frankfurter.app, fa el seguiment dels tipus de canvi de referència (Forex) publicats pel Banc Central Europeu.\n<b>Inclou unes 30 monedes.</b></string>
-
-
-
-
     <string name="api_refreshPeriod_title">Interval d\'actualització</string>
-    <string name="api_refreshPeriod_exchangerateHost">Les taxes de canvi s\'actualitzen al voltant de la mitjanit (zona horària UTC) de cada dia laborable.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Les dades s\'actualitzen al voltant de les 16:00 (zona horària CET) de cada dia laborable.</string>
-    <string name="api_refreshPeriod_ferEe">Les taxes s\'actualitzen cada dia laborable.</string>
-
-
-
-
     <!-- about -->
     <string name="category_about">Quant a aquesta aplicació</string>
     <string name="disclaimer_title">Avís d\'exempció de responsabilitat</string>

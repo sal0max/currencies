@@ -49,22 +49,9 @@
     <!-- api -->
     <string name="category_api">Ισοτιμίες</string>
     <string name="api_title">Χορηγός δεδομένων</string>
+
     <string name="api_about_title">Σχετικά με τον %s</string>
-    <string name="api_about_exchangerateHost">Το <a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> παίρνει τα δεδομένα από διάφορες οικονομικές πηγές και τράπεζες, συμπεριλαμβανομένης της ΕΚΤ. Λαμβάνεται ο μέσος όρος, ανάλογα της προσφοράς και της ζήτησης.\n<b>Περιλαμβάνει περίπου 160 νομίσματα.</b></string>
-    <string name="api_about_frankfurterApp">Το <a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> παρακολουθεί τις τιμές αναφοράς (forex) της ΕΚΤ.\n<b>Περιλαμβάνει περίπου 30 νομίσματα.</b></string>
-    <string name="api_about_ferEe">Το <a href="https://fer.ee/"><b>Fer.ee</b></a> είναι σχετικά καινούργια υπηρεσία, η οποία (όπως και το Frankfurter.app) παρακολουθεί τις τιμές αναφοράς (forex) της ΕΚΤ.\n<b>Περιλαμβάνει περίπου 30 νομίσματα.</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_el"><b>InforEuro</b></a> παρέχει τις επίσημες μηνιαίες λογιστικές ισοτιμίες της Ευρωπαϊκής Επιτροπής για το ευρώ, καθώς και τις τιμές μετατροπής που καθορίζει ο υπόλογος της Ευρωπαϊκής Επιτροπής σύμφωνα με το άρθρο 19 του δημοσιονομικού κανονισμού.\nΟι τιμές αυτές χρησιμοποιούνται για τον υπολογισμό ποσών στο πλαίσιο της επιστροφής εξόδων, εξόδων ταξιδιού και διαμονής των εξωτερικών συνεργατών που συμμετέχουν σε συνεδριάσεις, συνεντεύξεις κ.λπ. κατόπιν πρόσκλησης της Ευρωπαϊκής Επιτροπής.\n<b>Περιλαμβάνει περίπου 150 νομίσματα.</b></string>
-    <string name="api_about_bankOfCanada">Ημερήσιες μέσες συναλλαγματικές ισοτιμίες της <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Τράπεζας του Καναδά</b></a>.\n<b>Συμπεριλαμβάνονται περίπου 23 νομίσματα.</b></string>
-    <string name="api_about_norgesBank">Συναλλαγματικές ισοτιμίες, όπως παρέχονται από την Κεντρική Τράπεζα της Νορβηγίας <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>\n<b>Η Norges Bank παρέχει περίπου 40 συναλλαγματικές ισοτιμίες.</b></string>
-    <string name="api_about_bankRossii">Συναλλαγματικές ισοτιμίες, όπως παρέχονται από τη Ρωσική Κεντρική Τράπεζα <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Με τις τρέχουσες κυρώσεις, αυτή η πηγή παρέχει πιθανώς τα πιο αξιόπιστα δεδομένα για τις συναλλαγματικές ισοτιμίες στο Ρωσικό Ρούβλι.\n<b>Η Bank Rossii παρέχει περίπου 44 συναλλαγματικές ισοτιμίες.</b></string>
     <string name="api_refreshPeriod_title">Ρυθμός ανανέωσης</string>
-    <string name="api_refreshPeriod_exchangerateHost">Οι τιμές ανανεώνονται περίπου τα μεσάνυχτα UTC κάθε εργάσιμης ημέρας.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Οι τιμές ανανεώνονται περίπου την 16:00 CET κάθε εργάσιμης ημέρας.</string>
-    <string name="api_refreshPeriod_ferEe">Οι τιμές ανανεώνονται κάθε εργάσιμη ημέρα.</string>
-    <string name="api_refreshPeriod_inforEuro">Οι ισοτιμίες που αναφέρονται είναι οι ισοτιμίες της αγοράς για τη δεύτερη έως τελευταία ημέρα του προηγούμενου μήνα, όπως δημοσιοποιούνται από την Ευρωπαϊκή Κεντρική Τράπεζα, ή, ανάλογα με τη διαθεσιμότητα, όπως παρέχονται από τις αντιπροσωπείες ή άλλες κατάλληλες πηγές κοντά στην ημερομηνία αυτή.</string>
-    <string name="api_refreshPeriod_bankOfCanada">Οι ισοτιμίες δημοσιεύονται μια φορά κάθε εργάσιμη ημέρα, έως τις 16:30 ET.</string>
-    <string name="api_refreshPeriod_norgesBank">Η ώρα δημοσίευσης των ημερήσιων ισοτιμιών είναι περίπου στις 16:00 CET.</string>
-    <string name="api_refreshPeriod_bankRossii">Οι τιμές ενημερώνονται σε καθημερινή βάση, εκτός από τις <a href="https://cbr.ru/eng/other/holidays/">δημόσιες αργίες στη Ρωσία</a>.</string>
     <!-- about -->
     <string name="category_about">Σχετικά με την εφαρμογή</string>
     <string name="disclaimer_title">Αποποίηση ευθυνών</string>

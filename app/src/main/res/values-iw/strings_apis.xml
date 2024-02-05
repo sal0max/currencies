@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">שערי החליפין מעודכנים בסביבות חצות לפי UTC בכל יום עבודה.</string>
+    <string name="api_ferEe_descriptionUpdateInterval">השערים מתעדכנים בכל יום עבודה.</string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
+</resources>
