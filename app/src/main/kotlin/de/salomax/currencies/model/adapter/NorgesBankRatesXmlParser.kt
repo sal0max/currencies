@@ -42,7 +42,12 @@ class NorgesBankRatesXmlParser {
                     // get value
                     val value = parser.getAttributeValue(null, "OBS_VALUE").toFloatOrNull()
                     // store
-                    if (base != null && value != null) {
+                    if (
+                        base != null
+                        && value != null
+                        // api delivers historical rates for e.g. RUB; we don't want those
+                        && date.isAfter(LocalDate.now().minusWeeks(2))
+                    ) {
                         // check if there is already an older value and remove it
                         // (api is sorted ascending, so later currencies are always newer)
                         rates.removeIf { rate -> rate.currency == base }
