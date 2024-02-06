@@ -10,7 +10,6 @@
     <string name="name_aud">Австралійський долар</string>
     <string name="name_awg">Арубський флорин</string>
     <string name="name_azn">Азербайджанський манат</string>
-
     <string name="name_bam">Конвертована марка Боснії та Герцеговини</string>
     <string name="name_bbd">Барбадоський долар</string>
     <string name="name_bdt">Бангладеська така</string>
@@ -27,11 +26,10 @@
     <string name="name_bwp">Ботсванська пула</string>
     <string name="name_byn">Білоруський рубль</string>
     <string name="name_bzd">Белізький долар</string>
-
     <string name="name_cad">Канадський долар</string>
     <string name="name_cdf">Конголезький франк</string>
     <string name="name_chf">Швейцарський франк</string>
-    <string name="name_clf">Чилійський унідад де фоменто (UF)</string>
+    <string name="name_clf">Умовно розрахункова одиниця Чилі (UF)</string>
     <string name="name_clp">Чилійський песо</string>
     <string name="name_cnh">Китайський юань (офшори)</string>
     <string name="name_cny">Китайський юань</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">Кубинський песо</string>
     <string name="name_cve">Ескудо Кабо-Верде</string>
     <string name="name_czk">Чеська крона</string>
-
     <string name="name_djf">Джибутійський франк</string>
     <string name="name_dkk">Данська крона</string>
     <string name="name_dop">Домініканський песо</string>
     <string name="name_dzd">Алжирський динар</string>
-
     <string name="name_egp">Єгипетський фунт</string>
     <string name="name_ern">Еритрейська накфа</string>
     <string name="name_etb">Ефіопський бир</string>
     <string name="name_eur">Євро</string>
-
     <string name="name_fjd">Фіджійський долар</string>
     <string name="name_fkp">Фунт Фолклендських островів</string>
     <string name="name_fok">Фарерська крона</string>
-
     <string name="name_gbp">Фунт стерлінгів</string>
     <string name="name_gel">Грузинський ларі</string>
     <string name="name_ggp">Гернсійський фунт</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">Гвінейський франк</string>
     <string name="name_gtq">Гватемальський кетцаль</string>
     <string name="name_gyd">Гайанський долар</string>
-
     <string name="name_hkd">Гонконгський долар</string>
     <string name="name_hnl">Гондураська лемпіра</string>
     <string name="name_hrk">Хорватська куна</string>
     <string name="name_htg">Гаїтянський гурд</string>
     <string name="name_huf">Угорський форинт</string>
-
     <string name="name_idr">Індонезійська рупія</string>
     <string name="name_ils">Новий ізраїльський шекель</string>
     <string name="name_imp">Менський фунт</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">Іракський динар</string>
     <string name="name_irr">Іранський ріал</string>
     <string name="name_isk">Ісландська крона</string>
-
     <string name="name_jep">Джерсійський фунт</string>
     <string name="name_jmd">Ямайський долар</string>
     <string name="name_jod">Йорданський динар</string>
     <string name="name_jpy">Японська єна</string>
-
     <string name="name_kes">Кенійський шилінг</string>
     <string name="name_kgs">Киргизстанський сом</string>
     <string name="name_khr">Камбоджійський ріель</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">Кувейтський динар</string>
     <string name="name_kyd">Долар Кайманових островів</string>
     <string name="name_kzt">Казахстанський тенге</string>
-
     <string name="name_lak">Лаоський кіп</string>
     <string name="name_lbp">Ліванський фунт</string>
     <string name="name_lkr">Шрі-Ланкійська рупія</string>
     <string name="name_lrd">Ліберійський долар</string>
     <string name="name_lsl">Лоті Лесото</string>
     <string name="name_lyd">Лівійський динар</string>
-
     <string name="name_mad">Марокканський дирхам</string>
     <string name="name_mdl">Молдавський лей</string>
     <string name="name_mga">Мадагаскарський аріарі</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">Мексиканський песо</string>
     <string name="name_myr">Малайзійський рингіт</string>
     <string name="name_mzn">Мозамбікський метикал</string>
-
     <string name="name_nad">Намібійський долар</string>
     <string name="name_ngn">Нігерійська найра</string>
     <string name="name_nio">Нікарагуанська кордоба</string>
     <string name="name_nok">Норвезька крона</string>
     <string name="name_npr">Непальська рупія</string>
     <string name="name_nzd">Новозеландський долар</string>
-
     <string name="name_omr">Оманський ріал</string>
-
     <string name="name_pab">Панамський бальбоа</string>
     <string name="name_pen">Перуанський соль</string>
     <string name="name_pgk">Кіна Папуа-Нова Гвінея</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">Пакистанська рупія</string>
     <string name="name_pln">Польський злотий</string>
     <string name="name_pyg">Парагвайський гуарані</string>
-
     <string name="name_qar">Катарський ріал</string>
-
     <string name="name_ron">Румунський лей</string>
     <string name="name_rsd">Сербський динар</string>
     <string name="name_rub">Російський рубль</string>
     <string name="name_rwf">Франк Руанди</string>
-
     <string name="name_sar">Саудівський ріал</string>
     <string name="name_sbd">Долар Соломонових Островів</string>
     <string name="name_scr">Сейшельська рупія</string>
@@ -159,7 +141,6 @@
     <string name="name_svc">Сальвадорський колон</string>
     <string name="name_syp">Сирійський фунт</string>
     <string name="name_szl">Свазілендський лілангені</string>
-
     <string name="name_thb">Тайський бат</string>
     <string name="name_tjs">Таджикистанський сомоні</string>
     <string name="name_tmt">Туркменський манат</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">Долар Тринідаду і Тобаго</string>
     <string name="name_twd">Новий тайванський долар</string>
     <string name="name_tzs">Танзанійський шилінг</string>
-
     <string name="name_uah">Українська гривня</string>
     <string name="name_ugx">Угандійський шилінг</string>
     <string name="name_usd">Долар США</string>
     <string name="name_uyu">Уругвайський песо</string>
     <string name="name_uzs">Узбецький сум</string>
-
     <string name="name_vef">Венесуельський болівар фуерте (старий)</string>
     <string name="name_ves">Венесуельський болівар соберано</string>
     <string name="name_vnd">В\'єтнамський донг</string>
     <string name="name_vuv">Вануатський вату</string>
-
     <string name="name_wst">Самоанська тала</string>
-
     <string name="name_xaf">Франк CFA BEAC</string>
     <string name="name_xag">Унція срібла</string>
     <string name="name_xau">Унція золота</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">Унція паладію</string>
     <string name="name_xpf">Франк CFP</string>
     <string name="name_xpt">Унція платини</string>
-
     <string name="name_yer">Єменський ріал</string>
-
     <string name="name_zar">Південноафриканський ранд</string>
     <string name="name_zmw">Замбійська квача</string>
     <string name="name_zwl">Зімбабвійський долар</string>
