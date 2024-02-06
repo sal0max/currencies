@@ -35,12 +35,13 @@ class CeskaNarodniBanka : ApiProvider.Api() {
         null
 
 
-    override val baseUrl = "https://api.cnb.cz/cnbapi/exrates/daily"
+    override val baseUrl = "https://api.cnb.cz/cnbapi/exrates"
 
     override suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
         val dateString = date?.let { "&date=${it.format(DateTimeFormatter.ISO_LOCAL_DATE)}" } ?: ""
         return Fuel.get(
             baseUrl +
+                    "/daily" +
                     "?lang=EN" +
                     dateString
         ).awaitResult(
@@ -70,7 +71,10 @@ class CeskaNarodniBanka : ApiProvider.Api() {
 //        val parameterSymbol = if (symbol == Currency.FOK) "DKK" else symbol.iso4217Alpha()
 //
 //        return Fuel.get(
-//            "$baseUrl/" +
+//            "$baseUrl" +
+//                    "daily-currency-month" +
+//                    "?currency=$symbol" +
+//                    "&yearMonth=2024-01" +
 //                startDate.format(dateFormatter) +
 //                ".." +
 //                endDate.format(dateFormatter) +
