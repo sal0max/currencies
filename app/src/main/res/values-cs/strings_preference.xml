@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Směnné kurzy</string>
     <string name="api_title">Poskytovatel dat</string>
-
     <string name="api_about_title">O %s</string>
     <string name="api_refreshPeriod_title">Doba obnovení</string>
     <!-- about -->

@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Wechselkurse</string>
     <string name="api_title">Datenquelle</string>
-    <string name="api_descriptionShort">Ungefähr %d Wechselkurse\nQuelle: %s</string>
     <string name="api_about_title">Über %s</string>
     <string name="api_refreshPeriod_title">Aktualisierungsintervall</string>
     <!-- about -->

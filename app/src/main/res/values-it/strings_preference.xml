@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>
-
     <string name="api_about_title">A proposito di %s</string>
     <string name="api_refreshPeriod_title">Periodo di aggiornamento</string>
     <!-- about -->

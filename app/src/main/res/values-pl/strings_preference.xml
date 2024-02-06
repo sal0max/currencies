@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Kursy walut</string>
     <string name="api_title">Dostawca danych</string>
-
     <string name="api_about_title">O %s</string>
     <string name="api_refreshPeriod_title">Okres odświeżenia</string>
     <!-- about -->

@@ -56,7 +56,6 @@
     <string name="category_api">Exchange rates</string>
     <string name="api_key" translatable="false">KEY_API</string>
     <string name="api_title">Data provider</string>
-    <string name="api_descriptionShort">About %d exchange rates\nSource: %s</string>
     <string name="key_apiProvider" translatable="false">KEY_DATA_SOURCE</string>
     <string name="api_about_title">About %s</string>
     <string name="key_refreshPeriod" translatable="false">KEY_DATA_UPDATE</string>

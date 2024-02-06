@@ -48,7 +48,6 @@
     <string name="language_zh_TW">Китайська (традиційна)</string>
     <!-- api -->
     <string name="category_api">Курси обміну</string>
-
     <string name="api_title">Постачальник даних</string>
     <string name="api_about_title">Про %s</string>
     <string name="api_refreshPeriod_title">Період оновлення</string>

@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
-
     <string name="api_about_title">Về %s</string>
     <string name="api_refreshPeriod_title">Khoảng thời gian làm mới</string>
     <!-- about -->

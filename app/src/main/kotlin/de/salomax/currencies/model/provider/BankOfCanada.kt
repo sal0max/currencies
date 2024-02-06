@@ -22,12 +22,10 @@ class BankOfCanada: ApiProvider.Api() {
 
     override val name = "Bank of Canada"
 
-    override val currencyCount: Int = 23
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_bankOfCanada_descriptionShort)
 
-    override fun source(context: Context) =
-        context.getString(R.string.api_bankOfCanada_source)
-
-    override fun description(context: Context) =
+    override fun getDescriptionLong(context: Context) =
         context.getText(R.string.api_bankOfCanada_descriptionFull)
 
     override fun descriptionUpdateInterval(context: Context) =

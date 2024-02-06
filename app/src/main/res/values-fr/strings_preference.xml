@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>
-
     <string name="api_about_title">À propos de %s</string>
     <string name="api_refreshPeriod_title">Période de rafraîchissement</string>
     <!-- about -->

@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">Taxas de câmbio</string>
     <string name="api_title">Fornecedor de serviço</string>
-
     <string name="api_about_title">Sobre %s</string>
     <string name="api_refreshPeriod_title">Intervalo de atualização</string>
     <!-- about -->

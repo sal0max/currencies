@@ -9,7 +9,6 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.TextView
 import androidx.appcompat.app.AlertDialog
-import androidx.core.text.HtmlCompat
 import androidx.preference.ListPreference
 import com.google.android.material.radiobutton.MaterialRadioButton
 import de.salomax.currencies.R
@@ -97,11 +96,7 @@ class ProviderPickerPreference: ListPreference {
                 radioButton?.isChecked = (provider == selectedItem)
                 // fill text
                 textProviderName?.text = provider.getName()
-                textDesc?.text = context.getString(
-                    R.string.api_descriptionShort,
-                    provider.getCurrencyCount(),
-                    provider.getSource(context)
-                )
+                textDesc?.text = provider.getDescriptionShort(context)
                 textHint?.visibility = provider.getHint(context)?.let {
                     textHint?.text = it
                     View.VISIBLE

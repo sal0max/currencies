@@ -24,12 +24,10 @@ class FrankfurterApp : ApiProvider.Api() {
 
     override val name = "Frankfurter.app"
 
-    override val currencyCount: Int = 30
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_frankfurterApp_descriptionShort)
 
-    override fun source(context: Context) =
-        context.getString(R.string.api_frankfurterApp_source)
-
-    override fun description(context: Context) =
+    override fun getDescriptionLong(context: Context) =
         context.getText(R.string.api_frankfurterApp_descriptionFull)
 
     override fun descriptionUpdateInterval(context: Context) =

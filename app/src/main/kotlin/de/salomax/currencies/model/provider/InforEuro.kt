@@ -24,12 +24,10 @@ class InforEuro : ApiProvider.Api() {
 
     override val name = "InforEuro"
 
-    override val currencyCount: Int = 150
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_inforEuro_descriptionShort)
 
-    override fun source(context: Context) =
-        context.getString(R.string.api_inforEuro_source)
-
-    override fun description(context: Context) =
+    override fun getDescriptionLong(context: Context) =
         context.getText(R.string.api_inforEuro_descriptionFull)
 
     override fun descriptionUpdateInterval(context: Context) =

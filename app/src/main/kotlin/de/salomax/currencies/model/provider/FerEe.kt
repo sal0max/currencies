@@ -24,12 +24,10 @@ class FerEe : ApiProvider.Api() {
 
     override val name = "Fer.ee"
 
-    override val currencyCount: Int = 30
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_ferEe_descriptionShort)
 
-    override fun source(context: Context) =
-        context.getString(R.string.api_ferEe_source)
-
-    override fun description(context: Context) =
+    override fun getDescriptionLong(context: Context) =
         context.getText(R.string.api_ferEe_descriptionFull)
 
     override fun descriptionUpdateInterval(context: Context) =

@@ -49,7 +49,6 @@
     <!-- api -->
     <string name="category_api">汇率</string>
     <string name="api_title">汇率源</string>
-
     <string name="api_about_title">关于 %s</string>
     <string name="api_refreshPeriod_title">更新周期</string>
     <!-- about -->

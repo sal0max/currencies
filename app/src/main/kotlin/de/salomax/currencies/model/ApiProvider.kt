@@ -34,14 +34,11 @@ enum class ApiProvider(
     fun getName(): CharSequence =
         this.implementation.name
 
-    fun getCurrencyCount(): Int =
-        this.implementation.currencyCount
+    fun getDescriptionShort(context: Context): CharSequence =
+        this.implementation.descriptionShort(context)
 
-    fun getSource(context: Context): String =
-        this.implementation.source(context)
-
-    fun getDescription(context: Context): CharSequence =
-        this.implementation.description(context)
+    fun getDescriptionLong(context: Context): CharSequence =
+        this.implementation.getDescriptionLong(context)
 
     fun getDescriptionUpdateInterval(context: Context): CharSequence =
         this.implementation.descriptionUpdateInterval(context)
@@ -63,9 +60,8 @@ enum class ApiProvider(
 
     abstract class Api {
         abstract val name: String
-        abstract val currencyCount: Int
-        abstract fun source(context: Context): String
-        abstract fun description(context: Context): CharSequence
+        abstract fun descriptionShort(context: Context): CharSequence
+        abstract fun getDescriptionLong(context: Context): CharSequence
         abstract fun descriptionUpdateInterval(context: Context): CharSequence
         abstract fun descriptionHint(context: Context): CharSequence?
 

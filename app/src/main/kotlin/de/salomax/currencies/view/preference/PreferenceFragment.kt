@@ -119,7 +119,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 title =
                     resources.getString(R.string.api_about_title, it.getName())
                 summary =
-                    it.getDescription(context)
+                    it.getDescriptionLong(context)
             }
             findPreference<LongSummaryPreference>(getString(R.string.key_refreshPeriod))?.summary =
                 it.getDescriptionUpdateInterval(requireContext())
