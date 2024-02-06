@@ -50,21 +50,7 @@
     <string name="category_api">Gengi</string>
     <string name="api_title">Gagnaveita</string>
     <string name="api_about_title">Um %s</string>
-
-
-
-
-
-
-
     <string name="api_refreshPeriod_title">Endurnýjunartímabil</string>
-    <string name="api_refreshPeriod_exchangerateHost">Gengi eru uppfærð um miðnætti UTC alla virka daga.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
-    <string name="api_refreshPeriod_ferEe">Gengi eru uppfærð alla virka daga.</string>
-
-
-
-
     <!-- about -->
     <string name="category_about">Um forritið</string>
     <string name="disclaimer_title">Fyrirvari</string>

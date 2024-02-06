@@ -50,20 +50,6 @@
     <string name="category_api">Tarifoj</string>
     <string name="api_title">Datumprovizanto</string>
     <string name="api_about_title">Pri %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> fontas la valutajn kurzoj el diversaj financaj datumprovizantoj kaj bankoj, inkluzive de la Eŭropa Centra Banko. Ĉiuj kurzoj-datumoj estas liveritaj en mezpunkto-datumoj. Mezpunktaj kurzoj estas determinitaj kalkulante la mezan kurzon de Bid and Ask.\n<b>Proksime 160 valutoj estas inkluzivitaj.</b></string>
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- about -->
 

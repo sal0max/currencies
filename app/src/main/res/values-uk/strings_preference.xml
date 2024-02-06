@@ -50,21 +50,7 @@
     <string name="category_api">Курси обміну</string>
     <string name="api_title">Постачальник даних</string>
     <string name="api_about_title">Про %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> отримує курси валют від різних постачальників фінансових даних і банків, зокрема Європейського центрального банку. Всі дані про обмінний курс надаються в середніх значеннях. Середні ставки визначаються шляхом розрахунку середньої медіани ставок купівлі та продажу.\n<b>Включено близько 160 валют.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> відстежує довідкові обмінні курси (форекс), опубліковані Європейським центральним банком.\n<b>Включено близько 30 валют.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> є відносно новою службою, яка (як і Frankfurter.app) відстежує довідковий обмін (форекс) ставки, які публікує Європейський центральний банк.\n<b>Включено близько 30 валют.</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a> надає офіційний місячний обліковий курс Європейської комісії для євро та курси обміну, встановлені бухгалтером Європейської комісії відповідно до статті 19 Фінансового Регламенту.\nЦі курси використовуються для розрахунку сум відшкодування витрат, витрат на проїзд або проживання для сторонніх осіб, які беруть участь у зустрічах, співбесідах тощо на запит Європейської Комісії.\n<b>Включено близько 150 валют.</b></string>
-    <string name="api_about_bankOfCanada">Щоденні середні курси обміну Банку Канади <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.\n<b>Включено близько 23 валют.</b></string>
-    <string name="api_about_norgesBank">Курси обміну, надані Норвезьким центральним банком <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.\n<b>Norges Bank надає близько 40 курсів валют.</b></string>
-    <string name="api_about_bankRossii">Курси обміну, надані Центральним банком Росії <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. При нинішніх санкціях це джерело дає, мабуть, найдостовірніші дані про курси російського рубля.\n<b>Bank Rossii надає близько 44 курсів валют.</b></string>
     <string name="api_refreshPeriod_title">Період оновлення</string>
-    <string name="api_refreshPeriod_exchangerateHost">Курси обміну оновлюються приблизно опівночі за UTC, кожного робочого дня.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Дані оновлюються близько 16:00 CET (центральноєвропейський час) кожного робочого дня.</string>
-    <string name="api_refreshPeriod_ferEe">Дані оновлюються кожного робочого дня.</string>
-    <string name="api_refreshPeriod_inforEuro">Зазначені курси є ринковими курсами за другий-останній день попереднього місяця, цитованими Європейським центральним банком або, залежно від наявності, наданими делегаціями чи іншими відповідними джерелами, близькими до цієї дати.</string>
-    <string name="api_refreshPeriod_bankOfCanada">Дані публікуються один раз на робочий день до 16:30 ET (східний час)</string>
-    <string name="api_refreshPeriod_norgesBank">Щоденні курси обміну публікуються приблизно о 16:00 CET (центральноєвропейський час).</string>
-    <string name="api_refreshPeriod_bankRossii">Дані оновлюються щодня, крім днів <a href="https://cbr.ru/eng/other/holidays/">державних свят у Росії</a>.</string>
     <!-- about -->
     <string name="category_about">Про цей додаток</string>
     <string name="disclaimer_title">Відмова від відповідальності</string>

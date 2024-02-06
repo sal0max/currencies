@@ -17,17 +17,22 @@ import de.salomax.currencies.model.adapter.BankOfCanadaRatesAdapter
 import de.salomax.currencies.model.adapter.BankOfCanadaTimelineAdapter
 import java.time.LocalDate
 import java.time.format.DateTimeFormatter
-import java.util.UUID
 
 class BankOfCanada: ApiProvider.Api() {
 
     override val name = "Bank of Canada"
 
-    override fun description(context: Context) =
-        context.getText(R.string.api_about_bankOfCanada)
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_bankOfCanada_descriptionShort)
 
-    override fun updateIntervalDescription(context: Context) =
-        context.getText(R.string.api_refreshPeriod_bankOfCanada)
+    override fun getDescriptionLong(context: Context) =
+        context.getText(R.string.api_bankOfCanada_descriptionFull)
+
+    override fun descriptionUpdateInterval(context: Context) =
+        context.getText(R.string.api_bankOfCanada_descriptionUpdateInterval)
+
+    override fun descriptionHint(context: Context) =
+        null
 
     override val baseUrl = "https://www.bankofcanada.ca/valet"
 

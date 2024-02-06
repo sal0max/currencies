@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> взима обменните курсове от различни финансови източници и и банки, включително от Европейската Централна Банка. Всички курсове са средна стойност. Средната стойност се изчислява като средното между продава и купува.\n<b>Включени са около 160 валути.</b></string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">Обмени курсове се обновяват около полунощ UTC всеки работен ден.</string>
+    <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> е относително нова услуга, която (точно като Frankfurter.app) следи референтните обменни (форекс) курсове публикувани от Европейската Централна Банка.\n<b>Включва около 30 валути.</b></string>
+    <string name="api_ferEe_descriptionUpdateInterval">Курсовете се обновяват всеки работен ден.</string>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> следи референтните обменни(форекс) курсове публикувани от Европейската Централна Банка.\n<b>включени са около 30 валути.</b></string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">Данните се обновяват около 16:00 CET всеки работен ден.</string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_bg"><b>InforEuro</b></a> предоставя официалния месечен счетоводен курс на еврото на Европейската комисия и обменните курсове, както са установени от счетоводителя на Европейската комисия в съответствие с член 19 от Финансовия регламент.\nКурсът се използва за изчисляване на суми за възстановяване на разходи, пътни или дневни разходи на външни лица, участващи в заседания, срещи и др. по искане на Европейската комисия.\n<b>Περιλαμβάνει περίπου 150 νομίσματα.</b></string>
+    <string name="api_inforEuro_descriptionUpdateInterval">Посочените курсове са пазарните курсове за предпоследния ден от предходния месец, както са предоставени от Европейската централна банка или, в зависимост от наличността, от делегациите или други подходящи източници на близка дата.</string>
+</resources>

@@ -50,21 +50,7 @@
     <string name="category_api">Kursy walut</string>
     <string name="api_title">Dostawca danych</string>
     <string name="api_about_title">O %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> jest zewnętrznym dostawcą usługi dostarczającej informacje na temat różnych banków, nawet Europejskiego Banku Centralnego. Wszystkie dane są dostarczane w danych środkowych. Dane środkowe są obliczane na podstawie mediany <i>Bid and Ask</i>.\n<b>Około 160 walut jest zawartych.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> śledzi referencyjne kursy wymiany walut (forex) publikowane przez Europejski Bank Centralny.\n<b>Uwzględniono około 30 walut.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> jest stosunkowo nową usługą, która (podobnie jak Frankfurter.app) śledzi kursy referencyjnej wymiany walut (Forex) publikowane przez Europejski Bank Centralny.\n<b>Uwzględniono około 30 walut.</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_pl"><b>InforEuro</b></a> podaje oficjalny miesięczny kurs księgowy euro Komisji Europejskiej i kursy wymiany ustalone przez jej księgowego zgodnie z art. 19 rozporządzenia finansowego.\nKursy te wykorzystuje się do obliczania zwrotu wydatków oraz kosztów podróży lub pobytu osób z zewnątrz, które biorą udział w spotkaniach, rozmowach kwalifikacyjnych i innych wydarzeniach na zaproszenie Komisji Europejskiej.\n<b>Około 150 walut jest zawartych.</b></string>
-
-
-
     <string name="api_refreshPeriod_title">Okres odświeżenia</string>
-    <string name="api_refreshPeriod_exchangerateHost">Kursy walut aktualizowane są każdego dnia roboczego o północy czasu Greenwich.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Dane aktualizowane są każdego dnia roboczego około godziny 16:00 czasu środkowoeuropejskiego.</string>
-    <string name="api_refreshPeriod_ferEe">Kursy aktualizowane są każdego dnia roboczego.</string>
-    <string name="api_refreshPeriod_inforEuro">Wyświetlane kursy wymiany są kursami rynkowymi od drugiego do ostatniego dnia poprzedniego miesiąca, zgodnie z kursami publikowanymi przez Europejski Bank Centralny, przekazanymi przez delegatury lub pochodzącymi z innych właściwych źródeł w danym terminie, co zależy od dostępności danych.</string>
-
-    <string name="api_refreshPeriod_norgesBank">Dzienny czas publikacji średnich kursów wymiany to 16:00 CET.</string>
-
     <!-- about -->
     <string name="category_about">O tej aplikacji</string>
     <string name="disclaimer_title">Ostrzeżenie</string>

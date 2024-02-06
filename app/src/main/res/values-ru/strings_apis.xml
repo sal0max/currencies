@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> получает обменные курсы от различных финансовых провайдеров данных и банков, включая Европейский Центральный Банк. Все обменные курсы предоставляются усереднёнными. Значения курсов определяются по медианным курсам покупки и продажи.\n<b>Включает в себя около 160 валют.</b></string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">Обменные курсы обновляются около полуночи по UTC каждый рабочий день.</string>
+    <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> это относительно новый сервис, который (как и Frankfurter.app) отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.\n<b>Включает в себя около 30 валют.</b></string>
+    <string name="api_ferEe_descriptionUpdateInterval">Курсы обновляются каждый рабочий день.</string>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.\n<b>Включает в себя около 30 валют.</b></string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">Данные обновляются около 16:00 по CET каждый рабочий день.</string>
+</resources>

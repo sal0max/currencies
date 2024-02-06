@@ -44,23 +44,19 @@
 
 
 
+
+
     <!-- api -->
     <string name="category_api">Árfolyamok</string>
     <string name="api_title">Adatszolgáltató</string>
     <string name="api_about_title">%s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> a devizaárfolyamokat különböző pénzügyi adatszolgáltatóktól és bankoktól, köztük az Európai Központi Banktól szerzi be. Minden árfolyamadatot középárfolyam-adatokban szolgáltatnak. A középárfolyamok meghatározása a vételi és eladási árfolyamok átlagos mediánjának kiszámításával történik.\n<b>Körülbelül 160 pénznemet tartalmaz.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> egy viszonylag új szolgáltatás, amely (a Frankfurter.app-hoz hasonlóan) az Európai Központi Bank által közzétett referencia devizaárfolyamokat követi.\n<b>Körülbelül 30 pénznemet tartalmaz.</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_hu"><b>InforEuro</b></a> a világ pénznemei közötti átváltási számításokat segíti. Az alkalmazás az Európai Bizottság euróra vonatkozó hivatalos havi elszámolási árfolyamán és az annak megfelelő átváltási árfolyamokon alapul, melyeket a költségvetési rendelet 19. cikkével összhangban a Bizottság számvitelért felelős tisztviselője határoz meg.\nEzek az átváltási árfolyamok használatosak az Európai Bizottság által szervezett üléseken, interjúkon stb. részt vevő külső személyeknek térítendő utazási, napidíj- vagy egyéb költségek kiszámítására.\n<b>Körülbelül 150 pénznemet tartalmaz.</b></string>
     <string name="api_refreshPeriod_title">Frissítési időszak</string>
-    <string name="api_refreshPeriod_exchangerateHost">Az árfolyamok minden munkanapon éjfél körül frissülnek.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Az adatok minden munkanapon 16:00 CET körül frissülnek.</string>
-    <string name="api_refreshPeriod_ferEe">Az árfolyamok minden munkanapon frissülnek.</string>
-    <string name="api_refreshPeriod_inforEuro">A feltüntetett árfolyamok az előző hónap utolsó előtti napján érvényes, az Európai Központi Bank által megadott piaci árfolyamok, vagy – a rendelkezésre állástól függően – a küldöttségek vagy más források által az említett dátumhoz közeli időpontokban megadott árfolyamok.</string>
     <!-- about -->
     <string name="category_about">Erről az alkalmazásról</string>
     <string name="disclaimer_title">Jogi nyilatkozat</string>
     <string name="disclaimer_summary">Bár az alkalmazás nagyon alaposan meg van írva és tesztelve, <b>nem garantálható, hogy az általa megjelenített adatok helyesek</b>. Az árfolyamokat egy harmadik fél szolgáltatja, és ez az alkalmazás semmilyen ígéretet nem tud tenni arra, hogy az adatok igazak és naprakészek.\nTovábbá a megadott árfolyamok - még ha helyesek is - eltérhetnek a bankod által használt árfolyamoktól.\nVégül: Hibák előfordulnak. Soha ne bízz vakon senkiben! Mindezek után nyugodt lehetsz, hogy nem adtam volna ki ezt az alkalmazást, ha bármilyen kétségem lett volna afelől, hogy az rendeltetésszerűen működik.</string>
+
+
     <string name="donate_title">Támogasd a fejlesztőt</string>
     <string name="donate_summary">Adományozás PayPal-on keresztül</string>
     <string name="rate_title">Értékeld az alkalmazást</string>

@@ -23,11 +23,17 @@ class BankRossii : ApiProvider.Api() {
 
     override val name = "Bank Rossii"
 
-    override fun description(context: Context) =
-        context.getText(R.string.api_about_bankRossii)
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_bankRossii_descriptionShort)
 
-    override fun updateIntervalDescription(context: Context) =
-        context.getText(R.string.api_refreshPeriod_bankRossii)
+    override fun getDescriptionLong(context: Context) =
+        context.getText(R.string.api_bankRossii_descriptionFull)
+
+    override fun descriptionUpdateInterval(context: Context) =
+        context.getText(R.string.api_bankRossii_descriptionUpdateInterval)
+
+    override fun descriptionHint(context: Context) =
+        null
 
     override val baseUrl = "https://www.cbr.ru/scripts"
 

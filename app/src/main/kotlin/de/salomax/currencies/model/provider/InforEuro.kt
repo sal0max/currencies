@@ -24,11 +24,17 @@ class InforEuro : ApiProvider.Api() {
 
     override val name = "InforEuro"
 
-    override fun description(context: Context) =
-        context.getText(R.string.api_about_inforEuro)
+    override fun descriptionShort(context: Context) =
+        context.getText(R.string.api_inforEuro_descriptionShort)
 
-    override fun updateIntervalDescription(context: Context) =
-        context.getText(R.string.api_refreshPeriod_inforEuro)
+    override fun getDescriptionLong(context: Context) =
+        context.getText(R.string.api_inforEuro_descriptionFull)
+
+    override fun descriptionUpdateInterval(context: Context) =
+        context.getText(R.string.api_inforEuro_descriptionUpdateInterval)
+
+    override fun descriptionHint(context: Context) =
+        context.getText(R.string.api_inforEuro_hint)
 
     override val baseUrl = "https://ec.europa.eu/budg/inforeuro/api/public"
 

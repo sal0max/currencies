@@ -18,7 +18,7 @@ enum class ApiProvider(
     private val implementation: Api,
 ) {
     // EXCHANGERATE_HOST(0, "https://api.exchangerate.host"), // removed, as API was shut down
-    FRANKFURTER_APP(1, FrankfurterApp()), // default
+    FRANKFURTER_APP(1, FrankfurterApp()),
     FER_EE(2, FerEe()),
     INFOR_EURO(3, InforEuro()),
     NORGES_BANK(4, NorgesBank()),
@@ -31,21 +31,23 @@ enum class ApiProvider(
             ?: BANK_ROSSII
     }
 
-    fun getName(): CharSequence {
-        return this.implementation.name
-    }
+    fun getName(): CharSequence =
+        this.implementation.name
 
-    fun getDescription(context: Context): CharSequence {
-        return this.implementation.description(context)
-    }
+    fun getDescriptionShort(context: Context): CharSequence =
+        this.implementation.descriptionShort(context)
 
-    fun getUpdateIntervalDescription(context: Context): CharSequence {
-        return this.implementation.updateIntervalDescription(context)
-    }
+    fun getDescriptionLong(context: Context): CharSequence =
+        this.implementation.getDescriptionLong(context)
 
-    suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
-        return this.implementation.getRates(date)
-    }
+    fun getDescriptionUpdateInterval(context: Context): CharSequence =
+        this.implementation.descriptionUpdateInterval(context)
+
+    fun getHint(context: Context): CharSequence? =
+        this.implementation.descriptionHint(context)
+
+    suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> =
+        this.implementation.getRates(date)
 
     suspend fun getTimeline(
         base: Currency,
@@ -58,8 +60,10 @@ enum class ApiProvider(
 
     abstract class Api {
         abstract val name: String
-        abstract fun description(context: Context): CharSequence
-        abstract fun updateIntervalDescription(context: Context): CharSequence
+        abstract fun descriptionShort(context: Context): CharSequence
+        abstract fun getDescriptionLong(context: Context): CharSequence
+        abstract fun descriptionUpdateInterval(context: Context): CharSequence
+        abstract fun descriptionHint(context: Context): CharSequence?
 
         abstract val baseUrl: String
         abstract suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError>

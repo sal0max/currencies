@@ -50,21 +50,7 @@
     <string name="category_api">שערי חליפין</string>
     <string name="api_title">ספק נתונים</string>
     <string name="api_about_title">על %s</string>
-
-
-
-
-
-
-
     <string name="api_refreshPeriod_title">פער לרענון</string>
-    <string name="api_refreshPeriod_exchangerateHost">שערי החליפין מעודכנים בסביבות חצות לפי UTC בכל יום עבודה.</string>
-    <string name="api_refreshPeriod_frankfurterApp">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
-    <string name="api_refreshPeriod_ferEe">השערים מתעדכנים בכל יום עבודה.</string>
-
-
-
-
     <!-- about -->
     <string name="category_about">על היישומון הזה</string>
     <string name="disclaimer_title">כתב ויתור</string>

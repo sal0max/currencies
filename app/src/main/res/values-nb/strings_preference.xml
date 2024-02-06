@@ -50,21 +50,7 @@
     <string name="category_api">Valutakurser</string>
     <string name="api_title">Datatilbyder</string>
     <string name="api_about_title">Om %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> henter inn valutakurser fra forskjellige finansdatatilbydere og banker, inkludert den Europeiske sentralbanken. All vekslingsdata leveres som midpunktsdata- Disse kursene bestemmes ved å regne ut gjen. medianrate fra tilbud og etterspørsel.\n<b>Ca. 160 valutaer.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> er en relativt ny tjeneste, som (akkurat som Frankfurter.app) sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
-
-
-
-
     <string name="api_refreshPeriod_title">Gjenoppfriskingsperiode</string>
-    <string name="api_refreshPeriod_exchangerateHost">Valutakurser oppdateres rundt midnatt UTC hver arbeidsdag.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Dataen oppdateres ~16.00 CET hver dag.</string>
-    <string name="api_refreshPeriod_ferEe">Vekslingskursene oppdateres hver arbeidsdag.</string>
-
-
-
-
     <!-- about -->
     <string name="category_about">Om denne appen</string>
     <string name="disclaimer_title">Ansvarsfraskrivelse</string>

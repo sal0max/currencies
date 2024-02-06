@@ -50,21 +50,7 @@
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
     <string name="api_about_title">Về %s</string>
-    <string name="api_about_exchangerateHost"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> lấy tỉ lệ tiền tệ từ nhiều nhà cung cấp dữ liệu và ngân hàng khác nhau, bao gồm cả Ngân hàng trung ương châu Âu. Tất cả dữ liệu tỉ lệ chuyển đổi được đưa đến dưới dạng dữ liệu điểm giữa. Tỉ lệ điểm giữa được xác định bằng cách tính trung bình của Bid và Ask.\n<b>Có khoảng 160 tiền tệ.</b></string>
-    <string name="api_about_frankfurterApp"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
-    <string name="api_about_ferEe"><a href="https://fer.ee/"><b>Fer.ee</b></a> là một dịch vụ tương đối mới, nó (giống Frankfurter.app) theo dõi tỉ lệ trao đổi tham khảo (ngoại hối) được Ngân hàng trung ương châu Âu xuất bản.\n<b>Có khoảng 30 tiền tệ.</b></string>
-    <string name="api_about_inforEuro"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>“InforEuro”</b></a> cung cấp tỷ giá kế toán chính thức cho đồng euro hàng tháng từ Ủy Ban Châu Âu (European Comission) cũng như tỷ lệ chuyển đổi được ấn định bởi Văn Phòng Kế Toán (Accounting Officer) thuộc Ủy Ban Châu Âu theo điều 19 của Quy Chế Tài Chính.\nNhững tỷ giá và tỷ lệ này được dùng để tính số tiền được hoàn trả cho các chi phí sinh hoạt và đi lại của cá nhân ngoài tổ chức đến tham gia hội họp, phỏng vấn, v.v. theo yêu cầu của Ủy Ban Châu Âu.\n<b>Đã bao gồm khoảng 150 đơn vị tiền tệ.</b></string>
-
-
-
     <string name="api_refreshPeriod_title">Khoảng thời gian làm mới</string>
-    <string name="api_refreshPeriod_exchangerateHost">Tỉ lệ chuyển đổi được cập nhật khoảng nửa đêm theo UTC mỗi ngày làm việc.</string>
-    <string name="api_refreshPeriod_frankfurterApp">Dữ liệu được cập nhật khoảng 16:00 theo CET mỗi ngày làm việc.</string>
-    <string name="api_refreshPeriod_ferEe">Tỉ lệ được cập nhật mỗi ngày làm việc.</string>
-    <string name="api_refreshPeriod_inforEuro">Tỷ giá và tỷ lệ ở đây được lấy từ thị trường, vào ngày áp chót của tháng trước, dựa theo Ngân Hàng Trung Ương Châu Âu (ECB). Tùy vào nguồn dữ liệu sẵn có hay không, tỷ giá và tỷ lệ có thể được lấy từ các nguồn thông tin phù hợp gần với ngày nêu trên.</string>
-
-
-
     <!-- about -->
     <string name="category_about">Giới thiệu về ứng dụng</string>
     <string name="disclaimer_title">Miễn trừ trách nhiệm</string>
