@@ -110,8 +110,8 @@ dependencies {
     val moshiVersion = "1.15.1"
     implementation("com.squareup.moshi:moshi-kotlin:$moshiVersion")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
-    // math
-    implementation("org.mariuszgromada.math:MathParser.org-mXparser:5.2.1")
+    // math (v5 releases use incompatible license to fdroid: noinspection GradleDependency)
+    implementation("org.mariuszgromada.math:MathParser.org-mXparser:4.4.3")
     // charts
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
