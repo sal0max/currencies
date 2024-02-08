@@ -35,7 +35,7 @@ class NorgesBank: ApiProvider.Api() {
 
     override val baseUrl = "https://data.norges-bank.no/api"
 
-    override suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
+    override suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError> {
         // As this API doesn't return results for nonwork days, get the last seven days.
         // The latest available values will be used.
         val formattedDateStart = date?.minusDays(7)?.format(DateTimeFormatter.ISO_LOCAL_DATE)
@@ -63,6 +63,7 @@ class NorgesBank: ApiProvider.Api() {
     }
 
     override suspend fun getTimeline(
+        context: Context?,
         base: Currency,
         symbol: Currency,
         startDate: LocalDate,

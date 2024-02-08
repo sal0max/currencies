@@ -16,6 +16,7 @@ import java.time.ZoneId
 @Suppress("unused", "UNUSED_PARAMETER")
 internal class OpenExchangeratesRatesAdapter {
 
+    @Suppress("ASSIGNED_BUT_NEVER_ACCESSED_VARIABLE", "UNUSED_VALUE")
     @Synchronized
     @FromJson
     @Throws(IOException::class)
@@ -24,6 +25,7 @@ internal class OpenExchangeratesRatesAdapter {
         var base: Currency? = null
         var date: LocalDate? = null
         var errorMessage: String? = null
+        var errorDescription: String? = null
 
         if (reader.peek() == JsonReader.Token.BEGIN_OBJECT)
             reader.beginObject()
@@ -53,8 +55,11 @@ internal class OpenExchangeratesRatesAdapter {
                     "base" -> {
                         base = Currency.fromString(reader.nextString())
                     }
-                    "description" -> {
+                    "message" -> {
                         errorMessage = reader.nextString()
+                    }
+                    "description" -> {
+                        errorDescription = reader.nextString()
                     }
                     else -> {
                         reader.skipValue()
@@ -85,7 +90,7 @@ internal class OpenExchangeratesRatesAdapter {
             ExchangeRates(
                 success = false,
                 error = errorMessage,
-                base = Currency.EUR,
+                base = base,
                 date = date,
                 rates = null,
                 provider = ApiProvider.INFOR_EURO

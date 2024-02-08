@@ -55,7 +55,11 @@
     <!-- api -->
     <string name="category_api">Exchange rates</string>
     <string name="api_key" translatable="false">KEY_API</string>
+    <string name="api_open_exchangerates_id_key" translatable="false">KEY_OPEN_EXCHANGERATES_ID</string>
     <string name="api_title">Data provider</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates API Key</string>
+    <string name="api_open_exchangerates_api_key_message">To use this Source, you have to create your personal API Key.\n\nIn order to do that, go to https://openexchangerates.org/signup/free and create a free account.\nFinally, simply generate a new App ID inside your Dashboard and enter it here:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API Key required</i></string>
     <string name="key_apiProvider" translatable="false">KEY_DATA_SOURCE</string>
     <string name="api_about_title">About %s</string>
     <string name="key_refreshPeriod" translatable="false">KEY_DATA_UPDATE</string>

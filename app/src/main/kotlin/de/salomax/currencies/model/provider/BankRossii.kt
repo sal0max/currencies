@@ -37,7 +37,7 @@ class BankRossii : ApiProvider.Api() {
 
     override val baseUrl = "https://www.cbr.ru/scripts"
 
-    override suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
+    override suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError> {
         val dateString =
             // latest
             if (date == null) ""
@@ -58,6 +58,7 @@ class BankRossii : ApiProvider.Api() {
     }
 
     override suspend fun getTimeline(
+        context: Context?,
         base: Currency,
         symbol: Currency,
         startDate: LocalDate,

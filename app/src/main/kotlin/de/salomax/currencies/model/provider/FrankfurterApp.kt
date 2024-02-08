@@ -38,7 +38,7 @@ class FrankfurterApp : ApiProvider.Api() {
 
     override val baseUrl = "https://api.frankfurter.app"
 
-    override suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
+    override suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError> {
         // Currency conversions are done relatively to each other - so it basically doesn't matter
         // which base is used here. However, Euro is a strong currency, preventing rounding errors.
         val base = Currency.EUR
@@ -66,6 +66,7 @@ class FrankfurterApp : ApiProvider.Api() {
     }
 
     override suspend fun getTimeline(
+        context: Context?,
         base: Currency,
         symbol: Currency,
         startDate: LocalDate,

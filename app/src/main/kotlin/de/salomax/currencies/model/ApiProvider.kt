@@ -16,7 +16,7 @@ import java.time.LocalDate
 @JsonClass(generateAdapter = false) // see https://stackoverflow.com/a/64085370/421140
 enum class ApiProvider(
     val id: Int, // safer ordinal; DON'T CHANGE!
-    private val implementation: Api,
+    private val implementation: Api
 ) {
     // EXCHANGERATE_HOST(0, "https://api.exchangerate.host"), // removed, as API was shut down
     FRANKFURTER_APP(1, FrankfurterApp()),
@@ -48,16 +48,17 @@ enum class ApiProvider(
     fun getHint(context: Context): CharSequence? =
         this.implementation.descriptionHint(context)
 
-    suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> =
-        this.implementation.getRates(date)
+    suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError> =
+        this.implementation.getRates(context, date)
 
     suspend fun getTimeline(
+        context: Context?,
         base: Currency,
         symbol: Currency,
         startDate: LocalDate,
         endDate: LocalDate
     ): Result<Timeline, FuelError> {
-        return this.implementation.getTimeline(base, symbol, startDate, endDate)
+        return this.implementation.getTimeline(context, base, symbol, startDate, endDate)
     }
 
     abstract class Api {
@@ -68,8 +69,9 @@ enum class ApiProvider(
         abstract fun descriptionHint(context: Context): CharSequence?
 
         abstract val baseUrl: String
-        abstract suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError>
+        abstract suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError>
         abstract suspend fun getTimeline(
+            context: Context?,
             base: Currency,
             symbol: Currency,
             startDate: LocalDate,

@@ -14,6 +14,9 @@
     <string name="error_empty_response">Der Server hat keine Daten für diese Anfrage.</string>
     <string name="error_api_error">Ein API-Fehler ist aufgetreten. Bitte später erneut versuchen.</string>
     <string name="error_try_another_api">In den Einstellungen stehen aber noch andere Datenquellen zur Wahl. Einfach ausprobieren!</string>
+    <string name="error_no_api_key">Ein gültiger API-Schlüssel muss gesetzt sein, um diese Quelle zu nutzen.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Bitte den API-Schlüssel prüfen.</string>
+    <string name="error_unsupported_timeline">Wechselkursverlauf wird bei dieser API nicht unterstützt.</string>
     <string name="menu_settings">Einstellungen</string>
     <string name="menu_refresh">Kurse aktualisieren</string>
     <string name="menu_timeline">Wechselkursverlauf</string>

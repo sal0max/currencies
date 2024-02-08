@@ -18,6 +18,7 @@ import de.salomax.currencies.view.preference.PreferenceActivity
 class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) {
 
     private var apiProvider: LiveData<ApiProvider> = Database(app).getApiProviderAsync()
+    private var openExchangeratesApiKey: LiveData<String?> = Database(app).getOpenExchangeRatesApiKeyAsync()
     private var isPreviewConversionEnabled: LiveData<Boolean> = Database(app).isPreviewConversionEnabled()
 
     fun setApiProvider(api: ApiProvider) {
@@ -29,6 +30,17 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
 
     fun getApiProvider(): LiveData<ApiProvider> {
         return apiProvider
+    }
+
+    fun setOpenExchangeratesApiKey(id: String) {
+        // first put id to db...
+        Database(app).setOpenExchangeRatesApiKey(id)
+        // ...after that, fetch the new exchange rates
+        ExchangeRatesRepository(app).getExchangeRates()
+    }
+
+    fun getOpenExchangeratesApiKey(): LiveData<String?> {
+        return openExchangeratesApiKey
     }
 
     fun setTheme(theme: Int) {

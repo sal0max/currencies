@@ -36,7 +36,7 @@ class BankOfCanada: ApiProvider.Api() {
 
     override val baseUrl = "https://www.bankofcanada.ca/valet"
 
-    override suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
+    override suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError> {
 
         // As this API doesn't return results for nonwork days, get the last seven days.
         // The latest available values will be used.
@@ -66,6 +66,7 @@ class BankOfCanada: ApiProvider.Api() {
     }
 
     override suspend fun getTimeline(
+        context: Context?,
         base: Currency,
         symbol: Currency,
         startDate: LocalDate,
