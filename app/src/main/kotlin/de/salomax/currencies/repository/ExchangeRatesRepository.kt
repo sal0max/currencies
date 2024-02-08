@@ -36,7 +36,8 @@ class ExchangeRatesRepository(private val context: Context) {
             ExchangeRatesService.getRates(
                 // use the right api
                 apiProvider = Database(context).getApiProvider(),
-                date = Database(context).getHistoricalDate()
+                date = Database(context).getHistoricalDate(),
+                context
             ).run  {
                 val rates = component1()
                 val fuelError = component2()
@@ -76,7 +77,8 @@ class ExchangeRatesRepository(private val context: Context) {
                 // use the right api
                 apiProvider = Database(context).getApiProvider(),
                 base = base,
-                symbol = symbol
+                symbol = symbol,
+                context = context
             ).run {
                 val timeline = component1()
                 val fuelError = component2()

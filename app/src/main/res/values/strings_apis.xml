@@ -28,4 +28,9 @@
     <string name="api_norgesBank_descriptionShort">About 40 exchange rates\nSource: Central Bank of Norway</string>
     <string name="api_norgesBank_descriptionUpdateInterval">Publication time of daily exchange rates is approximately 16:00 CET.</string>
     <string name="api_norgesBank_hint">Service regularly has downtimes (HTTP 503), during which rates can\'t be refreshed!</string>
+
+    <string name="api_openExchangeRates_descriptionFull">Data are tracked and blended algorithmically from multiple reliable sources, ensuring fair and unbiased consistency. See <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> for more information.\n<b>Open Exchange Rates provides a great amount of about 160 exchange rates.\n<i>To use this Source, you have to enter your personal API Key!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">About 160 exchange rates\nSource: Multiple reliable providers, blended together.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Hourly updates.</string>
+    <string name="api_openExchangeRates_hint">To use this Source, you have to create your personal API Key, first!</string>
 </resources>

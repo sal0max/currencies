@@ -49,6 +49,9 @@
     <!-- api -->
     <string name="category_api">Wechselkurse</string>
     <string name="api_title">Datenquelle</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates API-Schlüssel</string>
+    <string name="api_open_exchangerates_api_key_message">Um diese Quelle zu nutzen, muss ein persönlicher API-Schlüssel erstellt werden.\n\nHierfür auf https://openexchangerates.org/signup/free gehen und einen kostenlosen Account erstellen.\nZuletzt, einfach eine neue App ID im Dashboard generieren und hier eintragen:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API-Schlüssel benötigt</i></string>
     <string name="api_about_title">Über %s</string>
     <string name="api_refreshPeriod_title">Aktualisierungsintervall</string>
     <!-- about -->

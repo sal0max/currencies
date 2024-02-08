@@ -164,6 +164,7 @@ class Database(context: Context) {
     private val prefs: SharedPreferences = context.getSharedPreferences("prefs", MODE_PRIVATE)
 
     private val keyApi = "_api"
+    private val keyOpenExchangeratesApiKey = "_api_openExchangeratesApiKey"
     private val keyTheme = "_theme"
     private val keyPureBlackEnabled = "_pureBlackEnabled"
     private val keyFeeEnabled = "_feeEnabled"
@@ -187,6 +188,20 @@ class Database(context: Context) {
         return SharedPreferenceIntLiveData(prefs, keyApi, -1).map {
             ApiProvider.fromId(it)
         }
+    }
+
+    fun setOpenExchangeRatesApiKey(id: String?) {
+        prefs.apply {
+            edit().putString(keyOpenExchangeratesApiKey, id).apply()
+        }
+    }
+
+    fun getOpenExchangeRatesApiKey(): String? {
+        return prefs.getString(keyOpenExchangeratesApiKey, null)
+    }
+
+    fun getOpenExchangeRatesApiKeyAsync(): LiveData<String?> {
+        return SharedPreferenceStringLiveData(prefs, keyOpenExchangeratesApiKey, null)
     }
 
     /* theme */

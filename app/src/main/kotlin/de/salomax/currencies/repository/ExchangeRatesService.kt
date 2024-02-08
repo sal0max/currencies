@@ -1,5 +1,6 @@
 package de.salomax.currencies.repository
 
+import android.content.Context
 import com.github.kittinunf.fuel.core.FuelError
 import com.github.kittinunf.result.Result
 import de.salomax.currencies.model.ApiProvider
@@ -15,9 +16,10 @@ object ExchangeRatesService {
      */
     suspend fun getRates(
         apiProvider: ApiProvider,
-        date: LocalDate? = null
+        date: LocalDate? = null,
+        context: Context? = null
     ): Result<ExchangeRates, FuelError> {
-        return apiProvider.getRates(date)
+        return apiProvider.getRates(context, date)
     }
 
     /**
@@ -28,11 +30,12 @@ object ExchangeRatesService {
     suspend fun getTimeline(
         apiProvider: ApiProvider,
         base: Currency,
-        symbol: Currency
+        symbol: Currency,
+        context: Context? = null
     ): Result<Timeline, FuelError> {
         val endDate = LocalDate.now()
         val startDate = endDate.minusYears(1)
-        return apiProvider.getTimeline(base, symbol, startDate, endDate)
+        return apiProvider.getTimeline(context, base, symbol, startDate, endDate)
     }
 
 }

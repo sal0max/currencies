@@ -38,7 +38,7 @@ class InforEuro : ApiProvider.Api() {
 
     override val baseUrl = "https://ec.europa.eu/budg/inforeuro/api/public"
 
-    override suspend fun getRates(date: LocalDate?): Result<ExchangeRates, FuelError> {
+    override suspend fun getRates(context: Context?, date: LocalDate?): Result<ExchangeRates, FuelError> {
         return Fuel.get(
             baseUrl +
                     "/monthly-rates" +
@@ -60,6 +60,7 @@ class InforEuro : ApiProvider.Api() {
     }
 
     override suspend fun getTimeline(
+        context: Context?,
         base: Currency,
         symbol: Currency,
         startDate: LocalDate,

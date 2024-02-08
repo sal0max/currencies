@@ -5,6 +5,7 @@ import android.content.Intent
 import android.net.Uri
 import android.os.Bundle
 import androidx.lifecycle.ViewModelProvider
+import androidx.preference.EditTextPreference
 import androidx.preference.ListPreference
 import androidx.preference.Preference
 import androidx.preference.PreferenceFragmentCompat
@@ -95,6 +96,21 @@ class PreferenceFragment: PreferenceFragmentCompat() {
 
         // -------------------------------------------------------------------------------------
 
+        // OpenExchangerates: API Key
+        val openExchangeratesApiKeyPreference = findPreference<EditTextPreference>(getString(R.string.api_open_exchangerates_id_key))
+        openExchangeratesApiKeyPreference?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setOpenExchangeratesApiKey(newValue.toString().trim())
+                true
+            }
+            dialogMessage = getText(R.string.api_open_exchangerates_api_key_message)
+        }
+        viewModel.getOpenExchangeratesApiKey().observe(this) { id ->
+            openExchangeratesApiKeyPreference?.summaryProvider = Preference.SummaryProvider<EditTextPreference> {
+                if (id.isNullOrBlank()) getText(R.string.api_open_exchangerates_api_key_missing)
+                else id
+            }
+        }
         // api provider
         findPreference<ProviderPickerPreference>(getString(R.string.api_key))?.apply {
             // initialize values
@@ -103,7 +119,11 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             entryValues = providers.map { it.id.toString() }.toTypedArray() // ids
             // listen for changes
             setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setApiProvider(ApiProvider.fromId(newValue.toString().toInt()))
+                val provider = ApiProvider.fromId(newValue.toString().toIntOrNull() ?: -1)
+                // persist new provider
+                viewModel.setApiProvider(provider)
+                // update visibility of api key input
+                openExchangeratesApiKeyPreference?.isVisible = provider == ApiProvider.OPEN_EXCHANGERATES
                 true
             }
             // set default, if empty (empty means, there was no mapping for the stored value)
@@ -112,6 +132,9 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 viewModel.setApiProvider(defaultProvider)
                 value = defaultProvider.id.toString()
             }
+            // set initial visibility of api key input
+            openExchangeratesApiKeyPreference?.isVisible =
+                ApiProvider.fromId(value.toIntOrNull() ?: -1) == ApiProvider.OPEN_EXCHANGERATES
         }
         // change text according to selected api
         viewModel.getApiProvider().observe(this) {
