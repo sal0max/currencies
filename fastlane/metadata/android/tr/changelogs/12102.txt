@@ -1,0 +1,3 @@
+- Yeni dil: Esperanto!
+- Fizikzel klavye desteği eklendi.
+- Çeviriler güncellendi.

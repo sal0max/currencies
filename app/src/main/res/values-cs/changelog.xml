@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.3">
+        <item>Oprava: tlačítko Zpět nezavřelo aplikaci.</item>
+        <item>Aktualizovány překlady.</item>
+        <item>Celková vylepšení.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.2">
         <item>Nový jazyk: Esperanto!</item>
         <item>Podpora vstupu z hardwarové klávesnice.</item>

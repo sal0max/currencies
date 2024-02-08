@@ -1,5 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.21.3">
+        <item>Geri tuşunun uygulamayı kapatmaması hatası düzeltildi.</item>
+        <item>Çeviriler güncellendi.</item>
+        <item>Genel iyileştirmeler yapıldı.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>Yeni dil: Esperanto!</item>
+        <item>Fizikzel klavye desteği eklendi.</item>
+        <item>Çeviriler güncellendi.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.1">
         <item>Çeviriler güncellendi.</item>
     </string-array>
