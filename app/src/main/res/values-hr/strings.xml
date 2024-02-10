@@ -14,6 +14,9 @@
     <string name="error_empty_response">Poslužitelj nema podataka za ovaj zahtjev.</string>
     <string name="error_api_error">Dogodila se pogreška u API-ju. Molimo pokušajte kasnije.</string>
     <string name="error_try_another_api">Međutim, postoje i drugi pružatelji podataka koje možete odabrati u postavkama. Pokušajte!</string>
+    <string name="error_no_api_key">Da biste se koristili ovim izvorom morate postaviti važeći API ključ.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Molimo provjerite svoj API ključ.</string>
+    <string name="error_unsupported_timeline">Ovaj API ne podržava povijesni pregled.</string>
     <string name="menu_settings">Postavke</string>
     <string name="menu_refresh">Osvježi tečajnu listu</string>
     <string name="menu_timeline">Grafikon tečaja</string>

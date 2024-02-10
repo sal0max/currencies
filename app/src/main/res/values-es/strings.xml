@@ -14,6 +14,9 @@
     <string name="error_empty_response">El servidor no tiene datos para esta solicitud.</string>
     <string name="error_api_error">Ha habido un error en la API. Por favor, inténtelo de nuevo más tarde.</string>
     <string name="error_try_another_api">Sin embargo, hay otros proveedores de datos que puedes elegir en los ajustes. ¡Pruébalo!</string>
+    <string name="error_no_api_key">Para poder utilizar esta fuente es necesario disponer de una clave API válida.</string>
+    <string name="error_invalid_api_key">HTTP 401 - Por favor, compruebe su clave API.</string>
+    <string name="error_unsupported_timeline">Esta API no admite datos cronológicos.</string>
     <string name="menu_settings">Configuración</string>
     <string name="menu_refresh">Tarifas de actualización</string>
     <string name="menu_timeline">Historial de tipos de cambio</string>

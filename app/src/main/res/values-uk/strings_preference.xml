@@ -49,6 +49,9 @@
     <!-- api -->
     <string name="category_api">Курси обміну</string>
     <string name="api_title">Постачальник даних</string>
+    <string name="api_open_exchangerates_api_key_title">Ключ API Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Щоб використовувати це джерело, ви повинні спочатку створити свій особистий ключ API.\n\nЩоб зробити це, перейдіть на сторінку https://openexchangerates.org/signup/free і створіть безкоштовний обліковий запис.\nНарешті, просто згенеруйте новий App ID на панелі інструментів і введіть його тут:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Потрібен ключ API</i></string>
     <string name="api_about_title">Про %s</string>
     <string name="api_refreshPeriod_title">Період оновлення</string>
     <!-- about -->

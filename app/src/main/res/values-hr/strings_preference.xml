@@ -49,6 +49,9 @@
     <!-- api -->
     <string name="category_api">Tečajne liste</string>
     <string name="api_title">Pružatelj podataka</string>
+    <string name="api_open_exchangerates_api_key_title">API ključ Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Za uporabu ovog izvora morate zatražiti svoj osobni API ključ.\n\nDa biste to učinili posjetite https://openexchangerates.org/signup/free i izradite besplatan račun.\nNakon toga stvorite novi App ID unutar svoje Upravljačke ploče (Dashboard) i ovdje ga upišite:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Potreban API ključ</i></string>
     <string name="api_about_title">O aplikaciji %s</string>
     <string name="api_refreshPeriod_title">Vrijeme osvježavanja</string>
     <!-- about -->

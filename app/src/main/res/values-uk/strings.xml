@@ -14,6 +14,9 @@
     <string name="error_empty_response">На сервері немає даних для цього запиту.</string>
     <string name="error_api_error">Сталася помилка при виклику API. Будь ласка, спробуйте пізніше.</string>
     <string name="error_try_another_api">Однак у налаштуваннях можна вибрати іншого постачальника даних. Спробуйте!</string>
+    <string name="error_no_api_key">Для використання цього джерела необхідно встановити дійсний ключ API.</string>
+    <string name="error_invalid_api_key">HTTP 401 — Перевірте ключ API.</string>
+    <string name="error_unsupported_timeline">Цей API не підтримує дані хронології.</string>
     <string name="menu_settings">Налаштування</string>
     <string name="menu_refresh">Оновити курс</string>
     <string name="menu_timeline">Графік зміни курсу</string>

@@ -49,6 +49,9 @@
     <!-- api -->
     <string name="category_api">Tipos de cambio</string>
     <string name="api_title">Proveedor de datos</string>
+    <string name="api_open_exchangerates_api_key_title">Clave API de Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Para utilizar esta fuente, tienes que crear tu Clave API personal.\n\nPara ello, vaya a https://openexchangerates.org/signup/free y cree una cuenta gratuita.\nPor último, simplemente genera un nuevo App ID dentro de tu Dashboard e introdúcelo aquí:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Clave API requerida</i></string>
     <string name="api_about_title">Sobre %s</string>
     <string name="api_refreshPeriod_title">Periodo de actualización</string>
     <!-- about -->
