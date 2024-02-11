@@ -61,7 +61,10 @@ class FerEe : ApiProvider.Api() {
                     .adapter(ExchangeRates::class.java)
             )
         ).map { rates ->
-            rates.copy(provider = ApiProvider.FER_EE)
+            // TODO: uncomment, if this API should be used again
+            // rates.copy(provider = ApiProvider.FER_EE)
+            // TODO: remove, if this API should be used again
+            rates
         }
     }
 
@@ -103,7 +106,10 @@ class FerEe : ApiProvider.Api() {
                 else -> timeline
             }
         }.map { timeline ->
-            timeline.copy(provider = ApiProvider.FER_EE)
+            // TODO: uncomment, if this API should be used again
+            // timeline.copy(provider = ApiProvider.FER_EE)
+            // TODO: remove, if this API should be used again
+            timeline
         }
     }
 

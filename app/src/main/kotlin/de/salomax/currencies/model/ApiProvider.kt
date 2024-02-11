@@ -20,7 +20,7 @@ enum class ApiProvider(
 ) {
     // EXCHANGERATE_HOST(0, "https://api.exchangerate.host"), // removed, as API was shut down
     FRANKFURTER_APP(1, FrankfurterApp()),
-    FER_EE(2, FerEe()),
+    // FER_EE(2, FerEe()), // deactivated for now, as the API most of the time returnes HTTP 422 and there is no reaction from the developers: https://github.com/narorolib/fer/issues/6
     INFOR_EURO(3, InforEuro()),
     NORGES_BANK(4, NorgesBank()),
     BANK_ROSSII(5, BankRossii()),

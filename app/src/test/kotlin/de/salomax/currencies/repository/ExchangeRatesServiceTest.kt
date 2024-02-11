@@ -27,20 +27,20 @@ class ExchangeRatesServiceTest {
         )
     }
 
-    @Test
-    fun testFerEe() = runBlocking {
-        // latest
-        testWebservice(
-            ExchangeRatesService.getRates(ApiProvider.FER_EE).get(), 4
-        )
-        // timeline
-        testTimeline(
-            ExchangeRatesService.getTimeline(
-                ApiProvider.FER_EE,
-                Currency.EUR, Currency.ISK
-            ).get()
-        )
-    }
+//    @Test
+//    fun testFerEe() = runBlocking {
+//        // latest
+//        testWebservice(
+//            ExchangeRatesService.getRates(ApiProvider.FER_EE).get(), 4
+//        )
+//        // timeline
+//        testTimeline(
+//            ExchangeRatesService.getTimeline(
+//                ApiProvider.FER_EE,
+//                Currency.EUR, Currency.ISK
+//            ).get()
+//        )
+//    }
 
     @Test
     fun testInforEuro() = runBlocking {
