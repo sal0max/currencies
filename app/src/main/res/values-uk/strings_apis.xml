@@ -21,8 +21,11 @@
     <string name="api_norgesBank_descriptionShort">Близько 40 курсів валют\nДжерело: Центральний банк Норвегії</string>
     <string name="api_norgesBank_descriptionUpdateInterval">Щоденні курси обміну публікуються приблизно о 16:00 CET (центральноєвропейський час).</string>
     <string name="api_norgesBank_hint">Сервіс регулярно має простої (HTTP 503), під час яких курси не оновлюються!</string>
-    <string name="api_openExchangeRates_descriptionFull">Дані збираються з кількох надійних джерел і алгоритмічно об\'єднуються, що гарантує справедливий і неупереджений результат. Докладніше дивіться на сайті <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a>.\n<b>Open Exchange Rates пропонує великий набір із приблизно 160 курсів валют.\n<i>Для використання цього джерела необхідно ввести особистий ключ API!</i></b></string>
-    <string name="api_openExchangeRates_descriptionShort">Близько 160 курсів валют\nДжерело: кілька надійних постачальників, об\'єднаних разом.</string>
+    <string name="api_openExchangeRates_descriptionFull">Дані збираються та об\'єднуються з кількох надійних джерел, що забезпечує об\'єктивні показники. Докладніше дивіться на сайті <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a>.
+\n<b>Open Exchange Rates пропонує великий набір із приблизно 160 курсів валют.
+\n<i>Для використання цього джерела необхідно ввести особистий ключ API!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Близько 160 курсів валют
+\nДжерело: поєднання кількох надійних постачальників.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Дані оновлюються щогодини.</string>
-    <string name="api_openExchangeRates_hint">Щоб використовувати це джерело, ви повинні спочатку створити свій особистий ключ API!</string>
+    <string name="api_openExchangeRates_hint">Щоб використовувати це джерело, ви повинні створити свій особистий ключ API!</string>
 </resources>
