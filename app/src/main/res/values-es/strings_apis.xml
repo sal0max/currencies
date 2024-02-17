@@ -21,8 +21,11 @@
     <string name="api_norgesBank_descriptionShort">Unos 40 tipos de cambio\nFuente: Banco Central de Noruega</string>
     <string name="api_norgesBank_descriptionUpdateInterval">La hora de publicación de los tipos de cambio diarios es aproximadamente a las 16:00 CET.</string>
     <string name="api_norgesBank_hint">¡El servicio sufre periódicamente caídas (HTTP 503), durante las cuales no se pueden actualizar las tarifas!</string>
-    <string name="api_openExchangeRates_descriptionFull">Los datos se rastrean y mezclan algorítmicamente a partir de múltiples fuentes fiables, lo que garantiza una coherencia justa e imparcial. Consulte <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> para obtener más información.\n<b>Open Exchange Rates proporciona una gran cantidad de alrededor de 160 tipos de cambio.\n<i>¡Para utilizar esta fuente, debe introducir su clave personal de API!</i></b></string>
-    <string name="api_openExchangeRates_descriptionShort">Unos 160 tipos de cambio\nFuente: Múltiples proveedores fiables, combinados.</string>
+    <string name="api_openExchangeRates_descriptionFull">Los datos se rastrean y combinan a partir de múltiples fuentes confiables, lo que garantiza tasas imparciales. Consulte <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> para obtener más información.
+\n<b>Open Exchange Rates proporciona una gran cantidad de alrededor de 160 tipos de cambio.
+\n<i>¡Para utilizar esta fuente, tienes que introducir tu clave API personal!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Unos 160 tipos de cambio
+\nFuente: Combinación de múltiples proveedores fiables.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualizaciones cada hora.</string>
-    <string name="api_openExchangeRates_hint">¡Para utilizar este Source, primero tienes que crear tu Clave API personal!</string>
+    <string name="api_openExchangeRates_hint">Para utilizar esta Fuente, ¡tiene que crear su Clave API personal!</string>
 </resources>
