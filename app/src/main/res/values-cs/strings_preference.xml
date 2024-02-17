@@ -49,6 +49,9 @@
     <!-- api -->
     <string name="category_api">Směnné kurzy</string>
     <string name="api_title">Poskytovatel dat</string>
+    <string name="api_open_exchangerates_api_key_title">Klíč API Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Pro použití tohoto zdroje si musíte vytvořit vlastní klíč API.\n\nPro jeho vytvoření přejděte na stránku https://openexchangerates.org/signup/free a vytvořte si zde bezplatný účet.\nPoté si jednoduše vygenerujte nové ID aplikace na vaší nástěnce a zadejte jej sem:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Vyžadován klíč API</i></string>
     <string name="api_about_title">O %s</string>
     <string name="api_refreshPeriod_title">Doba obnovení</string>
     <!-- about -->

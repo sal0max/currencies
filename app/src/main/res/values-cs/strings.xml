@@ -14,6 +14,9 @@
     <string name="error_empty_response">Server nemá žádná data pro tento požadavek.</string>
     <string name="error_api_error">Vyskytla se chyba API. Zkuste to prosím znovu později.</string>
     <string name="error_try_another_api">V nastavení si nicméně můžete vybrat z jiných poskytovatelů dat. Zkuste to!</string>
+    <string name="error_no_api_key">Abyste mohli využívat tento zdroj, musíte nejprve nastavit platný klíč API.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Zkontrolujte váš klíč API.</string>
+    <string name="error_unsupported_timeline">U této API není podporována časová osa.</string>
     <string name="menu_settings">Nastavení</string>
     <string name="menu_refresh">Obnovit kurzy</string>
     <string name="menu_timeline">Tabulka kurzů</string>
