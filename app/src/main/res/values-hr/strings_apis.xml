@@ -21,8 +21,11 @@
     <string name="api_norgesBank_descriptionShort">Oko 40 valuta\nIzvor: Norveška središnja banka</string>
     <string name="api_norgesBank_descriptionUpdateInterval">Dnevni tečajevi objavljuju se oko 16.00 sati po srednjoeuropskom vremenu.</string>
     <string name="api_norgesBank_hint">Usluga je često nedostupna (HTTP 503) i u tim trenutcima tečajeve nije moguće ažurirati!</string>
-    <string name="api_openExchangeRates_descriptionFull">Podaci se prate i algoritamski objedinjuju s više pouzdanih izvora, što osigurava pravednu i nepristranu dosljednost. Posjetite <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> za više informacija.\n<b>Open Exchange Rates sadrži oko 160 tečajeva.\n<i>Da biste upotrebljavali ovaj izvor morate postaviti svoj osobni API ključ!</i></b></string>
-    <string name="api_openExchangeRates_descriptionShort">Oko 160 tečajeva\nIzvor: Veći broj objedinjenih i pouzdanih izvora podataka.</string>
+    <string name="api_openExchangeRates_descriptionFull">Podaci se prate i objedinjuju s više pouzdanih izvora, što osigurava nepristrane tečajeve. Posjetite <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> za više informacija.
+\n<b>Open Exchange Rates sadrži oko 160 tečajeva.
+\n<i>Da biste upotrebljavali ovaj izvor morate postaviti svoj osobni API ključ!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Oko 160 tečajeva
+\nIzvor: Kombinacija više pouzdanih izvora podataka.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Ažurira se svakoga sata.</string>
-    <string name="api_openExchangeRates_hint">Prije početka uporabe ovog izvora morate postaviti svoj osobni API ključ!</string>
+    <string name="api_openExchangeRates_hint">Prije početka uporabe ovog izvora morate izraditi svoj osobni API ključ!</string>
 </resources>
