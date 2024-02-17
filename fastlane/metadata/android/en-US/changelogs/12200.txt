@@ -1,0 +1,5 @@
+- New API: OpenExchangerates
+- Removed API: Fer.ee - didn't work reliably anymore
+- Updated translations
+- Improved GUI
+- Various improvements under the hood

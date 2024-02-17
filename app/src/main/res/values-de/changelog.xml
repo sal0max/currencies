@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.0">
+        <item>Neue API: OpenExchangerates</item>
+        <item>Entfernte API: Fer.ee - funktionierte nicht mehr zuverlässig</item>
+        <item>Aktualisierte Übersetzungen</item>
+        <item>Verbesserte Benutzeroberfläche</item>
+        <item>Verschiedene Verbesserungen unter der Haube</item>
+    </string-array>
+
     <string-array name="changelog_1.21.3">
         <item>Behoben: Zurück-Button hat die App nicht beendet.</item>
         <item>Aktualisierte Übersetzungen.</item>
