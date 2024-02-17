@@ -2,6 +2,7 @@ Valute jednostavan je pretvarač valuta. Ne služi za financijsko poslovanje u s
 
 - Aplikacija podržava sve važne valute. Odaberite između sljedećih službenih pružatelja podataka o tečaju:
    - frankfurter.app s preko 30 valuta koje objavljuje Europska središnja banka
+   - OpenExchangerates pruža više od 160 valuta i ažurira se svaki sat
    - InforEuro pruža službene mjesečne obračunske tečajeve Europske komisije za euro i pripadajuće tečajeve više od 150  valuta
    - Bank of Canada objavljuje oko 23 tečaja kanadske Središnje banke
    - Norveška središnja banka, Norges Bank, objavljuje 40-ak tečajeva
