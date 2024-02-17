@@ -3,7 +3,6 @@ Currencies è un convertitore di valuta semplice e diretto e non è destinato ad
 - L'applicazione supporta tutte le valute rilevanti. È possibile scegliere tra diversi fornitori di tassi di cambio:
    - exchangerate.host con oltre 160 valute
    - frankfurter.app con oltre 30 valute, fornito dalla Banca Centrale Europea
-   - fer.ee come alternativa a frankfurter.app con le stesse valute
 - L'UI è semplice e in puro Material 3 Design.
 - Storico dei tassi di cambio: Guarda il grafico dell'anno scorso, per vedere come si sono sviluppate le valute.
 - Tassi storici: puoi utilizzare i tassi di date precedenti.

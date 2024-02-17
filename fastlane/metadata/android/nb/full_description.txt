@@ -3,7 +3,6 @@ Valuta er en enkel og grei valutaomregner. Den er ikke ment å brukes til finans
 - Appen støtter alle relevante valutaer. Du kan velge mellom flere valutakursleverandører:
    - exchangerate.host med over 160 valutaer
    - frankfurter.app med over 30 valutaer, levert av den europeiske sentralbanken
-   - fer.ee som et alternativ til frankfurter.app med samme valutaer
 - Brukergrensesnittet er enkelt og rent materialdesign.
 - Valutakurshistorikk: Sjekk ut diagrammet for det siste året for å se hvordan valutaene har utviklet seg.
 - Historiske priser: Du kan bruke priser fra tidligere datoer.

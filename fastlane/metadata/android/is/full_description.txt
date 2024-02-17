@@ -3,7 +3,6 @@ Gjaldmiðlar er einföld gengisreiknivél. Það er ekki ætlað fyrir rauntíma
 - Forritið styður alla viðeigandi gjaldmiðla. Þú getur valið á milli nokkurra gagnaveitenda:
    - exchangerate.host með yfir 160 gjaldmiðla
    - frankfurter.app með yfir 30 gjaldmiðla og veitt af Seðlabanka Evrópu
-   - fer.ee sem möguleiki í stað frankfurter.app með sömu gjaldmiðla
 - Notendaviðmótið er einfalt og hreint Material 3 Design.
 - Línurit: skoðaðu töfluna fyrir síðasta ári til að sjá hvernig gjaldmiðlar hafa þróast.
 - Söguleg gengi: maður getur notað gengi frá fyrri dagsetningum.

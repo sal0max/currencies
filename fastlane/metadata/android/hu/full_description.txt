@@ -3,7 +3,6 @@ A Currencies egy egyszerű és letisztult valutaváltó. Nem arra szolgál, hogy
 - Az alkalmazás támogatja az összes releváns pénznemet. Több árfolyamszolgáltató közül választhatsz:
    - több mint 160 valutával: exchangerate.host
    - frankfurter.app több mint 30 valutával, amelyet az Európai Központi Bank biztosít
-   - fer.ee a frankfurter.app alternatívájaként ugyanazokkal a valutákkal.
 - A felhasználói felület egyszerű és tiszta Material 3 Design.
 - Árfolyamtörténet: Nézd meg az elmúlt év grafikonját, hogy lásd, hogyan alakultak a valuták.
 - Múltbéli árfolyamok: Használhatod a korábbi időpontok árfolyamait.

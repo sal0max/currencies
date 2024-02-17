@@ -3,7 +3,6 @@ Currencies là một ứng dụng chuyển đổi đơn vị tiền tệ nhanh, 
 – Ứng dụng hỗ trợ tất cả các loại tiền tệ phổ biến đang lưu hành. Bạn có thể chọn giữa nhiều nhà cung cấp tỷ giá hối đoái:
    – “exchangerate.host” với hơn 160 loại tiền tệ
    – “frankfurter.app” với hơn 30 loại tiền tệ, được Ngân Hàng Trung Ương Châu Âu cung cấp
-   – “fer.ee” để thay thế cho “frankfurter.app” với cùng số lượng tiền tệ
 – Giao diện đơn giản được thiết kế theo chuẩn Material 3.
 – Lịch sử tỷ giá: Xem biểu đồ ở năm trước để xem các loại tiền tệ đã thay đổi như thế nào.
 – Tỷ giá trong quá khứ: Bạn có thể sử dụng tỉ lệ từ những ngày trước.

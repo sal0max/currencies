@@ -3,7 +3,6 @@ Currencies est un convertisseur de devises simple et direct. Il n'est pas destin
 - L'application prend en charge toutes les devises importantes. Vous pouvez choisir entre plusieurs fournisseurs de taux de change :
    - exchangerate.host avec plus de 160 devises
    - frankfurter.app avec plus de 30 devises, fourni par la Banque centrale européenne
-   - fer.ee comme alternative à frankfurter.app avec les mêmes devises.
 - L'interface utilisateur est simple et pure Material 3 Design.
 - Historique des taux de change : Consultez le graphique de l'année passée, pour voir comment les devises ont évolué.
 - Taux historiques : Vous pouvez utiliser les taux de dates antérieures.

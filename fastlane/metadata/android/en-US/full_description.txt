@@ -2,7 +2,7 @@ Currencies is a simple and straightforward currency converter.It is not intended
 
 - The app supports all relevant currencies. You can choose between several official exchange rate providers:
    - frankfurter.app with over 30 currencies, provided by the European Central Bank
-   - fer.ee as an alternative to frankfurter.app with the same currencies
+   - OpenExchangerates contains over 160 currencies, with hourly updates
    - InforEuro provides the European Commission’s official monthly accounting rates for the euro and over 150 corresponding conversion rates
    - Bank of Canada provides about 23 currency rates of the Canadian Central Bank
    - The Norwegian Central Bank "Norges Bank" lists some 40 exchange rates

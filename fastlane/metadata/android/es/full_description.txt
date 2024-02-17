@@ -2,7 +2,6 @@ Currencies es un conversor de divisas sencillo y directo que no está pensado pa
 
 - La aplicación admite todas las divisas relevantes. Puedes elegir entre varios proveedores oficiales de tipos de cambio:
    - frankfurter.app con más de 30 divisas, proporcionado por el Banco Central Europeo
-   - fer.ee como alternativa a frankfurter.app con las mismas divisas
    - InforEuro proporciona los tipos contables mensuales oficiales de la Comisión Europea para el euro y más de 150 tipos de conversión correspondientes
    - Bank of Canada proporciona unos 23 tipos de cambio del Banco Central de Canadá
    - El Banco Central de Noruega "Norges Bank" ofrece una lista de unos 40 tipos de cambio

@@ -2,7 +2,7 @@ Currencies ist ein schlichter Währungsrechner für Android. ist ein praktischer
 
 - Die App unterstützt alle relevanten Währungen. Man kann zwischen diversen offiziellen Kursanbietern wählen:
    - frankfurter.app mit über 30 Währungen, bereitgestellt direkt von der Europäischen Zentralbank
-   - fer.ee als eine Alternative zu frankfurter.app, mit denselben Währungen
+   - OpenExchangerates enthält über 160 Währungen, mit stündlichen Updates
    - InforEuro bietet den offiziellen monatlichen Buchungskurs der Europäischen Kommission für den Euro und entsprechenden Umrechnungskurse für über 150 andere Währungen
    - Die Bank of Canada stellt ungefähr 23 Währungskurse der kanadischen Zentralbank zur Verfügung
    - Die norwegische Zentralbank "Norges Bank" listet etwa 40 Wechselkurse

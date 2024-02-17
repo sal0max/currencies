@@ -3,7 +3,6 @@ Currencies is een eenvoudige en ongecompliceerde valutacalculator die niet bedoe
 - De app ondersteunt alle relevante valuta. U kunt kiezen tussen verschillende aanbieders van wisselkoersen:
    - exchangerate.host met meer dan 160 valuta's
    - frankfurter.app met meer dan 30 valuta's, aangeboden door de Europese Centrale Bank
-   - fer.ee als alternatief voor frankfurter.app met dezelfde valuta's
 - De UI is eenvoudig en puur Material 3 Design.
 - Wisselkoers geschiedenis: Bekijk de grafiek van het afgelopen jaar, om te zien hoe de valuta's zich hebben ontwikkeld.
 - Historische koersen: U kunt koersen van eerdere data gebruiken.
