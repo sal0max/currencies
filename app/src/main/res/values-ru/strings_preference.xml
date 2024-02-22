@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Основные настройки</string>
@@ -45,7 +47,6 @@
     <string name="language_uk">Украинский</string>
     <string name="language_vi">Вьетнамский</string>
     <string name="language_zh_CN">Китайский (упрощённый)</string>
-
     <!-- api -->
     <string name="category_api">Обменные курсы</string>
     <string name="api_title">Провайдер данных</string>
@@ -55,12 +56,19 @@
     <string name="category_about">Об этом приложении</string>
     <string name="disclaimer_title">Отказ от ответственности</string>
     <string name="disclaimer_summary">Не смотря на то, что это приложение очень тщательно разрабатывается и тестируется, <b>нет никаких гарантий, что отображаемые им данные верны</b>. Обменные курсы предоставляются третьей стороной и данное приложение не может гарантировать, что данные верны и обновлены.\nДополнительно, предоставляемые курсы (если они верны) – всё ещё могут отличаться от используемых вашим банком.\nИ наконец: Ошибки случаются. Никогда слепо не доверяйте кому-либо! Учитывая это, будьте уверены, что я бы не выпустил это приложение, если бы у меня были сомнения в том, что оно работает так, как задумано.</string>
-
-
     <string name="donate_title">Поддержать разработчика</string>
     <string name="donate_summary">Пожертвовать через PayPal</string>
     <string name="rate_title">Оценить это приложение</string>
     <string name="rate_summary">Если вам всё понравилось, то вы можете помочь другим узнать о Currencies. Нажмите здесь, чтобы оценить приложение в Google Play.</string>
     <string name="category_versioninfo">Информация о версии</string>
     <string name="title_changelog">История изменений</string>
+    <string name="sourcecode_title">Исходный код</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Требуется ключ API</i></string>
+    <string name="api_open_exchangerates_api_key_title">Ключ API Open Exchangerates</string>
+    <string name="language_zh_TW">Китайский (Традиционный)</string>
+    <string name="sourcecode_summary">Это приложение с открытым исходным кодом. Перейдите в репозиторий кода, чтобы сообщить об ошибках, узнать, как внести свой вклад, или просто взглянуть на исходники.</string>
+    <string name="api_open_exchangerates_api_key_message">Чтобы использовать этот источник, вам необходимо создать свой личный ключ API.
+\n
+\nДля этого перейдите на https://openexchangerates.org/signup/free и создайте бесплатную учетную запись.
+\nНаконец, просто создайте новый идентификатор приложения на своей панели управления и введите его здесь:</string>
 </resources>
