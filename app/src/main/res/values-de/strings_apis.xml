@@ -24,5 +24,5 @@
     <string name="api_openExchangeRates_descriptionFull">Daten werden von mehreren zuverlässigen Quellen erhoben und kombiniert, um ausgewogene Kurse zu gewähren. Siehe <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> für mehr Informationen.\n<b>Open Exchange Rates bietet eine große Menge von ungefähr 160 Wechselkursen an.\n<i>Um diese Quelle zu nutzen, muss ein persönlicher API-Schlüssel eingetragen werden!</i></b></string>
     <string name="api_openExchangeRates_descriptionShort">Ungefähr 160 Wechselkurse\nQuelle: Kombination aus mehreren zuverlässigen Quellen.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Stündliche Updates.</string>
-    <string name="api_openExchangeRates_hint">Um diese Quelle zu nutzen, muss ein persönlicher API-Schlüssel erstellt werden!</string>
+    <string name="api_openExchangeRates_hint">Um diese Quelle zu nutzen, muss zuerst ein persönlicher API-Schlüssel erstellt werden!</string>
 </resources>
