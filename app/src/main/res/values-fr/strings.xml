@@ -16,4 +16,10 @@
     <string name="menu_refresh">Rafraîchissement des taux</string>
     <string name="menu_timeline">Historique des taux de change</string>
     <string name="tooltip_filter_starred">Afficher uniquement les devises étoilées.</string>
+    <string name="error_empty_response">Le serveur ne dispose d\'aucune donnée pour cette requête.</string>
+    <string name="error_try_another_api">Cependant, il existe d\'autres fournisseurs de données parmi lesquels vous pouvez choisir dans les paramètres. Essayez-le !</string>
+    <string name="error_invalid_api_key">HTTP 401 – Veuillez vérifier votre clé API.</string>
+    <string name="error_unsupported_timeline">Les données de chronologie ne sont pas prises en charge avec cette API.</string>
+    <string name="error_no_api_key">Une clé API valide doit être définie pour pouvoir utiliser cette source.</string>
+    <string name="currency_dropdown_api_hint">Quelque chose manque? Différents fournisseurs de données proposent différentes devises. Allez dans les paramètres pour en essayer un autre ! 🤗</string>
 </resources>
