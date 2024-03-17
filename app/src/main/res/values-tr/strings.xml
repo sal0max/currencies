@@ -19,4 +19,7 @@
     <string name="menu_timeline">Döviz kur grafiği</string>
     <string name="tooltip_filter_starred">Sadece favori para birimlerini göster.</string>
     <string name="currency_dropdown_api_hint">Eksik bir şey mi var? Farklı veri sağlayıcıları farklı para birimleri sunar. Başka bir tane denemek için ayarlara gidin!\u00A0\uD83E\uDD17</string>
+    <string name="error_no_api_key">Bu kaynağı kullanmak için geçerli bir API anahtarı ayarlanmalıdır.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Lütfen API anahtarınızı gözden geçirin.</string>
+    <string name="error_unsupported_timeline">Zaman çizelgesi verileri bu API ile desteklenmiyor.</string>
 </resources>
