@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">General Ayala</string>
@@ -63,4 +65,10 @@
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
     <string name="category_versioninfo">Sürüm bilgisi</string>
     <string name="title_changelog">Değişiklik günlüğü</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates API Anahtarı</string>
+    <string name="api_open_exchangerates_api_key_message">Bu kaynağı kullanmak için kişisel API anahtarınızı oluşturmanız gerekmektedir.
+\n
+\nBunu yapmak için https://openexchangerates.org/signup/free adresine gidin ve ücretsiz bir hesap oluşturun.
+\nSon olarak, denetim panelinizde yeni bir uygulama kimliği oluşturun ve buraya girin:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API anahtarı gerekli</i></string>
 </resources>
