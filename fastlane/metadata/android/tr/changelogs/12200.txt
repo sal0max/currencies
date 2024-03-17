@@ -1,0 +1,5 @@
+- Yeni API: OpenExchangerates
+- Kaldırılan API: Fer.ee - artık güvenilir şekilde çalışmıyordu
+- Çeviriler güncellendi
+- Grafiksel arayüz iyileştirildi
+- Arka plandaki çeşitli iyileştirmeler

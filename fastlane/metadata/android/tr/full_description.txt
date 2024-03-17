@@ -2,6 +2,7 @@ Currencies, finansal işlerinde kullanacağın bir araçtan ziyade daha gündeli
 
 - Uygulama mevcut tüm para birimlerini kapsamaktadır. Farklı resmi döviz kuru sağlayıcıları arasında seçim yapabilirsin:
    - Avrupa Merkez Bankas tarafından sağlanan 30'dan fazla para birimiyle frankfurter.app
+   - Saatlik güncellemelerle 160'tan fazla para birimi içeren OpenExchangerates
    - Avrupa Komisyonu'nun Euro için resmi aylık muhasebe oranlarını ve 150'den fazla para birimi için kur oranlarını sağlayan InforEuro
    - Kanada Merkez Bankası'nın yaklaşık 23 döviz kuruyla Bank of Canada
    - 40 kadar döviz kuruyla Norveç Merkez Bankası "Norges Bank"
