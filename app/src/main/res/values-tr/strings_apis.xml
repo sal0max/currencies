@@ -21,4 +21,11 @@
     <string name="api_norgesBank_descriptionShort">Yaklaşık 40 para birimi\nKaynak: Norveç Merkez Bankası</string>
     <string name="api_norgesBank_descriptionUpdateInterval">Günlük döviz kurlarının yayınlanma saati yaklaşık olarak 16:00 CET\'dir.</string>
     <string name="api_norgesBank_hint">Hizmet düzenli olarak kesintiye uğramakta (HTTP 503) ve kesinti esnasında kur oranları maalesef güncellenemez!</string>
+    <string name="api_openExchangeRates_descriptionFull">Veriler birden fazla güvenilir kaynaktan takip edilir ve birleştirilir, böylece tarafsız oranlar sağlanır. Daha fazla bilgi için <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> adresini ziyaret edin.
+\n<b>Open Exchange Rates, yaklaşık 160 döviz kuru hakkında büyük miktarda bilgi sağlar.
+\n<i>Bu kaynağı kullanmak için kişisel API anahtarınızı girmeniz gerekir!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Yaklaşık 160 döviz kuru
+\nKaynak: Birden fazla güvenilir sağlayıcının birleşimi.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Saatlik güncellemeler.</string>
+    <string name="api_openExchangeRates_hint">Bu kaynağı kullanmak için kişisel API anahtarınızı oluşturmanız gerekir!</string>
 </resources>
