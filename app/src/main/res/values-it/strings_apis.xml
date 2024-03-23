@@ -8,4 +8,8 @@
     <string name="api_frankfurterApp_descriptionUpdateInterval">I dati vengono aggiornati intorno alle 16:00 CET ogni giorno lavorativo.</string>
     <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_it"><b>InforEuro</b></a> fornisce il tasso contabile ufficiale mensile della Commissione europea per l\'euro e i tassi di conversione stabiliti dal contabile della Commissione europea in linea con l\'articolo 19 del regolamento finanziario.\nI tassi sono utilizzati per calcolare gli importi per il rimborso delle spese sostenute, le spese di viaggio o di soggiorno per le persone esterne che partecipano a riunioni, colloqui, ecc. su richiesta della Commissione europea.\n<b>Sono incluse circa 150 valute.</b></string>
     <string name="api_inforEuro_descriptionUpdateInterval">I tassi indicati sono i tassi di mercato per il penultimo giorno del mese precedente, indicati dalla Banca centrale europea o, in funzione della disponibilità, forniti dalle delegazioni o da altre fonti appropriate vicino a tale data.</string>
+    <string name="api_inforEuro_descriptionShort">Circa 150 tassi di cambio
+\nFonte: Commissione Europea</string>
+    <string name="api_bankOfCanada_descriptionShort">Circa 23 tassi di cambio
+\nFonte: Central Bank of Canada</string>
 </resources>
