@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Impostazioni generali</string>
@@ -45,7 +47,6 @@
     <string name="language_uk">Ucraino</string>
     <string name="language_vi">Vietnamita</string>
     <string name="language_zh_CN">Cinese (Semplificato)</string>
-
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>
@@ -55,12 +56,14 @@
     <string name="category_about">Di questa app</string>
     <string name="disclaimer_title">L\'esclusione di responsabilità</string>
     <string name="disclaimer_summary">Anche se l\'app è scritta e testata molto accuratamente, <b>non c\'è garanzia che i dati che mostra siano corretti</b>. I tassi di cambio sono forniti da una terza parte e questa applicazione non può fare alcuna promessa che i dati siano veri e aggiornati.\nInoltre, i tassi forniti – anche se corretti – possono variare da quelli utilizzati dalla tua banca.\nInfine: gli errori capitano. Non fidatevi mai ciecamente di nessuno! Detto questo, stai sicuro che non avrei rilasciato questa applicazione se avessi avuto qualche dubbio sul fatto che funziona come previsto.</string>
-
-
     <string name="donate_title">Supporta lo sviluppatore</string>
     <string name="donate_summary">Donar a través de PayPal</string>
     <string name="rate_title">Valuta questa applicazione</string>
     <string name="rate_summary">Se vuoi, puoi aiutare gli altri a scoprire Currencies. Clicca qui per votare l\'app su Google Play.</string>
     <string name="category_versioninfo">Informazioni della versione</string>
     <string name="title_changelog">Registro dei cambiamenti</string>
+    <string name="sourcecode_title">Codice sorgente</string>
+    <string name="language_zh_TW">Cinese (Tradizionale)</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Chiave API richiesta</i></string>
+    <string name="sourcecode_summary">Questa app è open source. Vai all\'archivio del codice per aprire segnalazioni, trovare come contribuire o solo per guardare ai sorgenti.</string>
 </resources>
