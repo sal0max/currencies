@@ -1,5 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.0">
+        <item>Nueva API: OpenExchangerates</item>
+        <item>API eliminada: Fer.ee - ya no funcionaba de forma fiable</item>
+        <item>Traducciones actualizadas</item>
+        <item>Interfaz gráfica de usuario mejorada</item>
+        <item>Varias mejoras internas</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>Corregido: La tecla Atrás no cerraba la aplicación.</item>
+        <item>Traducciones actualizadas.</item>
+        <item>Mejoras generales.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.2">
         <item>Nuevo idioma seleccionable: Esperanto.</item>
         <item>Soporte de entrada de teclado por hardware.</item>

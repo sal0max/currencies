@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.16.1">
+        <item>Traduzioni aggiornate.</item>
+    </string-array>
+
     <string-array name="changelog_1.12.1">
         <item>Risolto crash nell\'aggiornamento dei cambi. Scusate! 🤕</item>
     </string-array>

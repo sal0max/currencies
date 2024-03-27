@@ -1,0 +1,5 @@
+- Novi API: OpenExchangerates
+- Uklonjen API: Fer.ee - postao je nepouzdan
+- Dorađeni prijevodi
+- Poboljšano sučelje
+- Razna poboljšanja "ispod haube"

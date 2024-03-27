@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="api_bankOfCanada_descriptionFull">Среднесуточные обменные курсы <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Банка Канады</b></a>.\n<b>Включено около 23 валют.</b></string>
+    <string name="api_bankOfCanada_descriptionShort">Около 23 обменных курсов\nИсточник: Центральный банк Канады</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">Курсы публикуются один раз в рабочий день до 16:30 по восточному времени</string>
+    <string name="api_bankRossii_descriptionFull">Обменные курсы, предоставленные центральным банком России <a href="https://cbr.ru/eng/currency_base/daily/"><b>Банк России</b></a>. В условиях действующих санкций этот источник предоставляет, вероятно, наиболее надежные обменные курсы для российского рубля.\n<b>Банк России включает около 44 обменных курсов.</b></string>
+    <string name="api_bankRossii_descriptionShort">Около 44 обменных курсов\nИсточник: Центральный банк России</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">Курсы обновляются ежедневно, за исключением <a href="https://cbr.ru/eng/other/holidays/">государственных праздников в России</a>.</string>
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> получает обменные курсы от различных финансовых провайдеров данных и банков, включая Европейский Центральный Банк. Все обменные курсы предоставляются усереднёнными. Значения курсов определяются по медианным курсам покупки и продажи.\n<b>Включает в себя около 160 валют.</b></string>
     <string name="api_exchangerateHost_descriptionUpdateInterval">Обменные курсы обновляются около полуночи по UTC каждый рабочий день.</string>
     <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> это относительно новый сервис, который (как и Frankfurter.app) отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.\n<b>Включает в себя около 30 валют.</b></string>
     <string name="api_ferEe_descriptionUpdateInterval">Курсы обновляются каждый рабочий день.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> отслеживает справочные обменные курсы (forex), публикующиеся Европейским Центральным Банком.\n<b>Включает в себя около 30 валют.</b></string>
+    <string name="api_frankfurterApp_descriptionShort">Около 30 обменных курсов\nИсточник: Европейский Центральный банк</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Данные обновляются около 16:00 по CET каждый рабочий день.</string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a> предоставляет официальный ежемесячный расчетный курс Европейской комиссии для евро и коэффициенты пересчета, установленные сотрудником по бухгалтерскому учету Европейской комиссии в соответствии со статьей 19 Финансового регламента.\nЭти ставки используются для расчета сумм возмещения расходов, путевых расходов или суточных для внешних сотрудников, участвующих во встречах, собеседованиях и т.д. по запросу Европейской комиссии.\n<b>Включено около 150 валют.</b></string>
+    <string name="api_inforEuro_descriptionShort">Около 150 обменных курсов\nИсточник: Европейская комиссия</string>
+    <string name="api_inforEuro_descriptionUpdateInterval">Указанные ставки являются рыночными ставками на предпоследний день предыдущего месяца, указанными Европейским центральным банком или, в зависимости от наличия, предоставленными делегациями или другими соответствующими источниками, близкими к этой дате.</string>
+    <string name="api_inforEuro_hint">Курсы обновляются только раз в месяц!</string>
+    <string name="api_norgesBank_descriptionFull">Обменные курсы, предоставляемые центральным банком Норвегии <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.\n<b>Norges Bank включает около 40 обменных курсов.</b></string>
+    <string name="api_norgesBank_descriptionShort">Около 40 обменных курсов\nИсточник: Центральный банк Норвегии</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">Время публикации ежедневных обменных курсов - приблизительно 16:00 по центральноевропейскому времени.</string>
+    <string name="api_norgesBank_hint">У сервиса регулярно бывают простои (HTTP 503), во время которых курсы не могут быть обновлены!</string>
+    <string name="api_openExchangeRates_descriptionFull">Данные отслеживаются и объединяются из нескольких надежных источников, обеспечивая объективные показатели. Смотрите <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> для получения дополнительной информации.\n<b>Open Exchange Rates предоставляет большое количество обменных курсов - около 160.\n<i>Чтобы использовать этот источник, вам необходимо ввести свой личный ключ API!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Около 160 обменных курсов\nИсточник: Комбинация нескольких надежных поставщиков.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Ежечасные обновления.</string>
+    <string name="api_openExchangeRates_hint">Чтобы использовать этот источник, вам необходимо создать свой личный ключ API!</string>
 </resources>

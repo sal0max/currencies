@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">переключить валюты</string>
-    <string name="rates_date_latest">Курсы валют на &lt;b>%1$s&lt;/b> от &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Исторические курсы валют на &lt;b>%1$s&lt;/b> от &lt;b>%2$s&lt;/b></string>
-    <string name="copied_to_clipboard">&lt;b>%s&lt;/b> скопировано в буфер обмена</string>
+    <string name="rates_date_latest">Курсы валют на &lt;b&gt;%1$s&lt;/b&gt; от &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="rates_date_historical">Исторические курсы валют на &lt;b&gt;%1$s&lt;/b&gt; от &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; скопировано в буфер обмена</string>
     <string name="historical_rates_dialog_title">Исторические курсы валют</string>
     <string name="historical_rates_dialog_toggle">Использовать обменные курсы от определённой даты. Отключите, чтобы всегда получать актуальные.</string>
     <string name="error">Ошибка: %s</string>
     <string name="error_generic">Неизвестная проблема.</string>
-    <string name="error_http">Сервер ответил HTTP кодом %d</string>
+    <string name="error_http">Сервер ответил HTTP кодом %d.</string>
     <string name="error_timeout">Сервер не ответил вовремя, или недоступен.</string>
     <string name="error_no_data">Невозможно подключиться к серверу.</string>
+    <string name="error_empty_response">У сервера нет данных для этого запроса.</string>
     <string name="error_api_error">Произошла ошибка API. Пожалуйста, попробуйте позже.</string>
+    <string name="error_try_another_api">Однако в настройках можно выбрать и других поставщиков данных. Просто попробуйте!</string>
+    <string name="error_no_api_key">Для использования этого источника необходимо установить действительный ключ API.</string>
+    <string name="error_invalid_api_key">HTTP 401 - Пожалуйста, проверьте ваш ключ API.</string>
+    <string name="error_unsupported_timeline">Данные о графике не поддерживаются с этим API.</string>
     <string name="menu_settings">Настройки</string>
     <string name="menu_refresh">Обновить курсы валют</string>
     <string name="menu_timeline">График обменного курса</string>
     <string name="tooltip_filter_starred">Показывать только избранные валюты.</string>
+    <string name="currency_dropdown_api_hint">Чего-то не хватает? Разные поставщики данных предлагают разные валюты. Зайдите в настройки и попробуйте другого! 🤗</string>
 </resources>

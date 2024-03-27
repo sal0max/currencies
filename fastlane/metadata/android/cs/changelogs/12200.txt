@@ -1,0 +1,5 @@
+- Nové API: OpenExchangerates
+- Odebráno API: Fer.ee - nefungovalo spolehlivě
+- Aktualizovány překlady
+- Vylepšeno rozhraní
+- Různá interní vylepšení

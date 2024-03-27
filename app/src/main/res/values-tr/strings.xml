@@ -14,6 +14,9 @@
     <string name="error_empty_response">Sunucuda bu istek için veri bulunmuyor.</string>
     <string name="error_api_error">API hatası. Lütfen daha sonra tekrar deneyin.</string>
     <string name="error_try_another_api">Ancak, ayarlardan seçebileceğiniz başka veri sağlayıcıları da var. Onları deneyebilirsiniz!</string>
+    <string name="error_no_api_key">Bu kaynağı kullanmak için geçerli bir API anahtarı ayarlanmalıdır.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Lütfen API anahtarınızı gözden geçirin.</string>
+    <string name="error_unsupported_timeline">Zaman çizelgesi verileri bu API ile desteklenmiyor.</string>
     <string name="menu_settings">Ayarlar</string>
     <string name="menu_refresh">Kurları güncelle</string>
     <string name="menu_timeline">Döviz kur grafiği</string>

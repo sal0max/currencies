@@ -1,9 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="api_bankOfCanada_descriptionFull">متوسط أسعار الصرف اليومية في <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>بنك كندا</b></a>.\n<b>يتم تضمين حوالي 23 عملة.</b></string>
+    <string name="api_bankOfCanada_descriptionShort">حوالي 23 سعر صرف\nالمصدر: البنك المركزي الكندي</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">يتم نشر الأسعار مرة واحدة كل يوم عمل بحلول الساعة 16:30 بالتوقيت الشرقي ET</string>
+    <string name="api_bankRossii_descriptionFull">أسعار الصرف، على النحو المنصوص عليه من قبل البنك المركزي الروسي <a href="https://cbr.ru/eng/currency_base/daily/"><b>بنك روسي</b></a>. وفي ظل العقوبات الحالية، ربما يقدم هذا المصدر أسعار الصرف الأكثر موثوقية للروبل الروسي.\n<b>يدرج بنك روسي حوالي 44 سعر صرف.</b></string>
+    <string name="api_bankRossii_descriptionShort">حوالي 44 سعر صرف\nالمصدر: البنك المركزي الروسي</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">يتم تحديث الأسعار يوميًا، باستثناء <a href="https://cbr.ru/eng/other/holidays/">العطلات الرسمية في روسيا</a>.</string>
     <string name="api_exchangerateHost_descriptionFull">توفر <a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> أسعار العملات من مختلف موفري البيانات المالية والمصارف ، بما في ذلك البنك المركزي الأوروبي. يتم تسليم جميع بيانات سعر الصرف في بيانات نقطة الوسط. يتم تحديد معدلات نقطة الوسط عن طريق حساب متوسط سعر العرض والطلب.\n<b> تم تضمين حوالي 160 عملة. </b></string>
     <string name="api_exchangerateHost_descriptionUpdateInterval">يتم تحديث أسعار الصرف في منتصف الليل بالتوقيت العالمي المنسق كل يوم عمل.</string>
     <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> هي خدمة جديدة نسبيًا ، (تمامًا مثل Frankfurter.app) تتعقب تبادل المراجع (فوركس) المعدلات التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
     <string name="api_ferEe_descriptionUpdateInterval">يتم تحديث الأسعار كل يوم عمل.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> تتعقب أسعار الصرف المرجعية (الفوركس) التي ينشرها البنك المركزي الأوروبي.\n<b> تم تضمين حوالي 30 عملة. </b></string>
+    <string name="api_frankfurterApp_descriptionShort">حوالي 30 سعر الصرف\nالمصدر: البنك المركزي الأوروبي</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">يتم تحديث البيانات في حوالي الساعة 16:00 بتوقيت وسط أوروبا كل يوم عمل.</string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a> يوفر السعر المحاسبي الشهري الرسمي للمفوضية الأوروبية لليورو وأسعار التحويل كما حددها مسؤول المحاسبة في المفوضية الأوروبية بما يتماشى مع المادة 19 من اللائحة المالية.\nتُستخدم هذه المعدلات لحساب مبالغ سداد النفقات أو تكاليف السفر أو الإقامة للأشخاص الخارجيين المشاركين في الاجتماعات والمقابلات وما إلى ذلك بناءً على طلب المفوضية الأوروبية.\n<b>يتم تضمين حوالي 150 عملة.</b></string>
+    <string name="api_inforEuro_descriptionShort">حوالي 150 سعر الصرف\nالمصدر: المفوضية الأوروبية</string>
+    <string name="api_inforEuro_descriptionUpdateInterval">الأسعار المشار إليها هي أسعار السوق لليوم الثاني إلى الأخير من الشهر السابق كما ذكرها البنك المركزي الأوروبي أو، حسب التوافر، المقدمة من الوفود أو المصادر المناسبة الأخرى في وقت قريب من ذلك التاريخ.</string>
+    <string name="api_inforEuro_hint">يتم تحديث الأسعار مرة واحدة فقط في الشهر!</string>
+    <string name="api_norgesBank_descriptionFull">أسعار الصرف، على النحو المنصوص عليه من قبل البنك المركزي النرويجي <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>بنك Norges</b></a> .\n<b>يدرج بنك Norges حوالي 40 سعر صرف.</b></string>
+    <string name="api_norgesBank_descriptionShort">حوالي 40 سعر الصرف\nالمصدر: البنك المركزي النرويجي</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">وقت نشر أسعار الصرف اليومية هو حوالي الساعة 16:00 بتوقيت وسط أوروبا.</string>
+    <string name="api_norgesBank_hint">تخضع الخدمة لفترات توقف منتظمة (HTTP 503)، وخلال هذه الأوقات لا يمكن تحديث الأسعار!</string>
+    <string name="api_openExchangeRates_descriptionFull">يتم تتبع البيانات ودمجها من مصادر متعددة موثوقة، مما يضمن معدلات غير متحيزة. راجع <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> لمزيد من المعلومات.\n<b>توفر أسعار الصرف المفتوحة كمية كبيرة تبلغ حوالي 160 سعر صرف.\n<i>لاستخدام هذا المصدر، عليك إدخال مفتاح API الشخصي الخاص بك!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">حوالي 160 سعر الصرف\nالمصدر: مزيج من مقدمي خدمات موثوقين متعددين.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">تحديثات كل ساعة.</string>
+    <string name="api_openExchangeRates_hint">لاستخدام هذا المصدر، عليك إنشاء مفتاح API الشخصي الخاص بك!</string>
 </resources>

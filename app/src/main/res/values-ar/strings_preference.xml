@@ -39,28 +39,31 @@
     <string name="language_nl">هولندية</string>
     <string name="language_pl">البولندية</string>
     <string name="language_pt_BR">برتغالية (البرازيل)</string>
-
+    <string name="language_ru">الروسية</string>
     <string name="language_sv">اللغة السويدية</string>
     <string name="language_tr">تركية</string>
     <string name="language_uk">اللغة الأوكرانية</string>
     <string name="language_vi">اللغة الفيتنامية</string>
-
-
+    <string name="language_zh_CN">الصينية( المبسطة)</string>
+    <string name="language_zh_TW">الصينية (التقليدية)</string>
     <!-- api -->
     <string name="category_api">معدل التحويل</string>
     <string name="api_title">مزود البيانات</string>
+    <string name="api_open_exchangerates_api_key_title">مفتاح Open Exchangerates API لأسعار الصرف</string>
+    <string name="api_open_exchangerates_api_key_message">لاستخدام هذا المصدر، عليك إنشاء مفتاح API الشخصي الخاص بك.\n\nللقيام بذلك، انتقل إلى https://openexchangerates.org/signup/free وقم بإنشاء حساب مجاني.\nوأخيرًا، ما عليك سوى إنشاء معرف تطبيق جديد داخل لوحة المعلومات الخاصة بك وإدخاله هنا:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>مطلوب مفتاح API </i></string>
     <string name="api_about_title">حول %s</string>
     <string name="api_refreshPeriod_title">فترة التحديث</string>
     <!-- about -->
     <string name="category_about">عن هذا التطبيق</string>
     <string name="disclaimer_title">تنصل</string>
     <string name="disclaimer_summary">على الرغم من أنه تمت كتابة التطبيق واختباره بدقة شديدة ، <b> لا يوجد ضمان بأن البيانات التي يعرضها صحيحة </b>. يتم توفير أسعار الصرف من قبل طرف ثالث ولا يمكن لهذا التطبيق أن يقدم أي وعد على الإطلاق بأن البيانات صحيحة وحديثة.\nبالإضافة إلى ذلك ، قد تختلف الأسعار المقدمة - إذا كانت صحيحة - عن تلك المستخدمة من قبل البنك الذي تتعامل معه.\nأخيرًا: الأخطاء تحدث. لا تثق بأي شخص بشكل أعمى! ومع ذلك ، كن مطمئنًا أنني لم أكن لأطلق هذا التطبيق إذا كان لدي أي شك في أنه يعمل على النحو المنشود.</string>
-
-
+    <string name="sourcecode_title">مصدر الكود</string>
+    <string name="sourcecode_summary">هذا التطبيق مفتوح المصدر. انتقل إلى مستودع التعليمات البرمجية لفتح المشكلات، واكتشف كيفية المساهمة أو قم فقط بإلقاء نظرة على المصادر.</string>
     <string name="donate_title">دعم المطور</string>
     <string name="donate_summary">تبرع عبر PayPal</string>
     <string name="rate_title">قيم هذا التطبيق</string>
     <string name="rate_summary">إذا كنت ترغب في ذلك ، يمكنك مساعدة الآخرين في اكتشاف العملات. انقر هنا لتقييم التطبيق على Google Play.</string>
-
-
+    <string name="category_versioninfo">Version info</string>
+    <string name="title_changelog">‫سجل التغيير</string>
 </resources>

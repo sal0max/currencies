@@ -1,5 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.0">
+        <item>Nouvelle API : OpenExchangerates</item>
+        <item>API supprimée : Fer.ee - ne fonctionnait plus de manière fiable</item>
+        <item>Traductions mises à jour</item>
+        <item>Interface graphique améliorée</item>
+        <item>Diverses améliorations sous le capot</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>Corrigé : la touche Retour ne fermait pas l\'application.</item>
+        <item>Traductions mises à jour.</item>
+        <item>Améliorations globales.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>Nouvelle langue sélectionnable : l\'espéranto !</item>
+        <item>Prise en charge de la saisie au clavier matériel.</item>
+        <item>Traductions mises à jour.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.1">
         <item>Traductions mises à jour.</item>
     </string-array>

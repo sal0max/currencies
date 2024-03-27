@@ -49,6 +49,9 @@
     <!-- api -->
     <string name="category_api">Döviz kurları</string>
     <string name="api_title">Veri sağlayıcısı</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates API Anahtarı</string>
+    <string name="api_open_exchangerates_api_key_message">Bu kaynağı kullanmak için kişisel API anahtarınızı oluşturmanız gerekmektedir.\n\nBunu yapmak için https://openexchangerates.org/signup/free adresine gidin ve ücretsiz bir hesap oluşturun.\nSon olarak, denetim panelinizde yeni bir uygulama kimliği oluşturun ve buraya girin:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API anahtarı gerekli</i></string>
     <string name="api_about_title">%s hakkında</string>
     <string name="api_refreshPeriod_title">Güncelleme sıklığı</string>
     <!-- about -->

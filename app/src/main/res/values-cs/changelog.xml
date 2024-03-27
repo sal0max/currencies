@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.0">
+        <item>Nové API: OpenExchangerates</item>
+        <item>Odebráno API: Fer.ee - nefungovalo spolehlivě</item>
+        <item>Aktualizovány překlady</item>
+        <item>Vylepšeno rozhraní</item>
+        <item>Různá interní vylepšení</item>
+    </string-array>
+
     <string-array name="changelog_1.21.3">
         <item>Oprava: tlačítko Zpět nezavřelo aplikaci.</item>
         <item>Aktualizovány překlady.</item>

@@ -8,12 +8,18 @@
     <string name="historical_rates_dialog_toggle">Usa i tassi di cambio di una data specifica. Disabilita, per prendere sempre quelli più recenti.</string>
     <string name="error">Errore: %s</string>
     <string name="error_generic">Problema sconosciuto.</string>
-    <string name="error_http">Il server ha risposto con HTTP %d</string>
+    <string name="error_http">Il server ha risposto con HTTP %d.</string>
     <string name="error_timeout">Il server non ha risposto in tempo o non è raggiungibile.</string>
     <string name="error_no_data">Impossibile connettersi al server.</string>
+    <string name="error_empty_response">Il server non ha dati per questa richiesta.</string>
     <string name="error_api_error">Si è verificato un errore API. Si prega di riprovare più tardi.</string>
+
+
+
+
     <string name="menu_settings">Impostazioni</string>
     <string name="menu_refresh">Tassi di aggiornamento</string>
     <string name="menu_timeline">Cronologia del tasso di cambio</string>
     <string name="tooltip_filter_starred">Mostra solo le valute stellate.</string>
+
 </resources>

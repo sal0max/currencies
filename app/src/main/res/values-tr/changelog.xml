@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.0">
+        <item>Yeni API: OpenExchangerates</item>
+        <item>Kaldırılan API: Fer.ee - artık güvenilir şekilde çalışmıyordu</item>
+        <item>Çeviriler güncellendi</item>
+        <item>Grafiksel arayüz iyileştirildi</item>
+        <item>Arka plandaki çeşitli iyileştirmeler</item>
+    </string-array>
+
     <string-array name="changelog_1.21.3">
         <item>Geri tuşunun uygulamayı kapatmaması hatası düzeltildi.</item>
         <item>Çeviriler güncellendi.</item>

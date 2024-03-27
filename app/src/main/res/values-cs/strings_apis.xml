@@ -21,8 +21,8 @@
     <string name="api_norgesBank_descriptionShort">Okolo 40 kurzů\nZdroj: Norská centrální banka</string>
     <string name="api_norgesBank_descriptionUpdateInterval">Čas zveřejnění denních směnných kurzů je přibližně v 16.00 SEČ.</string>
     <string name="api_norgesBank_hint">Služba má pravidelně výpadky (HTTP 503), během kterých nelze obnovovat kurzy!</string>
-    <string name="api_openExchangeRates_descriptionFull">Data jsou sledována a algoritmicky řazena z několika spolehlivých zdrojů, čímž je zajištěna férová a nestranná konzistence. Pro více informací viz <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a>.\n<b>Služba Open Exchange Rates poskytuje přibližně 160 směnných kurzů.\n<i>Pro použití tohoto zdroje musíte zadat svůj osobní klíč API!</i></b></string>
-    <string name="api_openExchangeRates_descriptionShort">Okolo 160 kurzů\nZdroj: několik spolehlivých poskytovatelů spojených dohromady.</string>
+    <string name="api_openExchangeRates_descriptionFull">Data jsou sledována a kombinována z několika spolehlivých zdrojů, čímž jsou zajištěny nestranné kurzy. Pro více informací viz <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a>.\n<b>Služba Open Exchange Rates poskytuje přibližně 160 směnných kurzů.\n<i>Pro použití tohoto zdroje musíte zadat svůj osobní klíč API!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Okolo 160 kurzů\nZdroj: Kombinace několika spolehlivých poskytovatelů.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Hodinové aktualizace.</string>
-    <string name="api_openExchangeRates_hint">Abyste mohli využívat tento zdroj, musíte si nejprve vytvořit osobní klíč API!</string>
+    <string name="api_openExchangeRates_hint">Abyste mohli využívat tento zdroj, musíte si vytvořit osobní klíč API!</string>
 </resources>

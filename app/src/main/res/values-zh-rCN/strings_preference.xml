@@ -26,7 +26,7 @@
     <string name="language_de">德文</string>
     <string name="language_el">希腊文</string>
     <string name="language_en">英文</string>
-
+    <string name="language_eo">世界语</string>
     <string name="language_es">西班牙文</string>
     <string name="language_fr">法文</string>
     <string name="language_hr">克罗地亚文</string>
@@ -45,18 +45,21 @@
     <string name="language_uk">乌克兰文</string>
     <string name="language_vi">越南文</string>
     <string name="language_zh_CN">简体中文</string>
-
+    <string name="language_zh_TW">繁体中文</string>
     <!-- api -->
     <string name="category_api">汇率</string>
     <string name="api_title">汇率源</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates的API Key</string>
+    <string name="api_open_exchangerates_api_key_message">要使用该源，您必须创建个人 API Key。\n\n请访问 https://openexchangerates.org/signup/free 并创建一个免费账户。\n最后，只需在Dashboard 中生成一个新的App ID 并在此处输入即可：</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>需要填入API Key</i></string>
     <string name="api_about_title">关于 %s</string>
     <string name="api_refreshPeriod_title">更新周期</string>
     <!-- about -->
     <string name="category_about">关于这个应用</string>
     <string name="disclaimer_title">免责声明</string>
     <string name="disclaimer_summary">虽然该应用程序的编写和测试非常彻底，但<b>不保证其显示的数据是正确的</b>。汇率是由第三方提供的，这个应用程序不能保证数据是真实和最新的。\n此外，所提供的汇率—即使正确—也可能与你的银行所使用的汇率不同。\n最后：错误时有发生。永远不要盲目地相信任何人! 既然如此，请放心，如果我对这个应用程序有任何不放心，我就不会发布它。</string>
-
-
+    <string name="sourcecode_title">源代码</string>
+    <string name="sourcecode_summary">这个应用是开源的。可以前往仓库提出问题，看看怎么一起参与或仅仅是看看代码。</string>
     <string name="donate_title">支持开发者</string>
     <string name="donate_summary">通过PayPal捐赠</string>
     <string name="rate_title">评价这个应用</string>
