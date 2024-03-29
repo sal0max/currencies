@@ -14,7 +14,7 @@ class NorgesBankRatesXmlParser {
     private var date: LocalDate? = null
     private val rates = mutableListOf<Rate>()
 
-    fun parse(inputStream: InputStream): ExchangeRates {
+    fun parse(inputStream: InputStream, requestedDate: LocalDate): ExchangeRates {
         // create parser
         val parser = XmlPullParserFactory.newInstance()
             .apply { isNamespaceAware = false }.newPullParser()
@@ -46,7 +46,7 @@ class NorgesBankRatesXmlParser {
                         base != null
                         && value != null
                         // api delivers historical rates for e.g. RUB; we don't want those
-                        && date.isAfter(LocalDate.now().minusWeeks(2))
+                        && date.isAfter(requestedDate.minusWeeks(2))
                     ) {
                         // check if there is already an older value and remove it
                         // (api is sorted ascending, so later currencies are always newer)
