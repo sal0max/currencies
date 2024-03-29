@@ -36,8 +36,8 @@
             android:entryValues="@array/theme_values"
             android:icon="@drawable/ic_theme"
             android:key="@string/theme_key"
-            android:summary="%s"
-            android:title="@string/theme_title" />
+            android:title="@string/theme_title"
+            app:useSimpleSummaryProvider="true" />
         <SwitchPreferenceCompat
             android:defaultValue="false"
             android:icon="@drawable/ic_black"
@@ -54,8 +54,8 @@
         <de.salomax.currencies.view.preference.ProviderPickerPreference
             android:icon="@drawable/ic_data_provider"
             android:key="@string/api_key"
-            android:summary="%s"
-            android:title="@string/api_title" />
+            android:title="@string/api_title"
+            app:useSimpleSummaryProvider="true" />
         <EditTextPreference
             android:dialogMessage="@string/api_open_exchangerates_api_key_message"
             android:dialogTitle="@string/api_open_exchangerates_api_key_title"
