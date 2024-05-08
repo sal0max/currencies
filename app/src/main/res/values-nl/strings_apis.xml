@@ -8,4 +8,32 @@
     <string name="api_frankfurterApp_descriptionUpdateInterval">De gegevens worden elke werkdag rond 16.00 uur CET bijgewerkt.</string>
     <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_nl"><b>InforEuro</b></a> levert de door de Commissie gehanteerde officiële maandelijkse boekhoudkundige wisselkoersen van de euro die door de rekenplichtige van de Europese Commissie overeenkomstig artikel 19 van het Financieel Reglement wordt vastgesteld.\nDeze wisselkoersen worden gebruikt om op verzoek van de Europese Commissie de onkosten, reiskosten of verblijfkosten van externe deelnemers aan vergaderingen, sollicitatiegesprekken enz. om te rekenen.\n<b>Ongeveer 150 valuta\'s zijn inbegrepen.</b></string>
     <string name="api_inforEuro_descriptionUpdateInterval">De aangegeven wisselkoersen zijn de marktkoersen voor de voorlaatste dag van de maand zoals verstrekt door de Europese Centrale Bank of, naargelang van de beschikbaarheid, voor omstreeks de voorlaatste dag zoals verstrekt door de delegaties of andere bronnen.</string>
+    <string name="api_bankOfCanada_descriptionShort">Ongeveer 23 wisselkoersen
+\nBron: Centrale Bank van Canada</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">De tarieven worden elke werkdag om 16:30 ET gepubliceerd</string>
+    <string name="api_bankRossii_descriptionShort">Over 44 wisselkoersen
+\nBron: Centrale Bank van Rusland</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">De tarieven worden dagelijks bijgewerkt, behalve op <a href="https://cbr.ru/eng/other/holidays/">feestdagen in Rusland</a>.</string>
+    <string name="api_frankfurterApp_descriptionShort">Ongeveer 30 wisselkoersen
+\nBron: Europese Centrale Bank</string>
+    <string name="api_inforEuro_descriptionShort">Ongeveer 150 wisselkoersen
+\nBron: Europese Commissie</string>
+    <string name="api_norgesBank_descriptionShort">Ongeveer 40 wisselkoersen
+\nBron: Centrale Bank van Noorwegen</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">De publicatietijd van de dagelijkse wisselkoersen is ongeveer 16:00 CET.</string>
+    <string name="api_norgesBank_hint">Deze service heeft regelmatig downtimes (HTTP 503), waarbij tarieven niet kunnen worden ververst!</string>
+    <string name="api_openExchangeRates_descriptionShort">Ongeveer 160 wisselkoersen
+\nBron: Combinatie van meerdere betrouwbare aanbieders.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Elk uur updates.</string>
+    <string name="api_openExchangeRates_hint">Om deze bron te gebruiken moet u een persoonlijke API sleutel aanmaken!</string>
+    <string name="api_bankOfCanada_descriptionFull">Dagelijkse gemiddelde wisselkoersen van de <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.
+\n<b>Ongeveer 23 valuta\'s zijn opgenomen.</b></string>
+    <string name="api_inforEuro_hint">De tarieven worden maar één keer per maand bijgewerkt!</string>
+    <string name="api_openExchangeRates_descriptionFull">De gegevens worden bijgehouden en gecombineerd uit meerdere betrouwbare bronnen, waardoor onbevooroordeelde tarieven gegarandeerd zijn. Zie <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> voor meer informatie.
+\n<b>Open Exchange Rates biedt een grote hoeveelheid van ongeveer 160 wisselkoersen.
+\n<i>Om deze bron te gebruiken, moet u uw persoonlijke API sleutel invoeren!</i></b></string>
+    <string name="api_norgesBank_descriptionFull">Wisselkoersen, zoals aangeboden door de Noorse centrale bank <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.
+\n<b>Norges Bank vermeldt ongeveer 40 wisselkoersen.</b></string>
+    <string name="api_bankRossii_descriptionFull">Wisselkoersen, zoals verstrekt door de Russische centrale bank <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Met de huidige sancties geeft deze bron waarschijnlijk de meest betrouwbare wisselkoersen voor de Russische roebel.
+\n<b>Bank Rossii vermeldt een lijst van ongeveer 44 wisselkoersen.</b></string>
 </resources>
