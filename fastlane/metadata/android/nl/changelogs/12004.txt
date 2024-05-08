@@ -1,0 +1,1 @@
+- Foutieve waarden voor het verschil in procenten in de tijdlijn grafiekweergave opgelost.

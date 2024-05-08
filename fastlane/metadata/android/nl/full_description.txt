@@ -1,12 +1,16 @@
 Currencies is een eenvoudige en ongecompliceerde valutacalculator die niet bedoeld is om te worden gebruikt voor realtime financiële zaken, maar eerder als een handige metgezel, bijvoorbeeld op vakantie.
 
-- De app ondersteunt alle relevante valuta. U kunt kiezen tussen verschillende aanbieders van wisselkoersen:
-   - exchangerate.host met meer dan 160 valuta's
-   - frankfurter.app met meer dan 30 valuta's, aangeboden door de Europese Centrale Bank
+- De app ondersteunt alle relevante valuta. U kunt kiezen tussen verschillende officiële aanbieders van wisselkoersen:
+   - frankfurter.app met meer dan 30 valuta's, geleverd door de Europese Centrale Bank
+   - OpenExchangerates bevat meer dan 160 valuta's, met uurlijkse updates
+   - InforEuro biedt de officiële maandelijkse boekhoudkundige koersen voor de euro van de Europese Commissie en meer dan 150 overeenkomstige omrekeningskoersen
+   - Bank of Canada biedt ongeveer 23 wisselkoersen van de Canadese centrale bank
+   - De Noorse centrale bank "Norges Bank" geeft een overzicht van ongeveer 40 wisselkoersen
+   - De Russische Centrale Bank "Bank Rossii" geeft waarschijnlijk de meest betrouwbare gegevens van wisselkoersen naar Russische roebel. Er worden 44 wisselkoersen vermeld.
 - De UI is eenvoudig en puur Material 3 Design.
-- Wisselkoers geschiedenis: Bekijk de grafiek van het afgelopen jaar, om te zien hoe de valuta's zich hebben ontwikkeld.
-- Historische koersen: U kunt koersen van eerdere data gebruiken.
+- Geschiedenis van de wisselkoersen: bekijk de grafiek van het afgelopen jaar om te zien hoe de valuta's zich hebben ontwikkeld.
+- Historische koersen: u kunt koersen van eerdere data gebruiken.
 - Een belangrijke functie is de meegeleverde calculator. Handig als u bijvoorbeeld een restaurantrekening wilt opsplitsen.
-- Kostencalculator: optioneel kunt u een aanpasbare wisselkostenvergoeding toevoegen aan alle berekeningen.
+- Kostencalculator: voeg optioneel een aanpasbare wisselkostenvergoeding toe aan alle berekeningen.
 - Currencies is geschreven voor Android in Kotlin, gericht op Android 13 en ondersteunt lichte en donkere thema's.
-- De app is reclamevrij en bespioneert de gebruiker niet.
+- De app bevat geen advertenties en bespioneert de gebruiker niet.

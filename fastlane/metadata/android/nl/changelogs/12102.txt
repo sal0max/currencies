@@ -1,0 +1,3 @@
+- Nieuwe taal: Esperanto!
+- Ondersteuning voor invoer via hardwaretoetsenbord.
+- Vertalingen bijgewerkt.

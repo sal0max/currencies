@@ -1,0 +1,2 @@
+- Verschillende UI verbeteringen.
+- Nieuwe talen: Chinees 🇨🇳🇹🇼🇸🇬 en Russisch 🇷🇺🇧🇾🇰🇿.

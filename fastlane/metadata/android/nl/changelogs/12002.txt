@@ -1,0 +1,2 @@
+- Verkeerde tijdlijn gegevens met InforEuro API opgelost.
+- Vertalingen bijgewerkt.

@@ -1,0 +1,2 @@
+- Nieuwe API: InforEuro biedt de officiële maandelijkse rekenkoersen van de Europese Commissie voor de euro en meer dan 150 bijbehorende omrekeningskoersen.
+- Layout problemen opgelost met bepaalde opvouwbare apparaten.
