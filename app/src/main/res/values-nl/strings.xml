@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="desc_toggle_currencies">Valuta\'s wisselen</string>
+    <string name="desc_toggle_currencies">wissel valuta\'s</string>
     <string name="rates_date_latest">Tarieven vanaf &lt;b&gt;%1$s&lt;/b&gt; per &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="rates_date_historical">Historische koersen van &lt;b&gt;%1$s&lt;/b&gt; door &lt;b&gt;%2$s&lt;/b&gt;</string>
-    <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; is naar het klembord gekopieerd</string>
+    <string name="copied_to_clipboard"><b>%s</b> gekopieerd naar klembord</string>
     <string name="historical_rates_dialog_title">Historische koersen</string>
     <string name="historical_rates_dialog_toggle">Gebruik wisselkoersen van een specifieke datum. Schakel deze optie uit om altijd de nieuwste gegevens te gebruiken.</string>
     <string name="error">Fout: %s</string>
     <string name="error_generic">Onbekend probleem.</string>
-    <string name="error_http">De server reageerde met HTTP %d</string>
+    <string name="error_http">De server reageerde met HTTP %d.</string>
     <string name="error_timeout">De server reageerde niet op tijd, of is onbereikbaar.</string>
     <string name="error_no_data">Kan geen verbinding maken met de server.</string>
     <string name="error_api_error">Er was een API fout. Probeer het later opnieuw.</string>
     <string name="menu_settings">Instellingen</string>
-    <string name="menu_refresh">Koersen updaten</string>
-    <string name="menu_timeline">Wisselkoers-grafiek</string>
+    <string name="menu_refresh">Update koersen</string>
+    <string name="menu_timeline">Wisselkoers grafiek</string>
     <string name="tooltip_filter_starred">Toon alleen favoriete valuta\'s.</string>
+    <string name="currency_dropdown_api_hint">Ontbreekt er iets? Verschillende dataproviders bieden verschillende valuta\'s aan. Ga naar de instellingen om een andere te proberen! 🤗</string>
+    <string name="error_empty_response">De server heeft geen gegevens voor deze aanvraag.</string>
+    <string name="error_no_api_key">Er moet een geldige API-sleutel worden ingesteld om deze bron te kunnen gebruiken.</string>
+    <string name="error_invalid_api_key">HTTP 401 - Controleer uw API-sleutel.</string>
+    <string name="error_try_another_api">Er zijn echter andere dataproviders waaruit je kunt kiezen in de instellingen. Probeer het!</string>
+    <string name="error_unsupported_timeline">Tijdlijn gegevens worden niet ondersteund met deze API.</string>
 </resources>
