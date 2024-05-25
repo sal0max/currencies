@@ -1,0 +1,7 @@
+- Exchangerate.host verwijderd (API is verkocht en nu commercieel).
+- Daarom zijn er veel nieuwe gegevensaanbieders (we richten ons meer op officiële aanbieders)
+- Nieuw: Canadese centrale bank: Bank van Canada
+- Nieuw: Noorse centrale bank: Norges Bank
+- Nieuw: Russische centrale bank: Bank Rossii
+- Er is nu een link in de instellingen die je rechtstreeks naar de broncode repo brengt.
+- Algemene verbeteringen, zoals verbeterde foutafhandeling en bijgewerkte vertalingen.

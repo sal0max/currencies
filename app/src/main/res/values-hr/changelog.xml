@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.1">
+        <item>Ažurirani prijevodi.</item>
+        <item>Ispravljena povijest tečajeva za Norges Bank.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.0">
         <item>Novi API: OpenExchangerates</item>
         <item>Uklonjen API: Fer.ee - postao je nepouzdan</item>

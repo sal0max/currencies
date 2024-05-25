@@ -1,7 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.1">
+        <item>Vertalingen bijgewerkt.</item>
+        <item>Herstel historische koersen met Norges Bank.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.0">
+        <item>Nieuwe API: OpenExchangerates</item>
+        <item>API verwijderd: Fer.ee - werkte niet meer betrouwbaar</item>
+        <item>Vertalingen bijgewerkt</item>
+        <item>Verbeterde GUI</item>
+        <item>Diverse verbeteringen onder de motorkap</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>Opgelost: De terug-toets sloot de app niet.</item>
+        <item>Vertalingen bijgewerkt.</item>
+        <item>Algemene verbeteringen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>Nieuwe taal: Esperanto!</item>
+        <item>Ondersteuning voor invoer via hardwaretoetsenbord.</item>
+        <item>Vertalingen bijgewerkt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.1">
+        <item>Bijgewerkte vertalingen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.0">
+        <item>Exchangerate.host verwijderd (API is verkocht en nu commercieel).</item>
+        <item>Daarom zijn er veel nieuwe gegevensaanbieders (we richten ons meer op officiële aanbieders)</item>
+        <item>Nieuw: Canadese centrale bank: Bank van Canada</item>
+        <item>Nieuw: Noorse centrale bank: Norges Bank</item>
+        <item>Nieuw: Russische centrale bank: Bank Rossii</item>
+        <item>Er is nu een link in de instellingen die je rechtstreeks naar de broncode repo brengt.</item>
+        <item>Algemene verbeteringen, zoals verbeterde foutafhandeling en bijgewerkte vertalingen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>Foutieve waarden voor het verschil in procenten in de tijdlijn grafiekweergave opgelost.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Bijgewerkte vertalingen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>Verkeerde tijdlijn gegevens met InforEuro API opgelost.</item>
+        <item>Vertalingen bijgewerkt.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.1">
+        <item>Bijgewerkte vertalingen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.0">
+        <item>Nieuwe API: InforEuro biedt de officiële maandelijkse rekenkoersen van de Europese Commissie voor de euro en meer dan 150 bijbehorende omrekeningskoersen.</item>
+        <item>Layout problemen opgelost met bepaalde opvouwbare apparaten.</item>
+    </string-array>
+
+    <string-array name="changelog_1.19.0">
+        <item>Verschillende UI verbeteringen.</item>
+        <item>Nieuwe talen: Chinees 🇨🇳🇹🇼🇸🇬 en Russisch 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>Nieuwe taal: Oekraïens 🇺🇦! Hartelijk dank aan Bogdan!</item>
+        <item>Cuba: Cubaanse peso (CUP) voorzien in plaats van de verouderde Cubaanse convertibele peso (CUC)</item>
+        <item>Veel verbeterde vertalingen. Hartelijk dank aan alle vrijwilligers!</item>
     </string-array>
 
     <string-array name="changelog_1.18.1">

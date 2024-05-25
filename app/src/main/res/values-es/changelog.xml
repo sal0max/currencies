@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.1">
+        <item>Traducciones actualizadas.</item>
+        <item>Fijar tasas históricas con Norges Bank.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.0">
         <item>Nueva API: OpenExchangerates</item>
         <item>API eliminada: Fer.ee - ya no funcionaba de forma fiable</item>

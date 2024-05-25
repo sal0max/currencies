@@ -2,22 +2,22 @@
 <!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
-    <string name="category_settings">Algemene Instellingen</string>
+    <string name="category_settings">Algemene instellingen</string>
     <string name="fee_title">Buitenlandse transactiekosten</string>
-    <string name="fee_summary">Afhankelijk van uw creditcardovereenkomst kan uw bankkosten in rekening brengen voor alle valutatransacties. Hier kunt u die vergoeding invullen. Het wordt toegevoegd aan de berekening, zodat u weet hoeveel u <i>echt</i> betaalt.</string>
-    <string name="previewConversion_title">Omrekeningvoorbeeld</string>
-    <string name="previewConversion_summary">Toon de huidige omrekening voor elke koers in de valutakiezer.</string>
-    <string name="extendedKeypad_title">Uitgebreid Toetsenbord</string>
+    <string name="fee_summary">Afhankelijk van uw creditcard overeenkomst kan uw bank kosten in rekening brengen voor alle valuta transacties. Hier kunt u die kosten invullen. Deze worden bij de berekening opgeteld, zodat u weet hoeveel u <i>echt</i> betaalt.</string>
+    <string name="previewConversion_title">Conversie voorbeeld</string>
+    <string name="previewConversion_summary">Toon de huidige conversie voor elke koers in de valutakiezer.</string>
+    <string name="extendedKeypad_title">Uitgebreid toetsenbord</string>
     <string name="extendedKeypad_summary">Voeg twee extra knoppen toe: <b>00</b>&nbsp;en&nbsp;<b>000</b>.</string>
     <string name="category_appearance">Uiterlijk</string>
-    <string name="system_default">Systeemstandaard</string>
-    <string name="theme_title">Ontwerp</string>
+    <string name="system_default">Systeem standaard</string>
+    <string name="theme_title">Thema</string>
     <string name="theme_option_light">Licht</string>
     <string name="theme_option_dark">Donker</string>
-    <string name="pure_black_enabled_title">OLED-zwart</string>
+    <string name="pure_black_enabled_title">OLED zwart</string>
     <string name="pure_black_enabled_summary">Gebruik puur zwart in donkere modus</string>
     <!-- languages -->
-    <string name="language_title">App-taal</string>
+    <string name="language_title">App taal</string>
     <string name="language_ar">Arabisch</string>
     <string name="language_bg">Bulgaars</string>
     <string name="language_bn">Bengaals</string>
@@ -39,24 +39,27 @@
     <string name="language_nl">Nederlands</string>
     <string name="language_pl">Pools</string>
     <string name="language_pt_BR">Portugees (Brazilië)</string>
-
+    <string name="language_ru">Russisch</string>
     <string name="language_sv">Zweeds</string>
     <string name="language_tr">Turks</string>
     <string name="language_uk">Oekraïens</string>
     <string name="language_vi">Vietnamees</string>
-
-
+    <string name="language_zh_CN">Chinees (vereenvoudigd)</string>
+    <string name="language_zh_TW">Chinees (traditioneel)</string>
     <!-- api -->
     <string name="category_api">Wisselkoersen</string>
     <string name="api_title">Data-aanbieder</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates API sleutel</string>
+    <string name="api_open_exchangerates_api_key_message">Om deze bron te gebruiken moet u een persoonlijke API sleutel aanmaken.\n\nGa daarvoor naar https://openexchangerates.org/signup/free en maak een gratis account aan.\nMaak dan een nieuwe App ID aan in uw dashboard en voer deze hier in:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API sleutel vereist</i></string>
     <string name="api_about_title">Over %s</string>
     <string name="api_refreshPeriod_title">Vernieuwingsperiode</string>
     <!-- about -->
     <string name="category_about">Over deze app</string>
     <string name="disclaimer_title">Ontkenning</string>
     <string name="disclaimer_summary">Hoewel de app zeer grondig is geschreven en getest, <b>is er geen garantie dat de getoonde gegevens correct zijn</b>. De wisselkoersen worden geleverd door een derde partij en deze app kan geen enkele belofte doen dat de gegevens waar en up-to-date zijn.\nBovendien kunnen de verstrekte tarieven - nog steeds indien correct - afwijken van de tarieven die door uw bank worden gebruikt.\nTot slot: Fouten gebeuren. Vertrouw nooit iemand blindelings! Dat gezegd hebbende, wees gerust, ik zou deze app niet hebben uitgebracht als ik enige twijfel had of deze werkt zoals bedoeld.</string>
-
-
+    <string name="sourcecode_title">Broncode</string>
+    <string name="sourcecode_summary">Deze app is open source. Ga naar de code repository om bugs te rapporteren, uit te vinden hoe u kunt bijdragen of gewoon een kijkje te nemen in de broncode.</string>
     <string name="donate_title">Steun de ontwikkelaar</string>
     <string name="donate_summary">Doneer via PayPal</string>
     <string name="rate_title">Beoordeel deze app</string>
