@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.2">
+        <item>Updated translations.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.1">
         <item>Updated translations.</item>
         <item>Fix historical rates with Norges Bank.</item>

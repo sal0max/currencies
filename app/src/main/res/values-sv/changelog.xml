@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.2">
+        <item>Uppdaterade översättningarna.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.1">
+        <item>Uppdaterade översättningarna.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Uppdaterade översättningarna.</item>
     </string-array>
