@@ -14,4 +14,23 @@
     <string name="api_inforEuro_descriptionUpdateInterval">顯示的匯率是由歐洲中央銀行引述的前一月倒數第二天的市場匯率，或根據可取得的情況由代表團或其他在那日期附近的適當來源提供。</string>
     <string name="api_norgesBank_descriptionFull">匯率由挪威的中央銀行<a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>挪威銀行</b></a>提供\n<b>大約有 40 種貨幣</b></string>
     <string name="api_norgesBank_descriptionUpdateInterval">大約在 16:00 CET 左右發布每日匯率</string>
+    <string name="api_frankfurterApp_descriptionShort">大約有 30 種匯率
+\n來源：歐洲中央銀行</string>
+    <string name="api_norgesBank_descriptionShort">大約有 40 種匯率
+\n來源：挪威中央銀行</string>
+    <string name="api_openExchangeRates_descriptionFull">資料由眾多的可信賴來源追蹤和組成，確保匯率不偏誤。請參閱 <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> 以取得更多資訊。
+\n<b>Open Exchange Rates 提供多達 160 種匯率。
+\n<i>要使用這個來源，您必須輸入您的個人 API 金鑰！</i></b></string>
+    <string name="api_bankOfCanada_descriptionShort">大約有 23 種匯率
+\n來源：加拿大中央銀行</string>
+    <string name="api_bankRossii_descriptionShort">大約有 44 種匯率
+\n來源：俄羅斯中央銀行</string>
+    <string name="api_inforEuro_descriptionShort">大約有 150 種匯率
+\n來源：歐盟委員會</string>
+    <string name="api_inforEuro_hint">匯率每個月只更新一次！</string>
+    <string name="api_norgesBank_hint">服務常常會下線，在這期間無法更新匯率！</string>
+    <string name="api_openExchangeRates_descriptionShort">大約有 160 種匯率
+\n來源：由眾多可信賴的供應商組成。</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">每小時更新。</string>
+    <string name="api_openExchangeRates_hint">要使用這個來源，您必須建立您的個人 API 金鑰！</string>
 </resources>
