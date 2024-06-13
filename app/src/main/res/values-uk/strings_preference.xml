@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Загальні налаштування</string>
@@ -17,7 +19,7 @@
     <string name="pure_black_enabled_title">OLED чорний</string>
     <string name="pure_black_enabled_summary">Використовувати істинно-чорний в темній темі</string>
     <!-- languages -->
-    <string name="language_title">Мова додатку</string>
+    <string name="language_title">Мова додатка</string>
     <string name="language_ar">Арабська</string>
     <string name="language_bg">Болгарська</string>
     <string name="language_bn">Бенгальська</string>
