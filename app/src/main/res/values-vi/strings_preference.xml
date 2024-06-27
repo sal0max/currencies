@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Cài đặt chung</string>
@@ -45,7 +47,6 @@
     <string name="language_uk">Tiếng Ukraina</string>
     <string name="language_vi">Tiếng Việt</string>
     <string name="language_zh_CN">Tiếng Trung giản thể</string>
-
     <!-- api -->
     <string name="category_api">Tỉ lệ chuyển đổi</string>
     <string name="api_title">Nhà cung cấp dữ liệu</string>
@@ -55,12 +56,18 @@
     <string name="category_about">Giới thiệu về ứng dụng</string>
     <string name="disclaimer_title">Miễn trừ trách nhiệm</string>
     <string name="disclaimer_summary">Mặc dù ứng dụng này được viết ra và thử nghiệm rất kỹ, <b>nhưng không có đảm bảo là dữ liệu nó hiển thị là đúng</b>. Tỉ lệ chuyển đổi được bên thứ ba cung cấp và ứng dụng này không thể hứa rằng dữ liệu là đúng và được cập nhật.\nThêm nữa, tỉ lệ được cung cấp - nếu vẫn đúng - có thể khác so với tỉ lệ của ngân hàng của bạn.\nCuối cùng: Lỗi lầm thường xảy ra. Đừng bao giờ tin tưởng mù quáng bất kỳ ai! Nhưng bạn vẫn cứ yên tâm là tôi đã không phát hành ứng dụng này nếu tôi nghi ngờ là nó không hoạt động như mong muốn.</string>
-
-
     <string name="donate_title">Hỗ trợ nhà phát triển</string>
     <string name="donate_summary">Ủng hộ qua PayPal</string>
     <string name="rate_title">Đánh giá ứng dụng này</string>
     <string name="rate_summary">Nếu bạn muốn, bạn có thể giúp những người khác khám phá ra Currencies. Hãy nhấn vào đây để đánh giá ứng dụng trên Google Play.</string>
     <string name="category_versioninfo">Thông tin phiên bản</string>
     <string name="title_changelog">Nhật ký thay đổi</string>
+    <string name="api_open_exchangerates_api_key_title">Mã API Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Để sử dụng Nguồn này, bạn phải tạo mã API cá nhân.
+\n
+\nĐể làm vậy, hãy đến https://openexchangerates.org/signup/free và tạo tài khoản miễn phí.
+\nCuối cùng, bạn chỉ cần tạo App ID mới trong Dashboard của bạn và nhập nó ở đây:</string>
+    <string name="sourcecode_title">Mã nguồn</string>
+    <string name="sourcecode_summary">Ứng dụng này là mã nguồn mở. Hãy đến kho chứa mã nguồn để tạo vấn đề, tìm cách đóng góp hoặc xem mã nguồn.</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Yêu cầu có mã API</i></string>
 </resources>
