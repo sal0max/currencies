@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="activity_timeline_title"><b>%1$s</b> به <b>%2$s</b></string>
+    <string name="data_provider">داده‌ها از <b>%s</b></string>
+    <string name="rate_average">میانگین</string>
+    <string name="rate_min">کمینه</string>
+    <string name="rate_max">بیشینه</string>
+    <string name="year">سال</string>
+    <string name="month">ماه</string>
+    <string name="week">هفته</string>
+</resources>
