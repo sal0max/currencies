@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="name_afn">افغانی افغانستان</string>
+    <string name="name_amd">درام ارمنستان</string>
+    <string name="name_aed">درهم امارات متحده‌ی عربی</string>
+</resources>
