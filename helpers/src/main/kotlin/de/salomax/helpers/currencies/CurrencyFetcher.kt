@@ -31,8 +31,15 @@ fun main() {
             <resources>
         """.trimIndent()
     )
+    var firstChar = 'a'
     for (isoName in ISO_NAMES) {
         try {
+            // group by first char
+            if (!isoName.first().equals(firstChar, true)) {
+                firstChar = isoName.first()
+                println()
+            }
+            // get localized currency name
             val name = Currency.getInstance(isoName).getDisplayName(targetLanguage)
                 .replaceFirstChar { if (it.isLowerCase()) it.titlecase(targetLanguage) else it.toString() }
                 .replace("&", "&amp;")
