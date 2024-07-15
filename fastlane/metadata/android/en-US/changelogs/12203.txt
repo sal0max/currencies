@@ -1,0 +1,3 @@
+- Updated translations.
+- Canadian Dollar is now also available with Bank of Canada provider.
+- New language: Persian

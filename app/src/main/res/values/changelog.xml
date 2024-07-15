@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.3">
+        <item>Updated translations.</item>
+        <item>Canadian Dollar is now also available with Bank of Canada provider.</item>
+        <item>New language: Persian</item>
+    </string-array>
+
     <string-array name="changelog_1.22.2">
         <item>Updated translations.</item>
     </string-array>

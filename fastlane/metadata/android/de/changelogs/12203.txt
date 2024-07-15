@@ -1,0 +1,3 @@
+- Aktualisierte Übersetzungen.
+- Kanadischer Dollar ist nun auch in der Bank of Canada-Datenquelle verfügbar.
+- Neue Sprache: Persisch
