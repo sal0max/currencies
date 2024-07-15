@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desc_toggle_currencies">دگرش ارز‌ها</string>
+    <string name="rates_date_latest">نرخ‌ها تا &lt;b>%1$s&lt;/b> از &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">نرخ‌های گذشته‌ی &lt;b>%1$s&lt;/b> از &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">رونوشت &lt;b>%s&lt;/b> به کلیپ‌بورد</string>
+    <string name="historical_rates_dialog_title">نزخ‌های گذشته</string>
+    <string name="historical_rates_dialog_toggle">ار نرخ‌های تاریخ مشخصی بهره بگیرید. اگر می‌خواهید همیشه تازه ترین نرخ‌ها را بگیرید، این گزینه را خاموش کنید.</string>
+    <string name="error">ایرنگ: %s</string>
+    <string name="error_generic">مشکل ناشناخته.</string>
+    <string name="error_http">سرور چنین پاسخ داده است HTTP %d.</string>
+    <string name="error_timeout">سِرور به وقت پاسخ نداد یا اینکه در دسترس نیست.</string>
+    <string name="error_no_data">پیوند با سِرور برپا نشد.</string>
+    <string name="error_empty_response">سِرور داده‌ای برای این درخواست ندارد.</string>
+    <string name="error_api_error">ایرنگی از API سر زد. خواهشمند‌است که دوباره تلاش کنید.</string>
+    <string name="error_try_another_api">با این رو، فراهم‌گر‌های دیگری هستند که شما می‌توانید از میان آنان گزینش کنید. بیازماییدشان!</string>
+    <string name="error_no_api_key">برای بکارگیری این بن‌مایه، به یک کلید API درست نیاز است.</string>
+    <string name="error_invalid_api_key">HTTP 401 – خواهشمند‌است کلید API خود را بررسی کنید.</string>
+
+    <string name="menu_settings">پیکربندی‌ها</string>
+    <string name="menu_refresh">همار نوسازی</string>
+    <string name="menu_timeline">نمودار نرخ دادوستد</string>
+    <string name="tooltip_filter_starred">تنها ارز های ستاره‌دار را نمایش دهید.</string>
+    <string name="currency_dropdown_api_hint">نمی توانید ارز دلخواه خود را پیدا کنید؟ فراهم‌گران متفاوت ارز‌های متفاوت ارائه می‌کنند. به پیکربندی‌ها بروید و یکی دیگر را بیازمایید! \u00A0\uD83E\uDD17</string>
+</resources>

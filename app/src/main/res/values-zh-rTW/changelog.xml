@@ -4,6 +4,31 @@
         <item>翻譯更新。</item>
     </string-array>
 
+    <string-array name="changelog_1.22.1">
+        <item>更新翻譯。</item>
+        <item>修正挪威銀行的歷史匯率。</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.0">
+        <item>-新增 API：OpenExchangerates</item>
+        <item>-移除 API：Fer.ee - 已經不再可靠的運作</item>
+        <item>-更新翻譯</item>
+        <item>-GUI 改進</item>
+        <item>-幾個後臺的改進</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>-已修正：返回鍵無法關閉 app。</item>
+        <item>-更新翻譯。</item>
+        <item>-整體改善。</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>新的可選擇語言：世界語</item>
+        <item>支援硬體鍵盤輸入。</item>
+        <item>翻譯更新。</item>
+    </string-array>
+
     <string-array name="changelog_1.21.1">
         <item>翻譯更新。</item>
     </string-array>

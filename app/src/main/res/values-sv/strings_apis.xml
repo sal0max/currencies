@@ -4,25 +4,25 @@
     <string name="api_bankOfCanada_descriptionShort">Cirka 23 växelkurser\nKälla: Central Bank of Canada</string>
     <string name="api_bankOfCanada_descriptionUpdateInterval">Kurserna publiceras under varje affärsdag vid 16:30 ET</string>
 
-
+    <string name="api_bankRossii_descriptionShort">Omkring 44 valutakurser\nKälla: Centralbanken i Ryssland</string>
 
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> hämtar in valutakurser från olika leverantörer av finansiell data samt banker, inklusive den Europeiska centralbanken. Alla valutakurser levereras som mittpunktsdata, dvs de beräknas som genomsnittet av köp- och säljkursen.\n<b>Ungefär 160 valutor ingår.</b></string>
     <string name="api_exchangerateHost_descriptionUpdateInterval">Valutakurserna uppdateras varje arbetsdag, runt midnatt UTC.</string>
     <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> är en relativt ny tjänst, som (precis som Frankfurter.app) spårar referenskurserna (forex) som publiceras av Europeiska centralbanken.\n<b>Ungefär 30 valutor ingår.</b></string>
     <string name="api_ferEe_descriptionUpdateInterval">Valutakurserna uppdateras varje arbetsdag.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> spårar referenskurserna (forex) som publicerats av Europeiska centralbanken.\n<b>Ungefär 30 valutor ingår.</b></string>
-
+    <string name="api_frankfurterApp_descriptionShort">Omkring 30 valutakurser\nKälla: Europeiska Centralbanken</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Datan uppdateras runt 16:00 CET på arbetsdagar.</string>
     <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_sv"><b>InforEuro</b></a> är en statisk valutaomräknare som bygger på EU-kommissionens officiella månadskurs för euron och de omräkningskurser som kommissionens räkenskapsförare har fastställt i enlighet med artikel 19 i budgetförordningen.\nDe här kurserna används för att beräkna den ersättning för resekostnader, traktamente och andra utgifter till utomstående personer som kommissionen kallar till exempelvis möten och intervjuer.\n<b>Ungefär 150 valutor ingår.</b></string>
-
+    <string name="api_inforEuro_descriptionShort">Omkring 150 valutakurser\nKälla: Europeiska Kommisionen</string>
     <string name="api_inforEuro_descriptionUpdateInterval">Kurserna är lika med marknadskurserna på näst sista dagen i föregående månad såsom de anges av Europeiska centralbanken, delegationerna eller andra källor omkring samma datum, beroende på vilka uppgifter som står till buds.</string>
+    <string name="api_inforEuro_hint">Kurser uppdateras endast en gång i månaden!</string>
+
+    <string name="api_norgesBank_descriptionShort">Omkring 40 valutakurser\nKälla: Centralbanken i Norge</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">Publiceringstid för valutakurser varje dag sker 16:00 CET.</string>
+    <string name="api_norgesBank_hint">Tjänsten har återkommande nertider (HTTP 503) under vilka valutakurser inte kan uppdareras!</string>
 
 
-
-
-
-
-
-
-
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Uppdateringar i timmen.</string>
+    <string name="api_openExchangeRates_hint">För att använda den här källan så behöver du skapa din personliga API-nyckel!</string>
 </resources>

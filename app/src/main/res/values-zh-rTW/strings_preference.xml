@@ -27,6 +27,7 @@
     <string name="language_en">英文</string>
     <string name="language_eo">世界語</string>
     <string name="language_es">西班牙文</string>
+
     <string name="language_fr">法文</string>
     <string name="language_hr">克羅埃西亞文</string>
     <string name="language_hu">匈牙利文</string>
@@ -49,6 +50,9 @@
     <!-- api -->
     <string name="category_api">匯率</string>
     <string name="api_title">資料來源</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates API 金鑰</string>
+    <string name="api_open_exchangerates_api_key_message">要使用這個來源，您必須建立您的個人 API 金鑰。\n\n請移駕到 https://openexchangerates.org/signup/free 建立免費帳號以取得個人金鑰。\n最後，在儀表版建立一個新 App ID 然後在這邊輸入：</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>需要 API 金鑰</i></string>
     <string name="api_about_title">關於 %s</string>
     <string name="api_refreshPeriod_title">更新週期</string>
     <!-- about -->

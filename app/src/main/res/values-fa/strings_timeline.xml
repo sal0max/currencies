@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="activity_timeline_title">&lt;b>%1$s&lt;/b> به &lt;b>%2$s&lt;/b></string>
+    <string name="data_provider">&lt;b>%s&lt;/b></string>
+    <string name="rate_average">میانگین</string>
+    <string name="rate_min">کمینه</string>
+    <string name="rate_max">بیشینه</string>
+    <string name="year">سال</string>
+    <string name="month">ماه</string>
+    <string name="week">هفته</string>
+</resources>

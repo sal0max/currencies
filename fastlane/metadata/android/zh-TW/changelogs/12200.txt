@@ -1,0 +1,5 @@
+-新增 API：OpenExchangerates
+-移除 API：Fer.ee - 已經不再可靠的運作
+-更新翻譯
+-GUI 改進
+-幾個後臺的改進
