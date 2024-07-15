@@ -16,8 +16,6 @@ enum class Language(
     EN("en", "English", R.string.language_en),
     EO("eo", "Esperanto", R.string.language_eo),
     ES("es", "Español", R.string.language_es),
-    EL("el", "Ελληνικά", R.string.language_el),
-    FA("fa", "فارسی", R.string.language_fa),
     FR("fr", "Français", R.string.language_fr),
     HR("hr", "Hrvatski", R.string.language_hr),
     IS("is", "Íslenska", R.string.language_is),
@@ -30,14 +28,16 @@ enum class Language(
     SV("sv", "Svenska", R.string.language_sv),
     VI("vi", "Tiếng Việt", R.string.language_vi),
     TR("tr", "Türkçe", R.string.language_tr),
+    EL("el", "Ελληνικά", R.string.language_el),
+    BG("bg", "Български", R.string.language_bg),
     RU("ru", "Русский", R.string.language_ru),
     UK("uk", "Українська", R.string.language_uk),
-    BG("bg", "Български", R.string.language_bg),
+    IW("iw", "עִבְרִית", R.string.language_iw),
+    AR("ar", "اَلْعَرَبِيَّة", R.string.language_ar),
+    FA("fa", "فارسی", R.string.language_fa),
     BN("bn", "বাংলা", R.string.language_bn),
     ZH_CN("zh_CN", "简体中文", R.string.language_zh_CN),
-    ZH_TW("zh_TW", "正體中文", R.string.language_zh_TW),
-    AR("ar", "اَلْعَرَبِيَّة", R.string.language_ar),
-    IW("iw", "עִבְרִית", R.string.language_iw);
+    ZH_TW("zh_TW", "正體中文", R.string.language_zh_TW);
 
     companion object {
         private val isoMapping: Map<String, Language> = entries.associateBy(Language::iso)
