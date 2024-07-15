@@ -70,6 +70,9 @@ internal class BankOfCanadaRatesAdapter {
                 }
             }
         }
+        if (rates.isNotEmpty())
+            // finally, add CAD...
+            rates.add(Rate(Currency.CAD, 1f))
 
         return ExchangeRates(
             success = errorMessage == null && rates.isNotEmpty() && date != null,
