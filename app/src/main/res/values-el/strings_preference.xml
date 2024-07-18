@@ -28,6 +28,7 @@
     <string name="language_en">Αγγλικά</string>
     <string name="language_eo">Εσπεράντο</string>
     <string name="language_es">Ισπανικά</string>
+    <string name="language_fa">Περσικά</string>
     <string name="language_fr">Γαλλικά</string>
     <string name="language_hr">Κροατικά</string>
     <string name="language_hu">Ουγγρικά</string>
@@ -45,10 +46,13 @@
     <string name="language_uk">Ουκρανικά</string>
     <string name="language_vi">Βιετναμέζικα</string>
     <string name="language_zh_CN">Κινέζικα (Απλοποιημένα)</string>
-
+    <string name="language_zh_TW">Κινέζικα (παραδοσιακά)</string>
     <!-- api -->
     <string name="category_api">Ισοτιμίες</string>
     <string name="api_title">Χορηγός δεδομένων</string>
+    <string name="api_open_exchangerates_api_key_title">Άνοιγμα κλειδιού Exchangerates API</string>
+    <string name="api_open_exchangerates_api_key_message">Για να χρησιμοποιήσετε αυτήν την πηγή, πρέπει να δημιουργήσετε το προσωπικό σας κλειδί api.\n\nΓια να το κάνετε αυτό, μεταβείτε στη διεύθυνση https://openexchangerates.org/signup/free και δημιουργήστε έναν δωρεάν λογαριασμό.\nΤέλος, απλώς δημιουργήστε ένα νέο αναγνωριστικό εφαρμογής μέσα στον Πίνακα ελέγχου και εισάγετε το εδώ:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Potreban API ključ</i></string>
     <string name="api_about_title">Σχετικά με τον %s</string>
     <string name="api_refreshPeriod_title">Ρυθμός ανανέωσης</string>
     <!-- about -->

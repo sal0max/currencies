@@ -1,0 +1,3 @@
+- Ažurirani prijevodi.
+- Kanadski dolar sada je dostupan i od Bank of Canada.
+- Novi jezik: perzijski
