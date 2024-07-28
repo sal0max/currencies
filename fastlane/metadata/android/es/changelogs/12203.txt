@@ -1,0 +1,3 @@
+- Traducciones actualizadas.
+- El dólar canadiense ahora también está disponible con el proveedor Bank of Canada.
+- Nuevo idioma: Persa

@@ -1,0 +1,3 @@
+- Aktualizovány překlady.
+- Kanadský dolar je nyní dostupný u poskytovatele Bank of Canada.
+- Nový jazyk: perština
