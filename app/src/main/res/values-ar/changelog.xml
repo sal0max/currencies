@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.3">
+        <item>تم تحديث الترجمات.</item>
+        <item>أصبح الدولار الكندي متاحًا الآن أيضًا لدى مزود بنك كندا (Bank of Canada).</item>
+        <item>لغة جديدة: الفارسية</item>
+    </string-array>
+
     <string-array name="changelog_1.22.2">
         <item>ترجمات محدثة.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.1">
+        <item>تم تحديث الترجمات.</item>
+        <item>إصلاح الأسعار التاريخية مع Norges Bank.</item>
     </string-array>
 
     <string-array name="changelog_1.22.0">
@@ -29,13 +40,13 @@
     </string-array>
 
     <string-array name="changelog_1.21.0">
-        <item>تم إزالة Exchangerate.host، حيث تم بيع واجهة برمجة التطبيقات (API) وأصبحت الآن تجارية.</item>
+        <item>تم إزالة Exchangerate.host، حيث تم بيع API وأصبحت الآن تجارية.</item>
         <item>بدلاً من ذلك، هناك مجموعة من موفري البيانات الجدد. سنركز أكثر على مقدمي الخدمات الرسميين (المعروفين أيضًا باسم البنوك المركزية) ونحاول إضافة المزيد في المستقبل.</item>
-        <item>جديد: البنك المركزي الكندي: بنك كندا</item>
+        <item>جديد: البنك المركزي الكندي: Bank of Canada</item>
         <item>جديد: البنك المركزي النرويجي: Norges Bank</item>
-        <item>جديد: البنك المركزي الروسي: بنك روسي</item>
-        <item>الآن، يوجد رابط في الإعدادات ينقلك مباشرة إلى مستودع التعليمات البرمجية المصدر.</item>
-        <item>التحسينات الشاملة، مثل تحسين معالجة الأخطاء والترجمات المحدثة.</item>
+        <item>جديد: البنك المركزي الروسي: Bank Rossii</item>
+        <item>الآن، يوجد رابط في الإعدادات ينقلك مباشرة إلى مستودع المصدر البرمجي.</item>
+        <item>التحسينات الشاملة، مثل تحسين معالجة الأخطاء والترجمات المُحدثة.</item>
     </string-array>
 
     <string-array name="changelog_1.20.4">
