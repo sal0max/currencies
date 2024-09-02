@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">一般設定</string>
@@ -8,7 +10,7 @@
     <string name="previewConversion_title">匯率預覽</string>
     <string name="previewConversion_summary">在選擇貨幣頁面顯示目前匯率</string>
     <string name="extendedKeypad_title">額外按鍵</string>
-    <string name="extendedKeypad_summary">增加兩個額外按鍵: <b>00</b>&nbsp;和&nbsp;<b>000</b></string>
+    <string name="extendedKeypad_summary">增加兩個額外按鈕：<b>00</b>&nbsp;和&nbsp;<b>000</b>。</string>
     <string name="category_appearance">應用程式外觀</string>
     <string name="system_default">系統預設值</string>
     <string name="theme_title">風格</string>
@@ -27,7 +29,6 @@
     <string name="language_en">英文</string>
     <string name="language_eo">世界語</string>
     <string name="language_es">西班牙文</string>
-
     <string name="language_fr">法文</string>
     <string name="language_hr">克羅埃西亞文</string>
     <string name="language_hu">匈牙利文</string>
@@ -67,4 +68,5 @@
     <string name="rate_summary">如果您喜歡的話，您可以幫忙其他人發現 Currencies。按這裡在 Google Play 為這個應用程式評分。</string>
     <string name="category_versioninfo">版本資訊</string>
     <string name="title_changelog">更新日誌</string>
+    <string name="language_fa">波斯語</string>
 </resources>
