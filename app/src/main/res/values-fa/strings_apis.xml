@@ -1,2 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="api_inforEuro_descriptionFull"></string>
+    <string name="api_bankRossii_descriptionFull">نرخ ارز، همانطور که توسط بانک مرکزی روسیه <a href="https://cbr.ru/eng/currency_base/daily/"><b>بانک Rossii</b></a> ارائه شده است. با تحریم های فعلی، این منبع احتمالاً مطمئن ترین نرخ های مبادله روبل روسیه را ارائه می دهد.
+\n<b>بانک روسی 44 نرخ ارز را فهرست کرده است.</b></string>
+    <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> نرخ ارز را از ارائه‌دهندگان و بانک‌های مختلف داده‌های مالی، از جمله بانک مرکزی اروپا، منبع می‌دهد. تمام داده‌های نرخ ارز در داده‌های نقطه میانی تحویل داده می‌شوند. نرخ‌های نقطه میانی با محاسبه میانگین نرخ میانه Bid و Ask تعیین می‌شوند.
+\n<b>حدود 160 ارز گنجانده شده است.</b></string>
+    <string name="api_bankOfCanada_descriptionFull">میانگین روزانه نرخ ارز <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>بانک کانادا</b></a>.
+\n<b>حدود 23 ارز گنجانده شده است.</b></string>
+    <string name="api_bankOfCanada_descriptionShort">حدود 23 نرخ ارز
+\nمنبع: بانک مرکزی کانادا</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">نرخ ها یک بار در هر روز کاری تا ساعت 16:30 ET منتشر می شود</string>
+    <string name="api_bankRossii_descriptionShort">حدود 44 نرخ ارز
+\nمنبع: بانک مرکزی روسیه</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">نرخ ها به طور روزانه به روز می شوند، به جز در <a href="https://cbr.ru/eng/other/holidays/">تعطیلات رسمی در روسیه</a>.</string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">نرخ ارز حدود نیمه شب UTC هر روز کاری به روز می شود.</string>
+    <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> یک سرویس نسبتاً جدید است که (درست مانند Frankfurter.app) مبادلات مرجع (فارکس) را ردیابی می کند. نرخ هایی که توسط بانک مرکزی اروپا منتشر می شود.
+\n<b>حدود 30 ارز گنجانده شده است.</b></string>
+    <string name="api_ferEe_descriptionUpdateInterval">نرخ ها هر روز کاری به روز می شوند.</string>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> نرخ‌های مبادله مرجع (forex) منتشر شده توسط بانک مرکزی اروپا را دنبال می‌کند.
+\n<b>حدود 30 ارز گنجانده شده است.</b></string>
+    <string name="api_frankfurterApp_descriptionShort">حدود 30 نرخ ارز
+\nمنبع: بانک مرکزی اروپا</string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">داده ها در حدود ساعت 16:00 CET هر روز کاری به روز می شوند.</string>
+    <string name="api_inforEuro_descriptionShort">حدود 150 نرخ ارز
+\nمنبع: کمیسیون اروپا</string>
+    <string name="api_inforEuro_descriptionUpdateInterval">نرخ‌های نشان‌داده‌شده، نرخ‌های بازار برای دومین تا آخرین روز ماه قبل است که توسط بانک مرکزی اروپا نقل‌شده است یا بسته به در دسترس بودن، توسط هیئت‌های نمایندگی یا سایر منابع مناسب نزدیک به آن تاریخ ارائه شده است.</string>
+    <string name="api_inforEuro_hint">نرخ ها فقط یک بار در ماه به روز می شوند!</string>
+    <string name="api_norgesBank_descriptionFull">نرخ ارز، همانطور که توسط بانک مرکزی نروژ ارائه شده است <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a> .
+\n<b>Norges Bank حدود 40 نرخ ارز را فهرست کرده است.</b></string>
+    <string name="api_norgesBank_descriptionShort">حدود 40 نرخ ارز
+\nمنبع: بانک مرکزی نروژ</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">زمان انتشار نرخ ارز روزانه تقریباً 16:00 CET است.</string>
+    <string name="api_norgesBank_hint">سرویس به طور منظم دارای خرابی هایی است (HTTP 503)، که در طی آن نرخ ها نمی توانند تجدید شوند!</string>
+    <string name="api_openExchangeRates_descriptionShort">حدود 160 نرخ ارز
+\nمنبع: ترکیبی از چندین ارائه دهنده قابل اعتماد.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">به روز رسانی ساعتی.</string>
+    <string name="api_openExchangeRates_hint">برای استفاده از این منبع، باید کلید API شخصی خود را ایجاد کنید!</string>
+    <string name="api_openExchangeRates_descriptionFull">داده ها از چندین منبع قابل اعتماد ردیابی و ترکیب می شوند و نرخ های بی طرفانه را تضمین می کنند. برای اطلاعات بیشتر به <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> مراجعه کنید.
+\n<b>Open Exchange Rates مقدار زیادی از حدود 160 نرخ ارز را فراهم می کند.
+\n<i>برای استفاده از این منبع، باید کلید API شخصی خود را وارد کنید!</i></b></string>
+</resources>
