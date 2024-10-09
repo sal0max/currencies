@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="api_inforEuro_descriptionFull"></string>
     <string name="api_bankRossii_descriptionFull">نرخ ارز، همانطور که توسط بانک مرکزی روسیه <a href="https://cbr.ru/eng/currency_base/daily/"><b>بانک Rossii</b></a> ارائه شده است. با تحریم های فعلی، این منبع احتمالاً مطمئن ترین نرخ های مبادله روبل روسیه را ارائه می دهد.
 \n<b>بانک روسی 44 نرخ ارز را فهرست کرده است.</b></string>
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> نرخ ارز را از ارائه‌دهندگان و بانک‌های مختلف داده‌های مالی، از جمله بانک مرکزی اروپا، منبع می‌دهد. تمام داده‌های نرخ ارز در داده‌های نقطه میانی تحویل داده می‌شوند. نرخ‌های نقطه میانی با محاسبه میانگین نرخ میانه Bid و Ask تعیین می‌شوند.
