@@ -1,0 +1,2 @@
+- Nova API addicional: InforEuro ofereix mensualment les dades oficials de la Comissió Europea per a l'euro i fins a 150 taxes de canvi
+- Corregits problemes amb la disposició amb alguns dispositius plegables.

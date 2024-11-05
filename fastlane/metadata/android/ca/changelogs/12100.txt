@@ -1,0 +1,7 @@
+- Eliminat Exchangerate.host, ja que l'API ha sigut venuda i ara és comercial.
+- Com a alternativa, s'ha afegit diferents proveïdors de dades. Ens centrarem més en proveïdors oficials (bàsicament els Bancs Centrals) i intentarem afegir-n'hi més en el futur.
+- Nou: Banc Central de Canadà: Bank of Canada
+- Nou: Banc Central Noruec: Norges Bank
+- Nou: Banc Central Rus: Bank Rossii
+- A partir d'ara trobareu un enllaç a la configuració per accedir al repositori del codi font.
+- Millores generals, com millor gestió dels errors i traduccions actualitzades.

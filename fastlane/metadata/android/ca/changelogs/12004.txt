@@ -1,0 +1,1 @@
+- Corregits els valors erronis per a la diferència en el percentatge a la vista del gràfic cronològic.
