@@ -5,10 +5,10 @@
     <string name="rates_date_historical">Taxes històriques del &lt;b&gt;%1$s&lt;/b&gt; proveïdes per &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="copied_to_clipboard">S\'ha copiat &lt;b&gt;%s&lt;/b&gt; al porta-retalls</string>
     <string name="historical_rates_dialog_title">Taxes històriques</string>
-    <string name="historical_rates_dialog_toggle">Utilitza els tipus de canvi d\'una data específica. Desactivar si es vol utilitzar sempre les més recents.</string>
+    <string name="historical_rates_dialog_toggle">Utilitza les taxes de canvi d\'una data específica. Desactivar si es vol utilitzar sempre les més recents.</string>
     <string name="error">Error: %s</string>
     <string name="error_generic">Problema desconegut.</string>
-    <string name="error_http">El servidor ha respost amb HTTP %d</string>
+    <string name="error_http">El servidor ha respost amb HTTP %d.</string>
     <string name="error_timeout">El servidor no ha respost a temps o no es pot accedir.</string>
     <string name="error_no_data">No s\'ha pogut connectar amb el servidor.</string>
     <string name="error_api_error">Hi ha hagut un error amb l\'API. Torneu-ho a provar més tard.</string>
@@ -16,4 +16,10 @@
     <string name="menu_refresh">Actualitza les taxes</string>
     <string name="menu_timeline">Gràfic de la taxa de canvi</string>
     <string name="tooltip_filter_starred">Mostra només les monedes preferides.</string>
+    <string name="currency_dropdown_api_hint">Us falta res? Els diversos proveïdors de dades ofereixen divises diferents. Aneu a la configuració per a provar-ne d\'altres! 🤗</string>
+    <string name="error_try_another_api">Alternativament, existeixen altres proveïdors de dades que podeu escollir a la configuració.</string>
+    <string name="error_unsupported_timeline">Aquesta API no admet dades cronològiques.</string>
+    <string name="error_no_api_key">És necessari establir una clau API vàlida per a utilitzar aquesta font.</string>
+    <string name="error_empty_response">El servidor no disposa de dades per a aquesta sol·licitud.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Comproveu la clau API.</string>
 </resources>
