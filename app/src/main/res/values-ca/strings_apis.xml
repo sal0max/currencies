@@ -15,4 +15,14 @@
     <string name="api_bankRossii_descriptionUpdateInterval">Les taxes s\'actualitzen diàriament, exceptuant els <a href="https://cbr.ru/eng/other/holidays/">dies festius a Rússia</a>.</string>
     <string name="api_openExchangeRates_hint">Heu de crear una clau API personal per a utilitzar aquesta font.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualitzacions cada hora.</string>
+    <string name="api_openExchangeRates_descriptionFull">Es fa un seguiment i combinació de les dades de diferents fonts, garantint així taxes no esbiaixades. Consulteu <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> per a més informació.\n<b>Open Exchange Rates proporciona una gran quantitat de canvis de taxa, entorn de 160.\n<i>Per a utilitzar aquesta font, heu d\'introduir la vostra clau API personal.</i></b></string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a> ofereix la taxa comptable mensual oficial de la Comissió Europea per a l\'euro i les taxes de canvi establertes pel comptable de la Comissió Europea de conformitat amb l\'article 19 del Reglament Financer.\nAquestes taxes s\'utilitzen per al càlcul dels imports de viatges o dietes a reemborsar de les persones externes que participen, a petició de la Comissió Europea, a reunions, entrevistes, etc.\n<b>S\'inclouen unes 150 divises.</b></string>
+    <string name="api_inforEuro_descriptionShort">Unes 150 taxes de canvi\nFont: Comissió Europea</string>
+    <string name="api_norgesBank_hint">El servei pateix caigudes freqüents (HTTP 503), durant les quals les taxes no es poden actualitzar.</string>
+    <string name="api_inforEuro_descriptionUpdateInterval">Són les taxes de mercat corresponents al segon a l\'últim dia del mes previ indicades pel Banc Central Europeu o, depenent de la disponibilitat, proporcionades per delegacions o altres fonts adients i més properes a la data específica.</string>
+    <string name="api_inforEuro_hint">Les taxes s\'actualitzen un cop al mes.</string>
+    <string name="api_norgesBank_descriptionFull">Taxes de canvi facilitades pel banc central de Noruega <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.\n<b>El Norges Bank disposa de 40 taxes de canvi</b></string>
+    <string name="api_norgesBank_descriptionShort">Unes 40 taxes de canvi\nFont: Banc Central de Noruega</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">La publicació de les taxes de canvi es realitza entorn a les 16:00 CET.</string>
+    <string name="api_openExchangeRates_descriptionShort">Unes 160 taxes de canvi.\nFont: Combinació de diferents proveïdors de confiança.</string>
 </resources>
