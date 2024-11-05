@@ -6,4 +6,13 @@
     <string name="api_ferEe_descriptionUpdateInterval">Les taxes s\'actualitzen cada dia laborable.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> fa el seguiment dels tipus de canvi de referència (Forex) publicats pel Banc Central Europeu.\n<b>Inclou unes 30 monedes.</b></string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Les dades s\'actualitzen al voltant de les 16:00 (zona horària CET) de cada dia laborable.</string>
+    <string name="api_bankOfCanada_descriptionFull">Mitjana diària de les taxes de canvi del <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Banc de Canadà</b></a>.\n<b>S\'inclouen 23 divises.</b></string>
+    <string name="api_bankRossii_descriptionFull">Taxes de canvi facilitades pel banc central rus <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Amb les sancions actuals, aquesta font proporciona possiblement les dades més precises sobre les taxes de canvi del ruble rus.\n<b>El Banc de Rússia ofereix 44 taxes de canvi diferents.</b></string>
+    <string name="api_bankOfCanada_descriptionShort">Unes 23 taxes de canvi\nFont: Banc Central de Canadà</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">Les taxes es publiquen un cop cada dia laborable abans de les 16:30 ET</string>
+    <string name="api_frankfurterApp_descriptionShort">Unes 30 taxes de canvi\nFont: Banc Central Europeu</string>
+    <string name="api_bankRossii_descriptionShort">Unes 44 taxes de canvi.\nFont: Banc Central de la Federació Russa</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">Les taxes s\'actualitzen diàriament, exceptuant els <a href="https://cbr.ru/eng/other/holidays/">dies festius a Rússia</a>.</string>
+    <string name="api_openExchangeRates_hint">Heu de crear una clau API personal per a utilitzar aquesta font.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Actualitzacions cada hora.</string>
 </resources>
