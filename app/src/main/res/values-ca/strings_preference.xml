@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Configuració general</string>
@@ -39,13 +41,10 @@
     <string name="language_nl">Neerlandès</string>
     <string name="language_pl">Polonès</string>
     <string name="language_pt_BR">Português (Brasiler)</string>
-
     <string name="language_sv">Suec</string>
     <string name="language_tr">Turc</string>
     <string name="language_uk">Ucraïnès</string>
     <string name="language_vi">Vietnamita</string>
-
-
     <!-- api -->
     <string name="category_api">Taxes de canvi</string>
     <string name="api_title">Proveïdor de les dades</string>
@@ -55,12 +54,19 @@
     <string name="category_about">Quant a aquesta aplicació</string>
     <string name="disclaimer_title">Avís d\'exempció de responsabilitat</string>
     <string name="disclaimer_summary">Tot i que l\'aplicació ha sigut programada curosament i verificada, <b>no es garanteix que les dades que es mostren siguin correctes</b>. Al ser els tipus de canvi proveïts per tercers, no es pot assegurar que les seves dades siguin correctes i actualitzades.\nAddicionalment, els tipus que es mostren –tot i ser correctes– poden diferir dels utilitzats pel vostre banc.\nPer acabar, tothom pot cometre errors així que no confieu cegament en ningú! Això dit, si aquesta aplicació ha sigut publicada és perquè es té la certesa que funciona tal com es pretenia.</string>
-
-
     <string name="donate_title">Dona suport al desenvolupador</string>
     <string name="donate_summary">Fes una donació a través de PayPal</string>
     <string name="rate_title">Valoreu l\'aplicació</string>
     <string name="rate_summary">Podeu ajudar a altres persones a descobrir Currencies. Toqueu aquí per a puntuar l\'aplicació a Google Play.</string>
     <string name="category_versioninfo">Informació de la versió</string>
     <string name="title_changelog">Registre de canvis</string>
+    <string name="language_fa">Persa</string>
+    <string name="language_ru">Rus</string>
+    <string name="language_zh_TW">Xinès (Tradicional)</string>
+    <string name="language_zh_CN">Xinès (Simplificat)</string>
+    <string name="api_open_exchangerates_api_key_title">Clau API d\'Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Es requereix clau API</i></string>
+    <string name="sourcecode_title">Codi font</string>
+    <string name="sourcecode_summary">Aquesta aplicació és de codi obert. Accediu al repositori per obrir incidències, descobrir com contribuir o consultar el codi font.</string>
+    <string name="api_open_exchangerates_api_key_message">Per a utilitzar aquesta font, heu de crear una clau API personal.\n\nDirigiu-vos a https://openexchangerates.org/signup/free i creeu un compte d\'usuari gratuït.\nSeguidament, genereu una nova App ID dins del vostre Dashboard i introduïu-la aquí:</string>
 </resources>
