@@ -3,7 +3,7 @@
     <string name="desc_toggle_currencies">поміняти валюти місцями</string>
     <string name="rates_date_latest">Курс станом на &lt;b&gt;%1$s&lt;/b&gt; згідно &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="rates_date_historical">Історичний курс, на &lt;b&gt;%1$s&lt;/b&gt; згідно &lt;b&gt;%2$s&lt;/b&gt;</string>
-    <string name="copied_to_clipboard">Скопійовано &lt;b&gt;%s&lt;/b&gt; до буферу</string>
+    <string name="copied_to_clipboard">Скопійовано <b>%s</b> до буфера обміну</string>
     <string name="historical_rates_dialog_title">Історичний курс</string>
     <string name="historical_rates_dialog_toggle">Використовувати курс валют на певну дату. Вимкніть, щоб завжди брати найновіші.</string>
     <string name="error">Помилка: %s</string>
