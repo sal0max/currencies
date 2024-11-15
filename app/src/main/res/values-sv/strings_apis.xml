@@ -2,7 +2,7 @@
 <resources>
     <string name="api_bankOfCanada_descriptionFull">Dagligt genomsnittliga växelkurser för <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.\n<b>Cirka 23 valutor ingår.</b></string>
     <string name="api_bankOfCanada_descriptionShort">Cirka 23 växelkurser\nKälla: Central Bank of Canada</string>
-    <string name="api_bankOfCanada_descriptionUpdateInterval">Kurserna publiceras under varje affärsdag vid 16:30 ET</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">Kurserna publiceras en gång varje arbetsdag senast 16:30 ET</string>
     <string name="api_bankRossii_descriptionShort">Omkring 44 valutakurser\nKälla: Centralbanken i Ryssland</string>
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> hämtar in valutakurser från olika leverantörer av finansiell data samt banker, inklusive den Europeiska centralbanken. Alla valutakurser levereras som mittpunktsdata, dvs de beräknas som genomsnittet av köp- och säljkursen.\n<b>Ungefär 160 valutor ingår.</b></string>
     <string name="api_exchangerateHost_descriptionUpdateInterval">Valutakurserna uppdateras varje arbetsdag, runt midnatt UTC.</string>
