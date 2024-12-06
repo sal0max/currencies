@@ -2,6 +2,7 @@ Currencies je jednoduchý a přehledný převodník měn.Není určen pro finan�
 
 - Aplikace podporuje všechny relevantní měny. Můžete si vybrat mezi několika oficiálními poskytovateli směnných kurzů:
    - frankfurter.app s více než 30 měnami, které poskytuje Evropská centrální banka
+   - OpenExchangerates obsahují přes 160 měn s hodinovými aktualizacemi
    - InforEuro poskytuje oficiální měsíční účetní kurzy Evropské komise pro euro a více než 150 odpovídajících směnných kurzů
    - Bank of Canada poskytuje asi 23 směnných kurzů Kanadské centrální banky
    - Norská centrální banka „Norges Bank“ uvádí přibližně 40 směnných kurzů

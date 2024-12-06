@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">تنظیمات عمومی</string>
+    <string name="fee_title">کارمزد تراکنش های خارجی</string>
+    <string name="fee_summary">بسته به قرارداد کارت اعتباری شما، بانک شما ممکن است برای تمام تراکنش های ارزی کارمزدی دریافت کند. در اینجا می توانید آن هزینه را وارد کنید. به محاسبات اضافه می شود، بنابراین می دانید که <i>واقعاً</i> چقدر می پردازید.</string>
+    <string name="previewConversion_title">پیش نمایش تبدیل</string>
+    <string name="previewConversion_summary">تبدیل فعلی برای هر نرخ را در انتخابگر ارز نشان دهید.</string>
+    <string name="extendedKeypad_title">صفحه کلید توسعه یافته</string>
+    <string name="extendedKeypad_summary">دو دکمه دیگر اضافه کنید: <b>00</b> و <b>000</b>.</string>
+    <string name="category_appearance">ظاهر</string>
+    <string name="system_default">پیش فرض سیستم</string>
+    <string name="theme_title">طراحی</string>
+    <string name="theme_option_light">‏نور</string>
+    <string name="theme_option_dark">تاریک</string>
+    <string name="pure_black_enabled_title">مشکی OLED</string>
+    <string name="pure_black_enabled_summary">از مشکی خالص در حالت تاریک استفاده کنید</string>
+    <!-- languages -->
+    <string name="language_title">زبان برنامه</string>
+    <string name="language_ar">عربی</string>
+    <string name="language_bg">بلغاری</string>
+    <string name="language_bn">بنگالی</string>
+    <string name="language_ca">کاتالان</string>
+    <string name="language_cs">چک</string>
+    <string name="language_de">المانی</string>
+    <string name="language_el">یونانی</string>
+    <string name="language_en">اینگلیسی</string>
+    <string name="language_eo">اسپرانتو</string>
+    <string name="language_es">اسپانیایی</string>
+    <string name="language_fa">فارسی</string>
+    <string name="language_fr">فرانسوی</string>
+    <string name="language_hr">کرواتی</string>
+    <string name="language_hu">مجارستانی</string>
+    <string name="language_in">اندونزی</string>
+    <string name="language_is">ایسلندی</string>
+    <string name="language_it">ایتالیایی</string>
+    <string name="language_iw">عبری</string>
+    <string name="language_nb">نروژی</string>
+    <string name="language_nl">هلندی</string>
+    <string name="language_pl">لهستانی</string>
+    <string name="language_pt_BR">پرتغالی (برزیل)</string>
+    <string name="language_ru">روسی</string>
+    <string name="language_sv">سوئدی</string>
+    <string name="language_tr">ترکی</string>
+    <string name="language_uk">اوکراینی</string>
+    <string name="language_vi">ویتنامی</string>
+    <string name="language_zh_CN">چینی (ساده شده)</string>
+    <string name="language_zh_TW">چینی (سنتی)</string>
+    <!-- api -->
+    <string name="category_api">نرخ ارز</string>
+    <string name="api_title">ارائه دهنده داده</string>
+    <string name="api_open_exchangerates_api_key_title">کلید API نرخ ارز باز</string>
+    <string name="api_open_exchangerates_api_key_message">برای استفاده از این منبع، باید کلید API شخصی خود را ایجاد کنید.\n\nبرای انجام این کار، به https://openexchangerates.org/signup/free بروید و یک حساب کاربری رایگان ایجاد کنید.\nدر نهایت، به سادگی یک شناسه برنامه جدید در داشبورد خود ایجاد کنید و آن را در اینجا وارد کنید:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>کلید API مورد نیاز است</i></string>
+    <string name="api_about_title">درباره ی %s</string>
+    <string name="api_refreshPeriod_title">دوره تجدید</string>
+    <!-- about -->
+    <string name="category_about">درباره ی این برنامه</string>
+    <string name="disclaimer_title">توجه</string>
+    <string name="disclaimer_summary">اگرچه برنامه کاملاً نوشته و آزمایش شده است، <b>هیچ تضمینی وجود ندارد که داده‌هایی که نشان می‌دهد صحیح باشند</b>. نرخ ارز توسط شخص ثالث ارائه می شود و این برنامه نمی تواند هیچ قولی مبنی بر واقعی بودن و به روز بودن داده ها بدهد.\nعلاوه بر این، نرخ‌های ارائه‌شده - هنوز هم اگر درست باشد - ممکن است با نرخ‌هایی که بانک شما استفاده می‌کند متفاوت باشد.\nدر آخر: اشتباهات اتفاق می افتد. هرگز کورکورانه به کسی اعتماد نکن! همانطور که گفته شد، مطمئن باشید اگر شک داشتم که این برنامه همانطور که در نظر گرفته شده کار می کند، من این برنامه را منتشر نمی کردم.</string>
+    <string name="sourcecode_title">کد منبع</string>
+    <string name="sourcecode_summary">این برنامه متن باز است. برای باز کردن مسائل به مخزن کد بروید، نحوه مشارکت را بیابید یا فقط نگاهی به منابع بیندازید.</string>
+    <string name="donate_title">از توسعه دهنده حمایت کنید</string>
+    <string name="donate_summary">از طریق PayPal کمک مالی کنید</string>
+    <string name="rate_title">به این برنامه امتیاز دهید</string>
+    <string name="rate_summary">اگر مایل هستید، می توانید به دیگران کمک کنید تا ارزها را کشف کنند. برای امتیاز دادن به برنامه در Google Play اینجا را کلیک کنید.</string>
+    <string name="category_versioninfo">اطلاعات نسخه</string>
+    <string name="title_changelog">تغییرات</string>
+</resources>

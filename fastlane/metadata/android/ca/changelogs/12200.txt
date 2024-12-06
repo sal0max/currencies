@@ -1,0 +1,5 @@
+- Nova API: OpenExchangerates
+- Eliminada l'API Fer.ee, ja que no tenia un funcionament fiable.
+- Traduccions actualitzades
+- Millorada la interfície gràfica d'usuari
+- Varies millores internes

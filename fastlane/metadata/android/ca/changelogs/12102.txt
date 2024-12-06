@@ -1,0 +1,3 @@
+- Nou idioma seleccionable: l'Esperanto!
+- Afegit el suport per a l'entrada de teclat per hardware
+- Traduccions actualitzades.

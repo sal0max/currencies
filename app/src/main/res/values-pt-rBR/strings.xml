@@ -8,12 +8,18 @@
     <string name="historical_rates_dialog_toggle">Utilize taxas de câmbio de uma data específica. Desabilite, para pegar sempre as mais recentes.</string>
     <string name="error">Erro: %s</string>
     <string name="error_generic">Problema desconhecido.</string>
-    <string name="error_http">O servidor respondeu com HTTP %d</string>
+    <string name="error_http">O servidor respondeu com HTTP %d.</string>
     <string name="error_timeout">O servidor não respondeu a tempo ou não está acessível.</string>
     <string name="error_no_data">Não foi possível conectar ao servidor.</string>
+    <string name="error_empty_response">O servidor não tem dados para esta solicitação.</string>
     <string name="error_api_error">Ocorreu um erro de API. Por favor, tente novamente mais tarde.</string>
+    <string name="error_try_another_api">No entanto, há outros provedores de dados que você pode escolher nas configurações. Experimente!</string>
+    <string name="error_no_api_key">Uma chave de API válida deve ser definida para usar esta fonte.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Por favor, verifique sua chave de API.</string>
+    <string name="error_unsupported_timeline">Os dados de linha do tempo não são suportados por esta API.</string>
     <string name="menu_settings">Configurações</string>
     <string name="menu_refresh">Atualizar taxas</string>
     <string name="menu_timeline">Gráfico da taxa de câmbio</string>
     <string name="tooltip_filter_starred">Mostrar apenas moedas marcadas com estrela.</string>
+    <string name="currency_dropdown_api_hint">Está faltando algo? Diferentes provedores de dados oferecem diferentes moedas. Vá para as configurações para tentar outro! 🤗</string>
 </resources>

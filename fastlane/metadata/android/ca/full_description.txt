@@ -1,11 +1,15 @@
-Currencies és un convertidor de moneda simple i directe. No està pensat per ser una eina financera de treball, sinó per a un ús més quotidià com podria ser anar de vacances.
+Currencies és un convertidor de moneda simple i directe. No està pensat per ser una eina financera de treball, sinó per a un ús més quotidià com podria ser, per exemple, anar de vacances.
 
-- S'inclou totes les monedes importants. Es pot triar entre diferents proveïdors de tipus de canvi:
-   - exchangerate.host amb unes 160 monedes
-   - frankfurter.app amb unes 30 monedes. A partir de les dades del Banc Central Europeu
+- L'aplicació inclou totes les monedes importants. Es pot triar entre diferents proveïdors de tipus de canvi:
+   - frankfurter.app, amb unes 30 divises diferents. A partir de les dades del Banc Central Europeu
+   - OpenExchangerates, amb fins a 160 divises i actualitzacions horàries
+   - InforEuro ofereix mensualment les dades oficials de la Comissió Europea per a l'euro i fins a 150 taxes de canvi
+   - Bank of Canada ofereix entorn a 23 taxes de canvi del Banc Central del Canadà
+   - El Banc Central de Noruega "Norges Bank" disposa d'unes 40 taxes de canvi
+   - El Banc Central de Rússia "Bank Rossii" és una de les fonts més precises per a les taxes de canvi al ruble rus. S'inclouen 44 taxes de canvi
 - Interfície d'usuari simple i amb el disseny Material 3.
-- Historial de tipus: Utilitzeu el gràfic per veure com ha sigut l'evolució durant l'últim any.
-- Tipus històrics: Feu servir valors de dates anteriors.
+- Historial de taxes: Utilitzeu el gràfic per veure com ha sigut l'evolució durant l'últim any.
+- Dades històriques: Feu servir valors de dates anteriors.
 - Una característica rellevant és la calculadora que s'inclou. Útil, per exemple, per si es vol repartir el compte d'un restaurant.
 - Calculadora de comissions: Per afegir opcionalment una comissió als càlculs de canvi de moneda.
 - Currencies s'ha escrit per a Android utilitzant Kotlin, dirigit a Android 13 i inclou els temes fosc i clar.

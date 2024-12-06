@@ -8,7 +8,7 @@
     <string name="previewConversion_title">匯率預覽</string>
     <string name="previewConversion_summary">在選擇貨幣頁面顯示目前匯率</string>
     <string name="extendedKeypad_title">額外按鍵</string>
-    <string name="extendedKeypad_summary">增加兩個額外按鍵: <b>00</b>&nbsp;和&nbsp;<b>000</b></string>
+    <string name="extendedKeypad_summary">增加兩個額外按鈕：<b>00</b>&nbsp;和&nbsp;<b>000</b>。</string>
     <string name="category_appearance">應用程式外觀</string>
     <string name="system_default">系統預設值</string>
     <string name="theme_title">風格</string>
@@ -27,7 +27,7 @@
     <string name="language_en">英文</string>
     <string name="language_eo">世界語</string>
     <string name="language_es">西班牙文</string>
-
+    <string name="language_fa">波斯語</string>
     <string name="language_fr">法文</string>
     <string name="language_hr">克羅埃西亞文</string>
     <string name="language_hu">匈牙利文</string>

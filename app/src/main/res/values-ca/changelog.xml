@@ -1,5 +1,101 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.3">
+        <item>Traduccions actualitzades.</item>
+        <item>Ara també està disponible el dòlar canadenc amb proveïdor Bank of Canada.</item>
+        <item>Nou idioma: Persa</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.2">
+        <item>Traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.1">
+        <item>Traduccions actualitzades</item>
+        <item>Corregides les taxes històriques del Norges Bank.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.0">
+        <item>Nova API: OpenExchangerates</item>
+        <item>Eliminada l\'API Fer.ee, ja que no tenia un funcionament fiable.</item>
+        <item>Traduccions actualitzades</item>
+        <item>Millorada la interfície gràfica d\'usuari</item>
+        <item>Varies millores internes</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>Corregit: La tecla enrere no tancava l\'aplicació.</item>
+        <item>Traduccions actualitzades.</item>
+        <item>Millores generals.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>Nou idioma seleccionable: l\'Esperanto!</item>
+        <item>Afegit el suport per a l\'entrada de teclat per hardware</item>
+        <item>Traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.1">
+        <item>Traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.0">
+        <item>Eliminat Exchangerate.host, ja que l\'API ha sigut venuda i ara és comercial.</item>
+        <item>Com a alternativa, s\'ha afegit diferents proveïdors de dades. Ens centrarem més en proveïdors oficials (bàsicament els Bancs Centrals) i intentarem afegir-n\'hi més en el futur.</item>
+        <item>Nou: Banc Central de Canadà: Bank of Canada</item>
+        <item>Nou: Banc Central Noruec: Norges Bank</item>
+        <item>Nou: Banc Central Rus: Bank Rossii</item>
+        <item>A partir d\'ara trobareu un enllaç a la configuració per accedir al repositori del codi font.</item>
+        <item>Millores generals, com millor gestió dels errors i traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>Corregits els valors erronis per a la diferència en el percentatge a la vista del gràfic cronològic.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.3">
+        <item>Traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>Corregides dades cronològiques incorrectes de l\'API InforEuro.</item>
+        <item>Traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.1">
+        <item>Traduccions actualitzades.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.0">
+        <item>Nova API addicional: InforEuro ofereix mensualment les dades oficials de la Comissió Europea per a l\'euro i fins a 150 taxes de canvi</item>
+        <item>Corregits problemes amb la disposició amb alguns dispositius plegables.</item>
+    </string-array>
+
+    <string-array name="changelog_1.19.0">
+        <item>Diverses millores a la interfície d\'usuari</item>
+        <item>Noves llengües: Xinès 🇨🇳🇹🇼🇸🇬 i rus 🇷🇺🇧🇾🇰🇿.</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>Nova llengua: Ucraïnès 🇺🇦! Moltes gràcies a en Bogdan!</item>
+        <item>Cuba: S\'utilitza el pes cubà (CUP) en comptes de l\'obsolet pes cubà convertible (CUC).</item>
+        <item>Moltes millores en les traduccions. Moltes gràcies a tots els voluntaris!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>Nova llengua: Croat 🇭🇷🇧🇦. Bona feina, Ivan!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>Afegit suport per a la configuració de la llengua per aplicació (nova funcionalitat d\'Android 13).</item>
+        <item>Addicionalment, ara tots els dispositius (també &lt; Android 13) disposen de l\'opció de canviar la llengua dins de la configuració de l\'aplicació.</item>
+        <item>Nova llengua: Català 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Corregit: registre de canvis buit</item>
+    </string-array>
+
     <string-array name="changelog_1.1.1">
         <item>Millores menors (errors tipogràfics i altres)</item>
     </string-array>
@@ -16,6 +112,19 @@
         <item>Afegida la traducció a l\'alemany 🇩🇪</item>
         <item>Millora menor: La mida de l\'aplicació s\'ha reduït a la meitat!</item>
         <item>L\'aplicació sembla estable: Versió pública 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Millores menors</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Millora en la gestió d\'errors</item>
+        <item>Millores menors</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Afegida la funcionalitat de copiar: Realitza un clic llarg sobre el valor a copiar</item>
     </string-array>
 
     <string-array name="changelog_0.1.0">

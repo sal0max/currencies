@@ -28,6 +28,7 @@
     <string name="language_en">Anglais</string>
     <string name="language_eo">Espéranto</string>
     <string name="language_es">Espagnol</string>
+    <string name="language_fa">Perse</string>
     <string name="language_fr">Français</string>
     <string name="language_hr">Croate</string>
     <string name="language_hu">Hongrois</string>
@@ -45,10 +46,13 @@
     <string name="language_uk">Ukrainien</string>
     <string name="language_vi">Vietnamien</string>
     <string name="language_zh_CN">Chinois (simplifié)</string>
-
+    <string name="language_zh_TW">Chinois (traditionnel)</string>
     <!-- api -->
     <string name="category_api">Taux de change</string>
     <string name="api_title">Fournisseur de données</string>
+    <string name="api_open_exchangerates_api_key_title">Clé de l\'API Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Pour utiliser cette source, vous devez créer votre clé API personnelle.\n\nPour cela, allez sur https://openexchangerates.org/signup/free et créez un compte gratuit.\nEnfin, générez une nouvelle App ID dans votre tableau de bord et copiez la ici :</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Clé d\'API obligatoire</i></string>
     <string name="api_about_title">À propos de %s</string>
     <string name="api_refreshPeriod_title">Période de rafraîchissement</string>
     <!-- about -->

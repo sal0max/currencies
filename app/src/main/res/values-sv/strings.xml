@@ -8,8 +8,8 @@
     <string name="historical_rates_dialog_toggle">Använd växlingskurser från ett specifikt datum. Inaktivera för att använda de senaste kurserna.</string>
     <string name="error">Fel: %s</string>
     <string name="error_generic">Okänt problem.</string>
-    <string name="error_http">Servern svarade med HTTP %d</string>
-    <string name="error_timeout">Servern svarade inte i tid eller är inte nåbar.</string>
+    <string name="error_http">Servern svarade med HTTP %d.</string>
+    <string name="error_timeout">Servern svarade inte i tid eller går inte att nå.</string>
     <string name="error_no_data">Kunde inte ansluta till servern.</string>
     <string name="error_api_error">Ett API-fel har inträffat. Försök igen senare.</string>
     <string name="menu_settings">Inställningar</string>

@@ -1,0 +1,1 @@
+- Afegida la funcionalitat de copiar: Realitza un clic llarg sobre el valor a copiar

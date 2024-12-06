@@ -8,7 +8,7 @@
     <string name="historical_rates_dialog_toggle">打开就会显示选定特定日期的汇率。关上则永远会显示最新的汇率。</string>
     <string name="error">错误: %s</string>
     <string name="error_generic">出现未知问题。</string>
-    <string name="error_http">服务器返回HTTP状态码： %d</string>
+    <string name="error_http">服务器返回HTTP状态码： %d。</string>
     <string name="error_timeout">服务器未及时响应或无法访问。</string>
     <string name="error_no_data">无法连接到服务器。</string>
     <string name="error_empty_response">服务器上没有所请求的数据。</string>

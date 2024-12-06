@@ -1,1 +1,1 @@
-Currencies: Calcula tipus de canvi
+Currencies: Calcula taxes de canvi
