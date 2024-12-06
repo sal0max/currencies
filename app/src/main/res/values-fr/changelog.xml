@@ -62,8 +62,6 @@
     <string-array name="changelog_1.20.0">
         <item>Nouvelle API supplémentaire : InforEuro fournit les taux comptables mensuels officiels de la Commission européenne pour l\'euro et plus de 150 taux de conversion correspondants.</item>
         <item>Correction de problèmes de mise en page avec certains appareils pliables particuliers.</item>
-        <item>Nouvelle API supplémentaire : InforEuro fournit les taux comptables mensuels officiels de la Commission européenne pour l\'euro et plus de 150 taux de conversion correspondants.</item>
-        <item>Correction de problèmes de mise en page avec certains appareils pliables particuliers.</item>
     </string-array>
 
     <string-array name="changelog_1.19.0">

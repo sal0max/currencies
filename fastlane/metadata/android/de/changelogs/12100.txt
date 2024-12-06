@@ -1,5 +1,5 @@
 - Exchangerate.host entfernt, weil die API verkauft wurde und nun kommerziell ist.
-- Stattdessen gibt es nun einige neue Datenquellen. Wir werden uns künftig mehr auf offizielle Anbieter fokusieren (also Zentralbanken) und versuchen in der Zukunft noch weitere hinzuzufügen.
+- Stattdessen gibt es nun einige neue Datenquellen. Wir werden uns künftig mehr auf offizielle Anbieter fokussieren (also Zentralbanken) und versuchen in der Zukunft noch weitere hinzuzufügen.
 - Neu: kanadische Zentralbank - Bank of Canada
 - Neu: norwegische Zentralbank - Norges Bank
 - Neu: russische Zentralbank - Bank Rossii

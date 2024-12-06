@@ -45,7 +45,7 @@
 
     <string-array name="changelog_1.21.0">
         <item>Exchangerate.host entfernt, weil die API verkauft wurde und nun kommerziell ist.</item>
-        <item>Stattdessen gibt es nun einige neue Datenquellen. Wir werden uns künftig mehr auf offizielle Anbieter fokusieren (also Zentralbanken) und versuchen in der Zukunft noch weitere hinzuzufügen.</item>
+        <item>Stattdessen gibt es nun einige neue Datenquellen. Wir werden uns künftig mehr auf offizielle Anbieter fokussieren (also Zentralbanken) und versuchen in der Zukunft noch weitere hinzuzufügen.</item>
         <item>Neu: kanadische Zentralbank - Bank of Canada</item>
         <item>Neu: norwegische Zentralbank - Norges Bank</item>
         <item>Neu: russische Zentralbank - Bank Rossii</item>
