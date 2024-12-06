@@ -1,8 +1,8 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
-    id("com.android.application") version "8.5.1" apply false
-    id("org.jetbrains.kotlin.android") version "2.0.0" apply false
+    id("com.android.application") version "8.7.3" apply false
+    id("org.jetbrains.kotlin.android") version "2.1.0" apply false
     // dependency-update-checker
     id("com.github.ben-manes.versions") version "0.51.0"
 }

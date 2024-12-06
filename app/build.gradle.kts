@@ -6,18 +6,18 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "2.0.0-1.0.24"
+    id("com.google.devtools.ksp") version "2.1.0-1.0.29"
 }
 
 android {
     namespace = "de.salomax.currencies"
-    compileSdk = 34
-    buildToolsVersion = "34.0.0"
+    compileSdk = 35
+    buildToolsVersion = "35.0.0"
 
     defaultConfig {
         applicationId = "de.salomax.currencies"
         minSdk = 26
-        targetSdk = 34
+        targetSdk = 35
         // SemVer
         versionName = "1.22.3"
         versionCode = 12203
@@ -86,13 +86,13 @@ android {
 
 dependencies {
     // kotlin
-    implementation("androidx.core:core-ktx:1.13.1")
+    implementation("androidx.core:core-ktx:1.15.0")
     // support libs
     val appCompatVersion = "1.7.0"
     implementation("androidx.appcompat:appcompat:$appCompatVersion")
     implementation("androidx.appcompat:appcompat-resources:$appCompatVersion")
-    implementation("androidx.constraintlayout:constraintlayout:2.1.4")
-    val livecycleVersion = "2.8.4"
+    implementation("androidx.constraintlayout:constraintlayout:2.2.0")
+    val livecycleVersion = "2.8.7"
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$livecycleVersion")
@@ -106,7 +106,7 @@ dependencies {
     implementation("com.github.kittinunf.fuel:fuel-android:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-coroutines:$fuelVersion")
     implementation("com.github.kittinunf.fuel:fuel-moshi:$fuelVersion")
-    val moshiVersion = "1.15.1"
+    val moshiVersion = "1.15.2"
     implementation("com.squareup.moshi:moshi-kotlin:$moshiVersion")
     ksp("com.squareup.moshi:moshi-kotlin-codegen:$moshiVersion")
     // math (v5 releases use incompatible license to fdroid: noinspection GradleDependency)
@@ -115,7 +115,7 @@ dependencies {
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.12.0")
+    testImplementation("org.mockito:mockito-core:5.14.2")
 }
 
 fun getSecret(key: String): String? {
