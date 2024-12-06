@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.4">
+        <item>ترجمات محدثة.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.3">
         <item>تم تحديث الترجمات.</item>
         <item>أصبح الدولار الكندي متاحًا الآن أيضًا لدى مزود بنك كندا (Bank of Canada).</item>

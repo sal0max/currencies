@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.4">
+        <item>Aktualizovány překlady.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.3">
         <item>Aktualizovány překlady.</item>
         <item>Kanadský dolar je nyní dostupný u poskytovatele Bank of Canada.</item>

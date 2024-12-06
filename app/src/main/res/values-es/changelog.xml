@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.4">
+        <item>Traducciones actualizadas.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.3">
         <item>Traducciones actualizadas.</item>
         <item>El dólar canadiense ahora también está disponible con el proveedor Bank of Canada.</item>
