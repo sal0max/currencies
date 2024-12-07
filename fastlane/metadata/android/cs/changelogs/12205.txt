@@ -1,0 +1,3 @@
+- Opraveny problémy s rozvržením na zařízeních se systémem Android 15.
+- Opraven problém, kdy byla navigační tlačítka na starších verzích systému Android skrytá.
+- Drobná vylepšení designu.
