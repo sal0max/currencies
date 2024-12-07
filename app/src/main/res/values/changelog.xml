@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.5">
+        <item>Fixed layout issues on Android 15 devices.</item>
+        <item>Fixed an issue where the navigation buttons were hidden on older Android versions.</item>
+        <item>Minor design improvements.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.4">
         <item>Updated translations.</item>
     </string-array>

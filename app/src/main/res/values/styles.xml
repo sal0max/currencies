@@ -83,6 +83,7 @@
     <!-- make actionbar the same color as the background -->
     <style name="AppTheme.ActionBar" parent="Widget.Material3.Light.ActionBar.Solid">
         <item name="background">?attr/colorBackground</item>
+        <item name="elevation">0dp</item>
     </style>
 
     <!-- more traditional switch style -->
