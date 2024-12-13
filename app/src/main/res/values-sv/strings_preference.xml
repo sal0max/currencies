@@ -68,4 +68,5 @@
     <string name="api_open_exchangerates_api_key_missing"><i>API-nyckel krävs</i></string>
     <string name="sourcecode_title">Källkod</string>
     <string name="sourcecode_summary">Denna app är öppen källkod. Gå till källkodsförrådet nedan för att öppna ärenden, få reda på hur man bidrar eller ta en titt på källkoden.</string>
+    <string name="api_open_exchangerates_api_key_title">API-nyckel för Open Exchangerates</string>
 </resources>
