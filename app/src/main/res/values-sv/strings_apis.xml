@@ -16,7 +16,7 @@
     <string name="api_inforEuro_descriptionShort">Omkring 150 valutakurser\nKälla: Europeiska Kommisionen</string>
     <string name="api_inforEuro_descriptionUpdateInterval">Kurserna är lika med marknadskurserna på näst sista dagen i föregående månad såsom de anges av Europeiska centralbanken, delegationerna eller andra källor omkring samma datum, beroende på vilka uppgifter som står till buds.</string>
     <string name="api_inforEuro_hint">Kurser uppdateras endast en gång i månaden!</string>
-    <string name="api_norgesBank_descriptionShort">Omkring 40 valutakurser\nKälla: Centralbanken i Norge</string>
+    <string name="api_norgesBank_descriptionShort">Ungefär 40 växelkurser\nKälla: Central Bank of Norway</string>
     <string name="api_norgesBank_descriptionUpdateInterval">Publiceringstid för valutakurser varje dag sker 16:00 CET.</string>
     <string name="api_norgesBank_hint">Tjänsten har återkommande nertider (HTTP 503) under vilka valutakurser inte kan uppdareras!</string>
     <string name="api_openExchangeRates_descriptionShort">Omkring 160 växlingskurser\nKälla: Kombination av flertalet pålitliga leverantörer.</string>
