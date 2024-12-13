@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Allmänna inställningar</string>
@@ -45,7 +47,6 @@
     <string name="language_uk">Ukrainska</string>
     <string name="language_vi">Vietnamesiska</string>
     <string name="language_zh_CN">Kinesiska (Förenklad)</string>
-
     <!-- api -->
     <string name="category_api">Valutakurser</string>
     <string name="api_title">Dataleverantör</string>
@@ -55,12 +56,16 @@
     <string name="category_about">Om appen</string>
     <string name="disclaimer_title">Ansvarsfriskrivelse</string>
     <string name="disclaimer_summary">Trots att appen är noggrant kodad och testat, så <b>finns det inga garantier för att den data som visas är korrekt</b>. Valutakurserna tillhandahålls av tredje part och denna app kan inte ge några som helst löften om att visad data är riktig och uppdaterad.\nVidare kan kurserna som tillhandahålls – om korrekta – skilja sig från de som används av din bank.\nTill sist: Fel inträffar. Lita aldrig blint på någon! Med det sagt, så kan du lita på att jag aldrig hade släppt appen om jag hade haft minsta tvekan om huruvida den fungerar om tänkt.</string>
-
-
     <string name="donate_title">Stöd utvecklaren</string>
     <string name="donate_summary">Donera via PayPal</string>
     <string name="rate_title">Betygssätt appen</string>
     <string name="rate_summary">Om du vill så kan du bidra till att fler upptäcker Currencies. Tryck här för att betygssätta appen på Google Play.</string>
     <string name="category_versioninfo">Info om version</string>
     <string name="title_changelog">Ändringslogg</string>
+    <string name="language_fa">Persiska</string>
+    <string name="language_zh_TW">Kinesiska (traditionell)</string>
+    <string name="api_open_exchangerates_api_key_message">För att använda denna källa så behöver du skapa en personlig API-nyckel\n\nFör att göra det, gå till https://openexchangerates.org/signup/free och skapa ett gratiskonto.\nSkapa sedan ett nytt App ID inne i din Dashboard och ange den här:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API-nyckel krävs</i></string>
+    <string name="sourcecode_title">Källkod</string>
+    <string name="sourcecode_summary">Denna app är öppen källkod. Gå till källkodsförrådet nedan för att öppna ärenden, få reda på hur man bidrar eller ta en titt på källkoden.</string>
 </resources>
