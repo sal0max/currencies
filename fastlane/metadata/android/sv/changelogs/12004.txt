@@ -1,0 +1,1 @@
+- Åtgärdade felaktiga värden för skillnad i procent i tidslinjesgrafsvyn.

@@ -1,0 +1,3 @@
+- Åtgärdade layout-problem på enheter med Android 15.
+- Åtgärdade ett problem där navigationsknapparna var dolda på äldre Android-versioner.
+- Mindre designförbättringar.

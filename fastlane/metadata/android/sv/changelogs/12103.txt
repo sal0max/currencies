@@ -1,0 +1,3 @@
+- Åtgärdat: Bakåtknappen stängde inte appen.
+- Uppdaterade översättningar.
+- Övergripande förbättringar.

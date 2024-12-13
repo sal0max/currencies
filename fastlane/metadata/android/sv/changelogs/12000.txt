@@ -1,0 +1,2 @@
+- Nytt ytterligare API: InforEuro som tillhandahåller EU-kommissionens officiella månadsvisa räkenskapskurser för euron och över 150 motsvarande omräkningskurser.
+- Åtgärdade layout-problem på vissa vikbara enheter.

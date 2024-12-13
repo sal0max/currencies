@@ -1,0 +1,2 @@
+- Uppdaterade översättningar
+- Åtgärdade historiska växelkurser med Norges Bank.

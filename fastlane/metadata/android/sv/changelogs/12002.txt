@@ -1,0 +1,2 @@
+- Åtgärdade felaktig tidslinjesdata med InforEuro-API:et.
+- Uppdaterade översättningar.

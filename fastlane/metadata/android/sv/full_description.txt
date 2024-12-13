@@ -1,12 +1,16 @@
 Currencies är en enkel och intuitiv valutakursomräknare. Den är inte avsedd för att användas för finansiella realtidsaffärer, utan däremot som ett smidigt hjälpmedel på t.ex. semestrar.
 
 - Appen stöder alla relevanta valutor. Det går att välja mellan flera dataleverantörer för kursdata:
-   - exchangerate.host med över 160 valutor
    - frankfurter.app med över 30 valutor, tillhandahållen av Europeiska centralbanken.
+   - OpenExchangerates består av över 160 valutor, med timvis uppdatering
+   - InforEuro tillhandahåller EU-kommissions officiella månadsvis räkenskapskurser för euron och över 150 motsvarande omräkningskurser
+   - Bank of Canada tillhandahåller 23 valutakurser från den kanadensiska centralbanken
+   - Den norska centralbanken "Norges Bank" listar 40 växelkurser
+   - The Russian Central Bank "Bank Rossii" gives probably the most reliable data of exchange rates to Russian Ruble. Some 44 exchange rates are listed
 - Användargränssnittet är enkelt, och följer Material 3-design.
-- Valutakurshistorik: Se diagrammet för det senaste året, för att se hur valutakurserna har utvecklats.
+- Valutakurshistorik: Se grafen för det senaste året, för att se hur valutakurserna har utvecklats.
 - Historiska kurser: Du kan ta fram kurser från tidigare datum.
 - Den inbyggda kalkylatorn är en betydande funktion. Användbar för att t.ex. dela upp en restaurangnota.
-- Växlingspåslagskalkylator: Det går att lägga till avgift för växlingspåslag till alla beräkningar.
+- Avgiftskalkylator: Det går att lägga till avgift för växlingspåslag till alla beräkningar.
 - Currencies har kodats för Android i Kotlin, med stöd för Android 13 samt mörka och ljusa färgteman.
 - Appen är reklamfri och spionerar inte på användaren.
