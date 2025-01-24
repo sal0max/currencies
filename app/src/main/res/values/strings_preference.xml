@@ -32,6 +32,7 @@
     <string name="language_de">German</string>
     <string name="language_el">Greek</string>
     <string name="language_en">English</string>
+    <string name="language_en_GB">English (United Kingdom)</string>
     <string name="language_eo">Esperanto</string>
     <string name="language_es">Spanish</string>
     <string name="language_fa">Persian</string>
