@@ -17,7 +17,7 @@
     <string name="name_bgn">Bulgarian Lev</string>
     <string name="name_bhd">Bahraini Dinar</string>
     <string name="name_bif">Burundian Franc</string>
-    <string name="name_bmd">Bermudan Dollar</string>
+    <string name="name_bmd">Bermudian Dollar</string>
     <string name="name_bnd">Brunei Dollar</string>
     <string name="name_bob">Bolivian Boliviano</string>
     <string name="name_brl">Brazilian Real</string>
@@ -62,7 +62,7 @@
     <string name="name_ghs">Ghanaian Cedi</string>
     <string name="name_gip">Gibraltar Pound</string>
     <string name="name_gmd">Gambian Dalasi</string>
-    <string name="name_gnf">Guinean Franc</string>
+    <string name="name_gnf">Guinea Franc</string>
     <string name="name_gtq">Guatemalan Quetzal</string>
     <string name="name_gyd">Guyanaese Dollar</string>
 
@@ -86,7 +86,7 @@
     <string name="name_jpy">Japanese Yen</string>
 
     <string name="name_kes">Kenyan Shilling</string>
-    <string name="name_kgs">Kyrgystani Som</string>
+    <string name="name_kgs">Kyrgyzstani Som</string>
     <string name="name_khr">Cambodian Riel</string>
     <string name="name_kmf">Comorian Franc</string>
     <string name="name_kpw">North Korean Won</string>
@@ -154,8 +154,8 @@
     <string name="name_sos">Somali Shilling</string>
     <string name="name_srd">Surinamese Dollar</string>
     <string name="name_ssp">South Sudanese Pound</string>
-    <string name="name_std">São Tomé &amp; Príncipe Dobra (1977–2017)</string>
-    <string name="name_stn">São Tomé &amp; Príncipe Dobra</string>
+    <string name="name_std">São Tomé and Príncipe Dobra (1977–2017)</string>
+    <string name="name_stn">São Tomé and Príncipe Dobra</string>
     <string name="name_svc">Salvadoran Colón</string>
     <string name="name_syp">Syrian Pound</string>
     <string name="name_szl">Swazi Lilangeni</string>
