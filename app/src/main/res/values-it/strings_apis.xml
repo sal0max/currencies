@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="api_bankOfCanada_descriptionShort">Circa 23 tassi di cambio\nFonte: Central Bank of Canada</string>
-
-
-
-
-
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> ricava i tassi di cambio da vari fornitori di dati finanziari e banche, compresa la Banca Centrale Europea. Tutti i dati sui tassi di cambio sono forniti in dati midpoint. I tassi midpoint sono determinati calcolando il tasso medio mediano di Bid e Ask.\n <b>Sono incluse circa 160 valute.</b></string>
     <string name="api_exchangerateHost_descriptionUpdateInterval">I tassi di cambio sono aggiornati intorno alla mezzanotte UTC ogni giorno lavorativo.</string>
     <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> è un servizio relativamente nuovo, che (proprio come Frankfurter.app) tiene traccia dei tassi di cambio di riferimento (forex) che sono pubblicati dalla Banca Centrale Europea.\n<b>Circa 30 valute sono incluse.</b></string>
     <string name="api_ferEe_descriptionUpdateInterval">Le tariffe sono aggiornate ogni giorno lavorativo.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tiene traccia dei tassi di cambio di riferimento (forex) pubblicati dalla Banca Centrale Europea.\n<b>Circa 30 valute sono incluse.</b></string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">I dati vengono aggiornati intorno alle 16:00 CET ogni giorno lavorativo.</string>
-
     <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_it"><b>InforEuro</b></a> fornisce il tasso contabile ufficiale mensile della Commissione europea per l\'euro e i tassi di conversione stabiliti dal contabile della Commissione europea in linea con l\'articolo 19 del regolamento finanziario.\nI tassi sono utilizzati per calcolare gli importi per il rimborso delle spese sostenute, le spese di viaggio o di soggiorno per le persone esterne che partecipano a riunioni, colloqui, ecc. su richiesta della Commissione europea.\n<b>Sono incluse circa 150 valute.</b></string>
     <string name="api_inforEuro_descriptionShort">Circa 150 tassi di cambio\nFonte: Commissione Europea</string>
     <string name="api_inforEuro_descriptionUpdateInterval">I tassi indicati sono i tassi di mercato per il penultimo giorno del mese precedente, indicati dalla Banca centrale europea o, in funzione della disponibilità, forniti dalle delegazioni o da altre fonti appropriate vicino a tale data.</string>
-
-
-
-
-
-
-
-
-
+    <string name="api_bankOfCanada_descriptionUpdateInterval">I tassi sono pubblicati una volta ogni giorno lavorativo entro le 16:30 ET</string>
+    <string name="api_bankRossii_descriptionShort">Circa 44 tassi di cambio\nFonte: Banca centrale della Russia</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">Le tariffe sono aggiornate quotidianamente, tranne nei <a href="https://cbr.ru/eng/other/holidays/">giorni festivi in Russia</a>.</string>
+    <string name="api_frankfurterApp_descriptionShort">Circa 30 tassi di cambio\nFonte: Banca Centrale Europea</string>
+    <string name="api_inforEuro_hint">I tassi vengono aggiornati solo una volta al mese!</string>
+    <string name="api_norgesBank_descriptionShort">Circa 40 tassi di cambio\nFonte: Banca centrale della Norvegia</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">L\'orario di pubblicazione dei tassi di cambio giornalieri è circa alle 16:00 CET.</string>
+    <string name="api_norgesBank_hint">Il servizio ha regolarmente dei tempi di inattività (HTTP 503), durante i quali i tassi non possono essere aggiornati!</string>
+    <string name="api_openExchangeRates_descriptionShort">Circa 160 tassi di cambio\nFonte: Combinazione di più fornitori affidabili.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Aggiornamenti orari.</string>
+    <string name="api_openExchangeRates_hint">Per utilizzare questa fonte, è necessario creare una chiave API personale!</string>
+    <string name="api_openExchangeRates_descriptionFull">I dati sono tracciati e combinati da più fonti affidabili, per garantire tassi imparziali. Vedi <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> per più informazioni.\n<b>Open Exchange Rates fornisce una grande quantità di circa 160 tassi di cambio.\n<i>Per utilizzare questa fonte, è necessario inserire la propria chiave API personale!</i></b></string>
+    <string name="api_bankOfCanada_descriptionFull">Tassi di cambio medi giornalieri della <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.\n<b>Sono incluse circa 23 valute.</b></string>
+    <string name="api_bankRossii_descriptionFull">Tassi di cambio, come forniti dalla banca centrale russa <a href="https://cbr.ru/eng/currency_base/daily/"><b>Bank Rossii</b></a>. Con le attuali sanzioni, questa fonte fornisce probabilmente i tassi di cambio più affidabili per il Rublo russo.\n<b>Bank Rossii elenca circa 44 tassi di cambio.</b></string>
+    <string name="api_norgesBank_descriptionFull">Tassi di cambio, forniti dalla banca centrale norvegese <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>.\n<b>Norges Bank elenca circa 40 tassi di cambio.</b></string>
 </resources>
