@@ -16,4 +16,6 @@
     <string name="menu_refresh">রিফ্রেশ হার</string>
     <string name="menu_timeline">বিনিময় হার চার্ট</string>
     <string name="tooltip_filter_starred">শুধুমাত্র তারকাচিহ্নিত মুদ্রা দেখান।</string>
+    <string name="error_empty_response">এই অনুরোধের জন্য সার্ভারে কোন তথ্য নেই।</string>
+    <string name="error_try_another_api">তবে, পছন্দসমূহে অন্যান্য তথ্য সরবরাহকারী আছে। শুধু চেষ্টা করেই দেখো!</string>
 </resources>
