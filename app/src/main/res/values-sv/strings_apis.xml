@@ -24,4 +24,5 @@
     <string name="api_openExchangeRates_hint">För att använda denna källa så behöver du skapa en personlig API-nyckel!</string>
     <string name="api_norgesBank_descriptionFull">Växelkurser tillhandahållna av norska centralbanken <a href="https://www.norges-bank.no/tema/Statistikk/Valutakurser/"><b>Norges Bank</b></a>.\n<b>Norges Bank listar runt 40 växelkurser.</b></string>
     <string name="api_openExchangeRates_descriptionFull">Data följs och kombineras från flera pålitliga källor, vilket ger opartiska växelkurser. Se <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> för mer information.\n<b>Open Exchange Rates tillhandahåller hela 160 växelkurser.\n<i>För att använda denna källa så behöver du ange din personliga API-nyckel!</i></b></string>
+    <string name="api_bankRossii_descriptionFull">Växelkurser som tillhandahålls av den Ryska centralbanken &lt;a href=\"https://cbr.ru/eng/currency_base/daily/\"&gt;Bank Rossi&lt;/b&gt;&lt;/a&gt;. Med de nuvarande sanktionerna så ger den här källan förmodligen de mest pålitliga växlingskurserna för Rysk Rubel.\n&lt;b&gt;Bank Rossii listar 44 växlingskurser.&lt;/b&gt;</string>
 </resources>
