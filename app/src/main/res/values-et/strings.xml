@@ -1,2 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="error_http">Päringuvastuseks serverist oli http-olekukood %d.</string>
+    <string name="tooltip_filter_starred">Näita vaid lemmikuks märgitud valuutasid.</string>
+    <string name="error_generic">Tundmatu probleem.</string>
+    <string name="error">Viga: %s</string>
+    <string name="error_timeout">Server ei vastanud päringule etteantud aja jooksul või polnud leitav.</string>
+</resources>
