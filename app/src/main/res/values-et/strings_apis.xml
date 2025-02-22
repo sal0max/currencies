@@ -1,2 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">Uued kursid avaldatakse igal äripäeval 16:30 ET (EST: UTC-05:00; EDT UTC-04:00)</string>
+    <string name="api_bankOfCanada_descriptionShort">23 vahetuskurssi\nAndmeallikas: Kanada Keskpank (Central Bank of Canada)</string>
+    <string name="api_bankOfCanada_descriptionFull"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Kanada Keskpanga</b></a> igapäevased keskmised vahetuskursid.\n<b>Valuutasid: 23</b></string>
+</resources>
