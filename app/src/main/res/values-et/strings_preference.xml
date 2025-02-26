@@ -55,4 +55,12 @@
     <string name="category_versioninfo">Versiooniteave</string>
     <string name="rate_title">Hinda seda rakendust</string>
     <string name="rate_summary">Kui soovid, et ka teised kasutajad leiaks selle rakenduse, siis klõpsi siin ja hinda seda Google Plays.</string>
+    <string name="previewConversion_summary">Näita valuutavalijas iga vääringu kohta viimast vahetuskurssi.</string>
+    <string name="api_title">Andmeteenuse pakkuja</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>Liidestuse võti (API Key) on vajalik</i></string>
+    <string name="disclaimer_title">Lahtiütlus vastutusest</string>
+    <string name="sourcecode_title">Lähtekood</string>
+    <string name="sourcecode_summary">See rakendus põhineb avatud lähtekoodil. Vaata meie lähtekoodi hoidlat, kui soovid lisada veateateid, teha ettepanekuid või kaastööd, aga ka lihtsalt lätekoodi uurimiseks.</string>
+    <string name="donate_title">Toeta arendajat</string>
+    <string name="donate_summary">Rahaline toetus PayPali vahendusel</string>
 </resources>
