@@ -1,2 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
+<resources>
+    <string name="language_ar">araabia keel</string>
+    <string name="language_bg">bulgaaria keel</string>
+    <string name="language_ca">katalaani keel</string>
+    <string name="language_cs">tšehhi keel</string>
+    <string name="language_de">saksa keel</string>
+    <string name="language_el">kreeka keel</string>
+    <string name="language_eo">esperanto keel</string>
+    <string name="language_es">hispaania keel</string>
+    <string name="language_fr">prantsuse keel</string>
+    <string name="language_hr">horvaadi keel</string>
+    <string name="language_hu">ungari keel</string>
+    <string name="language_in">indoneesia keel</string>
+    <string name="language_is">islandi keel</string>
+    <string name="language_it">itaalia keel</string>
+    <string name="language_iw">heebrea keel</string>
+    <string name="language_nb">norra keel</string>
+    <string name="language_nl">hollandi keel</string>
+    <string name="language_pl">poola keel</string>
+    <string name="language_pt_BR">Brasiilia portugali keel</string>
+    <string name="language_ru">vene keel</string>
+    <string name="language_sv">rootsi keel</string>
+    <string name="language_tr">türgi keel</string>
+    <string name="language_uk">ukraina keel</string>
+    <string name="language_vi">vietnami keel</string>
+    <string name="language_zh_CN">hiina keel (lihtsustatud)</string>
+    <string name="language_zh_TW">hiina keel (traditsiooniline)</string>
+    <string name="category_api">Vahetuskursid</string>
+    <string name="language_title">Rakenduse keel</string>
+    <string name="language_en">inglise keel</string>
+    <string name="language_fa">pärsia keel</string>
+    <string name="language_bn">bengali keel</string>
+    <string name="category_settings">Üldised seadistused</string>
+    <string name="fee_title">Valuutavahetuse teenustasu</string>
+    <string name="theme_title">Kujundus</string>
+    <string name="theme_option_light">Hele kujundus</string>
+    <string name="theme_option_dark">Tume kujundus</string>
+    <string name="pure_black_enabled_title">Süsimustad värvid OLED-ekraanide jaoks</string>
+    <string name="fee_summary">Valuutavahetuse kontor või krediitkaardi teenusepakkuja võivad kasutada eri vääringute konverteerimisel teenustasusid, mida sa saad siinkohal lisada. Kasutame seda valuutakursside arvutamisel ja seega saa tead, kui palju sa <i>tegelikult</i> maksad.</string>
+    <string name="previewConversion_title">Konverteerimise eelvaade</string>
+    <string name="category_appearance">Välimus</string>
+    <string name="system_default">Süsteemi välimus</string>
+    <string name="extendedKeypad_title">Laiendatud klahvistik</string>
+    <string name="extendedKeypad_summary">Lisa kaks täiendavat nuppu: <b>00</b>&nbsp;ja&nbsp;<b>000</b>.</string>
+    <string name="pure_black_enabled_summary">Tumeda kujunduse puhul kasuta süsimusta värvi</string>
+    <string name="api_open_exchangerates_api_key_title">Open Exchangerates\'i liidestuse võti (API key)</string>
+    <string name="api_about_title">Rakenduse teave: %s</string>
+    <string name="api_refreshPeriod_title">Uuendamise välp</string>
+    <string name="category_about">Teave selle rakenduse kohta</string>
+    <string name="title_changelog">Muudatuste logi</string>
+    <string name="category_versioninfo">Versiooniteave</string>
+    <string name="rate_title">Hinda seda rakendust</string>
+    <string name="rate_summary">Kui soovid, et ka teised kasutajad leiaks selle rakenduse, siis klõpsi siin ja hinda seda Google Plays.</string>
+</resources>
