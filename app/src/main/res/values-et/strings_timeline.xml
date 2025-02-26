@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="activity_timeline_title"><b>%1$s</b> ⇨ <b>%2$s</b></string>
+    <string name="data_provider">Andmeallikas <b>%s</b></string>
+    <string name="rate_average">keskm.</string>
+    <string name="rate_min">miin.</string>
+    <string name="rate_max">maks.</string>
+    <string name="year">aasta</string>
+    <string name="month">kuu</string>
+    <string name="week">nädal</string>
+</resources>
