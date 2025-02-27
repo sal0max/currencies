@@ -63,4 +63,6 @@
     <string name="sourcecode_summary">See rakendus põhineb avatud lähtekoodil. Vaata meie lähtekoodi hoidlat, kui soovid lisada veateateid, teha ettepanekuid või kaastööd, aga ka lihtsalt lätekoodi uurimiseks.</string>
     <string name="donate_title">Toeta arendajat</string>
     <string name="donate_summary">Rahaline toetus PayPali vahendusel</string>
+    <string name="api_open_exchangerates_api_key_message">Selle andmeallika kasutamiseks pead looma oma isikluku liidestuse võtme (API key).\n\nSelleks palun ava https://openexchangerates.org/signup/free ja loo tasuta konto.\nLõpuks loo juhtpaneelilt uus klienditunnus (App ID) ja sisesta see siia:</string>
+    <string name="disclaimer_summary">Kuigi see rakendus on läbimõeldult kirjutatud ja põhjalikult testitud, siis <b>puudub igasugune garantii, et kuvatavad andmed on korrektsed</b>. vahetuskursid laaditakse kolmandate osapoolete teenustest ja rakendusel pole võimalust kontrollida, et need andmed on õiged ja uuendatud.\nLisaks palun arvesta, et kuigi kuvatavad vahetuskursid on korrektsed, siis ei pruugi need olla täpselt samad, mida sinu pank kasutab.\nKokkuvõtteks: vigu juhtub. Ära usalda pimesi kedagi! Aga samas, ma poleks ju seda rakendust avaldanud, kui ta ei teeks seda, mida ta on mõeldud tegema.</string>
 </resources>
