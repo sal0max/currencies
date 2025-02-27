@@ -1,0 +1,3 @@
+- Töökindlam valuutakursside uuendamine
+- Lisasime vastutust välistav klausli
+- Lisasime selle muudatuste logi

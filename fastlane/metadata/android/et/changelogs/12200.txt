@@ -1,0 +1,5 @@
+- Uus liidestus: OpenExchangerates
+- Eemaldatud liidestus: Fer.ee - polnud enam töökindel
+- Uuendasime tõlkeid
+- Parandasime kasutajaliidest
+- Erinevad sisemise loogika täiendused
