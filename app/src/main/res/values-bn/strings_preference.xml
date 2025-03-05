@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
 
@@ -11,41 +13,8 @@
 
 
     <string name="system_default">সিস্টেম ডিফল্ট</string>
-
-
-
-
-
     <!-- languages -->
     <string name="language_title">অ্যাপ ভাষা</string>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <!-- api -->
 
 
@@ -76,4 +45,22 @@
 
 
 
+<string name="category_settings">সাধারণ পছন্দসমূহ</string>
+    <string name="fee_title">বিদেশি লেনদেন ফি</string>
+    <string name="theme_title">নকশা</string>
+    <string name="theme_option_light">আলো</string>
+    <string name="theme_option_dark">অন্ধকার</string>
+    <string name="language_ar">আরবি</string>
+    <string name="language_bg">বুলগেরীয়</string>
+    <string name="language_bn">বাংলা</string>
+    <string name="language_ca">কাতালান</string>
+    <string name="language_cs">চেক</string>
+    <string name="language_el">গ্রিক</string>
+    <string name="language_en">ইংরেজি</string>
+    <string name="language_eo">এস্পেরান্তো</string>
+    <string name="language_es">স্পেনীয়</string>
+    <string name="language_fa">ফারসি</string>
+    <string name="language_fr">ফরাসি</string>
+    <string name="category_appearance">অবয়ব</string>
+    <string name="language_de">জর্মন</string>
 </resources>
