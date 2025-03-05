@@ -63,4 +63,22 @@
     <string name="language_fr">ফরাসি</string>
     <string name="category_appearance">অবয়ব</string>
     <string name="language_de">জর্মন</string>
+    <string name="fee_summary">তোমার ক্রেডিট কার্ড চুক্তির ওপর ভিত্তি করে, তোমার ব্যাংক বিদেশি লেনদেনের ওপর ফি নিতে পারে। এখানে সেই ফি এর পরিমান দিতে পারো। এটা হিসাবের ওপরে যোগ হবে, যাতে তুমি জানো তোমাকে <i>আসলেই</i> কত টাকা দিতে হবে।</string>
+    <string name="previewConversion_title">রূপান্তরের প্রাকদর্শন</string>
+    <string name="previewConversion_summary">অর্থ রূপান্তরের প্রত্যেকটি হার অর্থ নির্বাচকে দেখাও</string>
+    <string name="language_hr">ক্রোয়েসীয়</string>
+    <string name="language_hu">হানগেরীয়</string>
+    <string name="language_in">ইন্দোনেশীয়</string>
+    <string name="language_it">ইতালীয়</string>
+    <string name="language_is">আইসল্যান্ডীয়</string>
+    <string name="language_nb">নরওয়জীয়</string>
+    <string name="language_nl">ওলন্দাজ</string>
+    <string name="language_pl">পোলিশ</string>
+    <string name="language_ru">রুশ</string>
+    <string name="language_sv">সুইডিশ</string>
+    <string name="language_tr">তুর্কি</string>
+    <string name="language_uk">ইউক্রেনীয়</string>
+    <string name="language_vi">ভিয়েতনামীয়</string>
+    <string name="title_changelog">পরিবর্তনসূচি</string>
+    <string name="disclaimer_title">বিশেষ বিজ্ঞপ্তি</string>
 </resources>
