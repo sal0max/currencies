@@ -1,2 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank.\n<b>About 30 currencies are included.</b></string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">ঘণ্টাপ্রতি হালনাগাদ।</string>
+    <string name="api_frankfurterApp_descriptionShort">প্রায় ৩০টি রূপান্তর হার\nউৎস: ইউরোপীয় কেন্দ্রীয় ব্যাংক</string>
+    <string name="api_openExchangeRates_hint">এই উৎসটি ব্যবহার করতে তোমার ব্যক্তিগত এপিআই কি(চাবি) বানাতে হবে!</string>
+</resources>
