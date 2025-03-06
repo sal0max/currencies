@@ -1,0 +1,2 @@
+- Uus täiendav liidestus: InforEuro tagab Euroopa Komisjoni ametlikud igakuised raamatupidamiskursid euro ja enam kui 150 muu vääringu vahel.
+- Parandasime küljenduse vead, mis ilmnesid mõnede konkreetsete kokkupandavate nutiseadmete puhul.
