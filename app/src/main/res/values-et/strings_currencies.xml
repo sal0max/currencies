@@ -10,7 +10,6 @@
     <string name="name_aud">Austraalia dollar</string>
     <string name="name_awg">Aruba floriin</string>
     <string name="name_azn">Aserbaidžaani manat</string>
-
     <string name="name_bam">Bosnia ja Hertsegoviina konverteeritav mark</string>
     <string name="name_bbd">Barbadose dollar</string>
     <string name="name_bdt">Bangladeshi taka</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">Botswana pula</string>
     <string name="name_byn">Valgevene rubla</string>
     <string name="name_bzd">Belize dollar</string>
-
     <string name="name_cad">Kanada dollar</string>
     <string name="name_cdf">Kongo frank</string>
     <string name="name_chf">Šveitsi frank</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">Kuuba peeso</string>
     <string name="name_cve">Roheneemesaarte eskuudo</string>
     <string name="name_czk">Tšehhi kroon</string>
-
     <string name="name_djf">Djibouti frank</string>
     <string name="name_dkk">Taani kroon</string>
     <string name="name_dop">Dominikaani peeso</string>
     <string name="name_dzd">Alžeeria dinaar</string>
-
     <string name="name_egp">Egiptuse nael</string>
     <string name="name_ern">Eritrea nakfa</string>
     <string name="name_etb">Etioopia birr</string>
     <string name="name_eur">Euro</string>
-
     <string name="name_fjd">Fidži dollar</string>
     <string name="name_fkp">Falklandi saarte nael</string>
     <string name="name_fok">Fääri kroon</string>
-
     <string name="name_gbp">Suurbritannia naelsterling</string>
     <string name="name_gel">Gruusia lari</string>
     <string name="name_ggp">Guernsey nael</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">Guinea frank</string>
     <string name="name_gtq">Guatemala ketsaal</string>
     <string name="name_gyd">Guyana dollar</string>
-
     <string name="name_hkd">Hongkongi dollar</string>
     <string name="name_hnl">Hondurase lempiira</string>
     <string name="name_hrk">Horvaatia kuna</string>
     <string name="name_htg">Haiti gurd</string>
     <string name="name_huf">Ungari forint</string>
-
     <string name="name_idr">Indoneesia ruupia</string>
     <string name="name_ils">Iisraeli uus seekel</string>
     <string name="name_imp">Manxi nael</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">Iraagi dinaar</string>
     <string name="name_irr">Iraani riaal</string>
     <string name="name_isk">Islandi kroon</string>
-
     <string name="name_jep">Jersey nael</string>
     <string name="name_jmd">Jamaika dollar</string>
     <string name="name_jod">Jordaania dinaar</string>
     <string name="name_jpy">Jaapani jeen</string>
-
     <string name="name_kes">Keenia šilling</string>
     <string name="name_kgs">Kõrgõzstani somm</string>
     <string name="name_khr">Kambodža riel</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">Kuveidi dinaar</string>
     <string name="name_kyd">Kaimanisaarte dollar</string>
     <string name="name_kzt">Kasahstani tenge</string>
-
     <string name="name_lak">Laose kiip</string>
     <string name="name_lbp">Liibanoni nael</string>
     <string name="name_lkr">Sri Lanka ruupia</string>
     <string name="name_lrd">Libeeria dollar</string>
     <string name="name_lsl">Lesotho loti</string>
     <string name="name_lyd">Liibüa dinaar</string>
-
     <string name="name_mad">Maroko dirhem</string>
     <string name="name_mdl">Moldova leu</string>
     <string name="name_mga">Madagaskari ariari</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">Mehhiko peeso</string>
     <string name="name_myr">Malaisia ringgit</string>
     <string name="name_mzn">Mosambiigi metikal</string>
-
     <string name="name_nad">Namiibia dollar</string>
     <string name="name_ngn">Nigeeria naira</string>
     <string name="name_nio">Nicaragua córdoba</string>
     <string name="name_nok">Norra kroon</string>
     <string name="name_npr">Nepali ruupia</string>
     <string name="name_nzd">Uus-Meremaa dollar</string>
-
     <string name="name_omr">Omaani riaal</string>
-
     <string name="name_pab">Panama balboa</string>
     <string name="name_pen">Peruu uus sol</string>
     <string name="name_pgk">Paapua Uus-Guinea kina</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">Pakistani ruupia</string>
     <string name="name_pln">Poola zlott</string>
     <string name="name_pyg">Paraguay guaranii</string>
-
     <string name="name_qar">Katari riaal</string>
-
     <string name="name_ron">Rumeenia leu</string>
     <string name="name_rsd">Serbia dinaar</string>
     <string name="name_rub">Venemaa rubla</string>
     <string name="name_rwf">Rwanda frank</string>
-
     <string name="name_sar">Saudi riaal</string>
     <string name="name_sbd">Saalomoni Saarte dollar</string>
     <string name="name_scr">Seišellide ruupia</string>
@@ -159,7 +141,6 @@
     <string name="name_svc">Salvadori koloon</string>
     <string name="name_syp">Süüria nael</string>
     <string name="name_szl">Svaasimaa lilangeni</string>
-
     <string name="name_thb">Tai baat</string>
     <string name="name_tjs">Tadžikistani somoni</string>
     <string name="name_tmt">Türkmenistani manat</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">Trinidadi ja Tobago dollar</string>
     <string name="name_twd">Uus Taiwani dollar</string>
     <string name="name_tzs">Tansaania šilling</string>
-
     <string name="name_uah">Ukraina grivna</string>
     <string name="name_ugx">Uganda šilling</string>
     <string name="name_usd">Ameerika Ühendriikide dollar</string>
     <string name="name_uyu">Uruguay peeso</string>
     <string name="name_uzs">Usbekistani somm</string>
-
     <string name="name_vef">Venezuela tugev boliivar (vana)</string>
     <string name="name_ves">Venezuela boliivar (soberano)</string>
     <string name="name_vnd">Vietnami dong</string>
     <string name="name_vuv">Vanuatu vatu</string>
-
     <string name="name_wst">Samoa tālā</string>
-
     <string name="name_xaf">Kesk-Aafrika frank</string>
     <string name="name_xag">Hõbeda unts</string>
     <string name="name_xau">Kulla unts</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">Pallaadiumi unts</string>
     <string name="name_xpf">CFP frank</string>
     <string name="name_xpt">Plaatina unts</string>
-
     <string name="name_yer">Jeemeni riaal</string>
-
     <string name="name_zar">Lõuna-Aafrika rand</string>
     <string name="name_zmw">Sambia kvatša</string>
     <string name="name_zwl">Zimbabwe dollar</string>
