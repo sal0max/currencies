@@ -7,7 +7,7 @@
     <string name="name_ang">Antilliaanse gulden</string>
     <string name="name_aoa">Angolská kwanza</string>
     <string name="name_ars">Argentinské peso</string>
-    <string name="name_aud">Aussie dolar</string>
+    <string name="name_aud">Australský dolar</string>
     <string name="name_awg">Aruban Florin</string>
     <string name="name_azn">Ázerbájdžánský manat</string>
     <string name="name_bam">Bosna a Hercegovina konvertibilní marka</string>
@@ -16,7 +16,7 @@
     <string name="name_bgn">Bulharský lev</string>
     <string name="name_bhd">Bahrajn dinár</string>
     <string name="name_bif">Burundi Franc</string>
-    <string name="name_bmd">Bermudy dolar</string>
+    <string name="name_bmd">Bermudský dolar</string>
     <string name="name_bnd">Brunei dolar</string>
     <string name="name_bob">Bolivijský boliviano</string>
     <string name="name_brl">Brazilský real</string>
@@ -136,7 +136,7 @@
     <string name="name_sos">Somálský šilink</string>
     <string name="name_srd">Surinamský dolar</string>
     <string name="name_ssp">Jihosúdánská libra</string>
-    <string name="name_std">Svatotomášská dobra (před rokem 2018)</string>
+    <string name="name_std">Svatotomášská dobra (1997–2017)</string>
     <string name="name_stn">Svatotomášská dobra</string>
     <string name="name_svc">Salvadoran tlustého střeva</string>
     <string name="name_syp">Syrská libra</string>
