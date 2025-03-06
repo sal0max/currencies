@@ -10,7 +10,6 @@
     <string name="name_aud">Đô la Úc</string>
     <string name="name_awg">Guilder Aruba</string>
     <string name="name_azn">Manat Azerbaijan</string>
-
     <string name="name_bam">Marks chuyển-đổi của Bosnia và Herzegovina</string>
     <string name="name_bbd">Đô la Barbados</string>
     <string name="name_bdt">Taka Bangladesh</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">Pula Botswana</string>
     <string name="name_byn">Rúp Belarus</string>
     <string name="name_bzd">Đô la Belize</string>
-
     <string name="name_cad">Đô la Canada</string>
     <string name="name_cdf">Franc Congo</string>
     <string name="name_chf">Franc Thụy Sĩ</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">Peso Cuba</string>
     <string name="name_cve">Escudo Cabo Verde</string>
     <string name="name_czk">Koruna Séc</string>
-
     <string name="name_djf">Franc Djibouti</string>
     <string name="name_dkk">Krone Đan Mạch</string>
     <string name="name_dop">Peso Dominica</string>
     <string name="name_dzd">Dinar Algérie</string>
-
     <string name="name_egp">Bảng Ai Cập</string>
     <string name="name_ern">Nakfa Eritrea</string>
     <string name="name_etb">Birr Ethiopia</string>
     <string name="name_eur">Euro</string>
-
     <string name="name_fjd">Đô la Fiji</string>
     <string name="name_fkp">Bảng Falkland</string>
     <string name="name_fok">Krona Faroese</string>
-
     <string name="name_gbp">Bảng Anh</string>
     <string name="name_gel">Lari Gruzia</string>
     <string name="name_ggp">Bảng Guernsey</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">Franc Guinea</string>
     <string name="name_gtq">Quetzal Guatemala</string>
     <string name="name_gyd">Đô la Guyana</string>
-
     <string name="name_hkd">Đô la Hồng Kông</string>
     <string name="name_hnl">Lempira Honduras</string>
     <string name="name_hrk">Kuna Croatia</string>
     <string name="name_htg">Gourde Haiti</string>
     <string name="name_huf">Forint Hungary</string>
-
     <string name="name_idr">Rupiah</string>
     <string name="name_ils">Shekel Israel mới</string>
     <string name="name_imp">Bảng Man</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">Dinar Iraq</string>
     <string name="name_irr">Rial Iran</string>
     <string name="name_isk">Krona Iceland</string>
-
     <string name="name_jep">Đồng bảng Jersey</string>
     <string name="name_jmd">Đô la Jamaica</string>
     <string name="name_jod">Dinar Jordan</string>
     <string name="name_jpy">Yên Nhật</string>
-
     <string name="name_kes">Shilling Kenya</string>
     <string name="name_kgs">Som Kyrgyzstan</string>
     <string name="name_khr">Riel Campuchia</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">Dinar Kuwait</string>
     <string name="name_kyd">Đô la Cayman</string>
     <string name="name_kzt">Tenge Kazakhstan</string>
-
     <string name="name_lak">Kíp Lào</string>
     <string name="name_lbp">Pound Liban</string>
     <string name="name_lkr">Rupee Sri Lanka</string>
     <string name="name_lrd">Đô la Liberia</string>
     <string name="name_lsl">Loti Lesotho</string>
     <string name="name_lyd">Dinar Libya</string>
-
     <string name="name_mad">Dirham Maroc</string>
     <string name="name_mdl">Leu Moldova</string>
     <string name="name_mga">Ariary Malagascar</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">Peso México</string>
     <string name="name_myr">Ringgit Malaysia</string>
     <string name="name_mzn">Metical Mozambique</string>
-
     <string name="name_nad">Đô la Namibia</string>
     <string name="name_ngn">Naira Nigeria</string>
     <string name="name_nio">Córdoba Nicaragua</string>
     <string name="name_nok">Krone Na Uy</string>
     <string name="name_npr">Rupee Nepal</string>
     <string name="name_nzd">Đô la New Zealand</string>
-
     <string name="name_omr">Rial Omani</string>
-
     <string name="name_pab">Balboa Panama</string>
     <string name="name_pen">Sol Peru</string>
     <string name="name_pgk">Kina Papua New Guinea</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">Rupee Pakistan</string>
     <string name="name_pln">Zloty Ba Lan</string>
     <string name="name_pyg">Guaraní Paraguay</string>
-
     <string name="name_qar">Rial Qatar</string>
-
     <string name="name_ron">Leu Romania</string>
     <string name="name_rsd">Dinar Serbia</string>
     <string name="name_rub">Rúp Nga</string>
     <string name="name_rwf">Franc Rwanda</string>
-
     <string name="name_sar">Riyal Ả Rập Xê Út</string>
     <string name="name_sbd">Đô la Solomon</string>
     <string name="name_scr">Rupee Seychelles</string>
@@ -159,7 +141,6 @@
     <string name="name_svc">Salvador Columbus</string>
     <string name="name_syp">Bảng Syria</string>
     <string name="name_szl">Lilangeni (Eswatini/Swaziland)</string>
-
     <string name="name_thb">Baht (Bạt Thái)</string>
     <string name="name_tjs">Somoni Tajikistan</string>
     <string name="name_tmt">Manat Turkmenistan</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">Đô la Trinidad và Tobago</string>
     <string name="name_twd">Đô la Đài Loan (Tân Đài tệ)</string>
     <string name="name_tzs">Shilling Tanzania</string>
-
     <string name="name_uah">Hryvnia Ukraina</string>
     <string name="name_ugx">Shilling Uganda</string>
     <string name="name_usd">Đô la Mỹ</string>
     <string name="name_uyu">Peso Uruguay</string>
     <string name="name_uzs">Som Uzbekistan</string>
-
     <string name="name_vef">Bolívar Venezuela fuerte (cũ)</string>
     <string name="name_ves">Bolívar Venezuela soberano</string>
     <string name="name_vnd">Đồng</string>
     <string name="name_vuv">Vatu</string>
-
     <string name="name_wst">Tala Samoa</string>
-
     <string name="name_xaf">Franc CFA Trung Phi</string>
     <string name="name_xag">Bạc (một Troy ounce)</string>
     <string name="name_xau">Vàng (một Troy ounce)</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">Paladi (Palladium Ounce)</string>
     <string name="name_xpf">CFP Franc</string>
     <string name="name_xpt">Platinum (một Troy ounce)</string>
-
     <string name="name_yer">Rial Yemen</string>
-
     <string name="name_zar">Rand Nam Phi</string>
     <string name="name_zmw">Zambia kwacha</string>
     <string name="name_zwl">Đô la Zimbabwe</string>

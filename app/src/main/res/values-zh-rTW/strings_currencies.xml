@@ -10,7 +10,6 @@
     <string name="name_aud">澳元</string>
     <string name="name_awg">阿魯巴弗羅林</string>
     <string name="name_azn">亞塞拜然馬納特</string>
-
     <string name="name_bam">波赫馬克</string>
     <string name="name_bbd">巴貝多元</string>
     <string name="name_bdt">孟加拉塔卡</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">普拉</string>
     <string name="name_byn">白俄羅斯盧布</string>
     <string name="name_bzd">貝里斯元</string>
-
     <string name="name_cad">加元</string>
     <string name="name_cdf">剛果法郎</string>
     <string name="name_chf">瑞士法郎</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">古巴披索</string>
     <string name="name_cve">維德角埃斯庫多</string>
     <string name="name_czk">捷克克朗</string>
-
     <string name="name_djf">吉布地法郎</string>
     <string name="name_dkk">丹麥克朗</string>
     <string name="name_dop">多明尼加披索</string>
     <string name="name_dzd">阿爾及利亞第納爾</string>
-
     <string name="name_egp">埃及鎊</string>
     <string name="name_ern">奈克法</string>
     <string name="name_etb">衣索比亞比爾</string>
     <string name="name_eur">歐元</string>
-
     <string name="name_fjd">斐濟元</string>
     <string name="name_fkp">福克蘭群島鎊</string>
     <string name="name_fok">法羅群島克朗</string>
-
     <string name="name_gbp">英鎊</string>
     <string name="name_gel">拉里</string>
     <string name="name_ggp">根西鎊</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">幾內亞法郎</string>
     <string name="name_gtq">格查爾</string>
     <string name="name_gyd">圭亞那元</string>
-
     <string name="name_hkd">港幣</string>
     <string name="name_hnl">倫皮拉</string>
     <string name="name_hrk">克羅埃西亞庫納</string>
     <string name="name_htg">海地古德</string>
     <string name="name_huf">福林</string>
-
     <string name="name_idr">印尼盾</string>
     <string name="name_ils">新謝克爾</string>
     <string name="name_imp">曼島鎊</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">伊拉克第納爾</string>
     <string name="name_irr">伊朗里亞爾</string>
     <string name="name_isk">冰島克朗</string>
-
     <string name="name_jep">澤西鎊</string>
     <string name="name_jmd">牙買加幣</string>
     <string name="name_jod">約旦第納爾</string>
     <string name="name_jpy">日元</string>
-
     <string name="name_kes">肯亞先令</string>
     <string name="name_kgs">吉爾吉斯索姆</string>
     <string name="name_khr">瑞爾</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">科威特第納爾</string>
     <string name="name_kyd">開曼元</string>
     <string name="name_kzt">坦吉</string>
-
     <string name="name_lak">寮幣</string>
     <string name="name_lbp">黎巴嫩鎊</string>
     <string name="name_lkr">斯里蘭卡盧比</string>
     <string name="name_lrd">賴比瑞亞元</string>
     <string name="name_lsl">馬洛蒂</string>
     <string name="name_lyd">利比亞第納爾</string>
-
     <string name="name_mad">摩洛哥迪拉姆</string>
     <string name="name_mdl">摩爾多瓦列伊</string>
     <string name="name_mga">阿里亞里</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">墨西哥披索</string>
     <string name="name_myr">令吉</string>
     <string name="name_mzn">梅蒂卡爾</string>
-
     <string name="name_nad">納米比亞元</string>
     <string name="name_ngn">奈拉</string>
     <string name="name_nio">尼加拉瓜科多巴</string>
     <string name="name_nok">挪威克朗</string>
     <string name="name_npr">尼泊爾盧比</string>
     <string name="name_nzd">紐西蘭元</string>
-
     <string name="name_omr">阿曼里亞爾</string>
-
     <string name="name_pab">巴爾波</string>
     <string name="name_pen">秘魯太陽幣</string>
     <string name="name_pgk">吉納</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">巴基斯坦盧比</string>
     <string name="name_pln">茲羅提</string>
     <string name="name_pyg">瓜拉尼</string>
-
     <string name="name_qar">卡達里亞爾</string>
-
     <string name="name_ron">羅馬尼亞列伊</string>
     <string name="name_rsd">塞爾維亞第納爾</string>
     <string name="name_rub">俄羅斯盧布</string>
     <string name="name_rwf">盧安達法郎</string>
-
     <string name="name_sar">沙烏地里亞爾</string>
     <string name="name_sbd">索羅門群島元</string>
     <string name="name_scr">塞席爾盧比</string>
@@ -159,7 +141,6 @@
     <string name="name_svc">薩爾瓦多科朗</string>
     <string name="name_syp">敘利亞鎊</string>
     <string name="name_szl">史鍰</string>
-
     <string name="name_thb">泰銖</string>
     <string name="name_tjs">索莫尼</string>
     <string name="name_tmt">土庫曼馬納特</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">千里達及托巴哥元</string>
     <string name="name_twd">新台幣</string>
     <string name="name_tzs">坦尚尼亞先令</string>
-
     <string name="name_uah">荷林夫納</string>
     <string name="name_ugx">烏干達先令</string>
     <string name="name_usd">美元</string>
     <string name="name_uyu">烏拉圭披索</string>
     <string name="name_uzs">索姆</string>
-
     <string name="name_vef">強勢玻利瓦</string>
     <string name="name_ves">委內瑞拉主權玻利瓦</string>
     <string name="name_vnd">越南盾</string>
     <string name="name_vuv">萬那杜瓦圖</string>
-
     <string name="name_wst">薩摩亞塔拉</string>
-
     <string name="name_xaf">中非法郎</string>
     <string name="name_xag">白銀</string>
     <string name="name_xau">黃金</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">鈀金</string>
     <string name="name_xpf">太平洋法郎</string>
     <string name="name_xpt">鉑金</string>
-
     <string name="name_yer">葉門里亞爾</string>
-
     <string name="name_zar">南非鍰</string>
     <string name="name_zmw">尚比亞克瓦查</string>
     <string name="name_zwl">辛巴威元</string>
