@@ -26,7 +26,7 @@
     <string name="language_de">saksa keel</string>
     <string name="language_el">kreeka keel</string>
     <string name="language_en">inglise keel</string>
-
+    <string name="language_en_GB">inglise keel (Suurbritannia)</string>
     <string name="language_eo">esperanto keel</string>
     <string name="language_es">hispaania keel</string>
     <string name="language_fa">pärsia keel</string>
@@ -40,7 +40,7 @@
     <string name="language_nb">norra keel</string>
     <string name="language_nl">hollandi keel</string>
     <string name="language_pl">poola keel</string>
-    <string name="language_pt_BR">Brasiilia portugali keel</string>
+    <string name="language_pt_BR">portugali keel (Brasiilia)</string>
     <string name="language_ru">vene keel</string>
     <string name="language_sv">rootsi keel</string>
     <string name="language_tr">türgi keel</string>
