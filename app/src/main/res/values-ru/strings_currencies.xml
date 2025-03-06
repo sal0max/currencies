@@ -10,7 +10,6 @@
     <string name="name_aud">Австралийский доллар</string>
     <string name="name_awg">Арубанский флорин</string>
     <string name="name_azn">Азербайджанский манат</string>
-
     <string name="name_bam">Конвертируемая марка Боснии и Герцеговины</string>
     <string name="name_bbd">Барбадосский доллар</string>
     <string name="name_bdt">Бангладешская така</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">Ботсванская пула</string>
     <string name="name_byn">Белорусский рубль</string>
     <string name="name_bzd">Белизский доллар</string>
-
     <string name="name_cad">Канадский доллар</string>
     <string name="name_cdf">Конголезский франк</string>
     <string name="name_chf">Швейцарский франк</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">Кубинское песо</string>
     <string name="name_cve">Эскудо Кабо-Верде</string>
     <string name="name_czk">Чешская крона</string>
-
     <string name="name_djf">Франк Джибути</string>
     <string name="name_dkk">Датская крона</string>
     <string name="name_dop">Доминиканское песо</string>
     <string name="name_dzd">Алжирский динар</string>
-
     <string name="name_egp">Египетский фунт</string>
     <string name="name_ern">Эритрейская накфа</string>
     <string name="name_etb">Эфиопский быр</string>
     <string name="name_eur">Евро</string>
-
     <string name="name_fjd">Доллар Фиджи</string>
     <string name="name_fkp">Фунт Фолклендских островов</string>
     <string name="name_fok">Фарерская крона</string>
-
     <string name="name_gbp">Фунт стерлингов</string>
     <string name="name_gel">Грузинский лари</string>
     <string name="name_ggp">Гернсийский фунт</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">Гвинейский франк</string>
     <string name="name_gtq">Гватемальский кетсаль</string>
     <string name="name_gyd">Гайанский доллар</string>
-
     <string name="name_hkd">Гонконгский доллар</string>
     <string name="name_hnl">Гондурасская лемпира</string>
     <string name="name_hrk">Хорватская куна</string>
     <string name="name_htg">Гаитянский гурд</string>
     <string name="name_huf">Венгерский форинт</string>
-
     <string name="name_idr">Индонезийская рупия</string>
     <string name="name_ils">Новый израильский шекель</string>
     <string name="name_imp">Мэнский фунт</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">Иракский динар</string>
     <string name="name_irr">Иранский риал</string>
     <string name="name_isk">Исландская крона</string>
-
     <string name="name_jep">Джерсийский фунт</string>
     <string name="name_jmd">Ямайский доллар</string>
     <string name="name_jod">Иорданский динар</string>
     <string name="name_jpy">Японская иена</string>
-
     <string name="name_kes">Кенийский шиллинг</string>
     <string name="name_kgs">Киргизский сом</string>
     <string name="name_khr">Камбоджийский риель</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">Кувейтский динар</string>
     <string name="name_kyd">Доллар Каймановых островов</string>
     <string name="name_kzt">Казахский тенге</string>
-
     <string name="name_lak">Лаосский кип</string>
     <string name="name_lbp">Ливанский фунт</string>
     <string name="name_lkr">Шри-ланкийская рупия</string>
     <string name="name_lrd">Либерийский доллар</string>
     <string name="name_lsl">Лоти</string>
     <string name="name_lyd">Ливийский динар</string>
-
     <string name="name_mad">Марокканский дирхам</string>
     <string name="name_mdl">Молдавский лей</string>
     <string name="name_mga">Малагасийский ариари</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">Мексиканское песо</string>
     <string name="name_myr">Малайзийский ринггит</string>
     <string name="name_mzn">Мозамбикский метикал</string>
-
     <string name="name_nad">Доллар Намибии</string>
     <string name="name_ngn">Нигерийская найра</string>
     <string name="name_nio">Никарагуанская кордоба</string>
     <string name="name_nok">Норвежская крона</string>
     <string name="name_npr">Непальская рупия</string>
     <string name="name_nzd">Новозеландский доллар</string>
-
     <string name="name_omr">Оманский риал</string>
-
     <string name="name_pab">Панамский бальбоа</string>
     <string name="name_pen">Перуанский соль</string>
     <string name="name_pgk">Кина Папуа – Новой Гвинеи</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">Пакистанская рупия</string>
     <string name="name_pln">Польский злотый</string>
     <string name="name_pyg">Парагвайский гуарани</string>
-
     <string name="name_qar">Катарский риал</string>
-
     <string name="name_ron">Румынский лей</string>
     <string name="name_rsd">Сербский динар</string>
     <string name="name_rub">Российский рубль</string>
     <string name="name_rwf">Франк Руанды</string>
-
     <string name="name_sar">Саудовский риял</string>
     <string name="name_sbd">Доллар Соломоновых островов</string>
     <string name="name_scr">Сейшельская рупия</string>
@@ -159,7 +141,6 @@
     <string name="name_svc">Сальвадорский колон</string>
     <string name="name_syp">Сирийский фунт</string>
     <string name="name_szl">Свазилендский лилангени</string>
-
     <string name="name_thb">Таиландский бат</string>
     <string name="name_tjs">Таджикский сомони</string>
     <string name="name_tmt">Новый туркменский манат</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">Доллар Тринидада и Тобаго</string>
     <string name="name_twd">Новый тайваньский доллар</string>
     <string name="name_tzs">Танзанийский шиллинг</string>
-
     <string name="name_uah">Украинская гривна</string>
     <string name="name_ugx">Угандийский шиллинг</string>
     <string name="name_usd">Доллар США</string>
     <string name="name_uyu">Уругвайское песо</string>
     <string name="name_uzs">Узбекский сум</string>
-
     <string name="name_vef">Венесуэльский боливар</string>
     <string name="name_ves">Venezuelan Bolívar Soberano</string>
     <string name="name_vnd">Вьетнамский донг</string>
     <string name="name_vuv">Вату Вануату</string>
-
     <string name="name_wst">Самоанская тала</string>
-
     <string name="name_xaf">Франк КФА BEAC</string>
     <string name="name_xag">Серебро</string>
     <string name="name_xau">Золото</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">Палладий</string>
     <string name="name_xpf">Французский тихоокеанский франк</string>
     <string name="name_xpt">Платина</string>
-
     <string name="name_yer">Йеменский риал</string>
-
     <string name="name_zar">Южноафриканский рэнд</string>
     <string name="name_zmw">Замбийская квача</string>
     <string name="name_zwl">Доллар Зимбабве (2009)</string>
