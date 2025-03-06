@@ -33,7 +33,7 @@
     <string name="name_chf">সুইস ফ্রাঁ</string>
     <string name="name_clf">চিলিয়ান উনিদাদেস দি ফোমেন্তো</string>
     <string name="name_clp">চিলি পেসো</string>
-
+    <string name="name_cnh">চীনা রেনমিনবি (অফশোর)</string>
     <string name="name_cny">চীনা য়ুয়ান</string>
     <string name="name_cop">কলোম্বিয়ান পেসো</string>
     <string name="name_crc">কোস্টা রিকা কোলোন</string>
@@ -54,7 +54,7 @@
 
     <string name="name_fjd">ফিজি ডলার</string>
     <string name="name_fkp">ফকল্যান্ড দ্বীপপুঞ্জ পাউন্ড</string>
-
+    <string name="name_fok">ফারোসে ক্রোনা</string>
 
     <string name="name_gbp">ব্রিটিশ পাউন্ড</string>
     <string name="name_gel">জর্জিয়ান লারি</string>
@@ -188,6 +188,7 @@
     <string name="name_xag">সিলভার</string>
     <string name="name_xau">গোল্ড</string>
     <string name="name_xcd">পূর্ব ক্যারাবিয়ান ডলার</string>
+    <string name="name_xdr">বিশেষায়িত ড্র অধিকার</string>
     <string name="name_xof">পশ্চিম আফ্রিকান [CFA] ফ্র্যাঙ্ক</string>
     <string name="name_xpd">প্যালেডিয়াম</string>
     <string name="name_xpf">সিএফপি ফ্র্যাঙ্ক</string>

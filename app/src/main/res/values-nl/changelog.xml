@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.5">
+        <item>Layout-problemen op Android 15 apparaten opgelost.</item>
+        <item>Probleem opgelost waarbij de navigatieknoppen verdwenen op oudere Android versies.</item>
+        <item>Kleine design verbeteringen.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.4">
         <item>Bijgewerkte vertalingen.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.3">
+        <item>Bijgewerkte vertalingen.</item>
+        <item>Canadese Dollar is nu ook beschikbaar met aanbieder Bank of Canada.</item>
+        <item>Nieuwe taal: Farsi</item>
     </string-array>
 
     <string-array name="changelog_1.22.2">

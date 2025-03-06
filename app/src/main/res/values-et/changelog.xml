@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="changelog_1.22.5">
+        <item>Parandasime paigutuse vead Android 15\'ga nutiseadmetes.</item>
+        <item>Parandasime vea, kus vanemate Androidi versioonide puhul liikumise nupud olid peidetud.</item>
+        <item>Väiksemad paigutuse täiendused.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.4">
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.3">
+        <item>Uuendasime tõlkeid.</item>
+        <item>Kanada dollari kursid on nüüd saadaval ka Kanada Panga liidestusest.</item>
+        <item>Uus keel: pärsia keel</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.2">
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.1">
+        <item>Uuendasime tõlkeid.</item>
+        <item>Parandasime vanade kursside laadimise Norra Panga andmetest.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.0">
+        <item>Uus liidestus: OpenExchangerates</item>
+        <item>Eemaldatud liidestus: Fer.ee - polnud enam töökindel</item>
+        <item>Uuendasime tõlkeid</item>
+        <item>Parandasime kasutajaliidest</item>
+        <item>Erinevad sisemise loogika täiendused</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>Parandasime: Tagasi-nupp ei sulgenud rakendust.</item>
+        <item>Uuendasime tõlkeid.</item>
+        <item>Üldised täiendused.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>Uus valitav keel: esperanto!</item>
+        <item>Lisasime raudvaralise klahvistiku toe.</item>
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.1">
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.0">
+        <item>Kuna teenus müüdi ja on nüüd tavaline kommertsteenus, siis eemaldasime Exchangerate.host liidestuse.</item>
+        <item>Selle asemel on mitu uut teenusepakkujat. Proovime rohkem arvestada ametlike andmeallikatega (ehk keskpankadega) ja neid tulevikus juurdegi lisada.</item>
+        <item>Uus: Kanada Keskpank: Bank of Canada</item>
+        <item>Uus: Norra Keskpank: Norges Bank</item>
+        <item>Uus: Venemaa Keskpank: Bank Rossii</item>
+        <item>Nüüd on seadistustes link, mis viitab otse lähtekoodi hoidlale.</item>
+        <item>Üldised täiendused, näiteks parem veakäsitlus ja uuendatud tõlked.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>Parandasime protsentuaalse muudatuse valed väärtused graafikuvaates.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.3">
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>Parandasime InforEuro liidestuse valed ajajoone andmed.</item>
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.1">
+        <item>Uuendasime tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.19.0">
+        <item>Mitmed kasutajaliidese täiendused.</item>
+        <item>Uued keeled: hiina keel 🇨🇳🇹🇼🇸🇬 ja vene keel 🇷🇺🇧🇾.</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.1">
+        <item>Parandasime võimaliku kokkujooksmise Android 11\'s</item>
+    </string-array>
+
+    <string-array name="changelog_1.0.0">
+        <item>Lisasime saksa keele tõlke 🇩🇪</item>
+        <item>Pisike täiustus: rakenduse maht vähenes 50%!</item>
+        <item>Rakendus tundub olema üsna stabiilne: see on nüüd avalik esimene väljalase, versioon 1.0! 🥳🥳🥳</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.2">
+        <item>Väikesed parandused</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.1">
+        <item>Parem vigade käsitlus</item>
+        <item>Pisitäiendused</item>
+    </string-array>
+
+    <string-array name="changelog_0.2.0">
+        <item>Lisasime kopeerimise võimaluse pika vajutusega soovitud väärtusel</item>
+    </string-array>
+
+    <string-array name="changelog_0.1.0">
+        <item>Töökindlam valuutakursside uuendamine</item>
+        <item>Lisasime vastutust välistav klausli</item>
+        <item>Lisasime selle muudatuste logi</item>
+    </string-array>
+
+    <string-array name="changelog_0.0.1">
+        <item>Esmane eelversioon</item>
+    </string-array>
+</resources>

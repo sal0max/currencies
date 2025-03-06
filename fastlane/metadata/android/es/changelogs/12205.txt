@@ -1,0 +1,3 @@
+- Se corrigieron problemas de diseño en dispositivos con Android 15.
+- Se solucionó un problema por el cual los botones de navegación estaban ocultos en versiones anteriores de Android.
+- Pequeñas mejoras de diseño.

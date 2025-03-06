@@ -1,0 +1,16 @@
+Currencies on lihtne ja selge valuutakonverter. Ta pole mõeldud kasutamiseks reaalajas äri korraldamisel, vaid pigem mugavaks abiliseks olukordades, kus valuutateavet on vaja leida (nt reisimisel, suhtlemisel jne).
+
+- Rakendus näitab enamuse vajalike valuutade kursse. sa võid valida mitme andmeallika vahel:
+   - frankfurter.app 30 valuutaga Euroopa Keskpanga vahetuskursside alusel
+   - OpenExchangerates 160 valuutaga, mida uuendatakse kord tunnis
+   - InforEuro Euroopa Komisjoni igakuiste raamatupidamiskurssidega euro ja üle 150 muu valuuta vahel
+   - Kanada Keskpank (Bank of Canada) 23 valuutakursiga
+   - Norra Keskpank (Norges Bank) 40 valuutakursiga
+   - Venemaa Keskpank (Bank Rossii) 44 valuutakursiga
+- Kasutajaliides on lihtne ja põhineb Material 3 kujunduskeelel.
+- Vahetuskursside ajalugu: võid jälgida vahetuskursside muutumist viimase aasta jooksul.
+- Vanad vahetuskurssid: saad otsida konkreetse kuupäeva valuutakurssi.
+- Sisaldab kalkulaatorit, mis teeb mugavaks näiteks restoraniarve jagamise.
+- Teenustasude arvestus: kui soovid, siis saad arvestustele lisada reaalsed teenustasud ja näha tegelikke vahetuskursse.
+- Currencies on kirjutatud Kotliniga Androidi jaoks ning alusplatvormiks on Android 13 ning kasutatavad on hele ja tume kujundus.
+- Rakenduses pole reklaame ja ta ei jälgi kasutaja tegevust.

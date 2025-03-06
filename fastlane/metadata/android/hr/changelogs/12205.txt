@@ -1,0 +1,3 @@
+- Popravljeni problemi s prijelomom na uređajima s Androidom 15.
+- Popravljen problem skrivenih navigacijskih gumba na starijim verzijama Androida.
+- Manji popravci dizajna.

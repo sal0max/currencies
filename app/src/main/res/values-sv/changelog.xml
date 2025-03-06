@@ -1,19 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.5">
+        <item>Åtgärdade layout-problem på enheter med Android 15.</item>
+        <item>Åtgärdade ett problem där navigationsknapparna var dolda på äldre Android-versioner.</item>
+        <item>Mindre designförbättringar.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.4">
         <item>Uppdaterade översättningarna.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.3">
+        <item>Uppdaterade översättningar.</item>
+        <item>Kanadensisk dollar är nu även tillgänglig med Bank of Canada som leverantör.</item>
+        <item>Nytt språk: Persiska</item>
     </string-array>
 
     <string-array name="changelog_1.22.2">
         <item>Uppdaterade översättningarna.</item>
     </string-array>
 
+    <string-array name="changelog_1.22.1">
+        <item>Uppdaterade översättningar</item>
+        <item>Åtgärdade historiska växelkurser med Norges Bank.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.0">
+        <item>Nytt API: OpenExchangerates</item>
+        <item>Borttaget API: Fer.ee - fungerade inte pålitligt längre</item>
+        <item>Uppdaterade översättningar</item>
+        <item>Förbättrat användargränssnitt</item>
+        <item>Blandade förbättringar bakom ytan</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.3">
+        <item>Åtgärdat: Bakåtknappen stängde inte appen.</item>
+        <item>Uppdaterade översättningar.</item>
+        <item>Övergripande förbättringar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.21.2">
+        <item>Nytt valbart språk: Esperanto!</item>
+        <item>Stöd för inmatning från hårdvarutangentbord.</item>
+        <item>Uppdaterade översättningar.</item>
+    </string-array>
+
     <string-array name="changelog_1.21.1">
         <item>Uppdaterade översättningarna.</item>
     </string-array>
 
+    <string-array name="changelog_1.21.0">
+        <item>Tog bort Exchangerate.host eftersom API:et blev sålt och nu är kommersiellt.</item>
+        <item>Istället finns det ett gäng nya dataleverantörer. Vi kommer att fokusera mer på officiella leverantörer (d.v.s. centralbanker) och försöka lägga till ännu fler framöver.</item>
+        <item>Ny: Kanadas centralbank: Bank of Canada</item>
+        <item>Ny: Norges centralbank: Norges Bank</item>
+        <item>Ny: Rysslands centralbank: Bank Rossii</item>
+        <item>Nu så finns det en länk i inställningarna som tar dig direkt till källkodsförrådet.</item>
+        <item>Övergripande förbättringar, som förbättrad felhantering och uppdatera översättningar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.4">
+        <item>Åtgärdade felaktiga värden för skillnad i procent i tidslinjesgrafsvyn.</item>
+    </string-array>
+
     <string-array name="changelog_1.20.3">
         <item>Uppdaterade översättningarna.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.2">
+        <item>Åtgärdade felaktig tidslinjesdata med InforEuro-API:et.</item>
+        <item>Uppdaterade översättningar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.1">
+        <item>Uppdaterade översättningar.</item>
+    </string-array>
+
+    <string-array name="changelog_1.20.0">
+        <item>Nytt ytterligare API: InforEuro som tillhandahåller EU-kommissionens officiella månadsvisa räkenskapskurser för euron och över 150 motsvarande omräkningskurser.</item>
+        <item>Åtgärdade layout-problem på vissa vikbara enheter.</item>
     </string-array>
 
     <string-array name="changelog_1.19.0">

@@ -13,13 +13,13 @@
     <string name="error_no_data">Impossibile connettersi al server.</string>
     <string name="error_empty_response">Il server non ha dati per questa richiesta.</string>
     <string name="error_api_error">Si è verificato un errore API. Si prega di riprovare più tardi.</string>
-
-
-
-
+    <string name="error_try_another_api">Tuttavia, nelle impostazioni è possibile scegliere altri fornitori di dati. Provali!</string>
+    <string name="error_no_api_key">Per utilizzare questa fonte è necessario impostare una chiave API valida.</string>
+    <string name="error_invalid_api_key">HTTP 401 - Verifica la tua chiave API.</string>
+    <string name="error_unsupported_timeline">I dati della timeline non sono supportati da questa API.</string>
     <string name="menu_settings">Impostazioni</string>
-    <string name="menu_refresh">Tassi di aggiornamento</string>
+    <string name="menu_refresh">Aggiorna tassi</string>
     <string name="menu_timeline">Cronologia del tasso di cambio</string>
     <string name="tooltip_filter_starred">Mostra solo le valute stellate.</string>
-
+    <string name="currency_dropdown_api_hint">Manca qualcosa? Diversi fornitori di dati offrono valute diverse. Vai nelle impostazioni per provarne un altro! 🤗</string>
 </resources>

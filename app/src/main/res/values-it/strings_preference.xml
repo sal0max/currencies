@@ -26,8 +26,10 @@
     <string name="language_de">Tedesco</string>
     <string name="language_el">Greco</string>
     <string name="language_en">Inglese</string>
+
     <string name="language_eo">Esperanto</string>
     <string name="language_es">Spagnolo</string>
+    <string name="language_fa">Persiano</string>
     <string name="language_fr">Francese</string>
     <string name="language_hr">Croato</string>
     <string name="language_hu">Ungherese</string>
@@ -49,8 +51,8 @@
     <!-- api -->
     <string name="category_api">Tassi di cambio</string>
     <string name="api_title">Data provider</string>
-
-
+    <string name="api_open_exchangerates_api_key_title">Chiave API Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">Per utilizzare questa fonte, è necessario creare una chiave API personale.\n\nPer farlo, andare su https://openexchangerates.org/signup/free e creare un account gratuito.\nInfine, è sufficiente generare un nuovo ID app nella Dashboard e inserirlo qui:</string>
     <string name="api_open_exchangerates_api_key_missing"><i>Chiave API richiesta</i></string>
     <string name="api_about_title">A proposito di %s</string>
     <string name="api_refreshPeriod_title">Periodo di aggiornamento</string>

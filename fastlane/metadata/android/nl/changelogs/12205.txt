@@ -1,0 +1,3 @@
+- Layout-problemen op Android 15 apparaten opgelost.
+- Probleem opgelost waarbij de navigatieknoppen verdwenen op oudere Android versies.
+- Kleine design verbeteringen.

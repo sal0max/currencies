@@ -1,0 +1,7 @@
+- Kuna teenus müüdi ja on nüüd tavaline kommertsteenus, siis eemaldasime Exchangerate.host liidestuse.
+- Selle asemel on mitu uut teenusepakkujat. Proovime rohkem arvestada ametlike andmeallikatega (ehk keskpankadega) ja neid tulevikus juurdegi lisada.
+- Uus: Kanada Keskpank: Bank of Canada
+- Uus: Norra Keskpank: Norges Bank
+- Uus: Venemaa Keskpank: Bank Rossii
+- Nüüd on seadistustes link, mis viitab otse lähtekoodi hoidlale.
+- Üldised täiendused, näiteks parem veakäsitlus ja uuendatud tõlked.

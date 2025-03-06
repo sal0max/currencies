@@ -16,4 +16,10 @@
     <string name="menu_refresh">Uppdatera kurser</string>
     <string name="menu_timeline">Diagram över valutakurs</string>
     <string name="tooltip_filter_starred">Visa endast favoritvalutor.</string>
+    <string name="error_empty_response">Servern har ingen data för denna förfrågan.</string>
+    <string name="error_try_another_api">Men det finns andra dataleverantörer som du kan välja på i inställningarna. Prova!</string>
+    <string name="error_no_api_key">En giltig API-nyckel måste ha angetts för att kunna använda denna källa.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Kontrollera din API-nyckel.</string>
+    <string name="error_unsupported_timeline">Tidslinjesdata stöds inte med detta API.</string>
+    <string name="currency_dropdown_api_hint">Saknas något? Olika dataleverantörer tillhandahåller olika valutor. Gå till inställningarna och prova en annan! 🤗</string>
 </resources>

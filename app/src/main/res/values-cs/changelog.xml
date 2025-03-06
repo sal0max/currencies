@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.5">
+        <item>Opraveny problémy s rozvržením na zařízeních se systémem Android 15.</item>
+        <item>Opraven problém, kdy byla navigační tlačítka na starších verzích systému Android skrytá.</item>
+        <item>Drobná vylepšení designu.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.4">
         <item>Aktualizovány překlady.</item>
     </string-array>

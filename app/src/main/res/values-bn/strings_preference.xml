@@ -2,48 +2,50 @@
 <!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
 <resources>
     <!-- main settings -->
+    <string name="category_settings">সাধারণ পছন্দসমূহ</string>
+    <string name="fee_title">বিদেশি লেনদেন ফি</string>
+    <string name="fee_summary">তোমার ক্রেডিট কার্ড চুক্তির ওপর ভিত্তি করে, তোমার ব্যাংক বিদেশি লেনদেনের ওপর ফি নিতে পারে। এখানে সেই ফি এর পরিমান দিতে পারো। এটা হিসাবের ওপরে যোগ হবে, যাতে তুমি জানো তোমাকে <i>আসলেই</i> কত টাকা দিতে হবে।</string>
+    <string name="previewConversion_title">রূপান্তরের প্রাকদর্শন</string>
+    <string name="previewConversion_summary">অর্থ রূপান্তরের প্রত্যেকটি হার অর্থ নির্বাচকে দেখাও</string>
 
 
-
-
-
-
-
-
+    <string name="category_appearance">অবয়ব</string>
     <string name="system_default">সিস্টেম ডিফল্ট</string>
-
-
-
+    <string name="theme_title">নকশা</string>
+    <string name="theme_option_light">আলো</string>
+    <string name="theme_option_dark">অন্ধকার</string>
 
 
     <!-- languages -->
     <string name="language_title">অ্যাপ ভাষা</string>
+    <string name="language_ar">আরবি</string>
+    <string name="language_bg">বুলগেরীয়</string>
+    <string name="language_bn">বাংলা</string>
+    <string name="language_ca">কাতালান</string>
+    <string name="language_cs">চেক</string>
+    <string name="language_de">জর্মন</string>
+    <string name="language_el">গ্রিক</string>
+    <string name="language_en">ইংরেজি</string>
 
+    <string name="language_eo">এস্পেরান্তো</string>
+    <string name="language_es">স্পেনীয়</string>
+    <string name="language_fa">ফারসি</string>
+    <string name="language_fr">ফরাসি</string>
+    <string name="language_hr">ক্রোয়েসীয়</string>
+    <string name="language_hu">হানগেরীয়</string>
+    <string name="language_in">ইন্দোনেশীয়</string>
+    <string name="language_is">আইসল্যান্ডীয়</string>
+    <string name="language_it">ইতালীয়</string>
 
+    <string name="language_nb">নরওয়জীয়</string>
+    <string name="language_nl">ওলন্দাজ</string>
+    <string name="language_pl">পোলিশ</string>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <string name="language_ru">রুশ</string>
+    <string name="language_sv">সুইডিশ</string>
+    <string name="language_tr">তুর্কি</string>
+    <string name="language_uk">ইউক্রেনীয়</string>
+    <string name="language_vi">ভিয়েতনামীয়</string>
 
 
     <!-- api -->
@@ -54,18 +56,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     <!-- about -->
 
+    <string name="disclaimer_title">বিশেষ বিজ্ঞপ্তি</string>
 
 
 
@@ -74,6 +67,5 @@
 
 
 
-
-
+    <string name="title_changelog">পরিবর্তনসূচি</string>
 </resources>

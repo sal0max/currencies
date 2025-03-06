@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.5">
+        <item>تم إصلاح مشكلات التخطيط على أجهزة Android 15.</item>
+        <item>تم إصلاح مشكلة إخفاء أزرار التنقل في إصدارات Android الأقدم.</item>
+        <item>تحسينات طفيفة في التصميم.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.4">
         <item>ترجمات محدثة.</item>
     </string-array>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="api_bankOfCanada_descriptionFull"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Kanada Keskpanga</b></a> igapäevased keskmised vahetuskursid.\n<b>Valuutasid: 23</b></string>
+    <string name="api_bankOfCanada_descriptionShort">23 vahetuskurssi\nAndmeallikas: Kanada Keskpank (Central Bank of Canada)</string>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">Uued kursid avaldatakse igal äripäeval 16:30 ET (EST: UTC-05:00; EDT UTC-04:00)</string>
+    <string name="api_bankRossii_descriptionFull"><a href="https://cbr.ru/eng/currency_base/daily/"><b>Vene keskpanga</b></a> vahetuskursid. Sanktsioonide kontekstis võib see olla üks alternatiiv Venemaa rubla kursi hindamiseks.\n<b>Vene keskpanga liidestusest on leitavad 44 valuutakurssi.</b></string>
+    <string name="api_bankRossii_descriptionShort">Umbes 44 vahetuskurssi\nAndmeallikas: Venemaa Föderatsiooni Keskpank</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">Kursid uuenevad iga päev, välja arvatud <a href="https://cbr.ru/eng/other/holidays/">Venemaa riigipühadel</a>.</string>
+    <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> andmeallikaks on erinevad andmekogud ja pankad, sh Euroopa Keskpank. Kõik vahetuskursiandmed on keskpunktiandmed, mis leitakse ostu- ja müügipakkumiste keskmise mediaankursina.\n<b>Kokku leidub 160 valuuta vahetuskursiandmeid.</b></string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">Valuutakursside andmed uuenevad igal äripäeval kesköö paiku GMT/UTC järgi.</string>
+    <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> on üsna uus teenus, mis (samuti nagu Frankfurter.app) jälgib Euroopa Keskpanga avaldatavaid viitekursse.\n<b>Valuutasid: 30.</b></string>
+    <string name="api_ferEe_descriptionUpdateInterval">Kursid uuenevad igal äripäeval.</string>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> jälgib Euroopa Keskpanga avaldatavaid viitekursse.\n<b>Valuutasid: 30.</b></string>
+    <string name="api_frankfurterApp_descriptionShort">Umbes 30 valuuta vahetuskursid\nAndmeallikas: Euroopa Keskpank</string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">Andmed uuenevad igal äripäeval kell 16:00 Kesk-Euroopa aja järgi.</string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a> avaldab Euroopa Komisjoni igakuised ametlikud Euro raamatupidamiskursid ja Euroopa Komisjoni peaarvepidaja koostatud vahetuskursid vastavalt Finantsmääruse artiklile 19.\nNeid vahetuskursse kasutatakse komandeeringu- ja reisikulude hüvitiste maksmiseks isikutele, kes Euroopa Komisjoni palvel on osalenud kohtumistel, koosolekutel, intervjuudel, jmt ettevõtmistel.\n<b>Valuutasid: 150.</b></string>
+    <string name="api_inforEuro_descriptionShort">Umbes 150 valuuta vahetuskursid\nAndmeallikas: Euroopa Komisjon</string>
+    <string name="api_inforEuro_descriptionUpdateInterval">Näidatud valuutakursid on eelmise kuu eelviimase päeva turukursid Euroopa Keskpanga järgi või siis vastavalt andmete saadavusele muudest sobilikest allikatest näidatud kuupäeval või selle läheduses.</string>
+    <string name="api_inforEuro_hint">Kursid uuenevad korda kuus!</string>
+    <string name="api_norgesBank_descriptionFull">Valuutade vahetuskursid, mis on avaldatud <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Banki (Norra Keskpanka)</b></a> lehel.\n<b>Valuutasid: 40.</b></string>
+    <string name="api_norgesBank_descriptionShort">Umbes 40 valuuta vahetuskursid\nAndmeallikas: Norra Keskpank (Norges Bank)</string>
+    <string name="api_norgesBank_descriptionUpdateInterval">Andmed uuenevad igal äripäeval umbes kell 16:00 Kesk-Euroopa aja järgi.</string>
+    <string name="api_norgesBank_hint">Teenus tihtipeale ei toimi (HTTP olekukood 503), mistõttu sel puhul vahetuskursse ei saa uuendada!</string>
+    <string name="api_openExchangeRates_descriptionFull">Andmeid leitakse ja kombineeritakse mitmest usaldusväärsest allikast. Lisateavet leiad <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> lehelt.\n<b>Open Exchange Rates tagab sulle hea ülevaate 160 valuuta vahetuskurssidest.\n<i>Selle andmeallika kasutamiseks peab sul olema isiklik liidestuse tunnus (API Key)!</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">Umbes 160 valuuta vahetuskursid\nAndmeallikas: mitme usaldusväärse allika kombinatsioon.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Andmed uuenevad kord tunnis.</string>
+    <string name="api_openExchangeRates_hint">Selle andmeallika kasutamiseks peab sul olema isiklik liidestuse tunnus (API key)!</string>
+</resources>

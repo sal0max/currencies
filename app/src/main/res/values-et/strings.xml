@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desc_toggle_currencies">lülita vääringuid sisse/välja</string>
+    <string name="rates_date_latest">Valuutakursid &lt;b>%1$s&lt;/b> seisuga teenusest &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Varasemad valuutakursid &lt;b>%1$s&lt;/b> seisuga teenusest &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">Kopeerisime &lt;b>%s&lt;/b> lõikelauale</string>
+    <string name="historical_rates_dialog_title">Varasemad valuutakursid</string>
+    <string name="historical_rates_dialog_toggle">Kasuta kindla kuupäeva vahetuskursse. Kui lülitad selle eelistuse välja, siis näitame vaid viimaseid kursse.</string>
+    <string name="error">Viga: %s</string>
+    <string name="error_generic">Tundmatu probleem.</string>
+    <string name="error_http">Päringuvastuseks serverist oli http-olekukood %d.</string>
+    <string name="error_timeout">Server ei vastanud päringule etteantud aja jooksul või polnud leitav.</string>
+    <string name="error_no_data">Ühenduse loomine serveriga ei õnnestunud.</string>
+    <string name="error_empty_response">Selle päringu vastuseks ei leidu serveris andmeid.</string>
+    <string name="error_api_error">Tekkis serveri liidestuse viga. Palun proovi hiljem uuesti.</string>
+    <string name="error_try_another_api">Lisaks leidub teisigi teenusepakkujaid, mida sa saad seadistustest valida. Katseta ja vaata, mis juhtub!</string>
+    <string name="error_no_api_key">Selle teenusepakkuja kasutamiseks on vaja liidestuse võtit.</string>
+    <string name="error_invalid_api_key">HTTP 401 – Palun kontrolli, et liidestuse võti on õige.</string>
+    <string name="error_unsupported_timeline">See liidestus ei võimalda varasemate andmete kuvamist.</string>
+    <string name="menu_settings">Seadistused</string>
+    <string name="menu_refresh">Uuenda vahetuskursse</string>
+    <string name="menu_timeline">Vahetuskursside graafik</string>
+    <string name="tooltip_filter_starred">Näita vaid lemmikuks märgitud valuutasid.</string>
+    <string name="currency_dropdown_api_hint">Midagi on puudu? Erinevad teenusepakkujad näitavad vahetuskursse erinevate valuutade jaoks. Ava seadistused ning vali mõni muu teenusepakkuja! 🤗</string>
+</resources>
