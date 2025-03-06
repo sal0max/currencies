@@ -76,6 +76,11 @@
         <item>Uuendasime tõlkeid.</item>
     </string-array>
 
+    <string-array name="changelog_1.20.0">
+        <item>Uus täiendav liidestus: InforEuro tagab Euroopa Komisjoni ametlikud igakuised raamatupidamiskursid euro ja enam kui 150 muu vääringu vahel.</item>
+        <item>Parandasime küljenduse vead, mis ilmnesid mõnede konkreetsete kokkupandavate nutiseadmete puhul.</item>
+    </string-array>
+
     <string-array name="changelog_1.19.0">
         <item>Mitmed kasutajaliidese täiendused.</item>
         <item>Uued keeled: hiina keel 🇨🇳🇹🇼🇸🇬 ja vene keel 🇷🇺🇧🇾.</item>
