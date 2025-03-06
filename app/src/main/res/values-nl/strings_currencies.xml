@@ -10,7 +10,6 @@
     <string name="name_aud">Australische dollar</string>
     <string name="name_awg">Arubaanse florin</string>
     <string name="name_azn">Azerbeidzjaanse manat</string>
-
     <string name="name_bam">Bosnische inwisselbare mark</string>
     <string name="name_bbd">Barbadiaanse dollar</string>
     <string name="name_bdt">Bengalese taka</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">Botswaanse pula</string>
     <string name="name_byn">Wit-Russische roebel</string>
     <string name="name_bzd">Belizaanse dollar</string>
-
     <string name="name_cad">Canadese dollar</string>
     <string name="name_cdf">Congolese frank</string>
     <string name="name_chf">Zwitserse frank</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">Cubaanse peso</string>
     <string name="name_cve">Kaapverdische escudo</string>
     <string name="name_czk">Tsjechische kroon</string>
-
     <string name="name_djf">Djiboutiaanse frank</string>
     <string name="name_dkk">Deense kroon</string>
     <string name="name_dop">Dominicaanse peso</string>
     <string name="name_dzd">Algerijnse dinar</string>
-
     <string name="name_egp">Egyptisch pond</string>
     <string name="name_ern">Eritrese nakfa</string>
     <string name="name_etb">Ethiopische birr</string>
     <string name="name_eur">Euro</string>
-
     <string name="name_fjd">Fiji-dollar</string>
     <string name="name_fkp">Falklandeilands pond</string>
     <string name="name_fok">Faeröerse kroon</string>
-
     <string name="name_gbp">Brits pond sterling</string>
     <string name="name_gel">Georgische lari</string>
     <string name="name_ggp">Guernsey pond</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">Guineese frank</string>
     <string name="name_gtq">Guatemalaanse quetzal</string>
     <string name="name_gyd">Guyaanse dollar</string>
-
     <string name="name_hkd">Hongkongse dollar</string>
     <string name="name_hnl">Hondurese lempira</string>
     <string name="name_hrk">Kroatische kuna</string>
     <string name="name_htg">Haïtiaanse gourde</string>
     <string name="name_huf">Hongaarse forint</string>
-
     <string name="name_idr">Indonesische roepia</string>
     <string name="name_ils">Nieuwe Israëlische sjekel</string>
     <string name="name_imp">Manx pond</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">Iraakse dinar</string>
     <string name="name_irr">Iraanse rial</string>
     <string name="name_isk">Ijslandse kroon</string>
-
     <string name="name_jep">Jersey pond</string>
     <string name="name_jmd">Jamaicaanse dollar</string>
     <string name="name_jod">Jordaanse dinar</string>
     <string name="name_jpy">Japanse yen</string>
-
     <string name="name_kes">Keniaanse shilling</string>
     <string name="name_kgs">Kirgizische som</string>
     <string name="name_khr">Cambodjaanse riel</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">Koeweitse dinar</string>
     <string name="name_kyd">Kaaimaneilandse dollar</string>
     <string name="name_kzt">Kazachse tenge</string>
-
     <string name="name_lak">Laotiaanse kip</string>
     <string name="name_lbp">Libanees pond</string>
     <string name="name_lkr">Sri Lankaanse roepie</string>
     <string name="name_lrd">Liberiaanse dollar</string>
     <string name="name_lsl">Lesothaanse loti</string>
     <string name="name_lyd">Libische dinar</string>
-
     <string name="name_mad">Marokkaanse dirham</string>
     <string name="name_mdl">Moldavische leu</string>
     <string name="name_mga">Malagassische ariary</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">Mexicaanse peso</string>
     <string name="name_myr">Maleisische ringgit</string>
     <string name="name_mzn">Mozambikaanse metical</string>
-
     <string name="name_nad">Namibische dollar</string>
     <string name="name_ngn">Nigeriaanse naira</string>
     <string name="name_nio">Nicaraguaanse córdoba Oro</string>
     <string name="name_nok">Noorse kroon</string>
     <string name="name_npr">Nepalese roepie</string>
     <string name="name_nzd">Nieuw-Zeelandse dollar</string>
-
     <string name="name_omr">Omaanse rial</string>
-
     <string name="name_pab">Panamese balboa</string>
     <string name="name_pen">Nieuwe Peruviaanse sol</string>
     <string name="name_pgk">Papoease kina</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">Pakistaanse roepie</string>
     <string name="name_pln">Poolse zloty</string>
     <string name="name_pyg">Paraguayaanse guaraní</string>
-
     <string name="name_qar">Qatarese rial</string>
-
     <string name="name_ron">Roemeense leu</string>
     <string name="name_rsd">Servische dinar</string>
     <string name="name_rub">Russische roebel</string>
     <string name="name_rwf">Rwandese frank</string>
-
     <string name="name_sar">Saoedi-Arabische riyal</string>
     <string name="name_sbd">Salomon-dollar</string>
     <string name="name_scr">Seychelse roepie</string>
@@ -159,7 +141,6 @@
     <string name="name_svc">Salvadoraanse colon</string>
     <string name="name_syp">Syrisch pond</string>
     <string name="name_szl">Swazische lilangeni</string>
-
     <string name="name_thb">Thaise baht</string>
     <string name="name_tjs">Tadzjiekse somoni</string>
     <string name="name_tmt">Turkmeense manat</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">Trinidad en Tobago dollar</string>
     <string name="name_twd">Nieuwe Taiwanese dollar</string>
     <string name="name_tzs">Tanzaniaanse shilling</string>
-
     <string name="name_uah">Oekraïense grivna</string>
     <string name="name_ugx">Oegandese shilling</string>
     <string name="name_usd">Amerikaanse dollar</string>
     <string name="name_uyu">Uruguayaanse peso</string>
     <string name="name_uzs">Oezbeekse sum</string>
-
     <string name="name_vef">Venezolaanse bolívar fuerte (oud)</string>
     <string name="name_ves">Venezolaanse bolívar soberano</string>
     <string name="name_vnd">Vietnamese dong</string>
     <string name="name_vuv">Vanuatuaanse vatu</string>
-
     <string name="name_wst">Samoaanse tala</string>
-
     <string name="name_xaf">CFA-frank BEAC</string>
     <string name="name_xag">Zilver ons</string>
     <string name="name_xau">Goud ons</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">Palladium ons</string>
     <string name="name_xpf">CFP-frank</string>
     <string name="name_xpt">Platina ons</string>
-
     <string name="name_yer">Jemenitische rial</string>
-
     <string name="name_zar">Zuid-Afrikaanse rand</string>
     <string name="name_zmw">Zambiaanse kwacha</string>
     <string name="name_zwl">Zimbabwaanse dollar</string>
