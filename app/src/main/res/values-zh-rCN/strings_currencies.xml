@@ -22,7 +22,7 @@
     <string name="name_bob">玻利维亚诺</string>
     <string name="name_brl">玻利维亚资金</string>
     <string name="name_bsd">巴哈马元</string>
-    <string name="name_btc">Bitcoin</string>
+    <string name="name_btc">比特币</string>
     <string name="name_btn">努扎姆</string>
     <string name="name_bwp">普拉</string>
     <string name="name_byn">白俄罗斯卢布</string>
@@ -86,7 +86,7 @@
     <string name="name_jpy">日元</string>
 
     <string name="name_kes">肯尼亚先令</string>
-    <string name="name_kgs">索姆</string>
+    <string name="name_kgs">吉尔吉斯斯坦索姆</string>
     <string name="name_khr">瑞尔</string>
     <string name="name_kmf">科摩罗法郎</string>
     <string name="name_kpw">朝鲜圆</string>
@@ -154,8 +154,8 @@
     <string name="name_sos">索马里先令</string>
     <string name="name_srd">苏里南元</string>
     <string name="name_ssp">南苏丹镑</string>
-    <string name="name_std">多布拉（旧币）</string>
-    <string name="name_stn">多布拉</string>
+    <string name="name_std">圣多美和普林西比多布拉（旧币）</string>
+    <string name="name_stn">圣多美和普林西比多布拉</string>
     <string name="name_svc">萨尔瓦多科朗</string>
     <string name="name_syp">叙利亚镑</string>
     <string name="name_szl">里兰基尼</string>

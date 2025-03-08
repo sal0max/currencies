@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="api_bankOfCanada_descriptionFull"><a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>加拿大银行</b></a> 的每日平均汇率。\n<b>包括约 23 种货币的汇率。</b></string>
-    <string name="api_bankOfCanada_descriptionShort">提供约 23 种货币的汇率\n来源：加拿大中央银行</string>
+    <string name="api_bankOfCanada_descriptionShort">约 23 种汇率\n来源：加拿大中央银行</string>
     <string name="api_bankOfCanada_descriptionUpdateInterval">汇率在每个工作日 16:30 （美国东部时间）前更新</string>
     <string name="api_bankRossii_descriptionFull">汇率由俄罗斯中央银行<a href="https://cbr.ru/eng/currency_base/daily/"><b>俄罗斯中央银行</b></a>提供。在当前制裁的情况下，该来源提供的俄罗斯卢布汇率可能是最可靠的。\n<b>俄俄罗斯中央银行提供了大约 44 种汇率。</b></string>
-    <string name="api_bankRossii_descriptionShort">提供 44种货币的汇率\n来源：俄罗斯中央银行</string>
+    <string name="api_bankRossii_descriptionShort">约 44 种汇率\n来源：俄罗斯中央银行</string>
     <string name="api_bankRossii_descriptionUpdateInterval">汇率会在<a href="https://cbr.ru/eng/other/holidays/">俄国公众假期</a>之外的时间每日更新。</string>
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> 的货币汇率来自于各种金融数据提供商和银行，包括欧洲中央银行。 所有的汇率数据都是以中点数据的形式交付。中点汇率是通过计算买入和卖出的平均中点汇率确定的。\n<b>包括大约160种货币的数据。</b></string>
     <string name="api_exchangerateHost_descriptionUpdateInterval">汇率在每个工作日的UTC 0点更新。</string>
     <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> 是新汇率源, 和Frankfurter.app一样追踪来自欧洲中央银行的数据。\n<b>包括大约30种货币。</b></string>
     <string name="api_ferEe_descriptionUpdateInterval">数据会在工作日更新。</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> 跟踪欧洲中央银行公布的参考汇率。\n<b>包括大约30种货币。</b></string>
-    <string name="api_frankfurterApp_descriptionShort">提供 30 种汇率\n来源：欧洲中央银行</string>
+    <string name="api_frankfurterApp_descriptionShort">约 30 种汇率\n来源：欧洲中央银行</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">数据会在每个工作日的16:00 （UTC+1）更新。</string>
     <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>InforEuro</b></a>提供欧盟委员会的欧元官方月度核算汇率以及欧盟委员会会计主任根据《财务条例》第 19 条确定的换算率。\n这些汇率用于计算应欧盟委员会要求参加会议、采访等活动的外部人员的费用、差旅费或生活费报销金额。\n<b>包括约 150 种货币。</b></string>
-    <string name="api_inforEuro_descriptionShort">提供约 150 种汇率\n来源：欧盟委员会</string>
+    <string name="api_inforEuro_descriptionShort">约 150 种汇率\n来源：欧盟委员会</string>
     <string name="api_inforEuro_descriptionUpdateInterval">所示汇率为欧洲中央银行公布的上月倒数第二天的市场汇率，或代表团或其他适当来源在该日期前提供的汇率。</string>
     <string name="api_inforEuro_hint">汇率每月仅更新一次！</string>
     <string name="api_norgesBank_descriptionFull">由挪威中央银行<a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>挪威银行</b></a>提供的汇率。\n<b>挪威银行提供了约 40 种汇率。</b></string>
-    <string name="api_norgesBank_descriptionShort">提供约 40 种汇率\n来源：挪威中央银行</string>
+    <string name="api_norgesBank_descriptionShort">约 40 种汇率\n来源：挪威中央银行</string>
     <string name="api_norgesBank_descriptionUpdateInterval">汇率公布时间为每日的 16:00（欧洲中部时间）。</string>
-    <string name="api_norgesBank_hint">服务时不时会出现故障（HTTP 503），出现错误期间汇率来源没法更新！</string>
-    <string name="api_openExchangeRates_descriptionFull">openexchangerates的数据由多个可靠来源跟踪和合并。详情请参阅 <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> 的网站。\n<b>Open Exchange Rates 提供大量约 160 种汇率。\n<i>要使用该资源，您必须输入您的 API Key！</i></b></string>
-    <string name="api_openExchangeRates_descriptionShort">提供约 160 汇率\n来源:综合多处数据来源。</string>
+    <string name="api_norgesBank_hint">服务定期有停机时间（HTTP 503），期间无法刷新汇率来源！</string>
+    <string name="api_openExchangeRates_descriptionFull">数据从多个可靠来源跟踪和合并，确保无偏率。如需更多信息，请参阅 <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a>。\n<b>Open Exchange Rates 提供了大量约 160 种汇率。\n<i>要使用此源，您必须输入您的个人 API 密钥！</i></b></string>
+    <string name="api_openExchangeRates_descriptionShort">约 160 种汇率\n来源：多家可靠提供者的组合。</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">每小时更新。</string>
-    <string name="api_openExchangeRates_hint">需要自己的API Key 才能使用这个来源！</string>
+    <string name="api_openExchangeRates_hint">要使用此源，您必须创建您的个人 API 密钥！</string>
 </resources>
