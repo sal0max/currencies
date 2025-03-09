@@ -10,14 +10,13 @@
     <string name="name_aud">অস্ট্রেলিয়ান ডলার</string>
     <string name="name_awg">আরুবা গিল্ডার</string>
     <string name="name_azn">আজারবাইজান মানাত</string>
-
     <string name="name_bam">বসনিয়া এবং হার্জেগোভিনা বিনিমেয় মার্ক</string>
     <string name="name_bbd">বার্বেডোজ ডলার</string>
     <string name="name_bdt">বাংলাদেশী টাকা</string>
     <string name="name_bgn">বুলগেরীয় লেভ</string>
     <string name="name_bhd">বাহরাইনি দিনার</string>
     <string name="name_bif">বুরুন্ডি ফ্রাঙ্ক</string>
-    <string name="name_bmd">বারমিউডান ডলার</string>
+    <string name="name_bmd">বারমিডীয় ডলার</string>
     <string name="name_bnd">ব্রুনেই ডলার</string>
     <string name="name_bob">বলিভিয়ানো</string>
     <string name="name_brl">ব্রাজিলিয়ান রিয়েল</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">বতসোয়ানা পুলা</string>
     <string name="name_byn">বেলারুশিয়ান রুবেল</string>
     <string name="name_bzd">বেলিজ ডলার</string>
-
     <string name="name_cad">কানাডিয়ান ডলার</string>
     <string name="name_cdf">কঙ্গোলিস ফ্র্যাঙ্ক</string>
     <string name="name_chf">সুইস ফ্রাঁ</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">কিউবান পেসো</string>
     <string name="name_cve">কেপ ভার্দে এসকুডো</string>
     <string name="name_czk">চেক প্রজাতন্ত্র কোরুনা</string>
-
     <string name="name_djf">জিবুতি ফ্রাঙ্ক</string>
     <string name="name_dkk">ড্যানিশ ক্রোন</string>
     <string name="name_dop">ডোমিনিকান পেসো</string>
     <string name="name_dzd">আলজেরীয় দিনার</string>
-
     <string name="name_egp">মিশরীয় পাউন্ড</string>
     <string name="name_ern">এরিট্রিয়েন নাকফা</string>
     <string name="name_etb">ইথিওপিয়ান বির</string>
     <string name="name_eur">ইউরো</string>
-
     <string name="name_fjd">ফিজি ডলার</string>
     <string name="name_fkp">ফকল্যান্ড দ্বীপপুঞ্জ পাউন্ড</string>
     <string name="name_fok">ফারোসে ক্রোনা</string>
-
     <string name="name_gbp">ব্রিটিশ পাউন্ড</string>
     <string name="name_gel">জর্জিয়ান লারি</string>
     <string name="name_ggp">গ্রাঞ্জি পাউন্ড</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">গিনি ফ্রাঙ্ক</string>
     <string name="name_gtq">গুয়াতেমালা কুয়েৎজাল</string>
     <string name="name_gyd">গাইয়েনা ডলার</string>
-
     <string name="name_hkd">হংকং ডলার</string>
     <string name="name_hnl">হন্ডুরাস লেম্পিরা</string>
     <string name="name_hrk">ক্রোয়েশিয়ান কুনা</string>
     <string name="name_htg">হাইতি গৌর্দে</string>
     <string name="name_huf">হাঙ্গেরিয়ান ফোরিন্ট</string>
-
     <string name="name_idr">ইন্দোনেশিয়ান রুপিয়াহ</string>
     <string name="name_ils">ইস্রাইলি নতুন শেকেল</string>
     <string name="name_imp">ম্যাঙ্কস পাউন্ড</string>
@@ -79,13 +71,10 @@
     <string name="name_iqd">ইরাকি দিনার</string>
     <string name="name_irr">ইরানিয়ান রিয়াল</string>
     <string name="name_isk">আইসল্যান্ডীয় ক্রোনা</string>
-
     <string name="name_jep">জার্সি পাউন্ড</string>
     <string name="name_jmd">জামাইকান ডলার</string>
     <string name="name_jod">জর্ডানিয়ান দিনার</string>
     <string name="name_jpy">জাপানি ইয়েন</string>
-
-
     <string name="name_kes">কেনিয়ান শিলিং</string>
     <string name="name_kgs">কিরগিজস্তান সোম</string>
     <string name="name_khr">কম্বোডিয়ান রিয়েল</string>
@@ -95,14 +84,12 @@
     <string name="name_kwd">কুয়েতি দিনার</string>
     <string name="name_kyd">কেম্যান দ্বীপপুঞ্জের ডলার</string>
     <string name="name_kzt">কাজাখাস্তানি টেঙ্গে</string>
-
     <string name="name_lak">লেউশান কিপ</string>
     <string name="name_lbp">লেবানিজ পাউন্ড</string>
     <string name="name_lkr">শ্রীলঙ্কান রুপি</string>
     <string name="name_lrd">লিবেরিয়ান ডলার</string>
     <string name="name_lsl">লেসুটু লোটি</string>
     <string name="name_lyd">লিবিয়ান দিনার</string>
-
     <string name="name_mad">মোরোক্কান দিরহাম</string>
     <string name="name_mdl">মোল্ডোভান লেয়ু</string>
     <string name="name_mga">মাদাগাস্কার আরিয়ারি</string>
@@ -118,16 +105,13 @@
     <string name="name_mxn">ম্যাক্সিকান পেসো</string>
     <string name="name_myr">মালয়েশিয়ান রিঙ্গিৎ</string>
     <string name="name_mzn">মোজাম্বিক মেটিকেল</string>
-
     <string name="name_nad">নামিবিয়া ডলার</string>
     <string name="name_ngn">নাইজেরিয়ান নায়রা</string>
     <string name="name_nio">নিকারাগুয়ান কর্ডোবা</string>
     <string name="name_nok">নরওয়েজিয়ান ক্রোন</string>
     <string name="name_npr">নেপালি রুপি</string>
     <string name="name_nzd">নিউজিল্যান্ড ডলার</string>
-
     <string name="name_omr">ওমানি রিয়াল</string>
-
     <string name="name_pab">পানামা বেলবোয়া</string>
     <string name="name_pen">পেরুভিয়ান সোল</string>
     <string name="name_pgk">পাপুয়া নিউ গিনিয়ান কিনা</string>
@@ -135,14 +119,11 @@
     <string name="name_pkr">পাকিস্তানি রুপি</string>
     <string name="name_pln">পোলিশ জ্লোটি</string>
     <string name="name_pyg">প্যারাগুয়েন গুয়ারানি</string>
-
     <string name="name_qar">কাতার রিয়াল</string>
-
     <string name="name_ron">রুমানিয়া লেয়ু</string>
     <string name="name_rsd">সারবিয়ান দিনার</string>
     <string name="name_rub">রাশিয়ান রুবেল</string>
     <string name="name_rwf">রুয়ান্ডান ফ্রাঙ্ক</string>
-
     <string name="name_sar">সৌদি রিয়াল</string>
     <string name="name_sbd">সলোমন দ্বীপপুঞ্জ ডলার</string>
     <string name="name_scr">সেয়চেল্লোইস রুপি</string>
@@ -150,7 +131,7 @@
     <string name="name_sek">সুইডিশ ক্রোনা</string>
     <string name="name_sgd">সিঙ্গাপুর ডলার</string>
     <string name="name_shp">সেন্ট হেলেনা পাউন্ড</string>
-    <string name="name_sle">Sierra Leonean Leone</string>
+    <string name="name_sle">সিয়েরা লিওনেন লিওন</string>
     <string name="name_sll">সিয়েরালিয়ন লিয়ন</string>
     <string name="name_sos">সোমালি শিলিং</string>
     <string name="name_srd">সুরিনাম ডলার</string>
@@ -160,7 +141,6 @@
     <string name="name_svc">এল স্যালভোডোর কোলোন</string>
     <string name="name_syp">সিরিয়ান পাউন্ড</string>
     <string name="name_szl">সোয়াজিল্যান্ড লিলাঙ্গেনি</string>
-
     <string name="name_thb">থাই বাত</string>
     <string name="name_tjs">তাজিকিস্তান সোমোনি</string>
     <string name="name_tmt">তুর্কমেনিস্তান মানত</string>
@@ -170,20 +150,16 @@
     <string name="name_ttd">ত্রিনিদাদ এবং টোবাগো ডলার</string>
     <string name="name_twd">নতুন তাইওয়ান ডলার</string>
     <string name="name_tzs">তাঞ্জনিয়া শিলিং</string>
-
     <string name="name_uah">ইউক্রেইন হৃভনিয়া</string>
     <string name="name_ugx">উগান্ডান শিলিং</string>
     <string name="name_usd">মার্কিন ডলার</string>
     <string name="name_uyu">উরুগুয়ে পেসো</string>
     <string name="name_uzs">উজবেকিস্তানি সোম</string>
-
     <string name="name_vef">ভেনিজুয়েলীয় বলিভার</string>
     <string name="name_ves">ভেনিজুয়েলীয় বলিভার</string>
     <string name="name_vnd">ভিয়েতনামি ডঙ্গ</string>
     <string name="name_vuv">ভানুয়াতু ভাতু</string>
-
     <string name="name_wst">সামোয়ান টালা</string>
-
     <string name="name_xaf">মধ্য আফ্রিকান [CFA] ফ্র্যাঙ্ক</string>
     <string name="name_xag">সিলভার</string>
     <string name="name_xau">গোল্ড</string>
@@ -193,9 +169,7 @@
     <string name="name_xpd">প্যালেডিয়াম</string>
     <string name="name_xpf">সিএফপি ফ্র্যাঙ্ক</string>
     <string name="name_xpt">প্লাটিনাম</string>
-
     <string name="name_yer">ইয়েমেনি রিয়াল</string>
-
     <string name="name_zar">দক্ষিণ আফ্রিকান রেন্ড</string>
     <string name="name_zmw">জাম্বিয়ান কওয়াচা</string>
     <string name="name_zwl">জিম্বাবুয়ে ডলার (২০০৯)</string>
