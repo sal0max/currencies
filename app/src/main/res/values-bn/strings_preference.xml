@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">সাধারণ পছন্দসমূহ</string>
@@ -7,15 +9,11 @@
     <string name="fee_summary">তোমার ক্রেডিট কার্ড চুক্তির ওপর ভিত্তি করে, তোমার ব্যাংক বিদেশি লেনদেনের ওপর ফি নিতে পারে। এখানে সেই ফি এর পরিমান দিতে পারো। এটা হিসাবের ওপরে যোগ হবে, যাতে তুমি জানো তোমাকে <i>আসলেই</i> কত টাকা দিতে হবে।</string>
     <string name="previewConversion_title">রূপান্তরের প্রাকদর্শন</string>
     <string name="previewConversion_summary">অর্থ রূপান্তরের প্রত্যেকটি হার অর্থ নির্বাচকে দেখাও</string>
-
-
     <string name="category_appearance">অবয়ব</string>
     <string name="system_default">সিস্টেম ডিফল্ট</string>
     <string name="theme_title">নকশা</string>
     <string name="theme_option_light">আলো</string>
     <string name="theme_option_dark">অন্ধকার</string>
-
-
     <!-- languages -->
     <string name="language_title">অ্যাপ ভাষা</string>
     <string name="language_ar">আরবি</string>
@@ -26,7 +24,6 @@
     <string name="language_de">জর্মন</string>
     <string name="language_el">গ্রিক</string>
     <string name="language_en">ইংরেজি</string>
-
     <string name="language_eo">এস্পেরান্তো</string>
     <string name="language_es">স্পেনীয়</string>
     <string name="language_fa">ফারসি</string>
@@ -36,18 +33,14 @@
     <string name="language_in">ইন্দোনেশীয়</string>
     <string name="language_is">আইসল্যান্ডীয়</string>
     <string name="language_it">ইতালীয়</string>
-
     <string name="language_nb">নরওয়জীয়</string>
     <string name="language_nl">ওলন্দাজ</string>
     <string name="language_pl">পোলিশ</string>
-
     <string name="language_ru">রুশ</string>
     <string name="language_sv">সুইডিশ</string>
     <string name="language_tr">তুর্কি</string>
     <string name="language_uk">ইউক্রেনীয়</string>
     <string name="language_vi">ভিয়েতনামীয়</string>
-
-
     <!-- api -->
 
 
@@ -59,13 +52,29 @@
     <!-- about -->
 
     <string name="disclaimer_title">বিশেষ বিজ্ঞপ্তি</string>
-
-
-
-
-
-
-
-
     <string name="title_changelog">পরিবর্তনসূচি</string>
+    <string name="extendedKeypad_title">বর্ধিত কিপ্যাড</string>
+    <string name="extendedKeypad_summary">দুইটি অতিরিক্ত বোতাম যোগ করো: <b>০০</b>&nbsp;এবং&nbsp;<b>০০০</b>।</string>
+    <string name="pure_black_enabled_title">ওলেড অন্ধকার</string>
+    <string name="pure_black_enabled_summary">বিশুদ্ধ কালো ব্যবহার করো অন্ধকার অবস্থায়(মোড)</string>
+    <string name="language_pt_BR">পর্তুগিজ</string>
+    <string name="language_zh_CN">চীনা (সহজকৃত)</string>
+    <string name="language_zh_TW">চীনা (সাধারণ)</string>
+    <string name="category_api">বিনিময় হার</string>
+    <string name="api_title">উপাত্ত সরবরাহকারী</string>
+    <string name="api_about_title">%s সম্পর্কে</string>
+    <string name="api_refreshPeriod_title">হালনাগাদ কাল</string>
+    <string name="sourcecode_title">কোড উৎস</string>
+    <string name="category_versioninfo">সংস্করণ তথ্যা</string>
+    <string name="category_about">এই অ্যাপ সম্পর্কে</string>
+    <string name="donate_title">তৈরিকারককে সহায়তা করো</string>
+    <string name="donate_summary">পেপালে অনুদান দাও</string>
+    <string name="rate_title">এই অ্যাপ পর্যালোচনা করো</string>
+    <string name="api_open_exchangerates_api_key_message">এই উৎসটি ব্যবহার করতে, তোমার একটি ব্যক্তিগত এপিআই চাবি বানাতে হবে।\n\nসেটি করার জন্য, https://openexchangerates.org/signup/free গিয়ে একটি নতুন অ্যাকাউন্ট খুলো।\nসবশেষে, অ্যাপ আইডি উৎপাদন করো পারো ড্যাশবোর্ডে এবং এখানে তা দাও:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>এপিআই চাবি প্রয়োজন</i></string>
+    <string name="language_en_GB">ইংরেজি (যুক্তরাজ্য)</string>
+    <string name="api_open_exchangerates_api_key_title">ওপেন এক্সচেঞ্জরেট এপিআই কি(চাবি)</string>
+    <string name="rate_summary">তুমি চাইলে, অন্যদেরকে কারেন্সি অ্যাপটি সম্পর্কে জানতে সহায়তা করতে পারো। গুগল প্লেতে অ্যাপটি পর্যালোচনা জমা দিতে এখানে টিপ দাও।</string>
+    <string name="sourcecode_summary">এই অ্যাপটি মুক্ত উৎস। কোড ভাণ্ডারে গিয়ে কোন সমস্যা জানাতে পারো, কিভাবে অবদান রাখতে হয় জানতে পারো বা শুধু উৎস দেখতে পারো।</string>
+    <string name="disclaimer_summary">Although the app is very thoroughly written and tested, <b>there is no guarantee that the data it shows is correct</b>. The exchange rates are provided by a third party and this app can\'t make no promise whatsoever that the data is true and up-to-date.\nAdditionally, the rates provided – still if correct – may vary from the ones used by your bank.\nLastly: Mistakes happen. Never blindly trust anyone! That being said, rest assured I wouldn\'t have released this app if I\'ve had any doubt that it works as intended।</string>
 </resources>
