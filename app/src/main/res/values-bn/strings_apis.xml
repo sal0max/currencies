@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> tracks reference exchange (forex) rates published by the European Central Bank.\n<b>About 30 currencies are included.</b></string>
+    <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> ইউরোপীয় কেন্দ্রীয় ব্যাংকের নির্দেশক বিনিময় হার নজরে রাখে।\n<b>প্রায় ৩০টি অর্থ অন্তর্ভুক্ত।</b></string>
     <string name="api_frankfurterApp_descriptionShort">প্রায় ৩০টি রূপান্তর হার\nউৎস: ইউরোপীয় কেন্দ্রীয় ব্যাংক</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">ঘণ্টাপ্রতি হালনাগাদ।</string>
     <string name="api_openExchangeRates_hint">এই উৎসটি ব্যবহার করতে তোমার ব্যক্তিগত এপিআই কি(চাবি) বানাতে হবে!</string>
     <string name="api_bankOfCanada_descriptionShort">২৩টি বিনিময় হার অন্তর্ভুক্ত\nউৎস: কানাডার কেন্দ্রীয় ব্যাংক</string>
     <string name="api_bankOfCanada_descriptionFull">দৈনিক গড় বিনিময় হার <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>ব্যাংক অফ কানাডার</b></a>।\n<b>২৩ টি অর্থ অন্তর্ভুক্ত।</b></string>
     <string name="api_bankOfCanada_descriptionUpdateInterval">বিনিময় হার প্রতি কর্মদিবসের ১৬:৩০ ইটি সময়ে প্রকাশিত হয়</string>
-    <string name="api_bankRossii_descriptionFull">বিনিময় হার, রুশ কেন্দ্রীয় ব্যাংক সরবরাহ করা তথ্যানুযায়ী <a href="https://cbr.ru/eng/currency_base/daily/"><b>ব্যাংক রোসি</b></a>। বর্তমান নিষেধাজ্ঞার জন্য, এই উৎসটি রুশ রুবলের জন্য সম্ভবত সবচেয়ে নির্ভরযোগ্য বিনিময় হার দেয়।\n\n<b>ব্যাংক রোসি ৪৪টির মতো বিনিময় হার তালিকাবদ্ধ করে।</b></string>
+    <string name="api_bankRossii_descriptionFull">বিনিময় হার, রুশ কেন্দ্রীয় ব্যাংক সরবরাহ করা তথ্যানুযায়ী <a href="https://cbr.ru/eng/currency_base/daily/"><b>ব্যাংক রোসি</b></a>। বর্তমান নিষেধাজ্ঞার জন্য, এই উৎসটি রুশ রুবলের জন্য সম্ভবত সবচেয়ে নির্ভরযোগ্য বিনিময় হার দেয়।\n<b>ব্যাংক রোসি ৪৪টির মতো বিনিময় হার তালিকাবদ্ধ করে।</b></string>
+    <string name="api_bankRossii_descriptionShort">প্রায় ৪৪টি বিনিময় হার\nউৎস: রুশ কেন্দ্রীয় ব্যাংক</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">বিনিময় হার দৈনিক ভিত্তিতে হালনাগাদকৃত, <a href="https://cbr.ru/eng/other/holidays/">রুশ জাতীয় ছুটির দিবস</a> ছাড়া।</string>
+    <string name="api_ferEe_descriptionUpdateInterval">প্রতি কর্মদিবসে বিনিময় হার হালনাগাদ হয়।</string>
+    <string name="api_inforEuro_descriptionShort">প্রায় ১৫০ বিনিময় হার\nউৎস: ইউরোপীয় কমিশন</string>
+    <string name="api_inforEuro_hint">বিনিময় হার মাসে একবার মাত্র হালনাগাদ হয়!</string>
+    <string name="api_norgesBank_descriptionShort">প্রায় ৪০টি বিনিময় হার\nউৎস: নরওয়ের কেন্দ্রীয় ব্যাংক</string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">প্রতি কর্মদিবসের ইউটিসি মধ্যরাতে বিনিময় হার হালনাগাদ হয়।</string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">প্রতি কর্মদিবসে ১৬:০০ সিইটি এ তথ্য হালনাগাদ হয়।</string>
+    <string name="api_norgesBank_descriptionFull">বিনিময় হার, নরওয়ে কেন্দ্রীয় ব্যাংক অনুযায়ী <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>নরজেস ব্যাংক</b></a>।\n<b>নরজেস ব্যাংক প্রায় ৪০টি বিনিময় হার তালিকাবদ্ধ করে।</b></string>
+    <string name="api_norgesBank_descriptionUpdateInterval">দৈনিক বিনিময় হার প্রকাশের সময় আনুমানিক ১৬:০০ সিইটি।</string>
+    <string name="api_norgesBank_hint">সেবা প্রায়ই বন্ধ হয়ে যায় (HTTP ৫০৩), তখন বিনিময় হার পাওয়া যায় না!</string>
+    <string name="api_ferEe_descriptionFull"><a href="https://fer.ee/"><b>Fer.ee</b></a> একটি তুলনামূলক নতুন সেবা, এটি (Frankfurter.app এর মতো) ইউরোপীয় কেন্দ্রীয় ব্যাংকের নির্দেশক বিদেশি অর্থ বিনিময় হার নজরে রাখে\n<b>প্রায় ৩০টি অর্থ অন্তর্ভুক্ত।</b></string>
+    <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> বিভিন্ন অর্থনৈতিক উপাত্তর সরবরাহকারী ও ব্যাংক থেকে তথ্য সংগ্রহ করে, ইউরোপীয় কেন্দ্রীয় ব্যাংক সহ। সব বিনিময় হার মধ্যবিন্দু উপাত্তে সরবরাহকৃত। মধ্যবিন্দু উপাত্ত চাহিদা নিলামে চাওয়া ও উঠানো অর্থের গড় মধ্যক হিসাব করে বের করা হয়। \n<b>প্রায় ১৬০টি অর্থ অন্তর্ভুক্ত।</b></string>
+    <string name="api_inforEuro_descriptionFull"><a href="https://commission.europa.eu/funding-tenders/procedures-guidelines-tenders/information-contractors-and-beneficiaries/exchange-rate-inforeuro_en"><b>ইনফোইউরো</b></a> ইউরোপীয় কমিশনের প্রাতিষ্ঠানিক মাসিক অ্যাকাউন্টিং হার ও ইউরো বিনিময় হার প্রকাশ করে, যেভাবে ইউরোপীয় কমিশনের হিসাব নিরীক্ষণ অফিসার নির্ধারণ করেছে, অর্থনৈতিক নীতিমালার নিবন্ধ ১৯ অনুযায়ী।\nএই হার খরচ, ভ্রমণ ও অন্যান্য জিনিসের ব্যয় হিসাবে ব্যবহৃত হয় বাইরের ব্যক্তিদের মিটিং, সাক্ষাৎকার ইত্যাদির জন্য, ইউরোপীয় কমিশনের অনুরোধে।\n<b>প্রায় ১৫০টি অর্থ অন্তর্ভুক্ত।</b></string>
+    <string name="api_inforEuro_descriptionUpdateInterval">মাসের শেষের আগের দিনের বাজারভিত্তিক বিনিময় হার যা ইউরোপীয় কেন্দ্রীয় ব্যাংক বা উপলভ্যতার হিসেবে ওই দিনের কাছাকাছি পাওয়া যায় সেটিকেই নির্দেশ করে এই হার।</string>
+    <string name="api_openExchangeRates_descriptionShort">প্রায় ১৬০টি বিনিময় হার\nউৎস: কতিপয় নির্ভরযোগ্য সরবরাহকারীর সংমিশ্রণে।</string>
+    <string name="api_openExchangeRates_descriptionFull">উপাত্ত কতিপয় নির্ভরযোগ্য উৎস থেকে সংমিশ্রণের মাধ্যমে তৈরি, যা নিরপেক্ষতা নিশ্চিত করে। আরো তথ্যের জন্য <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> দেখো।\n<b>ওপেন এক্সচেঞ্জ রেট ১৬০টি বিনিময় হার নিয়ে অনেককিছু দেখায়\n<i>এই উৎসটি ব্যবহার করতে, ব্যক্তিগত এপিআই কি(চাবি) থাকতে হবে!</i></b></string>
 </resources>
