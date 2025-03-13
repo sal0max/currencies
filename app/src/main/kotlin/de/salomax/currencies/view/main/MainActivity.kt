@@ -15,6 +15,7 @@ import android.view.KeyEvent
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
+import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.DatePicker
 import android.widget.FrameLayout
@@ -25,7 +26,10 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.text.HtmlCompat
+import androidx.core.view.ViewCompat
+import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.doOnLayout
+import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -302,8 +306,7 @@ class MainActivity : BaseActivity() {
             getString(R.string.copied_to_clipboard, copyText),
             HtmlCompat.FROM_HTML_MODE_LEGACY
         ).let {
-            Snackbar.make(this, tvCalculations, it, Snackbar.LENGTH_SHORT)
-                .placeOnTop()
+            Snackbar.make(this, findViewById(R.id.snackbar_top_position), it, Snackbar.LENGTH_SHORT)
                 .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorPrimary, null))
                 .setTextColor(MaterialColors.getColor(this, R.attr.colorOnPrimary, null))
                 .show()
@@ -362,8 +365,7 @@ class MainActivity : BaseActivity() {
         viewModel.getError().observe(this) {
             // error
             it?.let {
-                Snackbar.make(this, tvCalculations, HtmlCompat.fromHtml(it, HtmlCompat.FROM_HTML_MODE_LEGACY), Snackbar.LENGTH_INDEFINITE) // show for 5s
-                    .placeOnTop()
+                Snackbar.make(this, findViewById(R.id.snackbar_top_position), HtmlCompat.fromHtml(it, HtmlCompat.FROM_HTML_MODE_LEGACY), Snackbar.LENGTH_INDEFINITE) // show for 5s
                     .setBackgroundTint(MaterialColors.getColor(this, R.attr.colorError, null))
                     .setTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
                     .setActionTextColor(MaterialColors.getColor(this, R.attr.colorOnError, null))
@@ -489,7 +491,6 @@ class MainActivity : BaseActivity() {
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         // IMPORTANT: can't work with simple keyCodes here, as depending on the keyboard
         // configuration, wrong values will be returned (e.g. KEYCODE_8 instad of KEYCODE_PLUS).
-        @Suppress("MoveVariableDeclarationIntoWhen")
         val key = event?.keyCharacterMap?.get(keyCode, event.metaState)?.let { Char(it) }
         when (key) {
             // numbers
@@ -559,22 +560,6 @@ class MainActivity : BaseActivity() {
                     }
             }
         }
-    }
-
-    /**
-     * Show snackbar at the top instead of the bottom.
-     * Also make it only as wide as the main display is. Looking way better in landscape mode.
-     */
-    private fun Snackbar.placeOnTop(): Snackbar {
-        swipeRefresh.doOnLayout {
-            val view = this.view
-            val params = view.layoutParams as FrameLayout.LayoutParams
-            params.gravity = Gravity.TOP
-            // setting width
-            params.width = it.measuredWidth - this.view.paddingStart - this.view.paddingEnd
-            view.layoutParams = params
-        }
-        return this
     }
 
 }

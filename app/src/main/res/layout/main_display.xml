@@ -11,6 +11,15 @@
         android:layout_height="match_parent"
         android:background="@drawable/bg_display">
 
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:id="@+id/snackbar_top_position"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
         <!-- guideline **************************************************** -->
 
         <androidx.constraintlayout.widget.Guideline
