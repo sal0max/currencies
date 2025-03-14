@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.6">
+        <item>Parandasime veel Android 15 nutiseadmetes tekkinud küljendusvigu.</item>
+        <item>Lisasime uue keele: eesti keel 🇪🇪</item>
+        <item>Parema numbrite kuvamise nimel lisasime Briti inglise keele toe.</item>
+        <item>Erinevad tõlgete täiendused. Tänud tõlkijatele!</item>
+    </string-array>
+
     <string-array name="changelog_1.22.5">
         <item>Parandasime paigutuse vead Android 15\'ga nutiseadmetes.</item>
         <item>Parandasime vea, kus vanemate Androidi versioonide puhul liikumise nupud olid peidetud.</item>
@@ -84,6 +91,49 @@
     <string-array name="changelog_1.19.0">
         <item>Mitmed kasutajaliidese täiendused.</item>
         <item>Uued keeled: hiina keel 🇨🇳🇹🇼🇸🇬 ja vene keel 🇷🇺🇧🇾.</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.2">
+        <item>Lisasime uue keele: ukraina keel 🇺🇦! Suur tänu Bogdanile</item>
+        <item>Kuuba: Aegunud Kuuba konverteeritava peeso (CUC) asemel kuvame kuuba peeso (CUP) andmeid.</item>
+        <item>Palju erinevate tõlgete täiendusi. Suur tänu kõikidele tõlkijatele!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.1">
+        <item>Lisasime uue keele: horvaadi keel 🇭🇷🇧🇦! Väljapaistev töö, Ivan!</item>
+    </string-array>
+
+    <string-array name="changelog_1.18.0">
+        <item>Lisasime rakenduste keelekohase toe (uus funktsionaalsus alates Android 13\'st).</item>
+        <item>Lisaks on rakenduste seadistustes KÕIKIDES nutiseadmetes (sh &lt; Android 13) nüüd keele vahetamise võimalus.</item>
+        <item>Uus keel: katalaani keel 🇪🇸🇦🇩</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.7">
+        <item>Parandasime: tühi muudatuste logi</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.6">
+        <item>Uued tõlked! Islandi keel nazrinilt 🇮🇸, Brasiilia portugali keel Cavernosalt 🇧🇷 ja rootsi keel Samuelilt 🇸🇪. Suurepärane!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.5">
+        <item>Täpsemad vahetuskursid ajaloovaates.</item>
+        <item>Uus keel: poola keel. Suur tänu, ewm! 🇵🇱</item>
+        <item>Palju erinevate tõlgete täiendusi. Suur tänu kõikidele tõlkijatele!</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.4">
+        <item>Senisest parem kujundus (Material 3).</item>
+        <item>Uus keel: tšehhi keel. Suur tänu, Fjuro! 🇨🇿</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.3">
+        <item>Uus keel: heebrea keel. Suur tänu, Yaron! 🇮🇱</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.2">
+        <item>Uus funktsionaalsus: numbrite asetamine lõikelaualt.</item>
     </string-array>
 
     <string-array name="changelog_1.0.1">

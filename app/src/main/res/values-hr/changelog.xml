@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.6">
+        <item>Popravljeni još neki problemi s prijelomom na uređajima s Androidom 15</item>
+        <item>Novi podržani jezik: estonski 🇪🇪</item>
+        <item>Dodana podrška za britanski engleski, za bolji prikaz brojeva.</item>
+        <item>Dorađeni ostali prijevodi. Hvala volonterima!</item>
+    </string-array>
+
     <string-array name="changelog_1.22.5">
         <item>Popravljeni problemi s prijelomom na uređajima s Androidom 15.</item>
         <item>Popravljen problem skrivenih navigacijskih gumba na starijim verzijama Androida.</item>

@@ -1,0 +1,3 @@
+- Lisasime rakenduste keelekohase toe (uus funktsionaalsus alates Android 13'st).
+- Lisaks on rakenduste seadistustes KÕIKIDES nutiseadmetes (sh < Android 13) nüüd keele vahetamise võimalus.
+- Uus keel: katalaani keel 🇪🇸🇦🇩
