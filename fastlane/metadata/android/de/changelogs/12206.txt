@@ -1,0 +1,4 @@
+- Noch mehr Layout-Probleme bei Android 15-Geräten behoben.
+- Neu unterstütze Sprache: Estnisch 🇪🇪
+- Unterstützung für Britisches Englisch hinzugefügt, für verbesserte Darstellung von Zahlen.
+- Verschiedene verbesserte Übersetzungen. Vielen Dank an alle Helfer!
