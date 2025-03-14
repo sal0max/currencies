@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Загальні налаштування</string>
@@ -68,4 +70,5 @@
     <string name="rate_summary">Якщо хочете, ви можете допомогти іншим відкрити для себе Currencies. Натисніть тут, щоб оцінити додаток у Google Play.</string>
     <string name="category_versioninfo">Інформація про версію</string>
     <string name="title_changelog">Історія змін</string>
+    <string name="language_et">Естонська</string>
 </resources>
