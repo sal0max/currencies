@@ -1,0 +1,4 @@
+- Parandasime veel Android 15 nutiseadmetes tekkinud küljendusvigu.
+- Lisasime uue keele: eesti keel 🇪🇪
+- Parema numbrite kuvamise nimel lisasime Briti inglise keele toe.
+- Erinevad tõlgete täiendused. Tänud tõlkijatele!
