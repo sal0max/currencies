@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">常规设置</string>
@@ -68,4 +70,5 @@
     <string name="rate_summary">如果您喜欢此应用，还可以帮助他人发现 Currencies。点击此处在 Google Play 上对应用评价。</string>
     <string name="category_versioninfo">版本信息</string>
     <string name="title_changelog">更新日志</string>
+    <string name="language_et">爱沙尼亚语</string>
 </resources>
