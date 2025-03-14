@@ -67,7 +67,7 @@
     <string name="donate_summary">تبرع عبر PayPal</string>
     <string name="rate_title">قيم هذا التطبيق</string>
     <string name="rate_summary">إذا كنت ترغب في ذلك ، يمكنك مساعدة الآخرين في اكتشاف العملات. انقر هنا لتقييم التطبيق على Google Play.</string>
-    <string name="category_versioninfo">Version info</string>
+    <string name="category_versioninfo"></string>
     <string name="title_changelog">‫سجل التغيير</string>
-    <string name="language_en_GB">English (United Kingdom)</string>
+    <string name="language_en_GB"></string>
 </resources>
