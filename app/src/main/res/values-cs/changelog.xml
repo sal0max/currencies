@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.6">
+        <item>Opraveny další problémy s rozložením na zařízeních se systémem Android 15.</item>
+        <item>Nový podporovaný jazyk: estonština 🇪🇪</item>
+        <item>Přidána podpora britské angličtiny pro lepší zobrazení čísel.</item>
+        <item>Různá vylepšení překladů. Děkujeme všem dobrovolníkům!</item>
+    </string-array>
+
     <string-array name="changelog_1.22.5">
         <item>Opraveny problémy s rozvržením na zařízeních se systémem Android 15.</item>
         <item>Opraven problém, kdy byla navigační tlačítka na starších verzích systému Android skrytá.</item>
