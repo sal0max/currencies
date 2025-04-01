@@ -1,0 +1,4 @@
+- Se corrigieron más problemas de diseño en dispositivos Android 15.
+- Nuevo idioma compatible: Estonio 🇪🇪
+- Se agregó soporte para inglés británico, para una mejor visualización de los números.
+- Varias traducciones mejoradas. ¡Gracias a todos los voluntarios!
