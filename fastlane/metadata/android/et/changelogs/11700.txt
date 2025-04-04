@@ -1,0 +1,1 @@
+- Uus funktsionaalsus: seadistustest on võimalik laiendatud klahvistikule lisada 00 ja 000 nupud. Kasulik vääringute puhul, kus on suured niminaalis, nagu Indoneesia ruupia, Tšiili peeso, Vietnami dong ja Lõuna-Korea vonn.

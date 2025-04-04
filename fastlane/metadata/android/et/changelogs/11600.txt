@@ -1,0 +1,2 @@
+- Uus funktsionaalsus: nüüd saad ajaloolisi vahetuskursse kasutada ka arvutustes.
+- Uus keel: indoneesia keel - suur tänu, @liimee! 🇮🇩🏝️
