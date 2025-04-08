@@ -21,4 +21,5 @@
     <string name="historical_rates_dialog_toggle">Brug valutakurserne fra en specifik dato. Deaktiver for altid at bruge den nyeste kurs.</string>
     <string name="error_no_data">Kunne ikke forbinde til serveren.</string>
     <string name="error_try_another_api">Der er dog andre dataudbydere, du kan vælge mellem i indstillingerne. Prøv det!</string>
+    <string name="currency_dropdown_api_hint">Noget der mangler? Forskellige dataudbydere tilbyder forskellige valutaer. Gå til indstillingerne for at prøve en anden! 🤗</string>
 </resources>
