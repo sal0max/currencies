@@ -1,2 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="activity_timeline_title"><b>%1$s</b> til <b>%2$s</b></string>
+    <string name="data_provider">Data af <b>%s</b></string>
+    <string name="rate_average">gns</string>
+    <string name="rate_min">min</string>
+    <string name="rate_max">maks</string>
+    <string name="year">år</string>
+    <string name="month">måned</string>
+    <string name="week">uge</string>
+</resources>
