@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.6">
+        <item>Se corrigieron más problemas de diseño en dispositivos Android 15.</item>
+        <item>Nuevo idioma compatible: Estonio 🇪🇪</item>
+        <item>Se agregó soporte para inglés británico, para una mejor visualización de los números.</item>
+        <item>Varias traducciones mejoradas. ¡Gracias a todos los voluntarios!</item>
+    </string-array>
+
     <string-array name="changelog_1.22.5">
         <item>Se corrigieron problemas de diseño en dispositivos con Android 15.</item>
         <item>Se solucionó un problema por el cual los botones de navegación estaban ocultos en versiones anteriores de Android.</item>

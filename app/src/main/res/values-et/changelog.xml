@@ -136,6 +136,29 @@
         <item>Uus funktsionaalsus: numbrite asetamine lõikelaualt.</item>
     </string-array>
 
+    <string-array name="changelog_1.17.1">
+        <item>Uus keel #1: bulgaaria keel - suur tänu, Mihail! 🇧🇬</item>
+        <item>Uus keel #2: bengali keel - terviseks, Pratyay! 🇧🇩🇮🇳</item>
+        <item>Uuendasime ka muid tõlkeid.</item>
+    </string-array>
+
+    <string-array name="changelog_1.17.0">
+        <item>Uus funktsionaalsus: seadistustest on võimalik laiendatud klahvistikule lisada 00 ja 000 nupud. Kasulik vääringute puhul, kus on suured niminaalis, nagu Indoneesia ruupia, Tšiili peeso, Vietnami dong ja Lõuna-Korea vonn.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.2">
+        <item>Uus tõlge: ungari keel - suur tänu, József! 🇭🇺</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.1">
+        <item>Uuendatud tõlked.</item>
+    </string-array>
+
+    <string-array name="changelog_1.16.0">
+        <item>Uus funktsionaalsus: nüüd saad ajaloolisi vahetuskursse kasutada ka arvutustes.</item>
+        <item>Uus keel: indoneesia keel - suur tänu, @liimee! 🇮🇩🏝️</item>
+    </string-array>
+
     <string-array name="changelog_1.0.1">
         <item>Parandasime võimaliku kokkujooksmise Android 11\'s</item>
     </string-array>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<resources>
+    <!-- main settings -->
+    <string name="category_settings">Generelle indstillinger</string>
+    <string name="fee_title">Gebyr for udenlandske transaktioner</string>
+
+    <string name="previewConversion_title">Forhåndsvisning af konvertering</string>
+    <string name="previewConversion_summary">Vis den nuværende konverteringsrate for hver valuta i valutavælgeren.</string>
+    <string name="extendedKeypad_title">Udvidet tastatur</string>
+    <string name="extendedKeypad_summary">Tilføj to yderligere knapper: <b>00</b>&nbsp;og&nbsp;<b>000</b>.</string>
+    <string name="category_appearance">Udseende</string>
+    <string name="system_default">Systemstandard</string>
+    <string name="theme_title">Design</string>
+    <string name="theme_option_light">Lys</string>
+    <string name="theme_option_dark">Mørk</string>
+    <string name="pure_black_enabled_title">OLED-mørk</string>
+    <string name="pure_black_enabled_summary">Brug ren sort i mørk tilstand</string>
+    <!-- languages -->
+    <string name="language_title">Appsprog</string>
+    <string name="language_ar">Arabisk</string>
+    <string name="language_bg">Bulgarsk</string>
+    <string name="language_bn">Bengali</string>
+    <string name="language_ca">Catalandsk</string>
+    <string name="language_cs">Tjekkisk</string>
+    <string name="language_de">Tysk</string>
+    <string name="language_el">Græsk</string>
+    <string name="language_en">Engelsk</string>
+    <string name="language_en_GB">Engelsk (Storbritannien)</string>
+    <string name="language_eo">Esperanto</string>
+    <string name="language_es">Spansk</string>
+    <string name="language_et">Estisk</string>
+    <string name="language_fa">Persisk</string>
+    <string name="language_fr">Fransk</string>
+    <string name="language_hr">Kroatisk</string>
+    <string name="language_hu">Ungarsk</string>
+    <string name="language_in">Indonesisk</string>
+    <string name="language_is">Islandsk</string>
+    <string name="language_it">Italiensk</string>
+    <string name="language_iw">Hebraisk</string>
+    <string name="language_nb">Norsk</string>
+    <string name="language_nl">Nederlandsk</string>
+    <string name="language_pl">Polsk</string>
+    <string name="language_pt_BR">Portugisisk (Brasilien)</string>
+    <string name="language_ru">Russisk</string>
+    <string name="language_sv">Svensk</string>
+    <string name="language_tr">Tyrkisk</string>
+    <string name="language_uk">Ukrainsk</string>
+    <string name="language_vi">Vietnamesisk</string>
+    <string name="language_zh_CN">Kinesisk (Forenklet)</string>
+    <string name="language_zh_TW">Kinesisk (Traditionel)</string>
+    <!-- api -->
+    <string name="category_api">Valutakurser</string>
+    <string name="api_title">Dataudbyder</string>
+    <string name="api_open_exchangerates_api_key_title">API-nøgle for Open Exchangerates</string>
+    <string name="api_open_exchangerates_api_key_message">For at bruge denne kilde, skal du oprette en personlig API-nøgle.\n\nFor at gøre det skal du gå ind på https://openexchangerates.org/signup/free og oprette en gratis konto.\nTil sidst skal du blot generere et nyt app-ID i dit Dashboard og indtaste det her:</string>
+    <string name="api_open_exchangerates_api_key_missing"><i>API-nøgle krævet</i></string>
+    <string name="api_about_title">Omkring %s</string>
+    <string name="api_refreshPeriod_title">Opdateringsfrekvens</string>
+    <!-- about -->
+    <string name="category_about">Om denne app</string>
+    <string name="disclaimer_title">Ansvarsfraskrivelse</string>
+
+    <string name="sourcecode_title">Kildekode</string>
+    <string name="sourcecode_summary">Denne app er open source. Gå til kodedatabasen for at anmelde problemer, finde ud af, hvordan du bidrager, eller bare se på kilderne.</string>
+    <string name="donate_title">Støt udvikleren</string>
+    <string name="donate_summary">Donér via PayPal</string>
+    <string name="rate_title">Bedøm denne app</string>
+    <string name="rate_summary">Hvis du vil, kan du hjælpe andre med at finde Valutaer. Klik her for at bedømme appen på Google Play.</string>
+    <string name="category_versioninfo">Versioninformation</string>
+    <string name="title_changelog">Ændringslog</string>
+</resources>

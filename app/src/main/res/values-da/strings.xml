@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="desc_toggle_currencies">slå valutaer til/fra</string>
+    <string name="rates_date_latest">Valutakurser fra &lt;b>%1$s&lt;/b> af &lt;b>%2$s&lt;/b></string>
+    <string name="rates_date_historical">Historiske valutakurser fra &lt;b>%1$s&lt;/b> af &lt;b>%2$s&lt;/b></string>
+    <string name="copied_to_clipboard">Kopieret <b>%s</b> til udklipsholderen</string>
+    <string name="historical_rates_dialog_title">Historiske valutakurser</string>
+    <string name="historical_rates_dialog_toggle">Brug valutakurserne fra en specifik dato. Deaktiver for altid at bruge den nyeste kurs.</string>
+    <string name="error">Fejl: %s</string>
+    <string name="error_generic">Ukendt problem.</string>
+    <string name="error_http">Serveren svarede med HTTP %d.</string>
+    <string name="error_timeout">Serveren svarede ikke i tide eller er ikke tilgængelig.</string>
+    <string name="error_no_data">Kunne ikke forbinde til serveren.</string>
+    <string name="error_empty_response">Serveren har intet data for denne forespørgsel.</string>
+    <string name="error_api_error">Der var en API-fejl. Prøv venligst igen senere.</string>
+    <string name="error_try_another_api">Der er dog andre dataudbydere, du kan vælge mellem i indstillingerne. Prøv det!</string>
+    <string name="error_no_api_key">En gyldig API-nøgle skal indstilles for at kunne bruge denne kilde.</string>
+    <string name="error_invalid_api_key">HTTP 401 - Tjek venligst din API-nøgle.</string>
+    <string name="error_unsupported_timeline">Tidslinjedata understøttes ikke af denne API.</string>
+    <string name="menu_settings">Indstillinger</string>
+    <string name="menu_refresh">Opdatér valutakurser</string>
+    <string name="menu_timeline">Valutakursdiagram</string>
+    <string name="tooltip_filter_starred">Vis kun stjernemarkeret valutaer.</string>
+    <string name="currency_dropdown_api_hint">Noget der mangler? Forskellige dataudbydere tilbyder forskellige valutaer. Gå til indstillingerne for at prøve en anden! 🤗</string>
+</resources>

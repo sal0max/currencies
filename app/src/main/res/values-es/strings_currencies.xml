@@ -17,7 +17,7 @@
     <string name="name_bgn">Leva búlgara</string>
     <string name="name_bhd">Dinar bahreiní</string>
     <string name="name_bif">Franco burundés</string>
-    <string name="name_bmd">Dólar de las Bermudas</string>
+    <string name="name_bmd">Dólar bermudeño</string>
     <string name="name_bnd">Dólar de Brunei</string>
     <string name="name_bob">Bolívico boliviano</string>
     <string name="name_brl">Real brasileño</string>
@@ -154,8 +154,8 @@
     <string name="name_sos">Chelín somalí</string>
     <string name="name_srd">Dólar surinamés</string>
     <string name="name_ssp">Libra sudanesa</string>
-    <string name="name_std">Dobra de Santo Tomé y Príncipe (anterior a 2018)</string>
-    <string name="name_stn">Dobra de Santo Tomé y Príncipe</string>
+    <string name="name_std">Santo Tomé y Príncipe Dobra (1977-2017)</string>
+    <string name="name_stn">Dobra santotomense</string>
     <string name="name_svc">Salvadoran colón</string>
     <string name="name_syp">Libra siria</string>
     <string name="name_szl">Lilangeni suazi</string>
