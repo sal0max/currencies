@@ -1,2 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources></resources>
+<resources>
+    <string name="api_bankOfCanada_descriptionUpdateInterval">Valutakurserne offentliggøres én gang hver arbejdsdag kl. 16:30 ET</string>
+    <string name="api_bankRossii_descriptionShort">Omkring 44 valutakurser\nKilde: Russiske centralbank</string>
+    <string name="api_bankRossii_descriptionUpdateInterval">Valutakurserne opdateres dagligt, undtagen på <a href="https://cbr.ru/eng/other/holidays/">russiske helligdage</a>.</string>
+    <string name="api_exchangerateHost_descriptionUpdateInterval">Valutakurserne opdateres omkring midnat UTC hver arbejdsdag.</string>
+    <string name="api_ferEe_descriptionUpdateInterval">Valutakurserne opdateres hver arbejdsdag.</string>
+    <string name="api_frankfurterApp_descriptionShort">Omkring 30 valutakurser\nKilde: Den Europæiske Centralbank</string>
+    <string name="api_frankfurterApp_descriptionUpdateInterval">Dataene bliver opdateret omkring 16:00 CET hver arbejdsdag.</string>
+</resources>
