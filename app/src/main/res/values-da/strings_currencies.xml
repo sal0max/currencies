@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="name_aed">Dirham fra de Forenede Arabiske Emirater</string>
+    <string name="name_afn">Afghansk afghani</string>
+    <string name="name_all">Albansk lek</string>
+    <string name="name_amd">Armensk dram</string>
+    <string name="name_ang">Nederlandske Antiller-gylden</string>
+    <string name="name_aoa">Angolansk kwanza</string>
+    <string name="name_ars">Argentinsk peso</string>
+    <string name="name_aud">Australsk dollar</string>
+    <string name="name_awg">Arubansk florin</string>
+    <string name="name_azn">Aserbajdsjansk manat</string>
+
+    <string name="name_bam">Bosnien-hercegovinsk konvertibel mark</string>
+    <string name="name_bbd">Barbadisk dollar</string>
+    <string name="name_bdt">Bangladeshisk taka</string>
+    <string name="name_bgn">Bulgarsk lev</string>
+    <string name="name_bhd">Bahrainsk dinar</string>
+    <string name="name_bif">Burundisk franc</string>
+    <string name="name_bmd">Bermudansk dollar</string>
+    <string name="name_bnd">Bruneisk dollar</string>
+    <string name="name_bob">Boliviansk boliviano</string>
+    <string name="name_brl">Brasiliansk real</string>
+    <string name="name_bsd">Bahamansk dollar</string>
+    <string name="name_btc">Bitcoin</string>
+    <string name="name_btn">Bhutansk ngultrum</string>
+    <string name="name_bwp">Botswansk pula</string>
+    <string name="name_byn">Hviderussisk rubel</string>
+    <string name="name_bzd">Belizisk dollar</string>
+
+    <string name="name_cad">Canadisk dollar</string>
+    <string name="name_cdf">Congolesisk franc</string>
+    <string name="name_chf">Schweizerfranc</string>
+    <string name="name_clf">Chilean Unit of Account (UF)</string>
+    <string name="name_clp">Chilensk peso</string>
+    <string name="name_cnh">Kinesisk yuan (Off-Shore)</string>
+    <string name="name_cny">Kinesisk yuan</string>
+    <string name="name_cop">Colombiansk peso</string>
+    <string name="name_crc">Costaricansk colón</string>
+    <string name="name_cuc">Cubansk konvertibel peso</string>
+    <string name="name_cup">Cubansk peso</string>
+    <string name="name_cve">Kapverdisk escudo</string>
+    <string name="name_czk">Tjekkisk koruna</string>
+
+    <string name="name_djf">Djiboutisk franc</string>
+    <string name="name_dkk">Dansk krone</string>
+    <string name="name_dop">Dominikansk peso</string>
+    <string name="name_dzd">Algerisk dinar</string>
+
+    <string name="name_egp">Egyptisk pund</string>
+    <string name="name_ern">Eritreisk nakfa</string>
+    <string name="name_etb">Etiopisk birr</string>
+    <string name="name_eur">Euro</string>
+
+    <string name="name_fjd">Fijiansk dollar</string>
+    <string name="name_fkp">Pund fra Falklandsøerne</string>
+    <string name="name_fok">Færøske kroner</string>
+
+    <string name="name_gbp">Britisk pund</string>
+    <string name="name_gel">Georgisk lari</string>
+
+    <string name="name_ghs">Ghanesisk cedi</string>
+    <string name="name_gip">Gibraltarisk pund</string>
+    <string name="name_gmd">Gambisk dalasi</string>
+    <string name="name_gnf">Guineansk franc</string>
+    <string name="name_gtq">Guatemalansk quetzal</string>
+    <string name="name_gyd">Guyansk dollar</string>
+
+    <string name="name_hkd">Hongkongsk dollar</string>
+    <string name="name_hnl">Honduransk lempira</string>
+    <string name="name_hrk">Kroatisk kuna</string>
+    <string name="name_htg">Haitisk gourde</string>
+    <string name="name_huf">Ungarsk forint</string>
+
+    <string name="name_idr">Indonesisk rupiah</string>
+    <string name="name_ils">Ny israelsk shekel</string>
+
+    <string name="name_inr">Indisk rupee</string>
+    <string name="name_iqd">Irakisk dinar</string>
+    <string name="name_irr">Iransk rial</string>
+    <string name="name_isk">Islandsk krone</string>
+
+
+    <string name="name_jmd">Jamaicansk dollar</string>
+    <string name="name_jod">Jordansk dinar</string>
+    <string name="name_jpy">Japansk yen</string>
+
+    <string name="name_kes">Kenyansk shilling</string>
+    <string name="name_kgs">Kirgisisk som</string>
+    <string name="name_khr">Cambodjansk riel</string>
+    <string name="name_kmf">Comorisk franc</string>
+    <string name="name_kpw">Nordkoreansk won</string>
+    <string name="name_krw">Sydkoreansk won</string>
+    <string name="name_kwd">Kuwaitisk dinar</string>
+    <string name="name_kyd">Caymansk dollar</string>
+    <string name="name_kzt">Kasakhisk tenge</string>
+
+    <string name="name_lak">Laotisk kip</string>
+    <string name="name_lbp">Libanesisk pund</string>
+    <string name="name_lkr">Srilankansk rupee</string>
+    <string name="name_lrd">Liberisk dollar</string>
+    <string name="name_lsl">Lesothisk loti</string>
+    <string name="name_lyd">Libysk dinar</string>
+
+    <string name="name_mad">Marokkansk dirham</string>
+    <string name="name_mdl">Moldovisk leu</string>
+    <string name="name_mga">Madagaskisk ariary</string>
+    <string name="name_mkd">Makedonsk denar</string>
+    <string name="name_mmk">Myanmarsk kyat</string>
+    <string name="name_mnt">Mongolsk tugrik</string>
+    <string name="name_mop">Macaosk pataca</string>
+    <string name="name_mro">Mauritansk ouguiya (1973–2017)</string>
+    <string name="name_mru">Mauritansk ouguiya</string>
+    <string name="name_mur">Mauritisk rupee</string>
+    <string name="name_mvr">Maldivisk rufiyaa</string>
+    <string name="name_mwk">Malawisk kwacha</string>
+    <string name="name_mxn">Mexicansk peso</string>
+    <string name="name_myr">Malaysisk ringgit</string>
+    <string name="name_mzn">Mozambiquisk metical</string>
+
+    <string name="name_nad">Namibisk dollar</string>
+    <string name="name_ngn">Nigeriansk naira</string>
+    <string name="name_nio">Nicaraguansk cordoba</string>
+    <string name="name_nok">Norsk krone</string>
+    <string name="name_npr">Nepalesisk rupee</string>
+    <string name="name_nzd">Newzealandsk dollar</string>
+
+    <string name="name_omr">Omansk rial</string>
+
+    <string name="name_pab">Panamansk balboa</string>
+    <string name="name_pen">Peruansk sol</string>
+    <string name="name_pgk">Papuansk kina</string>
+    <string name="name_php">Filippinsk peso</string>
+    <string name="name_pkr">Pakistansk rupee</string>
+    <string name="name_pln">Polsk zloty</string>
+    <string name="name_pyg">Paraguaysk guarani</string>
+
+    <string name="name_qar">Qatarsk rial</string>
+
+    <string name="name_ron">Rumænsk leu</string>
+    <string name="name_rsd">Serbisk dinar</string>
+    <string name="name_rub">Russisk rubel</string>
+    <string name="name_rwf">Rwandisk franc</string>
+
+    <string name="name_sar">Saudiarabisk riyal</string>
+    <string name="name_sbd">Salomonsk dollar</string>
+    <string name="name_scr">Seychellisk rupee</string>
+    <string name="name_sdg">Sudansk pund</string>
+    <string name="name_sek">Svensk krone</string>
+    <string name="name_sgd">Singaporeansk dollar</string>
+    <string name="name_shp">Pund fra Saint Helena</string>
+    <string name="name_sle">Sierra Leonean Leone</string>
+    <string name="name_sll">Sierraleonsk leone</string>
+    <string name="name_sos">Somalisk shilling</string>
+    <string name="name_srd">Surinamsk dollar</string>
+    <string name="name_ssp">Sydsudansk pund</string>
+    <string name="name_std">Dobra fra Sao Tome og Principe (1977–2017)</string>
+    <string name="name_stn">Dobra fra Sao Tome og Principe</string>
+    <string name="name_svc">Salvadoransk colon</string>
+    <string name="name_syp">Syrisk pund</string>
+    <string name="name_szl">Swazilandsk lilangeni</string>
+
+    <string name="name_thb">Thailandsk baht</string>
+    <string name="name_tjs">Tadsjikisk somoni</string>
+    <string name="name_tmt">Turkmensk manat</string>
+    <string name="name_tnd">Tunesisk dinar</string>
+    <string name="name_top">Tongansk paʻanga</string>
+    <string name="name_try">Tyrkisk lira</string>
+    <string name="name_ttd">Trinidadisk dollar</string>
+    <string name="name_twd">Ny taiwansk dollar</string>
+    <string name="name_tzs">Tanzanisk shilling</string>
+
+    <string name="name_uah">Ukrainsk grynia</string>
+    <string name="name_ugx">Ugandisk shilling</string>
+    <string name="name_usd">Amerikansk dollar</string>
+    <string name="name_uyu">Uruguayansk peso</string>
+    <string name="name_uzs">Usbekisk sum</string>
+
+    <string name="name_vef">Venezuelansk bolivar (2008–2018)</string>
+    <string name="name_ves">Venezuelansk bolivar</string>
+    <string name="name_vnd">Vietnamesisk dong</string>
+    <string name="name_vuv">Vanuaisk vatu</string>
+
+    <string name="name_wst">Samoansk tala</string>
+
+    <string name="name_xaf">CFA-franc (BEAC)</string>
+    <string name="name_xag">Sølv</string>
+    <string name="name_xau">Guld</string>
+    <string name="name_xcd">Østkaribisk dollar</string>
+    <string name="name_xdr">SDR</string>
+    <string name="name_xof">CFA-franc BCEAO</string>
+    <string name="name_xpd">Palladium</string>
+    <string name="name_xpf">CFP-franc</string>
+    <string name="name_xpt">Platin</string>
+
+    <string name="name_yer">Yemenitisk rial</string>
+
+    <string name="name_zar">Sydafrikansk rand</string>
+    <string name="name_zmw">Zambisk kwacha</string>
+    <string name="name_zwl">Zimbabwisk dollar (2009)</string>
+</resources>
