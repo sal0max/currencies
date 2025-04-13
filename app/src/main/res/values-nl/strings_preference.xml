@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Algemene instellingen</string>
@@ -26,7 +28,6 @@
     <string name="language_de">Duits</string>
     <string name="language_el">Grieks</string>
     <string name="language_en">Engels</string>
-
     <string name="language_eo">Esperanto</string>
     <string name="language_es">Spaans</string>
     <string name="language_fa">Farsi</string>
@@ -68,4 +69,6 @@
     <string name="rate_summary">Als je wilt, kun je anderen helpen valuta\'s te ontdekken. Klik hier om de app te beoordelen op Google Play.</string>
     <string name="category_versioninfo">Versie-informatie</string>
     <string name="title_changelog">Wijzigingsoverzicht</string>
+    <string name="language_en_GB">Engels (Verenigd Koninkrijk)</string>
+    <string name="language_et">Estisch</string>
 </resources>
