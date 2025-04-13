@@ -1,0 +1,4 @@
+- Fixed more layout issues on Android 15 devices.
+- New supported language: Estonian 🇪🇪
+- Added support for British English, for improved display of numbers.
+- Various improved translations. Thanks to all volunteers!
