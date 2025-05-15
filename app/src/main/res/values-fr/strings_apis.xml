@@ -14,4 +14,15 @@
     <string name="api_inforEuro_descriptionUpdateInterval">Les taux indiqués sont les taux du marché du deuxième au dernier jour du mois précédent, tels qu’indiqués par la Banque centrale européenne ou, selon la disponibilité, communiqués par les délégations ou d’autres sources appropriées à une date proche.</string>
     <string name="api_norgesBank_descriptionFull">Taux de change, tels que fournis par la banque centrale norvégienne <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a> .\n<b>La Norges Bank répertorie une quarantaine de taux de change.</b></string>
     <string name="api_norgesBank_descriptionUpdateInterval">L’heure de publication des taux de change quotidiens est environ 16h00 CET.</string>
+    <string name="api_bankRossii_descriptionShort">À propos 44 taux de change\nSource : Banque centrale de Russie</string>
+    <string name="api_frankfurterApp_descriptionShort">À propos 30 taux de change\nSource : Banque centrale européenne</string>
+    <string name="api_inforEuro_hint">Les taux ne sont actualisés qu\'une fois par mois !</string>
+    <string name="api_openExchangeRates_descriptionShort">À peu près 160 taux de change\nSource : Combinaision de plusieurs fournisseurs fiables.</string>
+    <string name="api_openExchangeRates_descriptionUpdateInterval">Actualisation toutes les heures.</string>
+    <string name="api_openExchangeRates_hint">Pour utiliser cette source, vous devez créer votre propre clé API !</string>
+    <string name="api_bankOfCanada_descriptionShort">À peu près 23 taux de change\nSource : Banque centrale du Canada</string>
+    <string name="api_inforEuro_descriptionShort">À propos 150 taux de change\nSource : Comission européenne</string>
+    <string name="api_norgesBank_descriptionShort">À peu près 40 taux de change\nSource : Banque centrale de Norvège</string>
+    <string name="api_norgesBank_hint">Le service est régulièrement arrêté (HTTP 503), pendant lequel les taux ne peuvent pas être rafraichis !</string>
+    <string name="api_openExchangeRates_descriptionFull">Les données sont traçées et combinées depuis plusieurs sources fiables, garantir l\'impartialité des taux. Voir <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> pour plus d\'informations.\n<b>Open Exchange Rates fournit une grande quantité d\'à peu près 160 taux de change.\n<i>Pour utiliser cette source, vous devez entrer votre propre clé d\'API !</i></b></string>
 </resources>
