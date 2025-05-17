@@ -10,7 +10,6 @@
     <string name="name_aud">دولار استرالي</string>
     <string name="name_awg">فلورين أروبا</string>
     <string name="name_azn">مانات أذربيجاني</string>
-
     <string name="name_bam">مارك البوسنة والهرسك قابل للتحويل</string>
     <string name="name_bbd">دولار بربادوسي</string>
     <string name="name_bdt">تاكا بنغلادشية</string>
@@ -27,7 +26,6 @@
     <string name="name_bwp">بولا بوتسوانا</string>
     <string name="name_byn">روبل بيلاروسي</string>
     <string name="name_bzd">دولار بليزي</string>
-
     <string name="name_cad">دولار كندي</string>
     <string name="name_cdf">فرنك كونغولي</string>
     <string name="name_chf">فرنك سويسري</string>
@@ -41,21 +39,17 @@
     <string name="name_cup">البيزو الكوبي</string>
     <string name="name_cve">إيسكودو جزر الرأس الأخضر</string>
     <string name="name_czk">كورونا تشيكية</string>
-
     <string name="name_djf">فرنك جيبوتي</string>
     <string name="name_dkk">كرونة دنماركية</string>
     <string name="name_dop">بيزو دومينيكي</string>
     <string name="name_dzd">دينار جزائري</string>
-
     <string name="name_egp">جنيه مصري</string>
     <string name="name_ern">ناكفا إريتيرية</string>
     <string name="name_etb">بير إثيوبي</string>
     <string name="name_eur">يورو</string>
-
     <string name="name_fjd">دولار فيجي</string>
     <string name="name_fkp">جنيه جزر فوكلاند</string>
     <string name="name_fok">كرونة فاروية</string>
-
     <string name="name_gbp">الجنيه الاسترليني</string>
     <string name="name_gel">لاري جورجي</string>
     <string name="name_ggp">جنيه جيرنزي</string>
@@ -65,13 +59,11 @@
     <string name="name_gnf">فرنك غيني</string>
     <string name="name_gtq">كتزال غواتيمالي</string>
     <string name="name_gyd">دولار غياني</string>
-
     <string name="name_hkd">دولار هونج كونج</string>
     <string name="name_hnl">لمبيرة هندوراسية</string>
     <string name="name_hrk">كونا كرواتية</string>
     <string name="name_htg">جوردة هايتية</string>
     <string name="name_huf">فورنت مجري</string>
-
     <string name="name_idr">روبية إندونيسية</string>
     <string name="name_ils">شيكل إسرائيلي جديد</string>
     <string name="name_imp">جنيه مانكس</string>
@@ -79,12 +71,10 @@
     <string name="name_iqd">دينار عراقي</string>
     <string name="name_irr">ريال إيراني</string>
     <string name="name_isk">كرونة آيسلندية</string>
-
     <string name="name_jep">جنيه جيرزي</string>
     <string name="name_jmd">دولار جامايكي</string>
     <string name="name_jod">دينار أردني</string>
     <string name="name_jpy">ين ياباني</string>
-
     <string name="name_kes">شيلينغ كيني</string>
     <string name="name_kgs">سوم قيرغيزستاني</string>
     <string name="name_khr">ريال كمبودي</string>
@@ -94,14 +84,12 @@
     <string name="name_kwd">دينار كويتي</string>
     <string name="name_kyd">دولار جزر كايمان</string>
     <string name="name_kzt">تينغ كازاخستاني</string>
-
     <string name="name_lak">كيب لاوي</string>
     <string name="name_lbp">ليرة لبنانية</string>
     <string name="name_lkr">روبية سريلانكية</string>
     <string name="name_lrd">دولار ليبيري</string>
     <string name="name_lsl">لوتي ليسوتو</string>
     <string name="name_lyd">دينار ليبي</string>
-
     <string name="name_mad">درهم مغربي</string>
     <string name="name_mdl">ليو مولدوفي</string>
     <string name="name_mga">أرياري مدغشقري</string>
@@ -117,16 +105,13 @@
     <string name="name_mxn">بيزو مكسيكي</string>
     <string name="name_myr">رينغيت ماليزي</string>
     <string name="name_mzn">متكال موزمبيقي</string>
-
     <string name="name_nad">دولار ناميبي</string>
     <string name="name_ngn">نيرة نيجيرية</string>
     <string name="name_nio">كوردبا نيكاراغوا</string>
     <string name="name_nok">كرونة نرويجية</string>
     <string name="name_npr">روبية نيبالية</string>
     <string name="name_nzd">دولار نيوزيلندي</string>
-
     <string name="name_omr">ريال عماني</string>
-
     <string name="name_pab">بالبوا بنمي</string>
     <string name="name_pen">سول بيروفي</string>
     <string name="name_pgk">كينا بابوا غينيا الجديدة</string>
@@ -134,14 +119,11 @@
     <string name="name_pkr">روبية باكستانية</string>
     <string name="name_pln">زلوتي بولندي</string>
     <string name="name_pyg">غواراني باراغواني</string>
-
     <string name="name_qar">ريال قطري</string>
-
     <string name="name_ron">ليو روماني</string>
     <string name="name_rsd">دينار صربي</string>
     <string name="name_rub">روبل روسي</string>
     <string name="name_rwf">فرنك رواندي</string>
-
     <string name="name_sar">ريال سعودي</string>
     <string name="name_sbd">دولار جزر سليمان</string>
     <string name="name_scr">روبية سيشلية</string>
@@ -154,12 +136,11 @@
     <string name="name_sos">شلن صومالي</string>
     <string name="name_srd">دولار سورينامي</string>
     <string name="name_ssp">جنيه جنوب السودان</string>
-    <string name="name_std">دوبرا ساو تومي وبرينسيب (قبل - 2018)</string>
+    <string name="name_std">دوبرا ساو تومي وبرينسيب (1977–2017)</string>
     <string name="name_stn">دوبرا ساو تومي وبرينسيب</string>
     <string name="name_svc">كولون سلفادوري</string>
     <string name="name_syp">ليرة سورية</string>
     <string name="name_szl">ليلانغيني سوازيلندي</string>
-
     <string name="name_thb">بات تايلندي</string>
     <string name="name_tjs">ساماني طاجيكي</string>
     <string name="name_tmt">منات تركمانستاني</string>
@@ -169,20 +150,16 @@
     <string name="name_ttd">دولار ترينيداد وتوباغو</string>
     <string name="name_twd">دولار تايواني جديد</string>
     <string name="name_tzs">شلن تنزاني</string>
-
     <string name="name_uah">هريفينا أوكرانية</string>
     <string name="name_ugx">شلن أوغندي</string>
     <string name="name_usd">دولار أمريكي</string>
     <string name="name_uyu">بيزو أوروغواني</string>
     <string name="name_uzs">سوم أوزبكستاني</string>
-
     <string name="name_vef">بوليفار فنزويلي (قديم)</string>
     <string name="name_ves">بوليفار فنزويلي</string>
     <string name="name_vnd">دونغ فيتنامي</string>
     <string name="name_vuv">فاتو فانواتي</string>
-
     <string name="name_wst">تالا ساموي</string>
-
     <string name="name_xaf">فرنك CFA وسط أفريقيا BEAC</string>
     <string name="name_xag">أونصة الفضة</string>
     <string name="name_xau">أونصة الذهب</string>
@@ -192,9 +169,7 @@
     <string name="name_xpd">أونصة البلاديوم</string>
     <string name="name_xpf">فرنك CFP</string>
     <string name="name_xpt">أونصة البلاتين</string>
-
     <string name="name_yer">ريال يمني</string>
-
     <string name="name_zar">راند جنوب أفريقيا</string>
     <string name="name_zmw">كواشا زامبيا</string>
     <string name="name_zwl">دولار زيمبابوي</string>
