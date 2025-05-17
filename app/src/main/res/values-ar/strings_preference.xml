@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">الاعدادات العامة</string>
@@ -66,4 +68,7 @@
     <string name="rate_title">قيم هذا التطبيق</string>
     <string name="rate_summary">إذا كنت ترغب في ذلك ، يمكنك مساعدة الآخرين في اكتشاف العملات. انقر هنا لتقييم التطبيق على Google Play.</string>
     <string name="title_changelog">‫سجل التغيير</string>
+    <string name="category_versioninfo">معلومات الإصدار</string>
+    <string name="language_en_GB">الإنجليزية (المملكة المتحدة)</string>
+    <string name="language_et">الإستونية</string>
 </resources>
