@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE resources [<!ENTITY nbsp "&#160;">]>
+<!DOCTYPE resources [
+<!ENTITY nbsp "&#160;">
+]>
 <resources>
     <!-- main settings -->
     <string name="category_settings">Impostazioni generali</string>
@@ -26,7 +28,6 @@
     <string name="language_de">Tedesco</string>
     <string name="language_el">Greco</string>
     <string name="language_en">Inglese</string>
-
     <string name="language_eo">Esperanto</string>
     <string name="language_es">Spagnolo</string>
     <string name="language_fa">Persiano</string>
@@ -68,4 +69,6 @@
     <string name="rate_summary">Se vuoi, puoi aiutare gli altri a scoprire Currencies. Clicca qui per votare l\'app su Google Play.</string>
     <string name="category_versioninfo">Informazioni della versione</string>
     <string name="title_changelog">Registro dei cambiamenti</string>
+    <string name="language_en_GB">Inglese (Regno Unito)</string>
+    <string name="language_et">Estoniano</string>
 </resources>
