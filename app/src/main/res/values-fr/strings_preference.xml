@@ -26,8 +26,10 @@
     <string name="language_de">Allemand</string>
     <string name="language_el">Grec</string>
     <string name="language_en">Anglais</string>
+    <string name="language_en_GB">Anglais (Grande-Bretagne)</string>
     <string name="language_eo">Espéranto</string>
     <string name="language_es">Espagnol</string>
+    <string name="language_et">Estonien</string>
     <string name="language_fa">Perse</string>
     <string name="language_fr">Français</string>
     <string name="language_hr">Croate</string>

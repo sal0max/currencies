@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.6">
+        <item>Correction de plus de mises en page sur les appareils avec Android 15.</item>
+        <item>Nouvelle langue supportée : l\'éstonien 🇪🇪</item>
+        <item>Ajouté un support pour l\'anglais britannique, pour l\'affichage des nombres.</item>
+        <item>Quelques améliorations au niveau des traductions. Merci aux volontaires !</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.5">
+        <item>Corrigé de mise en page sur les appareils avec Android 15.</item>
+        <item>Corrigé un problème où les boutons de navigation étaient cachés sur des versions plus anciennes d\'Android.</item>
+        <item>Améliorations de design mineures.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.4">
         <item>Traductions mises à jour.</item>
     </string-array>
 
+    <string-array name="changelog_1.22.3">
+        <item>Traductions actualisées</item>
+        <item>Le dollar canadien est désormais disponible au près de la banque du Canada.</item>
+        <item>Nouvelle langue : le persan</item>
+    </string-array>
+
     <string-array name="changelog_1.22.2">
         <item>Traductions mises à jour.</item>
+    </string-array>
+
+    <string-array name="changelog_1.22.1">
+        <item>Traductions actualisées.</item>
+        <item>Correction des taux historiques avec la banque centrale de Norvège.</item>
     </string-array>
 
     <string-array name="changelog_1.22.0">

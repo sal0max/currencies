@@ -1,5 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.22.6">
+        <item>Fixed more layout issues on Android 15 devices.</item>
+        <item>New supported language: Estonian 🇪🇪</item>
+        <item>Added support for British English, for improved display of numbers.</item>
+        <item>Various improved translations. Thanks to all volunteers!</item>
+    </string-array>
+
     <string-array name="changelog_1.22.5">
         <item>Layout-problemen op Android 15 apparaten opgelost.</item>
         <item>Probleem opgelost waarbij de navigatieknoppen verdwenen op oudere Android versies.</item>

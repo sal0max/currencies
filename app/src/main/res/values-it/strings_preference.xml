@@ -26,8 +26,9 @@
     <string name="language_de">Tedesco</string>
     <string name="language_el">Greco</string>
     <string name="language_en">Inglese</string>
-
+    <string name="language_en_GB">Inglese (Regno Unito)</string>
     <string name="language_eo">Esperanto</string>
+    <string name="language_et">Estoniano</string>
     <string name="language_es">Spagnolo</string>
     <string name="language_fa">Persiano</string>
     <string name="language_fr">Francese</string>
