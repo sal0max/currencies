@@ -6,7 +6,7 @@ import java.io.FileInputStream
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    id("com.google.devtools.ksp") version "2.1.10-1.0.31"
+    id("com.google.devtools.ksp") version "2.1.21-2.0.2"
 }
 
 android {
@@ -86,19 +86,19 @@ android {
 
 dependencies {
     // kotlin
-    implementation("androidx.core:core-ktx:1.15.0")
+    implementation("androidx.core:core-ktx:1.16.0")
     // support libs
-    val appCompatVersion = "1.7.0"
+    val appCompatVersion = "1.7.1"
     implementation("androidx.appcompat:appcompat:$appCompatVersion")
     implementation("androidx.appcompat:appcompat-resources:$appCompatVersion")
     implementation("androidx.constraintlayout:constraintlayout:2.2.1")
-    val livecycleVersion = "2.8.7"
+    val livecycleVersion = "2.9.1"
     implementation("androidx.lifecycle:lifecycle-livedata-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:$livecycleVersion")
     implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:$livecycleVersion")
     implementation("androidx.preference:preference-ktx:1.2.1")
     implementation("androidx.swiperefreshlayout:swiperefreshlayout:1.1.0")
-    implementation("androidx.window:window:1.3.0")
+    implementation("androidx.window:window:1.4.0")
     implementation("com.google.android.material:material:1.12.0")
     // downloader
     val fuelVersion = "2.3.1"
@@ -115,7 +115,7 @@ dependencies {
     implementation("com.robinhood.spark:spark:1.2.0")
     // test
     testImplementation("junit:junit:4.13.2")
-    testImplementation("org.mockito:mockito-core:5.16.0")
+    testImplementation("org.mockito:mockito-core:5.18.0")
 }
 
 fun getSecret(key: String): String? {
