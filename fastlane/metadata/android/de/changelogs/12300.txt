@@ -2,4 +2,4 @@
 - Einen Fehler behoben, durch den Währungssymbole falsch waren, wenn Daten von Norges Bank genutzt wurden.
 - Neu unterstützte Sprache: Dänisch 🇩🇰
 - Verschiedene verbesserte Übersetzungen. Vielen Dank an alle Helfer!
-- Verschiedene kleine Verbersserungen, damit die App weiter zuverlässig läuft.
+- Verschiedene kleine Verbesserungen, damit die App weiter zuverlässig läuft.
