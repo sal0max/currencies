@@ -206,13 +206,9 @@ class TimelineViewModel(
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
-                val avg = rates
-                    ?.filter { map ->
-                        scrubDate?.let { !map.key.isBefore(it) } ?: true
-                    }
-                    ?.map { entry ->
-                        entry.value
-                    }
+                val avg: Rate? = rates
+                    ?.filter { map -> scrubDate?.let { !map.key.isBefore(it) } ?: true }
+                    ?.map { entry -> entry.value }
                     ?.map { rate -> rate?.value ?: 0f }
                     ?.average()
                     ?.let { average -> Rate(target, average.toFloat()) }
@@ -242,20 +238,14 @@ class TimelineViewModel(
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
-                val min = rates
-                    ?.filter { map ->
-                        scrubDate?.let { !map.key.isBefore(it) } ?: true
-                    }
+                val min: Rate? = rates
+                    ?.filter { map -> scrubDate?.let { !map.key.isBefore(it) } ?: true }
                     ?.map { entry -> entry.value }
                     ?.minOfOrNull { rate -> rate?.value ?: 0f }
                     ?.let { min -> Rate(target, min) }
-                val date = rates
-                    ?.filter { map ->
-                        scrubDate?.let { !map.key.isBefore(it) } ?: true
-                    }
-                    ?.findLast { entry -> entry.value
-                        ?.value == min?.value
-                    }
+                val date: LocalDate? = rates
+                    ?.filter { map -> scrubDate?.let { !map.key.isBefore(it) } ?: true }
+                    ?.findLast { entry -> entry.value?.value == min?.value }
                     ?.key
                 this.value = Triple(min, date, decimalPlaces)
             }
@@ -283,20 +273,14 @@ class TimelineViewModel(
             var rates: Set<Map.Entry<LocalDate, Rate?>>? = null
 
             fun update() {
-                val max = rates
-                    ?.filter { map ->
-                        scrubDate?.let { !map.key.isBefore(it) } ?: true
-                    }
+                val max: Rate? = rates
+                    ?.filter { map -> scrubDate?.let { !map.key.isBefore(it) } ?: true }
                     ?.map { entry -> entry.value }
                     ?.maxOfOrNull { rate -> rate?.value ?: 0f }
                     ?.let { max -> Rate(target, max) }
-                val date = rates
-                    ?.filter { map ->
-                        scrubDate?.let { !map.key.isBefore(it) } ?: true
-                    }
-                    ?.findLast { entry -> entry.value
-                        ?.value == max?.value
-                    }
+                val date: LocalDate? = rates
+                    ?.filter { map -> scrubDate?.let { !map.key.isBefore(it) } ?: true }
+                    ?.findLast { entry -> entry.value?.value == max?.value }
                     ?.key
                 this.value = Triple(max, date, decimalPlaces)
             }
