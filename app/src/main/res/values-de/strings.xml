@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">tausche Währungen</string>
+    <string name="info_conversion">%1$s %2$s ≈ %3$s %4$s</string>
     <string name="info_date_latest">Kurse vom &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
     <string name="info_date_historical">Historische Kurse vom &lt;b>%1$s&lt;/b> via &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; in die Zwischenablage kopiert</string>
