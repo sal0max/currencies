@@ -63,7 +63,7 @@ class NorgesBankTimelineXmlParser(
         }
 
         // Always manually add a NOK (constant 1.0) series.
-        // Neded for timelines with NOK, as the API doesn't return NOK, even if requested.
+        // Needed for timelines with NOK, as the API doesn't return NOK, even if requested.
         ratesList.add(object: LinkedHashMap<LocalDate, Rate>() {
             var currentDate = startDate
             init {
