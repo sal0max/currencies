@@ -11,8 +11,10 @@ import de.salomax.currencies.model.Rate
 import de.salomax.currencies.model.Timeline
 import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.util.calculateDifference
-import de.salomax.currencies.util.decimalPlaces
+import de.salomax.currencies.util.getSignificantDecimalPlaces
 import java.time.LocalDate
+import kotlin.math.absoluteValue
+import kotlin.math.min
 
 class TimelineViewModel(
     private val app: Application,
@@ -321,7 +323,12 @@ class TimelineViewModel(
             var min = 0f
             var max = 0f
 
-            fun update() { this.value = decimalPlaces(min, max) }
+            fun update() {
+                this.value = min(
+                    (min - max).absoluteValue.getSignificantDecimalPlaces(3),
+                    7
+                )
+            }
 
             addSource(dbLiveItems) {
                 min = it?.rates?.entries?.minOfOrNull { rate -> rate.value.value } ?: 0f

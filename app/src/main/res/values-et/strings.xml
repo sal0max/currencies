@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">lülita vääringuid sisse/välja</string>
-    <string name="rates_date_latest">Valuutakursid &lt;b>%1$s&lt;/b> seisuga teenusest &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Varasemad valuutakursid &lt;b>%1$s&lt;/b> seisuga teenusest &lt;b>%2$s&lt;/b></string>
+    <string name="info_date_latest">Valuutakursid &lt;b>%1$s&lt;/b> seisuga teenusest &lt;b>%2$s&lt;/b></string>
+    <string name="info_date_historical">Varasemad valuutakursid &lt;b>%1$s&lt;/b> seisuga teenusest &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">Kopeerisime &lt;b>%s&lt;/b> lõikelauale</string>
     <string name="historical_rates_dialog_title">Varasemad valuutakursid</string>
     <string name="historical_rates_dialog_toggle">Kasuta kindla kuupäeva vahetuskursse. Kui lülitad selle eelistuse välja, siis näitame vaid viimaseid kursse.</string>

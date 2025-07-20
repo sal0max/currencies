@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">Alternar monedes</string>
-    <string name="rates_date_latest">Taxes del &lt;b&gt;%1$s&lt;/b&gt; proveïdes per &lt;b&gt;%2$s&lt;/b&gt;</string>
-    <string name="rates_date_historical">Taxes històriques del &lt;b&gt;%1$s&lt;/b&gt; proveïdes per &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="info_date_latest">Taxes del &lt;b&gt;%1$s&lt;/b&gt; proveïdes per &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="info_date_historical">Taxes històriques del &lt;b&gt;%1$s&lt;/b&gt; proveïdes per &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="copied_to_clipboard">S\'ha copiat &lt;b&gt;%s&lt;/b&gt; al porta-retalls</string>
     <string name="historical_rates_dialog_title">Taxes històriques</string>
     <string name="historical_rates_dialog_toggle">Utilitza les taxes de canvi d\'una data específica. Desactivar si es vol utilitzar sempre les més recents.</string>

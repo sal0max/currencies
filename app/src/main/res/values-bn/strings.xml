@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">মুদ্রা toggle</string>
-    <string name="rates_date_latest">&lt;b&gt;%1$s&lt;/b&gt; এ বিনিময় হার &lt;b&gt;%2$s&lt;/b&gt; দ্বারা</string>
-    <string name="rates_date_historical">ঐতিহাসক মূল্য &lt;b>%1$s&lt;/b> এর &lt;b>%2$s&lt;/b> দ্বারা</string>
+    <string name="info_date_latest">&lt;b&gt;%1$s&lt;/b&gt; এ বিনিময় হার &lt;b&gt;%2$s&lt;/b&gt; দ্বারা</string>
+    <string name="info_date_historical">ঐতিহাসক মূল্য &lt;b>%1$s&lt;/b> এর &lt;b>%2$s&lt;/b> দ্বারা</string>
     <string name="copied_to_clipboard">&lt;b&gt;%s&lt;/b&gt; ক্লিপবোর্ডে অনুলিপিত</string>
     <string name="historical_rates_dialog_title">ঐতিহাসক মূল্য</string>
     <string name="historical_rates_dialog_toggle">একটি নির্দিষ্ট তারিখের বিনিময় হার ব্যবহার করুন। অক্ষম করুন, সর্বদা সাম্প্রতিকতমগুলি নিতে।</string>
