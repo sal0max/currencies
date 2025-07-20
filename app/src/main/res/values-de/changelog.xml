@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.23.0">
+        <item>Das Hauptdisplay zeigt jetzt im unteren rechten Eck den aktuellen Wechselkurs an.</item>
+        <item>Einen Fehler behoben, durch den Währungssymbole falsch waren, wenn Daten von Norges Bank genutzt wurden.</item>
+        <item>Neu unterstützte Sprache: Dänisch 🇩🇰</item>
+        <item>Verschiedene verbesserte Übersetzungen. Vielen Dank an alle Helfer!</item>
+        <item>Verschiedene kleine Verbersserungen, damit die App weiter zuverlässig läuft.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.6">
         <item>Noch mehr Layout-Probleme bei Android 15-Geräten behoben.</item>
         <item>Neu unterstütze Sprache: Estnisch 🇪🇪</item>

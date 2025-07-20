@@ -1,0 +1,5 @@
+- The main display now shows the current conversion rate in the bottom right corner.
+- Fix an issue where currency symbols were wrong, when using data from Norges Bank.
+- New supported language: Danish 🇩🇰
+- Various improved translations. Thanks to all volunteers!
+- Various little improvements to keep the app reliable.

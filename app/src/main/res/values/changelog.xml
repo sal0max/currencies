@@ -1,5 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string-array name="changelog_1.23.0">
+        <item>The main display now shows the current conversion rate in the bottom right corner.</item>
+        <item>Fix an issue where currency symbols were wrong, when using data from Norges Bank.</item>
+        <item>New supported language: Danish 🇩🇰</item>
+        <item>Various improved translations. Thanks to all volunteers!</item>
+        <item>Various little improvements to keep the app reliable.</item>
+    </string-array>
+
     <string-array name="changelog_1.22.6">
         <item>Fixed more layout issues on Android 15 devices.</item>
         <item>New supported language: Estonian 🇪🇪</item>
