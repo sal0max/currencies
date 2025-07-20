@@ -83,7 +83,7 @@ class NorgesBankTimelineXmlParser(
                 val baseValue = entry.value.value
                 val symbolValue = symbolList[entry.key]?.value
                 if (symbolValue != null)
-                    rates[entry.key] = Rate(entry.value.currency, symbolValue.div(baseValue))
+                    rates[entry.key] = Rate(this.symbol, symbolValue.div(baseValue))
             }
         }
 
