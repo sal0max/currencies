@@ -10,15 +10,12 @@ import android.icu.util.Calendar
 import android.icu.util.TimeZone
 import android.os.Bundle
 import android.view.ContextMenu
-import android.view.Gravity
 import android.view.KeyEvent
 import android.view.Menu
 import android.view.MenuItem
 import android.view.View
-import android.view.ViewGroup
 import android.widget.AdapterView
 import android.widget.DatePicker
-import android.widget.FrameLayout
 import android.widget.ImageView
 import android.widget.LinearLayout
 import android.widget.TextView
@@ -26,10 +23,6 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.widget.AppCompatButton
 import androidx.appcompat.widget.AppCompatImageButton
 import androidx.core.text.HtmlCompat
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
-import androidx.core.view.doOnLayout
-import androidx.core.view.updateLayoutParams
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.ViewModelProvider
 import androidx.lifecycle.lifecycleScope
@@ -73,7 +66,8 @@ class MainActivity : BaseActivity() {
     private lateinit var tvTo: TextView
     private lateinit var spinnerFrom: SearchableSpinner
     private lateinit var spinnerTo: SearchableSpinner
-    private lateinit var tvDate: TextView
+    private lateinit var tvInfoConversion: TextView
+    private lateinit var tvInfoDate: TextView
     private lateinit var tvFee: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -95,7 +89,8 @@ class MainActivity : BaseActivity() {
         this.tvTo = findViewById(R.id.textTo)
         this.spinnerFrom = findViewById(R.id.spinnerFrom)
         this.spinnerTo = findViewById(R.id.spinnerTo)
-        this.tvDate = findViewById(R.id.textRefreshed)
+        this.tvInfoConversion = findViewById(R.id.textInfoConversion)
+        this.tvInfoDate = findViewById(R.id.textInfoDate)
         this.tvFee = findViewById(R.id.textFee)
 
         // swipe-to-refresh: color scheme (not accessible in xml)
@@ -314,10 +309,15 @@ class MainActivity : BaseActivity() {
     }
 
     private fun observe() {
+        //
+        viewModel.ratesInformationFooter.observe(this) {
+            tvInfoConversion.text = it
+        }
+
         //exchange rates changed
         viewModel.getExchangeRates().observe(this) {
             // date
-            it?.let {
+            it?.let { it ->
                 val date = it.date
                 val dateString = date
                     ?.format(DateTimeFormatter.ofLocalizedDate(FormatStyle.SHORT).withLocale(getLocale(this)))
@@ -325,14 +325,14 @@ class MainActivity : BaseActivity() {
                 val providerString = it.provider?.getName()
 
                 // show rate age and rate source
-                tvDate.text =
+                tvInfoDate.text =
                     if (dateString != null && providerString != null)
                         HtmlCompat.fromHtml(
                             getString(
                                 if (viewModel.getHistoricalDate() != null)
-                                    R.string.rates_date_historical
+                                    R.string.info_date_historical
                                 else
-                                    R.string.rates_date_latest,
+                                    R.string.info_date_latest,
                                 dateString,
                                 providerString
                             ),
@@ -342,12 +342,17 @@ class MainActivity : BaseActivity() {
                         null
 
                 // paint text in red in case the data is old (at least 3 days) or historical rates are enabled
-                tvDate.setTextColor(
-                    if (date?.isBefore(LocalDate.now().minusDays(3)) == true || viewModel.getHistoricalDate() != null)
-                        MaterialColors.getColor(this, R.attr.colorError, null)
-                    else
-                        getTextColorSecondary()
-                )
+                listOf(tvInfoDate, tvInfoConversion).forEach { tv ->
+                    tv.setTextColor(
+                        if (date?.isBefore(
+                                LocalDate.now().minusDays(3)
+                            ) == true || viewModel.getHistoricalDate() != null
+                        )
+                            MaterialColors.getColor(this, R.attr.colorError, null)
+                        else
+                            getTextColorSecondary()
+                    )
+                }
 
                 // show little icon to indicate when historical rates are used
                 findViewById<ImageView>(R.id.iconHistorical).visibility =

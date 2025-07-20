@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">przełącz waluty</string>
-    <string name="rates_date_latest">Kursy na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
-    <string name="rates_date_historical">Kursy historyczne na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
+    <string name="info_date_latest">Kursy na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
+    <string name="info_date_historical">Kursy historyczne na dzień <b>%1$s</b> dostarczone przez <b>%2$s</b></string>
     <string name="copied_to_clipboard">Skopiowano <b>%s</b> do schowka</string>
     <string name="historical_rates_dialog_title">Kursy historyczne</string>
     <string name="historical_rates_dialog_toggle">Użyj kursów wymiany z określonego okresu. Wyłącz, aby zawsze używać najnowszych dane.</string>

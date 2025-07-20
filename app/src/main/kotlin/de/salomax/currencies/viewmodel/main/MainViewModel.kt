@@ -2,14 +2,25 @@ package de.salomax.currencies.viewmodel.main
 
 import android.app.Application
 import android.text.SpannableStringBuilder
+import android.text.Spanned
+import androidx.core.text.HtmlCompat
 import androidx.core.text.bold
-import androidx.lifecycle.*
+import androidx.lifecycle.AndroidViewModel
+import androidx.lifecycle.LiveData
+import androidx.lifecycle.MediatorLiveData
+import androidx.lifecycle.MutableLiveData
+import androidx.lifecycle.ViewModel
+import androidx.lifecycle.ViewModelProvider
+import androidx.lifecycle.map
+import de.salomax.currencies.R
 import de.salomax.currencies.model.Currency
 import de.salomax.currencies.model.ExchangeRates
 import de.salomax.currencies.repository.Database
 import de.salomax.currencies.repository.ExchangeRatesRepository
 import de.salomax.currencies.util.combineWith
 import de.salomax.currencies.util.getDecimalSeparator
+import de.salomax.currencies.util.getLocale
+import de.salomax.currencies.util.getSignificantDecimalPlaces
 import de.salomax.currencies.util.hasAppendedCurrencySymbol
 import de.salomax.currencies.util.toHumanReadableNumber
 import org.mariuszgromada.math.mxparser.Expression
@@ -226,6 +237,44 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
      */
     internal fun getFee(): LiveData<Float> {
         return fee
+    }
+
+    internal val ratesInformationFooter = object : MediatorLiveData<Spanned?>() {
+        var exchangeRates: ExchangeRates? = null
+        var baseCurrency: Currency? = null
+        var destinationCurrency: Currency? = null
+
+        init {
+            addSource(getExchangeRates()) { exchangeRates = it; update() }
+            addSource(currentBaseCurrency) { baseCurrency = it; update() }
+            addSource(currentDestinationCurrency) { destinationCurrency = it; update() }
+        }
+
+        fun update() {
+            if (exchangeRates != null && baseCurrency != null && destinationCurrency != null) {
+                // base currency
+                val baseValue = exchangeRates!!.rates?.find { it.currency == baseCurrency }?.value
+                // target currency
+                val destinationValue = exchangeRates!!.rates?.find { it.currency == destinationCurrency }?.value
+                val destinationValueCalculated = baseValue?.let { destinationValue?.div(it) }
+
+                // create string
+                this.value = HtmlCompat.fromHtml(
+                    app.getString(
+                        R.string.info_conversion,
+                        "1",
+                        baseCurrency!!.iso4217Alpha(),
+                        String.format(
+                            getLocale(app),
+                            "%.${destinationValueCalculated?.getSignificantDecimalPlaces(2)}f",
+                            destinationValueCalculated
+                        ),
+                        destinationCurrency!!.iso4217Alpha()
+                    ),
+                    HtmlCompat.FROM_HTML_MODE_LEGACY
+                )
+            }
+        }
     }
 
     /*

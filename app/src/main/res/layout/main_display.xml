@@ -27,7 +27,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:orientation="horizontal"
-            app:layout_constraintGuide_percent=".5" />
+            app:layout_constraintGuide_percent=".45" />
 
         <!-- refresh indicator ******************************************** -->
 
@@ -83,14 +83,28 @@
             android:paddingTop="1dp"
             android:src="@drawable/ic_history"
             android:visibility="gone"
-            app:layout_constraintBottom_toBottomOf="@id/textRefreshed"
-            app:layout_constraintEnd_toStartOf="@id/textRefreshed"
-            app:layout_constraintTop_toTopOf="@id/textRefreshed"
+            app:layout_constraintBottom_toBottomOf="@id/textInfoDate"
+            app:layout_constraintEnd_toStartOf="@id/textInfoDate"
+            app:layout_constraintTop_toTopOf="@id/textInfoDate"
             app:tint="?attr/colorError"
             tools:ignore="ContentDescription" />
 
         <TextView
-            android:id="@+id/textRefreshed"
+            android:id="@+id/textInfoConversion"
+            style="@style/TextAppearance.Material3.TitleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:alpha=".5"
+            android:gravity="end"
+            android:textColor="?android:attr/textColorTertiary"
+            android:layout_marginHorizontal="@dimen/margin2x"
+            app:layout_constraintBottom_toTopOf="@id/textInfoDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="12sp"
+            tools:text="1 EUR ≈ 11.15 SEK" />
+
+        <TextView
+            android:id="@+id/textInfoDate"
             style="@style/TextAppearance.Material3.TitleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"

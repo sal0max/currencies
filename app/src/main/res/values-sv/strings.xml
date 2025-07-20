@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="desc_toggle_currencies">byt plats på valutor</string>
-    <string name="rates_date_latest">Kurser från &lt;b&gt;%1$s&lt;/b&gt; via &lt;b&gt;%2$s&lt;/b&gt;</string>
-    <string name="rates_date_historical">Historiska kurser från &lt;b&gt;%1$s&lt;/b&gt; via &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="info_date_latest">Kurser från &lt;b&gt;%1$s&lt;/b&gt; via &lt;b&gt;%2$s&lt;/b&gt;</string>
+    <string name="info_date_historical">Historiska kurser från &lt;b&gt;%1$s&lt;/b&gt; via &lt;b&gt;%2$s&lt;/b&gt;</string>
     <string name="copied_to_clipboard">Kopierade &lt;b&gt;%s&lt;/b&gt; till urklipp</string>
     <string name="historical_rates_dialog_title">Historiska kurser</string>
     <string name="historical_rates_dialog_toggle">Använd växlingskurser från ett specifikt datum. Inaktivera för att använda de senaste kurserna.</string>

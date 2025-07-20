@@ -4,8 +4,9 @@
     <string name="app_name_alt" translatable="false" tools:keep="@string/app_name_alt">Sorten</string>
 
     <string name="desc_toggle_currencies">toggle currencies</string>
-    <string name="rates_date_latest">Rates as of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
-    <string name="rates_date_historical">Historical rates of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
+    <string name="info_conversion">%1$s %2$s ≈ %3$s %4$s</string>
+    <string name="info_date_latest">Rates as of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
+    <string name="info_date_historical">Historical rates of &lt;b>%1$s&lt;/b> by &lt;b>%2$s&lt;/b></string>
     <string name="copied_to_clipboard">Copied &lt;b>%s&lt;/b> to clipboard</string>
 
     <string name="historical_rates_dialog_title">Historical rates</string>
