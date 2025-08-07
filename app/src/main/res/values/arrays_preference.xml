@@ -13,4 +13,17 @@
         <item>2</item>
     </string-array>
 
+    <!-- keypad settings -->
+    <string-array name="keypad_names" translatable="false">
+        <item>@string/keypad_option_standard</item>
+        <item>@string/keypad_option_extended</item>
+        <item>@string/keypad_option_swapped</item>
+    </string-array>
+
+    <string-array name="keypad_values" translatable="false">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+
 </resources>

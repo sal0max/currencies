@@ -65,10 +65,10 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             }
         }
 
-        // extended keypad
-        findPreference<SwitchPreferenceCompat>(getString(R.string.extendedKeypad_key))?.apply {
+        // keypad type
+        findPreference<ListPreference>(getString(R.string.keypadType_key))?.apply {
             setOnPreferenceChangeListener { _, newValue ->
-                viewModel.setExtendedKeypadEnabled(newValue.toString().toBoolean())
+                viewModel.setKeypadType(newValue.toString().toInt())
                 true
             }
         }

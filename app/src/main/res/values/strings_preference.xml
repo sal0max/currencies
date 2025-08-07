@@ -11,7 +11,11 @@
     <string name="previewConversion_summary">Show the current conversion for each rate in the currency picker.</string>
     <string name="extendedKeypad_key" translatable="false">KEY_EXTENDED_KEYPAD</string>
     <string name="extendedKeypad_title">Extended Keypad</string>
-    <string name="extendedKeypad_summary">Add two additional buttons: <b>00</b>&nbsp;and&nbsp;<b>000</b>.</string>
+    <string name="keypadType_key" translatable="false">KEY_KEYPAD_TYPE</string>
+    <string name="keypadType_title">Keypad Layout</string>
+    <string name="keypad_option_standard">Standard (0 on left)</string>
+    <string name="keypad_option_extended">Extended (00, 000)</string>
+    <string name="keypad_option_swapped">Swapped (0 in center)</string>
     <string name="category_appearance">Appearance</string>
     <string name="system_default">System default</string>
     <string name="theme_key" translatable="false">KEY_THEME</string>

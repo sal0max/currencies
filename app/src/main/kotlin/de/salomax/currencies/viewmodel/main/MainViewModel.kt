@@ -53,8 +53,7 @@ class MainViewModel(val app: Application, onlyCache: Boolean = false) : AndroidV
 
     // ui
     private var isUpdating: LiveData<Boolean> = repository.isUpdating()
-    val isExtendedKeypadEnabled: LiveData<Boolean> = Database(app).isExtendedKeypadEnabled()
-
+    val keypadType: LiveData<Int> = Database(app).getKeypadTypeAsync()
 
     // number input
     private val currentBaseValueText = MutableLiveData("0")

@@ -242,7 +242,7 @@ class MainActivity : BaseActivity() {
 
     private fun setListeners() {
         // long click on delete
-        arrayOf<View>(findViewById(R.id.keypad), findViewById(R.id.keypad_extended)).forEach {
+        arrayOf<View>(findViewById(R.id.keypad), findViewById(R.id.keypad_extended), findViewById(R.id.keypad_swapped)).forEach {
             it.findViewById<AppCompatImageButton>(R.id.btn_delete).setOnLongClickListener {
                 viewModel.clear()
                 true
@@ -438,16 +438,28 @@ class MainActivity : BaseActivity() {
             spinnerFrom.setCurrentSum(it)
         }
 
-        viewModel.isExtendedKeypadEnabled.observe(this) { extendedEnabled ->
+        viewModel.keypadType.observe(this) { keypadType ->
             val keypadRegular = findViewById<View>(R.id.keypad)
             val keypadExtended = findViewById<View>(R.id.keypad_extended)
-            // activate the correct keypad
-            keypadRegular.visibility = if (extendedEnabled) View.GONE else View.VISIBLE
-            keypadExtended.visibility = if (extendedEnabled) View.VISIBLE else View.GONE
+            val keypadSwapped = findViewById<View>(R.id.keypad_swapped)
+
+            // hide all keypads first
+            keypadRegular.visibility = View.GONE
+            keypadExtended.visibility = View.GONE
+            keypadSwapped.visibility = View.GONE
+
+            // show the correct keypad based on type
+            when (keypadType) {
+                0 -> keypadRegular.visibility = View.VISIBLE        // Standard keypad (0 on left)
+                1 -> keypadExtended.visibility = View.VISIBLE       // Extended keypad (00, 000)
+                2 -> keypadSwapped.visibility = View.VISIBLE        // Swapped keypad (0 in middle)
+            }
+
             // decimal button: use correct char for the current locale
             val separator = getDecimalSeparator(this)
-            keypadExtended.findViewById<TextView>(R.id.btn_decimal).text = separator
             keypadRegular.findViewById<TextView>(R.id.btn_decimal).text = separator
+            keypadExtended.findViewById<TextView>(R.id.btn_decimal).text = separator
+            keypadSwapped.findViewById<TextView>(R.id.btn_decimal).text = separator
         }
     }
 

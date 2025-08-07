@@ -163,6 +163,11 @@ class Database(context: Context) {
      */
     private val prefs: SharedPreferences = context.getSharedPreferences("prefs", MODE_PRIVATE)
 
+    init {
+        // Migrate legacy preferences on first access
+        migrateLegacyPreferences()
+    }
+
     private val keyApi = "_api"
     private val keyOpenExchangeratesApiKey = "_api_openExchangeratesApiKey"
     private val keyTheme = "_theme"
@@ -170,7 +175,8 @@ class Database(context: Context) {
     private val keyFeeEnabled = "_feeEnabled"
     private val keyFeeValue = "_fee"
     private val keyPreviewConversionEnabled = "_previewConversionEnabled"
-    private val keyExtendedKeypadEnabled = "_extendedKeypadEnabled"
+    private val keyExtendedKeypadEnabled = "_extendedKeypadEnabled" // Legacy key for migration
+    private val keyKeypadType = "_keypadType"
 
     /* api */
 
@@ -265,16 +271,29 @@ class Database(context: Context) {
         return SharedPreferenceBooleanLiveData(prefs, keyPreviewConversionEnabled, false)
     }
 
-    /* extended keypad */
+    /* keypad layout */
 
-    fun setExtendedKeypadEnabled(enabled: Boolean) {
+    fun setKeypadType(type: Int) {
         prefs.apply {
-            edit().putBoolean(keyExtendedKeypadEnabled, enabled).apply()
+            edit().putInt(keyKeypadType, type).apply()
         }
     }
 
-    fun isExtendedKeypadEnabled(): LiveData<Boolean> {
-        return SharedPreferenceBooleanLiveData(prefs, keyExtendedKeypadEnabled, false)
+    fun getKeypadTypeAsync(): LiveData<Int> {
+        return SharedPreferenceIntLiveData(prefs, keyKeypadType, 0)
+    }
+
+    private fun migrateLegacyPreferences() {
+        // Migrate keypad preference from boolean to int
+        if (!prefs.contains(keyKeypadType) && prefs.contains(keyExtendedKeypadEnabled)) {
+            val oldValue = prefs.getBoolean(keyExtendedKeypadEnabled, false)
+            val newValue = if (oldValue) 1 else 0
+            // Save migrated value and remove old key
+            prefs.edit()
+                .putInt(keyKeypadType, newValue)
+                .remove(keyExtendedKeypadEnabled)
+                .apply()
+        }
     }
 
 }

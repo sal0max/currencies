@@ -30,4 +30,13 @@
         android:visibility="gone"
         tools:ignore="DuplicateIncludedIds" />
 
+    <include
+        android:id="@+id/keypad_swapped"
+        layout="@layout/main_keypad_swapped"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:visibility="gone"
+        tools:ignore="DuplicateIncludedIds" />
+
 </LinearLayout>
