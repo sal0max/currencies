@@ -47,7 +47,7 @@ class BankRossiiTimelineXmlParser(private val ids: Map<String, String>) {
                     if (date != null && value != null && currencyId != null && ids[currencyId] != null) {
                         val currency = Currency.fromString(ids[currencyId]!!)
                         if (currency != null)
-                            rates[date] = Rate(currency, value.toFloat())
+                            rates[date] = Rate(currency, value)
                     }
                     // reset
                     date = null

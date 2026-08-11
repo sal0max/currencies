@@ -118,19 +118,19 @@ class ExchangeRatesServiceTest {
         assertTrue(eur != null)
         println(eur)
 
-        val usd = rates.rates!!.find { rate -> rate.currency == Currency.USD }
+        val usd = rates.rates.find { rate -> rate.currency == Currency.USD }
         assertTrue(usd != null)
         println(usd)
 
-        val jpy = rates.rates!!.find { rate -> rate.currency == Currency.JPY }
+        val jpy = rates.rates.find { rate -> rate.currency == Currency.JPY }
         assertTrue(jpy != null)
         println(jpy)
 
-        val krw = rates.rates!!.find { rate -> rate.currency == Currency.KRW }
+        val krw = rates.rates.find { rate -> rate.currency == Currency.KRW }
         assertTrue(krw != null)
         println(krw)
 
-        val chf = rates.rates!!.find { rate -> rate.currency == Currency.CHF }
+        val chf = rates.rates.find { rate -> rate.currency == Currency.CHF }
         assertTrue(chf != null)
         println(chf)
 

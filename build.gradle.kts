@@ -1,10 +1,11 @@
 import com.github.benmanes.gradle.versions.updates.DependencyUpdatesTask
 
 plugins {
-    id("com.android.application") version "8.11.1" apply false
-    id("org.jetbrains.kotlin.android") version "2.2.0" apply false
+    id("com.android.application") version "9.3.1" apply false
+    id("org.jetbrains.kotlin.android") version "2.4.10" apply false
     // dependency-update-checker
-    id("com.github.ben-manes.versions") version "0.52.0"
+    id("io.github.ben-manes.versions") version "0.61.0"
+
 }
 
 // only check for stable versions

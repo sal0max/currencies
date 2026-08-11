@@ -100,7 +100,7 @@ internal class BankOfCanadaTimelineAdapter(
             }
             if (date != null && baseValue != null && symbolValue != null) {
                 reader.endObject()
-                return Pair(date, Rate(symbol, baseValue!! / symbolValue!!))
+                return Pair(date, Rate(symbol, baseValue / symbolValue))
             }
         }
         return null
