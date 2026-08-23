@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">约 160 种汇率\n来源：多家可靠提供者的组合。</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">每小时更新。</string>
     <string name="api_openExchangeRates_hint">要使用此源，您必须创建您的个人 API 密钥！</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> 提供来自多个来源的实时银行间市场中间汇率。\n<b>包含 160 多种货币。\n<i>要使用此数据源，您必须输入个人 API 密钥。</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">160 多种汇率\n来源：AllRatesToday 银行间市场数据</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">汇率大约每 60 秒更新一次。</string>
+    <string name="api_allRatesToday_hint">要使用此数据源，您必须输入个人 API 密钥。</string>
 </resources>

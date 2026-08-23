@@ -6,4 +6,8 @@
     <string name="api_ferEe_descriptionUpdateInterval">Vekslingskursene oppdateres hver arbeidsdag.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Dataen oppdateres ~16.00 CET hver dag.</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> leverer oppdaterte interbank-middelkurser fra flere kilder.\n<b>Mer enn 160 valutaer er inkludert.\n<i>For å bruke denne kilden må du angi din personlige API-nøkkel.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Mer enn 160 valutakurser\nKilde: interbank-markedsdata fra AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Kursene oppdateres omtrent hvert 60. sekund.</string>
+    <string name="api_allRatesToday_hint">For å bruke denne kilden må du angi din personlige API-nøkkel.</string>
 </resources>

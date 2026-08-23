@@ -66,4 +66,7 @@
     <string name="rate_summary">Eğer hoşuna gittiyse başka insanların da Currencies\'i keşfetmesini sağlayabilirsin. Uygulamayı Google Play üzerinden puanlamak için buraya tıkla.</string>
     <string name="category_versioninfo">Sürüm bilgisi</string>
     <string name="title_changelog">Değişiklik günlüğü</string>
+    <string name="api_all_rates_today_api_key_title">AllRatesToday API Anahtarı</string>
+    <string name="api_all_rates_today_api_key_message">Bu kaynağı kullanmak için https://allratestoday.com/register adresinde kişisel bir API anahtarı oluşturup buraya girin:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API anahtarı gerekli</i></string>
 </resources>

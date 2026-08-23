@@ -67,4 +67,7 @@
     <string name="rate_summary">如果您喜歡的話，您可以幫忙其他人發現 Currencies。按這裡在 Google Play 為這個應用程式評分。</string>
     <string name="category_versioninfo">版本資訊</string>
     <string name="title_changelog">更新日誌</string>
+    <string name="api_all_rates_today_api_key_title">AllRatesToday API 金鑰</string>
+    <string name="api_all_rates_today_api_key_message">若要使用此資料來源，請在 https://allratestoday.com/register 建立個人 API 金鑰並在此輸入：</string>
+    <string name="api_all_rates_today_api_key_missing"><i>需要 API 金鑰</i></string>
 </resources>

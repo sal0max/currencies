@@ -117,6 +117,23 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 else id
             }
         }
+        // AllRatesToday: API Key
+        val allRatesTodayApiKeyPreference =
+            findPreference<EditTextPreference>(getString(R.string.api_all_rates_today_key))
+        allRatesTodayApiKeyPreference?.apply {
+            setOnPreferenceChangeListener { _, newValue ->
+                viewModel.setAllRatesTodayApiKey(newValue.toString().trim())
+                true
+            }
+            dialogMessage = getText(R.string.api_all_rates_today_api_key_message)
+        }
+        viewModel.getAllRatesTodayApiKey().observe(this) { apiKey ->
+            allRatesTodayApiKeyPreference?.summaryProvider =
+                Preference.SummaryProvider<EditTextPreference> {
+                    if (apiKey.isNullOrBlank()) getText(R.string.api_all_rates_today_api_key_missing)
+                    else apiKey
+                }
+        }
         // api provider
         findPreference<ProviderPickerPreference>(getString(R.string.api_key))?.apply {
             // initialize values
@@ -130,6 +147,7 @@ class PreferenceFragment: PreferenceFragmentCompat() {
                 viewModel.setApiProvider(provider)
                 // update visibility of api key input
                 openExchangeratesApiKeyPreference?.isVisible = provider == ApiProvider.OPEN_EXCHANGERATES
+                allRatesTodayApiKeyPreference?.isVisible = provider == ApiProvider.ALL_RATES_TODAY
                 true
             }
             // set default, if empty (empty means, there was no mapping for the stored value)
@@ -141,6 +159,8 @@ class PreferenceFragment: PreferenceFragmentCompat() {
             // set initial visibility of api key input
             openExchangeratesApiKeyPreference?.isVisible =
                 ApiProvider.fromId(value.toIntOrNull() ?: -1) == ApiProvider.OPEN_EXCHANGERATES
+            allRatesTodayApiKeyPreference?.isVisible =
+                ApiProvider.fromId(value.toIntOrNull() ?: -1) == ApiProvider.ALL_RATES_TODAY
         }
         // change text according to selected api
         viewModel.getApiProvider().observe(this) {

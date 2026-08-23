@@ -69,4 +69,7 @@
     <string name="rate_summary">إذا كنت ترغب في ذلك ، يمكنك مساعدة الآخرين في اكتشاف العملات. انقر هنا لتقييم التطبيق على Google Play.</string>
     <string name="category_versioninfo">معلومات الإصدار</string>
     <string name="title_changelog">سجل التغيير</string>
+    <string name="api_all_rates_today_api_key_title">مفتاح API لـ AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">لاستخدام هذا المصدر، أنشئ مفتاح API شخصيًا على https://allratestoday.com/register وأدخله هنا:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>مطلوب مفتاح API</i></string>
 </resources>

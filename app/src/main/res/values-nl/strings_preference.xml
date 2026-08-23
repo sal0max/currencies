@@ -70,4 +70,7 @@
     <string name="rate_summary">Als je wilt, kun je anderen helpen valuta\'s te ontdekken. Klik hier om de app te beoordelen op Google Play.</string>
     <string name="category_versioninfo">Versie-informatie</string>
     <string name="title_changelog">Wijzigingsoverzicht</string>
+    <string name="api_all_rates_today_api_key_title">AllRatesToday API-sleutel</string>
+    <string name="api_all_rates_today_api_key_message">Om deze bron te gebruiken, maakt u een persoonlijke API-sleutel aan op https://allratestoday.com/register en voert u deze hier in:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API-sleutel vereist</i></string>
 </resources>

@@ -67,4 +67,7 @@
     <string name="rate_summary">Αν θέλετε, μπορείτε να βοηθήσετε και άλλους να ανακαλύψουν την εφαρμογή. Πατήστε εδώ για να την αξιολογήσετε στο Google Play.</string>
     <string name="category_versioninfo">Πληροφορίες έκδοσης</string>
     <string name="title_changelog">Αρχείο αλλαγών</string>
+    <string name="api_all_rates_today_api_key_title">Κλειδί API AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Για να χρησιμοποιήσετε αυτή την πηγή, δημιουργήστε ένα προσωπικό κλειδί API στο https://allratestoday.com/register και εισαγάγετέ το εδώ:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Απαιτείται κλειδί API</i></string>
 </resources>

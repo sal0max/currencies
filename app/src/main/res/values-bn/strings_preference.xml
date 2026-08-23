@@ -68,4 +68,7 @@
     <string name="rate_summary">তুমি চাইলে, অন্যদেরকে কারেন্সি অ্যাপটি সম্পর্কে জানতে সহায়তা করতে পারো। গুগল প্লেতে অ্যাপটি পর্যালোচনা জমা দিতে এখানে টিপ দাও।</string>
     <string name="category_versioninfo">সংস্করণ তথ্যা</string>
     <string name="title_changelog">পরিবর্তনসূচি</string>
+    <string name="api_all_rates_today_api_key_title">AllRatesToday API কী</string>
+    <string name="api_all_rates_today_api_key_message">এই উৎসটি ব্যবহার করতে https://allratestoday.com/register-এ একটি ব্যক্তিগত API কী তৈরি করে এখানে লিখুন:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API কী প্রয়োজন</i></string>
 </resources>

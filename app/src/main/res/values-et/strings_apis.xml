@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Umbes 160 valuuta vahetuskursid\nAndmeallikas: mitme usaldusväärse allika kombinatsioon.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Andmed uuenevad kord tunnis.</string>
     <string name="api_openExchangeRates_hint">Selle andmeallika kasutamiseks peab sul olema isiklik liidestuse tunnus (API key)!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> pakub mitmest allikast pärinevaid reaalajas pankadevahelise turu keskmisi vahetuskursse.\n<b>Kaasatud on üle 160 valuuta.\n<i>Selle allika kasutamiseks peate sisestama oma isikliku API-võtme.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Üle 160 vahetuskursi\nAllikas: AllRatesToday pankadevahelise turu andmed</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Kursse uuendatakse ligikaudu iga 60 sekundi järel.</string>
+    <string name="api_allRatesToday_hint">Selle allika kasutamiseks peate sisestama oma isikliku API-võtme.</string>
 </resources>

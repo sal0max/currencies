@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Unes 160 taxes de canvi.\nFont: Combinació de diferents proveïdors de confiança.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualitzacions cada hora.</string>
     <string name="api_openExchangeRates_hint">Heu de crear una clau API personal per a utilitzar aquesta font.</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> proporciona tipus de canvi interbancaris mitjans en temps real de diverses fonts.\n<b>Inclou més de 160 monedes.\n<i>Per utilitzar aquesta font, heu d\'introduir la vostra clau API personal.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Més de 160 tipus de canvi\nFont: dades del mercat interbancari d\'AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Els tipus s\'actualitzen aproximadament cada 60 segons.</string>
+    <string name="api_allRatesToday_hint">Per utilitzar aquesta font, heu d\'introduir la vostra clau API personal.</string>
 </resources>

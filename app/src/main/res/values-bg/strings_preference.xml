@@ -63,4 +63,7 @@
     <string name="rate_summary">Ако искаш, можеш да помогнеш на другите да открият Currencies. Натисни тук да оцениш приложението в Google Play.</string>
 
 
+    <string name="api_all_rates_today_api_key_title">API ключ за AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">За да използвате този източник, създайте личен API ключ на https://allratestoday.com/register и го въведете тук:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Необходим е API ключ</i></string>
 </resources>

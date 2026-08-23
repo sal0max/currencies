@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Khoảng 160 tỉ lệ chuyển đổi.\nNguồn: Kết hợp nhiều nhà cung cấp đáng tin cậy.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Cập nhật hàng giờ.</string>
     <string name="api_openExchangeRates_hint">Để sử dụng Nguồn này, bạn phải tạo mã API cá nhân!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> cung cấp tỷ giá trung bình liên ngân hàng trực tiếp từ nhiều nguồn.\n<b>Bao gồm hơn 160 loại tiền tệ.\n<i>Để sử dụng nguồn này, bạn phải nhập khóa API cá nhân.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Hơn 160 tỷ giá hối đoái\nNguồn: dữ liệu thị trường liên ngân hàng AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Tỷ giá được cập nhật khoảng 60 giây một lần.</string>
+    <string name="api_allRatesToday_hint">Để sử dụng nguồn này, bạn phải nhập khóa API cá nhân.</string>
 </resources>

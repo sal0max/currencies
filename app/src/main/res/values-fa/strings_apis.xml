@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">حدود 160 نرخ ارز\nمنبع: ترکیبی از چندین ارائه دهنده قابل اعتماد.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">به روز رسانی ساعتی.</string>
     <string name="api_openExchangeRates_hint">برای استفاده از این منبع، باید کلید API شخصی خود را ایجاد کنید!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> نرخ‌های زنده و میانگین بازار بین‌بانکی را از چندین منبع ارائه می‌دهد.\n<b>بیش از ۱۶۰ ارز در دسترس است.\n<i>برای استفاده از این منبع باید کلید API شخصی خود را وارد کنید.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">بیش از ۱۶۰ نرخ ارز\nمنبع: داده‌های بازار بین‌بانکی AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">نرخ‌ها تقریباً هر ۶۰ ثانیه به‌روزرسانی می‌شوند.</string>
+    <string name="api_allRatesToday_hint">برای استفاده از این منبع باید کلید API شخصی خود را وارد کنید.</string>
 </resources>

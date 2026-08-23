@@ -63,4 +63,7 @@
     <string name="rate_summary">Ha szeretnéd, segíthetsz másoknak felfedezni a Currencies-t. Kattints ide az alkalmazás értékeléséhez a Google Play-en.</string>
 
 
+    <string name="api_all_rates_today_api_key_title">AllRatesToday API-kulcs</string>
+    <string name="api_all_rates_today_api_key_message">A forrás használatához hozzon létre személyes API-kulcsot a https://allratestoday.com/register oldalon, majd adja meg itt:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API-kulcs szükséges</i></string>
 </resources>

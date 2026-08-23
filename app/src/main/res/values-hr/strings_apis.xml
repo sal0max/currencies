@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Oko 160 tečajeva\nIzvor: Kombinacija više pouzdanih izvora podataka.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Ažurira se svakoga sata.</string>
     <string name="api_openExchangeRates_hint">Prije početka uporabe ovog izvora morate izraditi svoj osobni API ključ!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> pruža aktualne srednje međubankovne tečajeve iz više izvora.\n<b>Uključeno je više od 160 valuta.\n<i>Za upotrebu ovog izvora morate unijeti svoj osobni API ključ.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Više od 160 tečajeva\nIzvor: međubankovni tržišni podaci AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Tečajevi se ažuriraju približno svakih 60 sekundi.</string>
+    <string name="api_allRatesToday_hint">Za upotrebu ovog izvora morate unijeti svoj osobni API ključ.</string>
 </resources>

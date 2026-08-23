@@ -64,4 +64,7 @@
     <string name="rate_summary">Það má hjálpa öðrum að finna forritið. Smelltu hingað til að gefa forritinu einkunn á Google Play.</string>
     <string name="category_versioninfo">Útgáfuupplýsingar</string>
     <string name="title_changelog">Breytingarskrá</string>
+    <string name="api_all_rates_today_api_key_title">API-lykill AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Til að nota þessa heimild skaltu búa til persónulegan API-lykil á https://allratestoday.com/register og slá hann inn hér:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API-lykill nauðsynlegur</i></string>
 </resources>

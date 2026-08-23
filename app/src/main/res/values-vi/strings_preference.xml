@@ -67,4 +67,7 @@
     <string name="rate_summary">Nếu bạn muốn, bạn có thể giúp những người khác khám phá ra Currencies. Hãy nhấn vào đây để đánh giá ứng dụng trên Google Play.</string>
     <string name="category_versioninfo">Thông tin phiên bản</string>
     <string name="title_changelog">Nhật ký thay đổi</string>
+    <string name="api_all_rates_today_api_key_title">Khóa API AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Để sử dụng nguồn này, hãy tạo khóa API cá nhân tại https://allratestoday.com/register và nhập vào đây:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Cần có khóa API</i></string>
 </resources>

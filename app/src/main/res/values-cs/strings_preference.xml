@@ -70,4 +70,7 @@
     <string name="rate_summary">Pokud chcete, můžete ostatním pomoci objevit Currencies. Klepněte sem a ohodnoťte aplikaci v Google Play.</string>
     <string name="category_versioninfo">Info o verzi</string>
     <string name="title_changelog">Seznam změn</string>
+    <string name="api_all_rates_today_api_key_title">Klíč API AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Chcete-li tento zdroj používat, vytvořte si osobní klíč API na https://allratestoday.com/register a zadejte jej zde:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Je vyžadován klíč API</i></string>
 </resources>

@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">حوالي 160 سعر الصرف\nالمصدر: مزيج من مقدمي خدمات موثوقين متعددين.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">تحديثات كل ساعة.</string>
     <string name="api_openExchangeRates_hint">لاستخدام هذا المصدر، عليك إنشاء مفتاح API الشخصي الخاص بك!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> يوفّر أسعار صرف حية في سوق ما بين البنوك من مصادر متعددة.\n<b>يتضمن أكثر من 160 عملة.\n<i>لاستخدام هذا المصدر، يجب إدخال مفتاح API الشخصي الخاص بك.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">أكثر من 160 سعر صرف\nالمصدر: بيانات سوق ما بين البنوك من AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">تُحدَّث الأسعار كل 60 ثانية تقريبًا.</string>
+    <string name="api_allRatesToday_hint">لاستخدام هذا المصدر، يجب إدخال مفتاح API الشخصي الخاص بك.</string>
 </resources>

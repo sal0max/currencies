@@ -64,4 +64,7 @@
     <string name="rate_summary">Jika Anda mau, Anda dapat membantu orang lain menemukan Currencies. Klik di sini untuk menilai aplikasi di Google Play.</string>
 
 
+    <string name="api_all_rates_today_api_key_title">Kunci API AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Untuk menggunakan sumber ini, buat kunci API pribadi di https://allratestoday.com/register lalu masukkan di sini:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Kunci API diperlukan</i></string>
 </resources>

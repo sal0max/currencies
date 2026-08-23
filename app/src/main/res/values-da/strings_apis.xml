@@ -25,4 +25,8 @@
 
 
 
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> leverer aktuelle interbank-middelkurser fra flere kilder.\n<b>Mere end 160 valutaer er inkluderet.\n<i>For at bruge denne kilde skal du indtaste din personlige API-nøgle.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Mere end 160 valutakurser\nKilde: interbank-markedsdata fra AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Kurserne opdateres cirka hvert 60. sekund.</string>
+    <string name="api_allRatesToday_hint">For at bruge denne kilde skal du indtaste din personlige API-nøgle.</string>
 </resources>
