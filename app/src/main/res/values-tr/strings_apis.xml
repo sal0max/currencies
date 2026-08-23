@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Yaklaşık 160 döviz kuru\nKaynak: Birden fazla güvenilir sağlayıcının birleşimi.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Saatlik güncellemeler.</string>
     <string name="api_openExchangeRates_hint">Bu kaynağı kullanmak için kişisel API anahtarınızı oluşturmanız gerekir!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Resmî döviz kurlarını sağlayan <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Kazakistan Ulusal Bankası</b></a>.\n<b>Yaklaşık 48 döviz kuru dahildir.</b>\nKaynak: Kazakistan Ulusal Bankası, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Yaklaşık 48 döviz kuru dahildir.\nKaynak: Kazakistan Ulusal Bankası</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Resmî döviz kurları günlük yayımlanır. ABD doları kuru, bir sonraki iş günü için Astana saatiyle 15.30\'daki işlemlere göre belirlenir; diğer para birimleri saat 16.00\'daki çapraz kurlar kullanılarak hesaplanır.</string>
 </resources>

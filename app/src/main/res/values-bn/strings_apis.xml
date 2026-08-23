@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">প্রায় ১৬০টি বিনিময় হার\nউৎস: কতিপয় নির্ভরযোগ্য সরবরাহকারীর সংমিশ্রণে।</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">ঘণ্টাপ্রতি হালনাগাদ।</string>
     <string name="api_openExchangeRates_hint">এই উৎসটি ব্যবহার করতে তোমার ব্যক্তিগত এপিআই কি(চাবি) বানাতে হবে!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">প্রদত্ত সরকারি বিনিময় হার <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>কাজাখস্তানের জাতীয় ব্যাংক</b></a>.\n<b>প্রায় ৪৮টি বিনিময় হার অন্তর্ভুক্ত রয়েছে।</b>\nউৎস: কাজাখস্তানের জাতীয় ব্যাংক, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">প্রায় ৪৮টি বিনিময় হার অন্তর্ভুক্ত রয়েছে।\nউৎস: কাজাখস্তানের জাতীয় ব্যাংক</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">সরকারি বিনিময় হার প্রতিদিন প্রকাশিত হয়। পরবর্তী কর্মদিবসের জন্য মার্কিন ডলারের হার আস্তানা সময় ১৫:৩০ পর্যন্ত লেনদেনের ভিত্তিতে নির্ধারিত হয়; অন্যান্য মুদ্রা ১৬:০০ পর্যন্ত ক্রস রেট ব্যবহার করে গণনা করা হয়।</string>
 </resources>

@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Unos 160 tipos de cambio\nFuente: Combinación de múltiples proveedores fiables.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualizaciones cada hora.</string>
     <string name="api_openExchangeRates_hint">Para utilizar esta Fuente, ¡tiene que crear su Clave API personal!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Tipos de cambio oficiales proporcionados por el <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Banco Nacional de Kazajistán</b></a>.\n<b>Se incluyen unos 48 tipos de cambio.</b>\nFuente: Banco Nacional de Kazajistán, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Se incluyen unos 48 tipos de cambio.\nFuente: Banco Nacional de Kazajistán</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Los tipos de cambio oficiales se publican diariamente. El tipo del dólar estadounidense se fija según la negociación a las 15:30, hora de Astaná, para el siguiente día laborable; las demás monedas se calculan mediante tipos cruzados a las 16:00.</string>
 </resources>

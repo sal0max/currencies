@@ -6,4 +6,7 @@
     <string name="api_ferEe_descriptionUpdateInterval">Vekslingskursene oppdateres hver arbeidsdag.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> sporer referansekursene (forex) som publisert av den Europeiske sentralbanken.\n<b>Ca. 30 valutaer.</b></string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Dataen oppdateres ~16.00 CET hver dag.</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Offisielle valutakurser levert av <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Kasakhstans nasjonalbank</b></a>.\n<b>Omtrent 48 valutakurser er inkludert.</b>\nKilde: Kasakhstans nasjonalbank, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Omtrent 48 valutakurser er inkludert.\nKilde: Kasakhstans nasjonalbank</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Offisielle valutakurser publiseres daglig. Kursen for amerikanske dollar fastsettes fra handelen kl. 15.30 Astana-tid for neste virkedag; andre valutaer beregnes ved hjelp av krysskurser kl. 16.00.</string>
 </resources>

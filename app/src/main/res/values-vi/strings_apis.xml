@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Khoảng 160 tỉ lệ chuyển đổi.\nNguồn: Kết hợp nhiều nhà cung cấp đáng tin cậy.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Cập nhật hàng giờ.</string>
     <string name="api_openExchangeRates_hint">Để sử dụng Nguồn này, bạn phải tạo mã API cá nhân!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Tỷ giá hối đoái chính thức do <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Ngân hàng Quốc gia Kazakhstan</b></a>.\n<b>Bao gồm khoảng 48 tỷ giá hối đoái.</b>\nNguồn: Ngân hàng Quốc gia Kazakhstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Bao gồm khoảng 48 tỷ giá hối đoái.\nNguồn: Ngân hàng Quốc gia Kazakhstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Tỷ giá hối đoái chính thức được công bố hằng ngày. Tỷ giá đô la Mỹ được xác định từ giao dịch lúc 15:30 theo giờ Astana cho ngày làm việc tiếp theo; các loại tiền tệ khác được tính bằng tỷ giá chéo lúc 16:00.</string>
 </resources>

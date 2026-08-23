@@ -3,4 +3,7 @@
     <string name="api_exchangerateHost_descriptionUpdateInterval">Gengi eru uppfærð um miðnætti UTC alla virka daga.</string>
     <string name="api_ferEe_descriptionUpdateInterval">Gengi eru uppfærð alla virka daga.</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Opinber gengi frá <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Seðlabanka Kasakstan</b></a>.\n<b>Um 48 gengi eru innifalin.</b>\nHeimild: Seðlabanka Kasakstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Um 48 gengi eru innifalin.\nHeimild: Seðlabanka Kasakstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Opinber gengi eru birt daglega. Gengi Bandaríkjadals er ákveðið út frá viðskiptum kl. 15:30 að Astana-tíma fyrir næsta virka dag; aðrir gjaldmiðlar eru reiknaðir með krossgengi kl. 16:00.</string>
 </resources>

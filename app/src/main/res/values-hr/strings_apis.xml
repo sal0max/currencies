@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Oko 160 tečajeva\nIzvor: Kombinacija više pouzdanih izvora podataka.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Ažurira se svakoga sata.</string>
     <string name="api_openExchangeRates_hint">Prije početka uporabe ovog izvora morate izraditi svoj osobni API ključ!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Službeni tečajevi koje pruža <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Narodna banka Kazahstana</b></a>.\n<b>Uključeno je oko 48 tečajeva.</b>\nIzvor: Narodna banka Kazahstana, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Uključeno je oko 48 tečajeva.\nIzvor: Narodna banka Kazahstana</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Službeni tečajevi objavljuju se svakodnevno. Tečaj američkog dolara određuje se prema trgovanju u 15:30 po vremenu u Astani za sljedeći radni dan; ostale valute izračunavaju se pomoću križnih tečajeva u 16:00.</string>
 </resources>

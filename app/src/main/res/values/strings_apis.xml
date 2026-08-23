@@ -29,6 +29,10 @@
     <string name="api_norgesBank_descriptionUpdateInterval">Publication time of daily exchange rates is approximately 16:00 CET.</string>
     <string name="api_norgesBank_hint">Service regularly has downtimes (HTTP 503), during which rates can\'t be refreshed!</string>
 
+    <string name="api_nationalBankKazakhstan_descriptionFull">Official exchange rates provided by the <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>National Bank of Kazakhstan</b></a>.\n<b>About 48 exchange rates are included.</b>\nSource: National Bank of Kazakhstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">About 48 exchange rates\nSource: National Bank of Kazakhstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Official exchange rates are published daily. The US dollar rate is set from trading as of 15:30 Astana time for the next business day; other currencies are calculated using cross rates as of 16:00.</string>
+
     <string name="api_openExchangeRates_descriptionFull">Data are tracked and combined from multiple reliable sources, ensuring unbiased rates. See <a href="https://openexchangerates.org/"><b>openexchangerates.org</b></a> for more information.\n<b>Open Exchange Rates provides a great amount of about 160 exchange rates.\n<i>To use this Source, you have to enter your personal API Key!</i></b></string>
     <string name="api_openExchangeRates_descriptionShort">About 160 exchange rates\nSource: Combination of multiple reliable providers.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Hourly updates.</string>

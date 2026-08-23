@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Umbes 160 valuuta vahetuskursid\nAndmeallikas: mitme usaldusväärse allika kombinatsioon.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Andmed uuenevad kord tunnis.</string>
     <string name="api_openExchangeRates_hint">Selle andmeallika kasutamiseks peab sul olema isiklik liidestuse tunnus (API key)!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Ametlikud vahetuskursid, mille avaldab <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Kasahstani keskpank</b></a>.\n<b>Kaasatud on ligikaudu 48 vahetuskurssi.</b>\nAllikas: Kasahstani keskpank, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Kaasatud on ligikaudu 48 vahetuskurssi.\nAllikas: Kasahstani keskpank</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Ametlikud vahetuskursid avaldatakse iga päev. USA dollari kurss määratakse järgmise tööpäeva jaoks kauplemise põhjal kell 15.30 Astana aja järgi; teiste valuutade kursid arvutatakse ristkursside abil kell 16.00.</string>
 </resources>

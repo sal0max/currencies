@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Okolo 160 kurzů\nZdroj: Kombinace několika spolehlivých poskytovatelů.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Hodinové aktualizace.</string>
     <string name="api_openExchangeRates_hint">Abyste mohli využívat tento zdroj, musíte si vytvořit osobní klíč API!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Oficiální směnné kurzy poskytované <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Národní bankou Kazachstánu</b></a>.\n<b>Zahrnuto je přibližně 48 směnných kurzů.</b>\nZdroj: Národní bankou Kazachstánu, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Zahrnuto je přibližně 48 směnných kurzů.\nZdroj: Národní bankou Kazachstánu</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Oficiální směnné kurzy jsou zveřejňovány denně. Kurz amerického dolaru je pro následující pracovní den stanoven podle obchodování k 15:30 astanského času; ostatní měny se počítají pomocí křížových kurzů k 16:00.</string>
 </resources>

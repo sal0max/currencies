@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Ungefähr 160 Wechselkurse\nQuelle: Kombination aus mehreren zuverlässigen Quellen.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Stündliche Updates.</string>
     <string name="api_openExchangeRates_hint">Um diese Quelle zu nutzen, muss zuerst ein persönlicher API-Schlüssel erstellt werden!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Offizielle Wechselkurse der <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Nationalbank von Kasachstan</b></a>.\n<b>Etwa 48 Wechselkurse sind enthalten.</b>\nQuelle: Nationalbank von Kasachstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Etwa 48 Wechselkurse sind enthalten.\nQuelle: Nationalbank von Kasachstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Die offiziellen Wechselkurse werden täglich veröffentlicht. Der US-Dollar-Kurs wird anhand des Handelsstands um 15:30 Uhr Astana-Zeit für den nächsten Geschäftstag festgelegt; andere Währungen werden anhand von Kreuzkursen um 16:00 Uhr berechnet.</string>
 </resources>

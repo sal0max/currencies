@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Ongeveer 160 wisselkoersen\nBron: Combinatie van meerdere betrouwbare aanbieders.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Elk uur updates.</string>
     <string name="api_openExchangeRates_hint">Om deze bron te gebruiken moet u een persoonlijke API sleutel aanmaken!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Officiële wisselkoersen verstrekt door de <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Nationale Bank van Kazachstan</b></a>.\n<b>Ongeveer 48 wisselkoersen zijn inbegrepen.</b>\nBron: Nationale Bank van Kazachstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Ongeveer 48 wisselkoersen zijn inbegrepen.\nBron: Nationale Bank van Kazachstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Officiële wisselkoersen worden dagelijks gepubliceerd. De koers van de Amerikaanse dollar wordt voor de volgende werkdag vastgesteld op basis van de handel om 15.30 uur Astana-tijd; andere valuta worden om 16.00 uur berekend aan de hand van kruiskoersen.</string>
 </resources>

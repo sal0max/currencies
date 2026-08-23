@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Unes 160 taxes de canvi.\nFont: Combinació de diferents proveïdors de confiança.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualitzacions cada hora.</string>
     <string name="api_openExchangeRates_hint">Heu de crear una clau API personal per a utilitzar aquesta font.</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Tipus de canvi oficials proporcionats pel <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Banc Nacional del Kazakhstan</b></a>.\n<b>S\'inclouen uns 48 tipus de canvi.</b>\nFont: Banc Nacional del Kazakhstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">S\'inclouen uns 48 tipus de canvi.\nFont: Banc Nacional del Kazakhstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Els tipus de canvi oficials es publiquen diàriament. El tipus del dòlar dels EUA es fixa a partir de la negociació fins a les 15.30, hora d\'Astanà, per al següent dia laborable; les altres monedes es calculen mitjançant tipus creuats fins a les 16.00.</string>
 </resources>

@@ -3,4 +3,7 @@
     <string name="api_exchangerateHost_descriptionUpdateInterval">שערי החליפין מעודכנים בסביבות חצות לפי UTC בכל יום עבודה.</string>
     <string name="api_ferEe_descriptionUpdateInterval">השערים מתעדכנים בכל יום עבודה.</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">שערי חליפין רשמיים המסופקים על ידי <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>הבנק הלאומי של קזחסטן</b></a>.\n<b>כלולים כ־48 שערי חליפין.</b>\nמקור: הבנק הלאומי של קזחסטן, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">כלולים כ־48 שערי חליפין.\nמקור: הבנק הלאומי של קזחסטן</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">שערי החליפין הרשמיים מתפרסמים מדי יום. שער הדולר האמריקאי נקבע לפי המסחר בשעה 15:30 לפי שעון אסטנה עבור יום העסקים הבא; מטבעות אחרים מחושבים באמצעות שערים צולבים בשעה 16:00.</string>
 </resources>

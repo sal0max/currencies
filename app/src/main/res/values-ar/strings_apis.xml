@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">حوالي 160 سعر الصرف\nالمصدر: مزيج من مقدمي خدمات موثوقين متعددين.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">تحديثات كل ساعة.</string>
     <string name="api_openExchangeRates_hint">لاستخدام هذا المصدر، عليك إنشاء مفتاح API الشخصي الخاص بك!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">أسعار الصرف الرسمية المقدمة من <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>البنك الوطني الكازاخستاني</b></a>.\n<b>يتم تضمين حوالي 48 سعر صرف.</b>\nالمصدر: البنك الوطني الكازاخستاني, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">يتم تضمين حوالي 48 سعر صرف.\nالمصدر: البنك الوطني الكازاخستاني</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">تُنشر أسعار الصرف الرسمية يوميًا. يُحدد سعر الدولار الأمريكي استنادًا إلى التداول حتى الساعة 15:30 بتوقيت أستانا ليوم العمل التالي؛ وتُحسب العملات الأخرى باستخدام الأسعار المتقاطعة حتى الساعة 16:00.</string>
 </resources>

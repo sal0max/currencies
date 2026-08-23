@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">Близько 160 курсів валют\nДжерело: поєднання кількох надійних постачальників.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Дані оновлюються щогодини.</string>
     <string name="api_openExchangeRates_hint">Щоб використовувати це джерело, ви повинні створити свій особистий ключ API!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Офіційні курси валют, які надає <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Національний Банк Казахстану</b></a>.\n<b>Включено близько 48 валютних курсів.</b>\nДжерело: Національний Банк Казахстану, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Включено близько 48 валютних курсів.\nДжерело: Національний Банк Казахстану</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Офіційні курси валют публікуються щодня. Курс долара США встановлюється за результатами торгів станом на 15:30 за часом Астани на наступний робочий день; курси інших валют розраховуються через крос-курси станом на 16:00.</string>
 </resources>

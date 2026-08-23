@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">大約有 160 種匯率\n來源：由眾多可信賴的供應商組成。</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">每小時更新。</string>
     <string name="api_openExchangeRates_hint">要使用這個來源，您必須建立您的個人 API 金鑰！</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">官方匯率由 <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>哈薩克國家銀行</b></a>.\n<b>包含約 48 種匯率。</b>\n來源: 哈薩克國家銀行, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">包含約 48 種匯率。\n來源: 哈薩克國家銀行</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">官方匯率每日發布。美元匯率根據阿斯塔納時間 15:30 的交易情況確定，適用於下一個工作日；其他貨幣使用 16:00 的交叉匯率計算。</string>
 </resources>
