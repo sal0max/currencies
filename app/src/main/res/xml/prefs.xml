@@ -63,6 +63,13 @@
             android:key="@string/api_open_exchangerates_id_key"
             android:title="@string/api_open_exchangerates_api_key_title"
             app:useSimpleSummaryProvider="true" />
+        <EditTextPreference
+            android:dialogMessage="@string/api_all_rates_today_api_key_message"
+            android:dialogTitle="@string/api_all_rates_today_api_key_title"
+            app:dialogLayout="@layout/preference_dialog_api_key"
+            android:key="@string/api_all_rates_today_key"
+            android:title="@string/api_all_rates_today_api_key_title"
+            app:useSimpleSummaryProvider="true" />
         <de.salomax.currencies.widget.LongSummaryPreference
             android:key="@string/key_apiProvider"
             android:selectable="false"

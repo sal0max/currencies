@@ -64,4 +64,7 @@
 
 
 
+    <string name="api_all_rates_today_api_key_title">API-ŝlosilo de AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Por uzi ĉi tiun fonton, kreu personan API-ŝlosilon ĉe https://allratestoday.com/register kaj enigu ĝin ĉi tie:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API-ŝlosilo bezonata</i></string>
 </resources>

@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Yaklaşık 160 döviz kuru\nKaynak: Birden fazla güvenilir sağlayıcının birleşimi.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Saatlik güncellemeler.</string>
     <string name="api_openExchangeRates_hint">Bu kaynağı kullanmak için kişisel API anahtarınızı oluşturmanız gerekir!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> birden fazla kaynaktan canlı bankalar arası piyasa orta kurlarını sağlar.\n<b>160\'tan fazla para birimi dahildir.\n<i>Bu kaynağı kullanmak için kişisel API anahtarınızı girmeniz gerekir.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">160\'tan fazla döviz kuru\nKaynak: AllRatesToday bankalar arası piyasa verileri</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Kurlar yaklaşık her 60 saniyede bir güncellenir.</string>
+    <string name="api_allRatesToday_hint">Bu kaynağı kullanmak için kişisel API anahtarınızı girmeniz gerekir.</string>
 </resources>

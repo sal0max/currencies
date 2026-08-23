@@ -67,4 +67,7 @@
     <string name="rate_summary">Если вам всё понравилось, то вы можете помочь другим узнать о Currencies. Нажмите здесь, чтобы оценить приложение в Google Play.</string>
     <string name="category_versioninfo">Информация о версии</string>
     <string name="title_changelog">История изменений</string>
+    <string name="api_all_rates_today_api_key_title">Ключ API AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Чтобы использовать этот источник, создайте личный ключ API на странице https://allratestoday.com/register и введите его здесь:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Требуется ключ API</i></string>
 </resources>

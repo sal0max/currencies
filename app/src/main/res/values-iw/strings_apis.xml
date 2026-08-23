@@ -3,4 +3,8 @@
     <string name="api_exchangerateHost_descriptionUpdateInterval">שערי החליפין מעודכנים בסביבות חצות לפי UTC בכל יום עבודה.</string>
     <string name="api_ferEe_descriptionUpdateInterval">השערים מתעדכנים בכל יום עבודה.</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">הנתונים מתעדכנים באזור 16:00 CET בכל יום עבודה.</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> מספק שערי חליפין יציגים בזמן אמת מהשוק הבין־בנקאי ממספר מקורות.\n<b>יותר מ־160 מטבעות כלולים.\n<i>כדי להשתמש במקור זה, יש להזין את מפתח ה-API האישי שלך.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">יותר מ־160 שערי חליפין\nמקור: נתוני השוק הבין־בנקאי של AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">השערים מתעדכנים בערך כל 60 שניות.</string>
+    <string name="api_allRatesToday_hint">כדי להשתמש במקור זה, יש להזין את מפתח ה-API האישי שלך.</string>
 </resources>

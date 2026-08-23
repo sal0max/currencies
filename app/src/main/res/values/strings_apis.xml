@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> provides live interbank mid-market exchange rates from multiple sources.\n<b>More than 160 currencies are included.\n<i>To use this source, you have to enter your personal API key.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">More than 160 exchange rates\nSource: AllRatesToday interbank market data</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Rates are updated approximately every 60 seconds.</string>
+    <string name="api_allRatesToday_hint">To use this source, you have to create your personal API key.</string>
+
     <string name="api_bankOfCanada_descriptionFull">Daily average exchange rates of the <a href="https://www.bankofcanada.ca/rates/exchange/daily-exchange-rates/"><b>Bank of Canada</b></a>.\n<b>About 23 currencies are included.</b></string>
     <string name="api_bankOfCanada_descriptionShort">About 23 exchange rates\nSource: Central Bank of Canada</string>
     <string name="api_bankOfCanada_descriptionUpdateInterval">The rates are published once each business day by 16:30 ET</string>

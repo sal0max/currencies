@@ -70,4 +70,7 @@
     <string name="rate_summary">Kui soovid, et ka teised kasutajad leiaks selle rakenduse, siis klõpsi siin ja hinda seda Google Plays.</string>
     <string name="category_versioninfo">Versiooniteave</string>
     <string name="title_changelog">Muudatuste logi</string>
+    <string name="api_all_rates_today_api_key_title">AllRatesToday API-võti</string>
+    <string name="api_all_rates_today_api_key_message">Selle allika kasutamiseks looge aadressil https://allratestoday.com/register isiklik API-võti ja sisestage see siia:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API-võti on nõutav</i></string>
 </resources>

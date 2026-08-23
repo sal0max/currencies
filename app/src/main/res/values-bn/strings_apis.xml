@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">প্রায় ১৬০টি বিনিময় হার\nউৎস: কতিপয় নির্ভরযোগ্য সরবরাহকারীর সংমিশ্রণে।</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">ঘণ্টাপ্রতি হালনাগাদ।</string>
     <string name="api_openExchangeRates_hint">এই উৎসটি ব্যবহার করতে তোমার ব্যক্তিগত এপিআই কি(চাবি) বানাতে হবে!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> একাধিক উৎস থেকে সরাসরি আন্তঃব্যাংক মধ্যবর্তী বিনিময় হার প্রদান করে।\n<b>১৬০টিরও বেশি মুদ্রা অন্তর্ভুক্ত রয়েছে।\n<i>এই উৎসটি ব্যবহার করতে আপনার ব্যক্তিগত API কী লিখতে হবে।</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">১৬০টিরও বেশি বিনিময় হার\nউৎস: AllRatesToday আন্তঃব্যাংক বাজারের তথ্য</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">হার প্রায় প্রতি ৬০ সেকেন্ডে হালনাগাদ হয়।</string>
+    <string name="api_allRatesToday_hint">এই উৎসটি ব্যবহার করতে আপনার ব্যক্তিগত API কী লিখতে হবে।</string>
 </resources>

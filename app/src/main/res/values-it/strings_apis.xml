@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Circa 160 tassi di cambio\nFonte: Combinazione di più fornitori affidabili.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Aggiornamenti orari.</string>
     <string name="api_openExchangeRates_hint">Per utilizzare questa fonte, è necessario creare una chiave API personale!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> fornisce tassi di cambio interbancari medi in tempo reale da più fonti.\n<b>Sono incluse più di 160 valute.\n<i>Per utilizzare questa fonte, devi inserire la tua chiave API personale.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Più di 160 tassi di cambio\nFonte: dati del mercato interbancario di AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">I tassi vengono aggiornati approssimativamente ogni 60 secondi.</string>
+    <string name="api_allRatesToday_hint">Per utilizzare questa fonte, devi inserire la tua chiave API personale.</string>
 </resources>

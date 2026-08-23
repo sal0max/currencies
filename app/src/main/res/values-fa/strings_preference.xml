@@ -67,4 +67,7 @@
     <string name="rate_summary">اگر مایل هستید، می توانید به دیگران کمک کنید تا ارزها را کشف کنند. برای امتیاز دادن به برنامه در Google Play اینجا را کلیک کنید.</string>
     <string name="category_versioninfo">اطلاعات نسخه</string>
     <string name="title_changelog">تغییرات</string>
+    <string name="api_all_rates_today_api_key_title">کلید API ‏AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">برای استفاده از این منبع، در https://allratestoday.com/register یک کلید API شخصی بسازید و آن را اینجا وارد کنید:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>کلید API لازم است</i></string>
 </resources>

@@ -19,6 +19,7 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
 
     private var apiProvider: LiveData<ApiProvider> = Database(app).getApiProviderAsync()
     private var openExchangeratesApiKey: LiveData<String?> = Database(app).getOpenExchangeRatesApiKeyAsync()
+    private var allRatesTodayApiKey: LiveData<String?> = Database(app).getAllRatesTodayApiKeyAsync()
     private var isPreviewConversionEnabled: LiveData<Boolean> = Database(app).isPreviewConversionEnabled()
 
     fun setApiProvider(api: ApiProvider) {
@@ -41,6 +42,15 @@ class PreferenceViewModel(private val app: Application) : AndroidViewModel(app) 
 
     fun getOpenExchangeratesApiKey(): LiveData<String?> {
         return openExchangeratesApiKey
+    }
+
+    fun setAllRatesTodayApiKey(apiKey: String) {
+        Database(app).setAllRatesTodayApiKey(apiKey)
+        ExchangeRatesRepository(app).getExchangeRates()
+    }
+
+    fun getAllRatesTodayApiKey(): LiveData<String?> {
+        return allRatesTodayApiKey
     }
 
     fun setTheme(theme: Int) {

@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">À peu près 160 taux de change\nSource : Combinaision de plusieurs fournisseurs fiables.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualisation toutes les heures.</string>
     <string name="api_openExchangeRates_hint">Pour utiliser cette source, vous devez créer votre propre clé API !</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> fournit des taux de change interbancaires moyens en temps réel provenant de plusieurs sources.\n<b>Plus de 160 devises sont incluses.\n<i>Pour utiliser cette source, vous devez saisir votre clé API personnelle.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Plus de 160 taux de change\nSource : données du marché interbancaire AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Les taux sont actualisés environ toutes les 60 secondes.</string>
+    <string name="api_allRatesToday_hint">Pour utiliser cette source, vous devez saisir votre clé API personnelle.</string>
 </resources>

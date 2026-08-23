@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Okolo 160 kurzů\nZdroj: Kombinace několika spolehlivých poskytovatelů.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Hodinové aktualizace.</string>
     <string name="api_openExchangeRates_hint">Abyste mohli využívat tento zdroj, musíte si vytvořit osobní klíč API!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> poskytuje aktuální středové mezibankovní směnné kurzy z více zdrojů.\n<b>Je zahrnuto více než 160 měn.\n<i>Chcete-li tento zdroj používat, musíte zadat svůj osobní klíč API.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Více než 160 směnných kurzů\nZdroj: mezibankovní tržní data AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Kurzy se aktualizují přibližně každých 60 sekund.</string>
+    <string name="api_allRatesToday_hint">Chcete-li tento zdroj používat, musíte zadat svůj osobní klíč API.</string>
 </resources>

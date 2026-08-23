@@ -63,4 +63,7 @@
     <string name="rate_summary">לבחירתך, אפשר לסייע לאחרים להיחשף ליישומון. לחיצה כאן תוביל אותך לדירוג ב־Google Play.</string>
 
 
+    <string name="api_all_rates_today_api_key_title">מפתח API של AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">כדי להשתמש במקור זה, יש ליצור מפתח API אישי בכתובת https://allratestoday.com/register ולהזין אותו כאן:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>נדרש מפתח API</i></string>
 </resources>

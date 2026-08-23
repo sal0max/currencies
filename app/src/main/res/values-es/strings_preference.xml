@@ -70,4 +70,7 @@
     <string name="rate_summary">Si quieres, puedes ayudar a otros a descubrir Currencies. Haz clic aquí para valorar la aplicación en Google Play.</string>
     <string name="category_versioninfo">Información de la versión</string>
     <string name="title_changelog">Registro de cambios</string>
+    <string name="api_all_rates_today_api_key_title">Clave de API de AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Para usar esta fuente, crea una clave de API personal en https://allratestoday.com/register e introdúcela aquí:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Se requiere una clave de API</i></string>
 </resources>

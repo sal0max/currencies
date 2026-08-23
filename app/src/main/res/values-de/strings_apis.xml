@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Ungefähr 160 Wechselkurse\nQuelle: Kombination aus mehreren zuverlässigen Quellen.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Stündliche Updates.</string>
     <string name="api_openExchangeRates_hint">Um diese Quelle zu nutzen, muss zuerst ein persönlicher API-Schlüssel erstellt werden!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> liefert aktuelle Interbanken-Mittelkurse aus mehreren Quellen.\n<b>Mehr als 160 Währungen sind enthalten.\n<i>Um diese Quelle zu verwenden, müssen Sie Ihren persönlichen API-Schlüssel eingeben.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Mehr als 160 Wechselkurse\nQuelle: Interbanken-Marktdaten von AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Die Kurse werden ungefähr alle 60 Sekunden aktualisiert.</string>
+    <string name="api_allRatesToday_hint">Um diese Quelle zu verwenden, müssen Sie Ihren persönlichen API-Schlüssel eingeben.</string>
 </resources>

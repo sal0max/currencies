@@ -14,4 +14,8 @@
     <string name="api_inforEuro_descriptionUpdateInterval">Οι ισοτιμίες που αναφέρονται είναι οι ισοτιμίες της αγοράς για τη δεύτερη έως τελευταία ημέρα του προηγούμενου μήνα, όπως δημοσιοποιούνται από την Ευρωπαϊκή Κεντρική Τράπεζα, ή, ανάλογα με τη διαθεσιμότητα, όπως παρέχονται από τις αντιπροσωπείες ή άλλες κατάλληλες πηγές κοντά στην ημερομηνία αυτή.</string>
     <string name="api_norgesBank_descriptionFull">Συναλλαγματικές ισοτιμίες, όπως παρέχονται από την Κεντρική Τράπεζα της Νορβηγίας <a href="https://www.norges-bank.no/en/topics/Statistics/exchange_rates/"><b>Norges Bank</b></a>\n<b>Η Norges Bank παρέχει περίπου 40 συναλλαγματικές ισοτιμίες.</b></string>
     <string name="api_norgesBank_descriptionUpdateInterval">Η ώρα δημοσίευσης των ημερήσιων ισοτιμιών είναι περίπου στις 16:00 CET.</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> παρέχει ζωντανές μέσες διατραπεζικές συναλλαγματικές ισοτιμίες από πολλαπλές πηγές.\n<b>Περιλαμβάνονται περισσότερα από 160 νομίσματα.\n<i>Για να χρησιμοποιήσετε αυτή την πηγή, πρέπει να εισαγάγετε το προσωπικό σας κλειδί API.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Περισσότερες από 160 συναλλαγματικές ισοτιμίες\nΠηγή: διατραπεζικά δεδομένα αγοράς AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Οι ισοτιμίες ενημερώνονται περίπου κάθε 60 δευτερόλεπτα.</string>
+    <string name="api_allRatesToday_hint">Για να χρησιμοποιήσετε αυτή την πηγή, πρέπει να εισαγάγετε το προσωπικό σας κλειδί API.</string>
 </resources>

@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Около 160 обменных курсов\nИсточник: Комбинация нескольких надежных поставщиков.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Ежечасные обновления.</string>
     <string name="api_openExchangeRates_hint">Чтобы использовать этот источник, вам необходимо создать свой личный ключ API!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> предоставляет актуальные средние межбанковские курсы валют из нескольких источников.\n<b>Поддерживается более 160 валют.\n<i>Чтобы использовать этот источник, необходимо ввести личный ключ API.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Более 160 валютных курсов\nИсточник: данные межбанковского рынка AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Курсы обновляются примерно каждые 60 секунд.</string>
+    <string name="api_allRatesToday_hint">Чтобы использовать этот источник, необходимо ввести личный ключ API.</string>
 </resources>

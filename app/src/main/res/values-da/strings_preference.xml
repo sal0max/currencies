@@ -70,4 +70,7 @@
     <string name="rate_summary">Hvis du vil, kan du hjælpe andre med at finde Valutaer. Klik her for at bedømme appen på Google Play.</string>
     <string name="category_versioninfo">Versioninformation</string>
     <string name="title_changelog">Ændringslog</string>
+    <string name="api_all_rates_today_api_key_title">API-nøgle til AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">For at bruge denne kilde skal du oprette en personlig API-nøgle på https://allratestoday.com/register og indtaste den her:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>API-nøgle kræves</i></string>
 </resources>

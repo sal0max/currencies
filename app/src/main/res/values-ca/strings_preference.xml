@@ -68,4 +68,7 @@
     <string name="rate_summary">Podeu ajudar a altres persones a descobrir Currencies. Toqueu aquí per a puntuar l\'aplicació a Google Play.</string>
     <string name="category_versioninfo">Informació de la versió</string>
     <string name="title_changelog">Registre de canvis</string>
+    <string name="api_all_rates_today_api_key_title">Clau API d\'AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Per utilitzar aquesta font, creeu una clau API personal a https://allratestoday.com/register i introduïu-la aquí:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Cal una clau API</i></string>
 </resources>

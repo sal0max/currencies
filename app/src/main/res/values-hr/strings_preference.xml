@@ -70,4 +70,7 @@
     <string name="rate_summary">Ako to želite, možete pomoći drugima da otkriju ovu aplikaciju. Ovdje kliknite kako biste je ocijenili na Trgovini Play.</string>
     <string name="category_versioninfo">Podaci o inačici</string>
     <string name="title_changelog">Povijest izmjena</string>
+    <string name="api_all_rates_today_api_key_title">API ključ za AllRatesToday</string>
+    <string name="api_all_rates_today_api_key_message">Za upotrebu ovog izvora izradite osobni API ključ na https://allratestoday.com/register i unesite ga ovdje:</string>
+    <string name="api_all_rates_today_api_key_missing"><i>Potreban je API ključ</i></string>
 </resources>

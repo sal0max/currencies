@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Unos 160 tipos de cambio\nFuente: Combinación de múltiples proveedores fiables.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualizaciones cada hora.</string>
     <string name="api_openExchangeRates_hint">Para utilizar esta Fuente, ¡tiene que crear su Clave API personal!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> proporciona tipos de cambio medios interbancarios en tiempo real de varias fuentes.\n<b>Se incluyen más de 160 monedas.\n<i>Para usar esta fuente, debes introducir tu clave de API personal.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Más de 160 tipos de cambio\nFuente: datos del mercado interbancario de AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Los tipos se actualizan aproximadamente cada 60 segundos.</string>
+    <string name="api_allRatesToday_hint">Para usar esta fuente, debes introducir tu clave de API personal.</string>
 </resources>

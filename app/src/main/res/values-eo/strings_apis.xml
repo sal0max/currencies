@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> fontas la valutajn kurzoj el diversaj financaj datumprovizantoj kaj bankoj, inkluzive de la Eŭropa Centra Banko. Ĉiuj kurzoj-datumoj estas liveritaj en mezpunkto-datumoj. Mezpunktaj kurzoj estas determinitaj kalkulante la mezan kurzon de Bid and Ask.\n<b>Proksime 160 valutoj estas inkluzivitaj.</b></string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> provizas aktualajn interbankajn mezajn kurzojn el pluraj fontoj.\n<b>Pli ol 160 valutoj estas inkluzivitaj.\n<i>Por uzi ĉi tiun fonton, vi devas enigi vian personan API-ŝlosilon.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Pli ol 160 kurzoj\nFonto: interbankaj merkataj datumoj de AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">La kurzoj estas ĝisdatigataj proksimume ĉiujn 60 sekundojn.</string>
+    <string name="api_allRatesToday_hint">Por uzi ĉi tiun fonton, vi devas enigi vian personan API-ŝlosilon.</string>
 </resources>

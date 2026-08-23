@@ -6,4 +6,8 @@
     <string name="api_ferEe_descriptionUpdateInterval">Nilai tukar diperbarui setiap hari kerja.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> memantau nilai valas yang dipublikasikan oleh Bank Sentral Eropa (European Central Bank).\n<b>Sekitar 30 mata uang tersedia.</b></string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Data diperbarui sekitar pukul 16.00 CET setiap hari kerja.</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> menyediakan kurs tengah antarbank langsung dari berbagai sumber.\n<b>Lebih dari 160 mata uang disertakan.\n<i>Untuk menggunakan sumber ini, Anda harus memasukkan kunci API pribadi Anda.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Lebih dari 160 kurs\nSumber: data pasar antarbank AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Kurs diperbarui kira-kira setiap 60 detik.</string>
+    <string name="api_allRatesToday_hint">Untuk menggunakan sumber ini, Anda harus memasukkan kunci API pribadi Anda.</string>
 </resources>

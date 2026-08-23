@@ -25,4 +25,8 @@
     <string name="api_openExchangeRates_descriptionShort">Ongeveer 160 wisselkoersen\nBron: Combinatie van meerdere betrouwbare aanbieders.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Elk uur updates.</string>
     <string name="api_openExchangeRates_hint">Om deze bron te gebruiken moet u een persoonlijke API sleutel aanmaken!</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> biedt actuele gemiddelde interbancaire wisselkoersen uit meerdere bronnen.\n<b>Meer dan 160 valuta\'s zijn inbegrepen.\n<i>Om deze bron te gebruiken, moet u uw persoonlijke API-sleutel invoeren.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Meer dan 160 wisselkoersen\nBron: interbancaire marktgegevens van AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">De koersen worden ongeveer elke 60 seconden bijgewerkt.</string>
+    <string name="api_allRatesToday_hint">Om deze bron te gebruiken, moet u uw persoonlijke API-sleutel invoeren.</string>
 </resources>

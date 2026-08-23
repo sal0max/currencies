@@ -3,4 +3,8 @@
     <string name="api_exchangerateHost_descriptionUpdateInterval">Gengi eru uppfærð um miðnætti UTC alla virka daga.</string>
     <string name="api_ferEe_descriptionUpdateInterval">Gengi eru uppfærð alla virka daga.</string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Gengi eru uppfærð um 16:00 CET alla virka daga.</string>
+    <string name="api_allRatesToday_descriptionFull"><a href="https://allratestoday.com/"><b>AllRatesToday</b></a> veitir lifandi miðgengi á millibankamarkaði frá mörgum heimildum.\n<b>Fleiri en 160 gjaldmiðlar eru innifaldir.\n<i>Til að nota þessa heimild þarftu að slá inn persónulega API-lykilinn þinn.</i></b></string>
+    <string name="api_allRatesToday_descriptionShort">Fleiri en 160 gengi\nHeimild: millibankamarkaðsgögn AllRatesToday</string>
+    <string name="api_allRatesToday_descriptionUpdateInterval">Gengi er uppfært á um 60 sekúndna fresti.</string>
+    <string name="api_allRatesToday_hint">Til að nota þessa heimild þarftu að slá inn persónulega API-lykilinn þinn.</string>
 </resources>
