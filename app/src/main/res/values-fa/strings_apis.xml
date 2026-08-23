@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">حدود 160 نرخ ارز\nمنبع: ترکیبی از چندین ارائه دهنده قابل اعتماد.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">به روز رسانی ساعتی.</string>
     <string name="api_openExchangeRates_hint">برای استفاده از این منبع، باید کلید API شخصی خود را ایجاد کنید!</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">نرخ‌های رسمی ارز ارائه‌شده توسط <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>بانک ملی قزاقستان</b></a>.\n<b>حدود ۴۸ نرخ ارز در دسترس است.</b>\nمنبع: بانک ملی قزاقستان, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">حدود ۴۸ نرخ ارز در دسترس است.\nمنبع: بانک ملی قزاقستان</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">نرخ‌های رسمی ارز روزانه منتشر می‌شوند. نرخ دلار آمریکا بر اساس معاملات ساعت ۱۵:۳۰ به وقت آستانه برای روز کاری بعد تعیین می‌شود؛ سایر ارزها با استفاده از نرخ‌های متقاطع ساعت ۱۶:۰۰ محاسبه می‌شوند.</string>
 </resources>

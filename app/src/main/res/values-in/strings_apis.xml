@@ -6,4 +6,7 @@
     <string name="api_ferEe_descriptionUpdateInterval">Nilai tukar diperbarui setiap hari kerja.</string>
     <string name="api_frankfurterApp_descriptionFull"><a href="https://www.frankfurter.app/"><b>Frankfurter.app</b></a> memantau nilai valas yang dipublikasikan oleh Bank Sentral Eropa (European Central Bank).\n<b>Sekitar 30 mata uang tersedia.</b></string>
     <string name="api_frankfurterApp_descriptionUpdateInterval">Data diperbarui sekitar pukul 16.00 CET setiap hari kerja.</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Kurs resmi yang disediakan oleh <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Bank Nasional Kazakhstan</b></a>.\n<b>Sekitar 48 kurs disertakan.</b>\nSumber: Bank Nasional Kazakhstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Sekitar 48 kurs disertakan.\nSumber: Bank Nasional Kazakhstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Kurs resmi diterbitkan setiap hari. Kurs dolar AS ditetapkan dari perdagangan pada pukul 15.30 waktu Astana untuk hari kerja berikutnya; mata uang lainnya dihitung menggunakan kurs silang pada pukul 16.00.</string>
 </resources>

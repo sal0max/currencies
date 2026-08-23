@@ -25,4 +25,7 @@
     <string name="api_openExchangeRates_descriptionShort">À peu près 160 taux de change\nSource : Combinaision de plusieurs fournisseurs fiables.</string>
     <string name="api_openExchangeRates_descriptionUpdateInterval">Actualisation toutes les heures.</string>
     <string name="api_openExchangeRates_hint">Pour utiliser cette source, vous devez créer votre propre clé API !</string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Taux de change officiels fournis par la <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Banque nationale du Kazakhstan</b></a>.\n<b>Environ 48 taux de change sont inclus.</b>\nSource: Banque nationale du Kazakhstan, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Environ 48 taux de change sont inclus.\nSource: Banque nationale du Kazakhstan</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Les taux de change officiels sont publiés quotidiennement. Le taux du dollar américain est fixé à partir des transactions à 15 h 30, heure d\'Astana, pour le jour ouvrable suivant ; les autres devises sont calculées à l\'aide de taux croisés à 16 h.</string>
 </resources>

@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="api_exchangerateHost_descriptionFull"><a href="https://exchangerate.host/"><b>Exchangerate.host</b></a> fontas la valutajn kurzoj el diversaj financaj datumprovizantoj kaj bankoj, inkluzive de la Eŭropa Centra Banko. Ĉiuj kurzoj-datumoj estas liveritaj en mezpunkto-datumoj. Mezpunktaj kurzoj estas determinitaj kalkulante la mezan kurzon de Bid and Ask.\n<b>Proksime 160 valutoj estas inkluzivitaj.</b></string>
+    <string name="api_nationalBankKazakhstan_descriptionFull">Oficialaj kurzoj provizitaj de la <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Nacia Banko de Kazaĥio</b></a>.\n<b>Ĉirkaŭ 48 kurzoj estas inkluzivitaj.</b>\nFonto: Nacia Banko de Kazaĥio, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Ĉirkaŭ 48 kurzoj estas inkluzivitaj.\nFonto: Nacia Banko de Kazaĥio</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Oficialaj kurzoj estas publikigataj ĉiutage. La kurzo de la usona dolaro estas fiksita laŭ komercado je la 15:30 laŭ astana tempo por la sekva labortago; aliaj valutoj estas kalkulataj per krucaj kurzoj je la 16:00.</string>
 </resources>

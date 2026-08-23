@@ -25,4 +25,7 @@
 
 
 
+    <string name="api_nationalBankKazakhstan_descriptionFull">Officielle valutakurser leveret af <a href="https://nationalbank.kz/en/exchangerates/ezhednevnye-oficialnye-rynochnye-kursy-valyut"><b>Kasakhstans nationalbank</b></a>.\n<b>Omkring 48 valutakurser er inkluderet.</b>\nKilde: Kasakhstans nationalbank, <a href="https://nationalbank.kz/">nationalbank.kz</a>.</string>
+    <string name="api_nationalBankKazakhstan_descriptionShort">Omkring 48 valutakurser er inkluderet.\nKilde: Kasakhstans nationalbank</string>
+    <string name="api_nationalBankKazakhstan_descriptionUpdateInterval">Officielle valutakurser offentliggøres dagligt. Kursen for amerikanske dollar fastsættes ud fra handel kl. 15.30 Astana-tid for den næste arbejdsdag; andre valutaer beregnes ved hjælp af krydskurser kl. 16.00.</string>
 </resources>
