@@ -1,5 +1,6 @@
 package de.salomax.currencies.view.main
 
+import android.annotation.SuppressLint
 import android.content.ClipData
 import android.content.ClipDescription
 import android.content.ClipboardManager
@@ -495,7 +496,7 @@ class MainActivity : BaseActivity() {
     // capture hardware keyboard input
     override fun onKeyDown(keyCode: Int, event: KeyEvent?): Boolean {
         // IMPORTANT: can't work with simple keyCodes here, as depending on the keyboard
-        // configuration, wrong values will be returned (e.g. KEYCODE_8 instad of KEYCODE_PLUS).
+        // configuration, wrong values will be returned (e.g. KEYCODE_8 instead of KEYCODE_PLUS).
         val key = event?.keyCharacterMap?.get(keyCode, event.metaState)?.let { Char(it) }
         when (key) {
             // numbers
@@ -521,6 +522,7 @@ class MainActivity : BaseActivity() {
                 // delete
                 when (keyCode) {
                     KeyEvent.KEYCODE_DEL -> viewModel.delete()
+                    @SuppressLint("GestureBackNavigation")
                     KeyEvent.KEYCODE_BACK -> super.onBackPressedDispatcher.onBackPressed()
                     else -> return false
                 }
